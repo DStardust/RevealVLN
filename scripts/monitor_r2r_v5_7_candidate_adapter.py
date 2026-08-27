@@ -13,6 +13,8 @@ V510 = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_native_control_diagnostic"
 V510_SCREEN = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_fresh_activation_screen"
 V510_PAIR = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_paired_seen_gate"
 V511 = ROOT / "artifacts/evaluation/mf2_r2r_v5_11_temporal_diagnostic"
+V511_SCREEN = ROOT / "artifacts/evaluation/mf2_r2r_v5_11_fresh_activation_screen"
+V511_PAIR = ROOT / "artifacts/evaluation/mf2_r2r_v5_11_paired_seen_gate"
 
 
 def counts(root: Path) -> dict:
@@ -51,6 +53,8 @@ value = {
     "v5_10_fresh_activation_extension": counts(V510_SCREEN),
     "v5_10_paired_metric_gate": counts(V510_PAIR),
     "v5_11_temporal_diagnostic": counts(V511),
+    "v5_11_fresh_activation_extension": counts(V511_SCREEN),
+    "v5_11_paired_metric_gate": counts(V511_PAIR),
 }
 result = V57 / "R2R_V5_7_CANDIDATE_ADAPTER_RESULT.json"
 if result.is_file():
