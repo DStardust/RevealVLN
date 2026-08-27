@@ -5,7 +5,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
+import time
 from pathlib import Path
 
 
@@ -110,6 +112,80 @@ def verify() -> None:
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
+def execute(gpus: tuple[int, ...], resume: bool) -> None:
+    protocol = protocol_value()
+    if json.loads(PROTOCOL.read_text()) != protocol:
+        raise RuntimeError("V5.11 diagnostic protocol must be sealed")
+    runs = OUT / "runs"
+    if runs.exists() and not resume:
+        raise RuntimeError("V5.11 diagnostic runs exist; use resume")
+    runs.mkdir(parents=True, exist_ok=True)
+    completed = {}
+    for path in runs.glob("*/RUN_SUMMARY.json"):
+        row = json.loads(path.read_text())
+        if row.get("status") == "PASS":
+            completed[str(row["episode_id"])] = row
+    queue = []
+    for row in protocol["selection"]:
+        if row["episode_id"] in completed:
+            continue
+        run_dir = runs / f"shadow_ep_{row['episode_id']}"
+        if run_dir.exists():
+            destination = OUT / "interrupted" / f"{run_dir.name}_{int(time.time())}"
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            os.replace(run_dir, destination)
+        queue.append(row)
+    free = list(gpus)
+    jobs = []
+    failures = []
+    while queue or jobs:
+        while queue and free:
+            row = queue.pop(0)
+            gpu = free.pop(0)
+            jobs.append(base.v57_run.run_one(
+                row, gpu, protocol["screen_seed"]
+            ))
+        time.sleep(0.5)
+        for job in list(jobs):
+            code = job["process"].poll()
+            if code is None:
+                continue
+            for stream in job["streams"]:
+                stream.close()
+            path = runs / job["job"] / "RUN_SUMMARY.json"
+            if code or not path.is_file():
+                failures.append({"job": job["job"], "returncode": code})
+            else:
+                row = json.loads(path.read_text())
+                if row.get("status") != "PASS":
+                    failures.append({"job": job["job"], "returncode": code})
+                else:
+                    completed[job["row"]["episode_id"]] = row
+            print(json.dumps({
+                "job": job["job"], "gpu": job["gpu"], "returncode": code,
+            }), flush=True)
+            free.append(job["gpu"])
+            free.sort()
+            jobs.remove(job)
+            v56.atomic_json(OUT / "RUN_STATUS.json", {
+                "status": "FAIL" if failures else (
+                    "RUNNING" if queue or jobs else "COMPLETE"
+                ),
+                "completed": len(completed),
+                "expected": protocol["runs"],
+                "active": sum(
+                    row["controller"]["effective_commit_interventions"]
+                    + row["controller"]["explore_decisions"] > 0
+                    for row in completed.values()
+                ),
+                "failures": failures,
+            })
+            if failures:
+                for running in jobs:
+                    running["process"].terminate()
+                raise RuntimeError("V5.11 diagnostic worker failure")
+
+
 def main() -> None:
     configure_base()
     parser = argparse.ArgumentParser()
@@ -122,7 +198,7 @@ def main() -> None:
     if args.command == "seal":
         seal()
     elif args.command in ("run", "resume"):
-        base.v57_run.execute(gpus, args.command == "resume")
+        execute(gpus, args.command == "resume")
     else:
         verify()
 

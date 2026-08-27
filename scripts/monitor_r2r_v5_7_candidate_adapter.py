@@ -12,6 +12,7 @@ V58 = ROOT / "artifacts/evaluation/mf2_r2r_v5_8_safe_local_diagnostic"
 V510 = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_native_control_diagnostic"
 V510_SCREEN = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_fresh_activation_screen"
 V510_PAIR = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_paired_seen_gate"
+V511 = ROOT / "artifacts/evaluation/mf2_r2r_v5_11_temporal_diagnostic"
 
 
 def counts(root: Path) -> dict:
@@ -49,6 +50,7 @@ value = {
     "v5_10_native_control_diagnostic": counts(V510),
     "v5_10_fresh_activation_extension": counts(V510_SCREEN),
     "v5_10_paired_metric_gate": counts(V510_PAIR),
+    "v5_11_temporal_diagnostic": counts(V511),
 }
 result = V57 / "R2R_V5_7_CANDIDATE_ADAPTER_RESULT.json"
 if result.is_file():
@@ -56,4 +58,7 @@ if result.is_file():
 v510_result = V510 / "R2R_V5_10_NATIVE_CONTROL_RESULT.json"
 if v510_result.is_file():
     value["v5_10_result"] = json.loads(v510_result.read_text())["status"]
+v511_result = V511 / "R2R_V5_11_TEMPORAL_RESULT.json"
+if v511_result.is_file():
+    value["v5_11_result"] = json.loads(v511_result.read_text())["status"]
 print(json.dumps(value, indent=2))
