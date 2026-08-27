@@ -1,0 +1,52 @@
+{
+  "acceptance_gates": [
+    "raw_v4_metrics_reproduced",
+    "fixed_fusion_mean_regret_below_raw_v4",
+    "fixed_fusion_exact_oracle_equivalence_not_below_raw_v4",
+    "fixed_fusion_branch_agreement_above_raw_v4"
+  ],
+  "checkpoint_cohort": [
+    {
+      "q_path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+      "q_sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4",
+      "ree_path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+      "ree_sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1",
+      "seed": 20260826
+    },
+    {
+      "q_path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+      "q_sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e",
+      "ree_path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+      "ree_sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0",
+      "seed": 20260827
+    },
+    {
+      "q_path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+      "q_sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115",
+      "ree_path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+      "ree_sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb",
+      "seed": 20260828
+    }
+  ],
+  "diagnostic_selectors": [
+    "raw_v4_q",
+    "ree_target_probability",
+    "fixed_ree_q"
+  ],
+  "fixed_composition": "score(a,b) = V4_Q(a,b) + 5.0 * (1 - REE_target_probability(b))",
+  "gold_access_allowed": false,
+  "paper_result": false,
+  "schema_version": "revealnav-mf2-ree-q-fusion-protocol/4.4",
+  "scope": "same 83-event V4 train-only internal development partition",
+  "sources": {
+    "artifacts/evaluation/mf2_branch_excursion_q_v4_3/RXR_BRANCH_EXCURSION_Q_STABILITY_DIAGNOSIS_V4_3.json": "d7b7d171c982b9ab9e438c542f4f97b4ad665483c4f32eab1a844229c949bf46",
+    "artifacts/evaluation/mf2_ecog_opp_development_v2/RXR_ECOG_OPP_DEVELOPMENT_PROTOCOL.json": "6fee6166091a7feafcdb65d886f5c969bd2c81cd26817d077fafda75d83470a2",
+    "artifacts/evaluation/mf2_expiry_r3_1/RXR_EXPIRY_R3_COMPARISON.json": "a6c200ef8b535b0a31bca2158480561315c4af52f03164e8fc3d891880805fba",
+    "locks/RXR_UNSEEN_CHECKPOINT_LOCK_V4_2.json": "e07e5226d419657f73dc970e0c6c92407315c59ece187d1e1e7ac4990c7c54ad",
+    "revealnav_mf2r3/policy.py": "0df7f0a9492fbe5e725cd29257d7164f599f4f4d075feb478fc51c8377535eb4"
+  },
+  "status": "SEALED_BEFORE_TRAIN_ONLY_REE_Q_FUSION_DIAGNOSIS",
+  "val_unseen_selection_allowed": false,
+  "weight_source": "existing frozen LearnedOPPConfig.wrong_commitment_weight; not selected in this diagnosis",
+  "wrong_commitment_weight": 5.0
+}

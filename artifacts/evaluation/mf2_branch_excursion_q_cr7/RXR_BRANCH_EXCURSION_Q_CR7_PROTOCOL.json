@@ -1,0 +1,53 @@
+{
+  "acceptance_gates": [
+    "all_three_runs_complete",
+    "mean_teacher_cost_regret_improves_over_v4",
+    "mean_exact_oracle_equivalence_improves_over_v4",
+    "all_three_branch_agreement_improves_over_v4",
+    "all_outputs_finite"
+  ],
+  "architecture": "unchanged BranchExcursionQHead(768, 96, 128.0)",
+  "batch_size": 16,
+  "counts": {
+    "development_events": 83,
+    "development_scenes": 9,
+    "train_events": 341,
+    "train_scenes": 26
+  },
+  "early_stopping_patience": 5,
+  "epoch_limit": 25,
+  "gold_access_allowed": false,
+  "objective": {
+    "tie_aware_listwise_weight": 1.0,
+    "tie_target": "uniform over every action at minimum teacher cost",
+    "v4_commit_huber": 1.0,
+    "v4_excursion_huber": 1.0,
+    "v4_paired_gap_huber": 1.0,
+    "v4_ranking_margin": 0.1,
+    "v4_ranking_weight": 0.25
+  },
+  "optimizer": {
+    "lr": 0.0003,
+    "name": "AdamW",
+    "weight_decay": 0.0001
+  },
+  "paper_result": false,
+  "partition": "unchanged V4 train-only scene-disjoint partition",
+  "schema_version": "revealnav-mf2-branch-excursion-q-cr7-protocol/1",
+  "seeds": [
+    20260826,
+    20260827,
+    20260828
+  ],
+  "selection": "minimum internal-development CR7 native loss",
+  "sources": {
+    "artifacts/design/MF2_CORRECTNESS_REVISION_CR7_LISTWISE_Q.md": "3550694175075eca6669df268371e22489f5f12c79b56e3ad7597aae10379183",
+    "artifacts/evaluation/mf2_branch_excursion_q_v4_3/RXR_BRANCH_EXCURSION_Q_STABILITY_DIAGNOSIS_V4_3.json": "d7b7d171c982b9ab9e438c542f4f97b4ad665483c4f32eab1a844229c949bf46",
+    "artifacts/phase1/rxr_train_expansion/branch_excursion_v4/RXR_BRANCH_EXCURSION_LABEL_MANIFEST_V4.json": "fdabde073b1c709c3f22ae5d684903d685f8d5b8ac18964a23dd775784141dd4",
+    "revealnav_mf2r4/losses.py": "385cf5ece13f7ee7e6addb81bf4ca205f9034af40b43e12c9d6037dcbcca2ef8",
+    "revealnav_mf2r4/model.py": "1cb33837ca02b36dbd5c1f106b91fdcdc5205fa0f18833826a7e1beead6ef7b5",
+    "revealnav_mf2r4/stable_losses.py": "f52ba54e7b29ba90482d1fe7cb002862c597c87fa116ed25f0018972366158a4"
+  },
+  "status": "SEALED_BEFORE_CR7_TRAINING",
+  "val_unseen_selection_allowed": false
+}

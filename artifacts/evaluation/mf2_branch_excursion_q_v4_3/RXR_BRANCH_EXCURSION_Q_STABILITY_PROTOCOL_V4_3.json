@@ -1,0 +1,71 @@
+{
+  "checkpoint_cohort": [
+    {
+      "bytes": 1303725,
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+      "seed": 20260826,
+      "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+    },
+    {
+      "bytes": 1303725,
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+      "seed": 20260827,
+      "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+    },
+    {
+      "bytes": 1303725,
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+      "seed": 20260828,
+      "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+    }
+  ],
+  "development_events": 83,
+  "forbidden_inputs": [
+    "val_unseen",
+    "test",
+    "test_challenge",
+    "Gold"
+  ],
+  "gold_payload_read": false,
+  "oracle_equivalence_tolerances": [
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "paper_result": false,
+  "partition_counts": {
+    "development_events": 83,
+    "development_scenes": 9,
+    "train_events": 341,
+    "train_scenes": 26
+  },
+  "predeclared_metrics": [
+    "macro_action_agreement",
+    "branch_index_agreement",
+    "joint_action_branch_agreement",
+    "teacher_cost_regret",
+    "oracle_equivalence",
+    "predicted_top1_top2_margin",
+    "teacher_best_to_next_distinct_margin",
+    "candidate_count_stratification"
+  ],
+  "predeclared_selectors": [
+    "individual_seed_argmin",
+    "mean_predicted_cost_argmin",
+    "median_predicted_cost_argmin",
+    "mean_within_event_rank_argmin"
+  ],
+  "schema_version": "revealnav-mf2-branch-excursion-stability-protocol/4.3",
+  "scope": "RxR train-only scene-disjoint internal development partition",
+  "selection_policy": "Diagnosis only. No selector, threshold, checkpoint, or training revision is accepted automatically from this artifact.",
+  "sources": {
+    "artifacts/phase1/rxr_train_expansion/branch_excursion_v4/RXR_BRANCH_EXCURSION_LABEL_MANIFEST_V4.json": "fdabde073b1c709c3f22ae5d684903d685f8d5b8ac18964a23dd775784141dd4",
+    "locks/RXR_UNSEEN_CHECKPOINT_LOCK_V4_2.json": "e07e5226d419657f73dc970e0c6c92407315c59ece187d1e1e7ac4990c7c54ad",
+    "revealnav_mf2r4/data.py": "396faf695275bdb46bbdbbffb1fad10170641ea0bf56b79ee3a420ec3dc6d19c",
+    "revealnav_mf2r4/losses.py": "385cf5ece13f7ee7e6addb81bf4ca205f9034af40b43e12c9d6037dcbcca2ef8",
+    "revealnav_mf2r4/model.py": "1cb33837ca02b36dbd5c1f106b91fdcdc5205fa0f18833826a7e1beead6ef7b5"
+  },
+  "status": "SEALED_BEFORE_TRAIN_ONLY_DEVELOPMENT_STABILITY_DIAGNOSIS",
+  "unseen_payload_read": false
+}

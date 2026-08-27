@@ -6,6 +6,8 @@ from revealnav_mf2r4 import (
     BranchExcursionMacroController, BranchExcursionQHead,
     BranchExcursionQLoss, BranchMacroAction,
 )
+from revealnav_mf2r4.model import BranchExcursionQOutput
+from revealnav_mf2r4.stable_losses import StableBranchExcursionQLoss
 
 
 class BranchExcursionQTest(unittest.TestCase):
@@ -57,6 +59,22 @@ class BranchExcursionQTest(unittest.TestCase):
         torch.testing.assert_close(result.commit_cost, original.commit_cost[:, order])
         torch.testing.assert_close(
             result.excursion_cost, original.excursion_cost[:, order]
+        )
+
+    def test_tie_aware_listwise_loss_rewards_the_optimal_action_set(self):
+        batch = self.batch()
+        good = BranchExcursionQOutput(
+            commit_cost=torch.tensor([[1.0, 5.0, torch.inf], [1.0, 5.0, 6.0]]),
+            excursion_cost=torch.tensor([[1.0, 4.0, torch.inf], [1.0, 4.0, 5.0]]),
+        )
+        bad = BranchExcursionQOutput(
+            commit_cost=torch.tensor([[5.0, 1.0, torch.inf], [5.0, 1.0, 1.5]]),
+            excursion_cost=torch.tensor([[5.0, 1.0, torch.inf], [5.0, 1.0, 1.5]]),
+        )
+        objective = StableBranchExcursionQLoss()
+        self.assertLess(
+            float(objective(good, batch)["listwise"]),
+            float(objective(bad, batch)["listwise"]),
         )
 
 

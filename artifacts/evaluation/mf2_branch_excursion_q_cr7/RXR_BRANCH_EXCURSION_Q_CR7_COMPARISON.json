@@ -1,0 +1,317 @@
+{
+  "baseline": {
+    "all_three_branch_index_agreement": 0.8313253012048193,
+    "mean_exact_oracle_equivalence": 0.8393574297188755,
+    "mean_teacher_cost_regret": 0.6053356286512321
+  },
+  "cr7": {
+    "all_three_branch_index_agreement": 0.8072289156626506,
+    "all_three_joint_action_branch_agreement": 0.5301204819277109,
+    "all_three_macro_action_agreement": 0.7108433734939759,
+    "mean_exact_oracle_equivalence": 0.819277108433735,
+    "mean_teacher_cost_regret": 0.6507601833726507,
+    "predicted_top1_top2_margin_median": {
+      "20260826": 0.17000138759613037,
+      "20260827": 0.15133196115493774,
+      "20260828": 0.16787219047546387
+    }
+  },
+  "gates": {
+    "all_outputs_finite": true,
+    "all_three_branch_agreement_improves_over_v4": false,
+    "all_three_runs_complete": true,
+    "mean_exact_oracle_equivalence_improves_over_v4": false,
+    "mean_teacher_cost_regret_improves_over_v4": false,
+    "no_gold_or_unseen_payload_read": true
+  },
+  "gold_payload_read": false,
+  "next_gate": "preserve failure and return to causal diagnosis",
+  "paper_result": false,
+  "per_seed": {
+    "20260826": {
+      "best_development_native_loss": 4.798826145838542,
+      "checkpoint": {
+        "bytes": 1303817,
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_cr7/seed_20260826/branch_excursion_q_cr7.pt",
+        "sha256": "eb8f2da0d0e4dc4eb9bba76fbf298d6e21066174ea561d0f8a45ae9bb6e7de13"
+      },
+      "gold_payload_read": false,
+      "history": [
+        {
+          "development_total": 7.178048455571553,
+          "epoch": 1,
+          "train_total": 7.414648906226732
+        },
+        {
+          "development_total": 6.21229970311544,
+          "epoch": 2,
+          "train_total": 6.25740700802845
+        },
+        {
+          "development_total": 5.534139690628971,
+          "epoch": 3,
+          "train_total": 5.408999141010721
+        },
+        {
+          "development_total": 5.13409732910524,
+          "epoch": 4,
+          "train_total": 4.845568620564301
+        },
+        {
+          "development_total": 4.916238503283765,
+          "epoch": 5,
+          "train_total": 4.492656576318825
+        },
+        {
+          "development_total": 4.922902351402374,
+          "epoch": 6,
+          "train_total": 4.162838796716282
+        },
+        {
+          "development_total": 4.798826145838542,
+          "epoch": 7,
+          "train_total": 3.830083077254533
+        },
+        {
+          "development_total": 4.822165161730295,
+          "epoch": 8,
+          "train_total": 3.5870683144264555
+        },
+        {
+          "development_total": 5.017296228064112,
+          "epoch": 9,
+          "train_total": 3.3520587105904855
+        },
+        {
+          "development_total": 5.142072571329324,
+          "epoch": 10,
+          "train_total": 2.9867482395116185
+        },
+        {
+          "development_total": 4.982353750481663,
+          "epoch": 11,
+          "train_total": 2.65097561749545
+        },
+        {
+          "development_total": 5.127707774380603,
+          "epoch": 12,
+          "train_total": 2.531132588987826
+        }
+      ],
+      "metrics": {
+        "best_action_accuracy": 0.8433734939759037,
+        "best_action_random_accuracy": 0.5391566272241524,
+        "commit_mae": 2.282761339032859,
+        "commit_train_median_mae": 2.8949294285467495,
+        "development_events": 83,
+        "evaluated_branches": 171,
+        "excursion_mae": 1.2802320577596362,
+        "excursion_train_median_mae": 1.650649755321748,
+        "mean_action_regret": 0.5337349391845335,
+        "median_selector_mean_action_regret": 0.024096385542168676,
+        "positive_preservation_branches": 88,
+        "preservation_gain_auc": 0.8860898138006572,
+        "preservation_gain_mae": 1.2015276251480593,
+        "random_mean_action_regret": 2.2691615633217683
+      },
+      "paper_result": false,
+      "schema_version": "revealnav-mf2-branch-excursion-q-run/cr7",
+      "seed": 20260826,
+      "status": "BRANCH_EXCURSION_Q_CR7_RUN_COMPLETE",
+      "unseen_payload_read": false
+    },
+    "20260827": {
+      "best_development_native_loss": 4.814735039170966,
+      "checkpoint": {
+        "bytes": 1303817,
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_cr7/seed_20260827/branch_excursion_q_cr7.pt",
+        "sha256": "0192d62ddda9ec4fee52988392f6d69e2c425090ddf18f320d47338f1b8f6a6e"
+      },
+      "gold_payload_read": false,
+      "history": [
+        {
+          "development_total": 7.344367182398417,
+          "epoch": 1,
+          "train_total": 7.511258315480699
+        },
+        {
+          "development_total": 6.3909987369215635,
+          "epoch": 2,
+          "train_total": 6.529338748573907
+        },
+        {
+          "development_total": 5.64599987397711,
+          "epoch": 3,
+          "train_total": 5.58469215795791
+        },
+        {
+          "development_total": 5.153851417173822,
+          "epoch": 4,
+          "train_total": 4.948038041067263
+        },
+        {
+          "development_total": 4.892976904489908,
+          "epoch": 5,
+          "train_total": 4.57921434707306
+        },
+        {
+          "development_total": 4.8655440204114795,
+          "epoch": 6,
+          "train_total": 4.340518944424268
+        },
+        {
+          "development_total": 4.814735039170966,
+          "epoch": 7,
+          "train_total": 4.071258761666038
+        },
+        {
+          "development_total": 4.977912661540939,
+          "epoch": 8,
+          "train_total": 3.7750580835202574
+        },
+        {
+          "development_total": 4.967661613441376,
+          "epoch": 9,
+          "train_total": 3.5084779297501463
+        },
+        {
+          "development_total": 5.016072600720877,
+          "epoch": 10,
+          "train_total": 3.1617949575273174
+        },
+        {
+          "development_total": 5.243308814175157,
+          "epoch": 11,
+          "train_total": 2.851409677885844
+        },
+        {
+          "development_total": 5.19748220099024,
+          "epoch": 12,
+          "train_total": 2.6259754948602043
+        }
+      ],
+      "metrics": {
+        "best_action_accuracy": 0.8072289156626506,
+        "best_action_random_accuracy": 0.5391566272241524,
+        "commit_mae": 2.286484472584306,
+        "commit_train_median_mae": 2.8949294285467495,
+        "development_events": 83,
+        "evaluated_branches": 171,
+        "excursion_mae": 1.252983948640656,
+        "excursion_train_median_mae": 1.650649755321748,
+        "mean_action_regret": 0.69173838287951,
+        "median_selector_mean_action_regret": 0.024096385542168676,
+        "positive_preservation_branches": 88,
+        "preservation_gain_auc": 0.8774644030668127,
+        "preservation_gain_mae": 1.190124539952529,
+        "random_mean_action_regret": 2.2691615633217683
+      },
+      "paper_result": false,
+      "schema_version": "revealnav-mf2-branch-excursion-q-run/cr7",
+      "seed": 20260827,
+      "status": "BRANCH_EXCURSION_Q_CR7_RUN_COMPLETE",
+      "unseen_payload_read": false
+    },
+    "20260828": {
+      "best_development_native_loss": 4.857672496014331,
+      "checkpoint": {
+        "bytes": 1303817,
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_cr7/seed_20260828/branch_excursion_q_cr7.pt",
+        "sha256": "73826ca7c17fcf2c0eeba1736d78f8b3324cb0cb9385d7c6d4845d31ea8ff2ac"
+      },
+      "gold_payload_read": false,
+      "history": [
+        {
+          "development_total": 7.358591441648552,
+          "epoch": 1,
+          "train_total": 7.548237885897461
+        },
+        {
+          "development_total": 6.353774794613022,
+          "epoch": 2,
+          "train_total": 6.478124323478542
+        },
+        {
+          "development_total": 5.639763383980257,
+          "epoch": 3,
+          "train_total": 5.551800167106114
+        },
+        {
+          "development_total": 5.145151678338109,
+          "epoch": 4,
+          "train_total": 4.934557215559168
+        },
+        {
+          "development_total": 4.896356594131653,
+          "epoch": 5,
+          "train_total": 4.556546816727982
+        },
+        {
+          "development_total": 5.009515966277525,
+          "epoch": 6,
+          "train_total": 4.2369853904869546
+        },
+        {
+          "development_total": 5.020671051668834,
+          "epoch": 7,
+          "train_total": 3.9360766312943176
+        },
+        {
+          "development_total": 4.857672496014331,
+          "epoch": 8,
+          "train_total": 3.5976532341098504
+        },
+        {
+          "development_total": 4.948272383356669,
+          "epoch": 9,
+          "train_total": 3.2812780131342825
+        },
+        {
+          "development_total": 5.102145269692662,
+          "epoch": 10,
+          "train_total": 2.9740820392485587
+        },
+        {
+          "development_total": 5.078474659517587,
+          "epoch": 11,
+          "train_total": 2.7227591503400608
+        },
+        {
+          "development_total": 5.401683422456305,
+          "epoch": 12,
+          "train_total": 2.574620326593125
+        },
+        {
+          "development_total": 5.2995448773165785,
+          "epoch": 13,
+          "train_total": 2.4043023257661074
+        }
+      ],
+      "metrics": {
+        "best_action_accuracy": 0.8072289156626506,
+        "best_action_random_accuracy": 0.5391566272241524,
+        "commit_mae": 2.2936605246443498,
+        "commit_train_median_mae": 2.8949294285467495,
+        "development_events": 83,
+        "evaluated_branches": 171,
+        "excursion_mae": 1.2892820270437944,
+        "excursion_train_median_mae": 1.650649755321748,
+        "mean_action_regret": 0.7268072280539087,
+        "median_selector_mean_action_regret": 0.024096385542168676,
+        "positive_preservation_branches": 88,
+        "preservation_gain_auc": 0.874315443592552,
+        "preservation_gain_mae": 1.1708729333347745,
+        "random_mean_action_regret": 2.2691615633217683
+      },
+      "paper_result": false,
+      "schema_version": "revealnav-mf2-branch-excursion-q-run/cr7",
+      "seed": 20260828,
+      "status": "BRANCH_EXCURSION_Q_CR7_RUN_COMPLETE",
+      "unseen_payload_read": false
+    }
+  },
+  "protocol_sha256": "ae9298859ec25c070c2e4eaf3af5a484b167cba6ba6de614194a72f11074dd43",
+  "schema_version": "revealnav-mf2-branch-excursion-q-comparison/cr7",
+  "status": "BRANCH_EXCURSION_Q_CR7_DEVELOPMENT_GATE_FAIL",
+  "unseen_payload_read": false
+}

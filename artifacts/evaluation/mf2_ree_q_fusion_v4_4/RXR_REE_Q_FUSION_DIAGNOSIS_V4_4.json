@@ -1,0 +1,69 @@
+{
+  "events": 83,
+  "fixed_ree_q_fusion": {
+    "all_three_branch_index_agreement": 0.9397590361445783,
+    "all_three_joint_action_branch_agreement": 0.6746987951807228,
+    "all_three_macro_action_agreement": 0.7349397590361446,
+    "mean_exact_oracle_equivalence": 0.9558232931726908,
+    "mean_teacher_cost_regret": 0.08654618454745497,
+    "per_seed": {
+      "20260826": {
+        "exact_oracle_equivalence": 0.9759036144578314,
+        "mean_teacher_cost_regret": 0.024096385542168676
+      },
+      "20260827": {
+        "exact_oracle_equivalence": 0.963855421686747,
+        "mean_teacher_cost_regret": 0.06475903614457831
+      },
+      "20260828": {
+        "exact_oracle_equivalence": 0.927710843373494,
+        "mean_teacher_cost_regret": 0.1707831319556179
+      }
+    }
+  },
+  "gates": {
+    "fixed_fusion_branch_agreement_above_raw_v4": true,
+    "fixed_fusion_exact_oracle_equivalence_not_below_raw_v4": true,
+    "fixed_fusion_mean_regret_below_raw_v4": true,
+    "no_gold_or_unseen_payload_read": true,
+    "raw_v4_metrics_reproduced": true
+  },
+  "gold_payload_read": false,
+  "known_limitation": "These 83 events were part of earlier REE training; this is an integration diagnosis, not confirmatory generalization evidence.",
+  "next_gate": "freeze composition and test on fresh confirmatory events",
+  "paper_result": false,
+  "protocol_sha256": "713d3475515cdcb2a3406c6cc1e633d985cc5e83fced70ef3a383585dc062eae",
+  "raw_v4_q": {
+    "all_three_branch_index_agreement": 0.8313253012048193,
+    "all_three_joint_action_branch_agreement": 0.5421686746987951,
+    "all_three_macro_action_agreement": 0.7108433734939759,
+    "mean_exact_oracle_equivalence": 0.8393574297188755,
+    "mean_teacher_cost_regret": 0.6053356291299843,
+    "per_seed": {
+      "20260826": {
+        "exact_oracle_equivalence": 0.8433734939759037,
+        "mean_teacher_cost_regret": 0.6116179012390505
+      },
+      "20260827": {
+        "exact_oracle_equivalence": 0.8313253012048193,
+        "mean_teacher_cost_regret": 0.5875215156968817
+      },
+      "20260828": {
+        "exact_oracle_equivalence": 0.8433734939759037,
+        "mean_teacher_cost_regret": 0.6168674704540207
+      }
+    }
+  },
+  "ree_target_probability": {
+    "all_three_branch_agreement": 0.8674698795180723,
+    "mean_branch_oracle_accuracy": 0.931726907630522,
+    "per_seed_branch_oracle_accuracy": {
+      "20260826": 0.963855421686747,
+      "20260827": 0.9518072289156626,
+      "20260828": 0.8795180722891566
+    }
+  },
+  "schema_version": "revealnav-mf2-ree-q-fusion-diagnosis/4.4",
+  "status": "REE_Q_FIXED_FUSION_ENGINEERING_PASS",
+  "unseen_payload_read": false
+}

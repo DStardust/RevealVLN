@@ -1,0 +1,185 @@
+{
+  "all_three": {
+    "branch_index_agreement": 0.8313253012048193,
+    "joint_action_branch_agreement": 0.5421686746987951,
+    "macro_action_agreement": 0.7108433734939759
+  },
+  "checkpoint_lock_sha256": "e07e5226d419657f73dc970e0c6c92407315c59ece187d1e1e7ac4990c7c54ad",
+  "events": 83,
+  "gold_payload_read": false,
+  "next_gate": "main-agent causal diagnosis before any method revision",
+  "pairwise": {
+    "20260826_20260827": {
+      "branch_index_agreement": 0.8795180722891566,
+      "joint_action_branch_agreement": 0.6144578313253012,
+      "macro_action_agreement": 0.7349397590361446
+    },
+    "20260826_20260828": {
+      "branch_index_agreement": 0.891566265060241,
+      "joint_action_branch_agreement": 0.7228915662650602,
+      "macro_action_agreement": 0.8313253012048193
+    },
+    "20260827_20260828": {
+      "branch_index_agreement": 0.891566265060241,
+      "joint_action_branch_agreement": 0.7469879518072289,
+      "macro_action_agreement": 0.8554216867469879
+    }
+  },
+  "paper_result": false,
+  "per_candidate_count": {
+    "2": {
+      "branch_index_agreement_rate": 0.8205128205128205,
+      "events": 78,
+      "joint_action_branch_agreement_rate": 0.5256410256410257,
+      "macro_action_agreement_rate": 0.7051282051282052
+    },
+    "3": {
+      "branch_index_agreement_rate": 1.0,
+      "events": 5,
+      "joint_action_branch_agreement_rate": 0.8,
+      "macro_action_agreement_rate": 0.8
+    }
+  },
+  "predicted_top1_top2_margin": {
+    "20260826": {
+      "max": 1.132340908050537,
+      "mean": 0.3372869947139757,
+      "median": 0.28035497665405273,
+      "min": 0.005980312824249268,
+      "q25": 0.11094707250595093,
+      "q75": 0.4539240598678589
+    },
+    "20260827": {
+      "max": 0.9370167255401611,
+      "mean": 0.21355481320116892,
+      "median": 0.15841293334960938,
+      "min": 0.002984285354614258,
+      "q25": 0.07201230525970459,
+      "q75": 0.30111053586006165
+    },
+    "20260828": {
+      "max": 0.8333160877227783,
+      "mean": 0.2503717110817691,
+      "median": 0.21648550033569336,
+      "min": 0.0059375762939453125,
+      "q25": 0.09395730495452881,
+      "q75": 0.3813655376434326
+    }
+  },
+  "protocol_sha256": "9770ba9e829219a01869b1722fe067b9a90261469d0a0b5b16105d1c493351fe",
+  "schema_version": "revealnav-mf2-branch-excursion-stability-diagnosis/4.3",
+  "selectors": {
+    "20260826": {
+      "mean_teacher_cost_regret": 0.6116179012390505,
+      "oracle_equivalence_rate": {
+        "0.0": 0.8433734939759037,
+        "0.1": 0.8433734939759037,
+        "0.25": 0.8433734939759037,
+        "0.5": 0.8433734939759037
+      },
+      "regret_quantiles": {
+        "max": 9.0,
+        "mean": 0.6116179012390505,
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    },
+    "20260827": {
+      "mean_teacher_cost_regret": 0.5875215156968817,
+      "oracle_equivalence_rate": {
+        "0.0": 0.8313253012048193,
+        "0.1": 0.8313253012048193,
+        "0.25": 0.8313253012048193,
+        "0.5": 0.8313253012048193
+      },
+      "regret_quantiles": {
+        "max": 4.0,
+        "mean": 0.5875215156968817,
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    },
+    "20260828": {
+      "mean_teacher_cost_regret": 0.6168674690177641,
+      "oracle_equivalence_rate": {
+        "0.0": 0.8433734939759037,
+        "0.1": 0.8433734939759037,
+        "0.25": 0.8433734939759037,
+        "0.5": 0.8433734939759037
+      },
+      "regret_quantiles": {
+        "max": 9.0,
+        "mean": 0.6168674690177641,
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    },
+    "mean_predicted_cost": {
+      "mean_teacher_cost_regret": 0.6314974190240883,
+      "oracle_equivalence_rate": {
+        "0.0": 0.8192771084337349,
+        "0.1": 0.8192771084337349,
+        "0.25": 0.8192771084337349,
+        "0.5": 0.8192771084337349
+      },
+      "regret_quantiles": {
+        "max": 4.399999976158142,
+        "mean": 0.6314974190240883,
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    },
+    "mean_within_event_rank": {
+      "mean_teacher_cost_regret": 0.6567986241306167,
+      "oracle_equivalence_rate": {
+        "0.0": 0.8313253012048193,
+        "0.1": 0.8313253012048193,
+        "0.25": 0.8313253012048193,
+        "0.5": 0.8313253012048193
+      },
+      "regret_quantiles": {
+        "max": 9.0,
+        "mean": 0.6567986241306167,
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    },
+    "median_predicted_cost": {
+      "mean_teacher_cost_regret": 0.5548192765339311,
+      "oracle_equivalence_rate": {
+        "0.0": 0.8554216867469879,
+        "0.1": 0.8554216867469879,
+        "0.25": 0.8554216867469879,
+        "0.5": 0.8554216867469879
+      },
+      "regret_quantiles": {
+        "max": 9.0,
+        "mean": 0.5548192765339311,
+        "median": 0.0,
+        "min": 0.0,
+        "q25": 0.0,
+        "q75": 0.0
+      }
+    }
+  },
+  "status": "TRAIN_ONLY_DEVELOPMENT_STABILITY_DIAGNOSIS_COMPLETE",
+  "teacher_best_to_next_distinct_margin": {
+    "max": 5.0,
+    "mean": 3.644597401101905,
+    "median": 4.0,
+    "min": 0.875,
+    "q25": 3.25,
+    "q75": 4.2249999940395355
+  },
+  "unseen_payload_read": false
+}
