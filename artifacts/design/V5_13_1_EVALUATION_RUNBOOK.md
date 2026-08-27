@@ -5,6 +5,28 @@ passes its learnability, split-isolation, manifest, checkpoint-size, checkpoint-
 and three-seed gates. In particular, `val_unseen prepare` fails before reading the
 validation payload when that training result is absent or failed.
 
+## Automatic handoff
+
+The detached handoff supervisor waits for the existing full collection pipeline,
+validates the generated labels and three checkpoints, runs complete `val_seen`, and
+launches `val_unseen` only when the sealed `val_seen` main gate passes:
+
+```bash
+PYTHONNOUSERSITE=1 PYTHONPATH=scripts:. .envs/etpr1/bin/python \
+  scripts/watch_r2r_v5_13_1_handoff.py launch
+```
+
+Its combined live monitor is:
+
+```bash
+PYTHONNOUSERSITE=1 PYTHONPATH=scripts:. .envs/etpr1/bin/python \
+  scripts/watch_r2r_v5_13_1_handoff.py monitor
+```
+
+The supervisor is independent of the launching terminal and Codex session. It stops
+fail-closed on a data, training, launch, or `val_seen` scientific-gate failure and
+records the exact terminal stage in `HANDOFF_STATE.json`.
+
 ## Development diagnostic
 
 After full training passes, launch complete `val_seen` in a detached process:
