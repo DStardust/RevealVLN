@@ -1,0 +1,111 @@
+{
+  "actions": {
+    "forced_negative": "real lowest-probability alternative outbound; learned post action reported; separately flagged frozen stress return always executed",
+    "natural": "real locked-fusion outbound; learned post action"
+  },
+  "episodes": [
+    {
+      "episode_id": "670",
+      "scene_id": "zsNo4HB9uLZ"
+    },
+    {
+      "episode_id": "1825",
+      "scene_id": "oLBMNvg9in8"
+    },
+    {
+      "episode_id": "1582",
+      "scene_id": "pLe4wQe7qrG"
+    }
+  ],
+  "expected_runs": 18,
+  "forced_return_not_a_learned_policy_claim": true,
+  "modes": [
+    "natural",
+    "forced_negative"
+  ],
+  "paper_result": false,
+  "performance_metrics_allowed": false,
+  "schema_version": "revealnav-r2r-action-enabled-multiscene-protocol/5.1",
+  "seeds": [
+    20260826,
+    20260827,
+    20260828
+  ],
+  "selection": "all three scenes in the already sealed V4.4.2 cohort with at least one persistent decision and checkpoint row in every seed",
+  "selection_evidence": {
+    "1582": {
+      "runs": [
+        {
+          "checkpoint_rows": 2,
+          "decision_rows": 5,
+          "seed": 20260826
+        },
+        {
+          "checkpoint_rows": 2,
+          "decision_rows": 5,
+          "seed": 20260827
+        },
+        {
+          "checkpoint_rows": 2,
+          "decision_rows": 5,
+          "seed": 20260828
+        }
+      ]
+    },
+    "1825": {
+      "runs": [
+        {
+          "checkpoint_rows": 1,
+          "decision_rows": 4,
+          "seed": 20260826
+        },
+        {
+          "checkpoint_rows": 1,
+          "decision_rows": 4,
+          "seed": 20260827
+        },
+        {
+          "checkpoint_rows": 2,
+          "decision_rows": 4,
+          "seed": 20260828
+        }
+      ]
+    },
+    "670": {
+      "runs": [
+        {
+          "checkpoint_rows": 1,
+          "decision_rows": 1,
+          "seed": 20260826
+        },
+        {
+          "checkpoint_rows": 1,
+          "decision_rows": 1,
+          "seed": 20260827
+        },
+        {
+          "checkpoint_rows": 1,
+          "decision_rows": 1,
+          "seed": 20260828
+        }
+      ]
+    }
+  },
+  "sources": {
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_2/R2R_UNSEEN_FUSION_PROTOCOL_V4_4_2.json": "b3e3be87654070023c90dbec55726fc3fece2176b2449a91e1732a7ea4f91f7a",
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_2/R2R_UNSEEN_FUSION_RESULT_V4_4_2.json": "d4878f47ed2bf80726dc76764893e6adba40b00a011cbf5d45a765d50c524553",
+    "locks/R2R_ACTION_ENABLED_PILOT_V5.json": "5de9aac4d8c098472bde13dbafac1358ca8bde6b591218bcc04ff61859ff0ba6",
+    "scripts/r2r_action_enabled_pilot_worker_v5.py": "168692849d6845bc6d2adba0f79316a97e80233b15484d753edf1b1046bd24f4"
+  },
+  "split": "R2R-CE val_unseen engineering-only",
+  "status": "SEALED_BEFORE_R2R_ACTION_ENABLED_MULTISCENE_GATE",
+  "success_gates": {
+    "all_18_runs_complete": true,
+    "all_forced_branches_differ_from_natural": true,
+    "all_hash_chains_valid": true,
+    "all_nine_forced_returns_execute_and_succeed": true,
+    "all_real_outbounds_and_post_decisions_execute": true,
+    "all_three_scenes_and_seeds_represented": true,
+    "no_test_or_test_challenge_payload": true
+  }
+}

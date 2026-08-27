@@ -1,0 +1,26 @@
+{
+  "schema_version": "revealnav-r2r-action-enabled-multiscene-lock/5.1",
+  "status": "LOCKED_BEFORE_CONTINUOUS_CONTROLLER_METRIC_GATE",
+  "parent_lock": "locks/R2R_ACTION_ENABLED_PILOT_V5.json",
+  "protocol": {
+    "path": "artifacts/evaluation/mf2_r2r_action_enabled_multiscene_v5_1/R2R_ACTION_ENABLED_MULTISCENE_PROTOCOL_V5_1.json",
+    "bytes": 3163,
+    "sha256": "a51af2c778335459543451e9a10f201cc4328b92e3824ccd58737fc6a38d3317"
+  },
+  "result": {
+    "path": "artifacts/evaluation/mf2_r2r_action_enabled_multiscene_v5_1/R2R_ACTION_ENABLED_MULTISCENE_RESULT_V5_1.json",
+    "bytes": 2344,
+    "sha256": "5a0cef6f30a4d761496b330ab73600a4b3bb2d164518a7dbbd1a5dc2e06a7371",
+    "status": "R2R_ACTION_ENABLED_MULTISCENE_GATE_PASS",
+    "runs": 18,
+    "scenes": 3,
+    "seeds": 3,
+    "real_outbound_runs": 18,
+    "forced_stress_returns": 9,
+    "successful_forced_stress_returns": 9
+  },
+  "scope_limit": "This engineering gate proves real outbound execution, reached-state observation, post-excursion inference, and executable checkpoint return across three scenes. Forced returns are interventions and do not establish learned recovery or navigation improvement.",
+  "authorized_next_stage": "continuous multi-episode controller with frozen-front-end task metrics and paired controls",
+  "test_or_test_challenge_allowed": false,
+  "paper_result": false
+}

@@ -1,0 +1,64 @@
+{
+  "branches": {
+    "1582:20260826:forced_negative": "g16",
+    "1582:20260826:natural": "g15",
+    "1582:20260827:forced_negative": "g16",
+    "1582:20260827:natural": "g15",
+    "1582:20260828:forced_negative": "g16",
+    "1582:20260828:natural": "g15",
+    "1825:20260826:forced_negative": "g14",
+    "1825:20260826:natural": "g27",
+    "1825:20260827:forced_negative": "g14",
+    "1825:20260827:natural": "g12",
+    "1825:20260828:forced_negative": "g14",
+    "1825:20260828:natural": "g12",
+    "670:20260826:forced_negative": "g12",
+    "670:20260826:natural": "g10",
+    "670:20260827:forced_negative": "g12",
+    "670:20260827:natural": "g10",
+    "670:20260828:forced_negative": "g12",
+    "670:20260828:natural": "g10"
+  },
+  "forced_return_not_a_learned_policy_claim": true,
+  "gates": {
+    "all_18_runs_complete": true,
+    "all_forced_branches_differ_from_natural": true,
+    "all_hash_chains_valid": true,
+    "all_nine_forced_returns_execute_and_succeed": true,
+    "all_real_outbounds_and_post_decisions_execute": true,
+    "all_three_scenes_and_seeds_represented": true,
+    "no_test_or_test_challenge_payload": true
+  },
+  "next_gate": "continuous multi-episode controller with task metrics",
+  "paper_result": false,
+  "performance_metrics_reported": false,
+  "policy_actions": {
+    "1582": {
+      "20260826:forced_negative": "continue",
+      "20260826:natural": "continue",
+      "20260827:forced_negative": "continue",
+      "20260827:natural": "continue",
+      "20260828:forced_negative": "continue",
+      "20260828:natural": "continue"
+    },
+    "1825": {
+      "20260826:forced_negative": "continue",
+      "20260826:natural": "backtrack",
+      "20260827:forced_negative": "continue",
+      "20260827:natural": "continue",
+      "20260828:forced_negative": "continue",
+      "20260828:natural": "continue"
+    },
+    "670": {
+      "20260826:forced_negative": "continue",
+      "20260826:natural": "backtrack",
+      "20260827:forced_negative": "continue",
+      "20260827:natural": "continue",
+      "20260828:forced_negative": "backtrack",
+      "20260828:natural": "backtrack"
+    }
+  },
+  "protocol_sha256": "a51af2c778335459543451e9a10f201cc4328b92e3824ccd58737fc6a38d3317",
+  "schema_version": "revealnav-r2r-action-enabled-multiscene-result/5.1",
+  "status": "R2R_ACTION_ENABLED_MULTISCENE_GATE_PASS"
+}
