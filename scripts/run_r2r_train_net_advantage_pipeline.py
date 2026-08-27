@@ -235,25 +235,25 @@ def collect(cohort: str, gpus: tuple[int, ...]) -> dict:
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(gpus)) as executor:
         running = {}
         iterator = iter(pending)
-        for gpu in gpus:
+        for slot, gpu in enumerate(gpus):
             try:
                 row = next(iterator)
             except StopIteration:
                 break
             run_dir = paths["runs"] / f"ep_{row['episode_id']}"
             future = executor.submit(run_one, row, gpu, run_dir)
-            running[future] = (gpu, row)
-            active[str(gpu)] = row["episode_id"]
+            running[future] = (slot, gpu, row)
+            active[str(slot)] = {"gpu": gpu, "episode_id": row["episode_id"]}
         while running:
             done, _ = concurrent.futures.wait(
                 running, return_when=concurrent.futures.FIRST_COMPLETED
             )
             for future in done:
-                gpu, row = running.pop(future)
+                slot, gpu, row = running.pop(future)
                 result = future.result()
                 if not result["valid"]:
                     failures.append(result)
-                active.pop(str(gpu), None)
+                active.pop(str(slot), None)
                 try:
                     next_row = next(iterator)
                 except StopIteration:
@@ -261,8 +261,10 @@ def collect(cohort: str, gpus: tuple[int, ...]) -> dict:
                 else:
                     run_dir = paths["runs"] / f"ep_{next_row['episode_id']}"
                     new = executor.submit(run_one, next_row, gpu, run_dir)
-                    running[new] = (gpu, next_row)
-                    active[str(gpu)] = next_row["episode_id"]
+                    running[new] = (slot, gpu, next_row)
+                    active[str(slot)] = {
+                        "gpu": gpu, "episode_id": next_row["episode_id"]
+                    }
             atomic_json(paths["progress"], progress_value(cohort, selected, active, failures))
     value = progress_value(cohort, selected, active, failures)
     atomic_json(paths["progress"], value)
@@ -308,8 +310,8 @@ def main() -> int:
     parser.add_argument("--gpus", default="0,1")
     args = parser.parse_args()
     gpus = tuple(int(value) for value in args.gpus.split(",") if value)
-    if not gpus or len(gpus) != len(set(gpus)):
-        raise SystemExit("--gpus must contain unique indices")
+    if not gpus or any(gpu < 0 for gpu in gpus):
+        raise SystemExit("--gpus must contain non-negative GPU slot indices")
     if args.command in ("prepare", "all"):
         value = prepare(args.cohort)
         print(json.dumps({
