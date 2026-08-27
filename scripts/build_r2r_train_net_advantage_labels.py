@@ -79,16 +79,10 @@ def make_pathfinder(scene: str):
         or not glb.is_file() or not navmesh.is_file()
     ):
         raise RuntimeError("scene provenance closure failed")
-    config = habitat_sim.SimulatorConfiguration()
-    config.scene_id = str(glb)
-    config.create_renderer = False
-    config.enable_physics = False
-    agent = habitat_sim.AgentConfiguration()
-    simulator = habitat_sim.Simulator(habitat_sim.Configuration(config, [agent]))
-    if not simulator.pathfinder.load_nav_mesh(str(navmesh)):
-        simulator.close()
+    pathfinder = habitat_sim.PathFinder()
+    if not pathfinder.load_nav_mesh(str(navmesh)):
         raise RuntimeError("navmesh load failed")
-    return simulator
+    return pathfinder
 
 
 def geodesic(pathfinder, start, goal) -> float:
@@ -180,9 +174,8 @@ def build(runs: Path, output_dir: Path) -> dict:
     records = []
     unreachable = []
     for scene in sorted(by_scene):
-        simulator = make_pathfinder(scene)
+        pathfinder = make_pathfinder(scene)
         try:
-            pathfinder = simulator.pathfinder
             for event in by_scene[scene]:
                 episode = episodes[event["episode_id"]]
                 reference = [list(map(float, point)) for point in episode["reference_path"]]
@@ -282,7 +275,7 @@ def build(runs: Path, output_dir: Path) -> dict:
                         "better_by_margin": better,
                     })
         finally:
-            simulator.close()
+            del pathfinder
 
     if not records:
         raise RuntimeError("no finite counterfactual training rows")
