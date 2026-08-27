@@ -10,6 +10,8 @@ V56 = ROOT / "artifacts/evaluation/mf2_r2r_v5_6_fresh_seen_screen"
 V57 = ROOT / "artifacts/evaluation/mf2_r2r_v5_7_candidate_adapter_diagnostic"
 V58 = ROOT / "artifacts/evaluation/mf2_r2r_v5_8_safe_local_diagnostic"
 V510 = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_native_control_diagnostic"
+V510_SCREEN = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_fresh_activation_screen"
+V510_PAIR = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_paired_seen_gate"
 
 
 def counts(root: Path) -> dict:
@@ -30,10 +32,14 @@ def counts(root: Path) -> dict:
                 "prefixes_with_two_persistent", 0
             ) > 0
         )
-    return {
+    value = {
         "completed": complete, "active": active, "failed": failed,
         "episodes_with_two_persistent": persistent,
     }
+    status = root / "RUN_STATUS.json"
+    if status.is_file():
+        value["run_status"] = json.loads(status.read_text())
+    return value
 
 
 value = {
@@ -41,6 +47,8 @@ value = {
     "v5_7_global_adapter_diagnostic": counts(V57),
     "v5_8_safe_local_diagnostic": counts(V58),
     "v5_10_native_control_diagnostic": counts(V510),
+    "v5_10_fresh_activation_extension": counts(V510_SCREEN),
+    "v5_10_paired_metric_gate": counts(V510_PAIR),
 }
 result = V57 / "R2R_V5_7_CANDIDATE_ADAPTER_RESULT.json"
 if result.is_file():
