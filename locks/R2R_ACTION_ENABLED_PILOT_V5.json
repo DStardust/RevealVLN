@@ -1,0 +1,24 @@
+{
+  "schema_version": "revealnav-r2r-action-enabled-pilot-lock/5",
+  "status": "LOCKED_BEFORE_MULTISCENE_ACTION_ENABLED_GATE",
+  "parent_lock": "locks/POST_EXCURSION_INTEGRATED_CONTROLLER_V4_9.json",
+  "protocol": {
+    "path": "artifacts/evaluation/mf2_r2r_action_enabled_v5/R2R_ACTION_ENABLED_PROTOCOL_V5.json",
+    "bytes": 2403,
+    "sha256": "b1e0ea5a4bc8cffb15e213c075fec1928a76be5179c78c0d591dd0d8a8438682"
+  },
+  "result": {
+    "path": "artifacts/evaluation/mf2_r2r_action_enabled_v5/R2R_ACTION_ENABLED_RESULT_V5.json",
+    "bytes": 21435,
+    "sha256": "795c195595467e913b3f44b720ffc10fea79695292e328b7edd743d204a8c5d9",
+    "status": "R2R_ACTION_ENABLED_ENGINEERING_GATE_PASS",
+    "runs": 6,
+    "real_outbound_runs": 6,
+    "forced_stress_returns": 3,
+    "successful_forced_stress_returns": 3
+  },
+  "scope_limit": "Forced stress returns prove controller executability, not learned BACKTRACK effectiveness or navigation performance.",
+  "authorized_next_stage": "three-scene action-enabled intervention gate",
+  "test_or_test_challenge_allowed": false,
+  "paper_result": false
+}
