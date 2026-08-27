@@ -1,0 +1,135 @@
+{
+  "checkpoints": {
+    "20260826": {
+      "bytes": 1967251,
+      "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+      "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+    },
+    "20260827": {
+      "bytes": 1967251,
+      "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+      "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+    },
+    "20260828": {
+      "bytes": 1967251,
+      "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+      "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+    }
+  },
+  "gates": {
+    "all_three_runs_complete": true,
+    "backtrack_mae_beats_train_median_in_two_seeds": true,
+    "continue_mae_beats_train_median_in_two_seeds": true,
+    "mean_action_regret_beats_median_selector_in_two_seeds": true,
+    "strict_accuracy_beats_median_selector_in_two_seeds": true
+  },
+  "gold_payload_read": false,
+  "integration_authorized": true,
+  "next_gate": "controller integration with locked REE/Q and return executor",
+  "paper_result": false,
+  "per_seed": {
+    "20260826": {
+      "backtrack_mae": 1.8943474575624628,
+      "backtrack_train_median_mae": 2.4468119588948913,
+      "continue_mae": 1.422990035095994,
+      "continue_train_median_mae": 2.330508474576271,
+      "cost_gap_mae": 3.246006835918968,
+      "development_examples": 118,
+      "mean_action_regret": 0.3247074414107759,
+      "median_selector_mean_action_regret": 0.4134988057411323,
+      "median_selector_strict_action_accuracy": 0.7241379310344828,
+      "strict_action_accuracy": 0.7931034482758621,
+      "strict_examples": 87,
+      "tie_examples": 31
+    },
+    "20260827": {
+      "backtrack_mae": 1.840522984326896,
+      "backtrack_train_median_mae": 2.4468119588948913,
+      "continue_mae": 1.3475523449429232,
+      "continue_train_median_mae": 2.330508474576271,
+      "cost_gap_mae": 3.101937104061925,
+      "development_examples": 118,
+      "mean_action_regret": 0.30797015408338124,
+      "median_selector_mean_action_regret": 0.4134988057411323,
+      "median_selector_strict_action_accuracy": 0.7241379310344828,
+      "strict_action_accuracy": 0.7931034482758621,
+      "strict_examples": 87,
+      "tie_examples": 31
+    },
+    "20260828": {
+      "backtrack_mae": 1.824818421218355,
+      "backtrack_train_median_mae": 2.4468119588948913,
+      "continue_mae": 1.4248618702996143,
+      "continue_train_median_mae": 2.330508474576271,
+      "cost_gap_mae": 3.138398072891474,
+      "development_examples": 118,
+      "mean_action_regret": 0.48109363701383945,
+      "median_selector_mean_action_regret": 0.4134988057411323,
+      "median_selector_strict_action_accuracy": 0.7241379310344828,
+      "strict_action_accuracy": 0.7701149425287356,
+      "strict_examples": 87,
+      "tie_examples": 31
+    }
+  },
+  "protocol_sha256": "792d1de16459d191aa529f835eb8d3da6208744423c8055fe8a40fd6e1a1247c",
+  "schema_version": "revealnav-mf2-post-excursion-q-comparison/4.8",
+  "seeds": [
+    20260826,
+    20260827,
+    20260828
+  ],
+  "status": "POST_EXCURSION_Q_GATE_PASS",
+  "summary": {
+    "backtrack_mae": {
+      "mean": 1.8532296210359045,
+      "population_std": 0.029773205919373352,
+      "values": [
+        1.8943474575624628,
+        1.840522984326896,
+        1.824818421218355
+      ]
+    },
+    "continue_mae": {
+      "mean": 1.3984680834461771,
+      "population_std": 0.03601097297821119,
+      "values": [
+        1.422990035095994,
+        1.3475523449429232,
+        1.4248618702996143
+      ]
+    },
+    "cost_gap_mae": {
+      "mean": 3.162114004290789,
+      "population_std": 0.061160204713756224,
+      "values": [
+        3.246006835918968,
+        3.101937104061925,
+        3.138398072891474
+      ]
+    },
+    "mean_action_regret": {
+      "mean": 0.3712570775026655,
+      "population_std": 0.07796617450625058,
+      "values": [
+        0.3247074414107759,
+        0.30797015408338124,
+        0.48109363701383945
+      ]
+    },
+    "strict_action_accuracy": {
+      "mean": 0.7854406130268199,
+      "population_std": 0.010836885535426055,
+      "values": [
+        0.7931034482758621,
+        0.7931034482758621,
+        0.7701149425287356
+      ]
+    }
+  },
+  "wins_over_train_median": {
+    "action_regret": 2,
+    "backtrack_mae": 3,
+    "continue_mae": 3,
+    "strict_accuracy": 3
+  }
+}

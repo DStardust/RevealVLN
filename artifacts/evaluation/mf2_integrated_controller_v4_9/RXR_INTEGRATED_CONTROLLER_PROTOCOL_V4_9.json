@@ -1,0 +1,90 @@
+{
+  "checkpoint_triplets": [
+    {
+      "post": {
+        "bytes": 1967251,
+        "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+        "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+      },
+      "q": {
+        "bytes": 1303725,
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+        "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+      },
+      "ree": {
+        "bytes": 3263054,
+        "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+        "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+      },
+      "seed": 20260826
+    },
+    {
+      "post": {
+        "bytes": 1967251,
+        "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+        "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+      },
+      "q": {
+        "bytes": 1303725,
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+        "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+      },
+      "ree": {
+        "bytes": 3263054,
+        "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+        "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+      },
+      "seed": 20260827
+    },
+    {
+      "post": {
+        "bytes": 1967251,
+        "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+        "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+      },
+      "q": {
+        "bytes": 1303725,
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+        "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+      },
+      "ree": {
+        "bytes": 3263054,
+        "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+        "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+      },
+      "seed": 20260828
+    }
+  ],
+  "engineering_gates": {
+    "all_249_initial_decisions_legal": true,
+    "all_failures_are_fail_closed": true,
+    "all_three_checkpoint_triplets_strictly_load": true,
+    "every_reached_excursion_gets_one_post_decision": true,
+    "no_executor_remains_in_exploring_or_returning": true,
+    "no_gold_or_evaluation_split_payload": true,
+    "post_action_metrics_reported_but_not_used_as_gate": true
+  },
+  "evaluation_split_access_allowed": false,
+  "fixed_rules": {
+    "initial": "locked REE + V4 Q fusion",
+    "outbound_failure": "request same-checkpoint return without synthetic post feature",
+    "post_excursion": "minimum predicted CONTINUE/BACKTRACK cost; exact tie continues",
+    "return_failure": "RETURN_FAILED; only same-controller retry is legal",
+    "successful_backtrack": "active branch exhausted; select only remaining untried branches"
+  },
+  "gold_access_allowed": false,
+  "paper_result": false,
+  "performance_metrics_are_diagnostic_only": true,
+  "schema_version": "revealnav-mf2-integrated-controller-protocol/4.9",
+  "scope": "83 RxR train-only scene-disjoint internal-development events x 3 seeds",
+  "sources": {
+    "artifacts/evaluation/mf2_post_excursion_q_v4_8/RXR_POST_EXCURSION_Q_COMPARISON_V4_8.json": "4199000078d39998fab11f4a81f983f99f0a8b62b33a643c9bcc6a80adf1d31a",
+    "artifacts/phase1/rxr_train_expansion/post_excursion_v4_7/RXR_POST_EXCURSION_FULL_MANIFEST_V4_7.json": "955209dc3f04f6d6e2953c9371ead7c1269377d2daf88300f4912689efd21ebd",
+    "artifacts/phase1/rxr_train_expansion/post_excursion_v4_7/RXR_POST_EXCURSION_FULL_RESULT_V4_7.json": "118b5c815f5322977a9e49022c1ca55213ac03c15005f3ac4495214ba0952bc8",
+    "locks/REE_Q_FUSION_CONTROLLER_V4_4.json": "771d5019260c351d69abda5121eb2df22c0ad798d8ff4e6801f30ddadd838fe8",
+    "locks/REE_Q_FUSION_RETURN_EXECUTOR_V4_5.json": "7cca214bb602e548940ef81497d81f6d893a8ec549ef32c65ac520714110d655",
+    "revealnav_mf2r4/integrated_controller.py": "e0107e0f568d494f8e560da53c0bc45229b959f59f60589a70a5de6c59cb22f3",
+    "scripts/gate_rxr_integrated_controller_v4_9.py": "bf30ddd912fc358ba5bc4274bdcbc8bc99ba18c5ecd7084823178d085ac1accf"
+  },
+  "status": "SEALED_BEFORE_TRAIN_ONLY_CLOSED_LOOP_INTEGRATION"
+}

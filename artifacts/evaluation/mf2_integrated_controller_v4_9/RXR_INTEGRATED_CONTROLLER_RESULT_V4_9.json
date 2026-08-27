@@ -1,0 +1,83 @@
+{
+  "counts": {
+    "initial_checkpointed_excursion": 186,
+    "initial_commit": 63,
+    "initial_decisions": 249,
+    "outbound_fail_closed": 49,
+    "post_backtrack": 1,
+    "post_continue": 136,
+    "post_strict": 137,
+    "post_strict_correct": 131,
+    "reached_post_decisions": 137,
+    "terminal_committed": 199,
+    "terminal_return_failed": 50
+  },
+  "gates": {
+    "all_249_initial_decisions_legal": true,
+    "all_failures_are_fail_closed": true,
+    "all_three_checkpoint_triplets_strictly_load": true,
+    "every_reached_excursion_gets_one_post_decision": true,
+    "no_executor_remains_in_exploring_or_returning": true,
+    "no_gold_or_evaluation_split_payload": true,
+    "post_action_metrics_reported_but_not_used_as_gate": true
+  },
+  "gold_payload_read": false,
+  "locked_controller_ready_for_online_evaluation": true,
+  "next_gate": "fresh online episode integration without shadow-action restriction",
+  "paper_result": false,
+  "per_seed": {
+    "20260826": {
+      "counts": {
+        "initial_checkpointed_excursion": 61,
+        "initial_commit": 22,
+        "initial_decisions": 83,
+        "outbound_fail_closed": 16,
+        "post_continue": 45,
+        "post_strict": 45,
+        "post_strict_correct": 45,
+        "reached_post_decisions": 45,
+        "terminal_committed": 67,
+        "terminal_return_failed": 16
+      },
+      "selected_post_mean_action_regret": 0.0,
+      "selected_post_strict_accuracy": 1.0
+    },
+    "20260827": {
+      "counts": {
+        "initial_checkpointed_excursion": 63,
+        "initial_commit": 20,
+        "initial_decisions": 83,
+        "outbound_fail_closed": 17,
+        "post_continue": 46,
+        "post_strict": 46,
+        "post_strict_correct": 45,
+        "reached_post_decisions": 46,
+        "terminal_committed": 66,
+        "terminal_return_failed": 17
+      },
+      "selected_post_mean_action_regret": 0.03804347826086957,
+      "selected_post_strict_accuracy": 0.9782608695652174
+    },
+    "20260828": {
+      "counts": {
+        "initial_checkpointed_excursion": 62,
+        "initial_commit": 21,
+        "initial_decisions": 83,
+        "outbound_fail_closed": 16,
+        "post_backtrack": 1,
+        "post_continue": 45,
+        "post_strict": 46,
+        "post_strict_correct": 41,
+        "reached_post_decisions": 46,
+        "terminal_committed": 66,
+        "terminal_return_failed": 17
+      },
+      "selected_post_mean_action_regret": 0.4076086956521739,
+      "selected_post_strict_accuracy": 0.8913043478260869
+    }
+  },
+  "performance_metrics_are_diagnostic_only": true,
+  "protocol_sha256": "c620ab34c481ef6a19f40010462abdacb83d686e3e0d9aa72c93ca006d0c3045",
+  "schema_version": "revealnav-mf2-integrated-controller-result/4.9",
+  "status": "INTEGRATED_CONTROLLER_ENGINEERING_GATE_PASS"
+}

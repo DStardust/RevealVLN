@@ -1,0 +1,45 @@
+{
+  "schema_version": "revealnav-mf2-post-excursion-full-result/4.7",
+  "status": "POST_EXCURSION_FULL_GATE_PASS",
+  "counts": {
+    "events": 424,
+    "train_events": 341,
+    "source:primary_human_audited": 280,
+    "branches": 880,
+    "train_branches": 709,
+    "trainable": 655,
+    "unreachable": 225,
+    "train_trainable": 537,
+    "preferred_CONTINUE": 353,
+    "return_failure": 287,
+    "outbound_match": 880,
+    "preferred_BACKTRACK": 164,
+    "development_events": 83,
+    "development_branches": 171,
+    "development_trainable": 118,
+    "preferred_TIE": 138,
+    "source:automatic_secondary_pseudolabel": 144
+  },
+  "gates": {
+    "all_424_events_and_880_branches_accounted": true,
+    "all_655_reached_inputs_finite_nonzero": true,
+    "all_225_outbound_failures_retained_nontrainable": true,
+    "both_action_preferences_and_controller_failure_ties_present": true,
+    "scene_disjoint_internal_partitions_match_frozen_counts": true,
+    "both_label_sources_complete": true,
+    "no_target_truth_field_in_input_npz": true,
+    "no_future_gold_or_evaluation_payload": true,
+    "no_part_files": true
+  },
+  "wall_clock_s": 549.342184,
+  "manifest": {
+    "path": "artifacts/phase1/rxr_train_expansion/post_excursion_v4_7/RXR_POST_EXCURSION_FULL_MANIFEST_V4_7.json",
+    "bytes": 287507,
+    "sha256": "955209dc3f04f6d6e2953c9371ead7c1269377d2daf88300f4912689efd21ebd"
+  },
+  "protocol_sha256": "d4fe1e585fcd01b45c055f3e917e4ceda7f8b2bf5f3632906973f492c4241257",
+  "training_authorized": true,
+  "gold_payload_read": false,
+  "paper_result": false,
+  "next_gate": "three-seed BACKTRACK cost-head training"
+}

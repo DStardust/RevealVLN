@@ -1,0 +1,74 @@
+{
+  "schema_version": "revealnav-post-excursion-integrated-controller-lock/4.9",
+  "status": "LOCKED_BEFORE_ACTION_ENABLED_ONLINE_PILOT",
+  "parent_locks": [
+    "locks/REE_Q_FUSION_CONTROLLER_V4_4.json",
+    "locks/REE_Q_FUSION_RETURN_EXECUTOR_V4_5.json",
+    "locks/POST_EXCURSION_PILOT_V4_6_1.json"
+  ],
+  "full_train_only_generation": {
+    "protocol_sha256": "d4fe1e585fcd01b45c055f3e917e4ceda7f8b2bf5f3632906973f492c4241257",
+    "manifest_sha256": "955209dc3f04f6d6e2953c9371ead7c1269377d2daf88300f4912689efd21ebd",
+    "result_sha256": "118b5c815f5322977a9e49022c1ca55213ac03c15005f3ac4495214ba0952bc8",
+    "status": "POST_EXCURSION_FULL_GATE_PASS",
+    "events": 424,
+    "branches": 880,
+    "trainable_examples": 655,
+    "internal_train_examples": 537,
+    "internal_development_examples": 118
+  },
+  "post_excursion_checkpoints": [
+    {
+      "seed": 20260826,
+      "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+      "bytes": 1967251,
+      "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+    },
+    {
+      "seed": 20260827,
+      "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+      "bytes": 1967251,
+      "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+    },
+    {
+      "seed": 20260828,
+      "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+      "bytes": 1967251,
+      "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+    }
+  ],
+  "training_gate": {
+    "protocol_sha256": "792d1de16459d191aa529f835eb8d3da6208744423c8055fe8a40fd6e1a1247c",
+    "comparison_sha256": "4199000078d39998fab11f4a81f983f99f0a8b62b33a643c9bcc6a80adf1d31a",
+    "status": "POST_EXCURSION_Q_GATE_PASS",
+    "mean_strict_action_accuracy": 0.7854406130268199,
+    "median_selector_strict_action_accuracy": 0.7241379310344828,
+    "action_regret_winning_seeds": 2
+  },
+  "closed_loop_gate": {
+    "protocol_sha256": "c620ab34c481ef6a19f40010462abdacb83d686e3e0d9aa72c93ca006d0c3045",
+    "result_sha256": "51824d6023ff7539d89c51baf6225f25f38f45fef649e26163364554549e8f08",
+    "status": "INTEGRATED_CONTROLLER_ENGINEERING_GATE_PASS",
+    "initial_decisions": 249,
+    "reached_post_decisions": 137,
+    "fail_closed_outbound": 49,
+    "post_strict_correct": 131,
+    "performance_metrics_are_diagnostic_only": true
+  },
+  "implementation_sources": {
+    "revealnav_mf2r4/post_excursion.py": "bab425185bc4f379cc77f6487a28825a9ec46588cf3d085a128a2fda3d6d375e",
+    "revealnav_mf2r4/post_excursion_data.py": "bea28d4ea8778ff5b348588c75a270bdedd8ff54ad8aee5272bbfe37df8f1373",
+    "revealnav_mf2r4/integrated_controller.py": "e0107e0f568d494f8e560da53c0bc45229b959f59f60589a70a5de6c59cb22f3"
+  },
+  "authorized_next_stage": {
+    "name": "action-enabled online episode pilot",
+    "requirements": [
+      "execute actual outbound and frozen return actions",
+      "report natural and forced-negative branch interventions separately",
+      "do not select thresholds or checkpoints on evaluation outcomes",
+      "retain controller and low-level failures fail-closed"
+    ]
+  },
+  "forbidden_sources": ["test", "test_challenge"],
+  "paper_result": false
+}

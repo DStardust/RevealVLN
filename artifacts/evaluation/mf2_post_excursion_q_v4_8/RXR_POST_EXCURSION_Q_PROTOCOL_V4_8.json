@@ -1,0 +1,60 @@
+{
+  "architecture": {
+    "causal": true,
+    "elapsed_denominator": 5.0,
+    "feature_dim": 768,
+    "hidden_dim": 96,
+    "outputs": [
+      "continue_cost",
+      "backtrack_cost"
+    ],
+    "trainable_parameters": "post-excursion head only"
+  },
+  "batch_size": 32,
+  "counts": {
+    "development_examples": 118,
+    "train_examples": 537
+  },
+  "early_stopping_patience": 6,
+  "epoch_limit": 30,
+  "evaluation_split_access_allowed": false,
+  "gold_access_allowed": false,
+  "loss": {
+    "backtrack_huber": 1.0,
+    "continue_huber": 1.0,
+    "margin": 0.1,
+    "paired_gap_huber": 1.0,
+    "strict_action_ranking": 0.25,
+    "ties_excluded_from_ranking": true
+  },
+  "optimizer": {
+    "lr": 0.0003,
+    "name": "AdamW",
+    "weight_decay": 0.0001
+  },
+  "paper_result": false,
+  "partition": "V4.7 scene-disjoint internal train/development partition",
+  "schema_version": "revealnav-mf2-post-excursion-q-protocol/4.8",
+  "seeds": [
+    20260826,
+    20260827,
+    20260828
+  ],
+  "selection": "minimum scene-disjoint internal-development native loss",
+  "sources": {
+    "artifacts/design/MF2_POST_EXCURSION_Q_TRAINING_V4_8.md": "6df5e81d5ec1a62b0f8999e855a204c2ea26fc27b75963cb69f9ee3fb1661ef7",
+    "artifacts/phase1/rxr_train_expansion/post_excursion_v4_7/RXR_POST_EXCURSION_FULL_MANIFEST_V4_7.json": "955209dc3f04f6d6e2953c9371ead7c1269377d2daf88300f4912689efd21ebd",
+    "artifacts/phase1/rxr_train_expansion/post_excursion_v4_7/RXR_POST_EXCURSION_FULL_RESULT_V4_7.json": "118b5c815f5322977a9e49022c1ca55213ac03c15005f3ac4495214ba0952bc8",
+    "revealnav_mf2r4/post_excursion.py": "bab425185bc4f379cc77f6487a28825a9ec46588cf3d085a128a2fda3d6d375e",
+    "revealnav_mf2r4/post_excursion_data.py": "bea28d4ea8778ff5b348588c75a270bdedd8ff54ad8aee5272bbfe37df8f1373",
+    "scripts/run_rxr_post_excursion_q_v4_8.py": "2632ff8ca4b6ce4029c2c04bf8e5458bb8a3c0a5703e24f06251817e157e70a4"
+  },
+  "status": "SEALED_BEFORE_POST_EXCURSION_Q_TRAINING",
+  "success_gates": {
+    "all_three_runs_complete": true,
+    "backtrack_mae_beats_train_median_in_two_seeds": true,
+    "continue_mae_beats_train_median_in_two_seeds": true,
+    "mean_action_regret_beats_median_selector_in_two_seeds": true,
+    "strict_accuracy_beats_median_selector_in_two_seeds": true
+  }
+}
