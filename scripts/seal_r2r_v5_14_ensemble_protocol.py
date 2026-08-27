@@ -52,7 +52,7 @@ def protocol_value() -> dict:
         raise RuntimeError("V5.14 predecessor evidence is invalid")
     value = copy.deepcopy(predecessor)
     value.update({
-        "schema_version": "revealnav-r2r-v5.14-ensemble-protocol/1",
+        "schema_version": "revealnav-r2r-v5.14-ensemble-protocol/2",
         "status": (
             "SEALED_V5_14_AFTER_TRAIN_ONLY_FEASIBILITY_"
             "BEFORE_BENCHMARK_VALIDATION"
@@ -90,6 +90,8 @@ def protocol_value() -> dict:
         "source_split": "R2R train only",
         "partition": "unchanged scene-disjoint train/calibration/dev",
         "member_seeds": [20260826, 20260827, 20260828],
+        # Evaluator-compatible alias. Both fields are required to be identical.
+        "seeds": [20260826, 20260827, 20260828],
         "deployment": "all three members in one deterministic ensemble",
         "aggregation_selected_without_internal_dev_metrics": False,
         "selection_disclosure": (
@@ -104,6 +106,23 @@ def protocol_value() -> dict:
             "ensemble net positive; >=5 activations in each; activation rates<=0.20"
         ),
         "failed_single_model_result_retained": True,
+    }
+    value["correctness_revision"] = {
+        "version": "V5.14.1",
+        "pre_correction_protocol_sha256": (
+            "41b80a2f442035db912e609f8df48e9124a51cbfd98ff6485f3f88e0b2c7f8d2"
+        ),
+        "timing": (
+            "after complete val_seen episode execution, before successful val_seen "
+            "metric aggregation, and before any val_unseen access"
+        ),
+        "change": (
+            "add training_lock.seeds as an exact schema alias of member_seeds for "
+            "the already-frozen evaluator"
+        ),
+        "method_matrix_seeds_thresholds_and_gates_changed": False,
+        "val_seen_metrics_seen_before_revision": False,
+        "val_unseen_payload_opened_before_revision": False,
     }
     for group in value["groups"]:
         if group["id"] != "etp_r1":

@@ -21,3 +21,9 @@ benchmark success criteria. It strengthens deployment stability and resolves the
 previous mismatch between one selected deployment checkpoint and three evaluation
 checkpoint alternatives. The failed V5.13.1 training result remains preserved as
 negative engineering evidence.
+
+V5.14.1 is a schema-only correctness revision made after all `val_seen` episode runs
+finished but before their metrics were successfully aggregated and before any
+`val_unseen` access. It adds `training_lock.seeds` as an exact alias of
+`training_lock.member_seeds`, which the already-frozen evaluator expected. No method,
+matrix, seed, threshold, gate, episode output, or metric value changed.
