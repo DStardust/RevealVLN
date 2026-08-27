@@ -1,0 +1,41 @@
+{
+  "schema_version": "revealnav-ree-q-fusion-return-executor-lock/4.5",
+  "status": "LOCKED_BEFORE_POST_EXCURSION_DATA_GENERATION",
+  "locked_at_utc": "2026-08-27T12:52:00Z",
+  "source_git_commit": "e11544ced83459010abf791db10f2e881888dbfd",
+  "fusion_controller_lock": "locks/REE_Q_FUSION_CONTROLLER_V4_4.json",
+  "fresh_cross_style_confirmation": {
+    "path": "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_2/R2R_UNSEEN_FUSION_RESULT_V4_4_2.json",
+    "bytes": 7436,
+    "sha256": "d4878f47ed2bf80726dc76764893e6adba40b00a011cbf5d45a765d50c524553",
+    "status": "R2R_UNSEEN_FUSION_CONFIRMATION_PASS",
+    "aligned_persistent_decisions": 10,
+    "fused_all_three_branch_agreement": 0.7,
+    "raw_q_all_three_branch_agreement": 0.5
+  },
+  "return_executor": {
+    "protocol_path": "artifacts/evaluation/mf2_return_executor_v4_5/MF2_RETURN_EXECUTOR_PROTOCOL_V4_5.json",
+    "protocol_sha256": "17d55b28ba34e1585daaca28ec4bf46f3c0cd5b6ce8e5f61339bc0af9385f877",
+    "result_path": "artifacts/evaluation/mf2_return_executor_v4_5/MF2_RETURN_EXECUTOR_RESULT_V4_5.json",
+    "result_bytes": 958,
+    "result_sha256": "8e95ddfdf53527b158251cf1631a288d9c91b7b0efed801ccea2f525de3a9d75",
+    "status": "RETURN_EXECUTOR_ENGINEERING_GATE_PASS"
+  },
+  "authorized_next_stage": {
+    "name": "train-only post-excursion observation and BACKTRACK-label generation",
+    "allowed_sources": [
+      "existing train-only branch-excursion event manifest",
+      "public MP3D train scenes already acquired inside the project",
+      "frozen ETP-R1 feature frontend and frozen public return controller"
+    ],
+    "forbidden_sources": ["Gold", "val_seen", "val_unseen", "test", "test_challenge"],
+    "paper_result": false
+  },
+  "freeze_rules": [
+    "Do not alter the six locked REE/Q checkpoints or fusion coefficient.",
+    "Post-excursion model input may end only at the reached branch state and may not include the return rollout or target truth.",
+    "Offline target identity and bounded counterfactual rollouts may be used only to construct labels.",
+    "Controller failure is retained fail-closed and may not be silently dropped.",
+    "No unseen or Gold payload may be used for training or selection."
+  ]
+}
