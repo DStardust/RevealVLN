@@ -143,9 +143,11 @@ def scene_partition(scenes: list[str]) -> dict[str, str]:
     }
 
 
-def load_summaries(runs: Path) -> list[dict]:
+def load_summaries(
+    runs: Path, summary_pattern: str = "ep_*/RUN_SUMMARY.json",
+) -> list[dict]:
     summaries = []
-    for path in sorted(runs.glob("ep_*/RUN_SUMMARY.json")):
+    for path in sorted(runs.glob(summary_pattern)):
         value = json.loads(path.read_text())
         if value.get("status") != "PASS" or value.get("split") != "train":
             raise RuntimeError(f"invalid feature worker summary: {path}")
@@ -157,13 +159,20 @@ def load_summaries(runs: Path) -> list[dict]:
     return summaries
 
 
-def build(runs: Path, output_dir: Path) -> dict:
+def build(
+    runs: Path, output_dir: Path,
+    summary_pattern: str = "ep_*/RUN_SUMMARY.json",
+) -> dict:
     runs = runs.resolve()
     output_dir = output_dir.resolve()
     if ROOT not in runs.parents or ROOT not in output_dir.parents:
         raise RuntimeError("input or output escapes the project")
     episodes = load_episodes()
-    summaries = load_summaries(runs)
+    summaries = load_summaries(runs, summary_pattern)
+    source_policies = {summary.get("source_policy") for summary in summaries}
+    if source_policies not in ({None}, {"V5.6 shadow proposals"}):
+        raise RuntimeError("mixed or unsupported feature source policies")
+    policy_induced = source_policies == {"V5.6 shadow proposals"}
     events = [event for summary in summaries for event in summary["feature_events"]]
     by_scene: dict[str, list[dict]] = defaultdict(list)
     for event in events:
@@ -177,6 +186,15 @@ def build(runs: Path, output_dir: Path) -> dict:
         pathfinder = make_pathfinder(scene)
         try:
             for event in by_scene[scene]:
+                if policy_induced and (
+                    event.get("policy_induced") is not True
+                    or event.get("proposed_branch_id")
+                    not in event.get("candidate_branch_ids", ())
+                    or event.get("proposed_branch_id")
+                    == event.get("native_branch_id")
+                    or len(event.get("candidate_branch_ids", ())) != 2
+                ):
+                    raise RuntimeError("policy-induced proposal identity drift")
                 episode = episodes[event["episode_id"]]
                 reference = [list(map(float, point)) for point in episode["reference_path"]]
                 if len(reference) < 2:
@@ -220,6 +238,11 @@ def build(runs: Path, output_dir: Path) -> dict:
                 )
                 for alternative_index, alternative in enumerate(branches):
                     if alternative == native:
+                        continue
+                    if (
+                        policy_induced
+                        and alternative != event["proposed_branch_id"]
+                    ):
                         continue
                     alternative_cost, alternative_outbound, alternative_merge = merge_cost(
                         pathfinder, checkpoint, event["candidate_positions"][alternative],
@@ -273,6 +296,12 @@ def build(runs: Path, output_dir: Path) -> dict:
                         "round_trip_cost_m": round(round_trip, 6),
                         "realized_trial_net_m": round(realized_trial_net, 6),
                         "better_by_margin": better,
+                        **({
+                            "controller_seed": event["controller_seed"],
+                            "proposal_action": event["proposal_action"],
+                            "proposed_branch_id": event["proposed_branch_id"],
+                            "policy_induced": True,
+                        } if policy_induced else {}),
                     })
         finally:
             del pathfinder
@@ -288,10 +317,27 @@ def build(runs: Path, output_dir: Path) -> dict:
     }
     atomic_npz(array_path, tensor_arrays)
     value = {
-        "schema_version": "revealnav-r2r-train-net-advantage-dataset/1",
-        "status": "R2R_TRAIN_NET_ADVANTAGE_DATASET_READY",
+        "schema_version": (
+            "revealnav-r2r-train-policy-induced-net-advantage-dataset/1"
+            if policy_induced else
+            "revealnav-r2r-train-net-advantage-dataset/1"
+        ),
+        "status": (
+            "R2R_TRAIN_POLICY_INDUCED_NET_ADVANTAGE_DATASET_READY"
+            if policy_induced else "R2R_TRAIN_NET_ADVANTAGE_DATASET_READY"
+        ),
         "source_runs": str(runs.relative_to(ROOT)),
         "completed_episodes": len(summaries),
+        "completed_runs": len(summaries),
+        "unique_episodes": len({summary["episode_id"] for summary in summaries}),
+        "source_policy": (
+            "V5.6 shadow proposals" if policy_induced else
+            "all aligned ETP alternatives"
+        ),
+        "controller_seeds": sorted({
+            summary["controller_seed"] for summary in summaries
+            if "controller_seed" in summary
+        }),
         "source_feature_events": len(events),
         "training_rows": len(records),
         "positive_rows": sum(row["better_by_margin"] for row in records),
@@ -338,8 +384,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--runs", required=True, type=Path)
     parser.add_argument("--output-dir", required=True, type=Path)
+    parser.add_argument(
+        "--summary-pattern", default="ep_*/RUN_SUMMARY.json",
+    )
     args = parser.parse_args()
-    value = build(args.runs, args.output_dir)
+    value = build(args.runs, args.output_dir, args.summary_pattern)
     print(json.dumps({key: value[key] for key in (
         "status", "completed_episodes", "source_feature_events", "training_rows",
         "positive_rows", "negative_rows", "train_rows", "calibration_rows",

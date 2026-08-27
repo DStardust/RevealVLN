@@ -1,0 +1,56 @@
+{
+  "benchmark_boundary": {
+    "completed_v5_14_val_seen_is_development_evidence": true,
+    "paper_result": false,
+    "post_hoc_threshold_search_on_v5_14_val_seen_forbidden": true,
+    "rerun_val_seen_only_after_v5_15_internal_gate": true,
+    "test_or_challenge_access": false,
+    "val_unseen_payload_opened": false
+  },
+  "calibration": {
+    "fit_scope": "recalibrate the frozen ensemble score on policy-induced calibration rows; no validation score or task metric selects the threshold",
+    "frozen_ensemble_training_result": "artifacts/phase1/r2r_train_net_advantage/full/training_v5_14/R2R_SPARSE_NET_ADVANTAGE_TRAINING_RESULT.json",
+    "frozen_ensemble_training_sha256": "1ef18e9c383d28d7aa9ba8181babbe6cedb2a379e85cdf645d4b186ac4aa7ce4",
+    "internal_dev_gate": ">=5 activations, positive realized mean net per event, positive precision >0.5, activation rate <=0.10, and finite ensemble scores",
+    "member_seeds": [
+      20260826,
+      20260827,
+      20260828
+    ],
+    "minimum_dataset_gate": ">=300 finite policy rows, all 61 train scenes represented in run coverage, and >=5 positive rows in calibration and dev each",
+    "scene_partition": "unchanged deterministic 70/15/15 train/calibration/dev",
+    "threshold_selection": "maximize calibration realized mean net per event, then precision, then sparsity; require activation rate <=0.10 and >=5 activations"
+  },
+  "collection": {
+    "controller_seeds": [
+      20260826,
+      20260827,
+      20260828
+    ],
+    "future_or_oracle_online_inputs": false,
+    "label": "unchanged shortest-geodesic merge into the remaining R2R reference route; reference and geodesics are labels only",
+    "metric_or_label_dependent_early_stopping": false,
+    "mode": "V5.6 shadow proposals over the native ETP-R1 trajectory",
+    "native_action_overridden": false,
+    "proposal_filter": "commit or explore, proposed differs from native, and both have complete causal online embeddings and graph positions",
+    "runs": 10809,
+    "selection": "artifacts/phase1/r2r_train_policy_calibration_v5_15/R2R_TRAIN_V5_15_POLICY_SELECTION.json",
+    "selection_sha256": "736555ca41e4dfb5ad78e6a5854f0c55a69c6fc5471ae1e4e8cd282d1341e27d",
+    "split": "R2R train only",
+    "unique_episodes": 3603
+  },
+  "revision_scope": "policy-induced score calibration only; candidate-level ensemble weights, V5.6, REE, ECOG, and OPP remain frozen",
+  "schema_version": "revealnav-r2r-v5.15-policy-calibration-protocol/1",
+  "sources": {
+    "scripts/build_r2r_train_net_advantage_labels.py": "1ee88872b646fdef0f7f84b3f3e7e5b24d76497ccf8fc76bfda50d779aae9b98",
+    "scripts/calibrate_r2r_v5_15_policy_threshold.py": "70bd6ed3018695e751546ae551460257c529959c5b6f3ff3f0065a3801ab18e7",
+    "scripts/r2r_train_v5_15_policy_proposal_worker.py": "15b040eb537a5a52d89e1585f9436c575be4d38c3bc6d99912c9e504481473c0",
+    "scripts/run_r2r_v5_15_policy_calibration_pipeline.py": "a91e225e90d2d979cd357c5d658b3f5a22433aca3f0c2263ce51a66fd83992f1"
+  },
+  "status": "SEALED_V5_15_BEFORE_POLICY_INDUCED_COLLECTION",
+  "trigger": {
+    "finding": "304 of 304 main Net-Advantage decisions were vetoed because the +3.641m all-candidate threshold exceeded every online score",
+    "sha256": "3cd19f57adeaa9aca1a0dd3afcde4b6a8155bd1de05dea82134e5ca236cd997c",
+    "v5_14_val_seen_result": "artifacts/evaluation/mf2_r2r_v5_14_net_advantage/val_seen/R2R_V5_13_1_PAIRED_RESULT.json"
+  }
+}
