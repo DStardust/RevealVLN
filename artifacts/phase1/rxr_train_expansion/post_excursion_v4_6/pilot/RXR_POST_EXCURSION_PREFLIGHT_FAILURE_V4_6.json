@@ -1,0 +1,13 @@
+{
+  "schema_version": "revealnav-mf2-post-excursion-preflight-failure/4.6",
+  "status": "PREFLIGHT_FAILED_NO_FEATURE_OUTPUT_ACCEPTED",
+  "failed_lanes": 2,
+  "failure_type": "Habitat-Sim 0.1.7 simultaneous simulator EGL lifecycle",
+  "observed_error": "Simulator::gpuDevice: no OpenGL context.",
+  "root_cause": "The worker opened the route simulator and frozen-feature renderer at the same time in one process.",
+  "correction": "V4.6.1 closes the route simulator after recording reached poses and bounded labels, then opens the feature renderer.",
+  "scientific_contract_changed": false,
+  "feature_files_written": 0,
+  "training_authorized": false,
+  "paper_result": false
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "revealnav-mf2-post-excursion-pilot-result/4.6.1",
+  "status": "POST_EXCURSION_PILOT_GATE_PASS",
+  "counts": {
+    "branches": 40,
+    "trainable": 40,
+    "preferred_CONTINUE": 16,
+    "outbound_match": 40,
+    "return_failure": 14,
+    "preferred_BACKTRACK": 15,
+    "preferred_TIE": 9
+  },
+  "gates": {
+    "all_16_events_and_40_branches_complete": true,
+    "all_outbound_replays_match_sealed_v4": true,
+    "all_40_reached_state_features_finite": true,
+    "both_strict_continue_and_backtrack_labels_present": true,
+    "bounded_return_failures_retained_as_ties": true,
+    "two_event_feature_replay_is_byte_identical": true,
+    "no_future_gold_development_or_unseen_payload": true,
+    "input_npz_contains_no_target_field": true,
+    "no_part_files": true
+  },
+  "repeat_feature_and_route_equal": [
+    true,
+    true
+  ],
+  "wall_clock_s": 150.235907,
+  "manifest": {
+    "path": "artifacts/phase1/rxr_train_expansion/post_excursion_v4_6_1/pilot/RXR_POST_EXCURSION_PILOT_MANIFEST_V4_6_1.json",
+    "bytes": 10612,
+    "sha256": "094dac1162338d522aff71454bedc0902c9aa7171310e70c966d1cab257f8a0c"
+  },
+  "protocol_sha256": "01f6c0a385c596278aa9437ec5756ca046f142c1a385e2f603325c8f54d56df2",
+  "full_generation_authorized": true,
+  "training_authorized": false,
+  "gold_payload_read": false,
+  "paper_result": false,
+  "next_gate": "full train-only reached-state generation"
+}

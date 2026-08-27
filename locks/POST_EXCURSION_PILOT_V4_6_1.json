@@ -1,0 +1,33 @@
+{
+  "schema_version": "revealnav-post-excursion-pilot-lock/4.6.1",
+  "status": "LOCKED_BEFORE_FULL_TRAIN_ONLY_GENERATION",
+  "parent_lock": "locks/REE_Q_FUSION_RETURN_EXECUTOR_V4_5.json",
+  "design": {
+    "path": "artifacts/design/MF2_POST_EXCURSION_BACKTRACK_V4_6.md",
+    "sha256": "79a6e24c01fd524ecc2e175277892cc44b56995cc023e2f163b76ea2ce60fc5d"
+  },
+  "failed_preflight": {
+    "path": "artifacts/phase1/rxr_train_expansion/post_excursion_v4_6/pilot/RXR_POST_EXCURSION_PREFLIGHT_FAILURE_V4_6.json",
+    "sha256": "6fdd1d59b035116c25e076d4bf1cdac55b717836fa4ff725240ba8dcfeaca7c6",
+    "feature_files_written": 0
+  },
+  "accepted_protocol": {
+    "path": "artifacts/phase1/rxr_train_expansion/post_excursion_v4_6_1/RXR_POST_EXCURSION_PROTOCOL_V4_6_1.json",
+    "bytes": 2767,
+    "sha256": "01f6c0a385c596278aa9437ec5756ca046f142c1a385e2f603325c8f54d56df2"
+  },
+  "accepted_result": {
+    "path": "artifacts/phase1/rxr_train_expansion/post_excursion_v4_6_1/pilot/RXR_POST_EXCURSION_PILOT_RESULT_V4_6_1.json",
+    "bytes": 1404,
+    "sha256": "3350119906e954fbdbd18758c92fcc54c6dadea2a28a69183a6f0699de7169d7",
+    "status": "POST_EXCURSION_PILOT_GATE_PASS",
+    "events": 16,
+    "branches": 40,
+    "strict_continue": 16,
+    "strict_backtrack": 15,
+    "ties": 9
+  },
+  "authorized_next_stage": "full 424-event train-only reached-state generation",
+  "forbidden_sources": ["Gold", "val_seen", "val_unseen", "test", "test_challenge"],
+  "paper_result": false
+}

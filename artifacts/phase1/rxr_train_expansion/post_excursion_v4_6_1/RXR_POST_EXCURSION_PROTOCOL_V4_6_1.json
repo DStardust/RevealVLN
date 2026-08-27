@@ -1,0 +1,69 @@
+{
+  "schema_version": "revealnav-mf2-post-excursion-protocol/4.6.1",
+  "status": "SEALED_BEFORE_POST_EXCURSION_PILOT",
+  "event_ids": [
+    "x0345_ep1363_hv02",
+    "x0898_ep47964_hv03",
+    "x0888_ep30696_hv01",
+    "x2206_ep43962_hv01",
+    "x1200_ep54626_hv04",
+    "x0227_ep20741_hv02",
+    "x1988_ep52424_hv03",
+    "x1383_ep24527_hv01",
+    "x1439_ep19311_hv01",
+    "x1539_ep55120_hv03",
+    "x0591_ep56920_hv03",
+    "x0687_ep26317_hv01",
+    "x0006_ep7289_hv03",
+    "x0549_ep29283_hv05",
+    "x0533_ep39612_hv02",
+    "x1901_ep29519_hv04"
+  ],
+  "selection": "four minimum sha256(event_id) events per label-source x candidate-count stratum among events whose sealed outbound routes all succeed",
+  "strata": {
+    "automatic_secondary_pseudolabel:k2": 4,
+    "automatic_secondary_pseudolabel:k3": 4,
+    "primary_human_audited:k2": 4,
+    "primary_human_audited:k3": 4
+  },
+  "expected_events": 16,
+  "expected_branches": 40,
+  "repeat_event_ids": [
+    "x0345_ep1363_hv02",
+    "x0006_ep7289_hv03"
+  ],
+  "input_boundary": {
+    "ends_at": "reached branch state before return rollout",
+    "front_observation_only": true,
+    "future_frames": 0,
+    "target_truth_in_input": false
+  },
+  "costs": {
+    "continue_target": 0.0,
+    "continue_wrong": 5.0,
+    "backtrack": "bounded reached->Q->target frozen-controller cost",
+    "backtrack_target_additional_missed_opportunity": 5.0,
+    "controller_failure": 5.0,
+    "outbound_excursion_is_sunk": true
+  },
+  "pilot_gates": {
+    "all_16_events_and_40_branches_complete": true,
+    "all_outbound_replays_match_sealed_v4": true,
+    "all_40_reached_state_features_finite": true,
+    "both_strict_continue_and_backtrack_labels_present": true,
+    "bounded_return_failures_retained_as_ties": true,
+    "two_event_feature_replay_is_byte_identical": true,
+    "no_future_gold_development_or_unseen_payload": true
+  },
+  "sources": {
+    "artifacts/phase1/rxr_train_expansion/branch_excursion_v4/RXR_BRANCH_EXCURSION_LABEL_MANIFEST_V4.json": "fdabde073b1c709c3f22ae5d684903d685f8d5b8ac18964a23dd775784141dd4",
+    "artifacts/phase1/rxr_train_expansion/branch_excursion_v4/RXR_BRANCH_EXCURSION_CORRECTNESS_ACCEPTANCE_V4_1.json": "5e21a97148580282a719d1235e6d8f592cc7c0f9efa1587c10e090a2c822f035",
+    "locks/REE_Q_FUSION_RETURN_EXECUTOR_V4_5.json": "7cca214bb602e548940ef81497d81f6d893a8ec549ef32c65ac520714110d655",
+    "artifacts/design/MF2_POST_EXCURSION_BACKTRACK_V4_6.md": "79a6e24c01fd524ecc2e175277892cc44b56995cc023e2f163b76ea2ce60fc5d",
+    "scripts/rxr_post_excursion_feature_worker_v4_6.py": "83f9a48997927e76849f9c44b3d5c624d7676fb7e0f577af10b4dd91c26612fe"
+  },
+  "full_generation_authorized_after_pass": true,
+  "training_authorized": false,
+  "gold_payload_read": false,
+  "paper_result": false
+}
