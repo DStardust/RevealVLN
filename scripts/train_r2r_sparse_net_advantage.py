@@ -21,7 +21,10 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from revealnav_net_advantage import PairwiseNetAdvantageHead  # noqa: E402
+from revealnav_net_advantage import (  # noqa: E402
+    ONLINE_SCORE_DEFINITION,
+    PairwiseNetAdvantageHead,
+)
 
 
 SEEDS = (20260826, 20260827, 20260828)
@@ -123,7 +126,7 @@ def predict(model, batch, arrays, indices) -> tuple[np.ndarray, np.ndarray, np.n
         )
     probability = torch.sigmoid(logits).cpu().numpy()
     gain_m = gain.cpu().numpy() * 10.0
-    penalty = arrays["round_trip_cost"][indices].astype(np.float32)
+    penalty = 2.0 * arrays["immediate_costs"][indices, 1].astype(np.float32)
     score = probability * gain_m - (1.0 - probability) * penalty
     return probability, gain_m, score
 
@@ -216,7 +219,11 @@ def one_seed(
         "seed": seed,
         "model_state_dict": model.state_dict(),
         "calibrated_score_threshold": threshold,
-        "score_definition": "p_better*positive_gain-(1-p_better)*round_trip_cost",
+        "score_definition": ONLINE_SCORE_DEFINITION,
+        "online_wrong_trial_cost": (
+            "two times checkpoint-to-alternative Euclidean distance from the "
+            "causal ETP graph"
+        ),
         "immediate_cost_scale_m": 10.0,
         "input_dim": 768,
         "projection_dim": 96,

@@ -1,0 +1,1118 @@
+{
+  "findings": [
+    "V5.11 direct interventions are not a viable main result: mean SPL benefit is -0.147246.",
+    "V5.12 return mechanics mostly execute, but branch selection remains harmful: 58 successful returns versus 1 failed, while mean SPL benefit is -0.144445.",
+    "Reversibility alone does not recover task performance: V5.12 minus V5.11 mean SPL benefit changes by 0.002800 and nDTW by -0.010158.",
+    "The next intervention should therefore be a causal pre-action veto trained on branch-level net advantage, while V5.6 remains the validated proposal backbone."
+  ],
+  "fresh_confirmation_claim": false,
+  "paper_result": false,
+  "schema_version": "revealnav-r2r-v5.11-v5.12-failure-analysis/1",
+  "scope": "already-opened val_seen development metrics and causal traces only",
+  "status": "PASS",
+  "task_metrics_already_opened_for_method_development": true,
+  "unseen_or_test_read": false,
+  "v5_12_minus_v5_11_benefit": {
+    "collisions": 0.0005613171945164624,
+    "distance_to_goal": -0.7631588007013004,
+    "ndtw": -0.010157630972927392,
+    "oracle_success": 0.0,
+    "path_length": -2.4541261063681707,
+    "sdtw": 0.0014690896148313315,
+    "spl": 0.002800458968942654,
+    "steps_taken": -24.59722222222221,
+    "success": 0.013888888888888895
+  },
+  "versions": {
+    "v5_11": {
+      "harm_diagnostics": {
+        "episodes_with_negative_spl": 10,
+        "mean_interventions_harmed": 0.8,
+        "mean_interventions_not_harmed": 1.023809523809524,
+        "negative_spl_fraction": 0.4166666666666667,
+        "pearson_interventions_vs_spl_benefit": 0.3784753113532939
+      },
+      "mean_benefit": {
+        "collisions": 0.0042643032824897275,
+        "distance_to_goal": -1.9244955604275067,
+        "ndtw": -0.09994475437528048,
+        "oracle_success": -0.23611111111111113,
+        "path_length": -1.9070833126703894,
+        "sdtw": -0.11455907421864124,
+        "spl": -0.14724586491690128,
+        "steps_taken": -30.402777777777782,
+        "success": -0.15277777777777776
+      },
+      "paired_episodes": 24,
+      "paired_runs": 72,
+      "per_episode": {
+        "102": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.024400871459695012,
+            "distance_to_goal": -3.0198910236358643,
+            "ndtw": -0.131664902108209,
+            "oracle_success": -0.3333333333333333,
+            "path_length": -0.7181046803792318,
+            "sdtw": -0.27887746487256715,
+            "spl": -0.26015421890100315,
+            "steps_taken": -51.666666666666664,
+            "success": -0.3333333333333333
+          }
+        },
+        "103": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.2428774928774929,
+            "distance_to_goal": -3.5344558556874595,
+            "ndtw": -0.21397176117047387,
+            "oracle_success": -0.3333333333333333,
+            "path_length": 2.3985764185587564,
+            "sdtw": -0.27887746487256715,
+            "spl": -0.26015421890100315,
+            "steps_taken": -66.66666666666667,
+            "success": -0.3333333333333333
+          }
+        },
+        "119": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.3333333333333333,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.033639143730886854,
+            "distance_to_goal": 0.013880014419555664,
+            "ndtw": 0.18911230732171988,
+            "oracle_success": 0.0,
+            "path_length": 0.2814464569091797,
+            "sdtw": 0.4546127863557709,
+            "spl": 0.29166637831476244,
+            "steps_taken": -16.0,
+            "success": 0.6666666666666666
+          }
+        },
+        "121": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": -0.1798377831776937,
+            "ndtw": -0.03522421373393118,
+            "oracle_success": 0.0,
+            "path_length": -1.25,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -11.666666666666666,
+            "success": 0.0
+          }
+        },
+        "194": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.00012098115718476843,
+            "distance_to_goal": -3.178914388020833e-07,
+            "ndtw": 1.7613616135340278e-07,
+            "oracle_success": 0.0,
+            "path_length": 0.6666692097981771,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 1.3333333333333333,
+            "success": 0.0
+          }
+        },
+        "195": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.07625272331154687,
+            "distance_to_goal": -2.6176278988520303,
+            "ndtw": -0.3713227316105847,
+            "oracle_success": -0.6666666666666666,
+            "path_length": -5.133454004923503,
+            "sdtw": -0.604836924198073,
+            "spl": -0.628171347216936,
+            "steps_taken": -66.0,
+            "success": -0.6666666666666666
+          }
+        },
+        "196": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.3333333333333333,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.06440022111663905,
+            "distance_to_goal": 0.014328360557556152,
+            "ndtw": -0.1191647110361534,
+            "oracle_success": 0.0,
+            "path_length": -4.957382837931315,
+            "sdtw": -0.1191647110361534,
+            "spl": -0.30006624543546473,
+            "steps_taken": -77.33333333333333,
+            "success": 0.0
+          }
+        },
+        "258": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.011334289813486368,
+            "distance_to_goal": -3.468424141407013,
+            "ndtw": -0.043737001244683715,
+            "oracle_success": 0.0,
+            "path_length": 0.6695556640625,
+            "sdtw": -0.8103543306522288,
+            "spl": -0.6580212490354328,
+            "steps_taken": 10.0,
+            "success": -1.0
+          }
+        },
+        "260": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.041666666666666664,
+            "distance_to_goal": -1.6682660579681396,
+            "ndtw": -0.3028397216435195,
+            "oracle_success": -1.0,
+            "path_length": -4.543600082397461,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -38.0,
+            "success": 0.0
+          }
+        },
+        "351": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.2657342657342656,
+            "distance_to_goal": -0.38186168670654297,
+            "ndtw": -0.10352606877926929,
+            "oracle_success": 0.0,
+            "path_length": -2.3469953536987305,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 30.0,
+            "success": 0.0
+          }
+        },
+        "359": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.0012639942217407014,
+            "distance_to_goal": 0.14859223365783691,
+            "ndtw": 0.05759786884872953,
+            "oracle_success": 0.0,
+            "path_length": 1.7500038146972656,
+            "sdtw": 0.05759786884872953,
+            "spl": 0.04667623824376799,
+            "steps_taken": 18.0,
+            "success": 0.0
+          }
+        },
+        "376": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 2.3333333333333335,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 1.7738404273986816,
+            "ndtw": -0.40301301740279566,
+            "oracle_success": 0.0,
+            "path_length": -18.41666603088379,
+            "sdtw": 0.31619260017630596,
+            "spl": 0.230254928899109,
+            "steps_taken": -174.0,
+            "success": 1.0
+          }
+        },
+        "44": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.048429118773946365,
+            "distance_to_goal": -10.032368818918863,
+            "ndtw": -0.41267265006676884,
+            "oracle_success": -0.6666666666666666,
+            "path_length": -11.642786661783854,
+            "sdtw": -0.5120486309979472,
+            "spl": -0.6375626214660083,
+            "steps_taken": -78.0,
+            "success": -0.6666666666666666
+          }
+        },
+        "449": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 0.41422172387441,
+            "ndtw": -0.06852852284143458,
+            "oracle_success": 0.0,
+            "path_length": -3.9166666666666665,
+            "sdtw": -0.06852852284143458,
+            "spl": -0.12314032977462312,
+            "steps_taken": -32.0,
+            "success": 0.0
+          }
+        },
+        "45": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0394949494949495,
+            "distance_to_goal": -1.1542458534240723,
+            "ndtw": -0.10728434980431885,
+            "oracle_success": -0.6666666666666666,
+            "path_length": -2.1427828470865884,
+            "sdtw": -0.5120486309979472,
+            "spl": -0.6375626214660083,
+            "steps_taken": -21.333333333333332,
+            "success": -0.6666666666666666
+          }
+        },
+        "470": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.11955617198335644,
+            "distance_to_goal": -0.0011243820190429688,
+            "ndtw": -0.000965569162491592,
+            "oracle_success": 0.0,
+            "path_length": -9.596616744995117,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -87.0,
+            "success": 0.0
+          }
+        },
+        "475": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.051351907062814846,
+            "distance_to_goal": -1.9656791687011719,
+            "ndtw": 0.06682789590748955,
+            "oracle_success": 0.0,
+            "path_length": 1.5853729248046875,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 33.0,
+            "success": 0.0
+          }
+        },
+        "497": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 0.0,
+            "ndtw": 0.0,
+            "oracle_success": 0.0,
+            "path_length": 0.0,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 0.0,
+            "success": 0.0
+          }
+        },
+        "517": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.16146230007616147,
+            "distance_to_goal": -0.3158111572265625,
+            "ndtw": 0.003927150790231259,
+            "oracle_success": 0.0,
+            "path_length": 3.6863937377929688,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -26.0,
+            "success": 0.0
+          }
+        },
+        "585": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.3333333333333333,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.02179373522458629,
+            "distance_to_goal": -0.5031334559122721,
+            "ndtw": -0.026456683553341687,
+            "oracle_success": 0.0,
+            "path_length": -6.874014536539714,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -55.0,
+            "success": 0.0
+          }
+        },
+        "603": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 0.6546014149983724,
+            "ndtw": 0.004633972519735846,
+            "oracle_success": 0.0,
+            "path_length": 3.500727335611979,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 21.0,
+            "success": 0.0
+          }
+        },
+        "669": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.019005690969612368,
+            "distance_to_goal": -0.4938179651896159,
+            "ndtw": -0.07158251765004695,
+            "oracle_success": 0.0,
+            "path_length": -0.3707936604817708,
+            "sdtw": -0.08831903742072587,
+            "spl": -0.13043855261444445,
+            "steps_taken": -11.333333333333334,
+            "success": -0.6666666666666666
+          }
+        },
+        "711": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": -16.48303186893463,
+            "ndtw": -0.26547715176452163,
+            "oracle_success": -1.0,
+            "path_length": 11.373682975769043,
+            "sdtw": -0.30476531873855184,
+            "spl": -0.46722689865234623,
+            "steps_taken": 33.0,
+            "success": -1.0
+          }
+        },
+        "753": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": -0.052196481784100746,
+            "distance_to_goal": -3.38778018951416,
+            "ndtw": -0.04334190295825463,
+            "oracle_success": -1.0,
+            "path_length": 0.22743606567382812,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -64.0,
+            "success": 0.0
+          }
+        }
+      },
+      "total_activity": {
+        "backtrack_decisions": 0,
+        "checkpointed_excursions": 0,
+        "effective_commit_interventions": 67,
+        "explore_decisions": 0,
+        "failed_returns": 0,
+        "successful_returns": 0
+      },
+      "trace_event_counts": {
+        "commit_executed": 97,
+        "opp_initial_decision": 129
+      }
+    },
+    "v5_12": {
+      "harm_diagnostics": {
+        "episodes_with_negative_spl": 10,
+        "mean_interventions_harmed": 1.233333333333333,
+        "mean_interventions_not_harmed": 1.380952380952381,
+        "negative_spl_fraction": 0.4166666666666667,
+        "pearson_interventions_vs_spl_benefit": 0.08060972000054412
+      },
+      "mean_benefit": {
+        "collisions": 0.00482562047700619,
+        "distance_to_goal": -2.687654361128807,
+        "ndtw": -0.11010238534820788,
+        "oracle_success": -0.23611111111111113,
+        "path_length": -4.36120941903856,
+        "sdtw": -0.11308998460380991,
+        "spl": -0.14444540594795863,
+        "steps_taken": -54.99999999999999,
+        "success": -0.13888888888888887
+      },
+      "paired_episodes": 24,
+      "paired_runs": 72,
+      "per_episode": {
+        "102": {
+          "activity": {
+            "backtrack_decisions": 1.0,
+            "checkpointed_excursions": 1.3333333333333333,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 1.3333333333333333,
+            "failed_returns": 0.0,
+            "successful_returns": 1.0
+          },
+          "benefit": {
+            "collisions": -0.029615822719271028,
+            "distance_to_goal": -9.461107651392618,
+            "ndtw": -0.4474531327000038,
+            "oracle_success": -1.0,
+            "path_length": -1.8822402954101562,
+            "sdtw": -0.8366323946177014,
+            "spl": -0.7804626567030096,
+            "steps_taken": -115.66666666666667,
+            "success": -1.0
+          }
+        },
+        "103": {
+          "activity": {
+            "backtrack_decisions": 1.3333333333333333,
+            "checkpointed_excursions": 2.0,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 2.0,
+            "failed_returns": 0.0,
+            "successful_returns": 1.3333333333333333
+          },
+          "benefit": {
+            "collisions": -0.4089467879790461,
+            "distance_to_goal": -9.558809995651245,
+            "ndtw": -0.5630105639198139,
+            "oracle_success": -1.0,
+            "path_length": 5.094480832417806,
+            "sdtw": -0.8366323946177014,
+            "spl": -0.7804626567030096,
+            "steps_taken": -130.66666666666666,
+            "success": -1.0
+          }
+        },
+        "119": {
+          "activity": {
+            "backtrack_decisions": 1.0,
+            "checkpointed_excursions": 1.3333333333333333,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 1.3333333333333333,
+            "failed_returns": 0.0,
+            "successful_returns": 1.0
+          },
+          "benefit": {
+            "collisions": -0.0205761316872428,
+            "distance_to_goal": 1.2660975257555644,
+            "ndtw": 0.2935745079988645,
+            "oracle_success": 0.0,
+            "path_length": 2.4943033854166665,
+            "sdtw": 0.7067809715127057,
+            "spl": 0.4700211181794491,
+            "steps_taken": 9.0,
+            "success": 1.0
+          }
+        },
+        "121": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 1.0,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 1.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": -0.007575757575757576,
+            "distance_to_goal": -0.6841366291046143,
+            "ndtw": -0.10856157385015552,
+            "oracle_success": 0.0,
+            "path_length": -3.3669039408365884,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -42.333333333333336,
+            "success": 0.0
+          }
+        },
+        "194": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": 0.006230529595015576,
+            "distance_to_goal": -11.849632263183594,
+            "ndtw": 2.066182439844565e-06,
+            "oracle_success": 0.0,
+            "path_length": 9.733589172363281,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 72.0,
+            "success": 0.0
+          }
+        },
+        "195": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": 0.05824915824915827,
+            "distance_to_goal": 0.04021930694580078,
+            "ndtw": -0.059702145654792815,
+            "oracle_success": 0.0,
+            "path_length": -2.999030431111654,
+            "sdtw": -0.059702145654792815,
+            "spl": -0.22375119477156988,
+            "steps_taken": -59.333333333333336,
+            "success": 0.0
+          }
+        },
+        "196": {
+          "activity": {
+            "backtrack_decisions": 0.3333333333333333,
+            "checkpointed_excursions": 0.3333333333333333,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.3333333333333333,
+            "failed_returns": 0.0,
+            "successful_returns": 0.3333333333333333
+          },
+          "benefit": {
+            "collisions": 0.029124579124579136,
+            "distance_to_goal": 0.02010965347290039,
+            "ndtw": -0.029851072827396408,
+            "oracle_success": 0.0,
+            "path_length": -1.499515215555827,
+            "sdtw": -0.029851072827396408,
+            "spl": -0.11187559738578494,
+            "steps_taken": -29.666666666666668,
+            "success": 0.0
+          }
+        },
+        "258": {
+          "activity": {
+            "backtrack_decisions": 1.0,
+            "checkpointed_excursions": 1.0,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 1.0,
+            "failed_returns": 0.0,
+            "successful_returns": 1.0
+          },
+          "benefit": {
+            "collisions": 0.0071374216885052785,
+            "distance_to_goal": -0.834346354007721,
+            "ndtw": -0.12192565164934836,
+            "oracle_success": 0.0,
+            "path_length": -4.776817321777344,
+            "sdtw": -0.3359721423736682,
+            "spl": -0.282249998425992,
+            "steps_taken": -63.333333333333336,
+            "success": -0.3333333333333333
+          }
+        },
+        "260": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.02777777777777778,
+            "distance_to_goal": -1.1121773719787598,
+            "ndtw": -0.20189314776234635,
+            "oracle_success": -0.6666666666666666,
+            "path_length": -3.029066721598307,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -25.333333333333332,
+            "success": 0.0
+          }
+        },
+        "351": {
+          "activity": {
+            "backtrack_decisions": 1.3333333333333333,
+            "checkpointed_excursions": 1.3333333333333333,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 1.3333333333333333,
+            "failed_returns": 0.3333333333333333,
+            "successful_returns": 1.0
+          },
+          "benefit": {
+            "collisions": 0.3519741708740749,
+            "distance_to_goal": -0.7239899635314941,
+            "ndtw": -0.1506432243507703,
+            "oracle_success": 0.0,
+            "path_length": -5.35771115620931,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -46.0,
+            "success": 0.0
+          }
+        },
+        "359": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 1.0,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 1.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": 0.0001068545141974479,
+            "distance_to_goal": -1.1071853240331013,
+            "ndtw": -0.02432778915764457,
+            "oracle_success": 0.0,
+            "path_length": -0.33333079020182294,
+            "sdtw": -0.18316037805405114,
+            "spl": -0.13824505817857866,
+            "steps_taken": -3.6666666666666665,
+            "success": -0.3333333333333333
+          }
+        },
+        "376": {
+          "activity": {
+            "backtrack_decisions": 1.6666666666666667,
+            "checkpointed_excursions": 2.6666666666666665,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 2.6666666666666665,
+            "failed_returns": 0.0,
+            "successful_returns": 1.6666666666666667
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 1.237343708674113,
+            "ndtw": -0.35930291546002086,
+            "oracle_success": 0.0,
+            "path_length": -17.16666603088379,
+            "sdtw": 0.24406826074488222,
+            "spl": 0.15208988661558095,
+            "steps_taken": -181.66666666666666,
+            "success": 0.6666666666666666
+          }
+        },
+        "44": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": 0.04762368207623682,
+            "distance_to_goal": -9.879751682281494,
+            "ndtw": -0.41040673669529754,
+            "oracle_success": -0.6666666666666666,
+            "path_length": -10.309453328450521,
+            "sdtw": -0.5120486309979472,
+            "spl": -0.6375626214660083,
+            "steps_taken": -68.66666666666667,
+            "success": -0.6666666666666666
+          }
+        },
+        "449": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 0.0,
+            "ndtw": 0.0,
+            "oracle_success": 0.0,
+            "path_length": 0.0,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 0.0,
+            "success": 0.0
+          }
+        },
+        "45": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": 0.042991452991452996,
+            "distance_to_goal": -5.090086460113525,
+            "ndtw": -0.21689638543994413,
+            "oracle_success": -0.6666666666666666,
+            "path_length": -4.809450785319011,
+            "sdtw": -0.5120486309979472,
+            "spl": -0.6375626214660083,
+            "steps_taken": -42.0,
+            "success": -0.6666666666666666
+          }
+        },
+        "470": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.6666666666666666,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0515736690493972,
+            "distance_to_goal": 0.045450846354166664,
+            "ndtw": -0.0006101211941953276,
+            "oracle_success": 0.0,
+            "path_length": -5.054759979248047,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -54.333333333333336,
+            "success": 0.0
+          }
+        },
+        "475": {
+          "activity": {
+            "backtrack_decisions": 0.3333333333333333,
+            "checkpointed_excursions": 1.3333333333333333,
+            "effective_commit_interventions": 1.0,
+            "explore_decisions": 1.3333333333333333,
+            "failed_returns": 0.0,
+            "successful_returns": 0.3333333333333333
+          },
+          "benefit": {
+            "collisions": -0.03188718686816764,
+            "distance_to_goal": -1.7901891072591145,
+            "ndtw": 0.03255989231289382,
+            "oracle_success": 0.0,
+            "path_length": -1.1107063293457031,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 6.333333333333333,
+            "success": 0.0
+          }
+        },
+        "497": {
+          "activity": {
+            "backtrack_decisions": 0.0,
+            "checkpointed_excursions": 0.0,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.0,
+            "failed_returns": 0.0,
+            "successful_returns": 0.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": 0.0,
+            "ndtw": 0.0,
+            "oracle_success": 0.0,
+            "path_length": 0.0,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 0.0,
+            "success": 0.0
+          }
+        },
+        "517": {
+          "activity": {
+            "backtrack_decisions": 1.0,
+            "checkpointed_excursions": 1.0,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 1.0,
+            "failed_returns": 0.0,
+            "successful_returns": 1.0
+          },
+          "benefit": {
+            "collisions": 0.04683502058070976,
+            "distance_to_goal": 0.008219718933105469,
+            "ndtw": 0.08378849133637105,
+            "oracle_success": 0.0,
+            "path_length": 2.976715087890625,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": 38.0,
+            "success": 0.0
+          }
+        },
+        "585": {
+          "activity": {
+            "backtrack_decisions": 1.3333333333333333,
+            "checkpointed_excursions": 1.6666666666666667,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 1.6666666666666667,
+            "failed_returns": 0.0,
+            "successful_returns": 1.3333333333333333
+          },
+          "benefit": {
+            "collisions": 0.03125,
+            "distance_to_goal": 0.66847825050354,
+            "ndtw": 0.00022742419851073023,
+            "oracle_success": 0.0,
+            "path_length": -9.604652404785156,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -62.666666666666664,
+            "success": 0.0
+          }
+        },
+        "603": {
+          "activity": {
+            "backtrack_decisions": 2.0,
+            "checkpointed_excursions": 2.0,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 2.0,
+            "failed_returns": 0.0,
+            "successful_returns": 2.0
+          },
+          "benefit": {
+            "collisions": -0.051201978208693905,
+            "distance_to_goal": 0.9474032719930013,
+            "ndtw": -0.003287566170188412,
+            "oracle_success": 0.0,
+            "path_length": -37.80339813232422,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -353.3333333333333,
+            "success": 0.0
+          }
+        },
+        "669": {
+          "activity": {
+            "backtrack_decisions": 1.6666666666666667,
+            "checkpointed_excursions": 2.0,
+            "effective_commit_interventions": 0.3333333333333333,
+            "explore_decisions": 2.0,
+            "failed_returns": 0.0,
+            "successful_returns": 1.6666666666666667
+          },
+          "benefit": {
+            "collisions": 0.007462686567164179,
+            "distance_to_goal": 0.5508608420689901,
+            "ndtw": -0.05419575386926826,
+            "oracle_success": 0.0,
+            "path_length": -6.209031422932942,
+            "sdtw": -0.05419575386926826,
+            "spl": -0.02940144379372973,
+            "steps_taken": -48.0,
+            "success": 0.0
+          }
+        },
+        "711": {
+          "activity": {
+            "backtrack_decisions": 1.0,
+            "checkpointed_excursions": 1.0,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 1.0,
+            "failed_returns": 0.0,
+            "successful_returns": 1.0
+          },
+          "benefit": {
+            "collisions": 0.0,
+            "distance_to_goal": -14.937954862912497,
+            "ndtw": -0.2762674015890065,
+            "oracle_success": -1.0,
+            "path_length": -11.032208760579428,
+            "sdtw": -0.30476531873855184,
+            "spl": -0.46722689865234623,
+            "steps_taken": -80.0,
+            "success": -1.0
+          }
+        },
+        "753": {
+          "activity": {
+            "backtrack_decisions": 0.6666666666666666,
+            "checkpointed_excursions": 0.6666666666666666,
+            "effective_commit_interventions": 0.0,
+            "explore_decisions": 0.6666666666666666,
+            "failed_returns": 0.0,
+            "successful_returns": 0.6666666666666666
+          },
+          "benefit": {
+            "collisions": -0.04271844660194176,
+            "distance_to_goal": -2.2585201263427734,
+            "ndtw": -0.024274448095876422,
+            "oracle_success": -0.6666666666666666,
+            "path_length": 1.3768285115559895,
+            "sdtw": 0.0,
+            "spl": 0.0,
+            "steps_taken": -38.666666666666664,
+            "success": 0.0
+          }
+        }
+      },
+      "total_activity": {
+        "backtrack_decisions": 59,
+        "checkpointed_excursions": 77,
+        "effective_commit_interventions": 18,
+        "explore_decisions": 77,
+        "failed_returns": 1,
+        "successful_returns": 58
+      },
+      "trace_event_counts": {
+        "checkpoint_topology_restored": 58,
+        "direct_override_suppressed": 7,
+        "opp_base_action_safety_suppression": 1,
+        "opp_initial_decision": 141,
+        "post_decision": 77,
+        "retained_native_armed": 58,
+        "retained_native_cancelled": 7,
+        "retained_native_committed": 51,
+        "return_complete": 59,
+        "return_scheduled": 59,
+        "reversible_alternative_trial_created": 77,
+        "reversible_alternative_trial_suppressed": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "comparisons": [
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "net_advantage_only"
+    },
+    {
+      "baseline": "v5_6",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "v5_6_net_advantage",
+      "treatment": "v5_6_net_advantage_reversible"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6_net_advantage_reversible"
+    }
+  ],
+  "evaluation": {
+    "bootstrap": "10000 deterministic paired episode replicates",
+    "controller_metrics": [
+      "activation_rate",
+      "mean_net_per_activation_m",
+      "backtrack_success",
+      "return_distance",
+      "repeated_branch_rate",
+      "checkpoint_count"
+    ],
+    "cross_benchmark": "RxR-CE English val_unseen after R2R operating point is locked",
+    "development": "val_seen; diagnostic only and never fresh confirmation",
+    "metrics": [
+      "success",
+      "oracle_success",
+      "spl",
+      "ndtw",
+      "sdtw",
+      "distance_to_goal",
+      "path_length",
+      "steps_taken",
+      "collisions"
+    ],
+    "paired_key": [
+      "episode_id",
+      "seed"
+    ],
+    "paired_unit": "episode mean across three locked seeds",
+    "primary_benchmark": "R2R-CE val_unseen complete authorized split after lock",
+    "test_or_challenge_split_access": false
+  },
+  "groups": [
+    {
+      "description": "frozen official ETP-R1",
+      "id": "etp_r1"
+    },
+    {
+      "description": "validated Full OPP V5.6",
+      "id": "v5_6"
+    },
+    {
+      "description": "learned causal sparse branch trigger",
+      "id": "net_advantage_only"
+    },
+    {
+      "description": "V5.6 proposal plus learned conservative veto",
+      "id": "v5_6_net_advantage"
+    },
+    {
+      "description": "V5.6 plus learned veto plus reversible ECOG trial",
+      "id": "v5_6_net_advantage_reversible"
+    }
+  ],
+  "method_revision": {
+    "future_or_oracle_online_inputs": false,
+    "online_score": "p_better*positive_gain-(1-p_better)*2*checkpoint_to_alternative_euclidean_distance",
+    "scope": "correct the sparse trigger's deployment score and add it as a conservative veto; Method-Freeze-2 REE/ECOG/OPP claims are unchanged",
+    "version": "V5.13"
+  },
+  "paper_result": false,
+  "primary_scientific_gate": {
+    "comparison": "v5_6_net_advantage minus etp_r1",
+    "directional": "mean SPL>0, mean nDTW>0, mean Success>=0",
+    "reversible_ablation_retention": "the reversible addition is retained in the deployed main variant only if it does not reduce mean SPL; it is always reported as an ablation",
+    "statistical": "paired-bootstrap lower bounds for SPL and nDTW >0",
+    "v5_6_gain": "v5_6_net_advantage must improve mean SPL over v5_6"
+  },
+  "reporting": {
+    "all_five_groups_reported": true,
+    "all_three_seeds_reported": true,
+    "failed_runs_retained": true,
+    "threshold_or_metric_search_on_val_unseen": false,
+    "zero-activation_runs_retained": true
+  },
+  "schema_version": "revealnav-r2r-v5.13-net-advantage-protocol/1",
+  "sources": {
+    "scripts/r2r_v5_6_net_advantage_controller.py": "703e3a780cb52467ee2d880014b80a939633c4bd8971c0b85d5289b2773f4c02",
+    "scripts/revealnav_net_advantage.py": "13271d41f830a633585113cccde8e76689c8d9ad3930eb6b2e89435de0f4b01a",
+    "scripts/train_r2r_sparse_net_advantage.py": "c83293ad69b1b765f5065220d685ca955e0275d0cef3300247ac2a4036275c54"
+  },
+  "status": "SEALED_BEFORE_FULL_TRAINING_AND_UNSEEN_EVALUATION",
+  "training_lock": {
+    "checkpoint_selection": "calibration only; untouched internal dev is gate only",
+    "partition": "scene-disjoint train/calibration/dev",
+    "pilot_checkpoint_role": "shape smoke only; legacy offline threshold is rejected",
+    "required_training_gate": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS",
+    "seeds": [
+      20260826,
+      20260827,
+      20260828
+    ],
+    "source_split": "R2R train only",
+    "threshold_selection": "calibration only using the same online score used at inference"
+  },
+  "unseen_metrics_opened": false
+}
