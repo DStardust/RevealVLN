@@ -12,6 +12,28 @@ from revealnav_mf2r4 import (
 from revealnav_mf2r3 import OptionStatus
 from revealnav_mf2r4.model import BranchExcursionQOutput
 from revealnav_mf2r4.stable_losses import StableBranchExcursionQLoss
+from revealnav_mf2r4.temporal_candidates import ConsecutiveCandidateTracker
+
+
+class ConsecutiveCandidateTrackerTest(unittest.TestCase):
+    def test_requires_genuinely_consecutive_prefixes(self):
+        tracker = ConsecutiveCandidateTracker(3)
+        self.assertEqual(tracker.update(("a", "b")), ())
+        self.assertEqual(tracker.update(("b", "a")), ())
+        self.assertEqual(tracker.update(("a", "b")), ("a", "b"))
+        self.assertEqual(tracker.update(("a",)), ("a",))
+        self.assertEqual(tracker.update(("a", "b")), ("a",))
+        self.assertEqual(tracker.update(("a", "b")), ("a",))
+        self.assertEqual(tracker.update(("a", "b")), ("a", "b"))
+
+    def test_gap_resets_streak_and_invalid_k_is_rejected(self):
+        tracker = ConsecutiveCandidateTracker(2)
+        tracker.update(("a",))
+        tracker.update(())
+        self.assertEqual(tracker.update(("a",)), ())
+        self.assertEqual(tracker.update(("a",)), ("a",))
+        with self.assertRaises(ValueError):
+            ConsecutiveCandidateTracker(0)
 
 
 class BranchExcursionQTest(unittest.TestCase):
