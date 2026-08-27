@@ -26,7 +26,7 @@ from evaluate_r2r_v5_13_paired import (  # noqa: E402
     write_tables,
 )
 WORKER = ROOT / "scripts/r2r_v5_13_group_worker.py"
-BASE = ROOT / "artifacts/evaluation/mf2_r2r_v5_13_1_net_advantage"
+BASE = ROOT / "artifacts/evaluation/mf2_r2r_v5_14_net_advantage"
 PYTHON = ROOT / ".envs/etpr1/bin/python"
 NET_GROUPS = frozenset((
     "net_advantage_only", "v5_6_net_advantage",
@@ -66,8 +66,10 @@ def dataset_path(split: str) -> Path:
 
 def load_protocol(path: Path) -> dict:
     value = json.loads(path.read_text())
-    if value.get("status") != "SEALED_V5_13_1_BEFORE_FULL_TRAINING_AND_UNSEEN_EVALUATION":
-        raise RuntimeError("V5.13.1 protocol is not sealed")
+    if value.get("status") != (
+        "SEALED_V5_14_AFTER_TRAIN_ONLY_FEASIBILITY_BEFORE_BENCHMARK_VALIDATION"
+    ):
+        raise RuntimeError("V5.14 protocol is not sealed")
     for relative, expected in value["sources"].items():
         source = ROOT / relative
         if not source.is_file() or sha256_file(source) != expected:
@@ -111,7 +113,8 @@ def prepare(split: str, protocol_path: Path) -> dict:
 
 
 def checkpoints(training: dict) -> dict[int, dict]:
-    return {int(row["seed"]): row["checkpoint"] for row in training["results"]}
+    checkpoint = training["deployment_checkpoint"]
+    return {seed: checkpoint for seed in (20260826, 20260827, 20260828)}
 
 
 def job_matrix(protocol: dict, selection: list[dict]) -> list[dict]:

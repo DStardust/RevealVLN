@@ -1,6 +1,6 @@
-# V5.13.1 evaluation runbook
+# V5.14 ensemble evaluation runbook
 
-The runner refuses every evaluation unless the full R2R-train Net-Advantage result
+The runner refuses every evaluation unless the V5.14 full R2R-train ensemble result
 passes its learnability, split-isolation, manifest, checkpoint-size, checkpoint-SHA,
 and three-seed gates. In particular, `val_unseen prepare` fails before reading the
 validation payload when that training result is absent or failed.

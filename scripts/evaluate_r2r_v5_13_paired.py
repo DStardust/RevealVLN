@@ -16,10 +16,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PROTOCOL = ROOT / (
     "artifacts/evaluation/mf2_r2r_v5_13_net_advantage/"
-    "R2R_V5_13_1_NET_ADVANTAGE_PROTOCOL.json"
+    "R2R_V5_14_ENSEMBLE_PROTOCOL.json"
 )
 DEFAULT_TRAINING_RESULT = ROOT / (
-    "artifacts/phase1/r2r_train_net_advantage/full/training/"
+    "artifacts/phase1/r2r_train_net_advantage/full/training_v5_14/"
     "R2R_SPARSE_NET_ADVANTAGE_TRAINING_RESULT.json"
 )
 HIGHER_IS_BETTER = {"success", "oracle_success", "spl", "ndtw", "sdtw"}
@@ -93,6 +93,19 @@ def validate_training_result(path: Path) -> dict:
             or sha256_file(checkpoint) != row["checkpoint"]["sha256"]
         ):
             raise RuntimeError("training checkpoint provenance drift")
+    deployment = value.get("deployment_checkpoint", {})
+    checkpoint = (ROOT / deployment.get("path", "")).resolve()
+    if (
+        value.get("schema_version")
+        != "revealnav-r2r-sparse-net-advantage-training/3"
+        or value.get("deployment") != "three-member deterministic ensemble"
+        or deployment.get("member_seeds") != [20260826, 20260827, 20260828]
+        or ROOT not in checkpoint.parents or checkpoint.is_symlink()
+        or not checkpoint.is_file()
+        or checkpoint.stat().st_size != deployment.get("bytes")
+        or sha256_file(checkpoint) != deployment.get("sha256")
+    ):
+        raise RuntimeError("ensemble deployment checkpoint provenance drift")
     return value
 
 
@@ -154,9 +167,9 @@ def evaluate(
 ) -> dict:
     protocol = json.loads(protocol_path.read_text())
     if protocol.get("status") != (
-        "SEALED_V5_13_1_BEFORE_FULL_TRAINING_AND_UNSEEN_EVALUATION"
+        "SEALED_V5_14_AFTER_TRAIN_ONLY_FEASIBILITY_BEFORE_BENCHMARK_VALIDATION"
     ):
-        raise RuntimeError("V5.13.1 protocol is not sealed")
+        raise RuntimeError("V5.14 protocol is not sealed")
     training_result = validate_training_result(training_result_path)
     metrics = protocol["evaluation"]["metrics"]
     groups = {
@@ -219,7 +232,7 @@ def evaluate(
         raise RuntimeError("paired evaluation must use one authorized validation split")
     split = next(iter(splits))
     return {
-        "schema_version": "revealnav-r2r-v5.13.1-paired-result/1",
+        "schema_version": "revealnav-r2r-v5.14-paired-result/1",
         "status": "PASS" if all(main_gates.values()) else "FAIL",
         "main_gates": main_gates,
         "ablation_gates": ablation_gates,
@@ -251,7 +264,7 @@ def evaluate(
         "comparisons": comparisons,
         "protocol": str(protocol_path.relative_to(ROOT)),
         "training_result": str(training_result_path.relative_to(ROOT)),
-        "selected_training_seed": training_result["selected_seed"],
+        "training_deployment": training_result["deployment"],
         "bootstrap_replicates": replicates,
         "split": split,
         "paper_result": split == "val_unseen",

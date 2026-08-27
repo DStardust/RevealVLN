@@ -53,12 +53,12 @@ def checkpoint_path(value: str | None, expected_sha256: str | None) -> Path:
     return path
 
 
-def configured_controller(controller_type, checkpoint: Path, seed: int):
+def configured_controller(controller_type, checkpoint: Path):
     class ConfiguredController(controller_type):
         def __init__(self, controller_seed, mode, device, trace_path):
             super().__init__(
                 controller_seed, mode, device, trace_path, checkpoint,
-                expected_checkpoint_seed=seed,
+                expected_member_seeds=(20260826, 20260827, 20260828),
             )
 
     ConfiguredController.__name__ = f"Configured{controller_type.__name__}"
@@ -105,7 +105,7 @@ def main() -> int:
             "v5_6_net_advantage_no_return": V56NetAdvantageNoReturnController,
         }
         controller_type = configured_controller(
-            controller_types[args.group], checkpoint, args.seed
+            controller_types[args.group], checkpoint
         )
         v56.FullOPPActionController = controller_type
 
@@ -135,20 +135,22 @@ def main() -> int:
         "group": args.group,
         "seed": args.seed,
         "split": args.split,
-        "protocol_revision": "V5.13.1",
+        "protocol_revision": "V5.14",
     })
     if checkpoint is not None:
         summary["net_advantage_checkpoint"] = {
             "path": str(checkpoint.relative_to(ROOT)),
             "bytes": checkpoint.stat().st_size,
             "sha256": args.net_advantage_sha256,
-            "seed": args.seed,
+            "member_seeds": list(state.net_advantage.checkpoint_seeds),
         }
         summary["controller"].update({
             "net_advantage_decisions": state.net_advantage_decisions,
             "net_advantage_approvals": state.net_advantage_approvals,
             "net_advantage_vetoes": state.net_advantage_vetoes,
-            "net_advantage_checkpoint_seed": state.net_advantage.checkpoint_seed,
+            "net_advantage_checkpoint_seeds": list(
+                state.net_advantage.checkpoint_seeds
+            ),
             "no_return_suppressions": getattr(
                 state, "no_return_suppressions", 0
             ),

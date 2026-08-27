@@ -61,34 +61,57 @@ class OnlineNetAdvantageScorer:
     """Rank causal alternatives and expose a deployable sparse veto threshold."""
 
     def __init__(
-        self, model: PairwiseNetAdvantageHead, device: torch.device,
+        self, models: list[PairwiseNetAdvantageHead], device: torch.device,
         gain_scale_m: float, threshold: float | None,
-        checkpoint_seed: int | None,
+        checkpoint_seeds: tuple[int, ...],
     ) -> None:
-        self.model = model.eval()
+        self.models = [model.eval() for model in models]
         self.device = device
         self.gain_scale_m = gain_scale_m
         self.threshold = threshold
-        self.checkpoint_seed = checkpoint_seed
+        self.checkpoint_seeds = checkpoint_seeds
 
     @classmethod
     def from_checkpoint(
         cls, path: Path, device: str | torch.device = "cpu",
-        require_online_threshold: bool = True, expected_seed: int | None = None,
+        require_online_threshold: bool = True,
+        expected_member_seeds: tuple[int, ...] | None = None,
     ) -> "OnlineNetAdvantageScorer":
         device = torch.device(device)
         payload = torch.load(path, map_location=device, weights_only=False)
-        if payload.get("schema_version") != "revealnav-pairwise-net-advantage-checkpoint/1":
+        schema = payload.get("schema_version")
+        if schema not in (
+            "revealnav-pairwise-net-advantage-checkpoint/1",
+            "revealnav-pairwise-net-advantage-ensemble/1",
+        ):
             raise RuntimeError("unsupported net-advantage checkpoint schema")
         if payload.get("input_dim") != 768 or payload.get("projection_dim") != 96:
             raise RuntimeError("net-advantage checkpoint architecture drift")
-        checkpoint_seed = payload.get("seed")
-        if expected_seed is not None and checkpoint_seed != expected_seed:
+        if schema.endswith("ensemble/1"):
+            checkpoint_seeds = tuple(payload.get("member_seeds", ()))
+            states = payload.get("model_state_dicts", ())
+            if (
+                checkpoint_seeds != (20260826, 20260827, 20260828)
+                or len(states) != len(checkpoint_seeds)
+                or payload.get("aggregation")
+                != "mean_probability_and_mean_positive_gain"
+            ):
+                raise RuntimeError("net-advantage ensemble contract drift")
+        else:
+            checkpoint_seeds = (payload.get("seed"),)
+            states = (payload["model_state_dict"],)
+        if (
+            expected_member_seeds is not None
+            and checkpoint_seeds != expected_member_seeds
+        ):
             raise RuntimeError("net-advantage checkpoint seed mismatch")
-        model = PairwiseNetAdvantageHead(
-            payload["input_dim"], payload["projection_dim"]
-        ).to(device)
-        model.load_state_dict(payload["model_state_dict"], strict=True)
+        models = []
+        for state in states:
+            model = PairwiseNetAdvantageHead(
+                payload["input_dim"], payload["projection_dim"]
+            ).to(device)
+            model.load_state_dict(state, strict=True)
+            models.append(model)
         online = payload.get("score_definition") == ONLINE_SCORE_DEFINITION
         if require_online_threshold and not online:
             raise RuntimeError(
@@ -98,8 +121,8 @@ class OnlineNetAdvantageScorer:
             float(payload["calibrated_score_threshold"]) if online else None
         )
         return cls(
-            model, device, float(payload["immediate_cost_scale_m"]), threshold,
-            checkpoint_seed,
+            models, device, float(payload["immediate_cost_scale_m"]), threshold,
+            checkpoint_seeds,
         )
 
     def score_candidates(
@@ -121,13 +144,18 @@ class OnlineNetAdvantageScorer:
             for key in branch_ids
         ], dtype=torch.float32, device=self.device) / self.gain_scale_m
         repeated = [value.to(self.device).float().unsqueeze(0).expand(size, -1) for value in values]
+        probabilities = []
+        gains = []
         with torch.no_grad():
-            logit, scaled_gain = self.model(
-                repeated[0], repeated[1], repeated[2], repeated[3],
-                alternative.to(self.device).float(), immediate,
-            )
-        probability = torch.sigmoid(logit)
-        gain_m = scaled_gain * self.gain_scale_m
+            for model in self.models:
+                logit, scaled_gain = model(
+                    repeated[0], repeated[1], repeated[2], repeated[3],
+                    alternative.to(self.device).float(), immediate,
+                )
+                probabilities.append(torch.sigmoid(logit))
+                gains.append(scaled_gain * self.gain_scale_m)
+        probability = torch.stack(probabilities).mean(0)
+        gain_m = torch.stack(gains).mean(0)
         penalty_m = torch.tensor([
             2.0 * alternative_distances_m[key] for key in branch_ids
         ], dtype=torch.float32, device=self.device)

@@ -20,7 +20,8 @@ class V56NetAdvantageController(BASE_V56_CONTROLLER):
 
     def __init__(
         self, seed: int, mode: str, device: torch.device, trace_path: Path,
-        net_advantage_checkpoint: Path, expected_checkpoint_seed: int | None = None,
+        net_advantage_checkpoint: Path,
+        expected_member_seeds: tuple[int, ...] | None = None,
     ) -> None:
         super().__init__(seed, mode, device, trace_path)
         net_advantage_checkpoint = net_advantage_checkpoint.resolve()
@@ -32,7 +33,7 @@ class V56NetAdvantageController(BASE_V56_CONTROLLER):
             raise RuntimeError("net-advantage checkpoint must be a project-local file")
         self.net_advantage = OnlineNetAdvantageScorer.from_checkpoint(
             net_advantage_checkpoint, device, require_online_threshold=True,
-            expected_seed=expected_checkpoint_seed,
+            expected_member_seeds=expected_member_seeds,
         )
         self.net_advantage_approvals = 0
         self.net_advantage_vetoes = 0

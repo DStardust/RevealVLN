@@ -98,8 +98,36 @@ class PairwiseNetAdvantageHeadTest(unittest.TestCase):
             torch.save(payload, path)
             with self.assertRaisesRegex(RuntimeError, "seed mismatch"):
                 OnlineNetAdvantageScorer.from_checkpoint(
-                    path, expected_seed=2
+                    path, expected_member_seeds=(2,)
                 )
+
+    def test_three_member_ensemble_loads_and_scores(self) -> None:
+        model = PairwiseNetAdvantageHead()
+        payload = {
+            "schema_version": "revealnav-pairwise-net-advantage-ensemble/1",
+            "member_seeds": [20260826, 20260827, 20260828],
+            "model_state_dicts": [model.state_dict() for _ in range(3)],
+            "aggregation": "mean_probability_and_mean_positive_gain",
+            "calibrated_score_threshold": -100.0,
+            "score_definition": ONLINE_SCORE_DEFINITION,
+            "immediate_cost_scale_m": 10.0,
+            "input_dim": 768,
+            "projection_dim": 96,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "ensemble.pt"
+            torch.save(payload, path)
+            scorer = OnlineNetAdvantageScorer.from_checkpoint(
+                path,
+                expected_member_seeds=(20260826, 20260827, 20260828),
+            )
+        vector = torch.zeros(768)
+        rows = scorer.score_candidates(
+            vector, vector, vector, vector, {"a": vector}, 1.0, {"a": 2.0}
+        )
+        self.assertEqual(len(scorer.models), 3)
+        self.assertEqual(scorer.checkpoint_seeds, (20260826, 20260827, 20260828))
+        self.assertTrue(scorer.approve("a", rows))
 
 
 class SparsePolicyTest(unittest.TestCase):
@@ -207,6 +235,9 @@ class PairedEvaluationTest(unittest.TestCase):
                     },
                 })
             value = {
+                "schema_version": (
+                    "revealnav-r2r-sparse-net-advantage-training/3"
+                ),
                 "status": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS",
                 "unseen_or_test_read": False,
                 "task_metric_payload_read": False,
@@ -215,6 +246,15 @@ class PairedEvaluationTest(unittest.TestCase):
                     manifest.read_bytes()
                 ).hexdigest(),
                 "results": results,
+                "deployment": "three-member deterministic ensemble",
+            }
+            ensemble = directory / "ensemble.pt"
+            ensemble.write_bytes(b"ensemble")
+            value["deployment_checkpoint"] = {
+                "path": str(ensemble.relative_to(ROOT)),
+                "bytes": ensemble.stat().st_size,
+                "sha256": hashlib.sha256(ensemble.read_bytes()).hexdigest(),
+                "member_seeds": [20260826, 20260827, 20260828],
             }
             path = directory / "training.json"
             path.write_text(json.dumps(value))
@@ -290,7 +330,12 @@ class EvaluationMatrixTest(unittest.TestCase):
                     },
                 })
             training = directory / "training.json"
+            ensemble = directory / "ensemble.pt"
+            ensemble.write_bytes(b"ensemble")
             training.write_text(json.dumps({
+                "schema_version": (
+                    "revealnav-r2r-sparse-net-advantage-training/3"
+                ),
                 "status": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS",
                 "unseen_or_test_read": False,
                 "task_metric_payload_read": False,
@@ -299,12 +344,21 @@ class EvaluationMatrixTest(unittest.TestCase):
                     manifest.read_bytes()
                 ).hexdigest(),
                 "results": training_rows,
-                "selected_seed": 20260826,
+                "deployment": "three-member deterministic ensemble",
+                "deployment_checkpoint": {
+                    "path": str(ensemble.relative_to(ROOT)),
+                    "bytes": ensemble.stat().st_size,
+                    "sha256": hashlib.sha256(
+                        ensemble.read_bytes()
+                    ).hexdigest(),
+                    "member_seeds": [20260826, 20260827, 20260828],
+                },
             }))
             protocol = directory / "protocol.json"
             protocol.write_text(json.dumps({
                 "status": (
-                    "SEALED_V5_13_1_BEFORE_FULL_TRAINING_AND_UNSEEN_EVALUATION"
+                    "SEALED_V5_14_AFTER_TRAIN_ONLY_FEASIBILITY_"
+                    "BEFORE_BENCHMARK_VALIDATION"
                 ),
                 "groups": groups,
                 "comparisons": comparisons,

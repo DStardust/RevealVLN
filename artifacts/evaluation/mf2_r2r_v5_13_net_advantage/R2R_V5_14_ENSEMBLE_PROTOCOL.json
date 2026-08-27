@@ -1,0 +1,167 @@
+{
+  "comparisons": [
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "net_advantage_only"
+    },
+    {
+      "baseline": "v5_6",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "v5_6_net_advantage_no_return",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6_net_advantage_no_return"
+    }
+  ],
+  "evaluation": {
+    "bootstrap": "10000 deterministic paired episode replicates",
+    "controller_metrics": [
+      "net_advantage_decisions",
+      "net_advantage_approvals",
+      "net_advantage_vetoes",
+      "checkpointed_excursions",
+      "backtrack_decisions",
+      "successful_returns",
+      "failed_returns",
+      "no_return_suppressions"
+    ],
+    "cross_benchmark": "RxR-CE English val_unseen only after the R2R operating point is locked",
+    "development": "complete R2R val_seen; diagnostic only",
+    "metrics": [
+      "success",
+      "oracle_success",
+      "spl",
+      "ndtw",
+      "sdtw",
+      "distance_to_goal",
+      "path_length",
+      "steps_taken",
+      "collisions"
+    ],
+    "paired_unit": "episode mean across the three locked treatment seeds",
+    "primary_benchmark": "complete R2R-CE val_unseen after full training gate passes",
+    "selection_rule": "all episodes in the authorized validation split",
+    "test_or_challenge_split_access": false
+  },
+  "groups": [
+    {
+      "description": "deterministic frozen official ETP-R1",
+      "id": "etp_r1",
+      "seed_policy": "one execution per episode, broadcast as paired control",
+      "seeds": [
+        0
+      ]
+    },
+    {
+      "checkpoint_policy": "same frozen three-member ensemble; listed seeds are controller seeds, not checkpoint-selection alternatives",
+      "description": "validated V5.6 Full OPP including ECOG",
+      "id": "v5_6",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    {
+      "checkpoint_policy": "same frozen three-member ensemble; listed seeds are controller seeds, not checkpoint-selection alternatives",
+      "description": "causal sparse ranker without a V5.6 proposal",
+      "id": "net_advantage_only",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    {
+      "checkpoint_policy": "same frozen three-member ensemble; listed seeds are controller seeds, not checkpoint-selection alternatives",
+      "description": "main V5.6 Full OPP plus conservative causal veto",
+      "id": "v5_6_net_advantage",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    {
+      "checkpoint_policy": "same frozen three-member ensemble; listed seeds are controller seeds, not checkpoint-selection alternatives",
+      "description": "main inputs and veto with ECOG trials suppressed",
+      "id": "v5_6_net_advantage_no_return",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    }
+  ],
+  "method_revision": {
+    "ensemble_aggregation": "mean member probability and mean member positive gain before the unchanged causal online penalty",
+    "frozen_method_claims_changed": false,
+    "future_or_oracle_online_inputs": false,
+    "main": "V5.6 Full OPP including ECOG plus one deterministic three-member causal Net-Advantage veto",
+    "online_score": "mean(p_better)*mean(positive_gain)-(1-mean(p_better))*2*checkpoint_to_alternative_euclidean_distance",
+    "version": "V5.14"
+  },
+  "paper_result": false,
+  "primary_scientific_gate": {
+    "comparison": "v5_6_net_advantage minus etp_r1",
+    "directional": "mean SPL>0, mean nDTW>0, mean Success>=0",
+    "ecog_ablation": "main minus no-return is reported independently and does not retroactively change the preregistered main variant",
+    "incremental": "v5_6_net_advantage mean SPL must exceed v5_6",
+    "statistical": "paired-bootstrap lower bounds for SPL and nDTW >0"
+  },
+  "reporting": {
+    "all_five_groups_reported": true,
+    "all_three_treatment_seeds_reported": true,
+    "deterministic_baseline_reuse_disclosed": true,
+    "threshold_or_metric_search_on_val_unseen": false,
+    "zero_activation_and_failed_runs_retained": true
+  },
+  "schema_version": "revealnav-r2r-v5.14-ensemble-protocol/1",
+  "sources": {
+    "scripts/evaluate_r2r_v5_13_paired.py": "319e8686a24de63eff3e1197af12a2dc3b3d885f22dcad1f42f061f5f3b7a997",
+    "scripts/monitor_r2r_v5_13_1_paired.py": "a77b568364e7a2d8e83a5aab6dc2c4573d59aa774705f6f2d7f63b342dc513ae",
+    "scripts/r2r_v5_13_group_worker.py": "4bcdc77aa01068598beb8aefbf3b405f5f2e53a578a249c03ca281315f973287",
+    "scripts/r2r_v5_6_net_advantage_controller.py": "abea4998693576562a06b7a3f7c7249d687b35d43eb96486d9ff73dc8f42be70",
+    "scripts/revealnav_net_advantage.py": "d76d9b2ff9a7d75d2d4162a396ec8d928432456d60352dbbf52d1d4082e5fdd3",
+    "scripts/run_r2r_v5_13_1_paired.py": "9957d8be550ba38f399e4207105cbf3cc28eca692f1d8503491a083b65d59f17",
+    "scripts/train_r2r_sparse_net_advantage.py": "5988e578f8b892034dedde9cf12fa25f27ca111027e51f3a482f9a8173d53d71",
+    "scripts/watch_r2r_v5_13_1_handoff.py": "c5b77be4a6db40fe3b62c7f54a16c62b4a49bc08a975f04c892ce48f429a12ee"
+  },
+  "status": "SEALED_V5_14_AFTER_TRAIN_ONLY_FEASIBILITY_BEFORE_BENCHMARK_VALIDATION",
+  "supersedes": {
+    "failed_training_result": "artifacts/phase1/r2r_train_net_advantage/full/training/R2R_SPARSE_NET_ADVANTAGE_TRAINING_RESULT.json",
+    "failed_training_sha256": "5cca9900cb6b5602465bd8fad70fd90810dffe2c4e080442966e99b9650b67a2",
+    "path": "artifacts/evaluation/mf2_r2r_v5_13_net_advantage/R2R_V5_13_1_NET_ADVANTAGE_PROTOCOL.json",
+    "reason": "all three single models had above-chance untouched-dev AUC, but the preregistered sparse-net robustness gate failed because extreme-tail activations were unstable across random initializations",
+    "sha256": "0e42c0697809ac6758f4008c50c37642d7fc8161f4df4c3a15eaeeda4e046e39"
+  },
+  "training_lock": {
+    "aggregation_selected_without_internal_dev_metrics": false,
+    "benchmark_validation_metrics_seen_at_seal": false,
+    "deployment": "all three members in one deterministic ensemble",
+    "failed_single_model_result_retained": true,
+    "member_seeds": [
+      20260826,
+      20260827,
+      20260828
+    ],
+    "partition": "unchanged scene-disjoint train/calibration/dev",
+    "required_training_gate": "finite member AUCs; median dev AUC>=0.55; calibration and internal-dev ensemble net positive; >=5 activations in each; activation rates<=0.20",
+    "selection_disclosure": "aggregation was selected after a post-hoc feasibility calculation on the R2R-train-only scene holdout; that holdout is method-development evidence, not confirmatory evidence or a paper benchmark result",
+    "source_split": "R2R train only",
+    "threshold_selection": "calibration only on ensemble online score"
+  },
+  "unseen_metrics_opened": false
+}

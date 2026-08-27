@@ -29,7 +29,7 @@ RUNNER = ROOT / "scripts/run_r2r_v5_13_1_paired.py"
 DATA_ROOT = ROOT / "artifacts/phase1/r2r_train_net_advantage"
 DATA_PID = DATA_ROOT / "FULL_PIPELINE.pid"
 DATA_PROGRESS = DATA_ROOT / "full/R2R_TRAIN_NET_ADVANTAGE_PROGRESS.json"
-HANDOFF_ROOT = ROOT / "artifacts/evaluation/mf2_r2r_v5_13_1_net_advantage/handoff"
+HANDOFF_ROOT = ROOT / "artifacts/evaluation/mf2_r2r_v5_14_net_advantage/handoff"
 STATE = HANDOFF_ROOT / "HANDOFF_STATE.json"
 PID = HANDOFF_ROOT / "HANDOFF.pid"
 LOG = HANDOFF_ROOT / "HANDOFF.log"
@@ -102,7 +102,7 @@ def wait_for_training(poll_seconds: int) -> dict:
             "BLOCKED_TRAINING_GATE", f"{type(error).__name__}: {error}"
         ) from error
     write_state(
-        "FULL_TRAINING_GATE_PASS", selected_seed=result["selected_seed"],
+        "FULL_TRAINING_GATE_PASS", deployment=result["deployment"],
         next="launch complete val_seen paired matrix",
     )
     return result

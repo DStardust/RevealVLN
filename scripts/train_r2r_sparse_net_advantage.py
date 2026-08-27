@@ -131,6 +131,18 @@ def predict(model, batch, arrays, indices) -> tuple[np.ndarray, np.ndarray, np.n
     return probability, gain_m, score
 
 
+def predict_ensemble(
+    models: list[PairwiseNetAdvantageHead], batch: dict,
+    arrays: dict, indices: np.ndarray,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    predictions = [predict(model, batch, arrays, indices) for model in models]
+    probability = np.stack([row[0] for row in predictions]).mean(0)
+    gain_m = np.stack([row[1] for row in predictions]).mean(0)
+    penalty = 2.0 * arrays["immediate_costs"][indices, 1].astype(np.float32)
+    score = probability * gain_m - (1.0 - probability) * penalty
+    return probability, gain_m, score
+
+
 def one_seed(
     seed: int, arrays, records: list[dict], train_indices: np.ndarray,
     calibration_indices: np.ndarray, dev_indices: np.ndarray,
@@ -257,6 +269,108 @@ def one_seed(
     return result
 
 
+def build_ensemble(
+    results: list[dict], arrays: dict, records: list[dict],
+    train_indices: np.ndarray, calibration_indices: np.ndarray,
+    dev_indices: np.ndarray, output_dir: Path, device: torch.device,
+) -> dict:
+    models = []
+    states = []
+    for row in results:
+        payload = torch.load(
+            ROOT / row["checkpoint"]["path"], map_location=device,
+            weights_only=False,
+        )
+        if (
+            payload.get("schema_version")
+            != "revealnav-pairwise-net-advantage-checkpoint/1"
+            or payload.get("seed") != row["seed"]
+            or payload.get("score_definition") != ONLINE_SCORE_DEFINITION
+        ):
+            raise RuntimeError("ensemble member checkpoint drift")
+        model = PairwiseNetAdvantageHead(
+            payload["input_dim"], payload["projection_dim"]
+        ).to(device)
+        model.load_state_dict(payload["model_state_dict"], strict=True)
+        model.eval()
+        models.append(model)
+        states.append(payload["model_state_dict"])
+    batches = {
+        "train": tensors(arrays, train_indices, device),
+        "calibration": tensors(arrays, calibration_indices, device),
+        "dev": tensors(arrays, dev_indices, device),
+    }
+    indices = {
+        "train": train_indices, "calibration": calibration_indices,
+        "dev": dev_indices,
+    }
+    predictions = {
+        partition: predict_ensemble(
+            models, batch, arrays, indices[partition]
+        )
+        for partition, batch in batches.items()
+    }
+    partition_records = {
+        partition: [records[index] for index in local_indices]
+        for partition, local_indices in indices.items()
+    }
+    threshold, calibration_policy = calibrate(
+        partition_records["calibration"], predictions["calibration"][2]
+    )
+    policies = {
+        "train": event_policy(
+            partition_records["train"], predictions["train"][2], threshold
+        ),
+        "calibration": calibration_policy,
+        "dev": event_policy(
+            partition_records["dev"], predictions["dev"][2], threshold
+        ),
+    }
+    checkpoint = output_dir / "ensemble_3/sparse_net_advantage_ensemble.pt"
+    checkpoint.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema_version": "revealnav-pairwise-net-advantage-ensemble/1",
+        "member_seeds": list(SEEDS),
+        "model_state_dicts": states,
+        "aggregation": "mean_probability_and_mean_positive_gain",
+        "calibrated_score_threshold": threshold,
+        "score_definition": ONLINE_SCORE_DEFINITION,
+        "online_wrong_trial_cost": (
+            "two times checkpoint-to-alternative Euclidean distance from the "
+            "causal ETP graph"
+        ),
+        "immediate_cost_scale_m": 10.0,
+        "input_dim": 768,
+        "projection_dim": 96,
+    }
+    part = checkpoint.with_name(checkpoint.name + ".part")
+    torch.save(payload, part)
+    os.replace(part, checkpoint)
+    return {
+        "member_seeds": list(SEEDS),
+        "aggregation": payload["aggregation"],
+        "calibrated_score_threshold": threshold,
+        "train_policy": {
+            key: value for key, value in policies["train"].items()
+            if key != "selected_indices"
+        },
+        "calibration_policy": {
+            key: value for key, value in policies["calibration"].items()
+            if key != "selected_indices"
+        },
+        "dev_policy": {
+            key: value for key, value in policies["dev"].items()
+            if key != "selected_indices"
+        },
+        "checkpoint": {
+            "path": str(checkpoint.relative_to(ROOT)),
+            "bytes": checkpoint.stat().st_size,
+            "sha256": sha256_file(checkpoint),
+            "member_seeds": list(SEEDS),
+        },
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", required=True, type=Path)
@@ -289,20 +403,33 @@ def main() -> int:
         seed, arrays, records, train_indices, calibration_indices, dev_indices,
         output_dir, device
     ) for seed in SEEDS]
+    ensemble = build_ensemble(
+        results, arrays, records, train_indices, calibration_indices,
+        dev_indices, output_dir, device,
+    )
     finite_auc = [row["dev_auc"] for row in results if math.isfinite(row["dev_auc"])]
     gates = {
         "all_three_seeds_finite": len(finite_auc) == 3,
         "median_dev_auc_above_chance": len(finite_auc) == 3 and float(np.median(finite_auc)) >= 0.55,
-        "median_untouched_dev_sparse_net_positive": float(np.median([
-            row["dev_policy"]["mean_net_per_event_m"] for row in results
-        ])) > 0.0,
-        "at_least_two_untouched_dev_nets_positive": sum(
-            row["dev_policy"]["mean_net_per_event_m"] > 0.0 for row in results
-        ) >= 2,
-        "all_activation_rates_bounded": all(row["dev_policy"]["activation_rate"] <= 0.20 for row in results),
+        "ensemble_calibration_sparse_net_positive": (
+            ensemble["calibration_policy"]["mean_net_per_event_m"] > 0.0
+        ),
+        "ensemble_calibration_activations_at_least_five": (
+            ensemble["calibration_policy"]["activated"] >= 5
+        ),
+        "ensemble_internal_dev_sparse_net_positive": (
+            ensemble["dev_policy"]["mean_net_per_event_m"] > 0.0
+        ),
+        "ensemble_internal_dev_activations_at_least_five": (
+            ensemble["dev_policy"]["activated"] >= 5
+        ),
+        "ensemble_activation_rates_bounded": all(
+            ensemble[f"{partition}_policy"]["activation_rate"] <= 0.20
+            for partition in ("calibration", "dev")
+        ),
     }
     value = {
-        "schema_version": "revealnav-r2r-sparse-net-advantage-training/2",
+        "schema_version": "revealnav-r2r-sparse-net-advantage-training/3",
         "status": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS" if all(gates.values()) else "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_FAIL",
         "dataset_manifest": str(manifest_path.relative_to(ROOT)),
         "dataset_manifest_sha256": sha256_file(manifest_path),
@@ -310,15 +437,17 @@ def main() -> int:
         "calibration_scenes": manifest["calibration_scenes"],
         "dev_scenes": manifest["dev_scenes"],
         "results": results,
+        "ensemble": ensemble,
+        "deployment_checkpoint": ensemble["checkpoint"],
         "gates": gates,
         "selection_rule": (
-            "highest calibration mean net, tie broken by calibration AUC then seed; "
-            "untouched dev is never used for threshold or checkpoint selection"
+            "V5.14-fixed mean-probability and mean-positive-gain ensemble of all "
+            "three training seeds, selected after a disclosed post-hoc feasibility "
+            "probe on the R2R-train-only scene holdout; calibration selects its "
+            "threshold and internal dev is method-development evidence only"
         ),
-        "selected_seed": max(results, key=lambda row: (
-            row["calibration_policy"]["mean_net_per_event_m"],
-            row["calibration_auc"], -row["seed"]
-        ))["seed"],
+        "selected_seed": None,
+        "deployment": "three-member deterministic ensemble",
         "task_metric_payload_read": False,
         "unseen_or_test_read": False,
         "paper_result": False,
@@ -327,7 +456,9 @@ def main() -> int:
     atomic_json(result_path, value)
     print(json.dumps({
         "status": value["status"], "gates": gates,
-        "selected_seed": value["selected_seed"],
+        "deployment": value["deployment"],
+        "ensemble_calibration": ensemble["calibration_policy"],
+        "ensemble_dev": ensemble["dev_policy"],
         "dev_auc": [row["dev_auc"] for row in results],
         "dev_net": [row["dev_policy"]["mean_net_per_event_m"] for row in results],
     }, sort_keys=True))
