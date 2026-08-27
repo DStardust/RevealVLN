@@ -19,6 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON = ROOT / ".envs/etpr1/bin/python"
 WORKER = ROOT / "scripts/r2r_train_net_advantage_worker.py"
+BATCH_WORKER = ROOT / "scripts/r2r_train_net_advantage_batch_worker.py"
 LABELER = ROOT / "scripts/build_r2r_train_net_advantage_labels.py"
 TRAINER = ROOT / "scripts/train_r2r_sparse_net_advantage.py"
 DATASET = ROOT / (
@@ -196,6 +197,57 @@ def run_one(row: dict, gpu: int, run_dir: Path) -> dict:
     }
 
 
+def run_batch(rows: list[dict], gpu: int, paths: dict[str, Path]) -> dict:
+    episode_ids = [row["episode_id"] for row in rows]
+    for row in rows:
+        move_interrupted(paths["runs"] / f"ep_{row['episode_id']}")
+    batch_key = stable_hash({"episode_ids": episode_ids})[:12]
+    batch_dir = paths["root"] / "batches" / f"batch_{batch_key}"
+    if batch_dir.exists():
+        interrupted = paths["root"] / "interrupted_batches" / (
+            batch_dir.name + f"_{int(time.time())}"
+        )
+        interrupted.parent.mkdir(parents=True, exist_ok=True)
+        os.replace(batch_dir, interrupted)
+    env = os.environ.copy()
+    env.update({
+        "CUDA_VISIBLE_DEVICES": str(gpu),
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": str(ROOT),
+        "PYTHONDONTWRITEBYTECODE": "1",
+    })
+    command = [
+        str(PYTHON), str(BATCH_WORKER),
+        "--episode-ids", ",".join(episode_ids),
+        "--runs-root", str(paths["runs"]),
+        "--batch-dir", str(batch_dir),
+    ]
+    started = time.monotonic()
+    process = subprocess.run(
+        command, cwd=ROOT, env=env, text=True,
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+    )
+    batch_dir.mkdir(parents=True, exist_ok=True)
+    (batch_dir / "worker.log").write_text(process.stdout)
+    validations = [
+        valid_summary(
+            paths["runs"] / f"ep_{row['episode_id']}" / "RUN_SUMMARY.json",
+            row,
+        )
+        for row in rows
+    ]
+    valid = process.returncode == 0 and all(row[0] for row in validations)
+    return {
+        "episode_ids": episode_ids,
+        "gpu": gpu,
+        "rc": process.returncode,
+        "valid": valid,
+        "events": sum(row[1] for row in validations if row[0]),
+        "wall_time_s": round(time.monotonic() - started, 3),
+        "error_tail": "\n".join(process.stdout.splitlines()[-20:]) if not valid else None,
+    }
+
+
 def progress_value(cohort: str, selected: list[dict], active: dict, failures: list[dict]) -> dict:
     paths = layout(cohort)
     completed = 0
@@ -219,7 +271,87 @@ def progress_value(cohort: str, selected: list[dict], active: dict, failures: li
     }
 
 
-def collect(cohort: str, gpus: tuple[int, ...]) -> dict:
+def collect_batched(
+    cohort: str, selected: list[dict], pending: list[dict],
+    gpus: tuple[int, ...], batch_size: int,
+) -> dict:
+    paths = layout(cohort)
+    batches = [
+        pending[index:index + batch_size]
+        for index in range(0, len(pending), batch_size)
+    ]
+    active = {}
+    failures = []
+    retry_counts: dict[tuple[str, ...], int] = {}
+    atomic_json(paths["progress"], progress_value(
+        cohort, selected, active, failures
+    ))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=len(gpus)) as executor:
+        running = {}
+        iterator = iter(batches)
+        for slot, gpu in enumerate(gpus):
+            try:
+                rows = next(iterator)
+            except StopIteration:
+                break
+            future = executor.submit(run_batch, rows, gpu, paths)
+            running[future] = (slot, gpu, rows)
+            active[str(slot)] = {
+                "gpu": gpu, "episodes": len(rows),
+                "first_episode_id": rows[0]["episode_id"],
+            }
+        while running:
+            done, _ = concurrent.futures.wait(
+                running, return_when=concurrent.futures.FIRST_COMPLETED
+            )
+            for future in done:
+                slot, gpu, rows = running.pop(future)
+                try:
+                    result = future.result()
+                except Exception as error:
+                    result = {
+                        "episode_ids": [row["episode_id"] for row in rows],
+                        "gpu": gpu, "rc": None, "valid": False, "events": 0,
+                        "wall_time_s": 0.0,
+                        "error_tail": f"{type(error).__name__}: {error}",
+                    }
+                active.pop(str(slot), None)
+                key = tuple(row["episode_id"] for row in rows)
+                retries = retry_counts.get(key, 0)
+                if not result["valid"] and retries < 1:
+                    retry_counts[key] = retries + 1
+                    retried = executor.submit(run_batch, rows, gpu, paths)
+                    running[retried] = (slot, gpu, rows)
+                    active[str(slot)] = {
+                        "gpu": gpu, "episodes": len(rows),
+                        "first_episode_id": rows[0]["episode_id"],
+                        "retry": retry_counts[key],
+                    }
+                    continue
+                if not result["valid"]:
+                    failures.append(result)
+                try:
+                    next_rows = next(iterator)
+                except StopIteration:
+                    pass
+                else:
+                    new = executor.submit(run_batch, next_rows, gpu, paths)
+                    running[new] = (slot, gpu, next_rows)
+                    active[str(slot)] = {
+                        "gpu": gpu, "episodes": len(next_rows),
+                        "first_episode_id": next_rows[0]["episode_id"],
+                    }
+            atomic_json(paths["progress"], progress_value(
+                cohort, selected, active, failures
+            ))
+    value = progress_value(cohort, selected, active, failures)
+    atomic_json(paths["progress"], value)
+    if failures or value["completed"] != value["selected"]:
+        raise RuntimeError(f"batch collection incomplete: {len(failures)} failures")
+    return value
+
+
+def collect(cohort: str, gpus: tuple[int, ...], batch_size: int = 1) -> dict:
     selection = prepare(cohort)
     selected = selection["selection"]
     paths = layout(cohort)
@@ -229,6 +361,10 @@ def collect(cohort: str, gpus: tuple[int, ...]) -> dict:
         valid, _ = valid_summary(paths["runs"] / f"ep_{row['episode_id']}" / "RUN_SUMMARY.json", row)
         if not valid:
             pending.append(row)
+    if batch_size > 1:
+        return collect_batched(
+            cohort, selected, pending, gpus, batch_size
+        )
     active = {}
     failures = []
     atomic_json(paths["progress"], progress_value(cohort, selected, active, failures))
@@ -308,10 +444,13 @@ def main() -> int:
     parser.add_argument("command", choices=("prepare", "collect", "label", "train", "all"))
     parser.add_argument("--cohort", choices=("pilot", "full"), default="pilot")
     parser.add_argument("--gpus", default="0,1")
+    parser.add_argument("--batch-size", type=int, default=1)
     args = parser.parse_args()
     gpus = tuple(int(value) for value in args.gpus.split(",") if value)
     if not gpus or any(gpu < 0 for gpu in gpus):
         raise SystemExit("--gpus must contain non-negative GPU slot indices")
+    if args.batch_size < 1:
+        raise SystemExit("--batch-size must be positive")
     if args.command in ("prepare", "all"):
         value = prepare(args.cohort)
         print(json.dumps({
@@ -319,7 +458,7 @@ def main() -> int:
             "scenes": value["selected_scenes"],
         }))
     if args.command in ("collect", "all"):
-        value = collect(args.cohort, gpus)
+        value = collect(args.cohort, gpus, args.batch_size)
         print(json.dumps({"stage": "collect", **value}, sort_keys=True))
     if args.command in ("label", "all"):
         label(args.cohort)

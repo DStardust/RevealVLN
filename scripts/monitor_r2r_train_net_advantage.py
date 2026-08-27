@@ -30,15 +30,20 @@ def main() -> None:
     for path in root.glob("runs/ep_*/RUN_SUMMARY.json"):
         row = json.loads(path.read_text())
         if row.get("status") == "PASS":
-            elapsed_samples.append(float(row["wall_time_s"]))
+            batch_size = max(1, int(row.get("batch_size", 1)))
+            elapsed_samples.append(float(row["wall_time_s"]) / batch_size)
     mean = sum(elapsed_samples) / len(elapsed_samples) if elapsed_samples else 0.0
     workers = max(1, len(value["active"]))
     eta = (selected - completed) * mean / workers if mean else None
     eta_text = f"{eta/60:.1f} min" if eta is not None else "pending"
+    active_episodes = sum(
+        int(row.get("episodes", 1)) for row in value["active"].values()
+    )
     print(
         f"{args.cohort} {value['status']} | episodes {completed}/{selected} "
         f"({completed/max(1,selected):.1%}) | events {value['feature_events']} | "
-        f"zero-event {value['zero_event_episodes']} | active {value['active']} | "
+        f"zero-event {value['zero_event_episodes']} | "
+        f"active batches {len(value['active'])} / episodes {active_episodes} | "
         f"failures {len(value['failures'])} | update age {age:.0f}s | "
         f"ETA {eta_text}"
     )
