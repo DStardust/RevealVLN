@@ -18,6 +18,7 @@ if str(ROOT / "scripts") not in sys.path:
 import run_r2r_full_opp_gate_v5_6 as common  # noqa: E402
 import run_r2r_v5_6_fresh_seen_confirm as executor  # noqa: E402
 import run_r2r_v5_10_native_control_diagnostic as diagnostic  # noqa: E402
+import run_r2r_v5_10_fresh_activation_screen as screen  # noqa: E402
 
 
 RUNNER = Path(__file__).resolve()
@@ -40,29 +41,24 @@ def _is_active(summary: dict) -> bool:
     )
 
 
-def _diagnostic_rows() -> tuple[list[dict], dict]:
-    result = json.loads(diagnostic.RESULT.read_text())
+def _screen_rows() -> tuple[list[dict], dict]:
+    result = json.loads(screen.RESULT.read_text())
     if not (
-        result.get("status") == "V5_10_NATIVE_CONTROL_DIAGNOSTIC_PASS"
-        and all(result.get("engineering_gates", {}).values())
+        result.get("status") == "V5_10_FRESH_COHORT_READY"
+        and all(result.get("gates", {}).values())
         and result.get("task_metric_payload_read") is False
+        and result.get("selection_used_task_metrics") is False
     ):
-        raise RuntimeError("V5.10 outcome-blind diagnostic has not passed")
-    protocol = json.loads(diagnostic.PROTOCOL.read_text())
-    active = []
-    for metadata in protocol["selection"]:
-        episode_id = metadata["episode_id"]
-        path = diagnostic.OUT / "runs" / f"shadow_ep_{episode_id}" / "RUN_SUMMARY.json"
-        summary = json.loads(path.read_text())
-        if _is_active(summary):
-            active.append(metadata)
-    return active, result
+        raise RuntimeError("V5.10 outcome-blind activation screen has not passed")
+    selected = result.get("selected_confirmation_cohort", [])
+    if len(selected) != TARGET_EPISODES:
+        raise RuntimeError("V5.10 activation cohort size drift")
+    return selected, result
 
 
 def protocol_value() -> dict:
-    diagnostic.protocol_value()
-    active, result = _diagnostic_rows()
-    selected = active[:TARGET_EPISODES]
+    screen.protocol_value()
+    selected, result = _screen_rows()
     scenes = {row["scene_id"] for row in selected}
     if len(selected) != TARGET_EPISODES or len(scenes) < TARGET_SCENES:
         raise RuntimeError(
@@ -74,8 +70,9 @@ def protocol_value() -> dict:
         "status": "SEALED_BEFORE_V5_10_PAIRED_TASK_METRIC_GATE",
         "selection": selected,
         "selection_rule": (
-            "first 24 active episodes in the sealed V5.10 diagnostic order; "
-            "activation used controller traces only, never task metrics"
+            "sealed activation screen chooses the earliest active episode "
+            "from each new scene until 15 scenes, then fills to 24 in its "
+            "original order; task metrics are never used"
         ),
         "minimum_distinct_scenes": TARGET_SCENES,
         "distinct_scenes": len(scenes),
@@ -88,15 +85,15 @@ def protocol_value() -> dict:
         "paired_unit": "episode averaged across three locked model seeds",
         "uncertainty": "10000 deterministic episode bootstrap replicates",
         "success_gate": "mean SPL>0, nDTW>0, Success>=0",
-        "diagnostic_active_episodes": result["active_episodes"],
+        "screened_active_episodes": result["combined_active"],
         "sources": {
             str(RUNNER.relative_to(ROOT)): common.sha256_file(RUNNER),
             str(WORKER.relative_to(ROOT)): common.sha256_file(WORKER),
-            str(diagnostic.PROTOCOL.relative_to(ROOT)): common.sha256_file(
-                diagnostic.PROTOCOL
+            str(screen.PROTOCOL.relative_to(ROOT)): common.sha256_file(
+                screen.PROTOCOL
             ),
-            str(diagnostic.RESULT.relative_to(ROOT)): common.sha256_file(
-                diagnostic.RESULT
+            str(screen.RESULT.relative_to(ROOT)): common.sha256_file(
+                screen.RESULT
             ),
         },
         "paper_result": False,
@@ -128,7 +125,12 @@ def configure_executor() -> None:
 
 
 def baseline_summary(episode_id: str) -> dict:
-    run_dir = diagnostic.OUT / "runs" / f"shadow_ep_{episode_id}"
+    name = f"shadow_ep_{episode_id}"
+    candidates = [diagnostic.OUT / "runs" / name, screen.OUT / "runs" / name]
+    matches = [path for path in candidates if (path / "RUN_SUMMARY.json").is_file()]
+    if len(matches) != 1:
+        raise RuntimeError("V5.10 blind baseline location is ambiguous")
+    run_dir = matches[0]
     summary = json.loads((run_dir / "RUN_SUMMARY.json").read_text())
     if not (
         summary.get("status") == "PASS"
