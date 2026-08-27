@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 V56 = ROOT / "artifacts/evaluation/mf2_r2r_v5_6_fresh_seen_screen"
 V57 = ROOT / "artifacts/evaluation/mf2_r2r_v5_7_candidate_adapter_diagnostic"
 V58 = ROOT / "artifacts/evaluation/mf2_r2r_v5_8_safe_local_diagnostic"
+V510 = ROOT / "artifacts/evaluation/mf2_r2r_v5_10_native_control_diagnostic"
 
 
 def counts(root: Path) -> dict:
@@ -39,8 +40,12 @@ value = {
     "v5_6_fresh_screen": counts(V56),
     "v5_7_global_adapter_diagnostic": counts(V57),
     "v5_8_safe_local_diagnostic": counts(V58),
+    "v5_10_native_control_diagnostic": counts(V510),
 }
 result = V57 / "R2R_V5_7_CANDIDATE_ADAPTER_RESULT.json"
 if result.is_file():
     value["v5_7_result"] = json.loads(result.read_text())["status"]
+v510_result = V510 / "R2R_V5_10_NATIVE_CONTROL_RESULT.json"
+if v510_result.is_file():
+    value["v5_10_result"] = json.loads(v510_result.read_text())["status"]
 print(json.dumps(value, indent=2))
