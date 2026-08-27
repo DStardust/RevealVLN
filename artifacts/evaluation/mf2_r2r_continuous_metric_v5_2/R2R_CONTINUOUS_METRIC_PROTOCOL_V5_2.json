@@ -1,0 +1,113 @@
+{
+  "controller_contract": {
+    "checkpointed_excursion": "execute locked fused branch",
+    "commit_and_defer": "ETP-R1 action remains authoritative",
+    "frozen_frontend": true,
+    "no_forced_return": true,
+    "post_backtrack": "execute frozen-control return as the next environment action",
+    "post_continue": "resume ETP-R1 from reached state"
+  },
+  "metrics": [
+    "success",
+    "spl",
+    "ndtw",
+    "sdtw",
+    "distance_to_goal",
+    "path_length",
+    "steps_taken",
+    "oracle_success"
+  ],
+  "paired_design": {
+    "base_policy_sampling": false,
+    "baseline": "one deterministic frozen ETP-R1 run per episode",
+    "task_seed": 100,
+    "treatment": "one conservative RevealNav overlay run per model seed and episode",
+    "uncertainty": "10000 deterministic hierarchical bootstrap replicates: resample episodes, then sample one model seed per episode",
+    "unit": "episode paired to the identical frozen ETP-R1 baseline"
+  },
+  "paper_result": false,
+  "predeclared_interpretation": {
+    "directional_positive": "mean paired SPL > 0, mean paired nDTW > 0, and mean paired Success >= 0",
+    "engineering_success_does_not_imply_navigation_improvement": true,
+    "scientific_failure_is_preserved": true,
+    "statistically_positive": "hierarchical-bootstrap 95% lower bounds for SPL and nDTW > 0"
+  },
+  "runs": {
+    "baseline": 11,
+    "revealnav": 33,
+    "total": 44
+  },
+  "schema_version": "revealnav-r2r-continuous-metric-protocol/5.2",
+  "scope": "R2R-CE val_unseen engineering cohort; no test payload",
+  "seeds": [
+    20260826,
+    20260827,
+    20260828
+  ],
+  "selection": [
+    {
+      "episode_id": "931",
+      "scene_id": "2azQ1b91cZZ",
+      "selection_digest": "03fa8a76a2352fbbad6455663658c2e9cc03c907f36a27d3e4e2c2fa2e71ea60"
+    },
+    {
+      "episode_id": "401",
+      "scene_id": "8194nk5LbLH",
+      "selection_digest": "016be21c22aaaa62db79144732eb2e1d6eece80b4016264adaa9ff8e9b85dd65"
+    },
+    {
+      "episode_id": "639",
+      "scene_id": "EU6Fwq7SyZv",
+      "selection_digest": "0297e29ef2eec2c4af8b8858aaf3dbfe859a8f6b2f1c29ba72ed3dc6f010da43"
+    },
+    {
+      "episode_id": "1060",
+      "scene_id": "QUCTc6BB5sX",
+      "selection_digest": "000e6f4ef0688fcd3c5bced1b2ba4ec682227a5634d86c5b5fe7dc85832385ef"
+    },
+    {
+      "episode_id": "1644",
+      "scene_id": "TbHJrupSAjP",
+      "selection_digest": "0062535b4568dd045a32c4d93afa7e9559f1805220da3ba21e441aed558bc4de"
+    },
+    {
+      "episode_id": "857",
+      "scene_id": "X7HyMhZNoso",
+      "selection_digest": "092196da2e891da085476e9baa20487e40daa601bb39d0436273dd7b5d25fc74"
+    },
+    {
+      "episode_id": "1218",
+      "scene_id": "Z6MFQCViBuw",
+      "selection_digest": "03a26a6117405d7f355e4017cc7f31788781a1692ecbc7a66167a74bf31f0e10"
+    },
+    {
+      "episode_id": "1825",
+      "scene_id": "oLBMNvg9in8",
+      "selection_digest": "0126ac5bb240ae7c82f51bd8679cc089ee250cd847ccd74532707324e1e33136"
+    },
+    {
+      "episode_id": "1582",
+      "scene_id": "pLe4wQe7qrG",
+      "selection_digest": "07cc4b6361caf8301cbf865296fd9e9fda1e7e9631ba9957f60e52009249d7ff"
+    },
+    {
+      "episode_id": "189",
+      "scene_id": "x8F5xyUWy9e",
+      "selection_digest": "025326e9b017bb6f1996f6242ca79eb3aab4126d956c1cc3c0580a483150054b"
+    },
+    {
+      "episode_id": "670",
+      "scene_id": "zsNo4HB9uLZ",
+      "selection_digest": "003571758b56fae0f55f91b0ab852f0825ad2f0f5b4ff26f6bb41b6423d28c3f"
+    }
+  ],
+  "selection_reused_without_outcome_filtering": true,
+  "sources": {
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_2/R2R_UNSEEN_FUSION_PROTOCOL_V4_4_2.json": "b3e3be87654070023c90dbec55726fc3fece2176b2449a91e1732a7ea4f91f7a",
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_2/R2R_UNSEEN_FUSION_RESULT_V4_4_2.json": "d4878f47ed2bf80726dc76764893e6adba40b00a011cbf5d45a765d50c524553",
+    "locks/R2R_ACTION_ENABLED_MULTISCENE_V5_1.json": "6d641e0554d6d7e2630cc898e1ca8314686aa94d74b949fbf15ff8177209ecb0",
+    "scripts/r2r_continuous_controller_worker_v5_2.py": "3199d7a713eec28c65e40d2d6106a1a0eaf5e5b606faffea76432bd06afd71be"
+  },
+  "status": "SEALED_BEFORE_CONTINUOUS_PAIRED_METRIC_RUNS",
+  "test_or_test_challenge_allowed": false
+}

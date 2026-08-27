@@ -1,0 +1,29 @@
+{
+  "schema_version": "revealnav-r2r-continuous-metric-lock/5.2",
+  "status": "LOCKED_NEGATIVE_OR_MIXED_BEFORE_CONTROLLER_REVISION",
+  "parent_lock": "locks/R2R_ACTION_ENABLED_MULTISCENE_V5_1.json",
+  "protocol": {
+    "path": "artifacts/evaluation/mf2_r2r_continuous_metric_v5_2/R2R_CONTINUOUS_METRIC_PROTOCOL_V5_2.json",
+    "bytes": 4196,
+    "sha256": "b369d87bbcabb8b8592f10bf3b140866fda041286326f03c57fc20740e23d330"
+  },
+  "result": {
+    "path": "artifacts/evaluation/mf2_r2r_continuous_metric_v5_2/R2R_CONTINUOUS_METRIC_RESULT_V5_2.json",
+    "bytes": 53248,
+    "sha256": "4588da9936467b2bfab34625fa12434192fc6d49a25f30ec8a600cb5f3cd60b7",
+    "status": "R2R_CONTINUOUS_ENGINEERING_PASS_NEGATIVE_OR_MIXED",
+    "runs": 44,
+    "episodes": 11,
+    "model_seeds": 3,
+    "checkpointed_excursions": 9,
+    "post_backtrack": 3,
+    "successful_returns": 3,
+    "success_benefit_delta": 0.0,
+    "spl_benefit_delta": -0.01930399821189408,
+    "ndtw_benefit_delta": 0.006180198365677073
+  },
+  "interpretation": "The continuous action path is executable and deterministic baselines are invariant, but this controller revision does not pass the predeclared navigation-improvement gates. Preserve the result; do not present it as a positive paper result.",
+  "authorized_next_stage": "diagnose and version a controller revision using train/internal-development evidence only before any fresh confirmatory evaluation",
+  "test_or_test_challenge_allowed": false,
+  "paper_result": false
+}

@@ -1,0 +1,1504 @@
+{
+  "benefit_deltas_treatment_minus_baseline": {
+    "distance_to_goal": {
+      "hierarchical_bootstrap_95pct": [
+        -0.001038226214322177,
+        0.05151987075805664
+      ],
+      "maximum": 0.18890619277954102,
+      "mean": 0.01865595037286932,
+      "median": -0.0,
+      "minimum": -0.011420488357543945
+    },
+    "ndtw": {
+      "hierarchical_bootstrap_95pct": [
+        -0.030385962526957022,
+        0.05284741790496103
+      ],
+      "maximum": 0.19377386565152377,
+      "mean": 0.006180198365677073,
+      "median": 0.0,
+      "minimum": -0.11343264972115885
+    },
+    "oracle_success": {
+      "hierarchical_bootstrap_95pct": [
+        0.0,
+        0.0
+      ],
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0
+    },
+    "path_length": {
+      "hierarchical_bootstrap_95pct": [
+        -0.9363707629117098,
+        2.1040735244750977
+      ],
+      "maximum": 7.418876647949219,
+      "mean": 0.46673153385971533,
+      "median": -0.0,
+      "minimum": -4.2988080978393555
+    },
+    "sdtw": {
+      "hierarchical_bootstrap_95pct": [
+        -0.03441096898806784,
+        0.004129152641248859
+      ],
+      "maximum": 0.04542067905373745,
+      "mean": -0.011435607602643269,
+      "median": 0.0,
+      "minimum": -0.11343264972115885
+    },
+    "spl": {
+      "hierarchical_bootstrap_95pct": [
+        -0.06288776532130756,
+        0.0033959277600202897
+      ],
+      "maximum": 0.0314268476667906,
+      "mean": -0.01930399821189408,
+      "median": 0.0,
+      "minimum": -0.23157653246036647
+    },
+    "steps_taken": {
+      "hierarchical_bootstrap_95pct": [
+        -18.09545454545454,
+        64.63636363636364
+      ],
+      "maximum": 237.0,
+      "mean": 16.636363636363637,
+      "median": -0.0,
+      "minimum": -83.0
+    },
+    "success": {
+      "hierarchical_bootstrap_95pct": [
+        0.0,
+        0.0
+      ],
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0
+    }
+  },
+  "engineering_gates": {
+    "all_44_runs_complete": true,
+    "all_controller_checkpoints_strict_loaded": true,
+    "all_controller_hash_chains_valid": true,
+    "all_task_metrics_present_and_finite": true,
+    "at_least_one_real_checkpointed_excursion": true,
+    "baseline_has_no_controller": true,
+    "baseline_metrics_match_prior_frozen_cohort": true,
+    "every_excursion_has_one_post_decision": true,
+    "every_requested_return_succeeded": true,
+    "no_test_or_test_challenge_payload": true
+  },
+  "paired_runs": [
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "931",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "931",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "931",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "401",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "401",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "401",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "639",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "639",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "639",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1060",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1060",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1060",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1644",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1644",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1644",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "857",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "857",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "857",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1218",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1218",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "1218",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.0662374496459961,
+        "ndtw": 0.04542067905373745,
+        "oracle_success": 0.0,
+        "path_length": 7.418876647949219,
+        "sdtw": 0.04542067905373745,
+        "spl": 0.0314268476667906,
+        "steps_taken": 78.0,
+        "success": 0.0
+      },
+      "episode_id": "1825",
+      "interventions": {
+        "backtrack_decisions": 1,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "5d2d972e98326254bb55cda9473ee27a5c52587b27811a7eb3383acc47192c01",
+        "strict_load": true,
+        "successful_returns": 1
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.18890619277954102,
+        "ndtw": -0.044275071072219035,
+        "oracle_success": 0.0,
+        "path_length": 0.8373908996582031,
+        "sdtw": -0.044275071072219035,
+        "spl": 0.002964178846716292,
+        "steps_taken": -7.0,
+        "success": 0.0
+      },
+      "episode_id": "1825",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 1,
+        "failed_returns": 0,
+        "final_record_hash": "98c750f6158f8749a1e68ecc70615be5552d0ba7b1381780a731962ce3895c20",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.18890619277954102,
+        "ndtw": -0.044275071072219035,
+        "oracle_success": 0.0,
+        "path_length": 0.8373908996582031,
+        "sdtw": -0.044275071072219035,
+        "spl": 0.002964178846716292,
+        "steps_taken": -7.0,
+        "success": 0.0
+      },
+      "episode_id": "1825",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 1,
+        "failed_returns": 0,
+        "final_record_hash": "49707c03566b2927c6f8a4e8cf81e48ca01d94794e70dff7a4477a0b53183a2c",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.04765892028808594,
+        "ndtw": 0.19377386565152377,
+        "oracle_success": 0.0,
+        "path_length": 6.302931785583496,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 237.0,
+        "success": 0.0
+      },
+      "episode_id": "1582",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 1,
+        "failed_returns": 0,
+        "final_record_hash": "0e37f485181da78ce56bd54da635b02415705cb8d8b9235ab93f306c87d5426a",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.04765892028808594,
+        "ndtw": 0.19377386565152377,
+        "oracle_success": 0.0,
+        "path_length": 6.302931785583496,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 237.0,
+        "success": 0.0
+      },
+      "episode_id": "1582",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 1,
+        "failed_returns": 0,
+        "final_record_hash": "bc2c4d0a76fb983786787f60bef381a1d879badf56e61f6b7373de4fbe4ab721",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.04765892028808594,
+        "ndtw": 0.19377386565152377,
+        "oracle_success": 0.0,
+        "path_length": 6.302931785583496,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 237.0,
+        "success": 0.0
+      },
+      "episode_id": "1582",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 1,
+        "failed_returns": 0,
+        "final_record_hash": "b3a79d1b097c5ecdab22fac4ac41ba39a6936b06a8b5e4571b164919a3743b77",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "189",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "189",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.0,
+        "ndtw": 0.0,
+        "oracle_success": 0.0,
+        "path_length": -0.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": -0.0,
+        "success": 0.0
+      },
+      "episode_id": "189",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 0,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260828
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.011420488357543945,
+        "ndtw": -0.11343264972115885,
+        "oracle_success": 0.0,
+        "path_length": -4.2988080978393555,
+        "sdtw": -0.11343264972115885,
+        "spl": -0.23157653246036647,
+        "steps_taken": -83.0,
+        "success": 0.0
+      },
+      "episode_id": "670",
+      "interventions": {
+        "backtrack_decisions": 1,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260826/post_excursion_q.pt",
+            "seed": 20260826,
+            "sha256": "c916e7ca1c186903e0fe4bf460cf68b97221bb644262fd5e93a3517ca38705b4"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+            "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+            "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "e4e4c083c9f236901e4750075857ebeff189df19310695ba322e2c97ec199a55",
+        "strict_load": true,
+        "successful_returns": 1
+      },
+      "seed": 20260826
+    },
+    {
+      "delta": {
+        "distance_to_goal": 0.05146074295043945,
+        "ndtw": -0.10738028835420954,
+        "oracle_success": 0.0,
+        "path_length": -4.002696990966797,
+        "sdtw": -0.10738028835420954,
+        "spl": -0.21123408143199496,
+        "steps_taken": -60.0,
+        "success": 0.0
+      },
+      "episode_id": "670",
+      "interventions": {
+        "backtrack_decisions": 0,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260827/post_excursion_q.pt",
+            "seed": 20260827,
+            "sha256": "4451c06ec95de237fb2915a89261fee1ff7bf17d33bf889782ff193ace0f8bd0"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+            "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+            "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 1,
+        "failed_returns": 0,
+        "final_record_hash": "c8fc16017ea725d52d3108a9f0d553d06d8799eb6e5052f53d4b498ddff94253",
+        "strict_load": true,
+        "successful_returns": 0
+      },
+      "seed": 20260827
+    },
+    {
+      "delta": {
+        "distance_to_goal": -0.011420488357543945,
+        "ndtw": -0.11343264972115885,
+        "oracle_success": 0.0,
+        "path_length": -4.2988080978393555,
+        "sdtw": -0.11343264972115885,
+        "spl": -0.23157653246036647,
+        "steps_taken": -83.0,
+        "success": 0.0
+      },
+      "episode_id": "670",
+      "interventions": {
+        "backtrack_decisions": 1,
+        "checkpoint_triplet": {
+          "post": {
+            "bytes": 1967251,
+            "path": "artifacts/evaluation/mf2_post_excursion_q_v4_8/seed_20260828/post_excursion_q.pt",
+            "seed": 20260828,
+            "sha256": "89899964f3c31ec2e306019ec0c854db046d766fc4adb6f516d3eceb87bd4e25"
+          },
+          "q": {
+            "bytes": 1303725,
+            "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+            "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+          },
+          "ree": {
+            "bytes": 3263054,
+            "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+            "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+          }
+        },
+        "checkpointed_excursions": 1,
+        "continue_decisions": 0,
+        "failed_returns": 0,
+        "final_record_hash": "9951c61120721e8a9e438a568bbfc7d4b2066803184f0d5051fa6966b9494c23",
+        "strict_load": true,
+        "successful_returns": 1
+      },
+      "seed": 20260828
+    }
+  ],
+  "paper_result": false,
+  "per_seed_mean_benefit_delta": {
+    "20260826": {
+      "distance_to_goal": 0.009315989234230736,
+      "ndtw": 0.011432899544009306,
+      "oracle_success": 0.0,
+      "path_length": 0.8566363941539418,
+      "sdtw": -0.006182906424311036,
+      "spl": -0.01819542589032508,
+      "steps_taken": 21.09090909090909,
+      "success": 0.0
+    },
+    "20260827": {
+      "distance_to_goal": 0.026184168728915127,
+      "ndtw": 0.00382895511137229,
+      "oracle_success": 0.0,
+      "path_length": 0.28523869947953656,
+      "sdtw": -0.013786850856948052,
+      "spl": -0.018933627507752605,
+      "steps_taken": 15.454545454545455,
+      "success": 0.0
+    },
+    "20260828": {
+      "distance_to_goal": 0.020467693155462093,
+      "ndtw": 0.0032787404416496258,
+      "oracle_success": 0.0,
+      "path_length": 0.2583195079456676,
+      "sdtw": -0.014337065526670717,
+      "spl": -0.02078294123760456,
+      "steps_taken": 13.363636363636363,
+      "success": 0.0
+    }
+  },
+  "policy_activity": {
+    "checkpointed_excursions": 9,
+    "failed_returns": 0,
+    "post_backtrack": 3,
+    "post_continue": 6,
+    "successful_returns": 3
+  },
+  "predeclared_scientific_gates": {
+    "directional_positive": false,
+    "statistically_positive": false
+  },
+  "protocol_sha256": "b369d87bbcabb8b8592f10bf3b140866fda041286326f03c57fc20740e23d330",
+  "run_evidence": {
+    "files": 77,
+    "path_sha256_chain": "e018ca201707a9a51f073710b36c9f01f368e4e836662487dbd8f7a250604ad3"
+  },
+  "schema_version": "revealnav-r2r-continuous-metric-result/5.2",
+  "scientific_outcome": "NEGATIVE_OR_MIXED",
+  "status": "R2R_CONTINUOUS_ENGINEERING_PASS_NEGATIVE_OR_MIXED",
+  "test_or_test_challenge_accessed": false
+}
