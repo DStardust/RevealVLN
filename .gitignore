@@ -1,0 +1,42 @@
+# RevealVLN source repository: deny top-level content by default.
+/*
+
+# Repository metadata and research specifications.
+!/.gitignore
+!/AGENTS.md
+!/README.md
+!/pyproject.toml
+!/FROZEN_SPEC.md
+!/PHASE0_PROTOCOL.md
+!/RESEARCH_PLAN.md
+!/MF2_CR6_TRAINING_PROTOCOL.md
+!/METHOD_FREEZE_2_CORRECTNESS_REVISION_1.md
+!/METHOD_FREEZE_2_CORRECTNESS_REVISION_2.md
+!/METHOD_FREEZE_2_CORRECTNESS_REVISION_3.md
+!/METHOD_FREEZE_2_CORRECTNESS_REVISION_4.md
+!/METHOD_FREEZE_2_CORRECTNESS_REVISION_5.md
+!/METHOD_FREEZE_2_CORRECTNESS_REVISION_6.md
+!/v1.2.md
+
+# Source, experiment drivers, and tests.
+!/toporeveal/
+!/scripts/
+!/tests/
+!/revealnav_cr1/
+!/revealnav_mf2/
+!/revealnav_mf2r1/
+!/revealnav_mf2r2/
+!/revealnav_mf2r3/
+!/revealnav_mf2r4/
+
+# Generated files inside allowed source directories.
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.log
+**/*.out
+**/*.part
+**/*.tmp
+**/*~
