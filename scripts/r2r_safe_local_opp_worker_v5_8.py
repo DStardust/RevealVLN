@@ -105,6 +105,14 @@ class SafeLocalFullOPPActionController(
             ),
         }
 
+    def candidate_funnel(self) -> dict:
+        value = super().candidate_funnel()
+        value["persistence_semantics"] = (
+            "candidate identity present in K=3 consecutive ETP navigation "
+            "prefixes within the current local automatic-front-end set"
+        )
+        return value
+
 
 def main() -> None:
     run_dir = None
