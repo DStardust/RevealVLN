@@ -1,0 +1,36 @@
+{
+  "contract": {
+    "failed_return_is_fail_closed": true,
+    "failure_path": [
+      "returning",
+      "return_failed",
+      "returning"
+    ],
+    "return_target": "the exact stored public controller reference",
+    "success_path": [
+      "at_checkpoint",
+      "exploring",
+      "returning",
+      "at_checkpoint",
+      "committed"
+    ],
+    "successful_excursion_branch_status": "exhausted"
+  },
+  "gates": [
+    "success_path_exact",
+    "failed_return_blocks_commit",
+    "retry_uses_identical_return_reference",
+    "unknown_branch_rejected",
+    "executor_makes_no_policy_choice"
+  ],
+  "gold_payload_read": false,
+  "paper_result": false,
+  "post_excursion_training_data_read": false,
+  "schema_version": "revealnav-mf2-return-executor-protocol/4.5",
+  "sources": {
+    "artifacts/design/MF2_STATE_CONDITIONED_RETURN_EXECUTOR_V4_5.md": "f2bbd8f1f461e1c00470aaed0c30b9dc1427d4f96c10bc6f60a8ed6eb87d0402",
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_2/R2R_UNSEEN_FUSION_RESULT_V4_4_2.json": "a216299df9e4f7332f8d7dc74651ebc7f1121bb2cd4dc29231953c14a5b6c8a3",
+    "revealnav_mf2r4/executor.py": "2a049b343c333e682a66874d146554988a43ab753f79553dd36faf224d260361"
+  },
+  "status": "SEALED_BEFORE_RETURN_EXECUTOR_WITNESS"
+}

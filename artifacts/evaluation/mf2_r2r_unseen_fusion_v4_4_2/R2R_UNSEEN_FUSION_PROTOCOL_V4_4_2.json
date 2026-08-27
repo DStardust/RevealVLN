@@ -1,0 +1,122 @@
+{
+  "controller": {
+    "candidate_scope": "local ghost frontier whose ghost_fronts include the current ETP graph node; never the full global ghost memory",
+    "formula": "q + 5.0 * (1 - p_target)",
+    "mode": "locked REE+Q fusion shadow; ETP-R1 remains authoritative",
+    "persistence_definition": "frozen ETP GraphMap ghost matched-observation count >= 3",
+    "persistence_k": 3,
+    "raw_q_recorded_on_same_base_trajectory": true,
+    "shadow_actions_executed": 0,
+    "threshold_or_checkpoint_tuning": false
+  },
+  "counts": {
+    "selected_episodes": 11,
+    "train_episodes": 10819,
+    "train_scenes": 61,
+    "val_unseen_episodes": 1839,
+    "val_unseen_scenes": 11
+  },
+  "engineering_gates": {
+    "all_33_seed_episode_runs_complete": true,
+    "all_controller_hash_chains_valid": true,
+    "all_fused_costs_finite": true,
+    "all_six_checkpoints_strict_loaded": true,
+    "at_least_one_persistent_multibranch_decision_observed": true,
+    "base_action_and_metric_invariant_across_shadow_seeds": true,
+    "no_shadow_action_executed": true
+  },
+  "excluded_interface_preflight_episodes": [
+    "90",
+    "262"
+  ],
+  "forbidden_splits": [
+    "test",
+    "test_challenge"
+  ],
+  "paper_result": false,
+  "physical_gpus": [
+    0,
+    1
+  ],
+  "predeclared_scientific_gates": {
+    "at_least_10_aligned_persistent_decisions": true,
+    "fused_all_three_branch_agreement_above_raw_q": true,
+    "fused_all_three_branch_agreement_at_least_0_60": true
+  },
+  "schema_version": "revealnav-r2r-unseen-fusion-protocol/4.4.2",
+  "scope": "R2R-CE val_unseen cross-style engineering confirmation",
+  "seeds": [
+    20260826,
+    20260827,
+    20260828
+  ],
+  "selection": [
+    {
+      "episode_id": "931",
+      "scene_id": "2azQ1b91cZZ",
+      "selection_digest": "03fa8a76a2352fbbad6455663658c2e9cc03c907f36a27d3e4e2c2fa2e71ea60"
+    },
+    {
+      "episode_id": "401",
+      "scene_id": "8194nk5LbLH",
+      "selection_digest": "016be21c22aaaa62db79144732eb2e1d6eece80b4016264adaa9ff8e9b85dd65"
+    },
+    {
+      "episode_id": "639",
+      "scene_id": "EU6Fwq7SyZv",
+      "selection_digest": "0297e29ef2eec2c4af8b8858aaf3dbfe859a8f6b2f1c29ba72ed3dc6f010da43"
+    },
+    {
+      "episode_id": "1060",
+      "scene_id": "QUCTc6BB5sX",
+      "selection_digest": "000e6f4ef0688fcd3c5bced1b2ba4ec682227a5634d86c5b5fe7dc85832385ef"
+    },
+    {
+      "episode_id": "1644",
+      "scene_id": "TbHJrupSAjP",
+      "selection_digest": "0062535b4568dd045a32c4d93afa7e9559f1805220da3ba21e441aed558bc4de"
+    },
+    {
+      "episode_id": "857",
+      "scene_id": "X7HyMhZNoso",
+      "selection_digest": "092196da2e891da085476e9baa20487e40daa601bb39d0436273dd7b5d25fc74"
+    },
+    {
+      "episode_id": "1218",
+      "scene_id": "Z6MFQCViBuw",
+      "selection_digest": "03a26a6117405d7f355e4017cc7f31788781a1692ecbc7a66167a74bf31f0e10"
+    },
+    {
+      "episode_id": "1825",
+      "scene_id": "oLBMNvg9in8",
+      "selection_digest": "0126ac5bb240ae7c82f51bd8679cc089ee250cd847ccd74532707324e1e33136"
+    },
+    {
+      "episode_id": "1582",
+      "scene_id": "pLe4wQe7qrG",
+      "selection_digest": "07cc4b6361caf8301cbf865296fd9e9fda1e7e9631ba9957f60e52009249d7ff"
+    },
+    {
+      "episode_id": "189",
+      "scene_id": "x8F5xyUWy9e",
+      "selection_digest": "025326e9b017bb6f1996f6242ca79eb3aab4126d956c1cc3c0580a483150054b"
+    },
+    {
+      "episode_id": "670",
+      "scene_id": "zsNo4HB9uLZ",
+      "selection_digest": "003571758b56fae0f55f91b0ab852f0825ad2f0f5b4ff26f6bb41b6423d28c3f"
+    }
+  ],
+  "selection_salt": "revealnav-r2r-unseen-fusion-confirmation/1",
+  "sources": {
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4/R2R_UNSEEN_GLOBAL_FRONTIER_PREFLIGHT_DIAGNOSIS_V4_4.json": "18d6f0c26a2baba17df0dde654893862a7a6e78df6b680ab6cffe0c3f1956daa",
+    "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_1/R2R_UNSEEN_PERSISTENCE_PREFLIGHT_DIAGNOSIS_V4_4_1.json": "bd4c920493038ec5a217b8dbd1ef1b640dae7238d85903744d7ce4c7a45d4b85",
+    "artifacts/upstream/R2R_VAL_UNSEEN_EXTRACTION.json": "f98963fedb5f6f5cf4dd7471d2738e41d6a3a3df6b06ac86905d037f7cb2bacf",
+    "locks/REE_Q_FUSION_CONTROLLER_V4_4.json": "771d5019260c351d69abda5121eb2df22c0ad798d8ff4e6801f30ddadd838fe8",
+    "revealnav_mf2r4/fusion.py": "cbe97742b8986ecf8f8686972050db209c19c91b9f77c3e823ddbb88143ce5fb",
+    "scripts/r2r_unseen_fusion_worker.py": "5090ff45ee50e82cc152d15435707a1dfa393ae2b2141871de80f49964b48264",
+    "third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/val_unseen/val_unseen.json.gz": "6140b46759fe332ee96aa849d4bb64e1c1829b8f65acee127355040a6ee23484",
+    "third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/val_unseen/val_unseen_gt.json.gz": "46a2e02c4a5e3b9d3d3c936009cbe1a4e9ea8f34156589f1e69ff1ff7080c044"
+  },
+  "status": "SEALED_BEFORE_FRESH_R2R_VAL_UNSEEN_MATCHED_FRONTIER_RUNS"
+}

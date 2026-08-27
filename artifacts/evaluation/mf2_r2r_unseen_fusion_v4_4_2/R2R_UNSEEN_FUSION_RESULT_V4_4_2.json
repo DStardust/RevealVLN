@@ -1,0 +1,249 @@
+{
+  "checkpoint_lock_sha256": "771d5019260c351d69abda5121eb2df22c0ad798d8ff4e6801f30ddadd838fe8",
+  "controller_mode": "shadow_only",
+  "engineering_gates": {
+    "all_33_seed_episode_runs_complete": true,
+    "all_controller_hash_chains_valid": true,
+    "all_fused_costs_finite": true,
+    "all_six_checkpoints_strict_loaded": true,
+    "at_least_one_persistent_multibranch_decision_observed": true,
+    "base_action_and_metric_invariant_across_shadow_seeds": true,
+    "no_shadow_action_executed": true
+  },
+  "next_gate": "state-conditioned return executor",
+  "paper_result": false,
+  "per_episode": [
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "931",
+      "metrics": {
+        "collisions": 0.02857142857142857,
+        "distance_to_goal": 0.5906404256820679,
+        "ghost_cnt": 19,
+        "high_level_step": 5,
+        "ndtw": 0.9439828625399633,
+        "oracle_success": 1.0,
+        "path_length": 8.473533630371094,
+        "sdtw": 0.9439828625399633,
+        "spl": 0.9796267792621032,
+        "steps_taken": 55.0,
+        "success": 1.0
+      },
+      "scene_id": "2azQ1b91cZZ"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "401",
+      "metrics": {
+        "collisions": 0.24,
+        "distance_to_goal": 10.962139129638672,
+        "ghost_cnt": 15,
+        "high_level_step": 3,
+        "ndtw": 0.19549018872375737,
+        "oracle_success": 0.0,
+        "path_length": 6.217497825622559,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 61.0,
+        "success": 0.0
+      },
+      "scene_id": "8194nk5LbLH"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "639",
+      "metrics": {
+        "collisions": 0.45901639344262296,
+        "distance_to_goal": 1.1658848524093628,
+        "ghost_cnt": 40,
+        "high_level_step": 12,
+        "ndtw": 0.8798833164855012,
+        "oracle_success": 1.0,
+        "path_length": 13.783146858215332,
+        "sdtw": 0.8798833164855012,
+        "spl": 0.8497044526768294,
+        "steps_taken": 259.0,
+        "success": 1.0
+      },
+      "scene_id": "EU6Fwq7SyZv"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "1060",
+      "metrics": {
+        "collisions": 0.0,
+        "distance_to_goal": 16.731239318847656,
+        "ghost_cnt": 20,
+        "high_level_step": 7,
+        "ndtw": 0.057086760501825394,
+        "oracle_success": 0.0,
+        "path_length": 9.0,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 61.0,
+        "success": 0.0
+      },
+      "scene_id": "QUCTc6BB5sX"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "1644",
+      "metrics": {
+        "collisions": 0.0,
+        "distance_to_goal": 0.36063623428344727,
+        "ghost_cnt": 19,
+        "high_level_step": 5,
+        "ndtw": 0.9609643530236996,
+        "oracle_success": 1.0,
+        "path_length": 7.499999046325684,
+        "sdtw": 0.9609643530236996,
+        "spl": 0.9265741890683732,
+        "steps_taken": 42.0,
+        "success": 1.0
+      },
+      "scene_id": "TbHJrupSAjP"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "857",
+      "metrics": {
+        "collisions": 0.0,
+        "distance_to_goal": 9.057393074035645,
+        "ghost_cnt": 25,
+        "high_level_step": 5,
+        "ndtw": 0.23188739748654869,
+        "oracle_success": 0.0,
+        "path_length": 9.388092041015625,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 59.0,
+        "success": 0.0
+      },
+      "scene_id": "X7HyMhZNoso"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "1218",
+      "metrics": {
+        "collisions": 0.0,
+        "distance_to_goal": 18.116058349609375,
+        "ghost_cnt": 17,
+        "high_level_step": 4,
+        "ndtw": 0.08251981831931338,
+        "oracle_success": 0.0,
+        "path_length": 7.358528137207031,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 36.0,
+        "success": 0.0
+      },
+      "scene_id": "Z6MFQCViBuw"
+    },
+    {
+      "aligned_persistent_decisions": 4,
+      "base_invariant_across_seeds": true,
+      "episode_id": "1825",
+      "metrics": {
+        "collisions": 0.10738255033557047,
+        "distance_to_goal": 2.061840057373047,
+        "ghost_cnt": 28,
+        "high_level_step": 14,
+        "ndtw": 0.16425937766553467,
+        "oracle_success": 1.0,
+        "path_length": 40.8778190612793,
+        "sdtw": 0.16425937766553467,
+        "spl": 0.14173427274954215,
+        "steps_taken": 474.0,
+        "success": 1.0
+      },
+      "scene_id": "oLBMNvg9in8"
+    },
+    {
+      "aligned_persistent_decisions": 5,
+      "base_invariant_across_seeds": true,
+      "episode_id": "1582",
+      "metrics": {
+        "collisions": 0.6923076923076923,
+        "distance_to_goal": 3.738729953765869,
+        "ghost_cnt": 26,
+        "high_level_step": 14,
+        "ndtw": 0.5742804687955133,
+        "oracle_success": 0.0,
+        "path_length": 13.378617286682129,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 387.0,
+        "success": 0.0
+      },
+      "scene_id": "pLe4wQe7qrG"
+    },
+    {
+      "aligned_persistent_decisions": 0,
+      "base_invariant_across_seeds": true,
+      "episode_id": "189",
+      "metrics": {
+        "collisions": 0.07692307692307693,
+        "distance_to_goal": 3.1697232723236084,
+        "ghost_cnt": 18,
+        "high_level_step": 9,
+        "ndtw": 0.6897764820245139,
+        "oracle_success": 0.0,
+        "path_length": 12.774185180664062,
+        "sdtw": 0.0,
+        "spl": 0.0,
+        "steps_taken": 127.0,
+        "success": 0.0
+      },
+      "scene_id": "x8F5xyUWy9e"
+    },
+    {
+      "aligned_persistent_decisions": 1,
+      "base_invariant_across_seeds": true,
+      "episode_id": "670",
+      "metrics": {
+        "collisions": 0.25806451612903225,
+        "distance_to_goal": 2.4412031173706055,
+        "ghost_cnt": 18,
+        "high_level_step": 8,
+        "ndtw": 0.8758577518653211,
+        "oracle_success": 1.0,
+        "path_length": 7.182716369628906,
+        "sdtw": 0.8758577518653211,
+        "spl": 1.0,
+        "steps_taken": 87.0,
+        "success": 1.0
+      },
+      "scene_id": "zsNo4HB9uLZ"
+    }
+  ],
+  "protocol_sha256": "b3e3be87654070023c90dbec55726fc3fece2176b2449a91e1732a7ea4f91f7a",
+  "run_evidence": {
+    "files": 66,
+    "path_sha256_chain": "b4345b8da0997e1e7eb73655f3ec32e5f51fa90e3df67ce12a8b3883089c2cab"
+  },
+  "runs": 33,
+  "schema_version": "revealnav-r2r-unseen-fusion-result/4.4.2",
+  "scientific_gates": {
+    "at_least_10_aligned_persistent_decisions": true,
+    "fused_all_three_branch_agreement_above_raw_q": true,
+    "fused_all_three_branch_agreement_at_least_0_60": true
+  },
+  "shadow_actions_executed": 0,
+  "stability": {
+    "aligned_persistent_decisions": 10,
+    "fused_all_three_action_agreement": 0.8,
+    "fused_all_three_branch_agreement": 0.7,
+    "raw_q_all_three_action_agreement": 0.8,
+    "raw_q_all_three_branch_agreement": 0.5
+  },
+  "status": "R2R_UNSEEN_FUSION_CONFIRMATION_PASS",
+  "test_or_test_challenge_accessed": false,
+  "threshold_tuned_on_val_unseen": false
+}

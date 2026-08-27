@@ -1,0 +1,22 @@
+{
+  "schema_version": "revealnav-r2r-unseen-persistence-diagnosis/4.4.1",
+  "status": "PERSISTENCE_CLOCK_INTERFACE_MISMATCH_CONFIRMED",
+  "preflight_episode_id": "262",
+  "runs": 3,
+  "all_runs_engineering_pass": true,
+  "runtime_candidate_count_minimum": 2,
+  "runtime_candidate_count_maximum": 4,
+  "eligible_decisions": 0,
+  "shadow_actions_executed": 0,
+  "full_run_started": false,
+  "root_cause": "K=3 was counted as consecutive membership across high-level navigation moves. Training and the frozen frontend define persistence as repeated temporal matching of one ghost identity.",
+  "correction": "Use GraphMap.ghost_embeds[ghost_id][1], the frozen ETP frontend's matched-observation count, and require count >= 3. Keep local-frontier membership, fusion, checkpoints, and every other rule unchanged.",
+  "failed_protocol": {
+    "path": "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4_1/R2R_UNSEEN_FUSION_PROTOCOL_V4_4_1.json",
+    "sha256": "cdaac820f68d1f8626d53625180caba0a9bb708b9bc55bf3629a45ee3850c4e4"
+  },
+  "preflight_status_sha256": "44bdde0e68f531db2bcae3a9d8087db3654a12261836d03a11b0d0561e233083",
+  "gold_payload_read": false,
+  "test_or_test_challenge_accessed": false,
+  "paper_result": false
+}

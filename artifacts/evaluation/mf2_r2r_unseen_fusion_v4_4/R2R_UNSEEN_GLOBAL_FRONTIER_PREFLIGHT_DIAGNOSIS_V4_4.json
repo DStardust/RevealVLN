@@ -1,0 +1,29 @@
+{
+  "schema_version": "revealnav-r2r-unseen-frontier-diagnosis/4.4",
+  "status": "GLOBAL_FRONTIER_INTERFACE_MISMATCH_CONFIRMED",
+  "preflight_episode_id": "90",
+  "runs": 3,
+  "all_runs_engineering_pass": true,
+  "shadow_actions_executed": 0,
+  "full_run_started": false,
+  "observed_runtime_candidate_count": {
+    "minimum": 2,
+    "maximum": 33
+  },
+  "training_candidate_count": {
+    "minimum": 2,
+    "maximum": 3,
+    "two_candidate_events": 392,
+    "three_candidate_events": 32
+  },
+  "root_cause": "The V4.4 hook treated every unvisited ghost in ETP-R1 global topological memory as a currently available branch. REE/Q supervision represents only local decision-time branches.",
+  "correction": "At each navigation call retain only ghost nodes whose ghost_fronts contain the current ETP graph node; keep K=3 identity persistence and every other locked fusion rule unchanged.",
+  "failed_protocol": {
+    "path": "artifacts/evaluation/mf2_r2r_unseen_fusion_v4_4/R2R_UNSEEN_FUSION_PROTOCOL_V4_4.json",
+    "sha256": "0284ffafbcd1e4d841ba1a44aed715ede9326a1d7833a19bc5dd9b3c38571741"
+  },
+  "preflight_status_sha256": "418ecdb3422cf5addce9b5c6b1fe4d31d19d8ae4fad07a59ba35e3db508e967c",
+  "gold_payload_read": false,
+  "test_or_test_challenge_accessed": false,
+  "paper_result": false
+}

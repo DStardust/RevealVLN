@@ -1,0 +1,30 @@
+{
+  "failure_phase": "return_failed",
+  "gates": {
+    "executor_makes_no_policy_choice": true,
+    "failed_return_blocks_commit": true,
+    "retry_uses_identical_return_reference": true,
+    "success_path_exact": true,
+    "unknown_branch_rejected": true
+  },
+  "gold_payload_read": false,
+  "next_gate": "generate train-only post-excursion observations and BACKTRACK labels",
+  "paper_result": false,
+  "post_excursion_training_data_read": false,
+  "protocol_sha256": "17d55b28ba34e1585daaca28ec4bf46f3c0cd5b6ce8e5f61339bc0af9385f877",
+  "retry_phase": "returning",
+  "return_command": {
+    "branch_id": "branch-a",
+    "checkpoint_id": "checkpoint-7",
+    "controller_ref": "frozen-public-controller:checkpoint-7"
+  },
+  "schema_version": "revealnav-mf2-return-executor-result/4.5",
+  "status": "RETURN_EXECUTOR_ENGINEERING_GATE_PASS",
+  "success_path": [
+    "at_checkpoint",
+    "exploring",
+    "returning",
+    "at_checkpoint",
+    "committed"
+  ]
+}
