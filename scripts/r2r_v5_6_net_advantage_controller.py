@@ -12,12 +12,15 @@ import r2r_full_opp_worker_v5_6 as v56
 from revealnav_net_advantage import OnlineNetAdvantageScorer
 
 
-class V56NetAdvantageController(v56.FullOPPActionController):
+BASE_V56_CONTROLLER = v56.FullOPPActionController
+
+
+class V56NetAdvantageController(BASE_V56_CONTROLLER):
     """Keep V5.6's proposal only when the causal learned veto approves it."""
 
     def __init__(
         self, seed: int, mode: str, device: torch.device, trace_path: Path,
-        net_advantage_checkpoint: Path,
+        net_advantage_checkpoint: Path, expected_checkpoint_seed: int | None = None,
     ) -> None:
         super().__init__(seed, mode, device, trace_path)
         net_advantage_checkpoint = net_advantage_checkpoint.resolve()
@@ -28,10 +31,12 @@ class V56NetAdvantageController(v56.FullOPPActionController):
         ):
             raise RuntimeError("net-advantage checkpoint must be a project-local file")
         self.net_advantage = OnlineNetAdvantageScorer.from_checkpoint(
-            net_advantage_checkpoint, device, require_online_threshold=True
+            net_advantage_checkpoint, device, require_online_threshold=True,
+            expected_seed=expected_checkpoint_seed,
         )
         self.net_advantage_approvals = 0
         self.net_advantage_vetoes = 0
+        self.net_advantage_decisions = 0
         self._native_branch: str | None = None
 
     @staticmethod
@@ -39,6 +44,36 @@ class V56NetAdvantageController(v56.FullOPPActionController):
         return float(np.linalg.norm(
             np.asarray(left, dtype=np.float32) - np.asarray(right, dtype=np.float32)
         ))
+
+    def _score_alternatives(self, current, persistent, native):
+        graph = pilot._TRAINER.gmaps[0]
+        checkpoint_id = pilot._CURRENT_IDS[0]
+        if (
+            native not in current
+            or checkpoint_id not in graph.node_pos
+            or native not in graph.ghost_aug_pos
+        ):
+            return None
+        alternatives = {
+            branch: current[branch] for branch in persistent
+            if (
+                branch != native and branch in current
+                and branch in graph.ghost_aug_pos
+            )
+        }
+        if not alternatives:
+            return None
+        checkpoint = graph.node_pos[checkpoint_id]
+        return self.net_advantage.score_candidates(
+            self.instruction, self.latest_history,
+            torch.stack([row[0] for row in self.rows]).mean(0), current[native],
+            alternatives,
+            self._distance(checkpoint, graph.ghost_aug_pos[native]),
+            {
+                branch: self._distance(checkpoint, graph.ghost_aug_pos[branch])
+                for branch in alternatives
+            },
+        )
 
     def _evaluate(self, current, persistent):
         value = super()._evaluate(current, persistent)
@@ -51,33 +86,11 @@ class V56NetAdvantageController(v56.FullOPPActionController):
         native = self._native_branch
         if proposed == native:
             return value
-        graph = pilot._TRAINER.gmaps[0]
-        checkpoint_id = pilot._CURRENT_IDS[0]
-        if (
-            native not in current or proposed not in current
-            or checkpoint_id not in graph.node_pos
-            or native not in graph.ghost_aug_pos
-        ):
+        rows = self._score_alternatives(current, persistent, native)
+        self.net_advantage_decisions += 1
+        if rows is None or proposed not in {row["branch_id"] for row in rows}:
             self.net_advantage_vetoes += 1
             return {**value, "action": "follow", "reason": "net_advantage_missing_causal_input"}
-        alternatives = {
-            branch: current[branch] for branch in persistent
-            if branch != native and branch in graph.ghost_aug_pos
-        }
-        if proposed not in alternatives:
-            self.net_advantage_vetoes += 1
-            return {**value, "action": "follow", "reason": "net_advantage_proposal_not_scored"}
-        checkpoint = graph.node_pos[checkpoint_id]
-        rows = self.net_advantage.score_candidates(
-            self.instruction, self.latest_history,
-            torch.stack([row[0] for row in self.rows]).mean(0), current[native],
-            alternatives,
-            self._distance(checkpoint, graph.ghost_aug_pos[native]),
-            {
-                branch: self._distance(checkpoint, graph.ghost_aug_pos[branch])
-                for branch in alternatives
-            },
-        )
         approved = self.net_advantage.approve(proposed, rows)
         self.record(
             "net_advantage_veto", proposed_branch=proposed,
@@ -97,3 +110,65 @@ class V56NetAdvantageController(v56.FullOPPActionController):
             return super()._initial_decision(current, persistent, native_branch)
         finally:
             self._native_branch = None
+
+
+class NetAdvantageOnlyController(V56NetAdvantageController):
+    """Ablate V5.6 proposals and directly use the sparse causal ranker."""
+
+    def _initial_decision(self, current, persistent, native_branch):
+        self._native_branch = native_branch
+        try:
+            self.rows.append((self.latest_history, current))
+            rows = self._score_alternatives(current, persistent, native_branch)
+            self.net_advantage_decisions += 1
+            if rows is None:
+                self.net_advantage_vetoes += 1
+                self.follow_delegations += 1
+                self._reset_search()
+                return None
+            proposed = max(rows, key=lambda row: (
+                row["net_advantage_score_m"], row["branch_id"]
+            ))["branch_id"]
+            approved = self.net_advantage.approve(proposed, rows)
+            self.record(
+                "net_advantage_only_decision", proposed_branch=proposed,
+                native_branch=native_branch, approved=approved,
+                calibrated_threshold_m=self.net_advantage.threshold,
+                candidates=rows,
+            )
+            self._reset_search()
+            if not approved:
+                self.net_advantage_vetoes += 1
+                self.follow_delegations += 1
+                return None
+            self.net_advantage_approvals += 1
+            self.commit_decisions += 1
+            self.effective_commit_interventions += int(
+                proposed != native_branch
+            )
+            return None if self.mode == "shadow" else proposed
+        finally:
+            self._native_branch = None
+
+
+class V56NetAdvantageNoReturnController(V56NetAdvantageController):
+    """Ablate ECOG trials while keeping the same V5.6 proposal and veto."""
+
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.no_return_suppressions = 0
+
+    def _evaluate(self, current, persistent):
+        value = super()._evaluate(current, persistent)
+        if value is not None and value["action"] == "explore":
+            self.no_return_suppressions += 1
+            self.record(
+                "ecog_trial_ablation_suppression",
+                proposed_branch=value["macro"].branch_id,
+                reason="V5.13.1_no_return_ablation",
+            )
+            return {
+                **value, "action": "follow",
+                "reason": "V5.13.1_no_return_ablation",
+            }
+        return value

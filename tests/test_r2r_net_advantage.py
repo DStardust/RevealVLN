@@ -1,3 +1,5 @@
+import hashlib
+import json
 import sys
 import tempfile
 import unittest
@@ -15,8 +17,14 @@ from revealnav_net_advantage import (
     OnlineNetAdvantageScorer,
     PairwiseNetAdvantageHead,
 )
-from evaluate_r2r_v5_13_paired import paired_comparison, validate_training_result
+from evaluate_r2r_v5_13_paired import (
+    evaluate,
+    paired_comparison,
+    validate_training_result,
+    write_tables,
+)
 from run_r2r_train_net_advantage_pipeline import canonical_routes, pilot_routes
+from run_r2r_v5_13_1_paired import job_matrix
 from train_r2r_sparse_net_advantage import event_policy, predict
 
 
@@ -72,6 +80,26 @@ class PairwiseNetAdvantageHeadTest(unittest.TestCase):
             torch.save(payload, path)
             with self.assertRaisesRegex(RuntimeError, "offline-only"):
                 OnlineNetAdvantageScorer.from_checkpoint(path)
+
+    def test_checkpoint_seed_mismatch_fails_closed(self) -> None:
+        model = PairwiseNetAdvantageHead()
+        payload = {
+            "schema_version": "revealnav-pairwise-net-advantage-checkpoint/1",
+            "model_state_dict": model.state_dict(),
+            "calibrated_score_threshold": 0.0,
+            "score_definition": ONLINE_SCORE_DEFINITION,
+            "immediate_cost_scale_m": 10.0,
+            "input_dim": 768,
+            "projection_dim": 96,
+            "seed": 1,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "seed.pt"
+            torch.save(payload, path)
+            with self.assertRaisesRegex(RuntimeError, "seed mismatch"):
+                OnlineNetAdvantageScorer.from_checkpoint(
+                    path, expected_seed=2
+                )
 
 
 class SparsePolicyTest(unittest.TestCase):
@@ -142,9 +170,186 @@ class PairedEvaluationTest(unittest.TestCase):
         }
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "training.json"
-            path.write_text(__import__("json").dumps(value))
+            path.write_text(json.dumps(value))
             with self.assertRaisesRegex(RuntimeError, "did not pass"):
                 validate_training_result(path)
+
+    def test_seed_invariant_baseline_is_broadcast(self) -> None:
+        treatment = {}
+        baseline = {}
+        for episode in ("a", "b"):
+            baseline[(episode, 0)] = {"metrics": {"spl": 0.4}}
+            for seed in (20260826, 20260827, 20260828):
+                treatment[(episode, seed)] = {"metrics": {"spl": 0.5}}
+        result = paired_comparison(treatment, baseline, ["spl"], 1000)
+        self.assertEqual(result["seeds"], [20260826, 20260827, 20260828])
+        self.assertAlmostEqual(
+            result["benefit_treatment_minus_baseline"]["spl"]["mean"], 0.1
+        )
+
+    def test_training_checkpoint_provenance_passes(self) -> None:
+        with tempfile.TemporaryDirectory(dir=ROOT) as directory:
+            directory = Path(directory)
+            manifest = directory / "manifest.json"
+            manifest.write_text("{}")
+            results = []
+            for seed in (20260826, 20260827, 20260828):
+                checkpoint = directory / f"{seed}.pt"
+                checkpoint.write_bytes(str(seed).encode())
+                results.append({
+                    "seed": seed,
+                    "checkpoint": {
+                        "path": str(checkpoint.relative_to(ROOT)),
+                        "bytes": checkpoint.stat().st_size,
+                        "sha256": hashlib.sha256(
+                            checkpoint.read_bytes()
+                        ).hexdigest(),
+                    },
+                })
+            value = {
+                "status": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS",
+                "unseen_or_test_read": False,
+                "task_metric_payload_read": False,
+                "dataset_manifest": str(manifest.relative_to(ROOT)),
+                "dataset_manifest_sha256": hashlib.sha256(
+                    manifest.read_bytes()
+                ).hexdigest(),
+                "results": results,
+            }
+            path = directory / "training.json"
+            path.write_text(json.dumps(value))
+            self.assertEqual(len(validate_training_result(path)["results"]), 3)
+
+
+class EvaluationMatrixTest(unittest.TestCase):
+    def test_baseline_runs_once_and_treatments_use_three_seeds(self) -> None:
+        protocol = {
+            "groups": [
+                {"id": "etp_r1", "seeds": [0]},
+                *[
+                    {"id": group, "seeds": [20260826, 20260827, 20260828]}
+                    for group in (
+                        "v5_6", "net_advantage_only",
+                        "v5_6_net_advantage",
+                        "v5_6_net_advantage_no_return",
+                    )
+                ],
+            ]
+        }
+        jobs = job_matrix(protocol, [{"episode_id": "1"}, {"episode_id": "2"}])
+        self.assertEqual(len(jobs), 26)
+        self.assertEqual(sum(row["group"] == "etp_r1" for row in jobs), 2)
+
+    def test_complete_synthetic_matrix_passes(self) -> None:
+        groups = [
+            {"id": "etp_r1", "seeds": [0]},
+            *[
+                {"id": group, "seeds": [20260826, 20260827, 20260828]}
+                for group in (
+                    "v5_6", "net_advantage_only",
+                    "v5_6_net_advantage",
+                    "v5_6_net_advantage_no_return",
+                )
+            ],
+        ]
+        comparisons = [
+            {"treatment": "v5_6", "baseline": "etp_r1"},
+            {"treatment": "net_advantage_only", "baseline": "etp_r1"},
+            {"treatment": "v5_6_net_advantage", "baseline": "v5_6"},
+            {"treatment": "v5_6_net_advantage", "baseline": "etp_r1"},
+            {
+                "treatment": "v5_6_net_advantage",
+                "baseline": "v5_6_net_advantage_no_return",
+            },
+            {
+                "treatment": "v5_6_net_advantage_no_return",
+                "baseline": "etp_r1",
+            },
+        ]
+        scores = {
+            "etp_r1": 0.40, "v5_6": 0.45, "net_advantage_only": 0.42,
+            "v5_6_net_advantage": 0.55,
+            "v5_6_net_advantage_no_return": 0.50,
+        }
+        with tempfile.TemporaryDirectory(dir=ROOT) as directory:
+            directory = Path(directory)
+            manifest = directory / "manifest.json"
+            manifest.write_text("{}")
+            training_rows = []
+            for seed in (20260826, 20260827, 20260828):
+                checkpoint = directory / f"model_{seed}.pt"
+                checkpoint.write_bytes(str(seed).encode())
+                training_rows.append({
+                    "seed": seed,
+                    "checkpoint": {
+                        "path": str(checkpoint.relative_to(ROOT)),
+                        "bytes": checkpoint.stat().st_size,
+                        "sha256": hashlib.sha256(
+                            checkpoint.read_bytes()
+                        ).hexdigest(),
+                    },
+                })
+            training = directory / "training.json"
+            training.write_text(json.dumps({
+                "status": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS",
+                "unseen_or_test_read": False,
+                "task_metric_payload_read": False,
+                "dataset_manifest": str(manifest.relative_to(ROOT)),
+                "dataset_manifest_sha256": hashlib.sha256(
+                    manifest.read_bytes()
+                ).hexdigest(),
+                "results": training_rows,
+                "selected_seed": 20260826,
+            }))
+            protocol = directory / "protocol.json"
+            protocol.write_text(json.dumps({
+                "status": (
+                    "SEALED_V5_13_1_BEFORE_FULL_TRAINING_AND_UNSEEN_EVALUATION"
+                ),
+                "groups": groups,
+                "comparisons": comparisons,
+                "training_lock": {
+                    "seeds": [20260826, 20260827, 20260828]
+                },
+                "evaluation": {
+                    "metrics": [
+                        "success", "spl", "ndtw", "sdtw",
+                        "distance_to_goal",
+                    ]
+                },
+            }))
+            runs = directory / "runs"
+            for group in groups:
+                for seed in group["seeds"]:
+                    for episode in ("a", "b"):
+                        target = runs / group["id"] / f"{seed}_{episode}"
+                        target.mkdir(parents=True)
+                        score = scores[group["id"]]
+                        (target / "RUN_SUMMARY.json").write_text(json.dumps({
+                            "status": "PASS", "group": group["id"],
+                            "episode_id": episode, "seed": seed,
+                            "split": "val_seen", "controller": {},
+                            "metrics": {
+                                "success": score, "spl": score, "ndtw": score,
+                                "sdtw": score, "distance_to_goal": 1.0 - score,
+                            },
+                        }))
+            result = evaluate(protocol, training, runs, 1000)
+            self.assertEqual(result["status"], "PASS")
+            self.assertEqual(
+                result["deployed_main_variant"], "v5_6_net_advantage"
+            )
+            tables = directory / "tables"
+            write_tables(result, tables)
+            self.assertTrue(
+                (tables / "R2R_V5_13_1_GROUP_METRICS.csv").is_file()
+            )
+            self.assertTrue(
+                (tables / "R2R_V5_13_1_CONTROLLER_METRICS.csv").is_file()
+            )
+            self.assertTrue(
+                (tables / "R2R_V5_13_1_PAPER_TABLES.md").is_file()
+            )
 
 
 class TrainSelectionTest(unittest.TestCase):

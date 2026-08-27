@@ -1,0 +1,157 @@
+{
+  "comparisons": [
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "net_advantage_only"
+    },
+    {
+      "baseline": "v5_6",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "v5_6_net_advantage_no_return",
+      "treatment": "v5_6_net_advantage"
+    },
+    {
+      "baseline": "etp_r1",
+      "treatment": "v5_6_net_advantage_no_return"
+    }
+  ],
+  "evaluation": {
+    "bootstrap": "10000 deterministic paired episode replicates",
+    "controller_metrics": [
+      "net_advantage_decisions",
+      "net_advantage_approvals",
+      "net_advantage_vetoes",
+      "checkpointed_excursions",
+      "backtrack_decisions",
+      "successful_returns",
+      "failed_returns",
+      "no_return_suppressions"
+    ],
+    "cross_benchmark": "RxR-CE English val_unseen only after the R2R operating point is locked",
+    "development": "complete R2R val_seen; diagnostic only",
+    "metrics": [
+      "success",
+      "oracle_success",
+      "spl",
+      "ndtw",
+      "sdtw",
+      "distance_to_goal",
+      "path_length",
+      "steps_taken",
+      "collisions"
+    ],
+    "paired_unit": "episode mean across the three locked treatment seeds",
+    "primary_benchmark": "complete R2R-CE val_unseen after full training gate passes",
+    "selection_rule": "all episodes in the authorized validation split",
+    "test_or_challenge_split_access": false
+  },
+  "groups": [
+    {
+      "description": "deterministic frozen official ETP-R1",
+      "id": "etp_r1",
+      "seed_policy": "one execution per episode, broadcast as paired control",
+      "seeds": [
+        0
+      ]
+    },
+    {
+      "description": "validated V5.6 Full OPP including ECOG",
+      "id": "v5_6",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    {
+      "description": "causal sparse ranker without a V5.6 proposal",
+      "id": "net_advantage_only",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    {
+      "description": "main V5.6 Full OPP plus conservative causal veto",
+      "id": "v5_6_net_advantage",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    {
+      "description": "main inputs and veto with ECOG trials suppressed",
+      "id": "v5_6_net_advantage_no_return",
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    }
+  ],
+  "method_revision": {
+    "frozen_method_claims_changed": false,
+    "future_or_oracle_online_inputs": false,
+    "main": "V5.6 Full OPP including ECOG plus causal Net-Advantage veto",
+    "online_score": "p_better*positive_gain-(1-p_better)*2*checkpoint_to_alternative_euclidean_distance",
+    "reversibility_ablation": "same V5.6 proposal and Net-Advantage veto, but every ECOG checkpointed-exploration proposal is delegated to native ETP",
+    "version": "V5.13.1"
+  },
+  "paper_result": false,
+  "primary_scientific_gate": {
+    "comparison": "v5_6_net_advantage minus etp_r1",
+    "directional": "mean SPL>0, mean nDTW>0, mean Success>=0",
+    "ecog_ablation": "main minus no-return is reported independently and does not retroactively change the preregistered main variant",
+    "incremental": "v5_6_net_advantage mean SPL must exceed v5_6",
+    "statistical": "paired-bootstrap lower bounds for SPL and nDTW >0"
+  },
+  "reporting": {
+    "all_five_groups_reported": true,
+    "all_three_treatment_seeds_reported": true,
+    "deterministic_baseline_reuse_disclosed": true,
+    "threshold_or_metric_search_on_val_unseen": false,
+    "zero_activation_and_failed_runs_retained": true
+  },
+  "schema_version": "revealnav-r2r-v5.13.1-net-advantage-protocol/1",
+  "sources": {
+    "scripts/evaluate_r2r_v5_13_paired.py": "e62c6f4a5f5af2ae8bdb20a73e3d6c622b72ae489208fe9a5d16e3214fb69a1b",
+    "scripts/monitor_r2r_v5_13_1_paired.py": "905bbad9f7c97508aa6128864fe84b7158cbb68dd583272c8ecdbd0483f26d1a",
+    "scripts/r2r_v5_13_group_worker.py": "e17f3c341ffc55229e1bd53cf0ac1f2b09488ca5aa40e7951d41c88a83269d57",
+    "scripts/r2r_v5_6_net_advantage_controller.py": "2f3b3294a63787503825ba5d6846f238090897c3e32ac4f621a52229001256c1",
+    "scripts/revealnav_net_advantage.py": "ac6df6688fd144a8537d6957de306a3f7899db8c13c6e0f1666b0b3654793af7",
+    "scripts/run_r2r_v5_13_1_paired.py": "d4d78f91ba36cc5d235375f68ebb71d18257bd63f104a8f3e5811b0ab0a200d4",
+    "scripts/train_r2r_sparse_net_advantage.py": "c83293ad69b1b765f5065220d685ca955e0275d0cef3300247ac2a4036275c54"
+  },
+  "status": "SEALED_V5_13_1_BEFORE_FULL_TRAINING_AND_UNSEEN_EVALUATION",
+  "supersedes": {
+    "path": "artifacts/evaluation/mf2_r2r_v5_13_net_advantage/R2R_V5_13_NET_ADVANTAGE_PROTOCOL.json",
+    "reason": "V5.13 main and reversible groups both inherited V5.6 ECOG; V5.13.1 replaces the duplicate with an explicit no-return ablation",
+    "sha256": "96b44168c804deef9e1bf38c32da5a0d6080dcacde8c04c41b90cc3273b4ad56"
+  },
+  "training_lock": {
+    "checkpoint_and_threshold_selection": "calibration only",
+    "partition": "scene-disjoint train/calibration/dev",
+    "pilot_checkpoint_role": "shape smoke only and never evaluation",
+    "required_training_gate": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS",
+    "seeds": [
+      20260826,
+      20260827,
+      20260828
+    ],
+    "source_split": "R2R train only",
+    "untouched_internal_dev_role": "learnability gate only"
+  },
+  "unseen_metrics_opened": false
+}

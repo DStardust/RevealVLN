@@ -63,16 +63,18 @@ class OnlineNetAdvantageScorer:
     def __init__(
         self, model: PairwiseNetAdvantageHead, device: torch.device,
         gain_scale_m: float, threshold: float | None,
+        checkpoint_seed: int | None,
     ) -> None:
         self.model = model.eval()
         self.device = device
         self.gain_scale_m = gain_scale_m
         self.threshold = threshold
+        self.checkpoint_seed = checkpoint_seed
 
     @classmethod
     def from_checkpoint(
         cls, path: Path, device: str | torch.device = "cpu",
-        require_online_threshold: bool = True,
+        require_online_threshold: bool = True, expected_seed: int | None = None,
     ) -> "OnlineNetAdvantageScorer":
         device = torch.device(device)
         payload = torch.load(path, map_location=device, weights_only=False)
@@ -80,6 +82,9 @@ class OnlineNetAdvantageScorer:
             raise RuntimeError("unsupported net-advantage checkpoint schema")
         if payload.get("input_dim") != 768 or payload.get("projection_dim") != 96:
             raise RuntimeError("net-advantage checkpoint architecture drift")
+        checkpoint_seed = payload.get("seed")
+        if expected_seed is not None and checkpoint_seed != expected_seed:
+            raise RuntimeError("net-advantage checkpoint seed mismatch")
         model = PairwiseNetAdvantageHead(
             payload["input_dim"], payload["projection_dim"]
         ).to(device)
@@ -93,7 +98,8 @@ class OnlineNetAdvantageScorer:
             float(payload["calibrated_score_threshold"]) if online else None
         )
         return cls(
-            model, device, float(payload["immediate_cost_scale_m"]), threshold
+            model, device, float(payload["immediate_cost_scale_m"]), threshold,
+            checkpoint_seed,
         )
 
     def score_candidates(
