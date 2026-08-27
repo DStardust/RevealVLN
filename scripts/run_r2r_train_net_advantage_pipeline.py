@@ -318,6 +318,9 @@ def collect_batched(
                 "gpu": gpu, "episodes": len(rows),
                 "first_episode_id": rows[0]["episode_id"],
             }
+        atomic_json(paths["progress"], progress_value(
+            cohort, selected, active, failures
+        ))
         while running:
             done, _ = concurrent.futures.wait(
                 running, return_when=concurrent.futures.FIRST_COMPLETED
@@ -398,6 +401,9 @@ def collect(cohort: str, gpus: tuple[int, ...], batch_size: int = 1) -> dict:
             future = executor.submit(run_one, row, gpu, run_dir)
             running[future] = (slot, gpu, row)
             active[str(slot)] = {"gpu": gpu, "episode_id": row["episode_id"]}
+        atomic_json(paths["progress"], progress_value(
+            cohort, selected, active, failures
+        ))
         while running:
             done, _ = concurrent.futures.wait(
                 running, return_when=concurrent.futures.FIRST_COMPLETED
