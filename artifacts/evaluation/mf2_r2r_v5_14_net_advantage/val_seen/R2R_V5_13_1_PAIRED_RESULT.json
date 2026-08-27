@@ -1,0 +1,733 @@
+{
+  "ablation_gates": {
+    "ecog_reversibility_nonnegative_mean_spl": true
+  },
+  "bootstrap_replicates": 10000,
+  "comparisons": {
+    "net_advantage_only_minus_etp_r1": {
+      "benefit_treatment_minus_baseline": {
+        "collisions": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "distance_to_goal": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "ndtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "oracle_success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "path_length": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "sdtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "spl": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "steps_taken": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "paired_episodes": 778,
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    "v5_6_minus_etp_r1": {
+      "benefit_treatment_minus_baseline": {
+        "collisions": {
+          "episode_bootstrap_95pct": [
+            0.00504603572973366,
+            0.09896929808594611
+          ],
+          "maximum": 10.692675464593284,
+          "mean": 0.04580818192026973,
+          "median": 0.0,
+          "minimum": -0.28408189033189035
+        },
+        "distance_to_goal": {
+          "episode_bootstrap_95pct": [
+            -0.08097652187594871,
+            0.04862928642303186
+          ],
+          "maximum": 10.25196123123169,
+          "mean": -0.013109852908611708,
+          "median": 0.0,
+          "minimum": -16.333980202674866
+        },
+        "ndtw": {
+          "episode_bootstrap_95pct": [
+            -0.004052534687878855,
+            0.002801095809166194
+          ],
+          "maximum": 0.5729298858650514,
+          "mean": -0.0006245339114314391,
+          "median": 0.0,
+          "minimum": -0.5569840974158771
+        },
+        "oracle_success": {
+          "episode_bootstrap_95pct": [
+            -0.00856898029134533,
+            0.0038560411311053984
+          ],
+          "maximum": 1.0,
+          "mean": -0.002142245072836333,
+          "median": 0.0,
+          "minimum": -1.0
+        },
+        "path_length": {
+          "episode_bootstrap_95pct": [
+            -0.26829391542787,
+            0.019918769214943843
+          ],
+          "maximum": 22.908960342407227,
+          "mean": -0.12254057744168378,
+          "median": 0.0,
+          "minimum": -22.75171661376953
+        },
+        "sdtw": {
+          "episode_bootstrap_95pct": [
+            -0.006929845726778773,
+            0.001754705987578517
+          ],
+          "maximum": 0.8774666451617238,
+          "mean": -0.0025374016536297127,
+          "median": 0.0,
+          "minimum": -0.9072553862971096
+        },
+        "spl": {
+          "episode_bootstrap_95pct": [
+            -0.008446793558177646,
+            0.001466746283357173
+          ],
+          "maximum": 0.9002209585331294,
+          "mean": -0.0034979811233440444,
+          "median": 0.0,
+          "minimum": -0.9422570208254041
+        },
+        "steps_taken": {
+          "episode_bootstrap_95pct": [
+            -1.0377142245072837,
+            2.6632712082262207
+          ],
+          "maximum": 389.0,
+          "mean": 0.6756640959725789,
+          "median": 0.0,
+          "minimum": -151.33333333333334
+        },
+        "success": {
+          "episode_bootstrap_95pct": [
+            -0.011568123393316195,
+            0.0021529562982003595
+          ],
+          "maximum": 1.0,
+          "mean": -0.004284490145672666,
+          "median": 0.0,
+          "minimum": -1.0
+        }
+      },
+      "paired_episodes": 778,
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    "v5_6_net_advantage_minus_etp_r1": {
+      "benefit_treatment_minus_baseline": {
+        "collisions": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "distance_to_goal": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "ndtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "oracle_success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "path_length": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "sdtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "spl": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "steps_taken": {
+          "episode_bootstrap_95pct": [
+            -0.0038560411311053984,
+            0.033419023136246784
+          ],
+          "maximum": 8.666666666666666,
+          "mean": 0.009854327335047128,
+          "median": 0.0,
+          "minimum": -1.0
+        },
+        "success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "paired_episodes": 778,
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    "v5_6_net_advantage_minus_v5_6": {
+      "benefit_treatment_minus_baseline": {
+        "collisions": {
+          "episode_bootstrap_95pct": [
+            -0.09896929808594611,
+            -0.005046035729733663
+          ],
+          "maximum": 0.28408189033189035,
+          "mean": -0.04580818192026973,
+          "median": 0.0,
+          "minimum": -10.692675464593284
+        },
+        "distance_to_goal": {
+          "episode_bootstrap_95pct": [
+            -0.04862928642303186,
+            0.08097652187594868
+          ],
+          "maximum": 16.333980202674866,
+          "mean": 0.013109852908611708,
+          "median": 0.0,
+          "minimum": -10.25196123123169
+        },
+        "ndtw": {
+          "episode_bootstrap_95pct": [
+            -0.002801095809166194,
+            0.004052534687878855
+          ],
+          "maximum": 0.5569840974158771,
+          "mean": 0.0006245339114314391,
+          "median": 0.0,
+          "minimum": -0.5729298858650514
+        },
+        "oracle_success": {
+          "episode_bootstrap_95pct": [
+            -0.0038560411311053984,
+            0.00856898029134533
+          ],
+          "maximum": 1.0,
+          "mean": 0.002142245072836333,
+          "median": 0.0,
+          "minimum": -1.0
+        },
+        "path_length": {
+          "episode_bootstrap_95pct": [
+            -0.019918769214943934,
+            0.26829391542787
+          ],
+          "maximum": 22.75171661376953,
+          "mean": 0.12254057744168378,
+          "median": 0.0,
+          "minimum": -22.908960342407227
+        },
+        "sdtw": {
+          "episode_bootstrap_95pct": [
+            -0.0017547059875785186,
+            0.006929845726778766
+          ],
+          "maximum": 0.9072553862971096,
+          "mean": 0.0025374016536297127,
+          "median": 0.0,
+          "minimum": -0.8774666451617238
+        },
+        "spl": {
+          "episode_bootstrap_95pct": [
+            -0.0014667462833571753,
+            0.008446793558177646
+          ],
+          "maximum": 0.9422570208254041,
+          "mean": 0.0034979811233440444,
+          "median": 0.0,
+          "minimum": -0.9002209585331294
+        },
+        "steps_taken": {
+          "episode_bootstrap_95pct": [
+            -2.6551199657240785,
+            1.0505891173950295
+          ],
+          "maximum": 151.33333333333334,
+          "mean": -0.6658097686375318,
+          "median": 0.0,
+          "minimum": -389.0
+        },
+        "success": {
+          "episode_bootstrap_95pct": [
+            -0.0021529562982005052,
+            0.011568123393316195
+          ],
+          "maximum": 1.0,
+          "mean": 0.004284490145672666,
+          "median": 0.0,
+          "minimum": -1.0
+        }
+      },
+      "paired_episodes": 778,
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    "v5_6_net_advantage_minus_v5_6_net_advantage_no_return": {
+      "benefit_treatment_minus_baseline": {
+        "collisions": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "distance_to_goal": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "ndtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "oracle_success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "path_length": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "sdtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "spl": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "steps_taken": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "paired_episodes": 778,
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    },
+    "v5_6_net_advantage_no_return_minus_etp_r1": {
+      "benefit_treatment_minus_baseline": {
+        "collisions": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "distance_to_goal": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "ndtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "oracle_success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "path_length": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "sdtw": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "spl": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        },
+        "steps_taken": {
+          "episode_bootstrap_95pct": [
+            -0.0038560411311053984,
+            0.033419023136246784
+          ],
+          "maximum": 8.666666666666666,
+          "mean": 0.009854327335047128,
+          "median": 0.0,
+          "minimum": -1.0
+        },
+        "success": {
+          "episode_bootstrap_95pct": [
+            0.0,
+            0.0
+          ],
+          "maximum": 0.0,
+          "mean": 0.0,
+          "median": 0.0,
+          "minimum": 0.0
+        }
+      },
+      "paired_episodes": 778,
+      "seeds": [
+        20260826,
+        20260827,
+        20260828
+      ]
+    }
+  },
+  "controller_totals": {
+    "etp_r1": {
+      "backtrack_decisions": 0,
+      "checkpointed_excursions": 0,
+      "failed_returns": 0,
+      "net_advantage_approvals": 0,
+      "net_advantage_decisions": 0,
+      "net_advantage_vetoes": 0,
+      "no_return_suppressions": 0,
+      "successful_returns": 0
+    },
+    "net_advantage_only": {
+      "backtrack_decisions": 0,
+      "checkpointed_excursions": 0,
+      "failed_returns": 0,
+      "net_advantage_approvals": 0,
+      "net_advantage_decisions": 20211,
+      "net_advantage_vetoes": 20211,
+      "no_return_suppressions": 0,
+      "successful_returns": 0
+    },
+    "v5_6": {
+      "backtrack_decisions": 0,
+      "checkpointed_excursions": 0,
+      "failed_returns": 0,
+      "net_advantage_approvals": 0,
+      "net_advantage_decisions": 0,
+      "net_advantage_vetoes": 0,
+      "no_return_suppressions": 0,
+      "successful_returns": 0
+    },
+    "v5_6_net_advantage": {
+      "backtrack_decisions": 0,
+      "checkpointed_excursions": 0,
+      "failed_returns": 0,
+      "net_advantage_approvals": 0,
+      "net_advantage_decisions": 304,
+      "net_advantage_vetoes": 304,
+      "no_return_suppressions": 0,
+      "successful_returns": 0
+    },
+    "v5_6_net_advantage_no_return": {
+      "backtrack_decisions": 0,
+      "checkpointed_excursions": 0,
+      "failed_returns": 0,
+      "net_advantage_approvals": 0,
+      "net_advantage_decisions": 304,
+      "net_advantage_vetoes": 304,
+      "no_return_suppressions": 0,
+      "successful_returns": 0
+    }
+  },
+  "deployed_main_variant": "v5_6_net_advantage",
+  "group_metrics": {
+    "etp_r1": {
+      "collisions": 0.12791668285803448,
+      "distance_to_goal": 2.696186725398559,
+      "ndtw": 0.7428099459605964,
+      "oracle_success": 0.8174807197943444,
+      "path_length": 11.83444935566049,
+      "sdtw": 0.6451518955874824,
+      "spl": 0.6731276063362605,
+      "steps_taken": 101.11696658097686,
+      "success": 0.7570694087403599
+    },
+    "net_advantage_only": {
+      "collisions": 0.1279166828580344,
+      "distance_to_goal": 2.696186725398559,
+      "ndtw": 0.7428099459605932,
+      "oracle_success": 0.8174807197943444,
+      "path_length": 11.83444935566049,
+      "sdtw": 0.6451518955874807,
+      "spl": 0.6731276063362619,
+      "steps_taken": 101.11696658097686,
+      "success": 0.7570694087403599
+    },
+    "v5_6": {
+      "collisions": 0.08210850093776476,
+      "distance_to_goal": 2.7092965783071707,
+      "ndtw": 0.7421854120491607,
+      "oracle_success": 0.8153384747215081,
+      "path_length": 11.956989933102173,
+      "sdtw": 0.6426144939338506,
+      "spl": 0.6696296252129176,
+      "steps_taken": 100.44130248500429,
+      "success": 0.7527849185946872
+    },
+    "v5_6_net_advantage": {
+      "collisions": 0.1279166828580344,
+      "distance_to_goal": 2.696186725398559,
+      "ndtw": 0.7428099459605932,
+      "oracle_success": 0.8174807197943444,
+      "path_length": 11.83444935566049,
+      "sdtw": 0.6451518955874807,
+      "spl": 0.6731276063362619,
+      "steps_taken": 101.10711225364182,
+      "success": 0.7570694087403599
+    },
+    "v5_6_net_advantage_no_return": {
+      "collisions": 0.1279166828580344,
+      "distance_to_goal": 2.696186725398559,
+      "ndtw": 0.7428099459605932,
+      "oracle_success": 0.8174807197943444,
+      "path_length": 11.83444935566049,
+      "sdtw": 0.6451518955874807,
+      "spl": 0.6731276063362619,
+      "steps_taken": 101.10711225364182,
+      "success": 0.7570694087403599
+    }
+  },
+  "main_gates": {
+    "all_five_groups_complete_and_paired": true,
+    "deterministic_baseline_seed_zero": true,
+    "net_advantage_improves_v5_6_mean_spl": true,
+    "primary_directionally_positive": false,
+    "primary_statistically_positive": false,
+    "three_locked_treatment_seeds": true
+  },
+  "paper_result": false,
+  "protocol": "artifacts/evaluation/mf2_r2r_v5_13_net_advantage/R2R_V5_14_ENSEMBLE_PROTOCOL.json",
+  "schema_version": "revealnav-r2r-v5.14-paired-result/1",
+  "split": "val_seen",
+  "status": "FAIL",
+  "training_deployment": "three-member deterministic ensemble",
+  "training_result": "artifacts/phase1/r2r_train_net_advantage/full/training_v5_14/R2R_SPARSE_NET_ADVANTAGE_TRAINING_RESULT.json"
+}
