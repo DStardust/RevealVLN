@@ -26,12 +26,15 @@ def main() -> None:
     completed = value["completed"]
     selected = value["selected"]
     age = max(0.0, time.time() - value["updated_unix"])
-    elapsed_samples = []
+    single_samples = []
+    batch_samples = []
     for path in root.glob("runs/ep_*/RUN_SUMMARY.json"):
         row = json.loads(path.read_text())
         if row.get("status") == "PASS":
             batch_size = max(1, int(row.get("batch_size", 1)))
-            elapsed_samples.append(float(row["wall_time_s"]) / batch_size)
+            sample = float(row["wall_time_s"]) / batch_size
+            (batch_samples if batch_size > 1 else single_samples).append(sample)
+    elapsed_samples = batch_samples or single_samples
     mean = sum(elapsed_samples) / len(elapsed_samples) if elapsed_samples else 0.0
     workers = max(1, len(value["active"]))
     eta = (selected - completed) * mean / workers if mean else None

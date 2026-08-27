@@ -199,6 +199,8 @@ def run_one(row: dict, gpu: int, run_dir: Path) -> dict:
 
 def run_batch(rows: list[dict], gpu: int, paths: dict[str, Path]) -> dict:
     episode_ids = [row["episode_id"] for row in rows]
+    if len({row["scene_id"] for row in rows}) != len(rows):
+        raise ValueError("a multi-environment batch requires one episode per scene")
     for row in rows:
         move_interrupted(paths["runs"] / f"ep_{row['episode_id']}")
     batch_key = stable_hash({"episode_ids": episode_ids})[:12]
@@ -271,15 +273,31 @@ def progress_value(cohort: str, selected: list[dict], active: dict, failures: li
     }
 
 
+def unique_scene_batches(rows: list[dict], batch_size: int) -> list[list[dict]]:
+    """Pack deterministic batches accepted by Habitat-Lab's scene splitter."""
+    remaining = list(rows)
+    batches = []
+    while remaining:
+        batch = []
+        deferred = []
+        scenes = set()
+        for row in remaining:
+            if len(batch) < batch_size and row["scene_id"] not in scenes:
+                batch.append(row)
+                scenes.add(row["scene_id"])
+            else:
+                deferred.append(row)
+        batches.append(batch)
+        remaining = deferred
+    return batches
+
+
 def collect_batched(
     cohort: str, selected: list[dict], pending: list[dict],
     gpus: tuple[int, ...], batch_size: int,
 ) -> dict:
     paths = layout(cohort)
-    batches = [
-        pending[index:index + batch_size]
-        for index in range(0, len(pending), batch_size)
-    ]
+    batches = unique_scene_batches(pending, batch_size)
     active = {}
     failures = []
     retry_counts: dict[tuple[str, ...], int] = {}
