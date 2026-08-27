@@ -16,6 +16,7 @@ from .post_excursion_data import (
 )
 from .integrated_controller import (
     IntegratedOptionController, PostExcursionAction, PostExcursionDecision,
+    FrozenOPPEventGate, PersistentExcursionLedger,
     StateConditionedReturnExecutor,
 )
 
@@ -38,7 +39,9 @@ __all__ = [
     "PostExcursionQOutput",
     "collate_post_excursion_examples",
     "IntegratedOptionController",
+    "FrozenOPPEventGate",
     "PostExcursionAction",
     "PostExcursionDecision",
+    "PersistentExcursionLedger",
     "StateConditionedReturnExecutor",
 ]

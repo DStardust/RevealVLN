@@ -5,7 +5,9 @@ import torch
 from revealnav_mf2r4 import (
     BranchExcursionMacroController, BranchExcursionQHead,
     BranchExcursionQLoss, BranchMacroAction, CheckpointReturnExecutor,
-    ExecutorPhase, ReeQFusionController,
+    BranchMacroDecision, ExecutorPhase, FrozenOPPEventGate,
+    PersistentExcursionLedger,
+    ReeQFusionController,
 )
 from revealnav_mf2r3 import OptionStatus
 from revealnav_mf2r4.model import BranchExcursionQOutput
@@ -126,6 +128,19 @@ class BranchExcursionMacroControllerTest(unittest.TestCase):
                 ["a", "b"], [1.1, -0.1], [1.0, 1.0], [1.0, 1.0], 3
             )
 
+    def test_fixed_opv_threshold_suppresses_low_value_excursion(self):
+        decision = ReeQFusionController(3, 0.0, 0.025).decide(
+            ["a", "b"], [1.0, 1.0],
+            [1.0, 2.0], [0.98, 3.0], 3,
+        )
+        self.assertEqual(decision.action, BranchMacroAction.COMMIT)
+        self.assertEqual(decision.branch_id, "a")
+        self.assertAlmostEqual(decision.preservation_gain, 0.02)
+        self.assertEqual(
+            decision.reason,
+            "checkpoint_value_not_above_frozen_opv_threshold",
+        )
+
 
 class CheckpointReturnExecutorTest(unittest.TestCase):
     def test_excursion_return_then_commit(self):
@@ -161,6 +176,113 @@ class CheckpointReturnExecutorTest(unittest.TestCase):
         executor = CheckpointReturnExecutor("cp", "controller", ("a", "b"))
         with self.assertRaises(ValueError):
             executor.start_excursion("unknown")
+
+
+class PersistentExcursionLedgerTest(unittest.TestCase):
+    @staticmethod
+    def excursion(branch_id="a", gain=0.1):
+        return BranchMacroDecision(
+            BranchMacroAction.CHECKPOINTED_EXCURSION,
+            branch_id, 1.0, gain, "test",
+        )
+
+    def test_threshold_is_strict_and_rejection_does_not_mutate(self):
+        ledger = PersistentExcursionLedger(0.025)
+        ledger.register("cp", ("a", "b"))
+        self.assertFalse(ledger.authorize("cp", self.excursion(gain=0.025)))
+        self.assertEqual(ledger.status("cp", "a"), OptionStatus.UNTRIED)
+        self.assertTrue(ledger.authorize("cp", self.excursion(gain=0.025001)))
+        self.assertEqual(ledger.status("cp", "a"), OptionStatus.ACTIVE)
+
+    def test_returned_branch_remains_exhausted_after_reregistration(self):
+        ledger = PersistentExcursionLedger(0.025)
+        ledger.register("cp", ("a", "b"))
+        self.assertTrue(ledger.authorize("cp", self.excursion("a")))
+        ledger.resolve_return("cp", "a")
+        self.assertEqual(ledger.untried("cp", ("a", "b")), ("b",))
+        self.assertFalse(ledger.authorize("cp", self.excursion("a")))
+        self.assertEqual(ledger.status("cp", "a"), OptionStatus.EXHAUSTED)
+
+    def test_continue_commits_and_failed_lifecycle_is_fail_closed(self):
+        ledger = PersistentExcursionLedger(0.025)
+        ledger.register("cp", ("a", "b"))
+        with self.assertRaises(RuntimeError):
+            ledger.resolve_return("cp", "a")
+        self.assertTrue(ledger.authorize("cp", self.excursion("a")))
+        ledger.resolve_continue("cp", "a")
+        self.assertEqual(ledger.status("cp", "a"), OptionStatus.COMMITTED)
+        self.assertEqual(ledger.counts(), {
+            "untried": 1, "active": 0, "exhausted": 0, "committed": 1,
+        })
+
+    def test_native_base_branch_can_be_activated_without_claiming_q_selected_it(self):
+        ledger = PersistentExcursionLedger(0.025)
+        ledger.register("cp", ("base", "q_choice"))
+        self.assertTrue(ledger.authorize_branch("cp", "base", 0.2))
+        self.assertEqual(ledger.status("cp", "base"), OptionStatus.ACTIVE)
+        self.assertEqual(ledger.status("cp", "q_choice"), OptionStatus.UNTRIED)
+
+
+class FrozenOPPEventGateTest(unittest.TestCase):
+    def setUp(self):
+        self.gate = FrozenOPPEventGate(0.7, 0.5, 0.3, 0.3, 0.5)
+
+    def test_checkpoint_follows_or_inspects_before_expiry(self):
+        self.assertEqual(
+            self.gate.checkpoint_decision(0.2, 0.2, 0.2, 0.2, 0.2),
+            (False, "opp_evidence_accumulating_base_follow"),
+        )
+        self.assertEqual(
+            self.gate.checkpoint_decision(0.2, 0.2, 0.2, 0.8, 0.2),
+            (False, "opp_reveal_expected_base_inspect"),
+        )
+
+    def test_checkpoint_explores_at_expiry_but_not_after_evidence_closes(self):
+        self.assertEqual(
+            self.gate.checkpoint_decision(0.2, 0.2, 0.2, 0.8, 0.3),
+            (True, "opp_expiry_risk_allows_exploration"),
+        )
+        self.assertEqual(
+            self.gate.checkpoint_decision(0.7, 0.5, 0.3, 0.2, 0.8),
+            (False, "opp_evidence_ready_base_commit"),
+        )
+        self.assertEqual(
+            self.gate.checkpoint_decision(0.7, 0.5, 0.29, 0.2, 0.8),
+            (True, "opp_expiry_risk_allows_exploration"),
+        )
+
+    def test_post_continue_requires_closed_selected_target(self):
+        self.assertEqual(
+            self.gate.post_excursion_decision(0.8, 0.8, 0.4),
+            (True, "opp_selected_branch_discriminable_and_closed"),
+        )
+        for values in ((0.6, 0.8, 0.4), (0.8, 0.4, 0.4), (0.8, 0.8, 0.2)):
+            self.assertEqual(
+                self.gate.post_excursion_decision(*values),
+                (False, "opp_selected_branch_not_safe_to_commit"),
+            )
+
+    def test_initial_action_obeys_commit_expiry_reveal_follow_order(self):
+        self.assertEqual(
+            self.gate.initial_action(0.7, 0.5, 0.3, 0.9, 0.9, True),
+            ("commit", "opp_learned_D_and_evidence_closed"),
+        )
+        self.assertEqual(
+            self.gate.initial_action(0.2, 0.4, 0.4, 0.9, 0.3, True),
+            ("explore", "opp_last_safe_local_option"),
+        )
+        self.assertEqual(
+            self.gate.initial_action(0.2, 0.4, 0.4, 0.9, 0.3, False),
+            ("unresolved", "opp_expiry_without_safe_option"),
+        )
+        self.assertEqual(
+            self.gate.initial_action(0.2, 0.4, 0.4, 0.5, 0.2, True),
+            ("inspect", "opp_reveal_expected_before_expiry"),
+        )
+        self.assertEqual(
+            self.gate.initial_action(0.2, 0.4, 0.4, 0.4, 0.2, True),
+            ("follow", "opp_preserve_while_evidence_accumulates"),
+        )
 
 
 if __name__ == "__main__":
