@@ -1,0 +1,82 @@
+{
+  "schema_version": "revealnav-ree-q-fusion-controller-lock/4.4",
+  "status": "LOCKED_BEFORE_FRESH_R2R_UNSEEN_CONFIRMATION",
+  "locked_at_utc": "2026-08-27T12:10:00Z",
+  "source_git_commit": "8400c3f84366e727eacaa3c386bbf74ee26e89a2",
+  "selection_scope": "RxR train-only data and scene-disjoint internal development diagnostics",
+  "fixed_composition": {
+    "formula": "score(a,b) = V4_Q(a,b) + 5.0 * (1 - REE_target_probability(b))",
+    "wrong_commitment_weight": 5.0,
+    "weight_source": "pre-existing LearnedOPPConfig.wrong_commitment_weight",
+    "persistence_k": 3,
+    "argmin_tie_order": "COMMIT before CHECKPOINTED_EXCURSION, then lexical persistent branch id",
+    "seed_pairing": "pair REE and Q checkpoints with the same seed; report all three seeds independently",
+    "ensemble_allowed": false
+  },
+  "checkpoint_pairs": [
+    {
+      "seed": 20260826,
+      "ree": {
+        "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260826/relational_expiry_ree.pt",
+        "bytes": 3263054,
+        "sha256": "2a57c045b2717aa163515f6a9ca5cb0e1608a2eb0ab340cffcf1f3dcfbceabd1"
+      },
+      "q": {
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+        "bytes": 1303725,
+        "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+      }
+    },
+    {
+      "seed": 20260827,
+      "ree": {
+        "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260827/relational_expiry_ree.pt",
+        "bytes": 3263054,
+        "sha256": "fcba20e6ecf9c2e3c6302731ac0c29d56aabde8067e4701acddcfffc951470d0"
+      },
+      "q": {
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+        "bytes": 1303725,
+        "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+      }
+    },
+    {
+      "seed": 20260828,
+      "ree": {
+        "path": "artifacts/evaluation/mf2_expiry_r3_1/augmented_seed_20260828/relational_expiry_ree.pt",
+        "bytes": 3263054,
+        "sha256": "4c2ffd79cb94e9e4da18b825737098083efa2803cb0c35a956d5f638068b10bb"
+      },
+      "q": {
+        "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+        "bytes": 1303725,
+        "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+      }
+    }
+  ],
+  "accepted_engineering_evidence": {
+    "path": "artifacts/evaluation/mf2_ree_q_fusion_v4_4/RXR_REE_Q_FUSION_DIAGNOSIS_V4_4.json",
+    "bytes": 2646,
+    "sha256": "2ad873eccdc338f170c461c92d1378e666e5941c14360dd0a5d9b529959906e6",
+    "status": "REE_Q_FIXED_FUSION_ENGINEERING_PASS"
+  },
+  "preserved_negative_result": {
+    "path": "artifacts/evaluation/mf2_branch_excursion_q_cr7/RXR_BRANCH_EXCURSION_Q_CR7_COMPARISON.json",
+    "status": "BRANCH_EXCURSION_Q_CR7_DEVELOPMENT_GATE_FAIL"
+  },
+  "fresh_confirmatory_gate": {
+    "dataset": "R2R-CE val_unseen",
+    "role": "cross-instruction-style controller engineering confirmation",
+    "payload_read_before_this_lock": false,
+    "paper_claim_from_engineering_pilot_allowed": false,
+    "test_or_test_challenge_allowed": false
+  },
+  "freeze_rules": [
+    "Every checkpoint must match bytes and SHA-256 before loading.",
+    "No seed, formula, coefficient, threshold, or checkpoint may be selected using fresh R2R val_unseen outcomes.",
+    "The already-inspected RxR val_unseen pilot is not reused for tuning or confirmatory claims.",
+    "All three same-seed REE/Q pairs must run; failures may not be silently dropped.",
+    "No shadow action may change the frozen ETP-R1 action until a separate state-conditioned executor gate passes.",
+    "No test or test_challenge split may be opened."
+  ]
+}
