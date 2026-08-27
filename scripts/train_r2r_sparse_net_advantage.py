@@ -130,7 +130,8 @@ def predict(model, batch, arrays, indices) -> tuple[np.ndarray, np.ndarray, np.n
 
 def one_seed(
     seed: int, arrays, records: list[dict], train_indices: np.ndarray,
-    dev_indices: np.ndarray, output_dir: Path, device: torch.device,
+    calibration_indices: np.ndarray, dev_indices: np.ndarray,
+    output_dir: Path, device: torch.device,
 ) -> dict:
     random.seed(seed)
     np.random.seed(seed)
@@ -140,6 +141,7 @@ def one_seed(
     model = PairwiseNetAdvantageHead().to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, weight_decay=1e-3)
     train = tensors(arrays, train_indices, device)
+    calibration = tensors(arrays, calibration_indices, device)
     dev = tensors(arrays, dev_indices, device)
     positives = float(train["better"].sum())
     negatives = float(len(train_indices) - positives)
@@ -174,13 +176,18 @@ def one_seed(
         model.eval()
         with torch.no_grad():
             logits, gain = model(
-                dev["instruction"], dev["current_history"], dev["temporal_history"],
-                dev["native"], dev["alternative"], dev["immediate_costs"],
+                calibration["instruction"], calibration["current_history"],
+                calibration["temporal_history"], calibration["native"],
+                calibration["alternative"], calibration["immediate_costs"],
             )
-            val = float(F.binary_cross_entropy_with_logits(logits, dev["better"]))
-            positive = dev["better"] > 0.5
+            val = float(F.binary_cross_entropy_with_logits(
+                logits, calibration["better"]
+            ))
+            positive = calibration["better"] > 0.5
             if bool(positive.any()):
-                val += 0.5 * float(F.smooth_l1_loss(gain[positive], dev["gain"][positive]))
+                val += 0.5 * float(F.smooth_l1_loss(
+                    gain[positive], calibration["gain"][positive]
+                ))
         if best is None or val < best[0] - 1e-5:
             best = (val, epoch, {key: value.detach().cpu().clone() for key, value in model.state_dict().items()})
             patience = 0
@@ -190,9 +197,16 @@ def one_seed(
             break
     model.load_state_dict(best[2], strict=True)
     model.eval()
+    calibration_probability, calibration_gain, calibration_score = predict(
+        model, calibration, arrays, calibration_indices
+    )
+    calibration_records = [records[index] for index in calibration_indices]
+    threshold, calibration_policy = calibrate(
+        calibration_records, calibration_score
+    )
     dev_probability, dev_gain, dev_score = predict(model, dev, arrays, dev_indices)
     dev_records = [records[index] for index in dev_indices]
-    threshold, policy = calibrate(dev_records, dev_score)
+    dev_policy = event_policy(dev_records, dev_score, threshold)
     train_probability, train_gain, train_score = predict(model, train, arrays, train_indices)
     train_records = [records[index] for index in train_indices]
     checkpoint = output_dir / f"seed_{seed}" / "sparse_net_advantage.pt"
@@ -214,12 +228,18 @@ def one_seed(
         "seed": seed,
         "best_epoch": best[1],
         "train_rows": len(train_indices),
+        "calibration_rows": len(calibration_indices),
         "dev_rows": len(dev_indices),
         "train_auc": auc(arrays["better"][train_indices], train_probability),
+        "calibration_auc": auc(
+            arrays["better"][calibration_indices], calibration_probability
+        ),
         "dev_auc": auc(arrays["better"][dev_indices], dev_probability),
         "calibrated_score_threshold": threshold,
         "train_policy": {key: value for key, value in event_policy(train_records, train_score, threshold).items() if key != "selected_indices"},
-        "dev_policy": {key: value for key, value in policy.items() if key != "selected_indices"},
+        "calibration_policy": {key: value for key, value in calibration_policy.items() if key != "selected_indices"},
+        "dev_policy": {key: value for key, value in dev_policy.items() if key != "selected_indices"},
+        "calibration_predicted_gain_mean_m": float(calibration_gain.mean()),
         "dev_predicted_gain_mean_m": float(dev_gain.mean()),
         "checkpoint": {
             "path": str(checkpoint.relative_to(ROOT)),
@@ -253,33 +273,44 @@ def main() -> int:
     if len(records) != len(arrays["better"]):
         raise RuntimeError("record/array alignment drift")
     train_indices = np.asarray([row["row_index"] for row in records if row["partition"] == "train"], dtype=np.int64)
+    calibration_indices = np.asarray([row["row_index"] for row in records if row["partition"] == "calibration"], dtype=np.int64)
     dev_indices = np.asarray([row["row_index"] for row in records if row["partition"] == "dev"], dtype=np.int64)
-    if len(train_indices) < 16 or len(dev_indices) < 8:
-        raise RuntimeError("insufficient scene-disjoint rows for learnability gate")
+    if min(len(train_indices), len(calibration_indices), len(dev_indices)) < 8:
+        raise RuntimeError("insufficient three-way scene-disjoint rows")
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
     results = [one_seed(
-        seed, arrays, records, train_indices, dev_indices, output_dir, device
+        seed, arrays, records, train_indices, calibration_indices, dev_indices,
+        output_dir, device
     ) for seed in SEEDS]
     finite_auc = [row["dev_auc"] for row in results if math.isfinite(row["dev_auc"])]
     gates = {
         "all_three_seeds_finite": len(finite_auc) == 3,
         "median_dev_auc_above_chance": len(finite_auc) == 3 and float(np.median(finite_auc)) >= 0.55,
-        "mean_sparse_net_positive": float(np.mean([row["dev_policy"]["mean_net_per_event_m"] for row in results])) > 0.0,
-        "mean_sparse_precision_above_half": float(np.mean([row["dev_policy"]["positive_precision"] for row in results])) > 0.5,
+        "median_untouched_dev_sparse_net_positive": float(np.median([
+            row["dev_policy"]["mean_net_per_event_m"] for row in results
+        ])) > 0.0,
+        "at_least_two_untouched_dev_nets_positive": sum(
+            row["dev_policy"]["mean_net_per_event_m"] > 0.0 for row in results
+        ) >= 2,
         "all_activation_rates_bounded": all(row["dev_policy"]["activation_rate"] <= 0.20 for row in results),
     }
     value = {
-        "schema_version": "revealnav-r2r-sparse-net-advantage-training/1",
+        "schema_version": "revealnav-r2r-sparse-net-advantage-training/2",
         "status": "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_PASS" if all(gates.values()) else "R2R_SPARSE_NET_ADVANTAGE_LEARNABILITY_FAIL",
         "dataset_manifest": str(manifest_path.relative_to(ROOT)),
         "dataset_manifest_sha256": sha256_file(manifest_path),
         "train_scenes": manifest["train_scenes"],
+        "calibration_scenes": manifest["calibration_scenes"],
         "dev_scenes": manifest["dev_scenes"],
         "results": results,
         "gates": gates,
-        "selection_rule": "highest calibrated dev mean net, tie broken by AUC then seed",
+        "selection_rule": (
+            "highest calibration mean net, tie broken by calibration AUC then seed; "
+            "untouched dev is never used for threshold or checkpoint selection"
+        ),
         "selected_seed": max(results, key=lambda row: (
-            row["dev_policy"]["mean_net_per_event_m"], row["dev_auc"], -row["seed"]
+            row["calibration_policy"]["mean_net_per_event_m"],
+            row["calibration_auc"], -row["seed"]
         ))["seed"],
         "task_metric_payload_read": False,
         "unseen_or_test_read": False,

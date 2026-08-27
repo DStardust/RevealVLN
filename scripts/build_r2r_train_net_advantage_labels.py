@@ -101,6 +101,16 @@ def geodesic(pathfinder, start, goal) -> float:
     return value if math.isfinite(value) else math.inf
 
 
+def causal_distance(start, goal) -> float:
+    """Distance derivable from the two positions already present online."""
+    value = float(np.linalg.norm(
+        np.asarray(start, dtype=np.float32) - np.asarray(goal, dtype=np.float32)
+    ))
+    if not math.isfinite(value):
+        raise RuntimeError("non-finite online candidate distance")
+    return value
+
+
 def route_suffix(pathfinder, reference: list[list[float]]) -> list[float]:
     suffix = [0.0 for _ in reference]
     for index in range(len(reference) - 2, -1, -1):
@@ -126,9 +136,17 @@ def merge_cost(
 
 def scene_partition(scenes: list[str]) -> dict[str, str]:
     ordered = sorted(scenes, key=lambda value: stable_hash({"scene": value}))
-    dev_count = max(1, round(len(ordered) * 0.2))
+    dev_count = max(1, round(len(ordered) * 0.15))
+    calibration_count = max(1, round(len(ordered) * 0.15))
     dev = set(ordered[:dev_count])
-    return {scene: ("dev" if scene in dev else "train") for scene in scenes}
+    calibration = set(ordered[dev_count:dev_count + calibration_count])
+    return {
+        scene: (
+            "dev" if scene in dev else
+            "calibration" if scene in calibration else "train"
+        )
+        for scene in scenes
+    }
 
 
 def load_summaries(runs: Path) -> list[dict]:
@@ -204,6 +222,9 @@ def build(runs: Path, output_dir: Path) -> dict:
                 if not math.isfinite(native_cost):
                     unreachable.append({"event_id": event["event_id"], "reason": "native_unreachable"})
                     continue
+                native_causal_distance = causal_distance(
+                    checkpoint, event["candidate_positions"][native]
+                )
                 for alternative_index, alternative in enumerate(branches):
                     if alternative == native:
                         continue
@@ -217,6 +238,9 @@ def build(runs: Path, output_dir: Path) -> dict:
                             "reason": "alternative_unreachable",
                         })
                         continue
+                    alternative_causal_distance = causal_distance(
+                        checkpoint, event["candidate_positions"][alternative]
+                    )
                     gain = native_cost - alternative_cost
                     better = gain > MARGIN_M
                     round_trip = 2.0 * alternative_outbound
@@ -226,7 +250,9 @@ def build(runs: Path, output_dir: Path) -> dict:
                     arrays["temporal_history"].append(history.mean(0))
                     arrays["native"].append(candidates[-1, native_index])
                     arrays["alternative"].append(candidates[-1, alternative_index])
-                    arrays["immediate_costs"].append([native_outbound, alternative_outbound])
+                    arrays["immediate_costs"].append([
+                        native_causal_distance, alternative_causal_distance
+                    ])
                     arrays["better"].append(float(better))
                     arrays["positive_gain"].append(max(0.0, gain))
                     arrays["signed_gain"].append(gain)
@@ -246,6 +272,10 @@ def build(runs: Path, output_dir: Path) -> dict:
                         "alternative_merge_index": alternative_merge,
                         "native_route_merge_cost_m": round(native_cost, 6),
                         "alternative_route_merge_cost_m": round(alternative_cost, 6),
+                        "native_causal_distance_m": round(native_causal_distance, 6),
+                        "alternative_causal_distance_m": round(
+                            alternative_causal_distance, 6
+                        ),
                         "signed_gain_m": round(gain, 6),
                         "round_trip_cost_m": round(round_trip, 6),
                         "realized_trial_net_m": round(realized_trial_net, 6),
@@ -274,9 +304,11 @@ def build(runs: Path, output_dir: Path) -> dict:
         "positive_rows": sum(row["better_by_margin"] for row in records),
         "negative_rows": sum(not row["better_by_margin"] for row in records),
         "train_rows": sum(row["partition"] == "train" for row in records),
+        "calibration_rows": sum(row["partition"] == "calibration" for row in records),
         "dev_rows": sum(row["partition"] == "dev" for row in records),
         "scenes": len(partition),
         "train_scenes": sorted(scene for scene, split in partition.items() if split == "train"),
+        "calibration_scenes": sorted(scene for scene, split in partition.items() if split == "calibration"),
         "dev_scenes": sorted(scene for scene, split in partition.items() if split == "dev"),
         "unreachable_rows": unreachable,
         "records": records,
@@ -290,6 +322,11 @@ def build(runs: Path, output_dir: Path) -> dict:
             "objective": "shortest geodesic merge back into the remaining R2R reference path",
             "positive_margin_m": MARGIN_M,
             "wrong_trial_cost": "two times checkpoint-to-alternative geodesic",
+            "model_distance_input": (
+                "Euclidean checkpoint-to-candidate distance derived only from "
+                "positions available in the online ETP graph"
+            ),
+            "offline_geodesic_used_as_model_input": False,
             "offline_reference_path_used_for_labels_only": True,
             "future_frames_used_for_online_inputs": 0,
         },
@@ -312,7 +349,8 @@ def main() -> int:
     value = build(args.runs, args.output_dir)
     print(json.dumps({key: value[key] for key in (
         "status", "completed_episodes", "source_feature_events", "training_rows",
-        "positive_rows", "negative_rows", "train_rows", "dev_rows", "scenes",
+        "positive_rows", "negative_rows", "train_rows", "calibration_rows",
+        "dev_rows", "scenes",
     )}, sort_keys=True))
     return 0
 
