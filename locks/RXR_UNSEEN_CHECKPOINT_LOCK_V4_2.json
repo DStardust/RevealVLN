@@ -1,0 +1,54 @@
+{
+  "schema_version": "revealnav-rxr-unseen-checkpoint-lock/4.2",
+  "status": "LOCKED_BEFORE_UNSEEN_EVALUATION",
+  "locked_at_utc": "2026-08-27T03:26:37Z",
+  "selection_rule": "Lock the complete predeclared three-seed V4 cohort; do not rank, replace, ensemble-select, or tune seeds using unseen results.",
+  "selection_evidence_scope": "RxR train-only events with a scene-disjoint internal development partition",
+  "intended_next_gate": "RxR-CE English val_unseen controller integration",
+  "unseen_payload_read_before_lock": false,
+  "test_or_test_challenge_authorized": false,
+  "paper_result_at_lock_time": false,
+  "source_git_commit": "e84d22437ae316bb969e54a717edcea34da8476f",
+  "checkpoints": [
+    {
+      "seed": 20260826,
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260826/branch_excursion_q.pt",
+      "bytes": 1303725,
+      "sha256": "b70b15ac781da902767c0f6e9ef6a164cf593366508ab1533219657a15bf14e4"
+    },
+    {
+      "seed": 20260827,
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260827/branch_excursion_q.pt",
+      "bytes": 1303725,
+      "sha256": "cd16a32a604211c604306caaf80eed92fb45aefb954cec72dcdfc6a09c589b1e"
+    },
+    {
+      "seed": 20260828,
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/seed_20260828/branch_excursion_q.pt",
+      "bytes": 1303725,
+      "sha256": "2907a6b8721bbb4b62033f1d77d78ee506d43eb678404040a34fbade2c213115"
+    }
+  ],
+  "evidence": {
+    "final_acceptance": {
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4_2/RXR_BRANCH_EXCURSION_Q_FINAL_ACCEPTANCE_V4_2.json",
+      "sha256": "d886c2e59f92ec5a5b6e44657227da06d7ae1ad058988fe7cabd085aa92defc0",
+      "status": "BRANCH_EXCURSION_Q_ENGINEERING_ACCEPTANCE_PASS"
+    },
+    "training_protocol": {
+      "path": "artifacts/evaluation/mf2_branch_excursion_q_v4/RXR_BRANCH_EXCURSION_Q_PROTOCOL_V4.json",
+      "sha256": "d06b17b5423db942c8cc6cb6f0e9928768a7e08fccb9db3a4c3afe0db8a3828c"
+    },
+    "method_design": {
+      "path": "artifacts/design/MF2_BRANCH_EXCURSION_ACTION_Q_V4.md",
+      "sha256": "68a38de5f665053e9647689a0978a111e41a0ec623a02f8ca70f57b047f31215"
+    }
+  },
+  "freeze_rules": [
+    "Every checkpoint must match both bytes and SHA-256 before loading.",
+    "All three seeds use one controller configuration and one threshold set fixed before unseen metrics are inspected.",
+    "No checkpoint or threshold may be selected using val_unseen outcomes.",
+    "Engineering failures remain results and must not be silently dropped.",
+    "No test or test_challenge split may be opened in this gate."
+  ]
+}
