@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 V56 = ROOT / "artifacts/evaluation/mf2_r2r_v5_6_fresh_seen_screen"
 V57 = ROOT / "artifacts/evaluation/mf2_r2r_v5_7_candidate_adapter_diagnostic"
+V58 = ROOT / "artifacts/evaluation/mf2_r2r_v5_8_safe_local_diagnostic"
 
 
 def counts(root: Path) -> dict:
@@ -34,7 +35,11 @@ def counts(root: Path) -> dict:
     }
 
 
-value = {"v5_6_fresh_screen": counts(V56), "v5_7_adapter": counts(V57)}
+value = {
+    "v5_6_fresh_screen": counts(V56),
+    "v5_7_global_adapter_diagnostic": counts(V57),
+    "v5_8_safe_local_diagnostic": counts(V58),
+}
 result = V57 / "R2R_V5_7_CANDIDATE_ADAPTER_RESULT.json"
 if result.is_file():
     value["v5_7_result"] = json.loads(result.read_text())["status"]
