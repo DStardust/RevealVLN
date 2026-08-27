@@ -2,7 +2,10 @@ import unittest
 
 import torch
 
-from revealnav_mf2r4 import BranchExcursionQHead, BranchExcursionQLoss
+from revealnav_mf2r4 import (
+    BranchExcursionMacroController, BranchExcursionQHead,
+    BranchExcursionQLoss, BranchMacroAction,
+)
 
 
 class BranchExcursionQTest(unittest.TestCase):
@@ -55,6 +58,38 @@ class BranchExcursionQTest(unittest.TestCase):
         torch.testing.assert_close(
             result.excursion_cost, original.excursion_cost[:, order]
         )
+
+
+class BranchExcursionMacroControllerTest(unittest.TestCase):
+    def test_defers_until_branch_set_is_persistent(self):
+        controller = BranchExcursionMacroController(3)
+        decision = controller.decide(
+            ["b", "a"], [2.0, 1.0], [0.5, 3.0], 2
+        )
+        self.assertEqual(decision.action, BranchMacroAction.DEFER)
+
+    def test_selects_global_minimum_and_is_permutation_invariant(self):
+        controller = BranchExcursionMacroController(3)
+        first = controller.decide(
+            ["b", "a"], [2.0, 1.0], [0.5, 3.0], 3
+        )
+        second = controller.decide(
+            ["a", "b"], [1.0, 2.0], [3.0, 0.5], 3
+        )
+        self.assertEqual(first, second)
+        self.assertEqual(
+            first.action, BranchMacroAction.CHECKPOINTED_EXCURSION
+        )
+        self.assertEqual(first.branch_id, "b")
+        self.assertAlmostEqual(first.predicted_cost, 0.5)
+        self.assertAlmostEqual(first.preservation_gain, 0.5)
+
+    def test_exact_action_tie_prefers_commit(self):
+        decision = BranchExcursionMacroController(3).decide(
+            ["b", "a"], [1.0, 2.0], [1.0, 3.0], 3
+        )
+        self.assertEqual(decision.action, BranchMacroAction.COMMIT)
+        self.assertEqual(decision.branch_id, "b")
 
 
 if __name__ == "__main__":
