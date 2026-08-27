@@ -21,7 +21,8 @@ import run_r2r_v5_11_paired_seen_gate as prior  # noqa: E402
 RUNNER = Path(__file__).resolve()
 WORKER = ROOT / "scripts/r2r_aligned_native_control_opp_worker_v5_12.py"
 OUT = ROOT / "artifacts/evaluation/mf2_r2r_v5_12_reversible_dev_gate"
-PROTOCOL = OUT / "R2R_V5_12_REVERSIBLE_DEV_PROTOCOL.json"
+PRIOR_PROTOCOL = OUT / "R2R_V5_12_REVERSIBLE_DEV_PROTOCOL.json"
+PROTOCOL = OUT / "R2R_V5_12_REVERSIBLE_DEV_PROTOCOL_V2.json"
 RESULT = OUT / "R2R_V5_12_REVERSIBLE_DEV_RESULT.json"
 SEEDS = common.SEEDS
 
@@ -38,9 +39,15 @@ def protocol_value() -> dict:
     ):
         raise RuntimeError("completed V5.11 development evidence is required")
     selection = old_protocol["selection"]
+    prior_protocol = json.loads(PRIOR_PROTOCOL.read_text())
+    if not (
+        prior_protocol.get("status") == "SEALED_V5_12_METHOD_DEVELOPMENT_GATE"
+        and prior_protocol.get("treatment_runs") == 72
+    ):
+        raise RuntimeError("sealed V5.12 protocol V1 is required")
     return {
-        "schema_version": "revealnav-r2r-v5.12-reversible-dev-protocol/1",
-        "status": "SEALED_V5_12_METHOD_DEVELOPMENT_GATE",
+        "schema_version": "revealnav-r2r-v5.12-reversible-dev-protocol/2",
+        "status": "SEALED_V5_12_METHOD_DEVELOPMENT_GATE_ADJUDICATED",
         "selection": selection,
         "selection_provenance": (
             "same 24 episodes and 17 scenes whose metrics were already opened "
@@ -57,11 +64,26 @@ def protocol_value() -> dict:
             "checkpointed excursion; physical and ETP graph restoration before "
             "resuming the retained native action"
         ),
+        "v1_adjudication": {
+            "prior_protocol_sha256": common.sha256_file(PRIOR_PROTOCOL),
+            "observed_failures": 4,
+            "single_failure_mode": (
+                "trial declared at ETP max_len-1 while the frozen evaluator "
+                "forces STOP independently of navigation logits"
+            ),
+            "repair": "suppress new trial creation only at max_len-1",
+            "reuse_rule": (
+                "reuse only V1 runs that returned rc=0 under executed-action "
+                "identity validation; rerun all four rc=1 jobs"
+            ),
+            "scientific_metrics_used_for_adjudication": False,
+        },
         "sources": {
             str(RUNNER.relative_to(ROOT)): common.sha256_file(RUNNER),
             str(WORKER.relative_to(ROOT)): common.sha256_file(WORKER),
             str(prior.PROTOCOL.relative_to(ROOT)): common.sha256_file(prior.PROTOCOL),
             str(prior.RESULT.relative_to(ROOT)): common.sha256_file(prior.RESULT),
+            str(PRIOR_PROTOCOL.relative_to(ROOT)): common.sha256_file(PRIOR_PROTOCOL),
         },
         "task_metrics_already_opened_for_method_development": True,
         "fresh_confirmation_claim": False,
@@ -98,7 +120,7 @@ def seal() -> None:
 def verify() -> None:
     base.verify()
     result = json.loads(RESULT.read_text())
-    result["schema_version"] = "revealnav-r2r-v5.12-reversible-dev-result/1"
+    result["schema_version"] = "revealnav-r2r-v5.12-reversible-dev-result/2"
     result["status"] = result["status"].replace(
         "V5_10_PAIRED_", "V5_12_REVERSIBLE_DEV_", 1
     )

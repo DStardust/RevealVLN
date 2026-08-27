@@ -53,6 +53,7 @@ class AlignedNativeControlFullOPPActionController(
         self.direct_override_suppressions = 0
         self.retained_native_commits = 0
         self.retained_native_unavailable = 0
+        self.final_step_suppressions = 0
         self.ree_closed_return_vetoes = 0
         self.trial_native_fallback: str | None = None
         self.trial_preservation_gain: float | None = None
@@ -376,6 +377,16 @@ class AlignedNativeControlFullOPPActionController(
             and macro.preservation_gain > V54.FROZEN_CONFIG["opv_threshold"]
             and backup is not None
         )
+        if valid_trial and self.step >= int(pilot._TRAINER.max_len) - 1:
+            self.final_step_suppressions += 1
+            self.record(
+                "reversible_alternative_trial_suppressed",
+                trial_branch=backup,
+                retained_native_branch=native_branch,
+                reason="ETP_forces_STOP_at_episode_horizon",
+                fail_closed_to_native=True,
+            )
+            valid_trial = False
         if valid_trial:
             if action == "commit":
                 # Keep the frozen event-gate count above, and separately make
@@ -466,6 +477,7 @@ class AlignedNativeControlFullOPPActionController(
             "direct_override_suppressions": self.direct_override_suppressions,
             "retained_native_commits": self.retained_native_commits,
             "retained_native_unavailable": self.retained_native_unavailable,
+            "final_step_suppressions": self.final_step_suppressions,
             "ree_closed_return_vetoes": self.ree_closed_return_vetoes,
             "topology_snapshots": self.topology_snapshots,
             "topology_restores": self.topology_restores,
