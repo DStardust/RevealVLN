@@ -135,15 +135,36 @@ def main() -> int:
         return 0
     if args.command == "run":
         return run(args.gpus, args.poll_seconds)
+    progress = load(CAL_PROGRESS)
+    evaluation_process = subprocess.run(
+        [str(PYTHON), str(RUNNER), "monitor"], cwd=ROOT,
+        env={**os.environ, "PYTHONNOUSERSITE": "1"},
+        text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+    )
+    try:
+        evaluation = json.loads(evaluation_process.stdout)
+    except json.JSONDecodeError:
+        evaluation = {"monitor_error": evaluation_process.stdout[-1000:]}
+    completed = int(progress.get("completed", 0))
+    selected = int(progress.get("selected", 0))
     print(json.dumps({
         "supervisor_alive": process_alive(PID),
         "state": load(STATE),
-        "calibration_progress": load(CAL_PROGRESS),
-        "evaluation": subprocess.run(
-            [str(PYTHON), str(RUNNER), "monitor"], cwd=ROOT,
-            env={**os.environ, "PYTHONNOUSERSITE": "1"},
-            text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-        ).stdout,
+        "calibration": {
+            "status": progress.get("status"),
+            "stage": progress.get("stage"),
+            "completed": completed,
+            "selected": selected,
+            "progress_percent": (
+                round(100 * completed / selected, 2) if selected else 0
+            ),
+            "active": len(progress.get("active", [])),
+            "proposal_events": progress.get("proposal_events"),
+            "proposal_events_by_seed": progress.get("proposal_events_by_seed"),
+            "missing_causal_inputs": progress.get("missing_causal_inputs"),
+            "exhausted_failures": len(progress.get("exhausted_failures", [])),
+        },
+        "evaluation": evaluation,
         "log": str(LOG.relative_to(ROOT)),
     }, indent=2, sort_keys=True))
     return 0
