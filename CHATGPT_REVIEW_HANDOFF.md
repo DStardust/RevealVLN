@@ -79,11 +79,14 @@ assuming a positive result:
 
 ## Scope and exclusions
 
-This Git snapshot intentionally does **not** contain Matterport/R2R/RxR
-payloads, checkpoints, virtual environments, caches, raw per-episode traces,
-large logs, or any secret file. Those assets remain project-local under the
-workspace and are not needed to review the design logic. No API key or private
-credential is part of the repository.
+This Git snapshot intentionally does **not** add Matterport/R2R/RxR payloads,
+ETP-R1 checkpoints, virtual environments, caches, raw per-episode traces, large
+logs, or any secret file. The historical repository contains three compact
+MF2 `post_excursion_q.pt` files (about 1.9 MB each); they are unrelated to the
+MF3ZK snapshot and are retained for backward compatibility. All current
+MF3ZK weights and raw run outputs remain project-local under the workspace and
+are not needed to review the design logic. No API key or private credential is
+part of the repository.
 
 The result above is a research diagnostic. It must not be described as SOTA,
 a public benchmark improvement, or evidence of acceptance probability.
