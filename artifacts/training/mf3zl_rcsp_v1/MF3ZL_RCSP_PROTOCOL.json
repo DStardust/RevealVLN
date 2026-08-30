@@ -1,0 +1,211 @@
+{
+  "authorization": {
+    "deployment_integration_before_pass": false,
+    "trainer_may_authorize_confirmation": false,
+    "trainer_may_authorize_public_unseen": false
+  },
+  "data_gate": {
+    "maximum_conflicting_identities": 0,
+    "minimum_development_scenes_per_domain": 30,
+    "minimum_unique_exact_events_per_domain": 300,
+    "untouched_scene_expansion_on_failure": false
+  },
+  "failure_criteria": [
+    "source_or_feature_provenance_drift",
+    "incomplete_sealed_population",
+    "data_support_below_300_events_or_30_scenes_per_domain",
+    "duplicate_or_conflicting_exact_identity",
+    "public_or_consumed_scene_access",
+    "non_exact_pair_or_action_identity_failure",
+    "joint_outer_fold_missing_or_zero_intervention",
+    "domain_nonpositive_utility_or_leave_one_scene_utility",
+    "domain_catastrophic_rate_above_ungated_or_matched_baseline",
+    "utility_not_above_low_margin_and_high_score_matched_baselines"
+  ],
+  "frozen_components": [
+    "ETP-R1 policy and visual-language backbone",
+    "MF3V proposal ranker",
+    "MF3ZG core/expansion hierarchy",
+    "native and runner-up action identities",
+    "one-switch intervention budget",
+    "utility and catastrophe definitions"
+  ],
+  "historical_evidence": {
+    "mf3zk_dsr_v1_consumed": true,
+    "old_confirmation_consumed": true,
+    "old_confirmation_reused": false
+  },
+  "implementation_files": {
+    "METHOD_REVISION_3ZL_RCSP.md": {
+      "bytes": 5383,
+      "path": "METHOD_REVISION_3ZL_RCSP.md",
+      "sha256": "63940e256b40c9655fcfb5e58619c7906bf37dbaaceb3c09534ac5153a00af93"
+    },
+    "revealnav_mf3/exact_replay.py": {
+      "bytes": 12218,
+      "path": "revealnav_mf3/exact_replay.py",
+      "sha256": "d95667414afc1a21eaaf3ccc45fd5bc454d0f56557db01bc30efd916cff78026"
+    },
+    "revealnav_mf3/rcsp.py": {
+      "bytes": 11993,
+      "path": "revealnav_mf3/rcsp.py",
+      "sha256": "2f69dadf7052f791f6208f9bddd3ec7a53d4b55e071fb18b204281a7846f1cc4"
+    },
+    "revealnav_mf3/rcsp_selection.py": {
+      "bytes": 26171,
+      "path": "revealnav_mf3/rcsp_selection.py",
+      "sha256": "8891e92407cc2895fb355603cdcd0a4019c142d6046c90b9075f20a3b415ce04"
+    },
+    "scripts/collect_mf3zl_exact_replay.py": {
+      "bytes": 39507,
+      "path": "scripts/collect_mf3zl_exact_replay.py",
+      "sha256": "1b35fa0c5a853289db84f0012750c71b7e1a0c29bca574d4e8cd181bae51d844"
+    },
+    "scripts/mf3zl_exact_replay_worker.py": {
+      "bytes": 9391,
+      "path": "scripts/mf3zl_exact_replay_worker.py",
+      "sha256": "e2f1f0b4f27408e8066e5a328e1ecdd2c20dd1de9bd0c83660eab8aae61ccfe4"
+    },
+    "scripts/train_mf3zl_rcsp.py": {
+      "bytes": 16912,
+      "path": "scripts/train_mf3zl_rcsp.py",
+      "sha256": "ccac4b4f413c409667323db0a6eebbc793a4f407148cea5be7b1f295f5972eb8"
+    },
+    "tests/test_mf3zl_exact_replay.py": {
+      "bytes": 3304,
+      "path": "tests/test_mf3zl_exact_replay.py",
+      "sha256": "51cc0704c922c0bba79f3d6d603e81c12145600e3eb4cfadacc8d215eb1adb79"
+    },
+    "tests/test_mf3zl_rcsp_model.py": {
+      "bytes": 3421,
+      "path": "tests/test_mf3zl_rcsp_model.py",
+      "sha256": "c485f0fcb1ee1fd6ee54e6c4eadae336766a614ccba554566bfcd739ac0208c5"
+    },
+    "tests/test_mf3zl_rcsp_selection.py": {
+      "bytes": 6395,
+      "path": "tests/test_mf3zl_rcsp_selection.py",
+      "sha256": "7629c70e848ce30d2d6f134e2df0ec80d018ab96f58e79657739bf296c12bc27"
+    }
+  },
+  "loss": {
+    "catastrophic_threshold": -0.1,
+    "preference": "abs_delta_utility_weighted_BCEWithLogits",
+    "risk_constraint": "per_domain_soft_selected_rate_not_above_ungated",
+    "weighting": "domain_scene_episode_event"
+  },
+  "method": "Risk-Constrained Counterfactual Switch Policy",
+  "model": {
+    "dataset_scene_tier_inputs": false,
+    "decision_rule": "switch_logit > 0",
+    "decision_threshold": 0.0,
+    "embedding_dim": 768,
+    "policy_dim": 10,
+    "rank": 4
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zl_rcsp_v1",
+  "schema_version": "revealnav-mf3zl-rcsp-protocol/1",
+  "selection": {
+    "adaptive_stopping": false,
+    "bytes": 2019326,
+    "complete_population_required": true,
+    "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_EXACT_REPLAY_SELECTION.json",
+    "route_identity_commitment_sha256": "bba1ebc8d3c2527f0f25d2b8ced7327d89ed6b1f39d6ec2000448d402e14fec2",
+    "sha256": "02b71eff30e7ff11f998e9751be48a84e50921b8c1965f1813d6d466ef8fe92c"
+  },
+  "source_files": {
+    "joint_pretrained": {
+      "bytes": 2264172675,
+      "path": "third_party/ETP-R1/pretrained/r2r_rxr_ce/mlm.sap_habitat_depth/store2/model_step_367500.pt",
+      "sha256": "203fe62cc22c63261a5c5b6a3638bc52fd3b08a7f09dd31d8539bf2beab6c3cf"
+    },
+    "mf3zg_gate": {
+      "bytes": 2461,
+      "path": "artifacts/training/mf3zg_hierarchical_core_preserving_gate_v1/MF3ZG_SHADOW_GATE.json",
+      "sha256": "8df4522e7d6b6a437828c0b9b19ead524c74da63a14cb19e92139c9fc99fae61"
+    },
+    "r2r_checkpoint": {
+      "bytes": 1874802927,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_r2r_grpo/store/ckpt.iter270.pth",
+      "sha256": "8f90cebba7eefb9648054aa74e8c8664f23e643073ef033b99edfbe85c54f61c"
+    },
+    "rxr_checkpoint": {
+      "bytes": 2523110172,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_rxr_grpo/store/ckpt.iter1320.pth",
+      "sha256": "3796c9c94ff8674b8cfe99f2b4aab0f4b391f0d4c9c1e167e4736b3848f27821"
+    }
+  },
+  "status": "SEALED_BEFORE_MF3ZL_COLLECTION_AND_TRAINING",
+  "training": {
+    "dual_learning_rate": 0.05,
+    "inner_fold_salt": "mf3zl-rcsp-v1-inner-scenes/1",
+    "inner_folds": 4,
+    "learning_rate": 0.005,
+    "only_selected_hyperparameter": "weight_decay",
+    "optimizer": "Adam_full_batch_projected_primal_dual",
+    "outer_folds": 5,
+    "outer_scene_assignment": {
+      "17DRP5sb8fy": 0,
+      "1pXnuDYAj8r": 2,
+      "29hnd4uzFmX": 2,
+      "5q7pvUzZiYa": 1,
+      "7y3sRwLe3Va": 4,
+      "82sE5b5pLXE": 0,
+      "8WUmhLawc2A": 1,
+      "B6ByNegPMKs": 1,
+      "D7G3Y4RVNrH": 3,
+      "D7N2EKCX4Sj": 3,
+      "E9uDoFAP3SH": 1,
+      "EDJbREhghzL": 0,
+      "GdvgFV5R1Z5": 4,
+      "JeFG25nYj2p": 4,
+      "JmbYfDe2QKZ": 3,
+      "PX4nDJXEHrG": 4,
+      "Pm6F8kyY3z2": 4,
+      "S9hNv5qa7GM": 1,
+      "VFuaQ6m2Qom": 3,
+      "VLzqgDo317F": 0,
+      "VVfe2KiqLaN": 3,
+      "YmJkqBEsHnH": 3,
+      "ZMojNkEp431": 4,
+      "aayBHfsNo7d": 2,
+      "ac26ZMwG7aT": 2,
+      "cV4RVeZvu5T": 3,
+      "e9zR4mvMWw7": 4,
+      "gZ6f7yhEvPG": 4,
+      "p5wJjkQkbXX": 1,
+      "pRbA3pwrgk9": 2,
+      "qoiz87JEwZ2": 1,
+      "r1Q1Z4BcV1o": 3,
+      "r47D5H71a5s": 4,
+      "rPc6DW4iMge": 0,
+      "s8pcmisQ38h": 2,
+      "sT4fr6TAbpF": 1,
+      "uNb9QFRL6hY": 3,
+      "ur6pFq6Qu1A": 3,
+      "vyrNrziPKCB": 3
+    },
+    "seeds": [
+      20260830,
+      20260831,
+      20260832
+    ],
+    "selection_metric": "inner_oof_utility_weighted_preference_loss",
+    "training_steps": 800,
+    "weight_decay_grid": [
+      0.0001,
+      0.001,
+      0.01
+    ]
+  },
+  "utility": {
+    "ndtw": 0.5,
+    "sdtw": 0.25,
+    "spl": 0.25
+  }
+}
