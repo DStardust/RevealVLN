@@ -42,3 +42,16 @@ The frozen research scope, novelty boundary, public-data plan, metrics, and
 stop/go criteria are documented in [FROZEN_SPEC.md](FROZEN_SPEC.md).
 The active self-contained feasibility run is tracked in
 [PHASE0_PROTOCOL.md](PHASE0_PROTOCOL.md).
+
+## Current independent-review snapshot (2026-08-30)
+
+The current mainline method revision is MF3ZK, a train-only joint
+action-aligned return/harm gate built on the frozen MF3ZG proposal hierarchy.
+The implementation is in [`revealnav_mf3/`](revealnav_mf3/) and the experiment
+drivers are under [`scripts/`](scripts/).  The bounded evidence, known failed
+confirmation result, and questions for an independent reviewer are recorded in
+[`CHATGPT_REVIEW_HANDOFF.md`](CHATGPT_REVIEW_HANDOFF.md).  This is a research
+diagnostic snapshot, not a public benchmark or SOTA claim.
+
+The repository intentionally excludes datasets, checkpoints, virtual
+environments, caches, raw per-episode traces, large logs, and credentials.
