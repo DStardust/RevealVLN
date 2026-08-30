@@ -1,0 +1,4168 @@
+{
+  "ablations": {
+    "public_split_access": false,
+    "status": "FROZEN_FOR_SEPARATE_BATCH_ONLY_IF_MAINLINE_PASS"
+  },
+  "equal_budget": {
+    "R2R": null,
+    "RxR": null,
+    "joint": null
+  },
+  "failure_reasons": [
+    "outer_fold_0:no_feasible_inner_candidate"
+  ],
+  "gate_artifact": null,
+  "joint": {
+    "arm": "joint",
+    "equal_budget": null,
+    "failure_reasons": [
+      "outer_fold_0:no_feasible_inner_candidate"
+    ],
+    "outer_folds": [
+      {
+        "common_random_numbers_verified": true,
+        "evaluation_scenes": [
+          "17DRP5sb8fy",
+          "82sE5b5pLXE",
+          "EDJbREhghzL",
+          "VLzqgDo317F",
+          "rPc6DW4iMge"
+        ],
+        "fit_scenes": [
+          "1pXnuDYAj8r",
+          "29hnd4uzFmX",
+          "5q7pvUzZiYa",
+          "7y3sRwLe3Va",
+          "8WUmhLawc2A",
+          "B6ByNegPMKs",
+          "D7G3Y4RVNrH",
+          "D7N2EKCX4Sj",
+          "E9uDoFAP3SH",
+          "GdvgFV5R1Z5",
+          "JeFG25nYj2p",
+          "JmbYfDe2QKZ",
+          "PX4nDJXEHrG",
+          "Pm6F8kyY3z2",
+          "S9hNv5qa7GM",
+          "VFuaQ6m2Qom",
+          "VVfe2KiqLaN",
+          "YmJkqBEsHnH",
+          "ZMojNkEp431",
+          "aayBHfsNo7d",
+          "ac26ZMwG7aT",
+          "cV4RVeZvu5T",
+          "e9zR4mvMWw7",
+          "gZ6f7yhEvPG",
+          "p5wJjkQkbXX",
+          "pRbA3pwrgk9",
+          "qoiz87JEwZ2",
+          "r1Q1Z4BcV1o",
+          "r47D5H71a5s",
+          "s8pcmisQ38h",
+          "sT4fr6TAbpF",
+          "uNb9QFRL6hY",
+          "ur6pFq6Qu1A",
+          "vyrNrziPKCB"
+        ],
+        "inner_scene_assignment": {
+          "1pXnuDYAj8r": 1,
+          "29hnd4uzFmX": 3,
+          "5q7pvUzZiYa": 1,
+          "7y3sRwLe3Va": 0,
+          "8WUmhLawc2A": 0,
+          "B6ByNegPMKs": 0,
+          "D7G3Y4RVNrH": 2,
+          "D7N2EKCX4Sj": 2,
+          "E9uDoFAP3SH": 0,
+          "GdvgFV5R1Z5": 0,
+          "JeFG25nYj2p": 3,
+          "JmbYfDe2QKZ": 3,
+          "PX4nDJXEHrG": 0,
+          "Pm6F8kyY3z2": 3,
+          "S9hNv5qa7GM": 1,
+          "VFuaQ6m2Qom": 1,
+          "VVfe2KiqLaN": 0,
+          "YmJkqBEsHnH": 2,
+          "ZMojNkEp431": 1,
+          "aayBHfsNo7d": 2,
+          "ac26ZMwG7aT": 2,
+          "cV4RVeZvu5T": 1,
+          "e9zR4mvMWw7": 1,
+          "gZ6f7yhEvPG": 3,
+          "p5wJjkQkbXX": 3,
+          "pRbA3pwrgk9": 1,
+          "qoiz87JEwZ2": 3,
+          "r1Q1Z4BcV1o": 0,
+          "r47D5H71a5s": 2,
+          "s8pcmisQ38h": 2,
+          "sT4fr6TAbpF": 3,
+          "uNb9QFRL6hY": 0,
+          "ur6pFq6Qu1A": 2,
+          "vyrNrziPKCB": 1
+        },
+        "outer_fold": 0,
+        "scene_overlap": [],
+        "selected_weight_decay": null,
+        "trials": [
+          {
+            "domains": {
+              "R2R": {
+                "authorized": 48,
+                "catastrophic": 3,
+                "catastrophic_rate": 0.0625,
+                "coverage": 0.5454545454545454,
+                "deployed_mean_utility": 0.00032652091345295153,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": -0.49105217803394197,
+                "negative": 22,
+                "positive": 26,
+                "selected_mean_utility": 0.0005986216746637444,
+                "selected_scene_count": 22,
+                "ties": 0,
+                "total_utility": 0.028733840383859732
+              },
+              "RxR": {
+                "authorized": 70,
+                "catastrophic": 5,
+                "catastrophic_rate": 0.07142857142857142,
+                "coverage": 0.5185185185185185,
+                "deployed_mean_utility": 0.005635069882566211,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": 0.27895520356021847,
+                "negative": 32,
+                "positive": 28,
+                "selected_mean_utility": 0.010867634773520549,
+                "selected_scene_count": 30,
+                "ties": 10,
+                "total_utility": 0.7607344341464384
+              }
+            },
+            "evidence": {
+              "authorized": 118,
+              "catastrophic": 8,
+              "catastrophic_rate": 0.06779661016949153,
+              "coverage": 0.5291479820627802,
+              "deployed_mean_utility": 0.0035402164777143435,
+              "eligible": 223,
+              "minimum_leave_one_selected_scene_out_total": 0.28326263866487694,
+              "negative": 54,
+              "positive": 54,
+              "selected_mean_utility": 0.00669040910618897,
+              "selected_scene_count": 32,
+              "ties": 10,
+              "total_utility": 0.7894682745302986
+            },
+            "failure_reasons": [
+              "R2R:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "r1Q1Z4BcV1o",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.007883072830736637,
+                  0.007254202850162983,
+                  0.008488267660140991
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "868053b39a238b140756c342453ee1e78434abb55523367dfb58bd7b523d58be",
+                  "3bb9333ba91d5cd88cc3bc312c638cb0ff6f293a6d555702aa283eba3dff0c91",
+                  "79d3995ae948939bbb537e0624aeba2819814b3f567ba684553db9b824991a45"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.006962334271520376,
+                  0.005434943828731775,
+                  0.010776830837130547
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "c3b4bcab66cf4864460f0119165d29a45997c4b678fd313f1cdea4bec343072a",
+                  "e0323f36d5bc3a291e0a05c2387229b2f527680d3084cc1aa7d5a82897f82ffa",
+                  "5878c714c7eda3a919611f36f73cf52526f2827cc79b4b0b7e38cdaa231e5250"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "final_training_losses": [
+                  0.006560189183801413,
+                  0.005220949184149504,
+                  0.006886676885187626
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "42e61f0ce7b32206459436320b30d5ba1a7f9201f74899f49ce016339ff49ff2",
+                  "8b44e19cc6ed0969b6a3e0d271e68b2c0fc82d9c3040c1a74e5e1a5dda40e689",
+                  "222d2e7b2d5c22355504194e196d273c2c3f0c99e9ec4bce7f2b321dff5105d9"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "sT4fr6TAbpF"
+                ],
+                "final_training_losses": [
+                  0.008907088078558445,
+                  0.0063090198673307896,
+                  0.006836884189397097
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "b41baad1da82a80a27119069e87b50ef751963e9018ac3b53b54da28b53e8b36",
+                  "376dfac645482aa833a924f85c0e3d66e7918615a9d654506142cd8e8f65ed0e",
+                  "2f55c0f2e9a505fd7063b23d3c909b9c8d1b1ac31a2c7567d51eb3b3be1b3715"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.07261813497799936,
+            "ungated_domains": {
+              "R2R": {
+                "authorized": 88,
+                "catastrophic": 4,
+                "catastrophic_rate": 0.045454545454545456,
+                "coverage": 1.0,
+                "deployed_mean_utility": 0.009879712142996225,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+                "negative": 41,
+                "positive": 47,
+                "selected_mean_utility": 0.009879712142996225,
+                "selected_scene_count": 28,
+                "ties": 0,
+                "total_utility": 0.8694146685836678
+              },
+              "RxR": {
+                "authorized": 135,
+                "catastrophic": 12,
+                "catastrophic_rate": 0.08888888888888889,
+                "coverage": 1.0,
+                "deployed_mean_utility": -0.006311258987548878,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+                "negative": 63,
+                "positive": 58,
+                "selected_mean_utility": -0.006311258987548878,
+                "selected_scene_count": 33,
+                "ties": 14,
+                "total_utility": -0.8520199633190986
+              }
+            },
+            "weight_decay": 0.0001
+          },
+          {
+            "domains": {
+              "R2R": {
+                "authorized": 50,
+                "catastrophic": 3,
+                "catastrophic_rate": 0.06,
+                "coverage": 0.5681818181818182,
+                "deployed_mean_utility": -0.0005772062128503705,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": -0.5705801651486342,
+                "negative": 24,
+                "positive": 26,
+                "selected_mean_utility": -0.001015882934616652,
+                "selected_scene_count": 22,
+                "ties": 0,
+                "total_utility": -0.0507941467308326
+              },
+              "RxR": {
+                "authorized": 68,
+                "catastrophic": 5,
+                "catastrophic_rate": 0.07352941176470588,
+                "coverage": 0.5037037037037037,
+                "deployed_mean_utility": 0.00585913283437774,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": 0.3092037020547749,
+                "negative": 30,
+                "positive": 28,
+                "selected_mean_utility": 0.011632101950602866,
+                "selected_scene_count": 31,
+                "ties": 10,
+                "total_utility": 0.790982932640995
+              }
+            },
+            "evidence": {
+              "authorized": 118,
+              "catastrophic": 8,
+              "catastrophic_rate": 0.06779661016949153,
+              "coverage": 0.5291479820627802,
+              "deployed_mean_utility": 0.0033192322238123854,
+              "eligible": 223,
+              "minimum_leave_one_selected_scene_out_total": 0.23398315004474113,
+              "negative": 54,
+              "positive": 54,
+              "selected_mean_utility": 0.006272786321272559,
+              "selected_scene_count": 32,
+              "ties": 10,
+              "total_utility": 0.7401887859101619
+            },
+            "failure_reasons": [
+              "R2R:nonpositive_utility",
+              "R2R:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "r1Q1Z4BcV1o",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.009159852750599384,
+                  0.010069328360259533,
+                  0.010436329990625381
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "868053b39a238b140756c342453ee1e78434abb55523367dfb58bd7b523d58be",
+                  "3bb9333ba91d5cd88cc3bc312c638cb0ff6f293a6d555702aa283eba3dff0c91",
+                  "79d3995ae948939bbb537e0624aeba2819814b3f567ba684553db9b824991a45"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.0070310914888978004,
+                  0.005462882574647665,
+                  0.009428957477211952
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "c3b4bcab66cf4864460f0119165d29a45997c4b678fd313f1cdea4bec343072a",
+                  "e0323f36d5bc3a291e0a05c2387229b2f527680d3084cc1aa7d5a82897f82ffa",
+                  "5878c714c7eda3a919611f36f73cf52526f2827cc79b4b0b7e38cdaa231e5250"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "final_training_losses": [
+                  0.007347799371927977,
+                  0.004758995957672596,
+                  0.008020571433007717
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "42e61f0ce7b32206459436320b30d5ba1a7f9201f74899f49ce016339ff49ff2",
+                  "8b44e19cc6ed0969b6a3e0d271e68b2c0fc82d9c3040c1a74e5e1a5dda40e689",
+                  "222d2e7b2d5c22355504194e196d273c2c3f0c99e9ec4bce7f2b321dff5105d9"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "sT4fr6TAbpF"
+                ],
+                "final_training_losses": [
+                  0.00619152095168829,
+                  0.008412215858697891,
+                  0.007649584673345089
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "b41baad1da82a80a27119069e87b50ef751963e9018ac3b53b54da28b53e8b36",
+                  "376dfac645482aa833a924f85c0e3d66e7918615a9d654506142cd8e8f65ed0e",
+                  "2f55c0f2e9a505fd7063b23d3c909b9c8d1b1ac31a2c7567d51eb3b3be1b3715"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.07280881152876742,
+            "ungated_domains": {
+              "R2R": {
+                "authorized": 88,
+                "catastrophic": 4,
+                "catastrophic_rate": 0.045454545454545456,
+                "coverage": 1.0,
+                "deployed_mean_utility": 0.009879712142996225,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+                "negative": 41,
+                "positive": 47,
+                "selected_mean_utility": 0.009879712142996225,
+                "selected_scene_count": 28,
+                "ties": 0,
+                "total_utility": 0.8694146685836678
+              },
+              "RxR": {
+                "authorized": 135,
+                "catastrophic": 12,
+                "catastrophic_rate": 0.08888888888888889,
+                "coverage": 1.0,
+                "deployed_mean_utility": -0.006311258987548878,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+                "negative": 63,
+                "positive": 58,
+                "selected_mean_utility": -0.006311258987548878,
+                "selected_scene_count": 33,
+                "ties": 14,
+                "total_utility": -0.8520199633190986
+              }
+            },
+            "weight_decay": 0.001
+          },
+          {
+            "domains": {
+              "R2R": {
+                "authorized": 43,
+                "catastrophic": 3,
+                "catastrophic_rate": 0.06976744186046512,
+                "coverage": 0.48863636363636365,
+                "deployed_mean_utility": -0.0006098320443295182,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": -0.5734512383187993,
+                "negative": 19,
+                "positive": 24,
+                "selected_mean_utility": -0.0012480283697906417,
+                "selected_scene_count": 20,
+                "ties": 0,
+                "total_utility": -0.053665219900997596
+              },
+              "RxR": {
+                "authorized": 69,
+                "catastrophic": 6,
+                "catastrophic_rate": 0.08695652173913043,
+                "coverage": 0.5111111111111111,
+                "deployed_mean_utility": -8.073098240862898e-05,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -0.49267791321138504,
+                "negative": 32,
+                "positive": 27,
+                "selected_mean_utility": -0.0001579519221038393,
+                "selected_scene_count": 31,
+                "ties": 10,
+                "total_utility": -0.010898682625164913
+              }
+            },
+            "evidence": {
+              "authorized": 112,
+              "catastrophic": 9,
+              "catastrophic_rate": 0.08035714285714286,
+              "coverage": 0.5022421524663677,
+              "deployed_mean_utility": -0.0002895242265747203,
+              "eligible": 223,
+              "minimum_leave_one_selected_scene_out_total": -0.5707695383915838,
+              "negative": 51,
+              "positive": 51,
+              "selected_mean_utility": -0.0005764634154121663,
+              "selected_scene_count": 33,
+              "ties": 10,
+              "total_utility": -0.06456390252616262
+            },
+            "failure_reasons": [
+              "R2R:nonpositive_utility",
+              "R2R:catastrophic_rate_above_ungated",
+              "RxR:nonpositive_utility"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "r1Q1Z4BcV1o",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.013961875811219215,
+                  0.009313704445958138,
+                  0.009662274271249771
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "868053b39a238b140756c342453ee1e78434abb55523367dfb58bd7b523d58be",
+                  "3bb9333ba91d5cd88cc3bc312c638cb0ff6f293a6d555702aa283eba3dff0c91",
+                  "79d3995ae948939bbb537e0624aeba2819814b3f567ba684553db9b824991a45"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.007449971046298742,
+                  0.008402067236602306,
+                  0.009716828353703022
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "c3b4bcab66cf4864460f0119165d29a45997c4b678fd313f1cdea4bec343072a",
+                  "e0323f36d5bc3a291e0a05c2387229b2f527680d3084cc1aa7d5a82897f82ffa",
+                  "5878c714c7eda3a919611f36f73cf52526f2827cc79b4b0b7e38cdaa231e5250"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "final_training_losses": [
+                  0.007251202594488859,
+                  0.006111247930675745,
+                  0.006948667112737894
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "42e61f0ce7b32206459436320b30d5ba1a7f9201f74899f49ce016339ff49ff2",
+                  "8b44e19cc6ed0969b6a3e0d271e68b2c0fc82d9c3040c1a74e5e1a5dda40e689",
+                  "222d2e7b2d5c22355504194e196d273c2c3f0c99e9ec4bce7f2b321dff5105d9"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "sT4fr6TAbpF"
+                ],
+                "final_training_losses": [
+                  0.006617513485252857,
+                  0.006611106917262077,
+                  0.008692119270563126
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "b41baad1da82a80a27119069e87b50ef751963e9018ac3b53b54da28b53e8b36",
+                  "376dfac645482aa833a924f85c0e3d66e7918615a9d654506142cd8e8f65ed0e",
+                  "2f55c0f2e9a505fd7063b23d3c909b9c8d1b1ac31a2c7567d51eb3b3be1b3715"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.07203669384635193,
+            "ungated_domains": {
+              "R2R": {
+                "authorized": 88,
+                "catastrophic": 4,
+                "catastrophic_rate": 0.045454545454545456,
+                "coverage": 1.0,
+                "deployed_mean_utility": 0.009879712142996225,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+                "negative": 41,
+                "positive": 47,
+                "selected_mean_utility": 0.009879712142996225,
+                "selected_scene_count": 28,
+                "ties": 0,
+                "total_utility": 0.8694146685836678
+              },
+              "RxR": {
+                "authorized": 135,
+                "catastrophic": 12,
+                "catastrophic_rate": 0.08888888888888889,
+                "coverage": 1.0,
+                "deployed_mean_utility": -0.006311258987548878,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+                "negative": 63,
+                "positive": 58,
+                "selected_mean_utility": -0.006311258987548878,
+                "selected_scene_count": 33,
+                "ties": 14,
+                "total_utility": -0.8520199633190986
+              }
+            },
+            "weight_decay": 0.01
+          }
+        ]
+      }
+    ],
+    "risk_coverage": null,
+    "rows": 249,
+    "scene_cluster_bootstrap": null,
+    "scenes": 39,
+    "status": "TRAIN_DEVELOPMENT_FAIL"
+  },
+  "joint_scientific_status": "FAIL",
+  "model_fit_status": "FAIL",
+  "old_confirmation_reused": false,
+  "outer_folds": [
+    {
+      "common_random_numbers_verified": true,
+      "evaluation_scenes": [
+        "17DRP5sb8fy",
+        "82sE5b5pLXE",
+        "EDJbREhghzL",
+        "VLzqgDo317F",
+        "rPc6DW4iMge"
+      ],
+      "fit_scenes": [
+        "1pXnuDYAj8r",
+        "29hnd4uzFmX",
+        "5q7pvUzZiYa",
+        "7y3sRwLe3Va",
+        "8WUmhLawc2A",
+        "B6ByNegPMKs",
+        "D7G3Y4RVNrH",
+        "D7N2EKCX4Sj",
+        "E9uDoFAP3SH",
+        "GdvgFV5R1Z5",
+        "JeFG25nYj2p",
+        "JmbYfDe2QKZ",
+        "PX4nDJXEHrG",
+        "Pm6F8kyY3z2",
+        "S9hNv5qa7GM",
+        "VFuaQ6m2Qom",
+        "VVfe2KiqLaN",
+        "YmJkqBEsHnH",
+        "ZMojNkEp431",
+        "aayBHfsNo7d",
+        "ac26ZMwG7aT",
+        "cV4RVeZvu5T",
+        "e9zR4mvMWw7",
+        "gZ6f7yhEvPG",
+        "p5wJjkQkbXX",
+        "pRbA3pwrgk9",
+        "qoiz87JEwZ2",
+        "r1Q1Z4BcV1o",
+        "r47D5H71a5s",
+        "s8pcmisQ38h",
+        "sT4fr6TAbpF",
+        "uNb9QFRL6hY",
+        "ur6pFq6Qu1A",
+        "vyrNrziPKCB"
+      ],
+      "inner_scene_assignment": {
+        "1pXnuDYAj8r": 1,
+        "29hnd4uzFmX": 3,
+        "5q7pvUzZiYa": 1,
+        "7y3sRwLe3Va": 0,
+        "8WUmhLawc2A": 0,
+        "B6ByNegPMKs": 0,
+        "D7G3Y4RVNrH": 2,
+        "D7N2EKCX4Sj": 2,
+        "E9uDoFAP3SH": 0,
+        "GdvgFV5R1Z5": 0,
+        "JeFG25nYj2p": 3,
+        "JmbYfDe2QKZ": 3,
+        "PX4nDJXEHrG": 0,
+        "Pm6F8kyY3z2": 3,
+        "S9hNv5qa7GM": 1,
+        "VFuaQ6m2Qom": 1,
+        "VVfe2KiqLaN": 0,
+        "YmJkqBEsHnH": 2,
+        "ZMojNkEp431": 1,
+        "aayBHfsNo7d": 2,
+        "ac26ZMwG7aT": 2,
+        "cV4RVeZvu5T": 1,
+        "e9zR4mvMWw7": 1,
+        "gZ6f7yhEvPG": 3,
+        "p5wJjkQkbXX": 3,
+        "pRbA3pwrgk9": 1,
+        "qoiz87JEwZ2": 3,
+        "r1Q1Z4BcV1o": 0,
+        "r47D5H71a5s": 2,
+        "s8pcmisQ38h": 2,
+        "sT4fr6TAbpF": 3,
+        "uNb9QFRL6hY": 0,
+        "ur6pFq6Qu1A": 2,
+        "vyrNrziPKCB": 1
+      },
+      "outer_fold": 0,
+      "scene_overlap": [],
+      "selected_weight_decay": null,
+      "trials": [
+        {
+          "domains": {
+            "R2R": {
+              "authorized": 48,
+              "catastrophic": 3,
+              "catastrophic_rate": 0.0625,
+              "coverage": 0.5454545454545454,
+              "deployed_mean_utility": 0.00032652091345295153,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": -0.49105217803394197,
+              "negative": 22,
+              "positive": 26,
+              "selected_mean_utility": 0.0005986216746637444,
+              "selected_scene_count": 22,
+              "ties": 0,
+              "total_utility": 0.028733840383859732
+            },
+            "RxR": {
+              "authorized": 70,
+              "catastrophic": 5,
+              "catastrophic_rate": 0.07142857142857142,
+              "coverage": 0.5185185185185185,
+              "deployed_mean_utility": 0.005635069882566211,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": 0.27895520356021847,
+              "negative": 32,
+              "positive": 28,
+              "selected_mean_utility": 0.010867634773520549,
+              "selected_scene_count": 30,
+              "ties": 10,
+              "total_utility": 0.7607344341464384
+            }
+          },
+          "evidence": {
+            "authorized": 118,
+            "catastrophic": 8,
+            "catastrophic_rate": 0.06779661016949153,
+            "coverage": 0.5291479820627802,
+            "deployed_mean_utility": 0.0035402164777143435,
+            "eligible": 223,
+            "minimum_leave_one_selected_scene_out_total": 0.28326263866487694,
+            "negative": 54,
+            "positive": 54,
+            "selected_mean_utility": 0.00669040910618897,
+            "selected_scene_count": 32,
+            "ties": 10,
+            "total_utility": 0.7894682745302986
+          },
+          "failure_reasons": [
+            "R2R:catastrophic_rate_above_ungated"
+          ],
+          "feasible": false,
+          "inner_cv": [
+            {
+              "evaluation_scenes": [
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "PX4nDJXEHrG",
+                "VVfe2KiqLaN",
+                "r1Q1Z4BcV1o",
+                "uNb9QFRL6hY"
+              ],
+              "final_training_losses": [
+                0.007883072830736637,
+                0.007254202850162983,
+                0.008488267660140991
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "29hnd4uzFmX",
+                "5q7pvUzZiYa",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "Pm6F8kyY3z2",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "YmJkqBEsHnH",
+                "ZMojNkEp431",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "pRbA3pwrgk9",
+                "qoiz87JEwZ2",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "sT4fr6TAbpF",
+                "ur6pFq6Qu1A",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "868053b39a238b140756c342453ee1e78434abb55523367dfb58bd7b523d58be",
+                "3bb9333ba91d5cd88cc3bc312c638cb0ff6f293a6d555702aa283eba3dff0c91",
+                "79d3995ae948939bbb537e0624aeba2819814b3f567ba684553db9b824991a45"
+              ],
+              "inner_fold": 0,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "1pXnuDYAj8r",
+                "5q7pvUzZiYa",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "ZMojNkEp431",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "pRbA3pwrgk9",
+                "vyrNrziPKCB"
+              ],
+              "final_training_losses": [
+                0.006962334271520376,
+                0.005434943828731775,
+                0.010776830837130547
+              ],
+              "fit_scenes": [
+                "29hnd4uzFmX",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "PX4nDJXEHrG",
+                "Pm6F8kyY3z2",
+                "VVfe2KiqLaN",
+                "YmJkqBEsHnH",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "qoiz87JEwZ2",
+                "r1Q1Z4BcV1o",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "sT4fr6TAbpF",
+                "uNb9QFRL6hY",
+                "ur6pFq6Qu1A"
+              ],
+              "initialization_hashes": [
+                "c3b4bcab66cf4864460f0119165d29a45997c4b678fd313f1cdea4bec343072a",
+                "e0323f36d5bc3a291e0a05c2387229b2f527680d3084cc1aa7d5a82897f82ffa",
+                "5878c714c7eda3a919611f36f73cf52526f2827cc79b4b0b7e38cdaa231e5250"
+              ],
+              "inner_fold": 1,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "YmJkqBEsHnH",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "ur6pFq6Qu1A"
+              ],
+              "final_training_losses": [
+                0.006560189183801413,
+                0.005220949184149504,
+                0.006886676885187626
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "29hnd4uzFmX",
+                "5q7pvUzZiYa",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "PX4nDJXEHrG",
+                "Pm6F8kyY3z2",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "VVfe2KiqLaN",
+                "ZMojNkEp431",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "pRbA3pwrgk9",
+                "qoiz87JEwZ2",
+                "r1Q1Z4BcV1o",
+                "sT4fr6TAbpF",
+                "uNb9QFRL6hY",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "42e61f0ce7b32206459436320b30d5ba1a7f9201f74899f49ce016339ff49ff2",
+                "8b44e19cc6ed0969b6a3e0d271e68b2c0fc82d9c3040c1a74e5e1a5dda40e689",
+                "222d2e7b2d5c22355504194e196d273c2c3f0c99e9ec4bce7f2b321dff5105d9"
+              ],
+              "inner_fold": 2,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "29hnd4uzFmX",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "Pm6F8kyY3z2",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "qoiz87JEwZ2",
+                "sT4fr6TAbpF"
+              ],
+              "final_training_losses": [
+                0.008907088078558445,
+                0.0063090198673307896,
+                0.006836884189397097
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "5q7pvUzZiYa",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "PX4nDJXEHrG",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "VVfe2KiqLaN",
+                "YmJkqBEsHnH",
+                "ZMojNkEp431",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "pRbA3pwrgk9",
+                "r1Q1Z4BcV1o",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "uNb9QFRL6hY",
+                "ur6pFq6Qu1A",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "b41baad1da82a80a27119069e87b50ef751963e9018ac3b53b54da28b53e8b36",
+                "376dfac645482aa833a924f85c0e3d66e7918615a9d654506142cd8e8f65ed0e",
+                "2f55c0f2e9a505fd7063b23d3c909b9c8d1b1ac31a2c7567d51eb3b3be1b3715"
+              ],
+              "inner_fold": 3,
+              "scene_overlap": []
+            }
+          ],
+          "inner_oof_quantile_loss": 0.07261813497799936,
+          "ungated_domains": {
+            "R2R": {
+              "authorized": 88,
+              "catastrophic": 4,
+              "catastrophic_rate": 0.045454545454545456,
+              "coverage": 1.0,
+              "deployed_mean_utility": 0.009879712142996225,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+              "negative": 41,
+              "positive": 47,
+              "selected_mean_utility": 0.009879712142996225,
+              "selected_scene_count": 28,
+              "ties": 0,
+              "total_utility": 0.8694146685836678
+            },
+            "RxR": {
+              "authorized": 135,
+              "catastrophic": 12,
+              "catastrophic_rate": 0.08888888888888889,
+              "coverage": 1.0,
+              "deployed_mean_utility": -0.006311258987548878,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+              "negative": 63,
+              "positive": 58,
+              "selected_mean_utility": -0.006311258987548878,
+              "selected_scene_count": 33,
+              "ties": 14,
+              "total_utility": -0.8520199633190986
+            }
+          },
+          "weight_decay": 0.0001
+        },
+        {
+          "domains": {
+            "R2R": {
+              "authorized": 50,
+              "catastrophic": 3,
+              "catastrophic_rate": 0.06,
+              "coverage": 0.5681818181818182,
+              "deployed_mean_utility": -0.0005772062128503705,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": -0.5705801651486342,
+              "negative": 24,
+              "positive": 26,
+              "selected_mean_utility": -0.001015882934616652,
+              "selected_scene_count": 22,
+              "ties": 0,
+              "total_utility": -0.0507941467308326
+            },
+            "RxR": {
+              "authorized": 68,
+              "catastrophic": 5,
+              "catastrophic_rate": 0.07352941176470588,
+              "coverage": 0.5037037037037037,
+              "deployed_mean_utility": 0.00585913283437774,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": 0.3092037020547749,
+              "negative": 30,
+              "positive": 28,
+              "selected_mean_utility": 0.011632101950602866,
+              "selected_scene_count": 31,
+              "ties": 10,
+              "total_utility": 0.790982932640995
+            }
+          },
+          "evidence": {
+            "authorized": 118,
+            "catastrophic": 8,
+            "catastrophic_rate": 0.06779661016949153,
+            "coverage": 0.5291479820627802,
+            "deployed_mean_utility": 0.0033192322238123854,
+            "eligible": 223,
+            "minimum_leave_one_selected_scene_out_total": 0.23398315004474113,
+            "negative": 54,
+            "positive": 54,
+            "selected_mean_utility": 0.006272786321272559,
+            "selected_scene_count": 32,
+            "ties": 10,
+            "total_utility": 0.7401887859101619
+          },
+          "failure_reasons": [
+            "R2R:nonpositive_utility",
+            "R2R:catastrophic_rate_above_ungated"
+          ],
+          "feasible": false,
+          "inner_cv": [
+            {
+              "evaluation_scenes": [
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "PX4nDJXEHrG",
+                "VVfe2KiqLaN",
+                "r1Q1Z4BcV1o",
+                "uNb9QFRL6hY"
+              ],
+              "final_training_losses": [
+                0.009159852750599384,
+                0.010069328360259533,
+                0.010436329990625381
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "29hnd4uzFmX",
+                "5q7pvUzZiYa",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "Pm6F8kyY3z2",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "YmJkqBEsHnH",
+                "ZMojNkEp431",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "pRbA3pwrgk9",
+                "qoiz87JEwZ2",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "sT4fr6TAbpF",
+                "ur6pFq6Qu1A",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "868053b39a238b140756c342453ee1e78434abb55523367dfb58bd7b523d58be",
+                "3bb9333ba91d5cd88cc3bc312c638cb0ff6f293a6d555702aa283eba3dff0c91",
+                "79d3995ae948939bbb537e0624aeba2819814b3f567ba684553db9b824991a45"
+              ],
+              "inner_fold": 0,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "1pXnuDYAj8r",
+                "5q7pvUzZiYa",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "ZMojNkEp431",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "pRbA3pwrgk9",
+                "vyrNrziPKCB"
+              ],
+              "final_training_losses": [
+                0.0070310914888978004,
+                0.005462882574647665,
+                0.009428957477211952
+              ],
+              "fit_scenes": [
+                "29hnd4uzFmX",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "PX4nDJXEHrG",
+                "Pm6F8kyY3z2",
+                "VVfe2KiqLaN",
+                "YmJkqBEsHnH",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "qoiz87JEwZ2",
+                "r1Q1Z4BcV1o",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "sT4fr6TAbpF",
+                "uNb9QFRL6hY",
+                "ur6pFq6Qu1A"
+              ],
+              "initialization_hashes": [
+                "c3b4bcab66cf4864460f0119165d29a45997c4b678fd313f1cdea4bec343072a",
+                "e0323f36d5bc3a291e0a05c2387229b2f527680d3084cc1aa7d5a82897f82ffa",
+                "5878c714c7eda3a919611f36f73cf52526f2827cc79b4b0b7e38cdaa231e5250"
+              ],
+              "inner_fold": 1,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "YmJkqBEsHnH",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "ur6pFq6Qu1A"
+              ],
+              "final_training_losses": [
+                0.007347799371927977,
+                0.004758995957672596,
+                0.008020571433007717
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "29hnd4uzFmX",
+                "5q7pvUzZiYa",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "PX4nDJXEHrG",
+                "Pm6F8kyY3z2",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "VVfe2KiqLaN",
+                "ZMojNkEp431",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "pRbA3pwrgk9",
+                "qoiz87JEwZ2",
+                "r1Q1Z4BcV1o",
+                "sT4fr6TAbpF",
+                "uNb9QFRL6hY",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "42e61f0ce7b32206459436320b30d5ba1a7f9201f74899f49ce016339ff49ff2",
+                "8b44e19cc6ed0969b6a3e0d271e68b2c0fc82d9c3040c1a74e5e1a5dda40e689",
+                "222d2e7b2d5c22355504194e196d273c2c3f0c99e9ec4bce7f2b321dff5105d9"
+              ],
+              "inner_fold": 2,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "29hnd4uzFmX",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "Pm6F8kyY3z2",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "qoiz87JEwZ2",
+                "sT4fr6TAbpF"
+              ],
+              "final_training_losses": [
+                0.00619152095168829,
+                0.008412215858697891,
+                0.007649584673345089
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "5q7pvUzZiYa",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "PX4nDJXEHrG",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "VVfe2KiqLaN",
+                "YmJkqBEsHnH",
+                "ZMojNkEp431",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "pRbA3pwrgk9",
+                "r1Q1Z4BcV1o",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "uNb9QFRL6hY",
+                "ur6pFq6Qu1A",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "b41baad1da82a80a27119069e87b50ef751963e9018ac3b53b54da28b53e8b36",
+                "376dfac645482aa833a924f85c0e3d66e7918615a9d654506142cd8e8f65ed0e",
+                "2f55c0f2e9a505fd7063b23d3c909b9c8d1b1ac31a2c7567d51eb3b3be1b3715"
+              ],
+              "inner_fold": 3,
+              "scene_overlap": []
+            }
+          ],
+          "inner_oof_quantile_loss": 0.07280881152876742,
+          "ungated_domains": {
+            "R2R": {
+              "authorized": 88,
+              "catastrophic": 4,
+              "catastrophic_rate": 0.045454545454545456,
+              "coverage": 1.0,
+              "deployed_mean_utility": 0.009879712142996225,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+              "negative": 41,
+              "positive": 47,
+              "selected_mean_utility": 0.009879712142996225,
+              "selected_scene_count": 28,
+              "ties": 0,
+              "total_utility": 0.8694146685836678
+            },
+            "RxR": {
+              "authorized": 135,
+              "catastrophic": 12,
+              "catastrophic_rate": 0.08888888888888889,
+              "coverage": 1.0,
+              "deployed_mean_utility": -0.006311258987548878,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+              "negative": 63,
+              "positive": 58,
+              "selected_mean_utility": -0.006311258987548878,
+              "selected_scene_count": 33,
+              "ties": 14,
+              "total_utility": -0.8520199633190986
+            }
+          },
+          "weight_decay": 0.001
+        },
+        {
+          "domains": {
+            "R2R": {
+              "authorized": 43,
+              "catastrophic": 3,
+              "catastrophic_rate": 0.06976744186046512,
+              "coverage": 0.48863636363636365,
+              "deployed_mean_utility": -0.0006098320443295182,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": -0.5734512383187993,
+              "negative": 19,
+              "positive": 24,
+              "selected_mean_utility": -0.0012480283697906417,
+              "selected_scene_count": 20,
+              "ties": 0,
+              "total_utility": -0.053665219900997596
+            },
+            "RxR": {
+              "authorized": 69,
+              "catastrophic": 6,
+              "catastrophic_rate": 0.08695652173913043,
+              "coverage": 0.5111111111111111,
+              "deployed_mean_utility": -8.073098240862898e-05,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -0.49267791321138504,
+              "negative": 32,
+              "positive": 27,
+              "selected_mean_utility": -0.0001579519221038393,
+              "selected_scene_count": 31,
+              "ties": 10,
+              "total_utility": -0.010898682625164913
+            }
+          },
+          "evidence": {
+            "authorized": 112,
+            "catastrophic": 9,
+            "catastrophic_rate": 0.08035714285714286,
+            "coverage": 0.5022421524663677,
+            "deployed_mean_utility": -0.0002895242265747203,
+            "eligible": 223,
+            "minimum_leave_one_selected_scene_out_total": -0.5707695383915838,
+            "negative": 51,
+            "positive": 51,
+            "selected_mean_utility": -0.0005764634154121663,
+            "selected_scene_count": 33,
+            "ties": 10,
+            "total_utility": -0.06456390252616262
+          },
+          "failure_reasons": [
+            "R2R:nonpositive_utility",
+            "R2R:catastrophic_rate_above_ungated",
+            "RxR:nonpositive_utility"
+          ],
+          "feasible": false,
+          "inner_cv": [
+            {
+              "evaluation_scenes": [
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "PX4nDJXEHrG",
+                "VVfe2KiqLaN",
+                "r1Q1Z4BcV1o",
+                "uNb9QFRL6hY"
+              ],
+              "final_training_losses": [
+                0.013961875811219215,
+                0.009313704445958138,
+                0.009662274271249771
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "29hnd4uzFmX",
+                "5q7pvUzZiYa",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "Pm6F8kyY3z2",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "YmJkqBEsHnH",
+                "ZMojNkEp431",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "pRbA3pwrgk9",
+                "qoiz87JEwZ2",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "sT4fr6TAbpF",
+                "ur6pFq6Qu1A",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "868053b39a238b140756c342453ee1e78434abb55523367dfb58bd7b523d58be",
+                "3bb9333ba91d5cd88cc3bc312c638cb0ff6f293a6d555702aa283eba3dff0c91",
+                "79d3995ae948939bbb537e0624aeba2819814b3f567ba684553db9b824991a45"
+              ],
+              "inner_fold": 0,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "1pXnuDYAj8r",
+                "5q7pvUzZiYa",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "ZMojNkEp431",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "pRbA3pwrgk9",
+                "vyrNrziPKCB"
+              ],
+              "final_training_losses": [
+                0.007449971046298742,
+                0.008402067236602306,
+                0.009716828353703022
+              ],
+              "fit_scenes": [
+                "29hnd4uzFmX",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "PX4nDJXEHrG",
+                "Pm6F8kyY3z2",
+                "VVfe2KiqLaN",
+                "YmJkqBEsHnH",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "qoiz87JEwZ2",
+                "r1Q1Z4BcV1o",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "sT4fr6TAbpF",
+                "uNb9QFRL6hY",
+                "ur6pFq6Qu1A"
+              ],
+              "initialization_hashes": [
+                "c3b4bcab66cf4864460f0119165d29a45997c4b678fd313f1cdea4bec343072a",
+                "e0323f36d5bc3a291e0a05c2387229b2f527680d3084cc1aa7d5a82897f82ffa",
+                "5878c714c7eda3a919611f36f73cf52526f2827cc79b4b0b7e38cdaa231e5250"
+              ],
+              "inner_fold": 1,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "YmJkqBEsHnH",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "ur6pFq6Qu1A"
+              ],
+              "final_training_losses": [
+                0.007251202594488859,
+                0.006111247930675745,
+                0.006948667112737894
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "29hnd4uzFmX",
+                "5q7pvUzZiYa",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "PX4nDJXEHrG",
+                "Pm6F8kyY3z2",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "VVfe2KiqLaN",
+                "ZMojNkEp431",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "pRbA3pwrgk9",
+                "qoiz87JEwZ2",
+                "r1Q1Z4BcV1o",
+                "sT4fr6TAbpF",
+                "uNb9QFRL6hY",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "42e61f0ce7b32206459436320b30d5ba1a7f9201f74899f49ce016339ff49ff2",
+                "8b44e19cc6ed0969b6a3e0d271e68b2c0fc82d9c3040c1a74e5e1a5dda40e689",
+                "222d2e7b2d5c22355504194e196d273c2c3f0c99e9ec4bce7f2b321dff5105d9"
+              ],
+              "inner_fold": 2,
+              "scene_overlap": []
+            },
+            {
+              "evaluation_scenes": [
+                "29hnd4uzFmX",
+                "JeFG25nYj2p",
+                "JmbYfDe2QKZ",
+                "Pm6F8kyY3z2",
+                "gZ6f7yhEvPG",
+                "p5wJjkQkbXX",
+                "qoiz87JEwZ2",
+                "sT4fr6TAbpF"
+              ],
+              "final_training_losses": [
+                0.006617513485252857,
+                0.006611106917262077,
+                0.008692119270563126
+              ],
+              "fit_scenes": [
+                "1pXnuDYAj8r",
+                "5q7pvUzZiYa",
+                "7y3sRwLe3Va",
+                "8WUmhLawc2A",
+                "B6ByNegPMKs",
+                "D7G3Y4RVNrH",
+                "D7N2EKCX4Sj",
+                "E9uDoFAP3SH",
+                "GdvgFV5R1Z5",
+                "PX4nDJXEHrG",
+                "S9hNv5qa7GM",
+                "VFuaQ6m2Qom",
+                "VVfe2KiqLaN",
+                "YmJkqBEsHnH",
+                "ZMojNkEp431",
+                "aayBHfsNo7d",
+                "ac26ZMwG7aT",
+                "cV4RVeZvu5T",
+                "e9zR4mvMWw7",
+                "pRbA3pwrgk9",
+                "r1Q1Z4BcV1o",
+                "r47D5H71a5s",
+                "s8pcmisQ38h",
+                "uNb9QFRL6hY",
+                "ur6pFq6Qu1A",
+                "vyrNrziPKCB"
+              ],
+              "initialization_hashes": [
+                "b41baad1da82a80a27119069e87b50ef751963e9018ac3b53b54da28b53e8b36",
+                "376dfac645482aa833a924f85c0e3d66e7918615a9d654506142cd8e8f65ed0e",
+                "2f55c0f2e9a505fd7063b23d3c909b9c8d1b1ac31a2c7567d51eb3b3be1b3715"
+              ],
+              "inner_fold": 3,
+              "scene_overlap": []
+            }
+          ],
+          "inner_oof_quantile_loss": 0.07203669384635193,
+          "ungated_domains": {
+            "R2R": {
+              "authorized": 88,
+              "catastrophic": 4,
+              "catastrophic_rate": 0.045454545454545456,
+              "coverage": 1.0,
+              "deployed_mean_utility": 0.009879712142996225,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+              "negative": 41,
+              "positive": 47,
+              "selected_mean_utility": 0.009879712142996225,
+              "selected_scene_count": 28,
+              "ties": 0,
+              "total_utility": 0.8694146685836678
+            },
+            "RxR": {
+              "authorized": 135,
+              "catastrophic": 12,
+              "catastrophic_rate": 0.08888888888888889,
+              "coverage": 1.0,
+              "deployed_mean_utility": -0.006311258987548878,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+              "negative": 63,
+              "positive": 58,
+              "selected_mean_utility": -0.006311258987548878,
+              "selected_scene_count": 33,
+              "ties": 14,
+              "total_utility": -0.8520199633190986
+            }
+          },
+          "weight_decay": 0.01
+        }
+      ]
+    }
+  ],
+  "proposal_support_audit": {
+    "architecture_use": false,
+    "domains": {
+      "R2R": {
+        "catastrophic": 5,
+        "catastrophic_prevalence": 0.049019607843137254,
+        "failure_reasons": [],
+        "largest_scene_share_of_positive_utility": 0.17278750854806632,
+        "low_native_margin_deciles": [
+          {
+            "decile": 1,
+            "mean_utility": -0.035691265414606814,
+            "native_margin_mean": 0.05855603922497143,
+            "rows": 11,
+            "total_utility": -0.392603919560675
+          },
+          {
+            "decile": 2,
+            "mean_utility": -0.00031010931842467837,
+            "native_margin_mean": 0.15528293360363354,
+            "rows": 11,
+            "total_utility": -0.003411202502671462
+          },
+          {
+            "decile": 3,
+            "mean_utility": -0.04882478568716135,
+            "native_margin_mean": 0.3253027260303497,
+            "rows": 10,
+            "total_utility": -0.48824785687161354
+          },
+          {
+            "decile": 4,
+            "mean_utility": 0.03715961218547288,
+            "native_margin_mean": 0.5188561290502548,
+            "rows": 10,
+            "total_utility": 0.37159612185472884
+          },
+          {
+            "decile": 5,
+            "mean_utility": 0.047959229006127604,
+            "native_margin_mean": 0.7641236126422882,
+            "rows": 10,
+            "total_utility": 0.479592290061276
+          },
+          {
+            "decile": 6,
+            "mean_utility": 0.06532229438180728,
+            "native_margin_mean": 1.0846567749977112,
+            "rows": 10,
+            "total_utility": 0.6532229438180728
+          },
+          {
+            "decile": 7,
+            "mean_utility": 0.015774827154001858,
+            "native_margin_mean": 1.3957387328147888,
+            "rows": 10,
+            "total_utility": 0.15774827154001858
+          },
+          {
+            "decile": 8,
+            "mean_utility": 0.00966511520279414,
+            "native_margin_mean": 2.049015295505524,
+            "rows": 10,
+            "total_utility": 0.09665115202794139
+          },
+          {
+            "decile": 9,
+            "mean_utility": 0.003804676146870156,
+            "native_margin_mean": 2.841120648384094,
+            "rows": 10,
+            "total_utility": 0.03804676146870156
+          },
+          {
+            "decile": 10,
+            "mean_utility": 0.002374719028900174,
+            "native_margin_mean": 4.009383583068848,
+            "rows": 10,
+            "total_utility": 0.02374719028900174
+          }
+        ],
+        "low_native_margin_fixed_coverage": {
+          "10": {
+            "budget": 11,
+            "catastrophic": 2,
+            "coverage": 0.1,
+            "mean_utility": -0.035691265414606814,
+            "negative": 6,
+            "positive": 5,
+            "total_utility": -0.392603919560675
+          },
+          "20": {
+            "budget": 21,
+            "catastrophic": 2,
+            "coverage": 0.2,
+            "mean_utility": -0.019195389995752463,
+            "negative": 11,
+            "positive": 10,
+            "total_utility": -0.40310318991080174
+          },
+          "5": {
+            "budget": 6,
+            "catastrophic": 0,
+            "coverage": 0.05,
+            "mean_utility": -0.02809564919801688,
+            "negative": 4,
+            "positive": 2,
+            "total_utility": -0.16857389518810129
+          }
+        },
+        "negative": 48,
+        "oracle_fixed_coverage": {
+          "10": {
+            "budget": 11,
+            "catastrophic": 0,
+            "coverage": 0.1,
+            "mean_utility": 0.23691176585659476,
+            "negative": 0,
+            "positive": 11,
+            "total_utility": 2.6060294244225424
+          },
+          "20": {
+            "budget": 21,
+            "catastrophic": 0,
+            "coverage": 0.2,
+            "mean_utility": 0.1544038367226123,
+            "negative": 0,
+            "positive": 21,
+            "total_utility": 3.242480571174858
+          },
+          "5": {
+            "budget": 6,
+            "catastrophic": 0,
+            "coverage": 0.05,
+            "mean_utility": 0.34309348194723494,
+            "negative": 0,
+            "positive": 6,
+            "total_utility": 2.0585608916834097
+          }
+        },
+        "outer_fold_support": [
+          {
+            "catastrophic": 1,
+            "catastrophic_prevalence": 0.07142857142857142,
+            "largest_scene_share_of_positive_utility": 0.6581842095840826,
+            "negative": 7,
+            "outer_fold": 0,
+            "positive": 7,
+            "positive_prevalence": 0.5,
+            "positive_scene_count": 4,
+            "rows": 14,
+            "scenes": 5,
+            "ties": 0
+          },
+          {
+            "catastrophic": 0,
+            "catastrophic_prevalence": 0.0,
+            "largest_scene_share_of_positive_utility": 0.31505022497447527,
+            "negative": 12,
+            "outer_fold": 1,
+            "positive": 18,
+            "positive_prevalence": 0.6,
+            "positive_scene_count": 6,
+            "rows": 30,
+            "scenes": 7,
+            "ties": 0
+          },
+          {
+            "catastrophic": 2,
+            "catastrophic_prevalence": 0.10526315789473684,
+            "largest_scene_share_of_positive_utility": 0.47575307772189607,
+            "negative": 10,
+            "outer_fold": 2,
+            "positive": 9,
+            "positive_prevalence": 0.47368421052631576,
+            "positive_scene_count": 5,
+            "rows": 19,
+            "scenes": 6,
+            "ties": 0
+          },
+          {
+            "catastrophic": 2,
+            "catastrophic_prevalence": 0.1,
+            "largest_scene_share_of_positive_utility": 0.8702173220829431,
+            "negative": 14,
+            "outer_fold": 3,
+            "positive": 6,
+            "positive_prevalence": 0.3,
+            "positive_scene_count": 3,
+            "rows": 20,
+            "scenes": 7,
+            "ties": 0
+          },
+          {
+            "catastrophic": 0,
+            "catastrophic_prevalence": 0.0,
+            "largest_scene_share_of_positive_utility": 0.40105333282335576,
+            "negative": 5,
+            "outer_fold": 4,
+            "positive": 14,
+            "positive_prevalence": 0.7368421052631579,
+            "positive_scene_count": 8,
+            "rows": 19,
+            "scenes": 8,
+            "ties": 0
+          }
+        ],
+        "positive": 54,
+        "positive_prevalence": 0.5294117647058824,
+        "positive_scene_count": 26,
+        "required_positive_scene_count": 7,
+        "rows": 102,
+        "scenes": 33,
+        "ties": 0
+      },
+      "RxR": {
+        "catastrophic": 13,
+        "catastrophic_prevalence": 0.08843537414965986,
+        "failure_reasons": [],
+        "largest_scene_share_of_positive_utility": 0.1138614450043109,
+        "low_native_margin_deciles": [
+          {
+            "decile": 1,
+            "mean_utility": -0.013560049025662125,
+            "native_margin_mean": 0.03464335302511851,
+            "rows": 15,
+            "total_utility": -0.20340073538493186
+          },
+          {
+            "decile": 2,
+            "mean_utility": 0.007810266032577303,
+            "native_margin_mean": 0.1369626005490621,
+            "rows": 15,
+            "total_utility": 0.11715399048865954
+          },
+          {
+            "decile": 3,
+            "mean_utility": -0.03630153536276171,
+            "native_margin_mean": 0.23797666331132253,
+            "rows": 15,
+            "total_utility": -0.5445230304414257
+          },
+          {
+            "decile": 4,
+            "mean_utility": 0.014787261694536369,
+            "native_margin_mean": 0.40736008882522584,
+            "rows": 15,
+            "total_utility": 0.22180892541804553
+          },
+          {
+            "decile": 5,
+            "mean_utility": 0.012321887788131,
+            "native_margin_mean": 0.5554865916570028,
+            "rows": 15,
+            "total_utility": 0.184828316821965
+          },
+          {
+            "decile": 6,
+            "mean_utility": 0.0021221563513877197,
+            "native_margin_mean": 0.7322661280632019,
+            "rows": 15,
+            "total_utility": 0.0318323452708158
+          },
+          {
+            "decile": 7,
+            "mean_utility": -0.028390538806282586,
+            "native_margin_mean": 0.9552168846130371,
+            "rows": 15,
+            "total_utility": -0.4258580820942388
+          },
+          {
+            "decile": 8,
+            "mean_utility": 0.005433595870155484,
+            "native_margin_mean": 1.4046947956085205,
+            "rows": 14,
+            "total_utility": 0.07607034218217679
+          },
+          {
+            "decile": 9,
+            "mean_utility": -0.0007184539277452852,
+            "native_margin_mean": 2.1621188861983165,
+            "rows": 14,
+            "total_utility": -0.010058354988433993
+          },
+          {
+            "decile": 10,
+            "mean_utility": -0.059859428210881936,
+            "native_margin_mean": 3.6138423681259155,
+            "rows": 14,
+            "total_utility": -0.8380319949523471
+          }
+        ],
+        "low_native_margin_fixed_coverage": {
+          "10": {
+            "budget": 15,
+            "catastrophic": 0,
+            "coverage": 0.1,
+            "mean_utility": -0.013560049025662125,
+            "negative": 7,
+            "positive": 6,
+            "total_utility": -0.20340073538493186
+          },
+          "20": {
+            "budget": 30,
+            "catastrophic": 2,
+            "coverage": 0.2,
+            "mean_utility": -0.0028748914965424127,
+            "negative": 12,
+            "positive": 13,
+            "total_utility": -0.08624674489627238
+          },
+          "5": {
+            "budget": 8,
+            "catastrophic": 0,
+            "coverage": 0.05,
+            "mean_utility": -0.023641758598110872,
+            "negative": 5,
+            "positive": 3,
+            "total_utility": -0.18913406878488698
+          }
+        },
+        "negative": 68,
+        "oracle_fixed_coverage": {
+          "10": {
+            "budget": 15,
+            "catastrophic": 0,
+            "coverage": 0.1,
+            "mean_utility": 0.2885562477966776,
+            "negative": 0,
+            "positive": 15,
+            "total_utility": 4.328343716950164
+          },
+          "20": {
+            "budget": 30,
+            "catastrophic": 0,
+            "coverage": 0.2,
+            "mean_utility": 0.16777001085344873,
+            "negative": 0,
+            "positive": 30,
+            "total_utility": 5.033100325603462
+          },
+          "5": {
+            "budget": 8,
+            "catastrophic": 0,
+            "coverage": 0.05,
+            "mean_utility": 0.44649848981203927,
+            "negative": 0,
+            "positive": 8,
+            "total_utility": 3.571987918496314
+          }
+        },
+        "outer_fold_support": [
+          {
+            "catastrophic": 1,
+            "catastrophic_prevalence": 0.08333333333333333,
+            "largest_scene_share_of_positive_utility": 0.5357390695560335,
+            "negative": 5,
+            "outer_fold": 0,
+            "positive": 5,
+            "positive_prevalence": 0.4166666666666667,
+            "positive_scene_count": 4,
+            "rows": 12,
+            "scenes": 5,
+            "ties": 2
+          },
+          {
+            "catastrophic": 1,
+            "catastrophic_prevalence": 0.02631578947368421,
+            "largest_scene_share_of_positive_utility": 0.474295466311109,
+            "negative": 13,
+            "outer_fold": 1,
+            "positive": 17,
+            "positive_prevalence": 0.4473684210526316,
+            "positive_scene_count": 7,
+            "rows": 38,
+            "scenes": 8,
+            "ties": 8
+          },
+          {
+            "catastrophic": 0,
+            "catastrophic_prevalence": 0.0,
+            "largest_scene_share_of_positive_utility": 0.5801806140950079,
+            "negative": 10,
+            "outer_fold": 2,
+            "positive": 14,
+            "positive_prevalence": 0.5833333333333334,
+            "positive_scene_count": 5,
+            "rows": 24,
+            "scenes": 6,
+            "ties": 0
+          },
+          {
+            "catastrophic": 9,
+            "catastrophic_prevalence": 0.20454545454545456,
+            "largest_scene_share_of_positive_utility": 0.30326119044780936,
+            "negative": 26,
+            "outer_fold": 3,
+            "positive": 17,
+            "positive_prevalence": 0.38636363636363635,
+            "positive_scene_count": 10,
+            "rows": 44,
+            "scenes": 11,
+            "ties": 1
+          },
+          {
+            "catastrophic": 2,
+            "catastrophic_prevalence": 0.06896551724137931,
+            "largest_scene_share_of_positive_utility": 0.5248443389822837,
+            "negative": 14,
+            "outer_fold": 4,
+            "positive": 10,
+            "positive_prevalence": 0.3448275862068966,
+            "positive_scene_count": 6,
+            "rows": 29,
+            "scenes": 8,
+            "ties": 5
+          }
+        ],
+        "positive": 63,
+        "positive_prevalence": 0.42857142857142855,
+        "positive_scene_count": 32,
+        "required_positive_scene_count": 8,
+        "rows": 147,
+        "scenes": 38,
+        "ties": 16
+      }
+    },
+    "failure_reasons": [],
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "revision": "mf3zk_dsr_v1",
+    "schema_version": "revealnav-mf3zk-dsr-proposal-support-audit/1",
+    "selection_use": false,
+    "source_protocol_sha256": "6d16095c568ddab820fea34a04422cde692c66687beeed8d4a58717c76bae8ac",
+    "source_provenance_verified": true,
+    "status": "PROPOSAL_SUPPORT_AUDIT_PASS",
+    "threshold_use": false
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "public_unseen_authorized": false,
+  "r2r_only": {
+    "arm": "R2R",
+    "equal_budget": null,
+    "failure_reasons": [
+      "outer_fold_0:no_feasible_inner_candidate"
+    ],
+    "outer_folds": [
+      {
+        "common_random_numbers_verified": true,
+        "evaluation_scenes": [
+          "17DRP5sb8fy",
+          "82sE5b5pLXE",
+          "EDJbREhghzL",
+          "VLzqgDo317F",
+          "rPc6DW4iMge"
+        ],
+        "fit_scenes": [
+          "1pXnuDYAj8r",
+          "29hnd4uzFmX",
+          "5q7pvUzZiYa",
+          "7y3sRwLe3Va",
+          "8WUmhLawc2A",
+          "B6ByNegPMKs",
+          "D7N2EKCX4Sj",
+          "E9uDoFAP3SH",
+          "GdvgFV5R1Z5",
+          "PX4nDJXEHrG",
+          "Pm6F8kyY3z2",
+          "S9hNv5qa7GM",
+          "VFuaQ6m2Qom",
+          "VVfe2KiqLaN",
+          "ZMojNkEp431",
+          "aayBHfsNo7d",
+          "ac26ZMwG7aT",
+          "cV4RVeZvu5T",
+          "e9zR4mvMWw7",
+          "gZ6f7yhEvPG",
+          "p5wJjkQkbXX",
+          "pRbA3pwrgk9",
+          "qoiz87JEwZ2",
+          "r1Q1Z4BcV1o",
+          "r47D5H71a5s",
+          "s8pcmisQ38h",
+          "uNb9QFRL6hY",
+          "vyrNrziPKCB"
+        ],
+        "inner_scene_assignment": {
+          "1pXnuDYAj8r": 1,
+          "29hnd4uzFmX": 3,
+          "5q7pvUzZiYa": 1,
+          "7y3sRwLe3Va": 0,
+          "8WUmhLawc2A": 3,
+          "B6ByNegPMKs": 3,
+          "D7N2EKCX4Sj": 2,
+          "E9uDoFAP3SH": 3,
+          "GdvgFV5R1Z5": 2,
+          "PX4nDJXEHrG": 0,
+          "Pm6F8kyY3z2": 2,
+          "S9hNv5qa7GM": 1,
+          "VFuaQ6m2Qom": 1,
+          "VVfe2KiqLaN": 0,
+          "ZMojNkEp431": 0,
+          "aayBHfsNo7d": 3,
+          "ac26ZMwG7aT": 2,
+          "cV4RVeZvu5T": 2,
+          "e9zR4mvMWw7": 0,
+          "gZ6f7yhEvPG": 2,
+          "p5wJjkQkbXX": 1,
+          "pRbA3pwrgk9": 3,
+          "qoiz87JEwZ2": 3,
+          "r1Q1Z4BcV1o": 0,
+          "r47D5H71a5s": 1,
+          "s8pcmisQ38h": 2,
+          "uNb9QFRL6hY": 1,
+          "vyrNrziPKCB": 0
+        },
+        "outer_fold": 0,
+        "scene_overlap": [],
+        "selected_weight_decay": null,
+        "trials": [
+          {
+            "domains": {
+              "R2R": {
+                "authorized": 48,
+                "catastrophic": 3,
+                "catastrophic_rate": 0.0625,
+                "coverage": 0.5454545454545454,
+                "deployed_mean_utility": 0.002959713535440109,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": -0.32299520755920286,
+                "negative": 23,
+                "positive": 25,
+                "selected_mean_utility": 0.0054261414816402,
+                "selected_scene_count": 25,
+                "ties": 0,
+                "total_utility": 0.2604547911187296
+              }
+            },
+            "evidence": {
+              "authorized": 48,
+              "catastrophic": 3,
+              "catastrophic_rate": 0.0625,
+              "coverage": 0.5454545454545454,
+              "deployed_mean_utility": 0.002959713535440109,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": -0.32299520755920286,
+              "negative": 23,
+              "positive": 25,
+              "selected_mean_utility": 0.0054261414816402,
+              "selected_scene_count": 25,
+              "ties": 0,
+              "total_utility": 0.2604547911187296
+            },
+            "failure_reasons": [
+              "R2R:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "e9zR4mvMWw7",
+                  "r1Q1Z4BcV1o",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.006727369502186775,
+                  0.0027838489040732384,
+                  0.003925050608813763
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY"
+                ],
+                "initialization_hashes": [
+                  "7187b5e07e599c325335c474d1d5fc3a0ca89a5737d6a3ca52ccfdba8f145e7f",
+                  "39338112dd64a24c19c5c1a1b2af9b58aa5e43e24df00484946ee01dd217ba2d",
+                  "c47a3a3ab71e81f7245e2c35b43e46839986b3d04595a860dc5b006f2b6b1551"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "p5wJjkQkbXX",
+                  "r47D5H71a5s",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.003507022513076663,
+                  0.003596788737922907,
+                  0.0035314506385475397
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "8d101d45ca523399a39a39e5b714c813cab406ae802afd6d630a94df9cca144f",
+                  "a7e6c6f31d88939ebf6f7e24781330031af37d60b710809756311c38c1c192c3",
+                  "aaf77283296b27495b7c8c718cd25ba0b9a3878106ce4b7acb86c35968924d27"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "Pm6F8kyY3z2",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "gZ6f7yhEvPG",
+                  "s8pcmisQ38h"
+                ],
+                "final_training_losses": [
+                  0.003967197611927986,
+                  0.00361801590770483,
+                  0.003067523706704378
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "55f8f6ecfcf2d696a7f42db79c0aba2078d56507c8ba0ae517d216136d7f6bc9",
+                  "07625344918eee74c49ade54c7335f8f8d384e725a565be45ffd363de6eee686",
+                  "843e27c118608872c824790e681333fb8ce9ec3f5bd162e415bade297071ac27"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "aayBHfsNo7d",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2"
+                ],
+                "final_training_losses": [
+                  0.004857484716922045,
+                  0.002502280753105879,
+                  0.0034978571347892284
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "ae872970e547a75c3ba5cdccbe4f87f2cfd854c3a7a4c67e7405d2147f2a3826",
+                  "c4716a600406e0677439ac0eae74a819d4cf069957698d23c6972e5d7b5943c8",
+                  "7b29768a3f3aee8c5fa45bf6a7eeb3d132028aa300f0308b219181afaac3ae70"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.09350769644387792,
+            "ungated_domains": {
+              "R2R": {
+                "authorized": 88,
+                "catastrophic": 4,
+                "catastrophic_rate": 0.045454545454545456,
+                "coverage": 1.0,
+                "deployed_mean_utility": 0.009879712142996225,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+                "negative": 41,
+                "positive": 47,
+                "selected_mean_utility": 0.009879712142996225,
+                "selected_scene_count": 28,
+                "ties": 0,
+                "total_utility": 0.8694146685836678
+              }
+            },
+            "weight_decay": 0.0001
+          },
+          {
+            "domains": {
+              "R2R": {
+                "authorized": 50,
+                "catastrophic": 3,
+                "catastrophic_rate": 0.06,
+                "coverage": 0.5681818181818182,
+                "deployed_mean_utility": 0.00589495466282785,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": -0.05306525886780544,
+                "negative": 23,
+                "positive": 27,
+                "selected_mean_utility": 0.010375120206577016,
+                "selected_scene_count": 25,
+                "ties": 0,
+                "total_utility": 0.5187560103288508
+              }
+            },
+            "evidence": {
+              "authorized": 50,
+              "catastrophic": 3,
+              "catastrophic_rate": 0.06,
+              "coverage": 0.5681818181818182,
+              "deployed_mean_utility": 0.00589495466282785,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": -0.05306525886780544,
+              "negative": 23,
+              "positive": 27,
+              "selected_mean_utility": 0.010375120206577016,
+              "selected_scene_count": 25,
+              "ties": 0,
+              "total_utility": 0.5187560103288508
+            },
+            "failure_reasons": [
+              "R2R:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "e9zR4mvMWw7",
+                  "r1Q1Z4BcV1o",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.003185275476425886,
+                  0.0036212876439094543,
+                  0.0041155884973704815
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY"
+                ],
+                "initialization_hashes": [
+                  "7187b5e07e599c325335c474d1d5fc3a0ca89a5737d6a3ca52ccfdba8f145e7f",
+                  "39338112dd64a24c19c5c1a1b2af9b58aa5e43e24df00484946ee01dd217ba2d",
+                  "c47a3a3ab71e81f7245e2c35b43e46839986b3d04595a860dc5b006f2b6b1551"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "p5wJjkQkbXX",
+                  "r47D5H71a5s",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.00880812481045723,
+                  0.003747551701962948,
+                  0.003240422112867236
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "8d101d45ca523399a39a39e5b714c813cab406ae802afd6d630a94df9cca144f",
+                  "a7e6c6f31d88939ebf6f7e24781330031af37d60b710809756311c38c1c192c3",
+                  "aaf77283296b27495b7c8c718cd25ba0b9a3878106ce4b7acb86c35968924d27"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "Pm6F8kyY3z2",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "gZ6f7yhEvPG",
+                  "s8pcmisQ38h"
+                ],
+                "final_training_losses": [
+                  0.003077481174841523,
+                  0.005555418785661459,
+                  0.0025238622911274433
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "55f8f6ecfcf2d696a7f42db79c0aba2078d56507c8ba0ae517d216136d7f6bc9",
+                  "07625344918eee74c49ade54c7335f8f8d384e725a565be45ffd363de6eee686",
+                  "843e27c118608872c824790e681333fb8ce9ec3f5bd162e415bade297071ac27"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "aayBHfsNo7d",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2"
+                ],
+                "final_training_losses": [
+                  0.002816409571096301,
+                  0.004173217806965113,
+                  0.0037518737372010946
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "ae872970e547a75c3ba5cdccbe4f87f2cfd854c3a7a4c67e7405d2147f2a3826",
+                  "c4716a600406e0677439ac0eae74a819d4cf069957698d23c6972e5d7b5943c8",
+                  "7b29768a3f3aee8c5fa45bf6a7eeb3d132028aa300f0308b219181afaac3ae70"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.09199460297879072,
+            "ungated_domains": {
+              "R2R": {
+                "authorized": 88,
+                "catastrophic": 4,
+                "catastrophic_rate": 0.045454545454545456,
+                "coverage": 1.0,
+                "deployed_mean_utility": 0.009879712142996225,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+                "negative": 41,
+                "positive": 47,
+                "selected_mean_utility": 0.009879712142996225,
+                "selected_scene_count": 28,
+                "ties": 0,
+                "total_utility": 0.8694146685836678
+              }
+            },
+            "weight_decay": 0.001
+          },
+          {
+            "domains": {
+              "R2R": {
+                "authorized": 50,
+                "catastrophic": 3,
+                "catastrophic_rate": 0.06,
+                "coverage": 0.5681818181818182,
+                "deployed_mean_utility": 0.00554646062421423,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": -0.09536146374707999,
+                "negative": 23,
+                "positive": 27,
+                "selected_mean_utility": 0.009761770698617046,
+                "selected_scene_count": 25,
+                "ties": 0,
+                "total_utility": 0.48808853493085225
+              }
+            },
+            "evidence": {
+              "authorized": 50,
+              "catastrophic": 3,
+              "catastrophic_rate": 0.06,
+              "coverage": 0.5681818181818182,
+              "deployed_mean_utility": 0.00554646062421423,
+              "eligible": 88,
+              "minimum_leave_one_selected_scene_out_total": -0.09536146374707999,
+              "negative": 23,
+              "positive": 27,
+              "selected_mean_utility": 0.009761770698617046,
+              "selected_scene_count": 25,
+              "ties": 0,
+              "total_utility": 0.48808853493085225
+            },
+            "failure_reasons": [
+              "R2R:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "e9zR4mvMWw7",
+                  "r1Q1Z4BcV1o",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.004263522103428841,
+                  0.004039946012198925,
+                  0.0031650110613554716
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY"
+                ],
+                "initialization_hashes": [
+                  "7187b5e07e599c325335c474d1d5fc3a0ca89a5737d6a3ca52ccfdba8f145e7f",
+                  "39338112dd64a24c19c5c1a1b2af9b58aa5e43e24df00484946ee01dd217ba2d",
+                  "c47a3a3ab71e81f7245e2c35b43e46839986b3d04595a860dc5b006f2b6b1551"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "p5wJjkQkbXX",
+                  "r47D5H71a5s",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.004863133188337088,
+                  0.003926903009414673,
+                  0.0022098245099186897
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "8d101d45ca523399a39a39e5b714c813cab406ae802afd6d630a94df9cca144f",
+                  "a7e6c6f31d88939ebf6f7e24781330031af37d60b710809756311c38c1c192c3",
+                  "aaf77283296b27495b7c8c718cd25ba0b9a3878106ce4b7acb86c35968924d27"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "Pm6F8kyY3z2",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "gZ6f7yhEvPG",
+                  "s8pcmisQ38h"
+                ],
+                "final_training_losses": [
+                  0.0037397907581180334,
+                  0.003167584538459778,
+                  0.0034889858216047287
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "55f8f6ecfcf2d696a7f42db79c0aba2078d56507c8ba0ae517d216136d7f6bc9",
+                  "07625344918eee74c49ade54c7335f8f8d384e725a565be45ffd363de6eee686",
+                  "843e27c118608872c824790e681333fb8ce9ec3f5bd162e415bade297071ac27"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "aayBHfsNo7d",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2"
+                ],
+                "final_training_losses": [
+                  0.0034779757261276245,
+                  0.002080031903460622,
+                  0.0021381170954555273
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "gZ6f7yhEvPG",
+                  "p5wJjkQkbXX",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "ae872970e547a75c3ba5cdccbe4f87f2cfd854c3a7a4c67e7405d2147f2a3826",
+                  "c4716a600406e0677439ac0eae74a819d4cf069957698d23c6972e5d7b5943c8",
+                  "7b29768a3f3aee8c5fa45bf6a7eeb3d132028aa300f0308b219181afaac3ae70"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.09179640040386611,
+            "ungated_domains": {
+              "R2R": {
+                "authorized": 88,
+                "catastrophic": 4,
+                "catastrophic_rate": 0.045454545454545456,
+                "coverage": 1.0,
+                "deployed_mean_utility": 0.009879712142996225,
+                "eligible": 88,
+                "minimum_leave_one_selected_scene_out_total": 0.28026872444489614,
+                "negative": 41,
+                "positive": 47,
+                "selected_mean_utility": 0.009879712142996225,
+                "selected_scene_count": 28,
+                "ties": 0,
+                "total_utility": 0.8694146685836678
+              }
+            },
+            "weight_decay": 0.01
+          }
+        ]
+      }
+    ],
+    "risk_coverage": null,
+    "rows": 102,
+    "scene_cluster_bootstrap": null,
+    "scenes": 33,
+    "status": "TRAIN_DEVELOPMENT_FAIL"
+  },
+  "revision": "mf3zk_dsr_v1",
+  "risk_coverage": {
+    "R2R": null,
+    "RxR": null,
+    "joint": null
+  },
+  "rows": 249,
+  "rxr_only": {
+    "arm": "RxR",
+    "equal_budget": null,
+    "failure_reasons": [
+      "outer_fold_0:no_feasible_inner_candidate"
+    ],
+    "outer_folds": [
+      {
+        "common_random_numbers_verified": true,
+        "evaluation_scenes": [
+          "17DRP5sb8fy",
+          "82sE5b5pLXE",
+          "EDJbREhghzL",
+          "VLzqgDo317F",
+          "rPc6DW4iMge"
+        ],
+        "fit_scenes": [
+          "1pXnuDYAj8r",
+          "29hnd4uzFmX",
+          "5q7pvUzZiYa",
+          "7y3sRwLe3Va",
+          "8WUmhLawc2A",
+          "B6ByNegPMKs",
+          "D7G3Y4RVNrH",
+          "D7N2EKCX4Sj",
+          "E9uDoFAP3SH",
+          "GdvgFV5R1Z5",
+          "JeFG25nYj2p",
+          "JmbYfDe2QKZ",
+          "PX4nDJXEHrG",
+          "Pm6F8kyY3z2",
+          "S9hNv5qa7GM",
+          "VFuaQ6m2Qom",
+          "VVfe2KiqLaN",
+          "YmJkqBEsHnH",
+          "ZMojNkEp431",
+          "aayBHfsNo7d",
+          "ac26ZMwG7aT",
+          "cV4RVeZvu5T",
+          "e9zR4mvMWw7",
+          "p5wJjkQkbXX",
+          "pRbA3pwrgk9",
+          "qoiz87JEwZ2",
+          "r1Q1Z4BcV1o",
+          "r47D5H71a5s",
+          "s8pcmisQ38h",
+          "sT4fr6TAbpF",
+          "uNb9QFRL6hY",
+          "ur6pFq6Qu1A",
+          "vyrNrziPKCB"
+        ],
+        "inner_scene_assignment": {
+          "1pXnuDYAj8r": 1,
+          "29hnd4uzFmX": 3,
+          "5q7pvUzZiYa": 1,
+          "7y3sRwLe3Va": 0,
+          "8WUmhLawc2A": 0,
+          "B6ByNegPMKs": 0,
+          "D7G3Y4RVNrH": 2,
+          "D7N2EKCX4Sj": 2,
+          "E9uDoFAP3SH": 3,
+          "GdvgFV5R1Z5": 3,
+          "JeFG25nYj2p": 3,
+          "JmbYfDe2QKZ": 3,
+          "PX4nDJXEHrG": 0,
+          "Pm6F8kyY3z2": 3,
+          "S9hNv5qa7GM": 1,
+          "VFuaQ6m2Qom": 1,
+          "VVfe2KiqLaN": 0,
+          "YmJkqBEsHnH": 1,
+          "ZMojNkEp431": 0,
+          "aayBHfsNo7d": 2,
+          "ac26ZMwG7aT": 2,
+          "cV4RVeZvu5T": 1,
+          "e9zR4mvMWw7": 1,
+          "p5wJjkQkbXX": 2,
+          "pRbA3pwrgk9": 0,
+          "qoiz87JEwZ2": 3,
+          "r1Q1Z4BcV1o": 0,
+          "r47D5H71a5s": 2,
+          "s8pcmisQ38h": 2,
+          "sT4fr6TAbpF": 3,
+          "uNb9QFRL6hY": 0,
+          "ur6pFq6Qu1A": 2,
+          "vyrNrziPKCB": 1
+        },
+        "outer_fold": 0,
+        "scene_overlap": [],
+        "selected_weight_decay": null,
+        "trials": [
+          {
+            "domains": {
+              "RxR": {
+                "authorized": 65,
+                "catastrophic": 6,
+                "catastrophic_rate": 0.09230769230769231,
+                "coverage": 0.48148148148148145,
+                "deployed_mean_utility": -0.00021498206208840005,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -0.6313251320456199,
+                "negative": 30,
+                "positive": 30,
+                "selected_mean_utility": -0.00044650120587590777,
+                "selected_scene_count": 29,
+                "ties": 5,
+                "total_utility": -0.029022578381934006
+              }
+            },
+            "evidence": {
+              "authorized": 65,
+              "catastrophic": 6,
+              "catastrophic_rate": 0.09230769230769231,
+              "coverage": 0.48148148148148145,
+              "deployed_mean_utility": -0.00021498206208840005,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -0.6313251320456199,
+              "negative": 30,
+              "positive": 30,
+              "selected_mean_utility": -0.00044650120587590777,
+              "selected_scene_count": 29,
+              "ties": 5,
+              "total_utility": -0.029022578381934006
+            },
+            "failure_reasons": [
+              "RxR:nonpositive_utility",
+              "RxR:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.005682947114109993,
+                  0.002778757829219103,
+                  0.004464318044483662
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "273e1a55ad85308d1b70fb49a85c892c9879bc06692a99f7732e0e1b72748d01",
+                  "2c8bdf49470f8fe41b50df6fd7c48a5deacf8497d9be6ae8d979617e683c82b1",
+                  "8f9e7b3024349bebabfd31a1b411d7019bca6714578cd8ebde18e243ac64968d"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.004542665556073189,
+                  0.004583242814987898,
+                  0.005045561119914055
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "08821f0e755abdc57ffc42e09459dee2d7770c13a97005bed2014b796cb8bdd1",
+                  "89cbc3578d2765a0e6633193171de9c9cc12e24ef250d14f809ab0baeea97ca6",
+                  "ca7ada3378918e881ec2cd396502630fe13d582aea078a197e1198d42344db0d"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "p5wJjkQkbXX",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "final_training_losses": [
+                  0.005364697892218828,
+                  0.004133434500545263,
+                  0.004447004292160273
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "907289713b78060a9f1ed1d3ca593f8b00d77c09d6923614260ccfac59874325",
+                  "d9d06965671698ce12c01fbf225dd081fa64902b27b65efa66626b07dbb1074b",
+                  "b09f946ea2b9cefc2df97fe7e820ab47cb504970ea6cd8eff137bdb6db50ab3b"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "qoiz87JEwZ2",
+                  "sT4fr6TAbpF"
+                ],
+                "final_training_losses": [
+                  0.003106133546680212,
+                  0.004425699356943369,
+                  0.004113319795578718
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "eb61255771fd6d9a0a9c7600cc32c2d722a7bc0111898b6a0c8e1a1165faef00",
+                  "cad1fe2e18fe96132f9c830c97fc74d4f26da194d754766d824edd27ff3971d9",
+                  "96daa4b7ae0cbc57ede864ce9750ea4d2014474d9308c166f1fe9cdfc4c34552"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.0916118288114356,
+            "ungated_domains": {
+              "RxR": {
+                "authorized": 135,
+                "catastrophic": 12,
+                "catastrophic_rate": 0.08888888888888889,
+                "coverage": 1.0,
+                "deployed_mean_utility": -0.006311258987548878,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+                "negative": 63,
+                "positive": 58,
+                "selected_mean_utility": -0.006311258987548878,
+                "selected_scene_count": 33,
+                "ties": 14,
+                "total_utility": -0.8520199633190986
+              }
+            },
+            "weight_decay": 0.0001
+          },
+          {
+            "domains": {
+              "RxR": {
+                "authorized": 65,
+                "catastrophic": 6,
+                "catastrophic_rate": 0.09230769230769231,
+                "coverage": 0.48148148148148145,
+                "deployed_mean_utility": -0.00022361444243518722,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -0.6324905033924362,
+                "negative": 30,
+                "positive": 30,
+                "selected_mean_utility": -0.0004644299958269273,
+                "selected_scene_count": 29,
+                "ties": 5,
+                "total_utility": -0.030187949728750274
+              }
+            },
+            "evidence": {
+              "authorized": 65,
+              "catastrophic": 6,
+              "catastrophic_rate": 0.09230769230769231,
+              "coverage": 0.48148148148148145,
+              "deployed_mean_utility": -0.00022361444243518722,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -0.6324905033924362,
+              "negative": 30,
+              "positive": 30,
+              "selected_mean_utility": -0.0004644299958269273,
+              "selected_scene_count": 29,
+              "ties": 5,
+              "total_utility": -0.030187949728750274
+            },
+            "failure_reasons": [
+              "RxR:nonpositive_utility",
+              "RxR:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.005041425582021475,
+                  0.0036697869654744864,
+                  0.006687618792057037
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "273e1a55ad85308d1b70fb49a85c892c9879bc06692a99f7732e0e1b72748d01",
+                  "2c8bdf49470f8fe41b50df6fd7c48a5deacf8497d9be6ae8d979617e683c82b1",
+                  "8f9e7b3024349bebabfd31a1b411d7019bca6714578cd8ebde18e243ac64968d"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.007301632780581713,
+                  0.003619984956458211,
+                  0.0064622447825968266
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "08821f0e755abdc57ffc42e09459dee2d7770c13a97005bed2014b796cb8bdd1",
+                  "89cbc3578d2765a0e6633193171de9c9cc12e24ef250d14f809ab0baeea97ca6",
+                  "ca7ada3378918e881ec2cd396502630fe13d582aea078a197e1198d42344db0d"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "p5wJjkQkbXX",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "final_training_losses": [
+                  0.005989545956254005,
+                  0.00393816689029336,
+                  0.007378310896456242
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "907289713b78060a9f1ed1d3ca593f8b00d77c09d6923614260ccfac59874325",
+                  "d9d06965671698ce12c01fbf225dd081fa64902b27b65efa66626b07dbb1074b",
+                  "b09f946ea2b9cefc2df97fe7e820ab47cb504970ea6cd8eff137bdb6db50ab3b"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "qoiz87JEwZ2",
+                  "sT4fr6TAbpF"
+                ],
+                "final_training_losses": [
+                  0.0037068293895572424,
+                  0.004343624692410231,
+                  0.00497466791421175
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "eb61255771fd6d9a0a9c7600cc32c2d722a7bc0111898b6a0c8e1a1165faef00",
+                  "cad1fe2e18fe96132f9c830c97fc74d4f26da194d754766d824edd27ff3971d9",
+                  "96daa4b7ae0cbc57ede864ce9750ea4d2014474d9308c166f1fe9cdfc4c34552"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.09124784679145831,
+            "ungated_domains": {
+              "RxR": {
+                "authorized": 135,
+                "catastrophic": 12,
+                "catastrophic_rate": 0.08888888888888889,
+                "coverage": 1.0,
+                "deployed_mean_utility": -0.006311258987548878,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+                "negative": 63,
+                "positive": 58,
+                "selected_mean_utility": -0.006311258987548878,
+                "selected_scene_count": 33,
+                "ties": 14,
+                "total_utility": -0.8520199633190986
+              }
+            },
+            "weight_decay": 0.001
+          },
+          {
+            "domains": {
+              "RxR": {
+                "authorized": 67,
+                "catastrophic": 6,
+                "catastrophic_rate": 0.08955223880597014,
+                "coverage": 0.4962962962962963,
+                "deployed_mean_utility": -0.0010291221422791042,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -0.7412340428713646,
+                "negative": 32,
+                "positive": 30,
+                "selected_mean_utility": -0.0020736043165325234,
+                "selected_scene_count": 29,
+                "ties": 5,
+                "total_utility": -0.13893148920767906
+              }
+            },
+            "evidence": {
+              "authorized": 67,
+              "catastrophic": 6,
+              "catastrophic_rate": 0.08955223880597014,
+              "coverage": 0.4962962962962963,
+              "deployed_mean_utility": -0.0010291221422791042,
+              "eligible": 135,
+              "minimum_leave_one_selected_scene_out_total": -0.7412340428713646,
+              "negative": 32,
+              "positive": 30,
+              "selected_mean_utility": -0.0020736043165325234,
+              "selected_scene_count": 29,
+              "ties": 5,
+              "total_utility": -0.13893148920767906
+            },
+            "failure_reasons": [
+              "RxR:nonpositive_utility",
+              "RxR:catastrophic_rate_above_ungated"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "uNb9QFRL6hY"
+                ],
+                "final_training_losses": [
+                  0.00533140217885375,
+                  0.002883999375626445,
+                  0.004175402224063873
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "273e1a55ad85308d1b70fb49a85c892c9879bc06692a99f7732e0e1b72748d01",
+                  "2c8bdf49470f8fe41b50df6fd7c48a5deacf8497d9be6ae8d979617e683c82b1",
+                  "8f9e7b3024349bebabfd31a1b411d7019bca6714578cd8ebde18e243ac64968d"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "vyrNrziPKCB"
+                ],
+                "final_training_losses": [
+                  0.005591316614300013,
+                  0.0038998937234282494,
+                  0.005743468180298805
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VVfe2KiqLaN",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "08821f0e755abdc57ffc42e09459dee2d7770c13a97005bed2014b796cb8bdd1",
+                  "89cbc3578d2765a0e6633193171de9c9cc12e24ef250d14f809ab0baeea97ca6",
+                  "ca7ada3378918e881ec2cd396502630fe13d582aea078a197e1198d42344db0d"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "p5wJjkQkbXX",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "final_training_losses": [
+                  0.004730001091957092,
+                  0.006395481992512941,
+                  0.00487864762544632
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "907289713b78060a9f1ed1d3ca593f8b00d77c09d6923614260ccfac59874325",
+                  "d9d06965671698ce12c01fbf225dd081fa64902b27b65efa66626b07dbb1074b",
+                  "b09f946ea2b9cefc2df97fe7e820ab47cb504970ea6cd8eff137bdb6db50ab3b"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": []
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "qoiz87JEwZ2",
+                  "sT4fr6TAbpF"
+                ],
+                "final_training_losses": [
+                  0.0039190687239170074,
+                  0.003148611867800355,
+                  0.005348035600036383
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "eb61255771fd6d9a0a9c7600cc32c2d722a7bc0111898b6a0c8e1a1165faef00",
+                  "cad1fe2e18fe96132f9c830c97fc74d4f26da194d754766d824edd27ff3971d9",
+                  "96daa4b7ae0cbc57ede864ce9750ea4d2014474d9308c166f1fe9cdfc4c34552"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": []
+              }
+            ],
+            "inner_oof_quantile_loss": 0.0921614739363815,
+            "ungated_domains": {
+              "RxR": {
+                "authorized": 135,
+                "catastrophic": 12,
+                "catastrophic_rate": 0.08888888888888889,
+                "coverage": 1.0,
+                "deployed_mean_utility": -0.006311258987548878,
+                "eligible": 135,
+                "minimum_leave_one_selected_scene_out_total": -1.4735478363480765,
+                "negative": 63,
+                "positive": 58,
+                "selected_mean_utility": -0.006311258987548878,
+                "selected_scene_count": 33,
+                "ties": 14,
+                "total_utility": -0.8520199633190986
+              }
+            },
+            "weight_decay": 0.01
+          }
+        ]
+      }
+    ],
+    "risk_coverage": null,
+    "rows": 147,
+    "scene_cluster_bootstrap": null,
+    "scenes": 38,
+    "status": "TRAIN_DEVELOPMENT_FAIL"
+  },
+  "scenes": 39,
+  "schema_version": "revealnav-mf3zk-dsr-train-development-result/1",
+  "single_domain_control_status": {
+    "R2R": "TRAIN_DEVELOPMENT_FAIL",
+    "RxR": "TRAIN_DEVELOPMENT_FAIL"
+  },
+  "source_provenance_verified": true,
+  "status": "TRAIN_DEVELOPMENT_FAIL"
+}
