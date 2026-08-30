@@ -45,8 +45,19 @@ from .shadow import (
     SHADOW_OUTCOMES,
     classify_shadow_outcome,
     current_local_action_indices,
+    validate_action_identity,
 )
 from .data import OnlineUADFeatureDataset, collate_online_uad
+from .nested_selection import (
+    NestedSelectionError,
+    canonicalize_exact_counterfactual_rows,
+    coverage_funnel,
+    deterministic_scene_folds,
+    equal_budget_baselines,
+    nested_scene_fit,
+    outcome_evidence,
+    risk_coverage_curve,
+)
 
 __all__ = [
     "MF3B_SCOPE",
@@ -65,6 +76,14 @@ __all__ = [
     "StructuredUADOutput",
     "OnlineUADFeatureDataset",
     "collate_online_uad",
+    "NestedSelectionError",
+    "canonicalize_exact_counterfactual_rows",
+    "coverage_funnel",
+    "deterministic_scene_folds",
+    "equal_budget_baselines",
+    "nested_scene_fit",
+    "outcome_evidence",
+    "risk_coverage_curve",
     "factorized_uad_probabilities",
     "fuse_current_candidate_logits",
     "native_conditioned_uad_loss",
@@ -93,4 +112,5 @@ __all__ = [
     "SHADOW_OUTCOMES",
     "classify_shadow_outcome",
     "current_local_action_indices",
+    "validate_action_identity",
 ]

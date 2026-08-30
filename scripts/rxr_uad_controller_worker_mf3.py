@@ -43,6 +43,7 @@ from revealnav_mf3 import (  # noqa: E402
     PolicyAnchoredTop2UAD,
     StructuredUADHeads,
     current_local_action_indices,
+    validate_action_identity,
     fuse_current_candidate_logits,
     median_native_conditioned_outputs,
     median_mad_lower_confidence,
@@ -1237,6 +1238,8 @@ class MF3KTop2Controller:
         policy_risk_adjusted_score = None
         return_gate_evidence = None
         decision_source = None
+        feature_native_id = None
+        feature_alternative_id = None
         fused = native_logits
         runner_local = None
         if (
@@ -1429,6 +1432,32 @@ class MF3KTop2Controller:
                     and self.revision in ("mf3ze", "mf3zf", "mf3zg", "mf3zh")
                     and not (self.revision == "mf3zf" and self.collection_only)
                 ):
+                    if runner_local is None or not 0 <= runner_local < len(ordered):
+                        raise RuntimeError(
+                            f"{self.revision.upper()} runner identity is out of range"
+                        )
+                    adapted_id = ordered[runner_local]
+                    candidate_ids = tuple(str(ids[index]) for index in current_global)
+                    if adapted_id not in candidate_ids:
+                        raise RuntimeError(
+                            f"{self.revision.upper()} runner identity left current candidates"
+                        )
+                    candidate_adapted = ids.index(adapted_id)
+                    validate_action_identity(
+                        ids,
+                        current_global,
+                        native,
+                        candidate_adapted,
+                        declared_native_id=native_id,
+                        declared_adapted_id=adapted_id,
+                        require_non_stop=True,
+                    )
+                    feature_native_id = str(ids[native])
+                    feature_alternative_id = str(ids[candidate_adapted])
+                    if feature_native_id != native_id or feature_alternative_id != adapted_id:
+                        raise RuntimeError(
+                            f"{self.revision.upper()} feature action identity drift"
+                        )
                     gate_decision = {
                         "step": self.step,
                         "policy_risk_adjusted_score": policy_risk_adjusted_score,
@@ -1449,7 +1478,7 @@ class MF3KTop2Controller:
                         self.latest_history.detach().cpu().float().numpy(),
                         kwargs["gmap_img_fts"][0, native]
                         .detach().cpu().float().numpy(),
-                        kwargs["gmap_img_fts"][0, ids.index(ordered[runner_local])]
+                        kwargs["gmap_img_fts"][0, candidate_adapted]
                         .detach().cpu().float().numpy(),
                     )
                     if self.revision in ("mf3zg", "mf3zh"):
@@ -1498,8 +1527,27 @@ class MF3KTop2Controller:
                         self.intervened = True
                 elif self.revision in ("mf3p", "mf3s", "mf3t", "mf3u", "mf3v", "mf3y", "mf3z", "mf3za", "mf3zb", "mf3zc", "mf3ze", "mf3zf", "mf3zg"):
                     self.intervened = True
+                if runner_local is None or not 0 <= runner_local < len(ordered):
+                    raise RuntimeError(
+                        f"{self.revision.upper()} runner identity is out of range"
+                    )
                 adapted_id = ordered[runner_local]
                 adapted = ids.index(adapted_id)
+                validate_action_identity(
+                    ids,
+                    current_global,
+                    native,
+                    adapted,
+                    declared_native_id=native_id,
+                    declared_adapted_id=adapted_id,
+                    require_non_stop=True,
+                )
+                feature_native_id = str(ids[native])
+                feature_alternative_id = str(ids[adapted])
+                if feature_native_id != native_id or feature_alternative_id != adapted_id:
+                    raise RuntimeError(
+                        f"{self.revision.upper()} feature action identity drift"
+                    )
                 self.write_intervention_feature(
                     kwargs["gmap_img_fts"][0, native],
                     kwargs["gmap_img_fts"][0, adapted],
@@ -1531,6 +1579,8 @@ class MF3KTop2Controller:
             "policy_risk_adjusted_score": policy_risk_adjusted_score,
             "native_margin": native_margin,
             "runner_local_index": runner_local,
+            "feature_native_action_id": feature_native_id,
+            "feature_alternative_action_id": feature_alternative_id,
             "return_gate": return_gate_evidence,
             "decision_source": decision_source,
             "proposal_evaluated": self.proposal_evaluated,

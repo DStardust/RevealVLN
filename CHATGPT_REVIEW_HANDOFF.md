@@ -5,7 +5,19 @@ Repository: `DStardust/RevealVLN`
 Purpose: provide a bounded, reproducible context for an independent technical
 review of the current method and its next revision.
 
-## Current method under review
+## Post-review update
+
+The requested correctness revision has now been implemented separately as
+MF3ZK-NP; see `METHOD_REVISION_3ZK_NESTED_POOLED.md` and
+`MF3ZK_NESTED_POOLED_RUN_SUMMARY.md`.  It uses nested whole-scene selection,
+pools the return/harm estimator across tiers, reports equal-budget and coverage
+diagnostics, and collapses 50 byte-identical cross-source labels before
+fitting.  The corrected 249-row train-development run **failed**.  The result
+does not authorize another confirmation or any public split.  The remainder
+of this document records the historical MF3ZK snapshot that motivated the
+review; its old confirmation remains consumed evidence only.
+
+## Historical method under review
 
 `MF3ZK` is a train-only joint revision built on the frozen `MF3ZG` hierarchy:
 

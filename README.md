@@ -45,13 +45,19 @@ The active self-contained feasibility run is tracked in
 
 ## Current independent-review snapshot (2026-08-30)
 
-The current mainline method revision is MF3ZK, a train-only joint
-action-aligned return/harm gate built on the frozen MF3ZG proposal hierarchy.
-The implementation is in [`revealnav_mf3/`](revealnav_mf3/) and the experiment
-drivers are under [`scripts/`](scripts/).  The bounded evidence, known failed
-confirmation result, and questions for an independent reviewer are recorded in
-[`CHATGPT_REVIEW_HANDOFF.md`](CHATGPT_REVIEW_HANDOFF.md).  This is a research
-diagnostic snapshot, not a public benchmark or SOTA claim.
+MF3ZK is the retained historical train-only joint action-aligned return/harm
+gate built on the frozen MF3ZG proposal hierarchy.  Its confirmation failure
+is recorded in [`CHATGPT_REVIEW_HANDOFF.md`](CHATGPT_REVIEW_HANDOFF.md).
+
+The review-driven MF3ZK-NP revision adds nested whole-scene selection, a
+pooled core/expansion estimator, exact-label deduplication, coverage and
+equal-budget diagnostics, and action-identity invariants.  Its method protocol
+is in
+[`METHOD_REVISION_3ZK_NESTED_POOLED.md`](METHOD_REVISION_3ZK_NESTED_POOLED.md),
+and its train-development result is retained as a failure in
+[`MF3ZK_NESTED_POOLED_RUN_SUMMARY.md`](MF3ZK_NESTED_POOLED_RUN_SUMMARY.md).
+No fresh confirmation or public benchmark run is authorized.  This is a
+research diagnostic snapshot, not a public benchmark or SOTA claim.
 
 The repository intentionally excludes datasets, checkpoints, virtual
 environments, caches, raw per-episode traces, large logs, and credentials.
