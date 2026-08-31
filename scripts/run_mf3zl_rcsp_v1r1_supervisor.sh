@@ -5,6 +5,7 @@ set -u
 ROOT="/mnt/data_nas/deeprobotics/daiyang/vla"
 PYTHON="$ROOT/.envs/etpr1/bin/python"
 COLLECT="$ROOT/scripts/collect_mf3zl_rcsp_v1r1.py"
+WORKERS_PER_GPU=5
 LOG_DIR="$ROOT/artifacts/training/mf3zl_rcsp_v1r1/logs"
 LOG="$LOG_DIR/expansion_supervisor.log"
 mkdir -p "$LOG_DIR"
@@ -37,7 +38,7 @@ while :; do
   [ "$state" = "COMPLETE" ] && break
   attempt=$((attempt + 1))
   [ "$attempt" -le 3 ] || { note "native retry ceiling reached"; exit 2; }
-  "$PYTHON" "$COLLECT" run-native-shadow --gpus 0 1 --workers-per-gpu 4 --retry-failed
+  "$PYTHON" "$COLLECT" run-native-shadow --gpus 0 1 --workers-per-gpu "$WORKERS_PER_GPU" --retry-failed
   rc=$?; note "native rc=$rc"
   [ "$rc" -eq 0 ] || sleep 10
 done
@@ -49,7 +50,7 @@ while :; do
   [ "$state" = "COMPLETE" ] && break
   attempt=$((attempt + 1))
   [ "$attempt" -le 3 ] || { note "target retry ceiling reached"; exit 2; }
-  "$PYTHON" "$COLLECT" run-targeted-switches --gpus 0 1 --workers-per-gpu 4 --retry-failed
+  "$PYTHON" "$COLLECT" run-targeted-switches --gpus 0 1 --workers-per-gpu "$WORKERS_PER_GPU" --retry-failed
   rc=$?; note "target rc=$rc"
   [ "$rc" -eq 0 ] || sleep 10
 done
