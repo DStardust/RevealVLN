@@ -1,0 +1,53 @@
+{
+  "algorithm_change": false,
+  "confirmation_authorized": false,
+  "equivalence": {
+    "bytes": 331,
+    "path": "artifacts/training/mf3zm_car_v1/MF3ZM_CAR_FAST_EQUIVALENCE.json",
+    "sha256": "a0660470607b022e9d6ea54ca035d8621807218b004b7358e702b26a21e978fe"
+  },
+  "execution_changes": [
+    "constant fold/domain/scene tensors are precomputed",
+    "leave-one-scene constraints are evaluated as a tensor batch",
+    "independent pre-registered arms run in separate CPU processes",
+    "CPU numerical backend replaces CUDA for the small intervention head"
+  ],
+  "fast_implementation": {
+    "bytes": 13704,
+    "path": "revealnav_mf3/car_fast.py",
+    "sha256": "a9a98ed9d37f6c9be45d70b5d7c1c76df51cb17fddfcd335f037fd8e6ffc5963"
+  },
+  "frozen_training": {
+    "decision_rule": "switch_logit > 0",
+    "maximum_fits_per_job": 66,
+    "seeds_per_fit": 3,
+    "training_steps": 800
+  },
+  "jobs": [
+    "car_mainline",
+    "car_no_scene_constraint",
+    "car_soft_risk",
+    "car_28d",
+    "car_policy_only",
+    "car_no_risk",
+    "rxr_only_car",
+    "r2r_only_car",
+    "dsr_v1_expanded_data"
+  ],
+  "public_split_access": false,
+  "public_unseen_authorized": false,
+  "runner": {
+    "bytes": 20673,
+    "path": "scripts/run_mf3zm_car_fast.py",
+    "sha256": "a2d2069d3c03be108e6928576eba4df4b8b1503c2ad9402b01cda2b5b8d978e3"
+  },
+  "schema_version": "revealnav-mf3zm-car-fast-execution/1",
+  "scientific_protocol": {
+    "bytes": 3907,
+    "path": "artifacts/training/mf3zm_car_v1/MF3ZM_CAR_PROTOCOL.json",
+    "sha256": "0d9ae410eb05deedc7d527cbad83555efa9c25c2363b816d844d17f8ce2bb163"
+  },
+  "scientific_revision": "mf3zm_car_v1",
+  "status": "SEALED_BEFORE_FAST_TRAINING",
+  "threads_per_job": 12
+}

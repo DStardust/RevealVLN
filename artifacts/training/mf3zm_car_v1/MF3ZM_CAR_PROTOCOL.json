@@ -1,0 +1,137 @@
+{
+  "authorization": {
+    "confirmation": false,
+    "public_unseen": false,
+    "train_development": true
+  },
+  "canonical_identity_sha256": "7047fe8e3514d6037926f77a2883e9f0cdf094d5b077aa82febba64260b07bae",
+  "consumed_confirmation_reused": false,
+  "controls": [
+    "car_no_scene_constraint",
+    "car_soft_risk",
+    "car_28d",
+    "car_policy_only",
+    "car_no_risk",
+    "rxr_only_car",
+    "r2r_only_car",
+    "dsr_v1_expanded_data",
+    "fold_domain_matched_target_free_baselines"
+  ],
+  "domain_counts": {
+    "R2R": 543,
+    "RxR": 997
+  },
+  "frozen_components": [
+    "ETP-R1 policy",
+    "MF3V proposal",
+    "MF3ZG hierarchy",
+    "exact one-switch labels",
+    "utility 0.50 nDTW + 0.25 SDTW + 0.25 SPL",
+    "RCSP v1.1 semantic representation and rank-4 architecture",
+    "39-scene outer assignment"
+  ],
+  "known_consumed_scene_ids": [
+    "1LXtFkjw3qL",
+    "2n8kARJN3HM",
+    "5LpN3gDmAk7",
+    "759xd9YjKW5",
+    "HxpKQynjfin",
+    "JF19kD82Mey",
+    "PuKPg4mmafe",
+    "SN83YJsR3w2",
+    "ULsKaCPVFJR",
+    "Uxmj2M2itWa",
+    "V2XKFyX4ASd",
+    "Vvot9Ly1tCj",
+    "VzqfbhrpDEA",
+    "XcA2TqTSSAj",
+    "b8cTxDM8gDG",
+    "gTV8FGcVJC9",
+    "i5noydFURQK",
+    "jh4fc5c5qoQ",
+    "kEZ7cmS4wCh",
+    "mJXqzFtmKg4",
+    "sKLMLpTHeUy"
+  ],
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "purpose": "criterion-aligned train-development diagnostic only",
+  "revision": "mf3zm_car_v1",
+  "rows": 1540,
+  "scenes": 39,
+  "schema_version": "revealnav-mf3zm-car-protocol/1",
+  "source_audit_status": "TRAIN_DATA_SUPPORT_PASS",
+  "source_files": {
+    "car_model": {
+      "bytes": 10858,
+      "path": "revealnav_mf3/car.py",
+      "sha256": "34e6df8047060e6ec2a0e2bdac1b7ec874dd34d7dbf0a96698f037ffbf459dca"
+    },
+    "car_selection": {
+      "bytes": 32587,
+      "path": "revealnav_mf3/car_selection.py",
+      "sha256": "4c895e616ed787ca23c1e1e33dda0793a64c0702ed22d35eb72249c534c55ae8"
+    },
+    "data_audit": {
+      "bytes": 2194,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1_audit_fix_v2/MF3ZL_V1R1_DATA_SUPPORT_AUDIT_CORRECTED.json",
+      "sha256": "521c3738ea4cf7cfe428f7896ed374dcd046f2d79fb1d1b2a7d646097c446672"
+    },
+    "dsr_trainer": {
+      "bytes": 16912,
+      "path": "scripts/train_mf3zl_rcsp.py",
+      "sha256": "ccac4b4f413c409667323db0a6eebbc793a4f407148cea5be7b1f295f5972eb8"
+    },
+    "method_revision": {
+      "bytes": 3516,
+      "path": "METHOD_REVISION_3ZM_CAR.md",
+      "sha256": "8cb070a4a05a084b80a74f20a2b6658c840377edf16bf14aee84d4c76ac80746"
+    },
+    "trainer": {
+      "bytes": 17832,
+      "path": "scripts/train_mf3zm_car.py",
+      "sha256": "a8ef9163f0621caeda3c35da24ed463846d14520a088669226203b1ed1829429"
+    },
+    "v1r1_protocol": {
+      "bytes": 4401,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1_train/MF3ZL_RCSP_V1R1_TRAIN_PROTOCOL.json",
+      "sha256": "62901ee314a9548cb991363efbaf70a176d22977f79b6ed9f3db0b4283ac88cf"
+    },
+    "v1r1_trainer": {
+      "bytes": 19262,
+      "path": "scripts/train_mf3zl_rcsp_v1r1.py",
+      "sha256": "31899b3de05918b17a2396c316b3c847c9f0776aa1ecc4fa049d49907f5230e5"
+    }
+  },
+  "source_protocol_sha256": "62901ee314a9548cb991363efbaf70a176d22977f79b6ed9f3db0b4283ac88cf",
+  "status": "SEALED_BEFORE_MF3ZM_CAR_TRAINING",
+  "training": {
+    "continue_after_fold_failure": true,
+    "decision_rule": "switch_logit > 0",
+    "dual_cap": 100.0,
+    "dual_learning_rate": 0.05,
+    "inner_fold_salt": "mf3zm-car-v1-inner-scenes/1",
+    "inner_folds": 4,
+    "learning_rate": 0.005,
+    "main_representation": "semantic",
+    "main_risk_mode": "hard",
+    "main_scene_constraint": true,
+    "outer_folds": 5,
+    "seeds": [
+      20260830,
+      20260831,
+      20260832
+    ],
+    "training_steps": 800,
+    "use_cuda": true,
+    "weight_decay_grid": [
+      0.0001,
+      0.001,
+      0.01
+    ]
+  }
+}
