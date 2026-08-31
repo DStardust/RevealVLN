@@ -1,0 +1,144 @@
+{
+  "algorithm_revision": "mf3zl_rcsp_v1_1_zero_relative_delta",
+  "authorization": {
+    "confirmation": false,
+    "public_unseen": false,
+    "training": false
+  },
+  "canonical_identity_sha256": "7047fe8e3514d6037926f77a2883e9f0cdf094d5b077aa82febba64260b07bae",
+  "consumed_confirmation_reused": false,
+  "data_revision": "mf3zl_rcsp_v1r1",
+  "domain_counts": {
+    "R2R": 543,
+    "RxR": 997
+  },
+  "frozen_components": [
+    "ETP-R1 policy",
+    "MF3V proposal",
+    "MF3ZG hierarchy",
+    "exact one-switch labels",
+    "utility 0.50 nDTW + 0.25 SDTW + 0.25 SPL"
+  ],
+  "implementation_files": {
+    "audit_correction": {
+      "bytes": 13322,
+      "path": "scripts/audit_mf3zl_rcsp_v1r1_fix_v2.py",
+      "sha256": "abecd5f09030bbe82d784583051cfa0620e8f6c9cca3057c5e7d4d0a228a964f"
+    },
+    "dsr_selection": {
+      "bytes": 32415,
+      "path": "revealnav_mf3/dsr_selection.py",
+      "sha256": "7be621a627329d5c88f58bc14413c9c3d5ad82fdc480cacdccd9dcdf715037d2"
+    },
+    "method_revision": {
+      "bytes": 936,
+      "path": "METHOD_REVISION_3ZL_RCSP_V1R1_TRAIN.md",
+      "sha256": "8b874542b4037b222a3549ceb5bfae83192bad6b0debc2143a8bec33bb5fd23a"
+    },
+    "parent_loader": {
+      "bytes": 16912,
+      "path": "scripts/train_mf3zl_rcsp.py",
+      "sha256": "ccac4b4f413c409667323db0a6eebbc793a4f407148cea5be7b1f295f5972eb8"
+    },
+    "rcsp_selection_v1_1": {
+      "bytes": 26478,
+      "path": "revealnav_mf3/rcsp_selection_v1_1.py",
+      "sha256": "17da2aa92accbe0ab39cb7d6a934d8e0652542df56565e01d3bf2d5abf48c5d6"
+    },
+    "rcsp_v1_1": {
+      "bytes": 13048,
+      "path": "revealnav_mf3/rcsp_v1_1.py",
+      "sha256": "001be18d7a416d83bbfa7f3fbc9dae6962a91053bdef5cfe4a79d291f76730e1"
+    },
+    "trainer": {
+      "bytes": 19262,
+      "path": "scripts/train_mf3zl_rcsp_v1r1.py",
+      "sha256": "31899b3de05918b17a2396c316b3c847c9f0776aa1ecc4fa049d49907f5230e5"
+    }
+  },
+  "known_consumed_scene_ids": [
+    "1LXtFkjw3qL",
+    "2n8kARJN3HM",
+    "5LpN3gDmAk7",
+    "759xd9YjKW5",
+    "HxpKQynjfin",
+    "JF19kD82Mey",
+    "PuKPg4mmafe",
+    "SN83YJsR3w2",
+    "ULsKaCPVFJR",
+    "Uxmj2M2itWa",
+    "V2XKFyX4ASd",
+    "Vvot9Ly1tCj",
+    "VzqfbhrpDEA",
+    "XcA2TqTSSAj",
+    "b8cTxDM8gDG",
+    "gTV8FGcVJC9",
+    "i5noydFURQK",
+    "jh4fc5c5qoQ",
+    "kEZ7cmS4wCh",
+    "mJXqzFtmKg4",
+    "sKLMLpTHeUy"
+  ],
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "purpose": "expanded train-development fit; no confirmation or public split",
+  "revision": "mf3zl_rcsp_v1r1_train",
+  "rows": 1540,
+  "scenes": 39,
+  "schema_version": "revealnav-mf3zl-v1r1-train-protocol/1",
+  "source_audit_status": "TRAIN_DATA_SUPPORT_PASS",
+  "source_files": {
+    "audit": {
+      "bytes": 2194,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1_audit_fix_v2/MF3ZL_V1R1_DATA_SUPPORT_AUDIT_CORRECTED.json",
+      "sha256": "521c3738ea4cf7cfe428f7896ed374dcd046f2d79fb1d1b2a7d646097c446672"
+    },
+    "dsr_protocol": {
+      "bytes": 1096761,
+      "path": "artifacts/training/mf3zk_dsr_v1/MF3ZK_DSR_PROTOCOL.json",
+      "sha256": "6d16095c568ddab820fea34a04422cde692c66687beeed8d4a58717c76bae8ac"
+    },
+    "parent_manifest": {
+      "bytes": 3523720,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_EXACT_REPLAY_MANIFEST.json",
+      "sha256": "0045cb1a50fce45bd79c51a9dad615d01fd50f3388707fba1fa4e0b2a9dcd555"
+    },
+    "parent_protocol": {
+      "bytes": 7098,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_RCSP_PROTOCOL.json",
+      "sha256": "23d250f378d2a8eb45e3d7329d89b99b312e40b86dc48647b1b3962a48839812"
+    },
+    "v1r1_manifest": {
+      "bytes": 1025162,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1/MF3ZL_R2R_VARIANT_MANIFEST.json",
+      "sha256": "8848e33c153411a544d7dbbbf027c1732c3559bd2af23cae58fc9bb8e887854a"
+    }
+  },
+  "status": "SEALED_BEFORE_MF3ZL_V1R1_TRAINING",
+  "training": {
+    "checkpoint_only_if_nested_pass": true,
+    "decision_rule": "switch_logit > 0",
+    "dual_learning_rate": 0.05,
+    "inner_fold_salt": "mf3zl-rcsp-v1-inner-scenes/1",
+    "inner_folds": 4,
+    "learning_rate": 0.005,
+    "outer_folds": 5,
+    "representation": "semantic",
+    "risk_constrained": true,
+    "seeds": [
+      20260830,
+      20260831,
+      20260832
+    ],
+    "training_steps": 800,
+    "weight_decay_grid": [
+      0.0001,
+      0.001,
+      0.01
+    ]
+  }
+}

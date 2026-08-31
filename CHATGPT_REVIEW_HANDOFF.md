@@ -1,104 +1,150 @@
-# RevealVLN — Review Handoff Snapshot
+# RevealVLN — MF3ZL-RCSP v1r1 review handoff
 
-Snapshot date: 2026-08-30
+Snapshot date: 2026-08-31
 Repository: `DStardust/RevealVLN`
-Purpose: provide a bounded, reproducible context for an independent technical
-review of the current method and its next revision.
+Purpose: give an independent ChatGPT/reviewer enough current, machine-readable
+evidence to assess the method and recommend one scientifically valid next step.
 
-## Post-review update
+## Request to the reviewer
 
-The requested correctness revision has now been implemented separately as
-MF3ZK-NP; see `METHOD_REVISION_3ZK_NESTED_POOLED.md` and
-`MF3ZK_NESTED_POOLED_RUN_SUMMARY.md`.  It uses nested whole-scene selection,
-pools the return/harm estimator across tiers, reports equal-budget and coverage
-diagnostics, and collapses 50 byte-identical cross-source labels before
-fitting.  The corrected 249-row train-development run **failed**.  The result
-does not authorize another confirmation or any public split.  The remainder
-of this document records the historical MF3ZK snapshot that motivated the
-review; its old confirmation remains consumed evidence only.
+Please review the implementation and the linked compact artifacts, with the
+latest result treated as a genuine train-development failure. Do not assume
+that a positive result is required. In particular, answer:
 
-## Historical method under review
+1. Is the failure more consistent with an implementation/protocol defect, an
+   objective/representation problem, or insufficient support coverage?
+2. What is the smallest *versioned* algorithm revision worth attempting next,
+   without tuning on consumed confirmation data or any public split?
+3. Which controls and diagnostics are required before authorizing an unseen
+   evaluation? Separate correctness checks from publishable evidence.
+4. Does the proposed RCSP formulation make a defensible contribution over a
+   frozen-policy reranker, margin baseline, selective prediction gate, or
+   residual policy?
+5. Should the frozen-proposal gate line be continued, or should the proposal
+   mechanism/causal observation state be revised instead?
 
-`MF3ZK` is a train-only joint revision built on the frozen `MF3ZG` hierarchy:
+Please inspect the source rather than inferring success from names. Do not
+recommend threshold/feature changes based on the old confirmation outcomes.
 
-1. The ETP-R1 VLN policy, MF3V proposal ranker, and proposal/backbone weights
-   remain frozen.
-2. A shared action-aligned return/harm gate is fitted on RxR-train and
-   R2R-train with effective benchmark weight 1:1.
-3. The gate uses instruction, checkpoint/history, native-action, and proposed
-   alternative embeddings together with policy-side features. It does not
-   receive a benchmark identifier.
-4. Core and expansion proposal tiers are disjoint and retain the one-switch
-   hierarchy. RxR-only and R2R-only fits use the same code and scene-fold
-   protocol as controls.
-5. Model selection uses scene-disjoint OOF data. Confirmation scenes are
-   excluded across the two benchmarks.
+## Frozen boundaries
 
-The intended scientific claim is conditional and safety-oriented: an
-action-aligned return/harm screen can decide when a frozen policy's proposed
-alternative is worth executing. It is not a claim that every episode should
-be changed, and it is not yet a public benchmark result.
+`FROZEN_SPEC.md` and the earlier accepted revisions remain unchanged. The
+ETP-R1 policy, MF3V proposal ranker, MF3ZG proposal hierarchy, checkpoints,
+utility definition, exact one-switch pairing rule, and public-split prohibition
+are frozen. No revision in this snapshot fine-tunes the backbone, changes the
+proposal hierarchy, constructs non-exact pairs, or reads `val_seen`,
+`val_unseen`, or `test` for selection.
 
-## Evidence available in this snapshot
+The old 52-episode confirmation is consumed evidence. It is retained only as
+a retrospective failure and is not reused for fitting, feature design,
+threshold selection, or a claim of fresh validation.
 
-- 1,200 deterministic R2R-train treatment routes were collected with the
-  frozen proposal controller; no public split was read.
-- 778 missing same-episode native baselines were completed with a separate
-  train-only worker. Pairing is by exact episode ID; cross-episode pairing is
-  prohibited.
-- Strict assembly retained 126 exact one-switch pairs (46 core, 80
-  expansion). The other 1,074 routes produced no exact one-switch pair and
-  were retained only as documented exclusions.
-- Joint fitting used 299 rows over 39 fit scenes. The two joint tiers and the
-  RxR-only/R2R-only controls all passed the internal train-return gate.
-- A sealed confirmation cohort contains 52 R2R-train episodes over 13 scenes
-  not used for fitting. All 156 paired runs completed without runtime errors.
-- The confirmation gate **failed**: MF3ZK made one action change versus three
-  for MF3ZG; MF3ZK minus MF3ZG mean utility was -0.00086519, with a scene
-  bootstrap interval [-0.00208637, 0]. This is a real generalization failure
-  signal, not a successful benchmark result.
-- Consequently, no MF3ZK public `val_unseen` or `test` evaluation is
-  authorized in this snapshot.
+## Current data and audit status
 
-The machine-readable evidence is in:
+The v1r1 dense replay was outcome-blind and restricted to already-consumed
+development scenes. Its native shadow pass completed 2,703/2,703 episodes;
+290 targeted treatments completed 290/290 with no runtime failures. The
+versioned independent audit corrected a record-field naming mistake in the
+first audit without changing labels or rollouts:
 
-- `artifacts/design/METHOD_REVISION_3ZK_JOINT_TRAINING.md`
-- `artifacts/training/mf3zk_joint_v1/MF3ZK_JOINT_PROTOCOL.json`
-- `artifacts/training/mf3zk_joint_v1/r2r_collection/MF3ZK_R2R_DIRECT_SWITCH_MANIFEST.json`
-- `artifacts/training/mf3zk_joint_v1/gates/MF3ZK_JOINT_TRAINING_RESULT.json`
-- `artifacts/training/mf3zk_joint_v1/confirmation/MF3ZK_TRAIN_CONFIRMATION_RESULT.json`
+| source | unique exact events | scenes |
+|---|---:|---:|
+| RxR combined development | 997 | 38 |
+| R2R combined development | 543 | 37 |
+| joint canonical set | 1,540 | 39 |
 
-## Questions for an independent reviewer
+The corrected audit reports zero identity conflicts and
+`rcsp_training_authorized=true`. Public split access remains false. The R2R
+v1r1 variant contribution is 290 events (151 positive, 19 catastrophic);
+these counts are descriptive, not an outcome-dependent stopping rule.
 
-Please inspect the source and evidence and answer these questions without
-assuming a positive result:
+## Latest algorithm results
 
-1. Is the action-aligned return/harm gate a sufficiently distinct and
-   defensible contribution over a standard policy residual, reranker, or
-   confidence threshold?
-2. Do the collection, exact-episode pairing, scene holdout, OOF selection,
-   and confirmation procedures prevent leakage and post-hoc selection?
-3. Is the low activation rate a calibration/coverage problem, a proposal
-   problem, or evidence that the method is not useful for this task?
-4. What is the smallest scientifically valid revision that could improve
-   held-out performance without tuning on the confirmation or public unseen
-   split?
-5. Which ablations and baselines are mandatory before making any CVPR-level
-   claim? Please distinguish engineering checks, exploratory results, and
-   publishable evidence.
-6. Audit the implementation for silent action-index drift, incorrect metric
-   pairing, scene-fold errors, or overly permissive gate criteria.
+`MF3ZL-RCSP v1r1 train` uses the zero-relative-delta correctness revision of
+RCSP, nested whole-MP3D-scene cross-fitting (5 outer / 4 inner folds),
+domain-scene-episode-event weighting, common random numbers, fixed model and
+primal-dual constants, and only the pre-sealed weight-decay grid
+`{1e-4, 1e-3, 1e-2}`. It uses 1,540 rows and 39 scenes; no public split was
+read.
 
-## Scope and exclusions
+The result is:
 
-This Git snapshot intentionally does **not** add Matterport/R2R/RxR payloads,
-ETP-R1 checkpoints, virtual environments, caches, raw per-episode traces, large
-logs, or any secret file. The historical repository contains three compact
-MF2 `post_excursion_q.pt` files (about 1.9 MB each); they are unrelated to the
-MF3ZK snapshot and are retained for backward compatibility. All current
-MF3ZK weights and raw run outputs remain project-local under the workspace and
-are not needed to review the design logic. No API key or private credential is
-part of the repository.
+```text
+status                    TRAIN_DEVELOPMENT_FAIL
+mainline                  NESTED_RCSP_FAIL
+first failure             outer_fold_0:no_feasible_inner_candidate
+checkpoint_created        false
+confirmation_authorized   false
+public_unseen_authorized  false
+```
 
-The result above is a research diagnostic. It must not be described as SOTA,
-a public benchmark improvement, or evidence of acceptance probability.
+The best-looking first outer-fold trial (weight decay `0.01`) is still not
+scientifically feasible: R2R total utility is positive (`2.1418`), but RxR
+leave-one-selected-scene minimum is negative (`-0.2203`), RxR catastrophic
+rate is above the relevant simple baselines, and the candidate does not pass
+the pre-registered cross-domain/baseline criteria. The other weight decays
+have clearly negative RxR utility or fail the same criteria. Controls were
+intentionally skipped because the mainline did not produce a complete outer
+OOF result; this is recorded, not hidden.
+
+For transparency, the first outer-fold evidence (the run stops fail-closed at
+this fold) is:
+
+| weight decay | R2R total utility | RxR total utility | R2R catastrophic rate | RxR catastrophic rate |
+|---:|---:|---:|---:|---:|
+| `1e-4` | `+1.048716` | `-6.042747` | `4.58%` | `11.11%` |
+| `1e-3` | `+1.861237` | `-1.253639` | `5.22%` | `10.08%` |
+| `1e-2` | `+2.141801` | `+2.086910` | `5.16%` | `10.11%` |
+
+These are aggregate event-level totals within one outer-fold evaluation, not
+benchmark SR/SPL/nDTW claims. The `1e-2` row still fails its RxR
+leave-one-selected-scene criterion (`-0.220339`) and the pre-registered
+matched-baseline/risk checks, so it cannot be selected or exported as a model.
+
+The isolated RxR-only zero-delta probe (997 rows) and a fixed 2,400-step
+long-training diagnostic both independently failed at
+`outer_fold_0:no_feasible_inner_candidate`. More optimization steps alone
+did not resolve the issue. These are diagnostics, not public benchmark
+results.
+
+## Evidence files in this Git snapshot
+
+The following small JSON files are intentionally included so a reviewer can
+reproduce the reported decisions from the repository:
+
+- `artifacts/training/mf3zl_rcsp_v1r1_audit_fix_v2/MF3ZL_V1R1_DATA_SUPPORT_AUDIT_CORRECTED.json`
+- `artifacts/training/mf3zl_rcsp_v1r1_audit_fix_v2/MF3ZL_V1R1_AUDIT_FIX_V2_PROTOCOL.json`
+- `artifacts/training/mf3zl_rcsp_v1r1_train/MF3ZL_RCSP_V1R1_TRAIN_PROTOCOL.json`
+- `artifacts/training/mf3zl_rcsp_v1r1_train/MF3ZL_RCSP_V1R1_TRAIN_DEVELOPMENT_RESULT.json`
+- `artifacts/training/mf3zl_rcsp_rxr_probe_v1_1/MF3ZL_RXR_PROBE_PROTOCOL.json`
+- `artifacts/training/mf3zl_rcsp_rxr_probe_v1_1/MF3ZL_RXR_PROBE_RESULT.json`
+- `artifacts/training/mf3zl_rcsp_rxr_longtrain/MF3ZL_RXR_LONGTRAIN_PROTOCOL.json`
+- `artifacts/training/mf3zl_rcsp_rxr_longtrain/MF3ZL_RXR_LONGTRAIN_RESULT.json`
+
+The corresponding versioned method notes and source are tracked in
+`METHOD_REVISION_3ZL_RCSP*.md`, `revealnav_mf3/rcsp*.py`, and the associated
+`scripts/` and `tests/` files. Artifact paths are project-relative; their
+source protocols contain the expected provenance and access flags.
+
+## Interpretation that must not be overclaimed
+
+The data-support gate passes, so the current negative result is not evidence
+that the proposal pool is empty. It does show that this RCSP objective and
+representation do not yet satisfy the pre-registered scene-level safety and
+utility criteria. R2R and RxR behavior differs; a joint positive aggregate
+would not be allowed to conceal a domain regression. No checkpoint was
+authorized and no claim of SOTA, public benchmark improvement, reproducibility
+on unseen data, or acceptance probability follows from this snapshot.
+
+Any next experiment must be a new, explicitly versioned revision. It may use
+the sealed development artifacts for diagnostics, but it must not retune on
+the consumed confirmation cohort or on a public split. A future public
+evaluation can be authorized only by a separate, independently written
+authorization artifact after all pre-registered development gates pass.
+
+## Deliberately omitted from Git
+
+Raw Matterport/R2R/RxR payloads, visual features, checkpoints, virtual
+environments, caches, per-episode traces, large logs, reserve files, and all
+credentials/API keys remain local to the self-contained workspace. This keeps
+the review snapshot small and prevents accidental data or secret disclosure.

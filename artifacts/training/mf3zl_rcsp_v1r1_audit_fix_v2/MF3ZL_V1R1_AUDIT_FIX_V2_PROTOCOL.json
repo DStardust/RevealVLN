@@ -1,0 +1,95 @@
+{
+  "authorization": {
+    "confirmation": false,
+    "public_unseen": false,
+    "rcsp_training": false
+  },
+  "correction": {
+    "episode_id_global_uniqueness_assumed": false,
+    "gate_relaxed": false,
+    "identity_key": [
+      "dataset",
+      "scene_id",
+      "episode_id",
+      "decision_step"
+    ],
+    "labels_changed": false,
+    "manifest_level_public_split_flag_used": true,
+    "rollouts_rerun": false
+  },
+  "data_gate": {
+    "maximum_conflicting_identities": 0,
+    "minimum_combined_exact_events_per_domain": 300,
+    "minimum_development_scenes_per_domain": 30
+  },
+  "implementation_files": {
+    "audit_fix_v1_script": {
+      "bytes": 13707,
+      "path": "scripts/audit_mf3zl_rcsp_v1r1_fix.py",
+      "sha256": "fa95f9fb248ca947f467a30e4c6f7f66fef5a5aedec8644cf654002e90f21a5f"
+    },
+    "audit_fix_v2_script": {
+      "bytes": 13322,
+      "path": "scripts/audit_mf3zl_rcsp_v1r1_fix_v2.py",
+      "sha256": "abecd5f09030bbe82d784583051cfa0620e8f6c9cca3057c5e7d4d0a228a964f"
+    },
+    "sealed_v1r1_collector": {
+      "bytes": 28849,
+      "path": "scripts/collect_mf3zl_rcsp_v1r1.py",
+      "sha256": "7d763c364291d51fcb78833a9ac086f9f2551d8e522c5b1eaed3a41034c040aa"
+    }
+  },
+  "parent_revision": "mf3zl_rcsp_v1r1_audit_fix",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "purpose": "read-only correction of event-identity and record-schema checks",
+  "revision": "mf3zl_rcsp_v1r1_audit_fix_v2",
+  "schema_version": "revealnav-mf3zl-v1r1-audit-fix-v2-protocol/1",
+  "source_files": {
+    "dsr_protocol": {
+      "bytes": 1096761,
+      "path": "artifacts/training/mf3zk_dsr_v1/MF3ZK_DSR_PROTOCOL.json",
+      "sha256": "6d16095c568ddab820fea34a04422cde692c66687beeed8d4a58717c76bae8ac"
+    },
+    "parent_manifest": {
+      "bytes": 3523720,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_EXACT_REPLAY_MANIFEST.json",
+      "sha256": "0045cb1a50fce45bd79c51a9dad615d01fd50f3388707fba1fa4e0b2a9dcd555"
+    },
+    "parent_protocol": {
+      "bytes": 7098,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_RCSP_PROTOCOL.json",
+      "sha256": "23d250f378d2a8eb45e3d7329d89b99b312e40b86dc48647b1b3962a48839812"
+    },
+    "v1r1_manifest": {
+      "bytes": 1025162,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1/MF3ZL_R2R_VARIANT_MANIFEST.json",
+      "sha256": "8848e33c153411a544d7dbbbf027c1732c3559bd2af23cae58fc9bb8e887854a"
+    },
+    "v1r1_protocol": {
+      "bytes": 4809,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1/MF3ZL_RCSP_V1R1_PROTOCOL.json",
+      "sha256": "dee1fbf33e7a7d26653a443753ece287e41d255d668f115a24e57e656ae55bdb"
+    },
+    "v1r1_selection": {
+      "bytes": 1335473,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1/MF3ZL_R2R_VARIANT_SELECTION.json",
+      "sha256": "aef100478124079e9f248dab6b9ec3cd9747d3b5ac3363018dc0993b387ba02a"
+    },
+    "v1r1_target_progress": {
+      "bytes": 371,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1/MF3ZL_R2R_VARIANT_TARGET_PROGRESS.json",
+      "sha256": "2f452246df243f4a1023b6f181be413aa9cd5819d0aa48e21b4a0e933726e209"
+    },
+    "v1r1_targets": {
+      "bytes": 443783,
+      "path": "artifacts/training/mf3zl_rcsp_v1r1/MF3ZL_R2R_VARIANT_TARGETS.json",
+      "sha256": "ec30c26294a100510e67d7d2162563ecce6d10e1cd84a70f5b51e328e1e54c05"
+    }
+  },
+  "status": "SEALED_BEFORE_V1R1_AUDIT_CORRECTION_V2"
+}

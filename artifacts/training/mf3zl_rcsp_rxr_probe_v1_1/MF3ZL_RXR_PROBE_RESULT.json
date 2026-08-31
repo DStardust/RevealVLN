@@ -1,0 +1,2124 @@
+{
+  "algorithm_fit_status": "NESTED_RCSP_FAIL",
+  "checkpoint_created": false,
+  "confirmation_authorized": false,
+  "diagnostic": {
+    "failure_reasons": [
+      "outer_fold_0:no_feasible_inner_candidate"
+    ],
+    "outer_folds": [
+      {
+        "common_random_numbers_verified": true,
+        "evaluation_scenes": [
+          "17DRP5sb8fy",
+          "82sE5b5pLXE",
+          "EDJbREhghzL",
+          "VLzqgDo317F",
+          "rPc6DW4iMge"
+        ],
+        "fit_scenes": [
+          "1pXnuDYAj8r",
+          "29hnd4uzFmX",
+          "5q7pvUzZiYa",
+          "7y3sRwLe3Va",
+          "8WUmhLawc2A",
+          "B6ByNegPMKs",
+          "D7G3Y4RVNrH",
+          "D7N2EKCX4Sj",
+          "E9uDoFAP3SH",
+          "GdvgFV5R1Z5",
+          "JeFG25nYj2p",
+          "JmbYfDe2QKZ",
+          "PX4nDJXEHrG",
+          "Pm6F8kyY3z2",
+          "S9hNv5qa7GM",
+          "VFuaQ6m2Qom",
+          "VVfe2KiqLaN",
+          "YmJkqBEsHnH",
+          "ZMojNkEp431",
+          "aayBHfsNo7d",
+          "ac26ZMwG7aT",
+          "cV4RVeZvu5T",
+          "e9zR4mvMWw7",
+          "p5wJjkQkbXX",
+          "pRbA3pwrgk9",
+          "qoiz87JEwZ2",
+          "r1Q1Z4BcV1o",
+          "r47D5H71a5s",
+          "s8pcmisQ38h",
+          "sT4fr6TAbpF",
+          "uNb9QFRL6hY",
+          "ur6pFq6Qu1A",
+          "vyrNrziPKCB"
+        ],
+        "inner_scene_assignment": {
+          "1pXnuDYAj8r": 2,
+          "29hnd4uzFmX": 3,
+          "5q7pvUzZiYa": 0,
+          "7y3sRwLe3Va": 1,
+          "8WUmhLawc2A": 2,
+          "B6ByNegPMKs": 0,
+          "D7G3Y4RVNrH": 0,
+          "D7N2EKCX4Sj": 3,
+          "E9uDoFAP3SH": 0,
+          "GdvgFV5R1Z5": 1,
+          "JeFG25nYj2p": 2,
+          "JmbYfDe2QKZ": 1,
+          "PX4nDJXEHrG": 3,
+          "Pm6F8kyY3z2": 2,
+          "S9hNv5qa7GM": 0,
+          "VFuaQ6m2Qom": 1,
+          "VVfe2KiqLaN": 3,
+          "YmJkqBEsHnH": 1,
+          "ZMojNkEp431": 1,
+          "aayBHfsNo7d": 2,
+          "ac26ZMwG7aT": 1,
+          "cV4RVeZvu5T": 2,
+          "e9zR4mvMWw7": 0,
+          "p5wJjkQkbXX": 3,
+          "pRbA3pwrgk9": 1,
+          "qoiz87JEwZ2": 3,
+          "r1Q1Z4BcV1o": 0,
+          "r47D5H71a5s": 3,
+          "s8pcmisQ38h": 0,
+          "sT4fr6TAbpF": 2,
+          "uNb9QFRL6hY": 2,
+          "ur6pFq6Qu1A": 0,
+          "vyrNrziPKCB": 3
+        },
+        "outer_fold": 0,
+        "scene_overlap": [],
+        "selected_weight_decay": null,
+        "trials": [
+          {
+            "equal_budget": {
+              "budget": 387,
+              "fold_domain_matched": {
+                "baselines": {
+                  "fixed_seed_random": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 387,
+                        "catastrophic": 40,
+                        "catastrophic_rate": 0.10335917312661498,
+                        "coverage": 0.43827859569648925,
+                        "deployed_mean_utility": -0.00270439558561155,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -3.666649100165974,
+                        "negative": 179,
+                        "positive": 164,
+                        "selected_mean_utility": -0.006170494320658911,
+                        "selected_scene_count": 30,
+                        "ties": 44,
+                        "total_utility": -2.3879813020949987
+                      }
+                    },
+                    "overall": {
+                      "authorized": 387,
+                      "catastrophic": 40,
+                      "catastrophic_rate": 0.10335917312661498,
+                      "coverage": 0.43827859569648925,
+                      "deployed_mean_utility": -0.00270439558561155,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -3.666649100165974,
+                      "negative": 179,
+                      "positive": 164,
+                      "selected_mean_utility": -0.006170494320658911,
+                      "selected_scene_count": 30,
+                      "ties": 44,
+                      "total_utility": -2.3879813020949987
+                    }
+                  },
+                  "high_proposal_score": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 387,
+                        "catastrophic": 33,
+                        "catastrophic_rate": 0.08527131782945736,
+                        "coverage": 0.43827859569648925,
+                        "deployed_mean_utility": -0.0013321720867581538,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -3.367634668757894,
+                        "negative": 169,
+                        "positive": 173,
+                        "selected_mean_utility": -0.0030395554330941857,
+                        "selected_scene_count": 32,
+                        "ties": 45,
+                        "total_utility": -1.1763079526074498
+                      }
+                    },
+                    "overall": {
+                      "authorized": 387,
+                      "catastrophic": 33,
+                      "catastrophic_rate": 0.08527131782945736,
+                      "coverage": 0.43827859569648925,
+                      "deployed_mean_utility": -0.0013321720867581538,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -3.367634668757894,
+                      "negative": 169,
+                      "positive": 173,
+                      "selected_mean_utility": -0.0030395554330941857,
+                      "selected_scene_count": 32,
+                      "ties": 45,
+                      "total_utility": -1.1763079526074498
+                    }
+                  },
+                  "low_native_margin": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 387,
+                        "catastrophic": 39,
+                        "catastrophic_rate": 0.10077519379844961,
+                        "coverage": 0.43827859569648925,
+                        "deployed_mean_utility": -0.0026074184966146333,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -3.338807200957171,
+                        "negative": 180,
+                        "positive": 176,
+                        "selected_mean_utility": -0.005949226182198246,
+                        "selected_scene_count": 33,
+                        "ties": 31,
+                        "total_utility": -2.3023505325107214
+                      }
+                    },
+                    "overall": {
+                      "authorized": 387,
+                      "catastrophic": 39,
+                      "catastrophic_rate": 0.10077519379844961,
+                      "coverage": 0.43827859569648925,
+                      "deployed_mean_utility": -0.0026074184966146333,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -3.338807200957171,
+                      "negative": 180,
+                      "positive": 176,
+                      "selected_mean_utility": -0.005949226182198246,
+                      "selected_scene_count": 33,
+                      "ties": 31,
+                      "total_utility": -2.3023505325107214
+                    }
+                  }
+                },
+                "strata": [
+                  {
+                    "budget": 107,
+                    "dataset": "RxR",
+                    "eligible": 229,
+                    "outer_fold": 0
+                  },
+                  {
+                    "budget": 82,
+                    "dataset": "RxR",
+                    "eligible": 196,
+                    "outer_fold": 1
+                  },
+                  {
+                    "budget": 76,
+                    "dataset": "RxR",
+                    "eligible": 174,
+                    "outer_fold": 2
+                  },
+                  {
+                    "budget": 122,
+                    "dataset": "RxR",
+                    "eligible": 284,
+                    "outer_fold": 3
+                  }
+                ]
+              },
+              "global": {
+                "fixed_seed_random": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 387,
+                      "catastrophic": 42,
+                      "catastrophic_rate": 0.10852713178294573,
+                      "coverage": 0.43827859569648925,
+                      "deployed_mean_utility": -0.004501231331338255,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -5.254761697261907,
+                      "negative": 181,
+                      "positive": 163,
+                      "selected_mean_utility": -0.010270251332226562,
+                      "selected_scene_count": 30,
+                      "ties": 43,
+                      "total_utility": -3.9745872655716794
+                    }
+                  },
+                  "overall": {
+                    "authorized": 387,
+                    "catastrophic": 42,
+                    "catastrophic_rate": 0.10852713178294573,
+                    "coverage": 0.43827859569648925,
+                    "deployed_mean_utility": -0.004501231331338255,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -5.254761697261907,
+                    "negative": 181,
+                    "positive": 163,
+                    "selected_mean_utility": -0.010270251332226562,
+                    "selected_scene_count": 30,
+                    "ties": 43,
+                    "total_utility": -3.9745872655716794
+                  }
+                },
+                "high_proposal_score": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 387,
+                      "catastrophic": 32,
+                      "catastrophic_rate": 0.082687338501292,
+                      "coverage": 0.43827859569648925,
+                      "deployed_mean_utility": 0.001169911673215788,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -1.1582947087009026,
+                      "negative": 168,
+                      "positive": 176,
+                      "selected_mean_utility": 0.002669333352582793,
+                      "selected_scene_count": 32,
+                      "ties": 43,
+                      "total_utility": 1.033032007449541
+                    }
+                  },
+                  "overall": {
+                    "authorized": 387,
+                    "catastrophic": 32,
+                    "catastrophic_rate": 0.082687338501292,
+                    "coverage": 0.43827859569648925,
+                    "deployed_mean_utility": 0.001169911673215788,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -1.1582947087009026,
+                    "negative": 168,
+                    "positive": 176,
+                    "selected_mean_utility": 0.002669333352582793,
+                    "selected_scene_count": 32,
+                    "ties": 43,
+                    "total_utility": 1.033032007449541
+                  }
+                },
+                "low_native_margin": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 387,
+                      "catastrophic": 38,
+                      "catastrophic_rate": 0.09819121447028424,
+                      "coverage": 0.43827859569648925,
+                      "deployed_mean_utility": -0.0019275685881968325,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -2.7384997318242523,
+                      "negative": 178,
+                      "positive": 178,
+                      "selected_mean_utility": -0.004398044091415513,
+                      "selected_scene_count": 33,
+                      "ties": 31,
+                      "total_utility": -1.7020430633778032
+                    }
+                  },
+                  "overall": {
+                    "authorized": 387,
+                    "catastrophic": 38,
+                    "catastrophic_rate": 0.09819121447028424,
+                    "coverage": 0.43827859569648925,
+                    "deployed_mean_utility": -0.0019275685881968325,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -2.7384997318242523,
+                    "negative": 178,
+                    "positive": 178,
+                    "selected_mean_utility": -0.004398044091415513,
+                    "selected_scene_count": 33,
+                    "ties": 31,
+                    "total_utility": -1.7020430633778032
+                  }
+                }
+              }
+            },
+            "evidence": {
+              "domains": {
+                "RxR": {
+                  "authorized": 387,
+                  "catastrophic": 36,
+                  "catastrophic_rate": 0.09302325581395349,
+                  "coverage": 0.43827859569648925,
+                  "deployed_mean_utility": -0.0007928050274044419,
+                  "eligible": 883,
+                  "minimum_leave_one_selected_scene_out_total": -1.8758194089617242,
+                  "negative": 179,
+                  "positive": 169,
+                  "selected_mean_utility": -0.0018089065612354582,
+                  "selected_scene_count": 32,
+                  "ties": 39,
+                  "total_utility": -0.7000468391981223
+                }
+              },
+              "overall": {
+                "authorized": 387,
+                "catastrophic": 36,
+                "catastrophic_rate": 0.09302325581395349,
+                "coverage": 0.43827859569648925,
+                "deployed_mean_utility": -0.0007928050274044419,
+                "eligible": 883,
+                "minimum_leave_one_selected_scene_out_total": -1.8758194089617242,
+                "negative": 179,
+                "positive": 169,
+                "selected_mean_utility": -0.0018089065612354582,
+                "selected_scene_count": 32,
+                "ties": 39,
+                "total_utility": -0.7000468391981223
+              },
+              "ungated_domains": {
+                "RxR": {
+                  "authorized": 883,
+                  "catastrophic": 93,
+                  "catastrophic_rate": 0.10532276330690826,
+                  "coverage": 1.0,
+                  "deployed_mean_utility": -0.007918843468645726,
+                  "eligible": 883,
+                  "minimum_leave_one_selected_scene_out_total": -8.943770478920452,
+                  "negative": 426,
+                  "positive": 368,
+                  "selected_mean_utility": -0.007918843468645726,
+                  "selected_scene_count": 33,
+                  "ties": 89,
+                  "total_utility": -6.992338782814176
+                }
+              }
+            },
+            "failure_reasons": [
+              "RxR:nonpositive_utility",
+              "RxR:nonpositive_leave_one_selected_scene",
+              "catastrophic_rate_above_high_proposal_score",
+              "RxR:catastrophic_rate_above_high_proposal_score"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "5q7pvUzZiYa",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "E9uDoFAP3SH",
+                  "S9hNv5qa7GM",
+                  "e9zR4mvMWw7",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "5136bc0eeea72bf3464f7fe37645d42a667cda3c4707037f3ebfdc8af1dee2d7",
+                  "b8a16533352e2dfb0475e6a7cb273fc6e28f50a66f3a22161e27126ee4cc3a5a",
+                  "d2ec723bdf1df03c44360eb87577894b7fa23dc76095fb88856939a9c94b7d24"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.02781910076737404,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05442120134830475
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.028098704293370247,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.054654333740472794
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.027447978034615517,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05471302568912506
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "GdvgFV5R1Z5",
+                  "JmbYfDe2QKZ",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "pRbA3pwrgk9"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "JeFG25nYj2p",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VVfe2KiqLaN",
+                  "aayBHfsNo7d",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "e30ba08d56ceaac7dd88002c33f2c1492f2a5a2ddf2a74cede5ff565ddc0f86c",
+                  "17b0a63cd04da20365361ef82a974b22e96d25aa9629d88edc2386dd3b33ffeb",
+                  "d416ba934199d54b9fa3ec08906547a9e5f00e6157381c5b96e63c2c301c14b4"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.02623744122684002,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.057968780398368835
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.026523586362600327,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05796149745583534
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.02621324732899666,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.057929627597332
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "8WUmhLawc2A",
+                  "JeFG25nYj2p",
+                  "Pm6F8kyY3z2",
+                  "aayBHfsNo7d",
+                  "cV4RVeZvu5T",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY"
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "e98c26fe581f48ede0f14072f03da3b79983b20555ceb8d062c39ed0f5310124",
+                  "696621d3e6818cc82f77856a4850d8e94a4a7b3c99f91c403b9b12c44fbd1e85",
+                  "60893c51c0c51432bef33e234895415a3b1b11e90033dc034e86e00d19c2c224"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.027056993916630745,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05708426982164383
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.0272982195019722,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05695592239499092
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.02688661590218544,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.057031210511922836
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "D7N2EKCX4Sj",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "vyrNrziPKCB"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "9b41832a5e98668af5398c8d99518ca785970687214a5afcdbcf29d48b76969c",
+                  "047be289e34478983d12eb60d6c7c7569627b975ff57e4e4a8c77f0ae12fc6e0",
+                  "f284afa4de3b8fb6adb3aab7477128f94f65c673b2a01b92bea03320df5c9f50"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.021386144682765007,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05384555459022522
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.02137632668018341,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.053900036960840225
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.021291455253958702,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.05390911176800728
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  }
+                ]
+              }
+            ],
+            "inner_oof_preference_loss": 1.31160479283649,
+            "weight_decay": 0.0001
+          },
+          {
+            "equal_budget": {
+              "budget": 374,
+              "fold_domain_matched": {
+                "baselines": {
+                  "fixed_seed_random": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 374,
+                        "catastrophic": 39,
+                        "catastrophic_rate": 0.10427807486631016,
+                        "coverage": 0.42355605889014725,
+                        "deployed_mean_utility": -0.00398284408360105,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -4.795519123890703,
+                        "negative": 179,
+                        "positive": 155,
+                        "selected_mean_utility": -0.009403345790961836,
+                        "selected_scene_count": 30,
+                        "ties": 40,
+                        "total_utility": -3.5168513258197267
+                      }
+                    },
+                    "overall": {
+                      "authorized": 374,
+                      "catastrophic": 39,
+                      "catastrophic_rate": 0.10427807486631016,
+                      "coverage": 0.42355605889014725,
+                      "deployed_mean_utility": -0.00398284408360105,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -4.795519123890703,
+                      "negative": 179,
+                      "positive": 155,
+                      "selected_mean_utility": -0.009403345790961836,
+                      "selected_scene_count": 30,
+                      "ties": 40,
+                      "total_utility": -3.5168513258197267
+                    }
+                  },
+                  "high_proposal_score": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 374,
+                        "catastrophic": 32,
+                        "catastrophic_rate": 0.0855614973262032,
+                        "coverage": 0.42355605889014725,
+                        "deployed_mean_utility": 0.0007080294353189698,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -1.5661367247637943,
+                        "negative": 162,
+                        "positive": 170,
+                        "selected_mean_utility": 0.0016716309930124341,
+                        "selected_scene_count": 32,
+                        "ties": 42,
+                        "total_utility": 0.6251899913866503
+                      }
+                    },
+                    "overall": {
+                      "authorized": 374,
+                      "catastrophic": 32,
+                      "catastrophic_rate": 0.0855614973262032,
+                      "coverage": 0.42355605889014725,
+                      "deployed_mean_utility": 0.0007080294353189698,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -1.5661367247637943,
+                      "negative": 162,
+                      "positive": 170,
+                      "selected_mean_utility": 0.0016716309930124341,
+                      "selected_scene_count": 32,
+                      "ties": 42,
+                      "total_utility": 0.6251899913866503
+                    }
+                  },
+                  "low_native_margin": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 374,
+                        "catastrophic": 38,
+                        "catastrophic_rate": 0.10160427807486631,
+                        "coverage": 0.42355605889014725,
+                        "deployed_mean_utility": -0.0022103851494289714,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -2.9882267553922315,
+                        "negative": 173,
+                        "positive": 169,
+                        "selected_mean_utility": -0.005218636596111716,
+                        "selected_scene_count": 33,
+                        "ties": 32,
+                        "total_utility": -1.951770086945782
+                      }
+                    },
+                    "overall": {
+                      "authorized": 374,
+                      "catastrophic": 38,
+                      "catastrophic_rate": 0.10160427807486631,
+                      "coverage": 0.42355605889014725,
+                      "deployed_mean_utility": -0.0022103851494289714,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -2.9882267553922315,
+                      "negative": 173,
+                      "positive": 169,
+                      "selected_mean_utility": -0.005218636596111716,
+                      "selected_scene_count": 33,
+                      "ties": 32,
+                      "total_utility": -1.951770086945782
+                    }
+                  }
+                },
+                "strata": [
+                  {
+                    "budget": 92,
+                    "dataset": "RxR",
+                    "eligible": 229,
+                    "outer_fold": 0
+                  },
+                  {
+                    "budget": 84,
+                    "dataset": "RxR",
+                    "eligible": 196,
+                    "outer_fold": 1
+                  },
+                  {
+                    "budget": 75,
+                    "dataset": "RxR",
+                    "eligible": 174,
+                    "outer_fold": 2
+                  },
+                  {
+                    "budget": 123,
+                    "dataset": "RxR",
+                    "eligible": 284,
+                    "outer_fold": 3
+                  }
+                ]
+              },
+              "global": {
+                "fixed_seed_random": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 374,
+                      "catastrophic": 41,
+                      "catastrophic_rate": 0.10962566844919786,
+                      "coverage": 0.42355605889014725,
+                      "deployed_mean_utility": -0.004308584047674919,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -5.084654145787182,
+                      "negative": 179,
+                      "positive": 154,
+                      "selected_mean_utility": -0.010172405652665651,
+                      "selected_scene_count": 30,
+                      "ties": 41,
+                      "total_utility": -3.8044797140969537
+                    }
+                  },
+                  "overall": {
+                    "authorized": 374,
+                    "catastrophic": 41,
+                    "catastrophic_rate": 0.10962566844919786,
+                    "coverage": 0.42355605889014725,
+                    "deployed_mean_utility": -0.004308584047674919,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -5.084654145787182,
+                    "negative": 179,
+                    "positive": 154,
+                    "selected_mean_utility": -0.010172405652665651,
+                    "selected_scene_count": 30,
+                    "ties": 41,
+                    "total_utility": -3.8044797140969537
+                  }
+                },
+                "high_proposal_score": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 374,
+                      "catastrophic": 31,
+                      "catastrophic_rate": 0.08288770053475936,
+                      "coverage": 0.42355605889014725,
+                      "deployed_mean_utility": 0.0020141318188158157,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -0.412848320136078,
+                      "negative": 160,
+                      "positive": 172,
+                      "selected_mean_utility": 0.004755289828915415,
+                      "selected_scene_count": 32,
+                      "ties": 42,
+                      "total_utility": 1.778478396014365
+                    }
+                  },
+                  "overall": {
+                    "authorized": 374,
+                    "catastrophic": 31,
+                    "catastrophic_rate": 0.08288770053475936,
+                    "coverage": 0.42355605889014725,
+                    "deployed_mean_utility": 0.0020141318188158157,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -0.412848320136078,
+                    "negative": 160,
+                    "positive": 172,
+                    "selected_mean_utility": 0.004755289828915415,
+                    "selected_scene_count": 32,
+                    "ties": 42,
+                    "total_utility": 1.778478396014365
+                  }
+                },
+                "low_native_margin": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 374,
+                      "catastrophic": 37,
+                      "catastrophic_rate": 0.09893048128342247,
+                      "coverage": 0.42355605889014725,
+                      "deployed_mean_utility": -0.0022412259164051496,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -3.0154591526321957,
+                      "negative": 173,
+                      "positive": 170,
+                      "selected_mean_utility": -0.005291450492475259,
+                      "selected_scene_count": 33,
+                      "ties": 31,
+                      "total_utility": -1.979002484185747
+                    }
+                  },
+                  "overall": {
+                    "authorized": 374,
+                    "catastrophic": 37,
+                    "catastrophic_rate": 0.09893048128342247,
+                    "coverage": 0.42355605889014725,
+                    "deployed_mean_utility": -0.0022412259164051496,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -3.0154591526321957,
+                    "negative": 173,
+                    "positive": 170,
+                    "selected_mean_utility": -0.005291450492475259,
+                    "selected_scene_count": 33,
+                    "ties": 31,
+                    "total_utility": -1.979002484185747
+                  }
+                }
+              }
+            },
+            "evidence": {
+              "domains": {
+                "RxR": {
+                  "authorized": 374,
+                  "catastrophic": 34,
+                  "catastrophic_rate": 0.09090909090909091,
+                  "coverage": 0.42355605889014725,
+                  "deployed_mean_utility": -0.0012259963391735268,
+                  "eligible": 883,
+                  "minimum_leave_one_selected_scene_out_total": -2.148535083693263,
+                  "negative": 176,
+                  "positive": 159,
+                  "selected_mean_utility": -0.0028945314638776044,
+                  "selected_scene_count": 31,
+                  "ties": 39,
+                  "total_utility": -1.082554767490224
+                }
+              },
+              "overall": {
+                "authorized": 374,
+                "catastrophic": 34,
+                "catastrophic_rate": 0.09090909090909091,
+                "coverage": 0.42355605889014725,
+                "deployed_mean_utility": -0.0012259963391735268,
+                "eligible": 883,
+                "minimum_leave_one_selected_scene_out_total": -2.148535083693263,
+                "negative": 176,
+                "positive": 159,
+                "selected_mean_utility": -0.0028945314638776044,
+                "selected_scene_count": 31,
+                "ties": 39,
+                "total_utility": -1.082554767490224
+              },
+              "ungated_domains": {
+                "RxR": {
+                  "authorized": 883,
+                  "catastrophic": 93,
+                  "catastrophic_rate": 0.10532276330690826,
+                  "coverage": 1.0,
+                  "deployed_mean_utility": -0.007918843468645726,
+                  "eligible": 883,
+                  "minimum_leave_one_selected_scene_out_total": -8.943770478920452,
+                  "negative": 426,
+                  "positive": 368,
+                  "selected_mean_utility": -0.007918843468645726,
+                  "selected_scene_count": 33,
+                  "ties": 89,
+                  "total_utility": -6.992338782814176
+                }
+              }
+            },
+            "failure_reasons": [
+              "RxR:nonpositive_utility",
+              "RxR:nonpositive_leave_one_selected_scene",
+              "utility_not_above_high_proposal_score",
+              "catastrophic_rate_above_high_proposal_score",
+              "RxR:utility_not_above_high_proposal_score",
+              "RxR:catastrophic_rate_above_high_proposal_score"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "5q7pvUzZiYa",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "E9uDoFAP3SH",
+                  "S9hNv5qa7GM",
+                  "e9zR4mvMWw7",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "5136bc0eeea72bf3464f7fe37645d42a667cda3c4707037f3ebfdc8af1dee2d7",
+                  "b8a16533352e2dfb0475e6a7cb273fc6e28f50a66f3a22161e27126ee4cc3a5a",
+                  "d2ec723bdf1df03c44360eb87577894b7fa23dc76095fb88856939a9c94b7d24"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.1558515429496765,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.045034926384687424
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.1558821201324463,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.045031506568193436
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.15582901239395142,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.045037642121315
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "GdvgFV5R1Z5",
+                  "JmbYfDe2QKZ",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "pRbA3pwrgk9"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "JeFG25nYj2p",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VVfe2KiqLaN",
+                  "aayBHfsNo7d",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "e30ba08d56ceaac7dd88002c33f2c1492f2a5a2ddf2a74cede5ff565ddc0f86c",
+                  "17b0a63cd04da20365361ef82a974b22e96d25aa9629d88edc2386dd3b33ffeb",
+                  "d416ba934199d54b9fa3ec08906547a9e5f00e6157381c5b96e63c2c301c14b4"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.1423933207988739,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.04836897552013397
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.14238759875297546,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.048370346426963806
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.1423691362142563,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.04837239533662796
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "8WUmhLawc2A",
+                  "JeFG25nYj2p",
+                  "Pm6F8kyY3z2",
+                  "aayBHfsNo7d",
+                  "cV4RVeZvu5T",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY"
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "e98c26fe581f48ede0f14072f03da3b79983b20555ceb8d062c39ed0f5310124",
+                  "696621d3e6818cc82f77856a4850d8e94a4a7b3c99f91c403b9b12c44fbd1e85",
+                  "60893c51c0c51432bef33e234895415a3b1b11e90033dc034e86e00d19c2c224"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.16174638271331787,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.04446877911686897
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.16169340908527374,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.044474486261606216
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.16181550920009613,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.044461797922849655
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "D7N2EKCX4Sj",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "vyrNrziPKCB"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "9b41832a5e98668af5398c8d99518ca785970687214a5afcdbcf29d48b76969c",
+                  "047be289e34478983d12eb60d6c7c7569627b975ff57e4e4a8c77f0ae12fc6e0",
+                  "f284afa4de3b8fb6adb3aab7477128f94f65c673b2a01b92bea03320df5c9f50"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.12054471671581268,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.04727787524461746
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.12055806815624237,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.04727695882320404
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.12058631330728531,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.047274939715862274
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  }
+                ]
+              }
+            ],
+            "inner_oof_preference_loss": 0.880457499556824,
+            "weight_decay": 0.001
+          },
+          {
+            "equal_budget": {
+              "budget": 321,
+              "fold_domain_matched": {
+                "baselines": {
+                  "fixed_seed_random": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 321,
+                        "catastrophic": 36,
+                        "catastrophic_rate": 0.11214953271028037,
+                        "coverage": 0.3635334088335221,
+                        "deployed_mean_utility": -0.005379735984088159,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -6.0304813056400715,
+                        "negative": 156,
+                        "positive": 129,
+                        "selected_mean_utility": -0.014798463781775215,
+                        "selected_scene_count": 30,
+                        "ties": 36,
+                        "total_utility": -4.750306873949844
+                      }
+                    },
+                    "overall": {
+                      "authorized": 321,
+                      "catastrophic": 36,
+                      "catastrophic_rate": 0.11214953271028037,
+                      "coverage": 0.3635334088335221,
+                      "deployed_mean_utility": -0.005379735984088159,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -6.0304813056400715,
+                      "negative": 156,
+                      "positive": 129,
+                      "selected_mean_utility": -0.014798463781775215,
+                      "selected_scene_count": 30,
+                      "ties": 36,
+                      "total_utility": -4.750306873949844
+                    }
+                  },
+                  "high_proposal_score": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 321,
+                        "catastrophic": 28,
+                        "catastrophic_rate": 0.08722741433021806,
+                        "coverage": 0.3635334088335221,
+                        "deployed_mean_utility": 0.0004078936472194179,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -1.8311566256556966,
+                        "negative": 139,
+                        "positive": 144,
+                        "selected_mean_utility": 0.0011220252040334768,
+                        "selected_scene_count": 32,
+                        "ties": 38,
+                        "total_utility": 0.360170090494746
+                      }
+                    },
+                    "overall": {
+                      "authorized": 321,
+                      "catastrophic": 28,
+                      "catastrophic_rate": 0.08722741433021806,
+                      "coverage": 0.3635334088335221,
+                      "deployed_mean_utility": 0.0004078936472194179,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -1.8311566256556966,
+                      "negative": 139,
+                      "positive": 144,
+                      "selected_mean_utility": 0.0011220252040334768,
+                      "selected_scene_count": 32,
+                      "ties": 38,
+                      "total_utility": 0.360170090494746
+                    }
+                  },
+                  "low_native_margin": {
+                    "domains": {
+                      "RxR": {
+                        "authorized": 321,
+                        "catastrophic": 34,
+                        "catastrophic_rate": 0.1059190031152648,
+                        "coverage": 0.3635334088335221,
+                        "deployed_mean_utility": -0.0035360370253638565,
+                        "eligible": 883,
+                        "minimum_leave_one_selected_scene_out_total": -3.768284829537924,
+                        "negative": 155,
+                        "positive": 137,
+                        "selected_mean_utility": -0.009726855742667555,
+                        "selected_scene_count": 33,
+                        "ties": 29,
+                        "total_utility": -3.1223206933962855
+                      }
+                    },
+                    "overall": {
+                      "authorized": 321,
+                      "catastrophic": 34,
+                      "catastrophic_rate": 0.1059190031152648,
+                      "coverage": 0.3635334088335221,
+                      "deployed_mean_utility": -0.0035360370253638565,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -3.768284829537924,
+                      "negative": 155,
+                      "positive": 137,
+                      "selected_mean_utility": -0.009726855742667555,
+                      "selected_scene_count": 33,
+                      "ties": 29,
+                      "total_utility": -3.1223206933962855
+                    }
+                  }
+                },
+                "strata": [
+                  {
+                    "budget": 63,
+                    "dataset": "RxR",
+                    "eligible": 229,
+                    "outer_fold": 0
+                  },
+                  {
+                    "budget": 65,
+                    "dataset": "RxR",
+                    "eligible": 196,
+                    "outer_fold": 1
+                  },
+                  {
+                    "budget": 65,
+                    "dataset": "RxR",
+                    "eligible": 174,
+                    "outer_fold": 2
+                  },
+                  {
+                    "budget": 128,
+                    "dataset": "RxR",
+                    "eligible": 284,
+                    "outer_fold": 3
+                  }
+                ]
+              },
+              "global": {
+                "fixed_seed_random": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 321,
+                      "catastrophic": 33,
+                      "catastrophic_rate": 0.102803738317757,
+                      "coverage": 0.3635334088335221,
+                      "deployed_mean_utility": -0.0022924594679066723,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -3.4625882517747466,
+                      "negative": 150,
+                      "positive": 135,
+                      "selected_mean_utility": -0.00630604894131337,
+                      "selected_scene_count": 30,
+                      "ties": 36,
+                      "total_utility": -2.0242417101615917
+                    }
+                  },
+                  "overall": {
+                    "authorized": 321,
+                    "catastrophic": 33,
+                    "catastrophic_rate": 0.102803738317757,
+                    "coverage": 0.3635334088335221,
+                    "deployed_mean_utility": -0.0022924594679066723,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -3.4625882517747466,
+                    "negative": 150,
+                    "positive": 135,
+                    "selected_mean_utility": -0.00630604894131337,
+                    "selected_scene_count": 30,
+                    "ties": 36,
+                    "total_utility": -2.0242417101615917
+                  }
+                },
+                "high_proposal_score": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 321,
+                      "catastrophic": 29,
+                      "catastrophic_rate": 0.09034267912772585,
+                      "coverage": 0.3635334088335221,
+                      "deployed_mean_utility": -7.214928410462836e-05,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -2.25503453401483,
+                      "negative": 142,
+                      "positive": 142,
+                      "selected_mean_utility": -0.0001984667223189621,
+                      "selected_scene_count": 32,
+                      "ties": 37,
+                      "total_utility": -0.06370781786438684
+                    }
+                  },
+                  "overall": {
+                    "authorized": 321,
+                    "catastrophic": 29,
+                    "catastrophic_rate": 0.09034267912772585,
+                    "coverage": 0.3635334088335221,
+                    "deployed_mean_utility": -7.214928410462836e-05,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -2.25503453401483,
+                    "negative": 142,
+                    "positive": 142,
+                    "selected_mean_utility": -0.0001984667223189621,
+                    "selected_scene_count": 32,
+                    "ties": 37,
+                    "total_utility": -0.06370781786438684
+                  }
+                },
+                "low_native_margin": {
+                  "domains": {
+                    "RxR": {
+                      "authorized": 321,
+                      "catastrophic": 34,
+                      "catastrophic_rate": 0.1059190031152648,
+                      "coverage": 0.3635334088335221,
+                      "deployed_mean_utility": -0.004021160171966217,
+                      "eligible": 883,
+                      "minimum_leave_one_selected_scene_out_total": -4.196648567987808,
+                      "negative": 155,
+                      "positive": 137,
+                      "selected_mean_utility": -0.011061322217589311,
+                      "selected_scene_count": 33,
+                      "ties": 29,
+                      "total_utility": -3.550684431846169
+                    }
+                  },
+                  "overall": {
+                    "authorized": 321,
+                    "catastrophic": 34,
+                    "catastrophic_rate": 0.1059190031152648,
+                    "coverage": 0.3635334088335221,
+                    "deployed_mean_utility": -0.004021160171966217,
+                    "eligible": 883,
+                    "minimum_leave_one_selected_scene_out_total": -4.196648567987808,
+                    "negative": 155,
+                    "positive": 137,
+                    "selected_mean_utility": -0.011061322217589311,
+                    "selected_scene_count": 33,
+                    "ties": 29,
+                    "total_utility": -3.550684431846169
+                  }
+                }
+              }
+            },
+            "evidence": {
+              "domains": {
+                "RxR": {
+                  "authorized": 321,
+                  "catastrophic": 34,
+                  "catastrophic_rate": 0.1059190031152648,
+                  "coverage": 0.3635334088335221,
+                  "deployed_mean_utility": 0.0003325413687127825,
+                  "eligible": 883,
+                  "minimum_leave_one_selected_scene_out_total": -2.3290733713467153,
+                  "negative": 147,
+                  "positive": 141,
+                  "selected_mean_utility": 0.0009147477525650684,
+                  "selected_scene_count": 32,
+                  "ties": 33,
+                  "total_utility": 0.29363402857338694
+                }
+              },
+              "overall": {
+                "authorized": 321,
+                "catastrophic": 34,
+                "catastrophic_rate": 0.1059190031152648,
+                "coverage": 0.3635334088335221,
+                "deployed_mean_utility": 0.0003325413687127825,
+                "eligible": 883,
+                "minimum_leave_one_selected_scene_out_total": -2.3290733713467153,
+                "negative": 147,
+                "positive": 141,
+                "selected_mean_utility": 0.0009147477525650684,
+                "selected_scene_count": 32,
+                "ties": 33,
+                "total_utility": 0.29363402857338694
+              },
+              "ungated_domains": {
+                "RxR": {
+                  "authorized": 883,
+                  "catastrophic": 93,
+                  "catastrophic_rate": 0.10532276330690826,
+                  "coverage": 1.0,
+                  "deployed_mean_utility": -0.007918843468645726,
+                  "eligible": 883,
+                  "minimum_leave_one_selected_scene_out_total": -8.943770478920452,
+                  "negative": 426,
+                  "positive": 368,
+                  "selected_mean_utility": -0.007918843468645726,
+                  "selected_scene_count": 33,
+                  "ties": 89,
+                  "total_utility": -6.992338782814176
+                }
+              }
+            },
+            "failure_reasons": [
+              "RxR:nonpositive_leave_one_selected_scene",
+              "RxR:catastrophic_rate_above_ungated",
+              "utility_not_above_high_proposal_score",
+              "catastrophic_rate_above_high_proposal_score",
+              "RxR:utility_not_above_high_proposal_score",
+              "RxR:catastrophic_rate_above_high_proposal_score"
+            ],
+            "feasible": false,
+            "inner_cv": [
+              {
+                "evaluation_scenes": [
+                  "5q7pvUzZiYa",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "E9uDoFAP3SH",
+                  "S9hNv5qa7GM",
+                  "e9zR4mvMWw7",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "D7N2EKCX4Sj",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "5136bc0eeea72bf3464f7fe37645d42a667cda3c4707037f3ebfdc8af1dee2d7",
+                  "b8a16533352e2dfb0475e6a7cb273fc6e28f50a66f3a22161e27126ee4cc3a5a",
+                  "d2ec723bdf1df03c44360eb87577894b7fa23dc76095fb88856939a9c94b7d24"
+                ],
+                "inner_fold": 0,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4930914640426636,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.014757501892745495
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4930914640426636,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.01475750096142292
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4930914640426636,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.014757501892745495
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1182281017745888
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "7y3sRwLe3Va",
+                  "GdvgFV5R1Z5",
+                  "JmbYfDe2QKZ",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "pRbA3pwrgk9"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "JeFG25nYj2p",
+                  "PX4nDJXEHrG",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VVfe2KiqLaN",
+                  "aayBHfsNo7d",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "e30ba08d56ceaac7dd88002c33f2c1492f2a5a2ddf2a74cede5ff565ddc0f86c",
+                  "17b0a63cd04da20365361ef82a974b22e96d25aa9629d88edc2386dd3b33ffeb",
+                  "d416ba934199d54b9fa3ec08906547a9e5f00e6157381c5b96e63c2c301c14b4"
+                ],
+                "inner_fold": 1,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4893822968006134,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.016987552866339684
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.48937559127807617,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.017002053558826447
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4893822968006134,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.01698755845427513
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.12438996269890057
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "1pXnuDYAj8r",
+                  "8WUmhLawc2A",
+                  "JeFG25nYj2p",
+                  "Pm6F8kyY3z2",
+                  "aayBHfsNo7d",
+                  "cV4RVeZvu5T",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY"
+                ],
+                "fit_scenes": [
+                  "29hnd4uzFmX",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "D7N2EKCX4Sj",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JmbYfDe2QKZ",
+                  "PX4nDJXEHrG",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "VVfe2KiqLaN",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "ac26ZMwG7aT",
+                  "e9zR4mvMWw7",
+                  "p5wJjkQkbXX",
+                  "pRbA3pwrgk9",
+                  "qoiz87JEwZ2",
+                  "r1Q1Z4BcV1o",
+                  "r47D5H71a5s",
+                  "s8pcmisQ38h",
+                  "ur6pFq6Qu1A",
+                  "vyrNrziPKCB"
+                ],
+                "initialization_hashes": [
+                  "e98c26fe581f48ede0f14072f03da3b79983b20555ceb8d062c39ed0f5310124",
+                  "696621d3e6818cc82f77856a4850d8e94a4a7b3c99f91c403b9b12c44fbd1e85",
+                  "60893c51c0c51432bef33e234895415a3b1b11e90033dc034e86e00d19c2c224"
+                ],
+                "inner_fold": 2,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.5494107604026794,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.012323710136115551
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.549420952796936,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.012323352508246899
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.5494090914726257,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.012325098738074303
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1204052310274668
+                    }
+                  }
+                ]
+              },
+              {
+                "evaluation_scenes": [
+                  "29hnd4uzFmX",
+                  "D7N2EKCX4Sj",
+                  "PX4nDJXEHrG",
+                  "VVfe2KiqLaN",
+                  "p5wJjkQkbXX",
+                  "qoiz87JEwZ2",
+                  "r47D5H71a5s",
+                  "vyrNrziPKCB"
+                ],
+                "fit_scenes": [
+                  "1pXnuDYAj8r",
+                  "5q7pvUzZiYa",
+                  "7y3sRwLe3Va",
+                  "8WUmhLawc2A",
+                  "B6ByNegPMKs",
+                  "D7G3Y4RVNrH",
+                  "E9uDoFAP3SH",
+                  "GdvgFV5R1Z5",
+                  "JeFG25nYj2p",
+                  "JmbYfDe2QKZ",
+                  "Pm6F8kyY3z2",
+                  "S9hNv5qa7GM",
+                  "VFuaQ6m2Qom",
+                  "YmJkqBEsHnH",
+                  "ZMojNkEp431",
+                  "aayBHfsNo7d",
+                  "ac26ZMwG7aT",
+                  "cV4RVeZvu5T",
+                  "e9zR4mvMWw7",
+                  "pRbA3pwrgk9",
+                  "r1Q1Z4BcV1o",
+                  "s8pcmisQ38h",
+                  "sT4fr6TAbpF",
+                  "uNb9QFRL6hY",
+                  "ur6pFq6Qu1A"
+                ],
+                "initialization_hashes": [
+                  "9b41832a5e98668af5398c8d99518ca785970687214a5afcdbcf29d48b76969c",
+                  "047be289e34478983d12eb60d6c7c7569627b975ff57e4e4a8c77f0ae12fc6e0",
+                  "f284afa4de3b8fb6adb3aab7477128f94f65c673b2a01b92bea03320df5c9f50"
+                ],
+                "inner_fold": 3,
+                "scene_overlap": [],
+                "training_diagnostics": [
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4598926603794098,
+                    "seed": 20260830,
+                    "soft_constraint_excess": {
+                      "RxR": -0.020883485674858093
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.4598929286003113,
+                    "seed": 20260831,
+                    "soft_constraint_excess": {
+                      "RxR": -0.020883476361632347
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  },
+                  {
+                    "dual_variables": {
+                      "RxR": 0.0
+                    },
+                    "preference_loss": 0.45989274978637695,
+                    "seed": 20260832,
+                    "soft_constraint_excess": {
+                      "RxR": -0.020883502438664436
+                    },
+                    "ungated_weighted_catastrophic_rate": {
+                      "RxR": 0.1137172663332788
+                    }
+                  }
+                ]
+              }
+            ],
+            "inner_oof_preference_loss": 0.6764058584532222,
+            "weight_decay": 0.01
+          }
+        ]
+      }
+    ],
+    "status": "NESTED_RCSP_FAIL"
+  },
+  "parent_algorithm_revision": "mf3zl_rcsp_v1_1_zero_relative_delta",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "public_unseen_authorized": false,
+  "revision": "mf3zl_rcsp_rxr_probe_v1_1",
+  "rows": 997,
+  "scenes": 38,
+  "schema_version": "revealnav-mf3zl-rxr-probe-result/2",
+  "source_parent_manifest": {
+    "bytes": 3523720,
+    "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_EXACT_REPLAY_MANIFEST.json",
+    "sha256": "0045cb1a50fce45bd79c51a9dad615d01fd50f3388707fba1fa4e0b2a9dcd555"
+  },
+  "source_protocol": {
+    "bytes": 4151,
+    "path": "artifacts/training/mf3zl_rcsp_rxr_probe_v1_1/MF3ZL_RXR_PROBE_PROTOCOL.json",
+    "sha256": "abb55d915d66ac53a020c2517e010a8c2bd25d209b4637ca72df3f3d69b8285c"
+  },
+  "status": "RXR_ONLY_DIAGNOSTIC_FAIL",
+  "training_checkpoint_authorized": false,
+  "zero_relative_delta_count": 6,
+  "zero_relative_delta_events": [
+    {
+      "dataset": "RxR",
+      "episode_id": "21801",
+      "scene_id": "8WUmhLawc2A",
+      "step": 1,
+      "tier": "expansion"
+    },
+    {
+      "dataset": "RxR",
+      "episode_id": "43738",
+      "scene_id": "B6ByNegPMKs",
+      "step": 3,
+      "tier": "core"
+    },
+    {
+      "dataset": "RxR",
+      "episode_id": "49928",
+      "scene_id": "D7N2EKCX4Sj",
+      "step": 0,
+      "tier": "core"
+    },
+    {
+      "dataset": "RxR",
+      "episode_id": "27664",
+      "scene_id": "E9uDoFAP3SH",
+      "step": 0,
+      "tier": "expansion"
+    },
+    {
+      "dataset": "RxR",
+      "episode_id": "3105",
+      "scene_id": "ac26ZMwG7aT",
+      "step": 10,
+      "tier": "expansion"
+    },
+    {
+      "dataset": "RxR",
+      "episode_id": "18085",
+      "scene_id": "rPc6DW4iMge",
+      "step": 6,
+      "tier": "core"
+    }
+  ]
+}

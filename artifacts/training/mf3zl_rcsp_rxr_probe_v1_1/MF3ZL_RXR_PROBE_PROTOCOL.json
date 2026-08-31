@@ -1,0 +1,135 @@
+{
+  "authorization": {
+    "confirmation": false,
+    "public_unseen": false,
+    "training_checkpoint": false
+  },
+  "implementation_files": {
+    "revealnav_mf3/dsr_selection.py": {
+      "bytes": 32415,
+      "path": "revealnav_mf3/dsr_selection.py",
+      "sha256": "7be621a627329d5c88f58bc14413c9c3d5ad82fdc480cacdccd9dcdf715037d2"
+    },
+    "revealnav_mf3/rcsp_selection_v1_1.py": {
+      "bytes": 26478,
+      "path": "revealnav_mf3/rcsp_selection_v1_1.py",
+      "sha256": "17da2aa92accbe0ab39cb7d6a934d8e0652542df56565e01d3bf2d5abf48c5d6"
+    },
+    "revealnav_mf3/rcsp_v1_1.py": {
+      "bytes": 13048,
+      "path": "revealnav_mf3/rcsp_v1_1.py",
+      "sha256": "001be18d7a416d83bbfa7f3fbc9dae6962a91053bdef5cfe4a79d291f76730e1"
+    },
+    "scripts/probe_mf3zl_rcsp_rxr_v1_1.py": {
+      "bytes": 10696,
+      "path": "scripts/probe_mf3zl_rcsp_rxr_v1_1.py",
+      "sha256": "656835bd71069912a795dcefe0ece6c2ad6a227f57162b2a539c36b3bfea5fd0"
+    },
+    "scripts/train_mf3zl_rcsp.py": {
+      "bytes": 16912,
+      "path": "scripts/train_mf3zl_rcsp.py",
+      "sha256": "ccac4b4f413c409667323db0a6eebbc793a4f407148cea5be7b1f295f5972eb8"
+    }
+  },
+  "parent_algorithm_revision": "mf3zl_rcsp_v1_1_zero_relative_delta",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "purpose": "early domain-specific diagnostic; not a public or joint result",
+  "revision": "mf3zl_rcsp_rxr_probe_v1_1",
+  "schema_version": "revealnav-mf3zl-rxr-probe-protocol/2",
+  "selection_is_outcome_blind": true,
+  "source_domain": "RxR",
+  "source_files": {
+    "dsr_protocol": {
+      "bytes": 1096761,
+      "path": "artifacts/training/mf3zk_dsr_v1/MF3ZK_DSR_PROTOCOL.json",
+      "sha256": "6d16095c568ddab820fea34a04422cde692c66687beeed8d4a58717c76bae8ac"
+    },
+    "parent_manifest": {
+      "bytes": 3523720,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_EXACT_REPLAY_MANIFEST.json",
+      "sha256": "0045cb1a50fce45bd79c51a9dad615d01fd50f3388707fba1fa4e0b2a9dcd555"
+    },
+    "parent_protocol": {
+      "bytes": 7098,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_RCSP_PROTOCOL.json",
+      "sha256": "23d250f378d2a8eb45e3d7329d89b99b312e40b86dc48647b1b3962a48839812"
+    },
+    "parent_selection": {
+      "bytes": 2019326,
+      "path": "artifacts/training/mf3zl_rcsp_v1/MF3ZL_EXACT_REPLAY_SELECTION.json",
+      "sha256": "02b71eff30e7ff11f998e9751be48a84e50921b8c1965f1813d6d466ef8fe92c"
+    }
+  },
+  "source_rows": 997,
+  "source_scenes": 38,
+  "status": "SEALED_BEFORE_RXR_DIAGNOSTIC",
+  "training_contract": {
+    "decision_rule": "switch_logit > 0",
+    "inner_folds": 4,
+    "no_checkpoint": true,
+    "outer_folds": 5,
+    "representation": "semantic",
+    "risk_constrained": true,
+    "weight_decay_grid": [
+      0.0001,
+      0.001,
+      0.01
+    ]
+  },
+  "zero_relative_delta_correction": {
+    "absolute_instruction_history_native_runner_norms_still_required": true,
+    "action": "retain_event_and_use_zero_relative_semantic_vector",
+    "condition": "norm(runner_embedding - native_embedding) <= 1e-8",
+    "events": [
+      {
+        "dataset": "RxR",
+        "episode_id": "21801",
+        "scene_id": "8WUmhLawc2A",
+        "step": 1,
+        "tier": "expansion"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "43738",
+        "scene_id": "B6ByNegPMKs",
+        "step": 3,
+        "tier": "core"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "49928",
+        "scene_id": "D7N2EKCX4Sj",
+        "step": 0,
+        "tier": "core"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "27664",
+        "scene_id": "E9uDoFAP3SH",
+        "step": 0,
+        "tier": "expansion"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "3105",
+        "scene_id": "ac26ZMwG7aT",
+        "step": 10,
+        "tier": "expansion"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "18085",
+        "scene_id": "rPc6DW4iMge",
+        "step": 6,
+        "tier": "core"
+      }
+    ],
+    "selection_or_outcome_fields_used": [],
+    "status": "PRE_REGISTERED_CORRECTNESS_RULE"
+  }
+}
