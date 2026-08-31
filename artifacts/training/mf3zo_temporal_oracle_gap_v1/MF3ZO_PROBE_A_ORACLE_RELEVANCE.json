@@ -1,0 +1,20 @@
+{
+  "complete_verified_oracle_labels": 0,
+  "events": 150,
+  "executed": false,
+  "failure_kind": "REQUIRED_ORACLE_SUPERVISION_UNAVAILABLE",
+  "probe": "A_oracle_relevance",
+  "reason": "Probe A cannot be estimated honestly because no selected event has a complete independently verified UAD/Reveal/Expiry oracle record. The protocol forbids surrogate substitution.",
+  "schema_version": "revealnav-mf3zo-probe-a/1",
+  "status": "TEMPORAL_ORACLE_RELEVANCE_FAIL",
+  "surrogate_labels_substituted": false,
+  "target_payload_read": false,
+  "unavailable_counts": {
+    "candidate_separated": 150,
+    "evidence_closed": 150,
+    "expiry_step": 150,
+    "resolvable": 150,
+    "reveal_interval": 150,
+    "target_in_set": 150
+  }
+}

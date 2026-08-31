@@ -1,0 +1,399 @@
+{
+  "action_support": {
+    "alternative_rule": "highest frozen-policy-ranked executable non-native actions",
+    "causal_temporal_record_source": {
+      "content_inventory_fields": [
+        "path",
+        "bytes",
+        "sha256"
+      ],
+      "project_local_regular_file": true,
+      "seal_time_validation": [
+        "strict_record_list_parser",
+        "source_commitment_equals_protocol_population",
+        "inventory_equals_identifiability_causal_probe_provenance",
+        "decision_identity_set_equals_action_snapshots",
+        "final_step_equals_decision_step",
+        "native_and_executable_support_equal_action_snapshot"
+      ],
+      "sealed_in_collection_plan_before_outcomes": true,
+      "training_must_rebuild_tensors_from_strict_records": true
+    },
+    "maximum_non_native_actions": 2,
+    "native_included": true,
+    "native_margin_definition": "abs(native_policy_score - highest_ranked_executable_non_native_policy_score)",
+    "outcome_adaptive_support": false,
+    "outcome_contract": {
+      "catastrophic_rule": "native_relative_delta_utility <= -0.1",
+      "catastrophic_threshold": -0.1,
+      "controller_may_read_task_metrics": false,
+      "metrics": [
+        "success",
+        "spl",
+        "ndtw",
+        "sdtw"
+      ],
+      "per_arm_hashed_outcome_source_required": true,
+      "utility_weights": {
+        "ndtw": 0.5,
+        "sdtw": 0.25,
+        "spl": 0.25
+      },
+      "validator_recomputes_outcomes": true
+    },
+    "sealed_before_treatment_outcomes": true,
+    "treatment_contract": {
+      "cross_episode_pairing": false,
+      "exactly_one_target_step_action_change": true,
+      "frozen_continuation": true,
+      "same_native_prefix": true,
+      "second_intervention_count": 0
+    }
+  },
+  "authorization": {
+    "confirmation": false,
+    "identifiability_audit": true,
+    "new_treatment_collection": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "public_unseen": false,
+    "tuad_training": false
+  },
+  "causal_information_boundary": {
+    "forbidden_inference_fields": [
+      "target",
+      "delta_utility",
+      "treatment_result",
+      "future_*",
+      "navmesh",
+      "pose",
+      "oracle_*"
+    ],
+    "future_observations_allowed": false,
+    "latest_allowed_step_relation": "step <= decision_step",
+    "oracle_and_inference_storage_separated": true,
+    "required_invariance_tests": [
+      "future_mutation_invariance",
+      "treatment_outcome_isolation",
+      "oracle_isolation",
+      "prefix_hash_identity",
+      "one_action_invariant",
+      "candidate_executability",
+      "scene_fold_integrity",
+      "episode_treatment_integrity",
+      "uad_monotonic_semantics",
+      "no_outcome_adaptive_collection"
+    ]
+  },
+  "controls": {
+    "arms": [
+      "TUAD-full",
+      "current-only",
+      "temporal-no-UAD-supervision",
+      "oracle-UAD",
+      "runner-only-support",
+      "frozen-native",
+      "matched-high-proposal-score",
+      "matched-low-native-margin",
+      "matched-random"
+    ],
+    "fixed_random_is_sanity_only": true,
+    "matched_budget_unit": "fold_and_domain",
+    "oracle_uad_authorizes": false,
+    "strongest_simple_baseline_rule": "greater per-domain OOF total utility between matched-high-proposal-score and matched-low-native-margin; exact ties choose matched-high-proposal-score"
+  },
+  "dataset_revision": "mf3zn_teal_v1",
+  "development": {
+    "architecture_grid": [],
+    "architecture_selection": false,
+    "bootstrap": {
+      "confidence": 0.95,
+      "replicates": 10000,
+      "seed": 20260830,
+      "unit": "raw_mp3d_scene"
+    },
+    "complete_oof_required": true,
+    "decision_threshold": null,
+    "ensemble_reduction": "elementwise_median",
+    "fixed_reporting_seeds": [
+      20260831,
+      20260832,
+      20260833
+    ],
+    "fold_unit": "raw_mp3d_scene",
+    "individual_seed_results_reported": true,
+    "inner_model_selection": false,
+    "outer_folds": 5,
+    "seed_selection": false,
+    "seed_use": "declared_ensemble_and_reporting_only",
+    "threshold_grid": [],
+    "threshold_selection": false,
+    "weight_decay": 0.0,
+    "weight_decay_grid": [],
+    "weight_decay_selection": false
+  },
+  "entrypoints": {
+    "allowed": [
+      "seal",
+      "verify"
+    ],
+    "allowed_scope": "protocol_sealer_only",
+    "confirmation": null,
+    "default": "seal",
+    "public_evaluation": null,
+    "source_sealed_scientific": [
+      "identifiability_audit",
+      "gated_lattice_seal_and_validation",
+      "gated_fixed_oof_training"
+    ]
+  },
+  "family_tombstone": {
+    "forbids": [
+      "car_v2",
+      "rcsp_v2",
+      "single_snapshot_architecture_search",
+      "decision_threshold_sweep",
+      "catastrophe_threshold_sweep",
+      "loss_reweighting_on_consumed_outcomes",
+      "additional_weight_decay_or_training_length_search"
+    ],
+    "name": "FROZEN_SINGLE_DECISION_GATE_FAMILY_STOPPED",
+    "value": true
+  },
+  "hypothesis": "irreversible intervention value is identifiable from strictly causal evidence and candidate-availability evolution, including UAD and reveal/expiry dynamics",
+  "identifiability_gate": {
+    "all_required": [
+      "oracle_relevance",
+      "causal_observability",
+      "label_validity"
+    ],
+    "audits": {
+      "causal_observability": {
+        "absolute_f1_threshold": null,
+        "failure_status": "TEMPORAL_CAUSAL_OBSERVABILITY_FAIL",
+        "future_inputs": false,
+        "probes": [
+          "fixed_snapshot",
+          "fixed_causal_temporal_summary"
+        ],
+        "requirements_per_domain": [
+          "uad_macro_f1_temporal_minus_snapshot > 0",
+          "reveal_nll_snapshot_minus_temporal > 0",
+          "expiry_nll_snapshot_minus_temporal > 0",
+          "all_scene_bootstrap_95pct_lower_bounds > 0"
+        ]
+      },
+      "label_validity": {
+        "evidence_closure_kappa_minimum": 0.7,
+        "failure_status": "TEMPORAL_LABEL_VALIDITY_FAIL",
+        "scene_balanced_pilot_rows": 300,
+        "uad_kappa_minimum": 0.65
+      },
+      "oracle_relevance": {
+        "failure_status": "TEMPORAL_ORACLE_RELEVANCE_FAIL",
+        "loss": "Huber",
+        "model_search": false,
+        "population": "existing_1540_exact_native_runner_events",
+        "probes": [
+          "fixed_current_control",
+          "fixed_oracle_augmented"
+        ],
+        "requirements_per_domain": [
+          "oof_delta_huber > 0",
+          "scene_cluster_bootstrap_95pct_lower_bound > 0"
+        ]
+      }
+    },
+    "collection_authorized_at_seal": false,
+    "collection_recomputes_audits_from_hashed_provenance": true,
+    "copied_pass_json_is_sufficient": false,
+    "domain_compensation_allowed": false,
+    "protocol_architecture_and_stop_rules_presealed": true,
+    "required_before_collection": true
+  },
+  "model": {
+    "joint_end_to_end_training": false,
+    "stage_1": {
+      "encoder": "causal_gru",
+      "epochs": 200,
+      "frozen_before_stage_2": true,
+      "heads": [
+        "target_in_set",
+        "candidate_separation",
+        "evidence_closure",
+        "reveal_discrete_hazard",
+        "expiry_discrete_hazard"
+      ],
+      "hidden_size": 64,
+      "learning_rate": 0.001,
+      "loss": "unweighted_mean_of_five_masked_binary_cross_entropies",
+      "loss_term_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "name": "TemporalRevealExpiryEncoder",
+      "optimizer": "Adam",
+      "projections": "fixed",
+      "uad_derivation": "deterministic_frozen_semantics",
+      "uad_head": null,
+      "utility_labels_allowed": false
+    },
+    "stage_2": {
+      "activation": "GELU",
+      "deployment": "argmax_over_native_inclusive_sealed_support",
+      "epochs": 200,
+      "hidden_size": 64,
+      "huber_delta": 1.0,
+      "learning_rate": 0.001,
+      "loss": "Huber",
+      "name": "NativeAnchoredActionValue",
+      "native_bypasses_network": true,
+      "native_value": 0.0,
+      "optimizer": "Adam",
+      "quantile_head": false,
+      "risk_head": false
+    }
+  },
+  "revision": "mf3zn_tuad_v1",
+  "schema_version": "revealnav-mf3zn-tuad-protocol/1",
+  "scientific_gates": {
+    "correctness": [
+      "all_causality_tests_pass",
+      "exact_lattice_audit_pass",
+      "no_scene_leakage",
+      "no_episode_arm_leakage",
+      "no_public_access",
+      "complete_five_fold_oof"
+    ],
+    "hide_domain_results": false,
+    "per_domain_catastrophic_risk": "rate <= strongest_matched_simple_baseline_rate",
+    "per_domain_utility": [
+      "total_utility > 0",
+      "every_fold_domain_total_utility >= 0",
+      "minimum_leave_one_selected_scene_out_total > 0"
+    ],
+    "simple_baseline_per_domain": "tuad_full_utility > strongest_matched_simple_baseline_utility",
+    "temporal_contribution_per_domain": [
+      "tuad_full_minus_current_only_utility > 0",
+      "scene_cluster_bootstrap_95pct_lower_bound > 0"
+    ],
+    "uad_contribution_per_domain": "tuad_full_utility > temporal_no_uad_supervision_utility"
+  },
+  "source_files": {
+    "car_source_protocol": {
+      "bytes": 3907,
+      "path": "artifacts/training/mf3zm_car_v1/MF3ZM_CAR_PROTOCOL.json",
+      "sha256": "0d9ae410eb05deedc7d527cbad83555efa9c25c2363b816d844d17f8ce2bb163"
+    },
+    "identifiability_audit_entrypoint": {
+      "bytes": 22827,
+      "path": "scripts/audit_mf3zn_uad_identifiability.py",
+      "sha256": "065915e8aacf4e1c7e94c5d5c4a1ba7b51f0e526872a8ad50a156a27f11c1866"
+    },
+    "lattice_collection_entrypoint": {
+      "bytes": 31258,
+      "path": "scripts/collect_mf3zn_temporal_lattice.py",
+      "sha256": "f4d602ca1fea7c7edc931048ec8dded33acbe3801d9ee0b3a3efc4bc958988fe"
+    },
+    "method_revision": {
+      "bytes": 12918,
+      "path": "METHOD_REVISION_3ZN_TUAD.md",
+      "sha256": "4af90f3dff708a8e5722bbe4de374862822fa736ceb9d7c76c9868c779236cc2"
+    },
+    "protocol_implementation": {
+      "bytes": 23199,
+      "path": "revealnav_mf3/tuad_protocol.py",
+      "sha256": "4ed2dfb08027f88737e1585d58f89b78d8b4212e5781ac3af1dccd567edb493a"
+    },
+    "protocol_sealer": {
+      "bytes": 3422,
+      "path": "scripts/seal_mf3zn_tuad_protocol.py",
+      "sha256": "80013b6618937d5ea81f3112f78186551019d534993d8a87d13d42b6d083d1d6"
+    },
+    "temporal_action_value": {
+      "bytes": 8509,
+      "path": "revealnav_mf3/temporal_action_value.py",
+      "sha256": "6315227a4344ace5c53e392e42b8f70f21980f68774d17a7d90c74b94ed91a8f"
+    },
+    "temporal_exact_lattice": {
+      "bytes": 33497,
+      "path": "revealnav_mf3/temporal_exact_lattice.py",
+      "sha256": "e7208e89223236de94536284dbeb203ea6eb930e190cb3940d5873f18997c9eb"
+    },
+    "temporal_features": {
+      "bytes": 13870,
+      "path": "revealnav_mf3/temporal_uad_features.py",
+      "sha256": "3400d6bc8752d42a7d88a26fa20b5f9a4d5c7673734a9ea848c1d4b5cbfe86bd"
+    },
+    "temporal_labels": {
+      "bytes": 7259,
+      "path": "revealnav_mf3/temporal_uad_labels.py",
+      "sha256": "5e3a2f90ddabf452cfa83dba0f24dad969a3be7f9b05cd2d99defc1a75f3f6b2"
+    },
+    "temporal_model": {
+      "bytes": 8713,
+      "path": "revealnav_mf3/temporal_uad_model.py",
+      "sha256": "532e4adf2c38febeff1543872f2249ac073c21ad899138a510c1c0079a6ecb63"
+    },
+    "temporal_schema": {
+      "bytes": 19508,
+      "path": "revealnav_mf3/temporal_uad_schema.py",
+      "sha256": "fc44ba532585433bdaf897a948a0ce4b7e5a20cb64cb2313d3e4f76a1a8e1571"
+    },
+    "tuad_identifiability": {
+      "bytes": 32117,
+      "path": "revealnav_mf3/tuad_identifiability.py",
+      "sha256": "5da299a5664ee95b6d23b0521810413d36d7957fb363ee74037a21ae904e0d57"
+    },
+    "tuad_selection": {
+      "bytes": 19791,
+      "path": "revealnav_mf3/tuad_selection.py",
+      "sha256": "328ae6b51e9a15ea80f8b53cea67ad61a9923afc1b9cf6b76631be8198c2c456"
+    },
+    "tuad_training_entrypoint": {
+      "bytes": 54280,
+      "path": "scripts/train_mf3zn_tuad.py",
+      "sha256": "448d8103df4bfe1cc5c73995a43a9cc3620a31150c531376fbadb2588c11a3ae"
+    }
+  },
+  "source_population": {
+    "canonical_identity_sha256": "7047fe8e3514d6037926f77a2883e9f0cdf094d5b077aa82febba64260b07bae",
+    "cohort_substitution_allowed": false,
+    "domain_counts": {
+      "R2R": 543,
+      "RxR": 997
+    },
+    "event_id_rule": "sha256(canonical-json(dataset,scene_id,episode_id,decision_step))",
+    "raw_mp3d_scenes": 39,
+    "rows": 1540,
+    "runtime_parent_source_reverification_required": true
+  },
+  "status": "SEALED_BEFORE_IDENTIFIABILITY_RESULTS",
+  "stop_rules": {
+    "stop_a": {
+      "action": "stop temporal-UAD intervention research before new treatment collection",
+      "trigger": "any_identifiability_audit_fails"
+    },
+    "stop_b": {
+      "action": "stop learned irreversible-intervention policy development on this consumed development universe",
+      "forbids": [
+        "tuad_v2",
+        "different_temporal_architecture",
+        "different_history_window",
+        "different_uad_definition",
+        "new_threshold_or_loss",
+        "new_risk_head",
+        "additional_weight_decay",
+        "outcome_adaptive_tuning_on_39_scenes"
+      ],
+      "trigger": "identifiability_passes_but_complete_development_fails"
+    }
+  }
+}

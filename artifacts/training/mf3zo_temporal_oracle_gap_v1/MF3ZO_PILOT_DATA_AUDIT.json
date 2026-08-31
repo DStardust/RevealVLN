@@ -1,0 +1,72 @@
+{
+  "causal_coverage": {
+    "full_prefix_embedding_complete_events": 1,
+    "future_steps_saved": 0,
+    "navmesh_features_saved": 0,
+    "policy_scalar_observed_fraction": 0.9682819383259912,
+    "simulator_pose_saved": 0,
+    "terminal_snapshot_embedding_complete_events": 150
+  },
+  "consumed_confirmation_intersection": [],
+  "domain_counts": {
+    "R2R": 75,
+    "RxR": 75
+  },
+  "domain_scene_counts": {
+    "R2R": 37,
+    "RxR": 38
+  },
+  "events": 150,
+  "files": {
+    "causal_records": {
+      "bytes": 333314,
+      "path": "artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_CAUSAL_TEMPORAL_RECORDS.jsonl",
+      "sha256": "203211b01e7e9e99c4ebdd624a20c3cbe1a0506a49c459f256c4d20c2ed849a8"
+    },
+    "oracle_labels": {
+      "bytes": 92250,
+      "path": "artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_TEMPORAL_ORACLE_LABELS.jsonl",
+      "sha256": "e66ab507125d05461b19b8df2c5a595764456be3cc8025ef75ec1c1f8600b7b9"
+    },
+    "selection": {
+      "bytes": 140032,
+      "path": "artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_PILOT_SELECTION.json",
+      "sha256": "4a73ed3c09e23352f7304fab7ce519d9fc0143d011ffa7eb79f4c7e63b60f4cc"
+    }
+  },
+  "oracle_coverage": {
+    "complete_verified_labels": 0,
+    "surrogate_labels_substituted": false,
+    "unavailable_fields": [
+      "target_in_set",
+      "candidate_separated",
+      "evidence_closed",
+      "reveal_interval",
+      "expiry_step",
+      "resolvable"
+    ],
+    "unavailable_labels": 150
+  },
+  "prefix_length": {
+    "maximum": 19,
+    "mean": 4.54,
+    "minimum": 1
+  },
+  "prefix_rows": 681,
+  "probe_readiness": {
+    "probe_a_oracle_relevance": false,
+    "probe_b_temporal_observability": false,
+    "probe_c_learned_state_relevance": false,
+    "reason": "complete verified UAD/Reveal/Expiry oracle supervision is absent; historical per-prefix checkpoint/action embeddings are incomplete"
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "raw_mp3d_scenes": 39,
+  "revision": "mf3zo_temporal_oracle_gap_v1",
+  "schema_version": "revealnav-mf3zo-pilot-data-audit/1",
+  "status": "PILOT_CAUSAL_RECONSTRUCTION_COMPLETE_ORACLE_UNAVAILABLE"
+}

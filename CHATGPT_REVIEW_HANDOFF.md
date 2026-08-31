@@ -1,150 +1,159 @@
-# RevealVLN — MF3ZL-RCSP v1r1 review handoff
+# RevealVLN — MF3ZO temporal oracle-gap review handoff
 
 Snapshot date: 2026-08-31
+
 Repository: `DStardust/RevealVLN`
-Purpose: give an independent ChatGPT/reviewer enough current, machine-readable
-evidence to assess the method and recommend one scientifically valid next step.
+
+Purpose: request an independent audit and the next scientifically legitimate
+data/label protocol. This snapshot must not be interpreted as a request for
+another single-decision gate or for tuning on a public split.
 
 ## Request to the reviewer
 
-Please review the implementation and the linked compact artifacts, with the
-latest result treated as a genuine train-development failure. Do not assume
-that a positive result is required. In particular, answer:
+Please inspect the implementation, tests, sealed protocols, and compact result
+artifacts at this repository revision. Then answer:
 
-1. Is the failure more consistent with an implementation/protocol defect, an
-   objective/representation problem, or insufficient support coverage?
-2. What is the smallest *versioned* algorithm revision worth attempting next,
-   without tuning on consumed confirmation data or any public split?
-3. Which controls and diagnostics are required before authorizing an unseen
-   evaluation? Separate correctness checks from publishable evidence.
-4. Does the proposed RCSP formulation make a defensible contribution over a
-   frozen-policy reranker, margin baseline, selective prediction gate, or
-   residual policy?
-5. Should the frozen-proposal gate line be continued, or should the proposal
-   mechanism/causal observation state be revised instead?
+1. Is MF3ZO's fail-closed Probe-A outcome correctly classified as a
+   supervision/data-readiness failure rather than a numerical disproof of
+   temporal or oracle-state relevance?
+2. What is the smallest new, versioned data/sensor-observation protocol that
+   can produce trustworthy per-prefix embeddings and independently verified
+   U/A/D, Reveal, and Expiry labels without consuming a public split or the old
+   confirmation scenes?
+3. Which fields can be generated automatically from frozen rollout evidence,
+   which require human review, and what agreement/adjudication standard is
+   needed before a formal identifiability audit?
+4. Should a new pilot reuse the already-consumed development scenes under a
+   newly sealed observation/label protocol, or must it reserve a new scene
+   cohort? Please separate statistical validity from engineering convenience.
+5. What one-shot PASS/FAIL criteria should be frozen before collecting those
+   labels? Do not propose model, threshold, regularization, loss, or feature
+   searches on the current 39-scene universe.
 
-Please inspect the source rather than inferring success from names. Do not
-recommend threshold/feature changes based on the old confirmation outcomes.
+## Frozen historical conclusion
 
-## Frozen boundaries
+MF3ZM-CAR's implementation, nested whole-scene protocol, fast/reference
+equivalence, and provenance were audited. Its scientific experiment failed:
+five outer folds had no feasible inner candidate, and semantic, 28D,
+policy-only, hard/soft/no-risk, scene/no-scene, pooled, RxR-only, and R2R-only
+variants did not restore feasibility on 1,540 exact events.
 
-`FROZEN_SPEC.md` and the earlier accepted revisions remain unchanged. The
-ETP-R1 policy, MF3V proposal ranker, MF3ZG proposal hierarchy, checkpoints,
-utility definition, exact one-switch pairing rule, and public-split prohibition
-are frozen. No revision in this snapshot fine-tunes the backbone, changes the
-proposal hierarchy, constructs non-exact pairs, or reads `val_seen`,
-`val_unseen`, or `test` for selection.
-
-The old 52-episode confirmation is consumed evidence. It is retained only as
-a retrospective failure and is not reused for fitting, feature design,
-threshold selection, or a claim of fresh validation.
-
-## Current data and audit status
-
-The v1r1 dense replay was outcome-blind and restricted to already-consumed
-development scenes. Its native shadow pass completed 2,703/2,703 episodes;
-290 targeted treatments completed 290/290 with no runtime failures. The
-versioned independent audit corrected a record-field naming mistake in the
-first audit without changing labels or rollouts:
-
-| source | unique exact events | scenes |
-|---|---:|---:|
-| RxR combined development | 997 | 38 |
-| R2R combined development | 543 | 37 |
-| joint canonical set | 1,540 | 39 |
-
-The corrected audit reports zero identity conflicts and
-`rcsp_training_authorized=true`. Public split access remains false. The R2R
-v1r1 variant contribution is 290 events (151 positive, 19 catastrophic);
-these counts are descriptive, not an outcome-dependent stopping rule.
-
-## Latest algorithm results
-
-`MF3ZL-RCSP v1r1 train` uses the zero-relative-delta correctness revision of
-RCSP, nested whole-MP3D-scene cross-fitting (5 outer / 4 inner folds),
-domain-scene-episode-event weighting, common random numbers, fixed model and
-primal-dual constants, and only the pre-sealed weight-decay grid
-`{1e-4, 1e-3, 1e-2}`. It uses 1,540 rows and 39 scenes; no public split was
-read.
-
-The result is:
+Accordingly:
 
 ```text
-status                    TRAIN_DEVELOPMENT_FAIL
-mainline                  NESTED_RCSP_FAIL
-first failure             outer_fold_0:no_feasible_inner_candidate
-checkpoint_created        false
-confirmation_authorized   false
-public_unseen_authorized  false
+FROZEN_SINGLE_DECISION_GATE_FAMILY_STOPPED = true
 ```
 
-The best-looking first outer-fold trial (weight decay `0.01`) is still not
-scientifically feasible: R2R total utility is positive (`2.1418`), but RxR
-leave-one-selected-scene minimum is negative (`-0.2203`), RxR catastrophic
-rate is above the relevant simple baselines, and the candidate does not pass
-the pre-registered cross-domain/baseline criteria. The other weight decays
-have clearly negative RxR utility or fail the same criteria. Controls were
-intentionally skipped because the mainline did not produce a complete outer
-OOF result; this is recorded, not hidden.
+CAR v2, RCSP v2, another single-decision gate, threshold/WD/loss/architecture
+sweeps, and longer-training rescue attempts are out of scope. The prior
+CAR/RCSP/DSR results must not be rerun or overwritten.
 
-For transparency, the first outer-fold evidence (the run stops fail-closed at
-this fold) is:
+## MF3ZN/TUAD status
 
-| weight decay | R2R total utility | RxR total utility | R2R catastrophic rate | RxR catastrophic rate |
-|---:|---:|---:|---:|---:|
-| `1e-4` | `+1.048716` | `-6.042747` | `4.58%` | `11.11%` |
-| `1e-3` | `+1.861237` | `-1.253639` | `5.22%` | `10.08%` |
-| `1e-2` | `+2.141801` | `+2.086910` | `5.16%` | `10.11%` |
+`mf3zn_tuad_v1` and its data protocol `mf3zn_teal_v1` implement the intended
+next information structure:
 
-These are aggregate event-level totals within one outer-fold evaluation, not
-benchmark SR/SPL/nDTW claims. The `1e-2` row still fails its RxR
-leave-one-selected-scene criterion (`-0.220339`) and the pre-registered
-matched-baseline/risk checks, so it cannot be selected or exported as a model.
+```text
+strict causal temporal state
+  -> U/A/D and Reveal/Expiry identifiability
+  -> native-inclusive exact counterfactual action selection
+```
 
-The isolated RxR-only zero-delta probe (997 rows) and a fixed 2,400-step
-long-training diagnostic both independently failed at
-`outer_fold_0:no_feasible_inner_candidate`. More optimization steps alone
-did not resolve the issue. These are diagnostics, not public benchmark
-results.
+The formal protocol is:
 
-## Evidence files in this Git snapshot
+```text
+artifacts/training/mf3zn_tuad_v1/MF3ZN_TUAD_PROTOCOL.json
+SHA-256 b502629d898879c65031a92b91496fd39d640e7c0f09097bd8bce8ebd9118772
+status SEALED_BEFORE_IDENTIFIABILITY_RESULTS
+```
 
-The following small JSON files are intentionally included so a reviewer can
-reproduce the reported decisions from the repository:
+Formal collection, TUAD training, checkpoint generation, and every public
+split remain unauthorized. Existing historical traces have 7,572 prefix rows
+from 1,448 trace files, but they lack complete per-prefix 768D embeddings and
+complete trustworthy U/A/D, Reveal, and Expiry supervision.
 
-- `artifacts/training/mf3zl_rcsp_v1r1_audit_fix_v2/MF3ZL_V1R1_DATA_SUPPORT_AUDIT_CORRECTED.json`
-- `artifacts/training/mf3zl_rcsp_v1r1_audit_fix_v2/MF3ZL_V1R1_AUDIT_FIX_V2_PROTOCOL.json`
-- `artifacts/training/mf3zl_rcsp_v1r1_train/MF3ZL_RCSP_V1R1_TRAIN_PROTOCOL.json`
-- `artifacts/training/mf3zl_rcsp_v1r1_train/MF3ZL_RCSP_V1R1_TRAIN_DEVELOPMENT_RESULT.json`
-- `artifacts/training/mf3zl_rcsp_rxr_probe_v1_1/MF3ZL_RXR_PROBE_PROTOCOL.json`
-- `artifacts/training/mf3zl_rcsp_rxr_probe_v1_1/MF3ZL_RXR_PROBE_RESULT.json`
-- `artifacts/training/mf3zl_rcsp_rxr_longtrain/MF3ZL_RXR_LONGTRAIN_PROTOCOL.json`
-- `artifacts/training/mf3zl_rcsp_rxr_longtrain/MF3ZL_RXR_LONGTRAIN_RESULT.json`
+A separately labeled exploratory no-review scalar-history ridge pretest failed
+on both R2R and RxR. That result only rejects that fixed scalar-history probe;
+it does not establish that all temporal evidence or full TUAD is ineffective.
 
-The corresponding versioned method notes and source are tracked in
-`METHOD_REVISION_3ZL_RCSP*.md`, `revealnav_mf3/rcsp*.py`, and the associated
-`scripts/` and `tests/` files. Artifact paths are project-relative; their
-source protocols contain the expected provenance and access flags.
+## MF3ZO one-shot pilot
 
-## Interpretation that must not be overclaimed
+MF3ZO is an observability/oracle-gap audit, not a deployment algorithm or new
+gate. Its method and protocol were sealed before results. The protocol is:
 
-The data-support gate passes, so the current negative result is not evidence
-that the proposal pool is empty. It does show that this RCSP objective and
-representation do not yet satisfy the pre-registered scene-level safety and
-utility criteria. R2R and RxR behavior differs; a joint positive aggregate
-would not be allowed to conceal a domain regression. No checkpoint was
-authorized and no claim of SOTA, public benchmark improvement, reproducibility
-on unseen data, or acceptance probability follows from this snapshot.
+```text
+artifacts/training/mf3zo_temporal_oracle_gap_v1/
+  MF3ZO_TEMPORAL_ORACLE_GAP_PROTOCOL.json
+SHA-256 74f2b0e737f9d5a89cfd1ad63ae9bfc93b4245ddcfa6179d9e2dd6d1471c989f
+status SEALED_BEFORE_TEMPORAL_ORACLE_GAP_RESULTS
+```
 
-Any next experiment must be a new, explicitly versioned revision. It may use
-the sealed development artifacts for diagnostics, but it must not retune on
-the consumed confirmation cohort or on a public split. A future public
-evaluation can be authorized only by a separate, independently written
-authorization artifact after all pre-registered development gates pass.
+The deterministic, outcome-blind pilot contains 150 events across all 39 raw
+MP3D development scenes:
+
+| domain | events | scenes |
+|---|---:|---:|
+| R2R | 75 | 37 |
+| RxR | 75 | 38 |
+
+It reconstructs 681 strictly causal prefix rows (length 1–19, mean 4.54).
+All 150 decision-time snapshots have checkpoint/native/runner embeddings, but
+only 1/150 events has complete per-prefix checkpoint and executable-candidate
+embedding coverage. Most importantly, 0/150 has a complete independently
+verified oracle record. Consumed-confirmation overlap is empty, and all public
+split access flags are false.
+
+The pilot physically separates `CausalTemporalRecord` from
+`TemporalOracleLabel`; inference tensor builders reject outcome, oracle,
+future, geometry, and pose fields. Missing oracle fields remain explicitly
+unavailable rather than being filled with a heuristic surrogate.
+
+## First scientific stop
+
+Probe A could not be estimated honestly:
+
+```text
+status       TEMPORAL_ORACLE_RELEVANCE_FAIL
+executed     false
+failure_kind REQUIRED_ORACLE_SUPERVISION_UNAVAILABLE
+complete verified oracle labels 0 / 150
+target payload read false
+surrogate labels substituted false
+```
+
+The one-shot stop rule therefore triggered before Probe B or C. No numerical
+claim about oracle-state relevance was produced. No TEAL collection, full TUAD
+training, checkpoint, or public evaluation occurred.
+
+The precise supported conclusion is:
+
+> The fixed MF3ZO pilot stopped at Probe A because required independently
+> verified U/A/D and Reveal/Expiry supervision was unavailable. This is a
+> support/data-readiness failure, not evidence that oracle state or all
+> temporal evidence is ineffective.
+
+## Evidence in this Git snapshot
+
+Review these files together:
+
+- `METHOD_REVISION_3ZN_TUAD.md`
+- `METHOD_REVISION_3ZO_TEMPORAL_ORACLE_GAP.md`
+- `artifacts/training/mf3zn_tuad_v1/MF3ZN_TUAD_PROTOCOL.json`
+- `artifacts/training/mf3zn_tuad_exploratory_no_review_v1/MF3ZN_NO_REVIEW_TEMPORAL_PRETEST.json`
+- `artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_TEMPORAL_ORACLE_GAP_PROTOCOL.json`
+- `artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_PILOT_DATA_AUDIT.json`
+- `artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_PROBE_A_ORACLE_RELEVANCE.json`
+- `artifacts/training/mf3zo_temporal_oracle_gap_v1/MF3ZO_FINAL_RESULT.json`
+- `revealnav_mf3/mf3zo_*.py`
+- `scripts/run_mf3zo_temporal_oracle_gap.py`
+- `tests/test_mf3zo_*.py`
+
+The full regression suite reports 359/359 passing tests.
 
 ## Deliberately omitted from Git
 
-Raw Matterport/R2R/RxR payloads, visual features, checkpoints, virtual
-environments, caches, per-episode traces, large logs, reserve files, and all
-credentials/API keys remain local to the self-contained workspace. This keeps
-the review snapshot small and prevents accidental data or secret disclosure.
+Raw Matterport/R2R/RxR payloads, images, checkpoints, virtual environments,
+caches, credentials, large logs, and the 150 derived embedding arrays remain
+local. Their hashes and coverage metadata are retained in the compact audit
+artifacts. This omission avoids redistributing dataset-derived arrays and does
+not change the reported fail-closed result.

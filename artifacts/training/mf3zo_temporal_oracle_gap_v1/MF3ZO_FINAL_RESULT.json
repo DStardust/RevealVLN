@@ -1,0 +1,34 @@
+{
+  "authorization": {
+    "checkpoint_generation": false,
+    "formal_teal_collection": false,
+    "full_tuad_training": false,
+    "public_evaluation": false
+  },
+  "checkpoint_generated": false,
+  "failure_reason": "Probe A cannot be estimated honestly because no selected event has a complete independently verified UAD/Reveal/Expiry oracle record. The protocol forbids surrogate substitution.",
+  "first_scientific_failure": "Probe A: required oracle supervision unavailable",
+  "formal_teal_collection_started": false,
+  "full_tuad_training_started": false,
+  "later_probes_skipped": [
+    "Probe B",
+    "Probe C"
+  ],
+  "probe_stages_reached": [
+    "Probe A"
+  ],
+  "probes_numerically_executed": [],
+  "protocol_sha256": "74f2b0e737f9d5a89cfd1ad63ae9bfc93b4245ddcfa6179d9e2dd6d1471c989f",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zo_temporal_oracle_gap_v1",
+  "schema_version": "revealnav-mf3zo-final-result/1",
+  "scientific_scope": "This result applies only to the one-shot MF3ZO pilot stage that failed; it is not evidence that all temporal information or full TUAD is mathematically ineffective.",
+  "status": "TEMPORAL_ORACLE_RELEVANCE_FAIL",
+  "stop_rule_triggered": true,
+  "target_payload_read": false
+}
