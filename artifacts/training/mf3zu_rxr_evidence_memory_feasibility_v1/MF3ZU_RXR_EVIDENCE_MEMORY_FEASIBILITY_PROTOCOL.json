@@ -1,0 +1,429 @@
+{
+  "evaluation": {
+    "OOF_complete_required": true,
+    "bootstrap": {
+      "cluster": "raw_MP3D_scene",
+      "replicates": 10000,
+      "seed": 20260901
+    },
+    "folds": 5,
+    "metrics": [
+      "Acc@1",
+      "MRR",
+      "MeanRank",
+      "pairwise_accuracy"
+    ],
+    "split_unit": "raw_MP3D_scene",
+    "standardization_fit_on_train_fold_only": true,
+    "subgroups": [
+      "ALL",
+      "MEMORY_REQUIRED",
+      "MEMORY_NOT_REQUIRED"
+    ]
+  },
+  "evidence": {
+    "K_MEM": 8,
+    "confidence_classes": [
+      "OBSERVED",
+      "AMBIGUOUS",
+      "ABSENT"
+    ],
+    "extractor": {
+      "ensemble": false,
+      "max_tokens": 8000,
+      "model": "qwen3.8-max",
+      "model_sweep": false,
+      "prompt_search": false,
+      "temperature": 0,
+      "thinking": false
+    },
+    "fixed_record_feature": {
+      "candidate_binding": 1,
+      "candidate_feature_dimensions": 78,
+      "current_status_one_hot": 3,
+      "historical_confidence_one_hot": 3,
+      "log1p_age": 1,
+      "ontology_one_hot": 5,
+      "pooling": "mean_per_candidate_over_at_most_8_records",
+      "reciprocal_recency": 1,
+      "record_dimensions": 77,
+      "signed_SHA_token_hash": 64
+    },
+    "future_evidence_forbidden": true,
+    "generic_history_embedding_as_memory_input": false,
+    "human_review": {
+      "gold_labels": false,
+      "human_verified": false,
+      "may_be_described_as_human_validated": false,
+      "status": "SKIPPED_BY_USER_FOR_THIS_ATTEMPT"
+    },
+    "materialized_and_hashed_before_training_target_value_access": true,
+    "mean_pooling": true,
+    "ontology": [
+      "LANDMARK_SEEN",
+      "LANDMARK_PASSED",
+      "RELATION_SATISFIED",
+      "ORDINAL_COUNT",
+      "DIRECTIONAL_CONTEXT"
+    ],
+    "retrieval_order": [
+      "active_instruction_atom_order",
+      "source_step_descending",
+      "evidence_id"
+    ],
+    "retrieval_trainable": false,
+    "whole_history_RGB_as_model_input": false
+  },
+  "exact_target_boundary": {
+    "annotation_may_inventory_exact_targets": false,
+    "annotation_may_open_exact_targets": false,
+    "candidate_aligned": true,
+    "exact_same_episode_prefix": true,
+    "exact_target_rows": 1428,
+    "memory_required_may_inventory_exact_targets": false,
+    "memory_required_may_open_exact_targets": false,
+    "sanitized_population_and_exact_targets_are_separate_artifacts": true,
+    "source": "preexisting exact MF3B RxR current-candidate teacher",
+    "support_existence_used_to_fix_population": true,
+    "target_coordinate_system": "MF3B_candidate_feature_slot",
+    "trainer_may_open_exact_targets_before_evidence_manifest_frozen": false
+  },
+  "execution": {
+    "OOF_evaluation_run": false,
+    "bootstrap_run": false,
+    "checkpoint_for_deployment": false,
+    "checkpoint_generated": false,
+    "evidence_memory_built": false,
+    "exact_target_values_opened_for_training": false,
+    "full_navigation_run": false,
+    "observation_replay_run": false,
+    "population_built": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "training_started": false
+  },
+  "feature_to_physical_step_mapping": {
+    "binding_requires": "replay_embedding_and_score_byte_match",
+    "feature_row_equals_physical_step_assumed": false,
+    "feature_slots_graph_indices_action_ids_bound_before_replay": false,
+    "pairing": "ascending_candidate_eligible_feature_ordinal_to_hash_chained_shadow_decision_ordinal",
+    "required_checks": [
+      "eligible_feature_count_equals_shadow_decision_count",
+      "shadow_previous_hash_chain",
+      "shadow_physical_steps_strictly_increase",
+      "each_shadow_physical_step_resolves_to_exactly_one_native_trace_row",
+      "candidate_cardinality_matches_without_coordinate_binding"
+    ]
+  },
+  "frozen_ETP": {
+    "ETP_frozen": true,
+    "candidate_generator_frozen": true,
+    "checkpoint": {
+      "bytes": 2523110172,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_rxr_grpo/store/ckpt.iter1320.pth",
+      "sha256": "3796c9c94ff8674b8cfe99f2b4aab0f4b391f0d4c9c1e167e4736b3848f27821"
+    },
+    "shared_backbone": {
+      "bytes": 2264172675,
+      "path": "third_party/ETP-R1/pretrained/r2r_rxr_ce/mlm.sap_habitat_depth/store2/model_step_367500.pt",
+      "sha256": "203fe62cc22c63261a5c5b6a3638bc52fd3b08a7f09dd31d8539bf2beab6c3cf"
+    },
+    "topology_encoder_frozen": true,
+    "visual_backbone_frozen": true
+  },
+  "implementation_inventory": {
+    "METHOD_REVISION_3ZU_RXR_EVIDENCE_MEMORY_FEASIBILITY.md": {
+      "bytes": 8810,
+      "path": "METHOD_REVISION_3ZU_RXR_EVIDENCE_MEMORY_FEASIBILITY.md",
+      "sha256": "1cc8e40c051fd337ae5f6e378f4e9981ed43dfa7a4735983d946eb37b661f957"
+    },
+    "revealnav_mf3/mf3zu_evidence_memory.py": {
+      "bytes": 26915,
+      "path": "revealnav_mf3/mf3zu_evidence_memory.py",
+      "sha256": "f64fbfc5dcdc4d6066bd2ea9210ef100bd456c5dfbbd858325ea2abe79d7cff1"
+    },
+    "revealnav_mf3/mf3zu_evidence_memory_metrics.py": {
+      "bytes": 14976,
+      "path": "revealnav_mf3/mf3zu_evidence_memory_metrics.py",
+      "sha256": "67ef4d583b8e70c761ffe426a6080dec3c5221216e07efd871d97cf14cf78f30"
+    },
+    "revealnav_mf3/mf3zu_evidence_memory_reranker.py": {
+      "bytes": 15135,
+      "path": "revealnav_mf3/mf3zu_evidence_memory_reranker.py",
+      "sha256": "6a11c585b91e3a9c8f39ee88362dee27ce96725b9883460be546a013acec7d8b"
+    },
+    "revealnav_mf3/mf3zu_protocol.py": {
+      "bytes": 53458,
+      "path": "revealnav_mf3/mf3zu_protocol.py",
+      "sha256": "c89678471a7b8ac28e11d91135a15c53a87e706b4243c69239e92347ea617740"
+    },
+    "scripts/annotate_mf3zu_rxr_evidence.py": {
+      "bytes": 35591,
+      "path": "scripts/annotate_mf3zu_rxr_evidence.py",
+      "sha256": "4da2c9e4ce375a6f1ba8310d12c4c8870f4816d716ad9c84c82959607d4e3b76"
+    },
+    "scripts/audit_mf3zu_rxr_feasibility_result.py": {
+      "bytes": 21611,
+      "path": "scripts/audit_mf3zu_rxr_feasibility_result.py",
+      "sha256": "238381f30b6ffdcf283ff5ab8ac4b5dc110adce8feaa2b67d63b097fb75d67d8"
+    },
+    "scripts/build_mf3zu_evidence_memory.py": {
+      "bytes": 16785,
+      "path": "scripts/build_mf3zu_evidence_memory.py",
+      "sha256": "2ed0d9d90aa6bf27f9f66612076ac9b5680e9c53770ba0f53569a43e35d25f5e"
+    },
+    "scripts/build_mf3zu_rxr_decision_population.py": {
+      "bytes": 1702,
+      "path": "scripts/build_mf3zu_rxr_decision_population.py",
+      "sha256": "d0983bbdd22eaef55c8070de957c071d937da92e10a7eada6d87b676a9ea6101"
+    },
+    "scripts/collect_mf3zu_rxr_observations.py": {
+      "bytes": 37088,
+      "path": "scripts/collect_mf3zu_rxr_observations.py",
+      "sha256": "de68a9c6a5b6ae12cc325605da166a48b0ee548ad30e8e7269438fbe8a992e9e"
+    },
+    "scripts/run_mf3zu_rxr_feasibility_pipeline.py": {
+      "bytes": 11406,
+      "path": "scripts/run_mf3zu_rxr_feasibility_pipeline.py",
+      "sha256": "5c02b16712ee8ffb2def5838aa2ecd23ed7ff6ad2a27f6b4478f7c9a0cd87810"
+    },
+    "scripts/seal_mf3zu_protocol.py": {
+      "bytes": 1287,
+      "path": "scripts/seal_mf3zu_protocol.py",
+      "sha256": "64088d845abc0c279181fdec0090765f69c8ec9c178d1eabb683f262f5ba2ed5"
+    },
+    "scripts/train_mf3zu_rxr_feasibility.py": {
+      "bytes": 46241,
+      "path": "scripts/train_mf3zu_rxr_feasibility.py",
+      "sha256": "76930c7bd0ee0c1b3bedd9e9ea938ad081a9a726256a37ee460765375b198349"
+    },
+    "tests/test_mf3zu_evidence_memory_metrics.py": {
+      "bytes": 3333,
+      "path": "tests/test_mf3zu_evidence_memory_metrics.py",
+      "sha256": "3bf89916949ce1fc0bfdca9b019091eed5ccdf1d9e6271f46b7787e4ad8684b1"
+    },
+    "tests/test_mf3zu_evidence_memory_reranker.py": {
+      "bytes": 3563,
+      "path": "tests/test_mf3zu_evidence_memory_reranker.py",
+      "sha256": "3b1c98e6d3c437b93a22d851c5f014e69760cdf3e811c5da1626919718848d71"
+    },
+    "tests/test_mf3zu_evidence_pipeline.py": {
+      "bytes": 18943,
+      "path": "tests/test_mf3zu_evidence_pipeline.py",
+      "sha256": "c0980be923c15186bdf38572dc041e8060f15da87a448521b44ba2a05e6d3712"
+    },
+    "tests/test_mf3zu_pipeline_supervisor.py": {
+      "bytes": 2087,
+      "path": "tests/test_mf3zu_pipeline_supervisor.py",
+      "sha256": "9d6ab528a995ae0f8c4cb48d1e5d9e1b8a881501fb724bd2a9a37f8c8129eb97"
+    },
+    "tests/test_mf3zu_protocol.py": {
+      "bytes": 9772,
+      "path": "tests/test_mf3zu_protocol.py",
+      "sha256": "4c5bc219625875ffd83d21ca4d905fdd977f67cd68b23e118b08e22c9f6420c7"
+    },
+    "tests/test_mf3zu_rxr_feasibility_result_audit.py": {
+      "bytes": 10910,
+      "path": "tests/test_mf3zu_rxr_feasibility_result_audit.py",
+      "sha256": "fa520db3d917d4e2c2dbc613b87f003a2bffc0ac901cccea90c030ba7128ae9f"
+    },
+    "tests/test_mf3zu_rxr_feasibility_training.py": {
+      "bytes": 9803,
+      "path": "tests/test_mf3zu_rxr_feasibility_training.py",
+      "sha256": "da546f5c622abcae7b7e88ac258650787bcdb2596a80bb8ad5beb0a10a791c02"
+    },
+    "tests/test_mf3zu_rxr_population.py": {
+      "bytes": 8757,
+      "path": "tests/test_mf3zu_rxr_population.py",
+      "sha256": "f768cf1d529e900d9560a04e129b1d09405107e8c9851cad94855f0fcc62c23b"
+    }
+  },
+  "memory_required_definition": {
+    "MEMORY_NOT_REQUIRED": "current observation is sufficient or the decision does not require historical semantic state",
+    "MEMORY_REQUIRED": "instruction-relevant evidence appeared in the causal past, is absent or insufficient now, and is semantically needed for the current candidate decision",
+    "allowed_inputs": [
+      "instruction_semantics",
+      "causal_visual_history",
+      "current_visual_observation",
+      "current_candidate_geometry_or_appearance",
+      "instruction_constraint_structure"
+    ],
+    "classified_without_opening_exact_target_artifact": true,
+    "forbidden_inputs": [
+      "candidate_target",
+      "success",
+      "reward",
+      "utility",
+      "future_frame"
+    ]
+  },
+  "model_and_training": {
+    "A": "original frozen ETP masked native_scores; no training",
+    "B_C_common_batch_order": true,
+    "B_C_common_initialization": true,
+    "B_and_C_common_architecture": {
+      "candidate_projection": "Linear(768,64)",
+      "evidence_projection": "Linear(78,64)",
+      "interaction": "concat(h,m,h_elementwise_m)",
+      "output": "frozen_ETP_base_score_plus_residual",
+      "residual_head": "Linear(192,64)-GELU-Linear(64,1)"
+    },
+    "architecture_sweep": false,
+    "arms": [
+      "ETP_CURRENT",
+      "ETP_PLUS_EVIDENCE_MEMORY",
+      "ETP_PLUS_SHUFFLED_MEMORY"
+    ],
+    "batch_size": 64,
+    "best_checkpoint_selection": false,
+    "early_stopping": false,
+    "epochs": 40,
+    "evidence_pooling": "mean per candidate",
+    "hyperparameter_grid": false,
+    "learning_rate": 0.001,
+    "loss": "candidate_set_cross_entropy",
+    "multi_seed_rescue": false,
+    "optimizer": "AdamW",
+    "seed": 20260901,
+    "shuffled_memory": {
+      "different_event_within_training_fold": true,
+      "held_fold_target_or_memory_as_donor": false,
+      "preserve_count_and_feature_distribution": true
+    },
+    "threshold_search": false,
+    "weight_decay": 0.0001
+  },
+  "pass_fail": {
+    "R2R_required": false,
+    "all_B_minus_A_Acc_min": 0.0,
+    "domain": "RxR",
+    "memory_not_required_B_minus_A_Acc_min": -0.01,
+    "memory_required_B_minus_A_Acc_lower95_positive": true,
+    "memory_required_B_minus_A_Acc_positive": true,
+    "memory_required_B_minus_A_MRR_positive": true,
+    "memory_required_B_minus_C_Acc_lower95_positive": true,
+    "memory_required_B_minus_C_Acc_positive": true,
+    "memory_required_min_decisions": 50,
+    "memory_required_min_raw_scenes": 10,
+    "status_on_fail": "MF3ZU_RXR_EVIDENCE_MEMORY_FEASIBILITY_FAIL",
+    "status_on_pass": "MF3ZU_RXR_EVIDENCE_MEMORY_FEASIBILITY_PASS",
+    "status_on_specificity_fail": "MF3ZU_RXR_EVIDENCE_SPECIFICITY_FAIL",
+    "status_on_support_fail": "MF3ZU_RXR_MEMORY_REQUIRED_SUPPORT_FAIL"
+  },
+  "population": {
+    "artifact_status": "NOT_YET_MATERIALIZED",
+    "baseline_score_or_correctness_selection": false,
+    "candidate_eligible_rows_before_exact_support": 1815,
+    "exact_target_accessed_for_support_eligibility": true,
+    "expected_episodes": 154,
+    "expected_raw_scenes": 59,
+    "expected_rows": 1428,
+    "outcome_or_utility_selection": false,
+    "sampling": false,
+    "selection_rule": "candidate_mask_count>=2_and_exact_target_feature_slot_active",
+    "source": "MF3B RxR train-guide frozen ETP online features",
+    "source_episodes": 156,
+    "source_raw_scenes": 59,
+    "source_rows": 1920,
+    "target_value_in_sanitized_population": false
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "revision_relationship": {
+    "MF3ZT_failure_preserved": true,
+    "MF3ZT_modified": false,
+    "R2R_in_scope": false,
+    "may_be_reported_as_MF3ZT_two_domain_pass": false,
+    "new_RxR_only_revision": true
+  },
+  "scene_split": {
+    "algorithm": "salted_SHA256_scene_order_then_round_robin",
+    "cluster": "raw_MP3D_scene",
+    "folds": 5,
+    "old_MF3B_split_ignored": true,
+    "salt": "mf3zu-rxr-evidence-memory-feasibility-v1-scene-folds"
+  },
+  "schema_version": "revealnav-mf3zu-rxr-evidence-memory-feasibility-protocol/1",
+  "scientific_question": "Does explicit instruction-conditioned semantic evidence memory improve held-scene frozen-ETP RxR candidate decisions?",
+  "scope": {
+    "ETP_fine_tuning": false,
+    "SR_SPL_optimization": false,
+    "UAD_reveal_expiry_oracle_returnability": false,
+    "candidate_ranking_feasibility_only": true,
+    "dataset": "RxR",
+    "full_navigation": false,
+    "observation_replay_purpose": "causal prefix evidence materialization for the fixed population only",
+    "policy_gradient_or_RL": false,
+    "train_development_only": true,
+    "train_native_observation_replay_authorized": true
+  },
+  "seal_commit": "20c65c258248eac464d8b05695c7738c6b31595c",
+  "source_commit": "d2c08cc068c3fc53aecf351ee4fbd50db6f5d9d4",
+  "source_inventory": {
+    "etp_backbone": {
+      "bytes": 2264172675,
+      "path": "third_party/ETP-R1/pretrained/r2r_rxr_ce/mlm.sap_habitat_depth/store2/model_step_367500.pt",
+      "sha256": "203fe62cc22c63261a5c5b6a3638bc52fd3b08a7f09dd31d8539bf2beab6c3cf"
+    },
+    "mf3b_target_manifest": {
+      "bytes": 92376,
+      "path": "artifacts/phase1/mf3b_uad_online/dataset_v1/MF3B_ONLINE_DATA_MANIFEST.json",
+      "sha256": "36884bae31718bb859f5856103654f5b3f25979fdfd0319c1ca344f00328e034"
+    },
+    "mf3b_target_protocol": {
+      "bytes": 15979,
+      "path": "artifacts/phase1/mf3b_uad_online/dataset_v1/MF3B_ONLINE_DATA_PROTOCOL.json",
+      "sha256": "c857b0863062074987d497bb1b5b4a3cfbf768d1396ff15308e52ec6583e7346"
+    },
+    "mf3zt_method": {
+      "bytes": 8459,
+      "path": "METHOD_REVISION_3ZT_EVIDENCE_MEMORY_DECISION_PROBE.md",
+      "sha256": "3a962ee53567d79d58dfca049c24374e3d5b35a3891c02af42ff168cb11c12c2"
+    },
+    "mf3zt_protocol": {
+      "bytes": 12703,
+      "path": "artifacts/training/mf3zt_evidence_memory_decision_probe_v1/MF3ZT_EVIDENCE_MEMORY_DECISION_PROBE_PROTOCOL.json",
+      "sha256": "71ba83a89b58eb7797a953cbdae8b03d51dd4fdae7b6618c451a511d7fd01af2"
+    },
+    "mf3zt_result": {
+      "bytes": 3472,
+      "path": "artifacts/training/mf3zt_evidence_memory_decision_probe_v1/MF3ZT_EVIDENCE_MEMORY_DECISION_PROBE_RESULT.json",
+      "sha256": "0910c61b9cf5d45e845447bf60a1df7901d05aa62f3dfd37b3090429712b608e"
+    },
+    "mf3zt_target_audit": {
+      "bytes": 10643,
+      "path": "artifacts/training/mf3zt_evidence_memory_decision_probe_v1/MF3ZT_DECISION_TARGET_SUPPORT_AUDIT.json",
+      "sha256": "31b10d600e8bce5a1c82c82481b146ed75489de287ac2d049c43508b0d6a958b"
+    },
+    "observation_replay_worker": {
+      "bytes": 8672,
+      "path": "scripts/mf3zp_observation_worker_v2.py",
+      "sha256": "162fba817bc36f30823dfeb3afc713b7e52354b6c643bb244f224e2fbb992124"
+    },
+    "qwen_client": {
+      "bytes": 12748,
+      "path": "revealnav_mf3/qwen_evidence_annotation.py",
+      "sha256": "a84b6502693caba9e8139b017d9f1b588d7d8b1c51ec5ae7889ba9fb4a866c07"
+    },
+    "rxr_etp_checkpoint": {
+      "bytes": 2523110172,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_rxr_grpo/store/ckpt.iter1320.pth",
+      "sha256": "3796c9c94ff8674b8cfe99f2b4aab0f4b391f0d4c9c1e167e4736b3848f27821"
+    },
+    "rxr_train_guide": {
+      "bytes": 26241241,
+      "path": "third_party/ETP-R1/data/datasets/RxR_VLNCE_v0_enc_xlmr/train/train_guide.json.gz",
+      "sha256": "f06b2ef4dc947ca15d6c4a5a3d629c9212328f4cbdd38a13bed9c5c1fc224a94"
+    }
+  },
+  "status": "SEALED_BEFORE_MF3ZU_FEASIBILITY_POPULATION_AND_RESULTS"
+}
