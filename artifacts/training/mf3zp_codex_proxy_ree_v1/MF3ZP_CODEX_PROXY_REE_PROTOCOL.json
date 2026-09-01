@@ -1,0 +1,67 @@
+{
+  "authorization": {
+    "deployment_checkpoint": false,
+    "formal_label_validity": false,
+    "formal_ree": false,
+    "oracle_headroom": false,
+    "skill_policy": false
+  },
+  "inputs": {
+    "blank_human_template": {
+      "bytes": 661521,
+      "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_SINGLE_EXPERT_REVIEW_TEMPLATE.jsonl",
+      "sha256": "14f947f9c8ae301f3a71afc110b9586736378dd5aa9dde70d0bad414460a3189"
+    },
+    "pilot_events": {
+      "bytes": 498970,
+      "path": "artifacts/training/mf3zp_revealskill_v1/MF3ZP_REVEAL_EVENTS.jsonl",
+      "sha256": "5636fa6991287aa61a4124df292e65e044cb6f968e9f6a24573cf417623a69d2"
+    },
+    "proxy_labels": {
+      "bytes": 713244,
+      "path": "artifacts/training/mf3zp_codex_proxy_ree_v1/MF3ZP_CODEX_PROXY_LABELS.jsonl",
+      "sha256": "be560a9846a5cfde044066565b697656d57624e2729554143e866bfe831f18e4"
+    },
+    "proxy_manifest": {
+      "bytes": 1121,
+      "path": "artifacts/training/mf3zp_codex_proxy_ree_v1/MF3ZP_CODEX_PROXY_LABEL_MANIFEST.json",
+      "sha256": "cf434c672245bb6ee1453b40bfdccb97b650acad9c8aa04f86e0bc013b257c2b"
+    },
+    "selection": {
+      "bytes": 31353,
+      "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_SINGLE_EXPERT_DEC_SCOUT_SELECTION.json",
+      "sha256": "89fc2227bb6a08ce35ee6d94489c9b06ef60cb0266b0b9e717fa6290ba4d9134"
+    },
+    "source_requests": {
+      "bytes": 2908731,
+      "path": "artifacts/training/mf3zp_qwen_uad_reference_v2/MF3ZP_ANNOTATION_REQUESTS.jsonl",
+      "sha256": "4b62fadb7a0d068aa0715743eae9eb98702e0b0415eda5aae72768f410232833"
+    }
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "purpose": "exploratory machine-label temporal learnability only",
+  "revision": "mf3zp_codex_proxy_ree_v1",
+  "schema_version": "revealnav-mf3zp-codex-proxy-ree-protocol/1",
+  "status": "SEALED_BEFORE_CODEX_PROXY_REE_RESULT",
+  "training": {
+    "arms": [
+      "snapshot",
+      "temporal"
+    ],
+    "epochs": 250,
+    "expiry_supervision": "UNAVAILABLE_NOT_FABRICATED",
+    "folds": 5,
+    "hidden_dim": 64,
+    "hyperparameter_search": false,
+    "learning_rate": 0.001,
+    "prediction_boundary": 0.5,
+    "raw_scene_disjoint": true,
+    "seed": 20260901,
+    "weight_decay": 0.0001
+  }
+}

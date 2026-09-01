@@ -1,0 +1,297 @@
+{
+  "checkpoint_generated": false,
+  "constraint_sequences": 579,
+  "device": "cuda:0",
+  "domains": {
+    "R2R": 197,
+    "RxR": 382
+  },
+  "events": 80,
+  "feature_dim": 125,
+  "folds": [
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.31831181049346924
+        },
+        "temporal": {
+          "final_training_loss": 0.20368772745132446
+        }
+      },
+      "evaluate_examples": 126,
+      "fold": 0,
+      "held_scenes": [
+        "8WUmhLawc2A",
+        "Pm6F8kyY3z2",
+        "ZMojNkEp431",
+        "aayBHfsNo7d",
+        "cV4RVeZvu5T",
+        "sT4fr6TAbpF",
+        "vyrNrziPKCB"
+      ],
+      "train_examples": 453
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.35098031163215637
+        },
+        "temporal": {
+          "final_training_loss": 0.23971256613731384
+        }
+      },
+      "evaluate_examples": 86,
+      "fold": 1,
+      "held_scenes": [
+        "82sE5b5pLXE",
+        "B6ByNegPMKs",
+        "D7G3Y4RVNrH",
+        "D7N2EKCX4Sj",
+        "PX4nDJXEHrG",
+        "qoiz87JEwZ2",
+        "r1Q1Z4BcV1o"
+      ],
+      "train_examples": 493
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.3279096484184265
+        },
+        "temporal": {
+          "final_training_loss": 0.21476343274116516
+        }
+      },
+      "evaluate_examples": 184,
+      "fold": 2,
+      "held_scenes": [
+        "17DRP5sb8fy",
+        "1pXnuDYAj8r",
+        "29hnd4uzFmX",
+        "5q7pvUzZiYa",
+        "7y3sRwLe3Va",
+        "JeFG25nYj2p",
+        "S9hNv5qa7GM",
+        "VLzqgDo317F",
+        "VVfe2KiqLaN",
+        "r47D5H71a5s",
+        "rPc6DW4iMge",
+        "uNb9QFRL6hY",
+        "ur6pFq6Qu1A"
+      ],
+      "train_examples": 395
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.35582780838012695
+        },
+        "temporal": {
+          "final_training_loss": 0.2683928906917572
+        }
+      },
+      "evaluate_examples": 118,
+      "fold": 3,
+      "held_scenes": [
+        "E9uDoFAP3SH",
+        "GdvgFV5R1Z5",
+        "JmbYfDe2QKZ",
+        "ac26ZMwG7aT",
+        "gZ6f7yhEvPG",
+        "p5wJjkQkbXX",
+        "s8pcmisQ38h"
+      ],
+      "train_examples": 461
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.3512805104255676
+        },
+        "temporal": {
+          "final_training_loss": 0.27031245827674866
+        }
+      },
+      "evaluate_examples": 65,
+      "fold": 4,
+      "held_scenes": [
+        "EDJbREhghzL",
+        "VFuaQ6m2Qom",
+        "YmJkqBEsHnH",
+        "e9zR4mvMWw7",
+        "pRbA3pwrgk9"
+      ],
+      "train_examples": 514
+    }
+  ],
+  "formal_label_validity_pass": false,
+  "human_labels_fabricated": false,
+  "label_manifest_sha256": "cf434c672245bb6ee1453b40bfdccb97b650acad9c8aa04f86e0bc013b257c2b",
+  "limitations": [
+    "S/G/E targets are cached provisional Qwen labels, not human labels",
+    "DEC roles are deterministic AI-proxy roles, not expert DEC",
+    "expiry supervision is unavailable and was not fabricated",
+    "this result cannot authorize Oracle Headroom, formal REE, skill policy, or public evaluation"
+  ],
+  "metrics": {
+    "R2R": {
+      "proxy_temporal_signal_positive": false,
+      "snapshot": {
+        "factor_mean_accuracy": 0.5508317929759704,
+        "factor_mean_nll": 0.7973502079645792,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.5822550831792976,
+            "count": 541,
+            "f1_positive": 0.25165562913907286,
+            "nll": 0.7524420619010925,
+            "positive_count": 157
+          },
+          "instantiated": {
+            "accuracy": 0.47689463955637706,
+            "count": 541,
+            "f1_positive": 0.4042105263157894,
+            "nll": 0.8791803121566772,
+            "positive_count": 214
+          },
+          "resolved": {
+            "accuracy": 0.5933456561922366,
+            "count": 541,
+            "f1_positive": 0.27152317880794696,
+            "nll": 0.760428249835968,
+            "positive_count": 150
+          }
+        },
+        "uad_counts": {
+          "A": 186,
+          "D": 28,
+          "U": 327
+        },
+        "uad_macro_f1": 0.31214580379933593
+      },
+      "temporal": {
+        "factor_mean_accuracy": 0.5200246457178066,
+        "factor_mean_nll": 1.3169052600860596,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.5378927911275416,
+            "count": 541,
+            "f1_positive": 0.2603550295857988,
+            "nll": 1.2480052709579468,
+            "positive_count": 157
+          },
+          "instantiated": {
+            "accuracy": 0.46950092421441775,
+            "count": 541,
+            "f1_positive": 0.43392504930966463,
+            "nll": 1.436324119567871,
+            "positive_count": 214
+          },
+          "resolved": {
+            "accuracy": 0.5526802218114603,
+            "count": 541,
+            "f1_positive": 0.27976190476190477,
+            "nll": 1.2663863897323608,
+            "positive_count": 150
+          }
+        },
+        "uad_counts": {
+          "A": 186,
+          "D": 28,
+          "U": 327
+        },
+        "uad_macro_f1": 0.33091504383718745
+      },
+      "temporal_minus_snapshot": {
+        "factor_nll_improvement": -0.5195550521214803,
+        "uad_macro_f1_improvement": 0.01876924003785152
+      }
+    },
+    "RxR": {
+      "proxy_temporal_signal_positive": false,
+      "snapshot": {
+        "factor_mean_accuracy": 0.510687463893703,
+        "factor_mean_nll": 0.9488176306088766,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.5684575389948007,
+            "count": 1154,
+            "f1_positive": 0.2676470588235294,
+            "nll": 0.8544872403144836,
+            "positive_count": 356
+          },
+          "instantiated": {
+            "accuracy": 0.47920277296360486,
+            "count": 1154,
+            "f1_positive": 0.40904621435594885,
+            "nll": 0.9888951778411865,
+            "positive_count": 491
+          },
+          "resolved": {
+            "accuracy": 0.48440207972270366,
+            "count": 1154,
+            "f1_positive": 0.3261608154020385,
+            "nll": 1.0030704736709595,
+            "positive_count": 415
+          }
+        },
+        "uad_counts": {
+          "A": 428,
+          "D": 63,
+          "U": 663
+        },
+        "uad_macro_f1": 0.3323746395144086
+      },
+      "temporal": {
+        "factor_mean_accuracy": 0.5173310225303293,
+        "factor_mean_nll": 1.7541916767756145,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.5450606585788561,
+            "count": 1154,
+            "f1_positive": 0.3190661478599222,
+            "nll": 1.6308778524398804,
+            "positive_count": 356
+          },
+          "instantiated": {
+            "accuracy": 0.512998266897747,
+            "count": 1154,
+            "f1_positive": 0.4727954971857411,
+            "nll": 1.7633990049362183,
+            "positive_count": 491
+          },
+          "resolved": {
+            "accuracy": 0.49393414211438474,
+            "count": 1154,
+            "f1_positive": 0.3596491228070176,
+            "nll": 1.8682981729507446,
+            "positive_count": 415
+          }
+        },
+        "uad_counts": {
+          "A": 428,
+          "D": 63,
+          "U": 663
+        },
+        "uad_macro_f1": 0.3660525401787124
+      },
+      "temporal_minus_snapshot": {
+        "factor_nll_improvement": -0.8053740461667379,
+        "uad_macro_f1_improvement": 0.03367790066430382
+      }
+    }
+  },
+  "protocol_sha256": "73e36c403ec784fc8366cecb6d2c3bdd3715a96622b506d2ec31efdfd554d1c2",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zp_codex_proxy_ree_v1",
+  "scenes": 39,
+  "schema_version": "revealnav-mf3zp-codex-proxy-ree-result/1",
+  "signal_status": "EXPLORATORY_PROXY_TEMPORAL_SIGNAL_MIXED_OR_NEGATIVE",
+  "source_protocol": "SEALED_BEFORE_CODEX_PROXY_REE_RESULT",
+  "status": "EXPLORATORY_CODEX_PROXY_REE_COMPLETE"
+}

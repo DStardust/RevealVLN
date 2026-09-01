@@ -1,0 +1,100 @@
+{
+  "authorization": {
+    "checkpoint_generation": false,
+    "oracle_headroom": false,
+    "public_evaluation": false,
+    "ree_training": false,
+    "skill_policy_training": false,
+    "skill_rollout": false
+  },
+  "base_review_commit": "3e16465d095e4e8ae36ad4ea310f6e02fc9737b1",
+  "closure_snapshot": {
+    "evidence_inventory_sha256": "d2b33844399cc88e9028d0ff0faf4519eda73bda334ef5868229fc29657cd9d6",
+    "implementation_count": 18,
+    "instruction_inventory_sha256": "f8ef7de884152a7546394cd0d023d70359e4e27d56ee29eb1497b5ca590f5040"
+  },
+  "forbidden_within_revision": [
+    "qwen_model_change",
+    "qwen_prompt_change",
+    "qwen_recall",
+    "event_replacement",
+    "uad_k_change",
+    "threshold_change",
+    "dec_metric_change",
+    "sge_semantics_change",
+    "outcome_conditioned_dec"
+  ],
+  "formal_label_validity_pass": false,
+  "human_labels_fabricated": false,
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "qwen_api_calls": 0,
+  "qwen_labels": "provisional",
+  "qwen_model": "qwen3.8-max",
+  "readiness_thresholds": {
+    "dec_precision_min": 0.8,
+    "dec_recall_min": 0.9,
+    "false_decisive_rate_max": 0.1,
+    "intra_e_kappa_min": 0.8,
+    "intra_uad_kappa_min": 0.75,
+    "minimum_qwen_d_support": 20,
+    "qwen_expert_uad_accuracy_min": 0.8
+  },
+  "reproducibility_closure": {
+    "bytes": 7126,
+    "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_REPRODUCIBILITY_CLOSURE_PROTOCOL.json",
+    "sha256": "47805ef4e863acaf1ad1dc1feaa7f62f0246a9f0acaa33c64d2f6a7a827d426b"
+  },
+  "retest_selection": {
+    "bytes": 9837,
+    "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_SINGLE_EXPERT_RETEST_SELECTION.json",
+    "sha256": "d1bd774a806f48b084f7b6f3a0fc6224d19bc49924df6fef8444385dc1de4a4a"
+  },
+  "review_contract": {
+    "blind_test_retest": true,
+    "constraint_classification_roles": [
+      "DEC_REQUIRED",
+      "PREREQUISITE_ONLY",
+      "FUTURE_NOT_RELEVANT",
+      "REDUNDANT",
+      "INCORRECT"
+    ],
+    "experts": 1,
+    "future_frames_visible": false,
+    "human_dec_membership_roles": [
+      "DEC_REQUIRED",
+      "PREREQUISITE_ONLY",
+      "MISSING_DEC_CONSTRAINT"
+    ],
+    "outcomes_visible": false,
+    "qwen_factors_visible": false,
+    "qwen_proposed_dec_definition": "complete frozen event-agnostic Qwen constraint graph",
+    "qwen_rationale_visible": false,
+    "retest_alignment": "Qwen atoms by frozen ID; added atoms by exact normalized text plus manual mapping; membership mismatch is NOT_DEC disagreement",
+    "review_window_prefixes": 5,
+    "uad_stability_k": 3
+  },
+  "revision": "mf3zp_single_expert_dec_scout_v1",
+  "schema_version": "revealnav-mf3zp-single-expert-dec-scout-protocol/1",
+  "scientific_role": "annotation/data-readiness calibration; not a scientific gate",
+  "selection": {
+    "bytes": 31353,
+    "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_SINGLE_EXPERT_DEC_SCOUT_SELECTION.json",
+    "sha256": "89fc2227bb6a08ce35ee6d94489c9b06ef60cb0266b0b9e717fa6290ba4d9134"
+  },
+  "selection_contract": {
+    "R2R": 40,
+    "RxR": 40,
+    "events": 80,
+    "retest_R2R": 10,
+    "retest_RxR": 10,
+    "retest_events": 20,
+    "retest_salt": "mf3zp-single-expert-retest-v1:",
+    "salt": "mf3zp-single-expert-dec-scout-v1:"
+  },
+  "status": "SEALED_BEFORE_SINGLE_EXPERT_RESULTS"
+}
