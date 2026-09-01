@@ -1,0 +1,259 @@
+{
+  "boundary": {
+    "candidate_target_accessed": false,
+    "checkpoint_generated": false,
+    "full_navigation_run": false,
+    "future_observation_accessed": false,
+    "gold": false,
+    "human_verified": false,
+    "outcome_or_utility_accessed": false,
+    "performance_accessed": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "training_authorized_by_this_runner": false
+  },
+  "evidence_annotation": {
+    "decisions": 1428,
+    "episodes": 154,
+    "invalid_parsed_response_retained": true,
+    "logical_attempts_per_decision": 1,
+    "max_tokens": 8000,
+    "model": "qwen3.8-max",
+    "prompt_change": false,
+    "raw_scenes": 59,
+    "temperature": 0.0,
+    "thinking": false,
+    "validator_change": false
+  },
+  "implementation": {
+    "method": {
+      "bytes": 5312,
+      "path": "METHOD_REVISION_3ZU_RXR_EVIDENCE_ANNOTATION_CONTRACT_REPAIR_V1R1.md",
+      "sha256": "654c8753d9f9ae91b5dd8a1634d2b08bfecdfde96f82d5c2d0859a44db76c993"
+    },
+    "regression_test": {
+      "bytes": 20647,
+      "path": "tests/test_annotation_recovery_mf3zu_v1r1.py",
+      "sha256": "aeecb620fa2091d8c4de51840a7699072dc471fdae83af4112a4bc04a1921b3d"
+    },
+    "runner": {
+      "bytes": 65783,
+      "path": "scripts/run_mf3zu_annotation_recovery_v1r1.py",
+      "sha256": "c5aa9d1ee26e5237c3e6e119192fc87c66e66a9ac71e488889e54f07e4bac77c"
+    }
+  },
+  "instruction_repair": {
+    "bound_source": "positive sequential two-digit aNN IDs: a01..a99",
+    "existing_pass_responses": 142,
+    "existing_pass_responses_read_only": true,
+    "failed_requests": [
+      {
+        "episode_id": "40062",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 940,
+        "instruction_sha256": "840a46e903b30c3eb70eb3a886169c8bd555d7c79cb5cd4b9f5a5fef2d9f51b0",
+        "request_id": "042d543f0fe216102bd65e17c5f137cbff1ca53fc1fb972397f68aa6adcd8f07",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/042d543f0fe216102bd65e17c5f137cbff1ca53fc1fb972397f68aa6adcd8f07.json",
+          "sha256": "c16a7f0a4720be4319817713ef33a8b3bc818de899fbde782fba61bcadbabdb2"
+        }
+      },
+      {
+        "episode_id": "2748",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 1182,
+        "instruction_sha256": "46c2ce262cf3f84d55351b7a9c560a66288dd624d0f6df3ff102f65562c4cfc7",
+        "request_id": "053bad2444f4eb31dbb8187b5ea13ec10ae6b68db48a54060bba6bfbda27410d",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/053bad2444f4eb31dbb8187b5ea13ec10ae6b68db48a54060bba6bfbda27410d.json",
+          "sha256": "dd3dadce43fc8cddbb2f97fc5271d35cf39b907c45245c3a24778bd86bd3e1ae"
+        }
+      },
+      {
+        "episode_id": "35542",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 699,
+        "instruction_sha256": "cd6c19a8dd642c4f08d3e196331ebba2bea31fc80739824c974f1ad917e2ec0e",
+        "request_id": "057f7fcbaf19f3d033750b9baed81cadf04280d4753b0775004ecc649e37b48f",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/057f7fcbaf19f3d033750b9baed81cadf04280d4753b0775004ecc649e37b48f.json",
+          "sha256": "5324f56e84424fa9d9b05ca9cfca95d414c3cba990e1b63e2cb123e9cf2a5875"
+        }
+      },
+      {
+        "episode_id": "52655",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 1064,
+        "instruction_sha256": "e23875f53e34f339f8ead8407ca809547b9a8624ef9b88e9d6825b80863a7a99",
+        "request_id": "12f6b4d666b65a6ba7a4a7b1d97c26387518e3b0784de4bee7daf37f9638844a",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/12f6b4d666b65a6ba7a4a7b1d97c26387518e3b0784de4bee7daf37f9638844a.json",
+          "sha256": "20566959a3dbd4277943c075d8486ab2cc1dfa188d641d20dddc9e9225fa6d05"
+        }
+      },
+      {
+        "episode_id": "18649",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 1147,
+        "instruction_sha256": "57c1cef42b3b20914007d8220d7beeecd4241be836098274d1a1f20a51e1f34a",
+        "request_id": "1da5702386896475cf73be048211950ca9c5e3da7be269e95af85391cbd60f9b",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/1da5702386896475cf73be048211950ca9c5e3da7be269e95af85391cbd60f9b.json",
+          "sha256": "71f39b34ce556e653803a61d39463a8b9e4ae69ace89feef4219ef27e19f5847"
+        }
+      },
+      {
+        "episode_id": "17140",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 627,
+        "instruction_sha256": "f8befe5f56bff732bee0b388b1c057472baa9ca66bad0833dbbd5f89e49e1734",
+        "request_id": "4843e865acfa3a251cbaa9ffceaabb377ec33f01ac33f24ba188ab21e8ad4213",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/4843e865acfa3a251cbaa9ffceaabb377ec33f01ac33f24ba188ab21e8ad4213.json",
+          "sha256": "b6add11efdbd201a3218eea96118eb951828857e56412bfc96ddd3d801d5713f"
+        }
+      },
+      {
+        "episode_id": "9655",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 822,
+        "instruction_sha256": "b4c90403b0f64e69fbf83fa837bc5b17208eb6f2e3cfc85898ea2adc367b0ea7",
+        "request_id": "48879c6405d312de3b933ec8526f9393047301a9a3a2e25d3146590328ce39b7",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/48879c6405d312de3b933ec8526f9393047301a9a3a2e25d3146590328ce39b7.json",
+          "sha256": "1d617b2a0eac6a26983c33b637488f27aff9bff6fe99f493b5652f6378ea532e"
+        }
+      },
+      {
+        "episode_id": "7620",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 1469,
+        "instruction_sha256": "a46f7356a0c0c97934bf5188f203b48fcfbd4420bcde9a7fc3cbb1584bf7b565",
+        "request_id": "76de9367888c8de39dd820e3ef72cd41d4f5cbe67b0b0be65cbcd08ecfd126e1",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/76de9367888c8de39dd820e3ef72cd41d4f5cbe67b0b0be65cbcd08ecfd126e1.json",
+          "sha256": "6f174789be7f51f9248bfe47fdf43119d1b6ef4e28daedbfb8f210dbc9a69dbe"
+        }
+      },
+      {
+        "episode_id": "44982",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 1012,
+        "instruction_sha256": "09a5a08b0f6d57fbdeee7d98e6fa2d0ee5c8c3122eca63905d3648b9d77e3ced",
+        "request_id": "8fab562357a7215b29b23c201bb8c037d5ce7636815a7a4f4aebab8cab3e3c4e",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/8fab562357a7215b29b23c201bb8c037d5ce7636815a7a4f4aebab8cab3e3c4e.json",
+          "sha256": "6fe2a2dd5b7f8e455632f18a1af6274b0ca2b40c18100e6e21bb9c2b23955451"
+        }
+      },
+      {
+        "episode_id": "18612",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 903,
+        "instruction_sha256": "e44c514ac2a00e170d2fcd28ea3bc829d2de5c186e2ea408df7fd171f3801d12",
+        "request_id": "917b676f8f41d0885e266f63f13cc639a1cabd43aa3a34a3fbd92856f91167eb",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/917b676f8f41d0885e266f63f13cc639a1cabd43aa3a34a3fbd92856f91167eb.json",
+          "sha256": "43cc019b8c2bb400510dd31eac54435fc6f1868d5468029b3ed21c7eab2f228d"
+        }
+      },
+      {
+        "episode_id": "44857",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 1280,
+        "instruction_sha256": "60337533c5b820063fc39280caf7db8b0ca9aae99abade419489a4147821e505",
+        "request_id": "a8f9d9b402ac21e45062450b0fd97610de48f3435f8db325ad8d28b6667f212c",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/a8f9d9b402ac21e45062450b0fd97610de48f3435f8db325ad8d28b6667f212c.json",
+          "sha256": "174b486844eeaa6e4c23dcaa6ae8a809da3f333f2f17212533d24189d3b3b245"
+        }
+      },
+      {
+        "episode_id": "22421",
+        "error": "MF3ZUContractError: invalid instruction atom list",
+        "instruction_characters": 970,
+        "instruction_sha256": "5dc871255bb80b22c5b2da998204e0baf12109d83b1bc149c0c724b79021b438",
+        "request_id": "f9cea6a68b9c19f888bb4a95cc260d67e2404e17a681e5829e997e9928e4841a",
+        "response": {
+          "bytes": 445,
+          "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/responses/instruction/f9cea6a68b9c19f888bb4a95cc260d67e2404e17a681e5829e997e9928e4841a.json",
+          "sha256": "3a15b457b354871aae11ccd0eb7fb168ddcc0d6d30c629eacfdbb68747145927"
+        }
+      }
+    ],
+    "graph_loader": "v1r1 runtime adapter in sealed runner",
+    "historical_source_files_modified": false,
+    "invalid_parsed_response_retained": true,
+    "logical_attempts_per_failed_request": 1,
+    "parser_atom_limit_after": 99,
+    "parser_atom_limit_before": 32,
+    "prompt_change": false,
+    "selection": "exact 12 failed request IDs in parent manifest",
+    "semantic_schema_change": false
+  },
+  "output_root": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r1",
+  "parent": {
+    "instruction_annotation_manifest": {
+      "bytes": 12246,
+      "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/MF3ZU_INSTRUCTION_ANNOTATION_MANIFEST.json",
+      "sha256": "4c5ec45965525369f84004105e3980b401f8735d7fb2c06d5c7de04ed6ed527c"
+    },
+    "instruction_input_manifest": {
+      "bytes": 604,
+      "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/MF3ZU_INSTRUCTION_INPUT_MANIFEST.json",
+      "sha256": "7f8313c11a872ce451553a1a8f5ee47f1c598aea91c158ed5dbbaf5e60f76611"
+    },
+    "instruction_requests": {
+      "bytes": 317393,
+      "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/MF3ZU_INSTRUCTION_REQUESTS.jsonl",
+      "sha256": "1d72c6e8bc4e245dd34fc46ac87cdb563177863c14db2dbd99a6a881e81cb8a1"
+    },
+    "observation_manifest": {
+      "bytes": 121201,
+      "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/MF3ZU_OBSERVATION_COLLECTION_MANIFEST.json",
+      "sha256": "200be8f0cde5a158927de05477a6cc91e347fe5b4f4f4c9f76ce67e4c9d1151a"
+    },
+    "parent_files_read_only": true,
+    "population_manifest": {
+      "bytes": 3999,
+      "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/MF3ZU_RXR_DECISION_POPULATION_MANIFEST.json",
+      "sha256": "cfc272c7b500c6db5220889d174cf19fa37fd46997de1441d17e17dc521e8c8b"
+    },
+    "protocol": {
+      "bytes": 16678,
+      "path": "artifacts/training/mf3zu_rxr_evidence_memory_feasibility_v1/MF3ZU_RXR_EVIDENCE_MEMORY_FEASIBILITY_PROTOCOL.json",
+      "sha256": "0771f8cb7d50e9ba33e69dec4bd9121435f50dbde350114137d809998183b05d"
+    },
+    "response_bundle_sha256": "296187e4a70cb81db0db9a6a248b2decc36c2744d7896353d8b8bfbef97519ed",
+    "technical_failure_ledger": {
+      "bytes": 9642,
+      "path": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r1/MF3ZU_PARENT_ANNOTATION_TECHNICAL_FAILURE_LEDGER.json",
+      "sha256": "2dd1ebc78a6723584290425b4d465f36f8e50f286175f6ac7393213a272caa3b"
+    }
+  },
+  "revision": "mf3zu_rxr_evidence_annotation_recovery_v1r1",
+  "schema_version": "revealnav-mf3zu-annotation-recovery-protocol/1",
+  "source_commit": "ebcc0e33e888b065590995e4d3351a4023561977",
+  "status": "SEALED_BEFORE_MF3ZU_V1R1_ANNOTATION_RESPONSES",
+  "transport": {
+    "attempts": 3,
+    "backoff_seconds": 2.0,
+    "evidence_workers": 8,
+    "instruction_workers": 4
+  }
+}
