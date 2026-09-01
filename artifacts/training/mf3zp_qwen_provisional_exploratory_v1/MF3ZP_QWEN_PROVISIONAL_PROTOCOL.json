@@ -1,0 +1,120 @@
+{
+  "boundary": {
+    "checkpoint_generated": false,
+    "formal_label_validity_pass": false,
+    "oracle_headroom_authorized": false,
+    "outcome_payload_read": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "qwen_labels_provisional": true,
+    "target_payload_read_before_features": false
+  },
+  "correctness_protocol": {
+    "bytes": 118426,
+    "path": "artifacts/training/mf3zp_revealskill_v1/MF3ZP_REVEALSKILL_V1_1_CORRECTNESS_PROTOCOL.json",
+    "sha256": "670b444d0c5920e084629c99979b9804026dbb47759c2d737248209590fca9ba"
+  },
+  "entrypoint": {
+    "bytes": 26000,
+    "path": "scripts/run_mf3zp_qwen_provisional_experiment.py",
+    "sha256": "6c135c70b3c267fb2192a26432f00f114eedbde714e5e0923544e89b34979659"
+  },
+  "method": {
+    "bytes": 995,
+    "path": "METHOD_REVISION_3ZP_QWEN_PROVISIONAL_TRAINING.md",
+    "sha256": "a3e884bd0059f5ff383fb7249703c718c55032bff46ec442e34b1fead39dd2e4"
+  },
+  "model": "qwen3.8-max",
+  "pilot_events": {
+    "bytes": 498970,
+    "path": "artifacts/training/mf3zp_revealskill_v1/MF3ZP_REVEAL_EVENTS.jsonl",
+    "sha256": "5636fa6991287aa61a4124df292e65e044cb6f968e9f6a24573cf417623a69d2"
+  },
+  "population": {
+    "domain_counts": {
+      "R2R": 150,
+      "RxR": 150
+    },
+    "event_ids_sha256": "95b7762ff53d7a1318c8b47be3b66c5a1d0bd0fe966e43e83ccf55d906518f2a",
+    "events": 300,
+    "prefix_tasks": 538,
+    "scene_ids": [
+      "17DRP5sb8fy",
+      "1pXnuDYAj8r",
+      "29hnd4uzFmX",
+      "5q7pvUzZiYa",
+      "7y3sRwLe3Va",
+      "82sE5b5pLXE",
+      "8WUmhLawc2A",
+      "B6ByNegPMKs",
+      "D7G3Y4RVNrH",
+      "D7N2EKCX4Sj",
+      "E9uDoFAP3SH",
+      "EDJbREhghzL",
+      "GdvgFV5R1Z5",
+      "JeFG25nYj2p",
+      "JmbYfDe2QKZ",
+      "PX4nDJXEHrG",
+      "Pm6F8kyY3z2",
+      "S9hNv5qa7GM",
+      "VFuaQ6m2Qom",
+      "VLzqgDo317F",
+      "VVfe2KiqLaN",
+      "YmJkqBEsHnH",
+      "ZMojNkEp431",
+      "aayBHfsNo7d",
+      "ac26ZMwG7aT",
+      "cV4RVeZvu5T",
+      "e9zR4mvMWw7",
+      "gZ6f7yhEvPG",
+      "p5wJjkQkbXX",
+      "pRbA3pwrgk9",
+      "qoiz87JEwZ2",
+      "r1Q1Z4BcV1o",
+      "r47D5H71a5s",
+      "rPc6DW4iMge",
+      "s8pcmisQ38h",
+      "sT4fr6TAbpF",
+      "uNb9QFRL6hY",
+      "ur6pFq6Qu1A",
+      "vyrNrziPKCB"
+    ]
+  },
+  "probe": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260901,
+    "decision_rule": "OOF prediction > 0 selects provisional alternative",
+    "feature_sets": [
+      "snapshot_features",
+      "temporal_features",
+      "snapshot_plus_qwen_features"
+    ],
+    "folds": 5,
+    "human_review": false,
+    "hyperparameter_search": false,
+    "ridge_l2": 1.0
+  },
+  "qwen_status": {
+    "bytes": 532,
+    "path": "artifacts/training/mf3zp_revealskill_v1/MF3ZP_QWEN_EVIDENCE_V1_1_STATUS.json",
+    "sha256": "a824445dc73521ac340efb90f648ecd22f7360594458ebdd8cb05abd213d3f02"
+  },
+  "revision": "mf3zp_qwen_provisional_training_v1",
+  "schema_version": "revealnav-mf3zp-qwen-provisional-exploratory/1",
+  "science_protocol": {
+    "bytes": 35663,
+    "path": "artifacts/training/mf3zp_revealskill_v1/MF3ZP_REVEALSKILL_PROTOCOL.json",
+    "sha256": "d0f09395b86804d3afc58f4ec946afc7dfaffd1637c7b8a66a776d58a17cc0c9"
+  },
+  "source_commit": "4ff282cb3b6ed45a9402903134a1aaf1ffb2a4b6",
+  "source_requests": {
+    "bytes": 2908731,
+    "path": "artifacts/training/mf3zp_qwen_uad_reference_v2/MF3ZP_ANNOTATION_REQUESTS.jsonl",
+    "sha256": "4b62fadb7a0d068aa0715743eae9eb98702e0b0415eda5aae72768f410232833"
+  },
+  "status": "SEALED_BEFORE_PROVISIONAL_OUTCOME_READ"
+}

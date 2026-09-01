@@ -1,0 +1,24 @@
+{
+  "schema_version": "revealnav-mf3zp-qwen-provisional-boundary-erratum/1",
+  "status": "RECORDED_BOUNDARY_CLARIFICATION",
+  "superseded_result": {
+    "path": "artifacts/training/mf3zp_qwen_provisional_exploratory_v1/MF3ZP_QWEN_PROVISIONAL_TRAINING_RESULT.json",
+    "sha256": "72743068e44c4f8f43c41e561505d328197bf7540cf582aab6285cd8f8ed15b9"
+  },
+  "clarification": {
+    "feature_construction_before_outcome_read": false,
+    "development_exact_outcome_payload_read": true,
+    "development_exact_outcome_rows": 99,
+    "public_split_access": {
+      "val_seen": false,
+      "val_unseen": false,
+      "test": false,
+      "test_challenge": false
+    },
+    "reason": "The result's feature_audit records that outcomes were absent while inference features were built; the utility probe subsequently read 99 strictly matched development canonical rows. The top-level legacy flag was retained as a pre-feature boundary marker and must not be interpreted as saying no outcomes were ever read."
+  },
+  "qwen_labels_provisional": true,
+  "human_verified": false,
+  "gold": false,
+  "checkpoint_generated": false
+}

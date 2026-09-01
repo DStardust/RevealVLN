@@ -1,0 +1,60 @@
+{
+  "adjudicator_required_on_disagreement": true,
+  "checkpoint_generated": false,
+  "correctness_protocol_sha256": "670b444d0c5920e084629c99979b9804026dbb47759c2d737248209590fca9ba",
+  "evidence_kappa_min": 0.7,
+  "gold": false,
+  "human_verified": false,
+  "model_identifier": "qwen3.8-max",
+  "oracle_headroom_authorized": false,
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "qwen_coverage": {
+    "formal_label_validity_pass": false,
+    "gold": false,
+    "human_verified": false,
+    "missing_request_ids": [],
+    "model_identifier": "qwen3.8-max",
+    "outcome_payload_read": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "required": 538,
+    "schema_version": "revealnav-mf3zp-qwen-evidence-v1.1-status/1",
+    "status": "MF3ZP_QWEN_PREANNOTATION_READY",
+    "target_payload_read": false,
+    "v1_1_valid": 155,
+    "v1_valid": 383,
+    "valid": 538
+  },
+  "review_template_sha256": "7a6229d2cd183c5482d2c40609762a03b844da04426e2a28994f5326bcc475c6",
+  "reviewers_required": 3,
+  "schema_version": "revealnav-mf3zp-qwen-preannotation-audit/1.1",
+  "scientific_gate": "LABEL_VALIDITY_NOT_RUN",
+  "statistics": {
+    "constraint_count_max": 65,
+    "constraint_count_mean": 15.05,
+    "constraint_count_min": 4,
+    "constraint_count_total_event_weighted": 4515,
+    "constraint_kind_counts_event_weighted": {
+      "DIRECTION": 1372,
+      "ENTITY": 1309,
+      "EXCLUSION": 19,
+      "GOAL": 511,
+      "ORDINAL": 187,
+      "RELATION": 878,
+      "TEMPORAL_ORDER": 239
+    },
+    "events": 300,
+    "prefix_reviews": 1009
+  },
+  "status": "MF3ZP_QWEN_PREANNOTATION_READY",
+  "uad_kappa_min": 0.65
+}

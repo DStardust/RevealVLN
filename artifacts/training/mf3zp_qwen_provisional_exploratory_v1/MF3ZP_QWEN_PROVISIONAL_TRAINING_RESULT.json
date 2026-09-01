@@ -1,0 +1,160 @@
+{
+  "checkpoint_generated": false,
+  "exact_outcome_matches": 99,
+  "feature_audit": {
+    "events": 300,
+    "outcome_payload_read": false,
+    "qwen_final_state_counts": {
+      "A": 946,
+      "D": 173,
+      "U": 3396
+    },
+    "qwen_labels_provisional": true,
+    "target_payload_read": false
+  },
+  "formal_label_validity_pass": false,
+  "gold": false,
+  "human_verified": false,
+  "label_probe": {
+    "provisional_target": "Qwen-derived final resolved-constraint fraction",
+    "snapshot_mae": 0.13407792251031905,
+    "temporal_mae": 0.14657914441294828,
+    "temporal_minus_snapshot_mae": -0.012501221902629228
+  },
+  "model": "qwen3.8-max",
+  "note": "Exploratory feasibility only; no formal Oracle/REE/skill gate is passed by this result.",
+  "oracle_headroom_authorized": false,
+  "pilot_events": 300,
+  "prefix_tasks": 538,
+  "protocol": {
+    "bytes": 3585,
+    "path": "artifacts/training/mf3zp_qwen_provisional_exploratory_v1/MF3ZP_QWEN_PROVISIONAL_PROTOCOL.json",
+    "sha256": "039cc1fd345e294f16c84ed99e3363a4deb9909b1c8c0029ffbabae935b6c590"
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "public_unseen_authorized": false,
+  "qwen_labels_are_provisional": true,
+  "schema_version": "revealnav-mf3zp-qwen-provisional-exploratory/1",
+  "status": "EXPLORATORY_QWEN_PROVISIONAL_TRAINING_COMPLETE",
+  "utility_probe": {
+    "snapshot_features": {
+      "domains": {
+        "R2R": {
+          "catastrophic_rate_selected": 0.0,
+          "coverage": 0.5740740740740741,
+          "events": 54,
+          "huber_oof": 0.013551878055854385,
+          "itt_mean_delta_utility": 0.016408072439028868,
+          "itt_scene_bootstrap": {
+            "lower_95": 0.002673970456517818,
+            "observed": 0.016408072439028868,
+            "scene_count": 31,
+            "upper_95": 0.032764106086973555
+          },
+          "selected_count": 31,
+          "selected_mean_delta_utility": 0.02858180360346964
+        },
+        "RxR": {
+          "catastrophic_rate_selected": 0.2,
+          "coverage": 0.2222222222222222,
+          "events": 45,
+          "huber_oof": 0.03675453308997183,
+          "itt_mean_delta_utility": -0.024260209579693885,
+          "itt_scene_bootstrap": {
+            "lower_95": -0.055744343974785546,
+            "observed": -0.024260209579693885,
+            "scene_count": 29,
+            "upper_95": -0.0011293840887232958
+          },
+          "selected_count": 10,
+          "selected_mean_delta_utility": -0.10917094310862248
+        }
+      },
+      "feature": "snapshot_features",
+      "matched_events": 99,
+      "prediction_target_correlation": 0.18442680690590108,
+      "target_mean": -0.036743125118902834
+    },
+    "snapshot_plus_qwen_features": {
+      "domains": {
+        "R2R": {
+          "catastrophic_rate_selected": 0.0,
+          "coverage": 0.5370370370370371,
+          "events": 54,
+          "huber_oof": 0.014542673456917685,
+          "itt_mean_delta_utility": 0.017045774996765843,
+          "itt_scene_bootstrap": {
+            "lower_95": 0.0030784083558257815,
+            "observed": 0.017045774996765843,
+            "scene_count": 31,
+            "upper_95": 0.03318602166756012
+          },
+          "selected_count": 29,
+          "selected_mean_delta_utility": 0.03174040861466743
+        },
+        "RxR": {
+          "catastrophic_rate_selected": 0.14285714285714285,
+          "coverage": 0.3111111111111111,
+          "events": 45,
+          "huber_oof": 0.039493660850734136,
+          "itt_mean_delta_utility": -0.017383756276699972,
+          "itt_scene_bootstrap": {
+            "lower_95": -0.05314184232306389,
+            "observed": -0.017383756276699972,
+            "scene_count": 29,
+            "upper_95": 0.016001892799174734
+          },
+          "selected_count": 14,
+          "selected_mean_delta_utility": -0.05587635946082136
+        }
+      },
+      "feature": "snapshot_plus_qwen_features",
+      "matched_events": 99,
+      "prediction_target_correlation": 0.15701235263426228,
+      "target_mean": -0.036743125118902834
+    },
+    "temporal_features": {
+      "domains": {
+        "R2R": {
+          "catastrophic_rate_selected": 0.034482758620689655,
+          "coverage": 0.5370370370370371,
+          "events": 54,
+          "huber_oof": 0.01873376569604905,
+          "itt_mean_delta_utility": 0.006937005943835736,
+          "itt_scene_bootstrap": {
+            "lower_95": -0.0069275010343219055,
+            "observed": 0.006937005943835736,
+            "scene_count": 31,
+            "upper_95": 0.022358015590114504
+          },
+          "selected_count": 29,
+          "selected_mean_delta_utility": 0.012917183481625164
+        },
+        "RxR": {
+          "catastrophic_rate_selected": 0.125,
+          "coverage": 0.35555555555555557,
+          "events": 45,
+          "huber_oof": 0.05668231245664219,
+          "itt_mean_delta_utility": -0.022624431866834924,
+          "itt_scene_bootstrap": {
+            "lower_95": -0.05462088391590815,
+            "observed": -0.022624431866834924,
+            "scene_count": 29,
+            "upper_95": 0.0021529621498549527
+          },
+          "selected_count": 16,
+          "selected_mean_delta_utility": -0.06363121462547322
+        }
+      },
+      "feature": "temporal_features",
+      "matched_events": 99,
+      "prediction_target_correlation": 0.15037799772519456,
+      "target_mean": -0.036743125118902834
+    }
+  }
+}

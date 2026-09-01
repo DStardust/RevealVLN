@@ -1,0 +1,35 @@
+{
+  "domain_event_counts": {
+    "R2R": 10,
+    "RxR": 10
+  },
+  "event_count": 20,
+  "events_with_at_least_stability_k_target_prefixes": 0,
+  "final_instruction_unique_events": 0,
+  "final_target_present_events": 20,
+  "final_visually_separated_events": 10,
+  "interpretation": "Within the sealed event-local prefixes, a D state requires three consecutive target-present prefixes. The fixed pilot has no event with three target-present prefixes, so a complete Reveal interval is structurally impossible without changing the event population or the frozen stability rule. Neither is changed here.",
+  "model": "qwen3.8-max",
+  "outcome_payload_read": false,
+  "parent_population_event_count": 150,
+  "parent_population_events_with_at_least_stability_k_target_prefixes": 2,
+  "parent_population_target_present_prefix_count_distribution": {
+    "1": 142,
+    "2": 6,
+    "3": 1,
+    "5": 1
+  },
+  "pilot_protocol_sha256": "b1aac8809eb51d5657a2a01cc83099bd4292770d71bed413011219c4ec01c877",
+  "public_split_access": false,
+  "request_count": 77,
+  "schema_version": "revealnav-mf3zp-qwen38max-structural-diagnostic/1",
+  "scientific_probe_executed": false,
+  "stability_k": 3,
+  "status": "STRUCTURAL_LIMIT_CONFIRMED",
+  "target_payload_read": false,
+  "target_present_prefix_count_distribution": {
+    "1": 20
+  },
+  "theoretical_complete_uad_upper_bound": 0,
+  "valid_response_count": 77
+}

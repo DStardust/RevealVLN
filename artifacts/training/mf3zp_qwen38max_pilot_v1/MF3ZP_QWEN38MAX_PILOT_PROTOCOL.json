@@ -1,0 +1,861 @@
+{
+  "annotation": {
+    "backoff_seconds": [
+      0.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "format_addendum": "FORMAT REPAIR (mandatory): output exactly one JSON object with exactly the\nschema keys above.  Do not emit markdown, code fences, or extra keys.  The\nrationale must be a concise, evidence-grounded string of 160 characters or\nfewer and must not be empty.  Keep all boolean, alias, span, and frame-step\nvalues valid under the supplied schema.",
+    "max_attempts": 5,
+    "max_tokens": 800,
+    "max_workers": 2,
+    "response_format": {
+      "type": "json_object"
+    },
+    "response_schema": "revealnav-mf3zp-semantic-reference/1",
+    "system_prompt": {
+      "bytes": 1820,
+      "path": "revealnav_mf3/MF3ZP_QWEN_SYSTEM_PROMPT.md",
+      "sha256": "d7e31f5a9ad87b44091d6fc7e0202b849548035d2797a9b437420346bef5fa35"
+    },
+    "temperature": 0.0,
+    "thinking": false
+  },
+  "boundary": {
+    "checkpoint_generated": false,
+    "formal_probe_a_authorized": false,
+    "human_verified": false,
+    "outcome_payload_read": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "target_payload_read": false
+  },
+  "method": {
+    "bytes": 1378,
+    "path": "METHOD_REVISION_3ZP_QWEN38MAX_PILOT.md",
+    "sha256": "2fbc7bced05e31d8b36b0fc3ad4de1faeb3f75b8383deaa863d58de7c64f6dcb"
+  },
+  "model": "qwen3.8-max",
+  "parent_v2_protocol": {
+    "bytes": 363095,
+    "path": "artifacts/training/mf3zp_qwen_uad_reference_v2/MF3ZP_QWEN_UAD_REFERENCE_PROTOCOL.json",
+    "sha256": "b86baf181e73aa195b73f1bb07ab2527806627f5934d8e83ed9d0535823e4f24"
+  },
+  "parent_v2r1_protocol": {
+    "bytes": 122765,
+    "path": "artifacts/training/mf3zp_qwen_uad_reference_v2r1/MF3ZP_QWEN_UAD_REFERENCE_V2R1_PROTOCOL.json",
+    "sha256": "6e029c33d3155d75d93608a97f41cf2cf718b9263b9a51599311775ab7f7d135"
+  },
+  "population": {
+    "event_count": 20,
+    "events": [
+      {
+        "alternative_action_id": "g11",
+        "dataset": "R2R",
+        "decision_step": 4,
+        "episode_id": "7464",
+        "event_id": "d5156a67b03e19b05b9145a75bf8221e8170ff6090b76cc54caee14b73e92130",
+        "mf3zo_prefix_sha256": "6af026c402028834dfffbad9651155e674675b87dfef4b32914f705c6818982b",
+        "native_action_id": "g12",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "82sE5b5pLXE",
+        "sealed_candidate_action_ids": [
+          "g8",
+          "g11",
+          "g12"
+        ],
+        "source": "mf3zl_v1r1_variant_exact",
+        "source_controller_trace": {
+          "bytes": 3108,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_7464/attempt_001/controller_trace.jsonl",
+          "sha256": "7922b2296174f50471188eac9b97bccf25d6d33b04623d924e836697349693b2"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_7464/attempt_001/features/event_expansion_step_4.npz",
+          "sha256": "c6d969a31331e65758fd25c2b1a1ff7e747822eb18441572f0ea8021f778d304"
+        },
+        "source_native_trace": {
+          "bytes": 928,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_7464/attempt_001/base_trace.jsonl",
+          "sha256": "05f0363f75ef3e536e3954ff52c0e940082794305265bc29d60ee4f37eab2bda"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 928,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_7464/attempt_001/base_trace.jsonl",
+          "sha256": "05f0363f75ef3e536e3954ff52c0e940082794305265bc29d60ee4f37eab2bda"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g0",
+        "dataset": "R2R",
+        "decision_step": 0,
+        "episode_id": "2953",
+        "event_id": "b8ef9c6a9a8b6782ebb7c8a75f3eaf0aa239825a7985c641e36c6d0bb703c37c",
+        "mf3zo_prefix_sha256": "19e12bf02d566616750dd1bac4ee77ca34ada5d4e761f7201af4418adc975cc0",
+        "native_action_id": "g1",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "ur6pFq6Qu1A",
+        "sealed_candidate_action_ids": [
+          "g0",
+          "g1",
+          "g2"
+        ],
+        "source": "mf3zl_v1r1_variant_exact",
+        "source_controller_trace": {
+          "bytes": 4383,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_2953/attempt_001/controller_trace.jsonl",
+          "sha256": "7b5eb73da38668304bd274dfbb582a9bb4b1c93b5847f84f283a9439d9aba170"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_2953/attempt_001/features/event_expansion_step_0.npz",
+          "sha256": "6f11f54ccb2fb03a2e88f59ebe04026cf6f57e89ef6aa4583e1d0b759b40e8cb"
+        },
+        "source_native_trace": {
+          "bytes": 1336,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_2953/attempt_001/base_trace.jsonl",
+          "sha256": "518ebcb39e18c35370b62c611790b42b3e39f5250243bdc484037077a37506ed"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 1336,
+          "path": "artifacts/training/mf3zl_rcsp_v1r1/runs/native/r2r/ep_2953/attempt_001/base_trace.jsonl",
+          "sha256": "518ebcb39e18c35370b62c611790b42b3e39f5250243bdc484037077a37506ed"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g7",
+        "dataset": "R2R",
+        "decision_step": 1,
+        "episode_id": "3356",
+        "event_id": "24121ee11113c700010655bae840b30b15362aacdd50579619ee57f05d16b9c7",
+        "mf3zo_prefix_sha256": "336e272d9929bc2113906779f08ad609391fc7c5dd6676210947e237784856e9",
+        "native_action_id": "g6",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "D7N2EKCX4Sj",
+        "sealed_candidate_action_ids": [
+          "g4",
+          "g5",
+          "g6",
+          "g7"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 3103,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_3356/attempt_001/controller_trace.jsonl",
+          "sha256": "5481e85652222c665b68f97bae97c311a5bb51116988e6d8b0d37d7992543202"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_3356/attempt_001/features/event_core_step_1.npz",
+          "sha256": "4981faa7cfbf40e9b5820255ef3d678069dde1ad675c00bc15d3631fd29bdcc3"
+        },
+        "source_native_trace": {
+          "bytes": 928,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_3356/attempt_001/base_trace.jsonl",
+          "sha256": "4c0e68d2c514591a12539f8fa3d6d1994d5b18d1cc85421187dd7f8de35b06d4"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 928,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_3356/attempt_001/base_trace.jsonl",
+          "sha256": "4c0e68d2c514591a12539f8fa3d6d1994d5b18d1cc85421187dd7f8de35b06d4"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g11",
+        "dataset": "R2R",
+        "decision_step": 3,
+        "episode_id": "2501",
+        "event_id": "6b6b79eb331e48acfda63f433a6f3fd0fd9f39420e8bff406ef5e86e261122ce",
+        "mf3zo_prefix_sha256": "dc8afbd6c56c11802e23e3a922907336700d90773d04df6d766f66530bcf56d0",
+        "native_action_id": "g10",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "r47D5H71a5s",
+        "sealed_candidate_action_ids": [
+          "g10",
+          "g11"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 2260,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_2501/attempt_001/controller_trace.jsonl",
+          "sha256": "7e0d488f7e3d9fec5ab52d24017fafec1ffb74a839d92406af21415aeb310c77"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_2501/attempt_001/features/event_expansion_step_3.npz",
+          "sha256": "f55e597ea1380af664f4e09ff785277a07637ca72054653c98c7bfb3a2c10bdb"
+        },
+        "source_native_trace": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_2501/attempt_001/base_trace.jsonl",
+          "sha256": "d0fbd20c7c4cef4f560285217d93701579f165cf2e945b5cc5bb4ef1dc5a2e78"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_2501/attempt_001/base_trace.jsonl",
+          "sha256": "d0fbd20c7c4cef4f560285217d93701579f165cf2e945b5cc5bb4ef1dc5a2e78"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g10",
+        "dataset": "R2R",
+        "decision_step": 3,
+        "episode_id": "8507",
+        "event_id": "3d53fb89210c6503eef4e5d65e5d6cebbbcaa764c84eea6680c32b1cb679eade",
+        "mf3zo_prefix_sha256": "973318e8f112f70820bb058325c0d79a3ee53f6a3300914c033d48ea7afcf94d",
+        "native_action_id": "g9",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "qoiz87JEwZ2",
+        "sealed_candidate_action_ids": [
+          "g8",
+          "g9",
+          "g10"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 3105,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8507/attempt_001/controller_trace.jsonl",
+          "sha256": "66053d0ba735719c8d54eea1dcee43ea3992950c17bf5e8c32c7f9b6e4f6a060"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8507/attempt_001/features/event_expansion_step_3.npz",
+          "sha256": "aab4066b218d14fc7b482e5424d3697af4317775b93d525d869bc1cc5b76c62c"
+        },
+        "source_native_trace": {
+          "bytes": 927,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8507/attempt_001/base_trace.jsonl",
+          "sha256": "f561fef5125c7e9a7205ef615498dcadde5dfede1efad2334877a8cc67e636e1"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 927,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8507/attempt_001/base_trace.jsonl",
+          "sha256": "f561fef5125c7e9a7205ef615498dcadde5dfede1efad2334877a8cc67e636e1"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g3",
+        "dataset": "R2R",
+        "decision_step": 0,
+        "episode_id": "9432",
+        "event_id": "8443d8134e68c7420e9148dff2519b3930fd19baf2ed438354dcb508500ff90d",
+        "mf3zo_prefix_sha256": "d353328e86a06dcde2e1ac613d8fe51bb0c788c60462cbebdc839181bc7e39d6",
+        "native_action_id": "g2",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "GdvgFV5R1Z5",
+        "sealed_candidate_action_ids": [
+          "g0",
+          "g1",
+          "g2",
+          "g3"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 7053,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_9432/controller_trace.jsonl",
+          "sha256": "1033faf226ee52ab30f6a32f68ae592447332a79d47d93c8164a7fb60795c174"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_9432/intervention_feature.npz",
+          "sha256": "bc95d1fc2d3683b7b4745e95dcaef6aedaff6b88cd46b3e23e4ce00a6992ad27"
+        },
+        "source_native_trace": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_9432/base_trace.jsonl",
+          "sha256": "fef499e92faa01102bd036d47df4cd6d96f2629c7a8fdd66247e3c6edd4c7f40"
+        },
+        "source_trace_mode": "prefix_witness",
+        "source_trace_original": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_9432/base_trace.jsonl",
+          "sha256": "fef499e92faa01102bd036d47df4cd6d96f2629c7a8fdd66247e3c6edd4c7f40"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g3",
+        "dataset": "R2R",
+        "decision_step": 0,
+        "episode_id": "6899",
+        "event_id": "7f3501ccc85a2813f0348cda61cd198283c789e82787d8ce054b35b34814ce28",
+        "mf3zo_prefix_sha256": "da70f8525be67955820521c6eda5f6d8f57c91fb899191fe1816d9ee3582da51",
+        "native_action_id": "g2",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "Pm6F8kyY3z2",
+        "sealed_candidate_action_ids": [
+          "g0",
+          "g1",
+          "g2",
+          "g3"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 7064,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_6899/controller_trace.jsonl",
+          "sha256": "958241e11ec3da7659ce8f64dd3cb39fb147f98ad2cf1cce69c5b5871af8927c"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_6899/intervention_feature.npz",
+          "sha256": "013696e5686e38750656010fca9bca767c5a060b971c374a39b5236c77bac90a"
+        },
+        "source_native_trace": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_baseline_completion/runs/ep_6899/base_trace.jsonl",
+          "sha256": "c534ad1afa43f44fb20ea885ce93c5b1d8ccb9cd109a43047e9fec9da25c43f2"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_6899/base_trace.jsonl",
+          "sha256": "1ea9a0265e91b34363e581bb563cda8e546b26ee59a8bc01dc5ae455acc668d2"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g4",
+        "dataset": "R2R",
+        "decision_step": 1,
+        "episode_id": "1859",
+        "event_id": "09e962b6e053fcb4b8fca12e1d3c3c00486ecf41f0eb2cf3b6eae811bd6507c0",
+        "mf3zo_prefix_sha256": "b27c72834f46d7aaaab1a6f19d8aa2cb1d0171c45a5424a5e29fa1fdca04db4f",
+        "native_action_id": "g3",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "B6ByNegPMKs",
+        "sealed_candidate_action_ids": [
+          "g2",
+          "g3",
+          "g4"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 12790,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_1859/controller_trace.jsonl",
+          "sha256": "242a89ec8c52401f18f3a1d2dc8df59e922d92549082efe9a1876291363a5019"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_1859/intervention_feature.npz",
+          "sha256": "01593bddeccd1c2212fd41b3c1732cc010d9375b1562f6d6dabe47f958086264"
+        },
+        "source_native_trace": {
+          "bytes": 1199,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_1859/base_trace.jsonl",
+          "sha256": "17ad37f84af879b560596dd801dba082d5512a46338e78660400c2220ea7c293"
+        },
+        "source_trace_mode": "prefix_witness",
+        "source_trace_original": {
+          "bytes": 1199,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_1859/base_trace.jsonl",
+          "sha256": "17ad37f84af879b560596dd801dba082d5512a46338e78660400c2220ea7c293"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g9",
+        "dataset": "R2R",
+        "decision_step": 3,
+        "episode_id": "8219",
+        "event_id": "1167cd333a237af83fdda86c3e8e4e9a2cdea0e5b66bd2cbac9bdaa023cbedfc",
+        "mf3zo_prefix_sha256": "31581ed64804352e49627982d36cea442cbddb8f732f07ab7a98d7f2bb80c335",
+        "native_action_id": "g4",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "pRbA3pwrgk9",
+        "sealed_candidate_action_ids": [
+          "g4",
+          "g6",
+          "g9"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 6505,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8219/attempt_001/controller_trace.jsonl",
+          "sha256": "fc1762064d4932d2a68f7cbbda397a137a48354d2b09301e8438060a461d7c9a"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8219/attempt_001/features/event_expansion_step_3.npz",
+          "sha256": "784ec6c3b51c4743b02b1275eaee98b924a5190047fdcef7c03a039155999078"
+        },
+        "source_native_trace": {
+          "bytes": 2028,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8219/attempt_001/base_trace.jsonl",
+          "sha256": "7ec8c0ed5ce0d49d30d39aeb6944b81f2657975a7f97ee523d458ccaa7a84760"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 2028,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/r2r/ep_8219/attempt_001/base_trace.jsonl",
+          "sha256": "7ec8c0ed5ce0d49d30d39aeb6944b81f2657975a7f97ee523d458ccaa7a84760"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g2",
+        "dataset": "R2R",
+        "decision_step": 0,
+        "episode_id": "4371",
+        "event_id": "04baa916ad8b7c43ca9af7c4ace8aecc5860d6c260167c8d09e6dd795d161fe8",
+        "mf3zo_prefix_sha256": "0fee43b8c1bd275ad514892e30dd6e477e0ba06f767760064c5b5de04c9bc2c6",
+        "native_action_id": "g1",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "VVfe2KiqLaN",
+        "sealed_candidate_action_ids": [
+          "g0",
+          "g1",
+          "g2",
+          "g3"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 7057,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_4371/controller_trace.jsonl",
+          "sha256": "6b2981cfb352d601cda0d0b8a45a790dfd58940d29fb6121a0e22b6edb669ee4"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_4371/intervention_feature.npz",
+          "sha256": "eca5a65e1fa48726c9d61656a3c89195206edbe82f376d0f70dad9c6252e0ee8"
+        },
+        "source_native_trace": {
+          "bytes": 655,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_baseline_completion/runs/ep_4371/base_trace.jsonl",
+          "sha256": "6ec471504a1dd5aaa61d2fd4766e439ab67ddc74ae08a5d22be6793083d2df33"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 656,
+          "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/runs/ep_4371/base_trace.jsonl",
+          "sha256": "2c3c41978d24fde8382e5c672473a94e2fb1cb8f2829328fd8b08a7e718dbcaa"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g5",
+        "dataset": "RxR",
+        "decision_step": 1,
+        "episode_id": "30509",
+        "event_id": "9baf50d54a32c77d03437509842ddf10c80349f4d7ee7eedb7a31feab9277065",
+        "mf3zo_prefix_sha256": "7a316af62c0d509bca99bb2d048973dab603136068c2cccd127f940dfd77196a",
+        "native_action_id": "g4",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "ur6pFq6Qu1A",
+        "sealed_candidate_action_ids": [
+          "g3",
+          "g4",
+          "g5",
+          "g6"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 4523,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30509/attempt_001/controller_trace.jsonl",
+          "sha256": "c96433c50cd91c17395cbcb8c7dc8f481e51a22fd2bc9c48ef139749760415d4"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30509/attempt_001/features/event_expansion_step_1.npz",
+          "sha256": "fefd195630f1e02220d0ba7e6b7c8f6006f8a7618f1c34306a9c780e0ad13773"
+        },
+        "source_native_trace": {
+          "bytes": 1335,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30509/attempt_001/base_trace.jsonl",
+          "sha256": "538351e80e2d49200d0820c35a5ce41d42b42e365408d56751c2776147c46f37"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 1335,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30509/attempt_001/base_trace.jsonl",
+          "sha256": "538351e80e2d49200d0820c35a5ce41d42b42e365408d56751c2776147c46f37"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g17",
+        "dataset": "RxR",
+        "decision_step": 8,
+        "episode_id": "45585",
+        "event_id": "91b1cfe7c6c5e1cd9879f9767fa234b1f9ab416d586fc0a271cdf352ae4d1619",
+        "mf3zo_prefix_sha256": "8ce6d57f0309ccb622af61ca80dbab038d4f0b335267e4fec4e797af340545dd",
+        "native_action_id": "g15",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "Pm6F8kyY3z2",
+        "sealed_candidate_action_ids": [
+          "g15",
+          "g17",
+          "g18"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 32109,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_45585/controller_trace.jsonl",
+          "sha256": "d684d3eee14bdeba6b999a2b089b0ffc5bc0b3fb4602b1689067180530a61f0a"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_45585/intervention_feature.npz",
+          "sha256": "4d7af034fce0b11ef17525106a65f7f89c1f56109fd2231584d55aafd083b045"
+        },
+        "source_native_trace": {
+          "bytes": 3417,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_45585/base_trace.jsonl",
+          "sha256": "bf3ad283364974b65e246dcf1ddaa12d3cbb8508a441285a9e6a42375266a817"
+        },
+        "source_trace_mode": "prefix_witness",
+        "source_trace_original": {
+          "bytes": 3417,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_45585/base_trace.jsonl",
+          "sha256": "bf3ad283364974b65e246dcf1ddaa12d3cbb8508a441285a9e6a42375266a817"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g7",
+        "dataset": "RxR",
+        "decision_step": 2,
+        "episode_id": "32764",
+        "event_id": "bb079e58bb74c0065457593128d670197674c91adb15f91718e60aed27329650",
+        "mf3zo_prefix_sha256": "839fa86f8dafaae0d06bdbf400ae990343a2bac20598ffb4990ea4ee1577b7b2",
+        "native_action_id": "g8",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "VVfe2KiqLaN",
+        "sealed_candidate_action_ids": [
+          "g2",
+          "g7",
+          "g8"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 5404,
+          "path": "artifacts/phase1/mf3zf_expanded_direct_switch_returns_v1/runs/ep_32764/controller_trace.jsonl",
+          "sha256": "d14e504fcb46b05050cf50ef29fc3ff5570c13bd352b3b830dc56a5606e5e19f"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/phase1/mf3zf_expanded_direct_switch_returns_v1/runs/ep_32764/intervention_feature.npz",
+          "sha256": "ecfe2ef5bf42cb7a3add27bf0b81d3df7fe18600b5125a392d80408aef533715"
+        },
+        "source_native_trace": {
+          "bytes": 520,
+          "path": "artifacts/phase1/mf3zf_expanded_direct_switch_returns_v1/runs/ep_32764/base_trace.jsonl",
+          "sha256": "0f400f60ccf2cbb0aef581a3796e8668f7e6dbbcd8a8f121bfabd3a14a7c40c7"
+        },
+        "source_trace_mode": "prefix_witness",
+        "source_trace_original": {
+          "bytes": 520,
+          "path": "artifacts/phase1/mf3zf_expanded_direct_switch_returns_v1/runs/ep_32764/base_trace.jsonl",
+          "sha256": "0f400f60ccf2cbb0aef581a3796e8668f7e6dbbcd8a8f121bfabd3a14a7c40c7"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g4",
+        "dataset": "RxR",
+        "decision_step": 1,
+        "episode_id": "30113",
+        "event_id": "43be819ffa57876425585afd461c500750da622bdd412b81a2257adf1a14e357",
+        "mf3zo_prefix_sha256": "83d8c350b38e078c55e5277bfe802a5b50d522d1d448467f1fb748e3aeddf382",
+        "native_action_id": "g3",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "pRbA3pwrgk9",
+        "sealed_candidate_action_ids": [
+          "g3",
+          "g4",
+          "g5"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 4525,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30113/attempt_001/controller_trace.jsonl",
+          "sha256": "b6bcd84e970ba3022f5f36fc3e38ad966fb952320c65bf1588c6b87e8a2ea28a"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30113/attempt_001/features/event_core_step_1.npz",
+          "sha256": "a21442068cf12ba66a37dbe544d088755553f58673e98bc727bd140ed0a54e11"
+        },
+        "source_native_trace": {
+          "bytes": 1336,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30113/attempt_001/base_trace.jsonl",
+          "sha256": "b8d96fd62363f1b545f2d7cfedd62ad8429fd7a0614e57dac09a10c19cce6340"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 1336,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_30113/attempt_001/base_trace.jsonl",
+          "sha256": "b8d96fd62363f1b545f2d7cfedd62ad8429fd7a0614e57dac09a10c19cce6340"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g6",
+        "dataset": "RxR",
+        "decision_step": 1,
+        "episode_id": "48100",
+        "event_id": "8feb10cc48b3d84ad21592ad6f000869cf11914cb776fab1b083f1ccba22c975",
+        "mf3zo_prefix_sha256": "9dcacabc98ce528a195b4c44b7a7273788cd09a9651fe43d0c76f5c3eea79334",
+        "native_action_id": "g5",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "82sE5b5pLXE",
+        "sealed_candidate_action_ids": [
+          "g5",
+          "g6"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 3675,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_48100/attempt_001/controller_trace.jsonl",
+          "sha256": "2e3d77d6a5d09bd2d10e5153df7f9c34a53915d59c2f786029ca4d27acb9e6cd"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_48100/attempt_001/features/event_expansion_step_1.npz",
+          "sha256": "1664686ec5bd495f2adbc897d9d553c6aca5af7d6b0cad9ca21982e546d1c315"
+        },
+        "source_native_trace": {
+          "bytes": 1063,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_48100/attempt_001/base_trace.jsonl",
+          "sha256": "60032db836488b9d89615433cf103c6e68cba73695fd3c2cfa70571bc8b2ab65"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 1063,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_48100/attempt_001/base_trace.jsonl",
+          "sha256": "60032db836488b9d89615433cf103c6e68cba73695fd3c2cfa70571bc8b2ab65"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g4",
+        "dataset": "RxR",
+        "decision_step": 1,
+        "episode_id": "55494",
+        "event_id": "38f98d609e60176b6c43c9dc6cfe5ed9ae9c5c8c5131f1dabb7645b375fa4598",
+        "mf3zo_prefix_sha256": "7d122f4c4c9cfe0f6bfba0c8908e712fa753506c94ae48a6da37517b6a55d140",
+        "native_action_id": "g3",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "r47D5H71a5s",
+        "sealed_candidate_action_ids": [
+          "g3",
+          "g4",
+          "g5"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 6938,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_55494/attempt_001/controller_trace.jsonl",
+          "sha256": "fdc14d057a9c302ef960e2bf56a57eba311a5b7c92e1213d01f09d926f51a487"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_55494/attempt_001/features/event_expansion_step_1.npz",
+          "sha256": "24fb2e8b719f0e79ed0f150a251c084031bc094d057d681dfaf7b7fcc9f41a27"
+        },
+        "source_native_trace": {
+          "bytes": 2169,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_55494/attempt_001/base_trace.jsonl",
+          "sha256": "e177a7f97244cc887fb54eecb20e7f28ff09bff3511272c3ab828143a4779dd5"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 2169,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_55494/attempt_001/base_trace.jsonl",
+          "sha256": "e177a7f97244cc887fb54eecb20e7f28ff09bff3511272c3ab828143a4779dd5"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g5",
+        "dataset": "RxR",
+        "decision_step": 1,
+        "episode_id": "15359",
+        "event_id": "1989a20ad9467e9ebe5b9aa539e26997c3ce185baeb50c63aec0928e5e9b30cf",
+        "mf3zo_prefix_sha256": "a073f817da844a304fb7b82a5fff0f6b2d527b64dbd3a52b087b2785a9dd2b38",
+        "native_action_id": "g4",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "qoiz87JEwZ2",
+        "sealed_candidate_action_ids": [
+          "g4",
+          "g5"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 6328,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_15359/controller_trace.jsonl",
+          "sha256": "f087c794dcafff6ecfc9f4f54dd1178151a31c56e285d4c2223ed9cdb32881d9"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_15359/intervention_feature.npz",
+          "sha256": "4149889155750a440934546effdf04817893115b77fca16e5bae307f9716c9fc"
+        },
+        "source_native_trace": {
+          "bytes": 655,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_15359/base_trace.jsonl",
+          "sha256": "7e9b013df4a151973013b36eba40ce5ba96fe7d863040d3ffca1ef697395b56f"
+        },
+        "source_trace_mode": "prefix_witness",
+        "source_trace_original": {
+          "bytes": 655,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_15359/base_trace.jsonl",
+          "sha256": "7e9b013df4a151973013b36eba40ce5ba96fe7d863040d3ffca1ef697395b56f"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g38",
+        "dataset": "RxR",
+        "decision_step": 18,
+        "episode_id": "486",
+        "event_id": "509561f12aed9d97f7b3ef708023f5ace00bcd6764e33f5ce6c619fd9e6d581a",
+        "mf3zo_prefix_sha256": "d3a0cd175068f76330f899dba0a8068091be5cd8d9a76aadff232e3c8417b7fd",
+        "native_action_id": "g37",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "B6ByNegPMKs",
+        "sealed_candidate_action_ids": [
+          "g37",
+          "g38"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 10771,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_486/attempt_001/controller_trace.jsonl",
+          "sha256": "d82075c14208bbfa2073bab69da717f2ca9de0ddba3c01896f93a06f9b17a7b5"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_486/attempt_001/features/event_expansion_step_18.npz",
+          "sha256": "8412dffc5465a94f08b4168e6f9515b87ef50ee6ea809b4c400b0202fdf8f4c8"
+        },
+        "source_native_trace": {
+          "bytes": 3420,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_486/attempt_001/base_trace.jsonl",
+          "sha256": "cae02e4bf55439d1f339f356f24c3c516c7e28efa95ced3acf98d576d7abed87"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 3420,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_486/attempt_001/base_trace.jsonl",
+          "sha256": "cae02e4bf55439d1f339f356f24c3c516c7e28efa95ced3acf98d576d7abed87"
+        },
+        "tier": "expansion"
+      },
+      {
+        "alternative_action_id": "g31",
+        "dataset": "RxR",
+        "decision_step": 9,
+        "episode_id": "18125",
+        "event_id": "ab621f091257463165234e72d6a65acd3018f5a7fde351b2b4e09b45df42eb86",
+        "mf3zo_prefix_sha256": "275bc00765d87e5f75d5b973d72b53878b20264068f2d56b795ccaea420020b1",
+        "native_action_id": "g30",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "D7N2EKCX4Sj",
+        "sealed_candidate_action_ids": [
+          "g28",
+          "g29",
+          "g30",
+          "g31"
+        ],
+        "source": "mf3zl_parent_dense_exact",
+        "source_controller_trace": {
+          "bytes": 6513,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_18125/attempt_001/controller_trace.jsonl",
+          "sha256": "5b7752546acb29c04a3ad877db344710432d5bac2a03be1b71c050b0ab2037b0"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_18125/attempt_001/features/event_core_step_9.npz",
+          "sha256": "fed277b47a20121b71be9a7f7121a30e96f77aa7f587d66ec1d0cd4e56d1ec69"
+        },
+        "source_native_trace": {
+          "bytes": 2032,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_18125/attempt_001/base_trace.jsonl",
+          "sha256": "6b71d46930fec1632dbfde5cebb432d5c8ce8144de263fbbfbb5ad1a525b4907"
+        },
+        "source_trace_mode": "native_reference",
+        "source_trace_original": {
+          "bytes": 2032,
+          "path": "artifacts/training/mf3zl_rcsp_v1/runs/native/rxr/ep_18125/attempt_001/base_trace.jsonl",
+          "sha256": "6b71d46930fec1632dbfde5cebb432d5c8ce8144de263fbbfbb5ad1a525b4907"
+        },
+        "tier": "core"
+      },
+      {
+        "alternative_action_id": "g3",
+        "dataset": "RxR",
+        "decision_step": 0,
+        "episode_id": "44661",
+        "event_id": "cbcb2716e97a3b62af62b9bdff579bd7c1da445e7925de381a21f8d04ff26681",
+        "mf3zo_prefix_sha256": "f9e1eccac1d25e8f999dfa81e95e87384bc6ba461819612e3579282156b600f5",
+        "native_action_id": "g2",
+        "prefix_validation_rule": "actual native actions equal source witness for indices < decision_step; target action is validated from observation",
+        "scene_id": "GdvgFV5R1Z5",
+        "sealed_candidate_action_ids": [
+          "g0",
+          "g1",
+          "g2",
+          "g3",
+          "g4"
+        ],
+        "source": "mf3zk_dsr_v1_existing_exact",
+        "source_controller_trace": {
+          "bytes": 3845,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_44661/controller_trace.jsonl",
+          "sha256": "5342c7939acd2abb6f3a26007352aaee7cdcdc39079b1ea00ac25872f4343313"
+        },
+        "source_feature": {
+          "bytes": 13314,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_44661/intervention_feature.npz",
+          "sha256": "b31762637ce987c76b2b3e9cab0aa1e4ed2f99e8fb83b9824abb24a32804705b"
+        },
+        "source_native_trace": {
+          "bytes": 385,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_44661/base_trace.jsonl",
+          "sha256": "1f614b11437c7e16a1efed7e83de1d3f16f2cd850602750c5a072fcb7966813a"
+        },
+        "source_trace_mode": "prefix_witness",
+        "source_trace_original": {
+          "bytes": 385,
+          "path": "artifacts/phase1/mf3zd_direct_switch_returns_v1/runs/ep_44661/base_trace.jsonl",
+          "sha256": "1f614b11437c7e16a1efed7e83de1d3f16f2cd850602750c5a072fcb7966813a"
+        },
+        "tier": "core"
+      }
+    ],
+    "events_per_domain": 10,
+    "request_count": 77,
+    "request_ids_sha256": "970c5faf6439a62a47ce9c148dbb4fcfe42cb80f694b2ac9ab170ecc3fc0241f"
+  },
+  "request_source": {
+    "bytes": 2908731,
+    "path": "artifacts/training/mf3zp_qwen_uad_reference_v2/MF3ZP_ANNOTATION_REQUESTS.jsonl",
+    "sha256": "4b62fadb7a0d068aa0715743eae9eb98702e0b0415eda5aae72768f410232833"
+  },
+  "revision": "mf3zp_qwen38max_pilot_v1",
+  "schema_version": "revealnav-mf3zp-qwen38max-pilot/1",
+  "script": {
+    "bytes": 20395,
+    "path": "scripts/run_mf3zp_qwen38max_pilot.py",
+    "sha256": "5aa569d7021ff7565fbceca620a04cf011e555eea2897f0afd71a394b2e0cf1f"
+  },
+  "selection_rule": "fixed identity/hash order, 10 events per domain, no outcome access",
+  "status": "SEALED_BEFORE_QWEN38MAX_RESPONSES"
+}
