@@ -1,0 +1,291 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "c36a10b4e42f724a3f72edbc5888dfaecc57b673e744c39d626654e8de0808e3",
+  "request_payload_sha256": "79cda2e0dce2795fe82d1e67ef1060cae01d1918b2fda5ed460a7f6875726cb4",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "kitchen area"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "cupboards"
+      },
+      {
+        "depends_on": [
+          "a01",
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "RELATION",
+        "text": "facing towards the cupboards"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "PASSING",
+        "text": "keep moving forward"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "stairs"
+      },
+      {
+        "depends_on": [
+          "a05",
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "RELATION",
+        "text": "on your right side"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "PASSING",
+        "text": "get down those stairs"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "DIRECTION",
+        "text": "turn towards your left"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "glass dining table"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "in front"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "PASSING",
+        "text": "go near the glass dining table"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around towards your left"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "sofa set"
+      },
+      {
+        "depends_on": [
+          "a13",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "RELATION",
+        "text": "in front"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "PASSING",
+        "text": "go near the sofa set"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "DIRECTION",
+        "text": "turn towards your slight right"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a10"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "RELATION",
+        "text": "between the sofa set and dining table"
+      },
+      {
+        "depends_on": [
+          "a17",
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "PASSING",
+        "text": "walk between the sofa set and dining table in either side and keep moving forward"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "LANDMARK",
+        "text": "small corridor"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "LANDMARK",
+        "text": "silver cabin"
+      },
+      {
+        "depends_on": [
+          "a20",
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "RELATION",
+        "text": "beside a silver cabin"
+      },
+      {
+        "depends_on": [
+          "a19",
+          "a20"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "RELATION",
+        "text": "in front"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "PASSING",
+        "text": "walk through that section and keep moving forward"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "LANDMARK",
+        "text": "wash basin"
+      },
+      {
+        "depends_on": [
+          "a24",
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "RELATION",
+        "text": "on your right"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "PASSING",
+        "text": "stand near that"
+      },
+      {
+        "depends_on": [
+          "a27"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "DIRECTION",
+        "text": "turn towards your left"
+      },
+      {
+        "depends_on": [
+          "a28"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "LANDMARK",
+        "text": "silver door"
+      },
+      {
+        "depends_on": [
+          "a29"
+        ],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "PASSING",
+        "text": "go pass through the door"
+      },
+      {
+        "depends_on": [
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "LANDMARK",
+        "text": "washroom"
+      },
+      {
+        "depends_on": [
+          "a30",
+          "a31"
+        ],
+        "instruction_atom_id": "a32",
+        "semantic_kind": "RELATION",
+        "text": "enter into your washroom"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1854,
+    "prompt_tokens": 338,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 338
+    },
+    "total_tokens": 2192
+  }
+}

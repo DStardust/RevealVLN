@@ -1,0 +1,139 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "d05f165267d88095f55b485142c2af9ff295d404f78f5a56ca0b51b857426e59",
+  "request_payload_sha256": "02efef8fbfe9da2e2cb45d46ad769d951e20f27545a736cd904254307e7b7974",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "DIRECTION",
+        "text": "Move little left from your place where you are standing"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "dining table"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "to your left side"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "kitchen stove"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "to your right side"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "blue color bed on the floor"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "to your left side"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "white colored fridge"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "to your right side"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward till the end"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "LANDMARK",
+        "text": "white door"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "PASSING",
+        "text": "that is your end point"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 788,
+    "prompt_tokens": 247,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 247
+    },
+    "total_tokens": 1035
+  }
+}

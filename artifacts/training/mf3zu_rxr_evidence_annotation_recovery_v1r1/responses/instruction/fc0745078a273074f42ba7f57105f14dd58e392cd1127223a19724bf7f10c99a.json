@@ -1,0 +1,189 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "fc0745078a273074f42ba7f57105f14dd58e392cd1127223a19724bf7f10c99a",
+  "request_payload_sha256": "0172644de89d2ac53c80346104bde346c459a86224d76efa080c59a5ac4cb745",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "DIRECTION",
+        "text": "Take an about turn"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "PASSING",
+        "text": "start entering into the room"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "brown color cupboard"
+      },
+      {
+        "depends_on": [
+          "a02",
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "on your right side"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "take a right turn"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "PASSING",
+        "text": "go into the kitchen"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "brown color cupboards"
+      },
+      {
+        "depends_on": [
+          "a06",
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "on facing"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "DIRECTION",
+        "text": "take an about turn"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "DIRECTION",
+        "text": "start moving straight"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "LANDMARK",
+        "text": "white color sofa"
+      },
+      {
+        "depends_on": [
+          "a10",
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "RELATION",
+        "text": "near to"
+      },
+      {
+        "depends_on": [
+          "a11",
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "DIRECTION",
+        "text": "take a right turn"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "blue color table"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "RELATION",
+        "text": "near"
+      },
+      {
+        "depends_on": [
+          "a15",
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "LANDMARK",
+        "text": "black color glass"
+      },
+      {
+        "depends_on": [
+          "a16",
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "RELATION",
+        "text": "on your left side"
+      },
+      {
+        "depends_on": [
+          "a17",
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "RELATION",
+        "text": "stand in front of"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1124,
+    "prompt_tokens": 261,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 261
+    },
+    "total_tokens": 1385
+  }
+}

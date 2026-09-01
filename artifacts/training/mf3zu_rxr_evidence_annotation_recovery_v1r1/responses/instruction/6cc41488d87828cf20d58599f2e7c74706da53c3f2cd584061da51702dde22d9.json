@@ -1,0 +1,139 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "6cc41488d87828cf20d58599f2e7c74706da53c3f2cd584061da51702dde22d9",
+  "request_payload_sha256": "c4c6a0b89d175e9241e62a47fdff1ac248a71d1fd0ef21fac46a0cba6722800e",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn left from the place you are standing"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "PASSING",
+        "text": "step out of the room"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "On the right side"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "gym equipment"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly turn left"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "PASSING",
+        "text": "go near the closed door"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "LANDMARK",
+        "text": "closed door"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "RELATION",
+        "text": "On the left side"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "LANDMARK",
+        "text": "bathtub"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "RELATION",
+        "text": "stand in front of the bathtub"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 782,
+    "prompt_tokens": 248,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 248
+    },
+    "total_tokens": 1030
+  }
+}

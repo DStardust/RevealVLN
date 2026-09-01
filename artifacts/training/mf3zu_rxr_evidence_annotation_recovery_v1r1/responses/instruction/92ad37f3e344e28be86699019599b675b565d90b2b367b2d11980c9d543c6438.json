@@ -1,0 +1,249 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "92ad37f3e344e28be86699019599b675b565d90b2b367b2d11980c9d543c6438",
+  "request_payload_sha256": "67cc7bc07a9b39b480fddad33956b58bdef60751de77cb228501e228fdb724f6",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "table"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "near"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "open arch"
+      },
+      {
+        "depends_on": [
+          "a04",
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "to the right"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "PASSING",
+        "text": "walk into the arch"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "couch"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "in front"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "wooden cupboard"
+      },
+      {
+        "depends_on": [
+          "a08",
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "PASSING",
+        "text": "walk behind the couch towards the wooden cupboard"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "open entrance"
+      },
+      {
+        "depends_on": [
+          "a10",
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "to the right"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "PASSING",
+        "text": "walk into the open entrance"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "staircase"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "RELATION",
+        "text": "to the left"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "RELATION",
+        "text": "to the right"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "PASSING",
+        "text": "go near the right side door"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "LANDMARK",
+        "text": "another open door"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "PASSING",
+        "text": "walk into the open door"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "LANDMARK",
+        "text": "dining table"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "LANDMARK",
+        "text": "another open door which leads to gym room"
+      },
+      {
+        "depends_on": [
+          "a26"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "PASSING",
+        "text": "stand near the door"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1535,
+    "prompt_tokens": 338,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 338
+    },
+    "total_tokens": 1873
+  }
+}

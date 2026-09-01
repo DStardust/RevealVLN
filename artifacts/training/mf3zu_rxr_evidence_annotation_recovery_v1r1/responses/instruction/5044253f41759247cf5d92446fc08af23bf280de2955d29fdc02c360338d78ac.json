@@ -1,0 +1,99 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "5044253f41759247cf5d92446fc08af23bf280de2955d29fdc02c360338d78ac",
+  "request_payload_sha256": "364543744c81f67c41ea8024d7b14316d4b31ee7fc94d2ffaf1664988aae8b23",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "inside an elevator"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "consul table"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "PASSING",
+        "text": "move towards the consul table"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "maroon carpet"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "on the maroon carpet"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "PASSING",
+        "text": "take few steps towards the consul table"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 505,
+    "prompt_tokens": 211,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 211
+    },
+    "total_tokens": 716
+  }
+}

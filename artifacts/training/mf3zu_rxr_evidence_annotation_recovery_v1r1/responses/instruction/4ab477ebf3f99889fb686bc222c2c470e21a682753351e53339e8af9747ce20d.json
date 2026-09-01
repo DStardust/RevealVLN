@@ -1,0 +1,99 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "4ab477ebf3f99889fb686bc222c2c470e21a682753351e53339e8af9747ce20d",
+  "request_payload_sha256": "be4f558cd781200cee0221db5a14b5b1701c09af0c240178ed9de9b285d74219",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn around from the place you are standing"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly turn left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "go near the open door"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "railing"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "near the railing"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 501,
+    "prompt_tokens": 220,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 220
+    },
+    "total_tokens": 721
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "02f43ebd88517fe723b64cd75608f9c84295514a2e4168dfa508fb510d2f7f76",
+  "request_payload_sha256": "1759dc1049dcf1197320f70b34008b102eac4d2c5807894b8d15e0eba7090930",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "standing at the stairs"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing the railing"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly turn right"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "PASSING",
+        "text": "climb down the stairs completely"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "reach an open door"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly turn left"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "towards the brown colour chair"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "RELATION",
+        "text": "stop in front of the fire place"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 566,
+    "prompt_tokens": 228,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 228
+    },
+    "total_tokens": 794
+  }
+}

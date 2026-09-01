@@ -1,0 +1,156 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "976888c4bee54931f6465189a4f468a3a8c0e0afb96c2753f01af4dd2fa90d2e",
+  "request_payload_sha256": "653452b5b3ab26b4dfb9adf5f33769131edf079ef2c7ad102180409979e252f5",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "glass door"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "take a left turn"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "PASSING",
+        "text": "go outside the bathroom"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "take a right turn"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "go forward"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly towards right"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "dining table"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "go behind"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly towards right"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "DIRECTION",
+        "text": "go forward"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "curtain"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "towards"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "window"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "curtain"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 887,
+    "prompt_tokens": 249,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 249
+    },
+    "total_tokens": 1136
+  }
+}

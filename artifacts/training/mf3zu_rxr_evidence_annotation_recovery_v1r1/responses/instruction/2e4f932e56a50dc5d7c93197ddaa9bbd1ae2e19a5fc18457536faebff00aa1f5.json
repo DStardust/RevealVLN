@@ -1,0 +1,167 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "2e4f932e56a50dc5d7c93197ddaa9bbd1ae2e19a5fc18457536faebff00aa1f5",
+  "request_payload_sha256": "b7da9ae7d8fb5afdcd3d154e30585c0332027ab52bf921c3b8b61967c9e16d78",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "small room"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "desk"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "cabinets"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "facing towards desk and cabinets"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly to the right"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "sink"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "mirror"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "looking at sink and mirror"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "PASSING",
+        "text": "walk past sink"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "closet"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "looking at closet"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "PASSING",
+        "text": "step into closet"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "LANDMARK",
+        "text": "grey door that's closed"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "closet with frozen glass door"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "RELATION",
+        "text": "facing towards grey door and closet with frozen glass door"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "dresser"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "LANDMARK",
+        "text": "lamp"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "LANDMARK",
+        "text": "figurines"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "RELATION",
+        "text": "on top of dresser"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "RELATION",
+        "text": "lamp and figurines are destination"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1015,
+    "prompt_tokens": 282,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 282
+    },
+    "total_tokens": 1297
+  }
+}

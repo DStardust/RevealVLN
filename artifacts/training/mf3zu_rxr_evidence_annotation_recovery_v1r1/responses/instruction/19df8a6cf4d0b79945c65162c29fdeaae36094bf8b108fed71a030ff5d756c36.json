@@ -1,0 +1,196 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "19df8a6cf4d0b79945c65162c29fdeaae36094bf8b108fed71a030ff5d756c36",
+  "request_payload_sha256": "f9f2d49072986e27a8d3690471575e6583117f166e4fa645f3973df08467c43b",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "start in a kitchen"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "door behind you that says private"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "ORDINAL",
+        "text": "first doorway on your right"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "PASSING",
+        "text": "step through the doorway"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "dining area"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "Christmas tree to your left"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "RELATION",
+        "text": "to the right side of the table"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "PASSING",
+        "text": "continue walking passing the picture"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "ORDINAL",
+        "text": "first doorway on your right"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "PASSING",
+        "text": "pass through the doorway"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "another Christmas tree to your left near some windows"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "two red chairs and two gold chairs"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "red chair on your left"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "RELATION",
+        "text": "blue chair on your right"
+      },
+      {
+        "depends_on": [
+          "a13",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "PASSING",
+        "text": "walk between the red chair and the blue chair"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "edge of the carpet"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "DIRECTION",
+        "text": "look to your right"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "RELATION",
+        "text": "in between the red and the blue chairs"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "LANDMARK",
+        "text": "bathroom with red walls"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "PASSING",
+        "text": "step into the bathroom"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "PASSING",
+        "text": "stop"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1211,
+    "prompt_tokens": 340,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 340
+    },
+    "total_tokens": 1551
+  }
+}

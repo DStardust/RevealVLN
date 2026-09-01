@@ -1,0 +1,167 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "7b0d97a26717252ce0dba4dd6918004218b2d41cbb1618dd6771725c353b8107",
+  "request_payload_sha256": "622ce65d5f4d352bf5acc16610b91a9653d5ae0a821072a599b5c28b9ca8766f",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "window"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "chandelier"
+      },
+      {
+        "depends_on": [
+          "a01",
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "Facing the window and chandelier"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn to the right"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "white couch"
+      },
+      {
+        "depends_on": [
+          "a04",
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "PASSING",
+        "text": "Walk past the white couch"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "Make a left leading you outside"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "pool"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "Veer to the left of the pool"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "entrance with a glass door"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "PASSING",
+        "text": "Enter through the entrance with a glass door"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn right"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "LANDMARK",
+        "text": "bed"
+      },
+      {
+        "depends_on": [
+          "a12",
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "RELATION",
+        "text": "on the left"
+      },
+      {
+        "depends_on": [
+          "a12",
+          "a13",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "PASSING",
+        "text": "Go directly past the bed on the left"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "white chair with a footrest"
+      },
+      {
+        "depends_on": [
+          "a15",
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "RELATION",
+        "text": "just in front of the white chair with a footrest"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "LANDMARK",
+        "text": "destination"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1016,
+    "prompt_tokens": 244,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 244
+    },
+    "total_tokens": 1260
+  }
+}

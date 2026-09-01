@@ -1,0 +1,92 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "74d05a27662bf209a72689a00ccb6d520c08c1d4c22464a88cf02b7d3bd2af86",
+  "request_payload_sha256": "4606fdb46312c4415da635f9f309e0edfa1c882961425b1e8a29c5b7a6c6423a",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "open glass door"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "PASSING",
+        "text": "Enter into the room"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "chair couch"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "towards the left"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "staircase"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "towards the front"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "Walk forward"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a05"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "stand close to the staircase"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 453,
+    "prompt_tokens": 216,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 216
+    },
+    "total_tokens": 669
+  }
+}

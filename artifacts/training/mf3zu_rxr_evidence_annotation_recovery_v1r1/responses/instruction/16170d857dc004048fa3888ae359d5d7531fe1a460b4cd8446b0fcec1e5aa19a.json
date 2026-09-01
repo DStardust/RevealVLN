@@ -1,0 +1,91 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "16170d857dc004048fa3888ae359d5d7531fe1a460b4cd8446b0fcec1e5aa19a",
+  "request_payload_sha256": "790b21a06fa3557c73be57af76a086b72435d1a82c485a29499c26c6ae0bddaa",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "You are facing the wall"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn around"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "walk straightly towards the open room"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "PASSING",
+        "text": "passing another open room"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "which is on your right side"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "Now you are in the washroom standing near the washbasin"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "RELATION",
+        "text": "to your left you have a commode"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "that will be the end point"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 471,
+    "prompt_tokens": 231,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 231
+    },
+    "total_tokens": 702
+  }
+}

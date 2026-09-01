@@ -1,0 +1,368 @@
+{
+  "episode_id": "18612",
+  "gold": false,
+  "human_verified": false,
+  "instruction_atom_limit": 99,
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "repair_protocol_sha256": "56e4367d73c06ac33214eb67ef3b35591831a2669fd39a65d357185bbb126e4f",
+  "request_id": "917b676f8f41d0885e266f63f13cc639a1cabd43aa3a34a3fbd92856f91167eb",
+  "request_payload_sha256": "635974b46f7acb2fa01f3faa7974e424bc0172a3e8a0348cc53d712b7494ea36",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "brown color cupboard"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly turn to your left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "table having blue glass bowl on it"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly turn to your left"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "DIRECTION",
+        "text": "turn to your right"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "LANDMARK",
+        "text": "portrait"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "dining table"
+      },
+      {
+        "depends_on": [
+          "a11",
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "DIRECTION",
+        "text": "go straight"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a11",
+          "a12"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "RELATION",
+        "text": "in between"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "plant pot"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "RELATION",
+        "text": "to your right side"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "DIRECTION",
+        "text": "continue moving forward"
+      },
+      {
+        "depends_on": [
+          "a18",
+          "a16"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "PASSING",
+        "text": "passing the plant pot"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "LANDMARK",
+        "text": "couch"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "DIRECTION",
+        "text": "turn to your right"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a23",
+          "a20"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "RELATION",
+        "text": "exactly behind the couch"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "DIRECTION",
+        "text": "turn to your right"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "LANDMARK",
+        "text": "desk and chair"
+      },
+      {
+        "depends_on": [
+          "a26",
+          "a27"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "RELATION",
+        "text": "adjacent to"
+      },
+      {
+        "depends_on": [
+          "a28"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a29"
+        ],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "DIRECTION",
+        "text": "enter the open door"
+      },
+      {
+        "depends_on": [
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "LANDMARK",
+        "text": "entrance of the gym area"
+      },
+      {
+        "depends_on": [
+          "a31"
+        ],
+        "instruction_atom_id": "a32",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a32"
+        ],
+        "instruction_atom_id": "a33",
+        "semantic_kind": "LANDMARK",
+        "text": "door"
+      },
+      {
+        "depends_on": [
+          "a33"
+        ],
+        "instruction_atom_id": "a34",
+        "semantic_kind": "RELATION",
+        "text": "on the left side"
+      },
+      {
+        "depends_on": [
+          "a32",
+          "a33"
+        ],
+        "instruction_atom_id": "a35",
+        "semantic_kind": "PASSING",
+        "text": "passing the door"
+      },
+      {
+        "depends_on": [
+          "a35"
+        ],
+        "instruction_atom_id": "a36",
+        "semantic_kind": "LANDMARK",
+        "text": "equipment"
+      },
+      {
+        "depends_on": [
+          "a36"
+        ],
+        "instruction_atom_id": "a37",
+        "semantic_kind": "RELATION",
+        "text": "on the right"
+      },
+      {
+        "depends_on": [
+          "a35"
+        ],
+        "instruction_atom_id": "a38",
+        "semantic_kind": "LANDMARK",
+        "text": "dumbbells in the case"
+      },
+      {
+        "depends_on": [
+          "a38"
+        ],
+        "instruction_atom_id": "a39",
+        "semantic_kind": "RELATION",
+        "text": "on the left side"
+      },
+      {
+        "depends_on": [
+          "a37",
+          "a39"
+        ],
+        "instruction_atom_id": "a40",
+        "semantic_kind": "RELATION",
+        "text": "end point"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_annotation_recovery_v1r1",
+  "schema_version": "revealnav-mf3zu-instruction-recovery-response/1",
+  "stage": "instruction_repair",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "transport_attempts": [
+    {
+      "attempt": 1,
+      "provider_model": "qwen3.8-max",
+      "raw_content_sha256": "62b0940ad7412926ee698a3616a0b0fa6ea791eb28447f2a671eef1503fe0215",
+      "status": "PARSED_JSON"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 2274,
+    "prompt_tokens": 373,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 373
+    },
+    "total_tokens": 2647
+  }
+}

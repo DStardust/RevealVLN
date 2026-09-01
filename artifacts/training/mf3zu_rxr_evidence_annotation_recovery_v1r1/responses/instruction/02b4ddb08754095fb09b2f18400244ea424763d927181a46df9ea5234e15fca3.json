@@ -1,0 +1,275 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "02b4ddb08754095fb09b2f18400244ea424763d927181a46df9ea5234e15fca3",
+  "request_payload_sha256": "d9162d33ddfdd46e600854a7438a2565b548df4c41f509b0741feed4a048265e",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "glass window"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "infront of"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly take left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards front"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "move little front"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "PASSING",
+        "text": "exit from the room"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly take left"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "glass door"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "infront of you"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "DIRECTION",
+        "text": "take slightly left"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "on the right"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "bed"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "chair"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "RELATION",
+        "text": "on left"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "DIRECTION",
+        "text": "slightly move right"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "LANDMARK",
+        "text": "open arch"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "RELATION",
+        "text": "on the left"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "LANDMARK",
+        "text": "portrait"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "RELATION",
+        "text": "on the wall"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "DIRECTION",
+        "text": "move little forward"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "LANDMARK",
+        "text": "door"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "RELATION",
+        "text": "where the door is open"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "LANDMARK",
+        "text": "sink"
+      },
+      {
+        "depends_on": [
+          "a26"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "RELATION",
+        "text": "at the right"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "LANDMARK",
+        "text": "shower"
+      },
+      {
+        "depends_on": [
+          "a28"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "RELATION",
+        "text": "infront"
+      },
+      {
+        "depends_on": [
+          "a29"
+        ],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "LANDMARK",
+        "text": "destination point"
+      },
+      {
+        "depends_on": [
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "RELATION",
+        "text": "near"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1693,
+    "prompt_tokens": 295,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 295
+    },
+    "total_tokens": 1988
+  }
+}

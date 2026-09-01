@@ -1,0 +1,161 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "225c1747e3d574b6a552c2b9f136cb9b79aac280a0068e9a7acab7d33daedff3",
+  "request_payload_sha256": "3f6e5981cbd3917ead180b477fc734cdbbaef417475842f98a85359e8efe167e",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "home gym"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing the corner of the room"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "treadmill"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "facing the treadmill"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "doorway"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "RELATION",
+        "text": "on the other side of the room"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "DIRECTION",
+        "text": "straight ahead"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "PASSING",
+        "text": "Go through the doorway"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "hall"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "PASSING",
+        "text": "across the hall"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "garage"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "LANDMARK",
+        "text": "garage door"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "RELATION",
+        "text": "right in front of you"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "DIRECTION",
+        "text": "Go toward the garage door"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "RELATION",
+        "text": "stop a few feet from it"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "RELATION",
+        "text": "face it"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 938,
+    "prompt_tokens": 262,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 262
+    },
+    "total_tokens": 1200
+  }
+}

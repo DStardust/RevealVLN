@@ -1,0 +1,153 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "a62e438d4fa550087f3b3281541db14fad94f8a711eaba0455fbbd9373841bed",
+  "request_payload_sha256": "b6881d6701680c77b9fbbdb1539621ddf2ffd0232bb7f062669b41169af118e2",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "closed door"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "entrance"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a04",
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "PASSING",
+        "text": "move towards the entrance"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "open entrance"
+      },
+      {
+        "depends_on": [
+          "a06",
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "to your left"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "PASSING",
+        "text": "enter in to the room"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "entrance"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "to your left"
+      },
+      {
+        "depends_on": [
+          "a10",
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "PASSING",
+        "text": "move towards the entrance"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "PASSING",
+        "text": "enter in to the room"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "end point"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 870,
+    "prompt_tokens": 243,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 243
+    },
+    "total_tokens": 1113
+  }
+}

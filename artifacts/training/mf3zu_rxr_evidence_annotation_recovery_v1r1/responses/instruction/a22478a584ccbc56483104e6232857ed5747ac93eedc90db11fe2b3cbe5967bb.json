@@ -1,0 +1,278 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "a22478a584ccbc56483104e6232857ed5747ac93eedc90db11fe2b3cbe5967bb",
+  "request_payload_sha256": "522f934d14f23df14319bab820d178fbf575055265b0b96093a57ee9c9b5c32e",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "bedroom"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "wall"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "potted plant"
+      },
+      {
+        "depends_on": [
+          "a02",
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "near the potted plant"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "facing towards the wall near the potted plant"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a06",
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards the open door"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a01"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "PASSING",
+        "text": "exit the bedroom"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "narrow corridor"
+      },
+      {
+        "depends_on": [
+          "a11",
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward in the narrow corridor"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "glass door"
+      },
+      {
+        "depends_on": [
+          "a13",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "PASSING",
+        "text": "passing through the glass door"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "open entrance"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a15",
+          "a16",
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward towards the open entrance"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slight right"
+      },
+      {
+        "depends_on": [
+          "a19",
+          "a12"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "DIRECTION",
+        "text": "keep moving in the narrow corridor"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slight left"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a21",
+          "a22",
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards the open door"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "LANDMARK",
+        "text": "room"
+      },
+      {
+        "depends_on": [
+          "a25",
+          "a26"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "PASSING",
+        "text": "enter into the room"
+      },
+      {
+        "depends_on": [
+          "a27"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "LANDMARK",
+        "text": "bedroom"
+      },
+      {
+        "depends_on": [
+          "a27"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "DIRECTION",
+        "text": "take slight left"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "LANDMARK",
+        "text": "television"
+      },
+      {
+        "depends_on": [
+          "a29",
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards the television"
+      },
+      {
+        "depends_on": [
+          "a31",
+          "a30"
+        ],
+        "instruction_atom_id": "a32",
+        "semantic_kind": "RELATION",
+        "text": "standing in front of the television facing towards it"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1784,
+    "prompt_tokens": 311,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 311
+    },
+    "total_tokens": 2095
+  }
+}

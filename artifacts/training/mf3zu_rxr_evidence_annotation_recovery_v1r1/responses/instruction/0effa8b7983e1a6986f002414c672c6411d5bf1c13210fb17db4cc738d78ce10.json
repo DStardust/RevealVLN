@@ -1,0 +1,109 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "0effa8b7983e1a6986f002414c672c6411d5bf1c13210fb17db4cc738d78ce10",
+  "request_payload_sha256": "2c4a9dd289ab813f2d1770672067d83842550db1958a40d58d8d46c1be141589",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "doorway"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "church"
+      },
+      {
+        "depends_on": [
+          "a01",
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "RELATION",
+        "text": "standing in a doorway looking into a church"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "stairs"
+      },
+      {
+        "depends_on": [
+          "a04",
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a05",
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "PASSING",
+        "text": "go halfway down the stairs"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "DIRECTION",
+        "text": "looking outside"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "LANDMARK",
+        "text": "lots of trees"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "RELATION",
+        "text": "reached the end"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 573,
+    "prompt_tokens": 214,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 214
+    },
+    "total_tokens": 787
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "fa50181dfdc92f504bd7e9ca656ef7a1e5e11431595ef7da45d452e15f98f0a9",
+  "request_payload_sha256": "ffbda592f9588423f6d351f752e0e23b7f0c1838c02fecf5284874cbb5f7ac6c",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "You are in a living area"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "facing towards a small table"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "RELATION",
+        "text": "which has a plant on it"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn towards your left"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "PASSING",
+        "text": "keep moving forward"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn towards your slight left"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "in front, you find a glass table"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "PASSING",
+        "text": "Walk through the glass table"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "LANDMARK",
+        "text": "go near the window"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "RELATION",
+        "text": "beside a sofa set"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn towards your left again"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "PASSING",
+        "text": "keep moving forward"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "LANDMARK",
+        "text": "In front, you find a bed"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "PASSING",
+        "text": "go near the bed"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "DIRECTION",
+        "text": "turn towards your slight left"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "PASSING",
+        "text": "Walk in front of the bed"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "DIRECTION",
+        "text": "turn towards your slight right"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "LANDMARK",
+        "text": "In front, you find an other door"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "PASSING",
+        "text": "go walk through the door"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "LANDMARK",
+        "text": "you enter into your washroom"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn towards your left"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "PASSING",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "LANDMARK",
+        "text": "In front, you find an other door, which is brown in color"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "PASSING",
+        "text": "Go pass through that door"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "LANDMARK",
+        "text": "you enter into your inner washroom"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "LANDMARK",
+        "text": "where you find a come out basin to your front"
+      },
+      {
+        "depends_on": [
+          "a26"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "PASSING",
+        "text": "Walk beside that"
+      },
+      {
+        "depends_on": [
+          "a27"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "DIRECTION",
+        "text": "turn towards your left"
+      },
+      {
+        "depends_on": [
+          "a28"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "LANDMARK",
+        "text": "you find another white door"
+      },
+      {
+        "depends_on": [
+          "a29"
+        ],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "PASSING",
+        "text": "Go pass through that door"
+      },
+      {
+        "depends_on": [
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "LANDMARK",
+        "text": "you reach back to the same living area and the same starting point"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1773,
+    "prompt_tokens": 384,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 384
+    },
+    "total_tokens": 2157
+  }
+}

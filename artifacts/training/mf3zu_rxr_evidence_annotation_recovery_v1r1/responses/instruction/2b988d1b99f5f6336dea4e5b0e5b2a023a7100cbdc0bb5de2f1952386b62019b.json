@@ -1,0 +1,108 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "2b988d1b99f5f6336dea4e5b0e5b2a023a7100cbdc0bb5de2f1952386b62019b",
+  "request_payload_sha256": "b4882852e419b277a2fdd219c8bd9e256edb778d49d74170b7f2ade1565376f5",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "podium"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "six arm-less chairs"
+      },
+      {
+        "depends_on": [
+          "a01",
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "RELATION",
+        "text": "near"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn around"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "open doors"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "PASSING",
+        "text": "Move out of this room through these open doors"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "table"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "LANDMARK",
+        "text": "one chair"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "in the left most corner"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "PASSING",
+        "text": "Go and stand near to the table"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 569,
+    "prompt_tokens": 227,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 227
+    },
+    "total_tokens": 796
+  }
+}

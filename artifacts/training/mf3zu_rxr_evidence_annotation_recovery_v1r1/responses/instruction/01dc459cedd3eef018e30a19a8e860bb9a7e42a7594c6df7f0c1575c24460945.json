@@ -1,0 +1,158 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "01dc459cedd3eef018e30a19a8e860bb9a7e42a7594c6df7f0c1575c24460945",
+  "request_payload_sha256": "eddc4161e325ce67425b76456c286747f2bfb7b7b363fbf15745420be3c3ea2b",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "large rec room area"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "two brown doors that are closed"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "facing the two brown doors"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "piano"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "piano on your right"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "two brown sofa chairs"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "RELATION",
+        "text": "two brown sofa chairs on your left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "DIRECTION",
+        "text": "turn 180 degrees"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "LANDMARK",
+        "text": "open patio doors"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "greenish-gray wooden chairs around a coffee table"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "open patio doors just to the left of greenish-gray wooden chairs around a coffee table"
+      },
+      {
+        "depends_on": [
+          "a08",
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "PASSING",
+        "text": "head out the open patio doors"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "DIRECTION",
+        "text": "turn to your left"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "brick steps"
+      },
+      {
+        "depends_on": [
+          "a13",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "RELATION",
+        "text": "steps straight ahead"
+      },
+      {
+        "depends_on": [
+          "a13",
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "PASSING",
+        "text": "walk down the left side towards the steps"
+      },
+      {
+        "depends_on": [
+          "a16",
+          "a14"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "LANDMARK",
+        "text": "base of the brick steps"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 973,
+    "prompt_tokens": 275,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 275
+    },
+    "total_tokens": 1248
+  }
+}

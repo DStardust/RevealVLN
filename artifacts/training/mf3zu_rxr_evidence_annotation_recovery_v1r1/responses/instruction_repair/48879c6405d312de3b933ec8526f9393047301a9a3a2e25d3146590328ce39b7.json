@@ -1,0 +1,344 @@
+{
+  "episode_id": "9655",
+  "gold": false,
+  "human_verified": false,
+  "instruction_atom_limit": 99,
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "repair_protocol_sha256": "56e4367d73c06ac33214eb67ef3b35591831a2669fd39a65d357185bbb126e4f",
+  "request_id": "48879c6405d312de3b933ec8526f9393047301a9a3a2e25d3146590328ce39b7",
+  "request_payload_sha256": "9dd039422b208a518dffffa8e9c4b512a553b8881c00a82a616a6a162334ddc5",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "wash basins"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "turn to your right"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "water purifier"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward towards"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly left"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "open entrance"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward towards"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "PASSING",
+        "text": "pass through it"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "right in front of you"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward towards"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "PASSING",
+        "text": "exit through it"
+      },
+      {
+        "depends_on": [
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly right"
+      },
+      {
+        "depends_on": [
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "reception area"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward towards"
+      },
+      {
+        "depends_on": [
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly right"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "DIRECTION",
+        "text": "move a few steps forward"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly left"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "LANDMARK",
+        "text": "ceramic pots"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "PASSING",
+        "text": "walking in between"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "LANDMARK",
+        "text": "open glass door"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "PASSING",
+        "text": "enter through"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "DIRECTION",
+        "text": "turn slightly to your right"
+      },
+      {
+        "depends_on": [
+          "a26"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "LANDMARK",
+        "text": "open door"
+      },
+      {
+        "depends_on": [
+          "a27"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [
+          "a28"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "PASSING",
+        "text": "enter into it"
+      },
+      {
+        "depends_on": [
+          "a29"
+        ],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "LANDMARK",
+        "text": "mirror"
+      },
+      {
+        "depends_on": [
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "RELATION",
+        "text": "on your left side"
+      },
+      {
+        "depends_on": [
+          "a31"
+        ],
+        "instruction_atom_id": "a32",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a32"
+        ],
+        "instruction_atom_id": "a33",
+        "semantic_kind": "ORDINAL",
+        "text": "second"
+      },
+      {
+        "depends_on": [
+          "a33"
+        ],
+        "instruction_atom_id": "a34",
+        "semantic_kind": "LANDMARK",
+        "text": "mirror"
+      },
+      {
+        "depends_on": [
+          "a34"
+        ],
+        "instruction_atom_id": "a35",
+        "semantic_kind": "RELATION",
+        "text": "on your left"
+      },
+      {
+        "depends_on": [
+          "a35"
+        ],
+        "instruction_atom_id": "a36",
+        "semantic_kind": "DIRECTION",
+        "text": "stop when you reach"
+      },
+      {
+        "depends_on": [
+          "a36"
+        ],
+        "instruction_atom_id": "a37",
+        "semantic_kind": "LANDMARK",
+        "text": "open bathroom door"
+      },
+      {
+        "depends_on": [
+          "a37"
+        ],
+        "instruction_atom_id": "a38",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_annotation_recovery_v1r1",
+  "schema_version": "revealnav-mf3zu-instruction-recovery-response/1",
+  "stage": "instruction_repair",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "transport_attempts": [
+    {
+      "attempt": 1,
+      "provider_model": "qwen3.8-max",
+      "raw_content_sha256": "875bfefd05a397d23d2ccbe1a26b4f5535728cd90f2a7687f84336650e13e876",
+      "status": "PARSED_JSON"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 2088,
+    "prompt_tokens": 338,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 338
+    },
+    "total_tokens": 2426
+  }
+}

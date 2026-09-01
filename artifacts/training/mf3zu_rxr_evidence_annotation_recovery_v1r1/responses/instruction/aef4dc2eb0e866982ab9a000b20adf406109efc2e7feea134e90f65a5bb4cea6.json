@@ -1,0 +1,97 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "aef4dc2eb0e866982ab9a000b20adf406109efc2e7feea134e90f65a5bb4cea6",
+  "request_payload_sha256": "60d9d7baabbde2fead92431d0c712556fc9aa16fe45a7717264524b387edeb2b",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "mirror"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "move forward a bit"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "sofa"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "window"
+      },
+      {
+        "depends_on": [
+          "a06",
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "near"
+      },
+      {
+        "depends_on": [
+          "a05",
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 483,
+    "prompt_tokens": 204,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 204
+    },
+    "total_tokens": 687
+  }
+}

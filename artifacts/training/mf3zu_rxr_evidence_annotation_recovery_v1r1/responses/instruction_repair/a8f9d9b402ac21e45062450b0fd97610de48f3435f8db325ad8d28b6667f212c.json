@@ -1,0 +1,350 @@
+{
+  "episode_id": "44857",
+  "gold": false,
+  "human_verified": false,
+  "instruction_atom_limit": 99,
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "repair_protocol_sha256": "56e4367d73c06ac33214eb67ef3b35591831a2669fd39a65d357185bbb126e4f",
+  "request_id": "a8f9d9b402ac21e45062450b0fd97610de48f3435f8db325ad8d28b6667f212c",
+  "request_payload_sha256": "fc84203ac8f4dbc5962ebf681e309134d18e37ccccd28dc3e9628a56752722f4",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "open-concept office"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "desk at the bottom of a staircase"
+      },
+      {
+        "depends_on": [
+          "a01",
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "RELATION",
+        "text": "facing desk at the bottom of a staircase"
+      },
+      {
+        "depends_on": [
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "wall with projected \"Impact Hub\""
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "facing wall with projected \"Impact Hub\""
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "stone column"
+      },
+      {
+        "depends_on": [
+          "a05",
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "stone column to the right of projected \"Impact Hub\" words"
+      },
+      {
+        "depends_on": [
+          "a07"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "LANDMARK",
+        "text": "desk with black chair and small white trash can"
+      },
+      {
+        "depends_on": [
+          "a07",
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "RELATION",
+        "text": "desk with black chair and small white trash can at base of stone column"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "PASSING",
+        "text": "take a step up to the trash can"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "DIRECTION",
+        "text": "turn left"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "looking down the length of the room"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "ping pong table"
+      },
+      {
+        "depends_on": [
+          "a12",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "RELATION",
+        "text": "ping pong table to your right"
+      },
+      {
+        "depends_on": [
+          "a12"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "very long brown table"
+      },
+      {
+        "depends_on": [
+          "a12",
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "RELATION",
+        "text": "very long brown table to your left"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a16"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "PASSING",
+        "text": "take two steps in between ping pong table and very long brown table"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "LANDMARK",
+        "text": "copy machine"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "RELATION",
+        "text": "copy machine beyond ping pong table to the right"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "LANDMARK",
+        "text": "table with four chairs"
+      },
+      {
+        "depends_on": [
+          "a19",
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "RELATION",
+        "text": "table with four chairs right in front of copy machine"
+      },
+      {
+        "depends_on": [
+          "a19",
+          "a21"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "PASSING",
+        "text": "take a step in between copy machine and table with four chairs"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "LANDMARK",
+        "text": "large red X on shelf above copy machine"
+      },
+      {
+        "depends_on": [
+          "a19",
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "RELATION",
+        "text": "large red X on shelf above copy machine as reference"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [
+          "a26",
+          "a05"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "RELATION",
+        "text": "facing projected \"Impact Hub\" screen"
+      },
+      {
+        "depends_on": [
+          "a05"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "LANDMARK",
+        "text": "wooden crates underneath projected \"Impact Hub\""
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a28"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "RELATION",
+        "text": "wooden crates to the left of ping pong table"
+      },
+      {
+        "depends_on": [
+          "a28"
+        ],
+        "instruction_atom_id": "a30",
+        "semantic_kind": "PASSING",
+        "text": "take a step toward wooden crates"
+      },
+      {
+        "depends_on": [
+          "a30"
+        ],
+        "instruction_atom_id": "a31",
+        "semantic_kind": "LANDMARK",
+        "text": "small table with two orange chairs facing away"
+      },
+      {
+        "depends_on": [
+          "a30",
+          "a31"
+        ],
+        "instruction_atom_id": "a32",
+        "semantic_kind": "RELATION",
+        "text": "small table with two orange chairs in front of you"
+      },
+      {
+        "depends_on": [
+          "a31"
+        ],
+        "instruction_atom_id": "a33",
+        "semantic_kind": "ORDINAL",
+        "text": "orange chair on the left"
+      },
+      {
+        "depends_on": [
+          "a33"
+        ],
+        "instruction_atom_id": "a34",
+        "semantic_kind": "PASSING",
+        "text": "take two steps toward orange chair on the left"
+      },
+      {
+        "depends_on": [
+          "a34",
+          "a07"
+        ],
+        "instruction_atom_id": "a35",
+        "semantic_kind": "RELATION",
+        "text": "at base of stone column on your left"
+      },
+      {
+        "depends_on": [
+          "a34",
+          "a31"
+        ],
+        "instruction_atom_id": "a36",
+        "semantic_kind": "RELATION",
+        "text": "orange chair in front of you"
+      },
+      {
+        "depends_on": [
+          "a34",
+          "a14"
+        ],
+        "instruction_atom_id": "a37",
+        "semantic_kind": "RELATION",
+        "text": "ping pong table slightly behind you to your right"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_annotation_recovery_v1r1",
+  "schema_version": "revealnav-mf3zu-instruction-recovery-response/1",
+  "stage": "instruction_repair",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "transport_attempts": [
+    {
+      "attempt": 1,
+      "provider_model": "qwen3.8-max",
+      "raw_content_sha256": "0c47dda39f8f9eb86b9611a030e5c0d6d538de7a0f7ec6ac1b962b8c76f2f567",
+      "status": "PARSED_JSON"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 2296,
+    "prompt_tokens": 463,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 463
+    },
+    "total_tokens": 2759
+  }
+}

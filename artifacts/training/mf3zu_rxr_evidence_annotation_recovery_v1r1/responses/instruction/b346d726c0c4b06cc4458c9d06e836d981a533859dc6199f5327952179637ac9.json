@@ -1,0 +1,74 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "b346d726c0c4b06cc4458c9d06e836d981a533859dc6199f5327952179637ac9",
+  "request_payload_sha256": "5614c251e5f526d294fd0e407aa1c49cf06d40398861ce1abd64ca2da35bd001",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "long wooden chairs"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing towards"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn around"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "staircase"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "move towards"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "RELATION",
+        "text": "standing in front of"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 329,
+    "prompt_tokens": 206,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 206
+    },
+    "total_tokens": 535
+  }
+}

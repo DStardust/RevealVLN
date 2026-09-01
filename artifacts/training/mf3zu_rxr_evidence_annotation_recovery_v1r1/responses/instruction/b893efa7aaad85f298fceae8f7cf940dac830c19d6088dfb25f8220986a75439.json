@@ -1,0 +1,266 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "b893efa7aaad85f298fceae8f7cf940dac830c19d6088dfb25f8220986a75439",
+  "request_payload_sha256": "81206fbc681da7139571e2364e128f244ff644912e08d7a6d99fad5b8a7fc489",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "bathroom"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "LANDMARK",
+        "text": "window"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "in front of you"
+      },
+      {
+        "depends_on": [
+          "a02",
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "RELATION",
+        "text": "window in front of you"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "DIRECTION",
+        "text": "to your left"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "LANDMARK",
+        "text": "mirror"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "LANDMARK",
+        "text": "sink"
+      },
+      {
+        "depends_on": [
+          "a05",
+          "a06"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "RELATION",
+        "text": "mirror to your left"
+      },
+      {
+        "depends_on": [
+          "a05",
+          "a07"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "RELATION",
+        "text": "sink to your left"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "LANDMARK",
+        "text": "door"
+      },
+      {
+        "depends_on": [
+          "a10",
+          "a11"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "RELATION",
+        "text": "door visible after turning around"
+      },
+      {
+        "depends_on": [
+          "a11"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "PASSING",
+        "text": "walk out of this door"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "DIRECTION",
+        "text": "to your right"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "LANDMARK",
+        "text": "stairs"
+      },
+      {
+        "depends_on": [
+          "a14",
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "RELATION",
+        "text": "stairs to your right"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "PASSING",
+        "text": "go up these stairs"
+      },
+      {
+        "depends_on": [
+          "a17"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "LANDMARK",
+        "text": "bedroom"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [
+          "a17",
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "PASSING",
+        "text": "go back down the stairs you just came up"
+      },
+      {
+        "depends_on": [
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "LANDMARK",
+        "text": "brown door"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "PASSING",
+        "text": "walk through the brown door"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "LANDMARK",
+        "text": "hallway"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "DIRECTION",
+        "text": "on the left"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "LANDMARK",
+        "text": "bathroom"
+      },
+      {
+        "depends_on": [
+          "a24",
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "RELATION",
+        "text": "bathroom on the left"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "LANDMARK",
+        "text": "sink"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "LANDMARK",
+        "text": "mirror"
+      },
+      {
+        "depends_on": [
+          "a23"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "RELATION",
+        "text": "reached the end"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1648,
+    "prompt_tokens": 298,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 298
+    },
+    "total_tokens": 1946
+  }
+}

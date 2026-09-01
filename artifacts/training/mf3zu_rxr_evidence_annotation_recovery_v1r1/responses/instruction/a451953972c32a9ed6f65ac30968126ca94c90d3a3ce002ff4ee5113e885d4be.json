@@ -1,0 +1,276 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "a451953972c32a9ed6f65ac30968126ca94c90d3a3ce002ff4ee5113e885d4be",
+  "request_payload_sha256": "e01bcbe568d88eb94ffef0f936cf891affae3b0b643dfe1bc94e6082b3c49cc3",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "plain white wall"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn to your right, nearly all the way around"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "LANDMARK",
+        "text": "doorway that's recessed in the left hand wall"
+      },
+      {
+        "depends_on": [
+          "a02",
+          "a03"
+        ],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "PASSING",
+        "text": "proceed through the doorway"
+      },
+      {
+        "depends_on": [
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "LANDMARK",
+        "text": "bathroom"
+      },
+      {
+        "depends_on": [
+          "a04",
+          "a05"
+        ],
+        "instruction_atom_id": "a06",
+        "semantic_kind": "PASSING",
+        "text": "Past the bathroom"
+      },
+      {
+        "depends_on": [
+          "a06"
+        ],
+        "instruction_atom_id": "a07",
+        "semantic_kind": "ORDINAL",
+        "text": "not quite the last one in this row of three"
+      },
+      {
+        "depends_on": [
+          "a06",
+          "a07"
+        ],
+        "instruction_atom_id": "a08",
+        "semantic_kind": "DIRECTION",
+        "text": "take a step into the hallway"
+      },
+      {
+        "depends_on": [
+          "a08"
+        ],
+        "instruction_atom_id": "a09",
+        "semantic_kind": "DIRECTION",
+        "text": "turn right"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a10",
+        "semantic_kind": "LANDMARK",
+        "text": "dining table"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a10"
+        ],
+        "instruction_atom_id": "a11",
+        "semantic_kind": "RELATION",
+        "text": "Keep the dining table on your left"
+      },
+      {
+        "depends_on": [
+          "a09"
+        ],
+        "instruction_atom_id": "a12",
+        "semantic_kind": "LANDMARK",
+        "text": "white kitchen island"
+      },
+      {
+        "depends_on": [
+          "a09",
+          "a12"
+        ],
+        "instruction_atom_id": "a13",
+        "semantic_kind": "RELATION",
+        "text": "keep the white kitchen island on your right"
+      },
+      {
+        "depends_on": [
+          "a11",
+          "a13"
+        ],
+        "instruction_atom_id": "a14",
+        "semantic_kind": "LANDMARK",
+        "text": "open double doors"
+      },
+      {
+        "depends_on": [
+          "a11",
+          "a13",
+          "a14"
+        ],
+        "instruction_atom_id": "a15",
+        "semantic_kind": "PASSING",
+        "text": "proceed through the open double doors"
+      },
+      {
+        "depends_on": [
+          "a15"
+        ],
+        "instruction_atom_id": "a16",
+        "semantic_kind": "LANDMARK",
+        "text": "PGI Homes mat"
+      },
+      {
+        "depends_on": [
+          "a15",
+          "a16"
+        ],
+        "instruction_atom_id": "a17",
+        "semantic_kind": "DIRECTION",
+        "text": "turn back inside"
+      },
+      {
+        "depends_on": [
+          "a17",
+          "a12"
+        ],
+        "instruction_atom_id": "a18",
+        "semantic_kind": "RELATION",
+        "text": "move to the near side of the white kitchen island"
+      },
+      {
+        "depends_on": [
+          "a18"
+        ],
+        "instruction_atom_id": "a19",
+        "semantic_kind": "DIRECTION",
+        "text": "make a slight left"
+      },
+      {
+        "depends_on": [
+          "a19"
+        ],
+        "instruction_atom_id": "a20",
+        "semantic_kind": "LANDMARK",
+        "text": "other kitchen island"
+      },
+      {
+        "depends_on": [
+          "a19",
+          "a20"
+        ],
+        "instruction_atom_id": "a21",
+        "semantic_kind": "RELATION",
+        "text": "move towards the near corner of the other kitchen island"
+      },
+      {
+        "depends_on": [
+          "a21"
+        ],
+        "instruction_atom_id": "a22",
+        "semantic_kind": "LANDMARK",
+        "text": "corner of the kitchen counter"
+      },
+      {
+        "depends_on": [
+          "a22"
+        ],
+        "instruction_atom_id": "a23",
+        "semantic_kind": "LANDMARK",
+        "text": "three books held up by curly book-ends"
+      },
+      {
+        "depends_on": [
+          "a21",
+          "a22",
+          "a23"
+        ],
+        "instruction_atom_id": "a24",
+        "semantic_kind": "RELATION",
+        "text": "into the corner of the kitchen counter, by the three books held up by curly book-ends"
+      },
+      {
+        "depends_on": [
+          "a24"
+        ],
+        "instruction_atom_id": "a25",
+        "semantic_kind": "DIRECTION",
+        "text": "Turn right"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a26",
+        "semantic_kind": "LANDMARK",
+        "text": "stove-top"
+      },
+      {
+        "depends_on": [
+          "a25"
+        ],
+        "instruction_atom_id": "a27",
+        "semantic_kind": "LANDMARK",
+        "text": "sink"
+      },
+      {
+        "depends_on": [
+          "a25",
+          "a26",
+          "a27"
+        ],
+        "instruction_atom_id": "a28",
+        "semantic_kind": "PASSING",
+        "text": "move between the stove-top and the sink"
+      },
+      {
+        "depends_on": [
+          "a28",
+          "a26",
+          "a27"
+        ],
+        "instruction_atom_id": "a29",
+        "semantic_kind": "RELATION",
+        "text": "between the electric stove-top and the sink"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 1802,
+    "prompt_tokens": 371,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 371
+    },
+    "total_tokens": 2173
+  }
+}

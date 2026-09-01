@@ -1,0 +1,66 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "234cf110e0b76f06229c86b97f64e5fbb1b93c3f3a49abbe178363d3ffff101f",
+  "request_payload_sha256": "d826ca140520b28e6d6592456e7a191aefe32593ba8e7216716830757580fbb6",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "washroom"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "DIRECTION",
+        "text": "infront of you"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "PASSING",
+        "text": "enter the washroom"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "commode"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "stand infront of the commode"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 279,
+    "prompt_tokens": 203,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 203
+    },
+    "total_tokens": 482
+  }
+}

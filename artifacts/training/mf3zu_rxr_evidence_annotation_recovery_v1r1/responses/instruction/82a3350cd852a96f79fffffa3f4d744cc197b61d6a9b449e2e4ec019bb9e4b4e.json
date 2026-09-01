@@ -1,0 +1,66 @@
+{
+  "max_tokens": 8000,
+  "model_requested": "qwen3.8-max",
+  "provider_model": "qwen3.8-max",
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "request_id": "82a3350cd852a96f79fffffa3f4d744cc197b61d6a9b449e2e4ec019bb9e4b4e",
+  "request_payload_sha256": "42850a92c5f1338a198777829b1d0ac6cd0e7917504f603f272e25a33f13a0c4",
+  "response": {
+    "instruction_atoms": [
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a01",
+        "semantic_kind": "LANDMARK",
+        "text": "entrance of the church"
+      },
+      {
+        "depends_on": [
+          "a01"
+        ],
+        "instruction_atom_id": "a02",
+        "semantic_kind": "RELATION",
+        "text": "facing toward"
+      },
+      {
+        "depends_on": [
+          "a02"
+        ],
+        "instruction_atom_id": "a03",
+        "semantic_kind": "DIRECTION",
+        "text": "turn around"
+      },
+      {
+        "depends_on": [],
+        "instruction_atom_id": "a04",
+        "semantic_kind": "LANDMARK",
+        "text": "steps"
+      },
+      {
+        "depends_on": [
+          "a03",
+          "a04"
+        ],
+        "instruction_atom_id": "a05",
+        "semantic_kind": "RELATION",
+        "text": "in between"
+      }
+    ]
+  },
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-instruction-response/1",
+  "stage": "instruction",
+  "status": "PASS",
+  "task_metric_read": false,
+  "temperature": 0.0,
+  "thinking": false,
+  "usage": {
+    "completion_tokens": 273,
+    "prompt_tokens": 199,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 199
+    },
+    "total_tokens": 472
+  }
+}
