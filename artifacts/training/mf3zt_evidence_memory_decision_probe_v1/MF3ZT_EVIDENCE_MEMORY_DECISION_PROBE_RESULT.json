@@ -1,0 +1,106 @@
+{
+  "arms": {
+    "ETP_CURRENT": "NOT_RUN",
+    "ETP_PLUS_EVIDENCE_MEMORY": "NOT_RUN",
+    "ETP_PLUS_SHUFFLED_MEMORY": "NOT_RUN"
+  },
+  "checkpoint_generated": false,
+  "decision_target": {
+    "domain_support": {
+      "R2R": {
+        "accepted_source_count": 0,
+        "accepted_source_ids": [],
+        "legal_rankable_target_rows": 0,
+        "legal_raw_scene_count_lower_bound": 0,
+        "legal_target_rows": 0,
+        "legal_unique_episode_count_lower_bound": 0,
+        "rejected_source_ids": [
+          "mf3zq_r2r_frozen_native_observations",
+          "r2r_official_low_level_train_trajectory",
+          "mf3zk_r2r_exact_one_switch_route_outcomes"
+        ],
+        "status": "UNSUPPORTED"
+      },
+      "RxR": {
+        "accepted_source_count": 1,
+        "accepted_source_ids": [
+          "mf3b_rxr_exact_current_ghost_teacher"
+        ],
+        "legal_rankable_target_rows": 1428,
+        "legal_raw_scene_count_lower_bound": 59,
+        "legal_target_rows": 1488,
+        "legal_unique_episode_count_lower_bound": 156,
+        "rejected_source_ids": [
+          "mf3zq_rxr_frozen_native_observations"
+        ],
+        "status": "SUPPORTED"
+      }
+    },
+    "source_sha256": null,
+    "status": "UNSUPPORTED_IN_R2R"
+  },
+  "evidence_diagnostics": "NOT_RUN",
+  "evidence_memory": {
+    "diagnostics": "NOT_RUN",
+    "sha256": null,
+    "status": "NOT_MATERIALIZED"
+  },
+  "execution": {
+    "OOF_evaluation_run": false,
+    "bootstrap_run": false,
+    "checkpoint_for_deployment": false,
+    "checkpoint_generated": false,
+    "evidence_memory_built": false,
+    "full_navigation_run": false,
+    "memory_required_classification_run": false,
+    "population_built": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "reranker_implemented": false,
+    "target_support_audit_run": true,
+    "training_started": false
+  },
+  "final_pass_fail": "MF3ZT_EVIDENCE_MEMORY_DECISION_PROBE_FAIL",
+  "first_failure": "decision_target_support",
+  "full_navigation_run": false,
+  "interpretation": "The sealed audited source inventory lacks legal R2R candidate-ranking target support. No evidence-memory hypothesis was tested, so this is not evidence for or against evidence memory.",
+  "memory_required": {
+    "counts": null,
+    "scenes": null,
+    "status": "NOT_CLASSIFIED"
+  },
+  "metrics_per_domain": "NOT_RUN",
+  "pairwise_deltas": "NOT_RUN",
+  "population": {
+    "R2R": null,
+    "RxR": null,
+    "raw_scenes": null,
+    "sha256": null,
+    "status": "NOT_MATERIALIZED_DUE_TO_TARGET_SUPPORT_GATE",
+    "total_decisions": null
+  },
+  "protocol_sha256": "71ba83a89b58eb7797a953cbdae8b03d51dd4fdae7b6618c451a511d7fd01af2",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zt_evidence_memory_decision_probe_v1",
+  "scene_bootstrap_CI": "NOT_RUN",
+  "schema_version": "revealnav-mf3zt-evidence-memory-decision-probe-result/1",
+  "scientific_evidence_about_memory": "NOT_OBSERVED",
+  "source_commit": "e24c4f6a62b6e86cd143e911d0dd9ae103daa209",
+  "status": "MF3ZT_DECISION_TARGET_SUPPORT_FAIL",
+  "stop_rule": {
+    "automatic_rescue_forbidden": true,
+    "next_action": "STOP",
+    "reason": "MF3ZT_DECISION_TARGET_SUPPORT_FAIL",
+    "triggered": true
+  },
+  "target_support_audit_sha256": "31b10d600e8bce5a1c82c82481b146ed75489de287ac2d049c43508b0d6a958b"
+}

@@ -1,0 +1,347 @@
+{
+  "conditional_model": {
+    "architecture_sweep": false,
+    "arms": [
+      "ETP_CURRENT",
+      "ETP_PLUS_EVIDENCE_MEMORY",
+      "ETP_PLUS_SHUFFLED_MEMORY"
+    ],
+    "candidate_interaction": "concat(candidate,memory,candidate_elementwise_memory)",
+    "loss": "candidate_set_cross_entropy_or_preexisting_multi_positive_equivalent",
+    "memory_pooling": "mean_then_linear_projection",
+    "multi_seed_rescue": false,
+    "reranker": "fixed_two_layer_candidate_residual_MLP",
+    "shuffled_memory": {
+      "held_target_as_donor": false,
+      "permutation_scope": "different event within training fold",
+      "preserve_memory_count_and_feature_distribution": true
+    },
+    "threshold_search": false
+  },
+  "correctness_checks": [
+    "no_future_observation",
+    "no_future_candidate",
+    "no_public_split",
+    "no_utility_or_outcome_based_population_selection",
+    "memory_required_label_does_not_read_candidate_target",
+    "ETP_weights_frozen",
+    "candidate_generator_frozen",
+    "evidence_generated_before_training_result",
+    "raw_scene_split",
+    "shared_scenes_same_fold",
+    "no_held_fold_normalization_leakage",
+    "retrieval_K_exactly_8",
+    "evidence_source_causal",
+    "shuffled_memory_train_fold_safe",
+    "held_fold_memory_not_sourced_from_another_held_target",
+    "result_immutable",
+    "no_full_navigation",
+    "no_deployment_checkpoint",
+    "historical_failed_revisions_unchanged",
+    "full_regression_pass"
+  ],
+  "evaluation": {
+    "bootstrap": {
+      "cluster": "raw_MP3D_scene",
+      "replicates": 10000,
+      "seed": 20260901
+    },
+    "folds": 5,
+    "metrics": [
+      "Acc@1",
+      "MRR",
+      "MeanRank",
+      "pairwise_accuracy"
+    ],
+    "split_unit": "raw_MP3D_scene",
+    "standardization_fit_on_train_fold_only": true,
+    "subgroups": [
+      "ALL",
+      "MEMORY_REQUIRED",
+      "MEMORY_NOT_REQUIRED"
+    ]
+  },
+  "evidence": {
+    "K_MEM": 8,
+    "confidence_classes": [
+      "OBSERVED",
+      "AMBIGUOUS",
+      "ABSENT"
+    ],
+    "future_evidence_forbidden": true,
+    "materialized_before_training": true,
+    "mean_pooling": true,
+    "ontology": [
+      "LANDMARK_SEEN",
+      "LANDMARK_PASSED",
+      "RELATION_SATISFIED",
+      "ORDINAL_COUNT",
+      "DIRECTIONAL_CONTEXT"
+    ],
+    "record_schema": [
+      "evidence_id",
+      "event_id",
+      "source_step",
+      "source_node_id",
+      "instruction_atom_id",
+      "evidence_type",
+      "semantic_value",
+      "confidence_class",
+      "source_observation_sha256"
+    ],
+    "retrieval_order": [
+      "active_instruction_atom_order",
+      "source_step_descending",
+      "evidence_id"
+    ],
+    "retrieval_trainable": false
+  },
+  "execution": {
+    "OOF_evaluation_run": false,
+    "bootstrap_run": false,
+    "checkpoint_for_deployment": false,
+    "checkpoint_generated": false,
+    "evidence_memory_built": false,
+    "full_navigation_run": false,
+    "population_built": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "target_support_audit_started": false,
+    "training_started": false
+  },
+  "frozen_ETP": {
+    "ETP_frozen": true,
+    "R2R_checkpoint": {
+      "bytes": 1874802927,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_r2r_grpo/store/ckpt.iter270.pth",
+      "sha256": "8f90cebba7eefb9648054aa74e8c8664f23e643073ef033b99edfbe85c54f61c"
+    },
+    "RxR_checkpoint": {
+      "bytes": 2523110172,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_rxr_grpo/store/ckpt.iter1320.pth",
+      "sha256": "3796c9c94ff8674b8cfe99f2b4aab0f4b391f0d4c9c1e167e4736b3848f27821"
+    },
+    "baseline_extraction_started": false,
+    "candidate_generator_frozen": true,
+    "shared_pretrained_backbone": {
+      "bytes": 2264172675,
+      "path": "third_party/ETP-R1/pretrained/r2r_rxr_ce/mlm.sap_habitat_depth/store2/model_step_367500.pt",
+      "sha256": "203fe62cc22c63261a5c5b6a3638bc52fd3b08a7f09dd31d8539bf2beab6c3cf"
+    },
+    "topology_encoder_frozen": true,
+    "visual_backbone_frozen": true
+  },
+  "implementation_inventory": {
+    "METHOD_REVISION_3ZT_EVIDENCE_MEMORY_DECISION_PROBE.md": {
+      "bytes": 8459,
+      "path": "METHOD_REVISION_3ZT_EVIDENCE_MEMORY_DECISION_PROBE.md",
+      "sha256": "3a962ee53567d79d58dfca049c24374e3d5b35a3891c02af42ff168cb11c12c2"
+    },
+    "revealnav_mf3/evidence_memory_probe.py": {
+      "bytes": 34853,
+      "path": "revealnav_mf3/evidence_memory_probe.py",
+      "sha256": "efc551b1455d906e3a9fb12853fec5c500a5a149e3b5ff2096181680fcdd55e1"
+    },
+    "revealnav_mf3/mf3zt_protocol.py": {
+      "bytes": 20603,
+      "path": "revealnav_mf3/mf3zt_protocol.py",
+      "sha256": "abab8a48fb135d0c6a32c0af6703b8bb4052a8b8d2cffd73753f4a84024ab845"
+    },
+    "scripts/audit_mf3zt_result.py": {
+      "bytes": 1374,
+      "path": "scripts/audit_mf3zt_result.py",
+      "sha256": "6f07566835ca24d853cfebc0bfb8dd562ff0f48c3ccffe2b5f244166e438a780"
+    },
+    "scripts/build_mf3zt_decision_population.py": {
+      "bytes": 1687,
+      "path": "scripts/build_mf3zt_decision_population.py",
+      "sha256": "7edc8abe60f6e49acf6734cac2bb3402b88df33aa8649e15286c7c9b0188b265"
+    },
+    "scripts/seal_mf3zt_protocol.py": {
+      "bytes": 1032,
+      "path": "scripts/seal_mf3zt_protocol.py",
+      "sha256": "2fadec1f1754a3c033bbb0738c68b8b893b594a02bd0afd1fcf004112c527d2d"
+    }
+  },
+  "memory_required_definition": {
+    "MEMORY_NOT_REQUIRED": "the current observation is sufficient or the decision does not require historical semantic state",
+    "MEMORY_REQUIRED": "at least one instruction-relevant evidence item appeared in causal history, is absent or insufficient in the current observation, and is semantically required for the current candidate decision",
+    "allowed_inputs": [
+      "instruction_semantics",
+      "causal_visual_history",
+      "current_visual_observation",
+      "current_candidate_geometry_or_appearance",
+      "instruction_constraint_structure"
+    ],
+    "classified_before_target_evaluation": true,
+    "forbidden_inputs": [
+      "candidate_target",
+      "success",
+      "reward",
+      "utility",
+      "future_frame"
+    ]
+  },
+  "pass_fail": {
+    "all_B_minus_A_Acc_min": 0.0,
+    "both_domains_required": true,
+    "memory_not_required_B_minus_A_Acc_min": -0.01,
+    "memory_required_B_minus_A_Acc_lower95_positive": true,
+    "memory_required_B_minus_A_Acc_positive": true,
+    "memory_required_B_minus_A_MRR_positive": true,
+    "memory_required_B_minus_C_Acc_lower95_positive": true,
+    "memory_required_B_minus_C_Acc_positive": true,
+    "status_on_fail": "MF3ZT_EVIDENCE_MEMORY_DECISION_PROBE_FAIL",
+    "status_on_pass": "MF3ZT_EVIDENCE_MEMORY_DECISION_PROBE_PASS"
+  },
+  "population": {
+    "R2R_decisions": null,
+    "RxR_decisions": null,
+    "decision_target_source_sha256": null,
+    "evidence_memory_sha256": null,
+    "memory_required_min_per_domain": 50,
+    "memory_required_scene_min_per_domain": 10,
+    "raw_scene_count": null,
+    "scene_disjoint_folds": 5,
+    "sha256": null,
+    "shared_R2R_RxR_scene_same_fold": true,
+    "status": "NOT_MATERIALIZED_PENDING_TARGET_SUPPORT_GATE"
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zt_evidence_memory_decision_probe_v1",
+  "schema_version": "revealnav-mf3zt-evidence-memory-decision-probe-protocol/1",
+  "scientific_question": "Does explicit instruction-conditioned semantic evidence memory improve held-scene frozen-ETP candidate decisions?",
+  "scope": {
+    "ETP_fine_tuning": false,
+    "SR_SPL_optimization": false,
+    "UAD_reveal_expiry_oracle_returnability": false,
+    "decision_probe_only": true,
+    "full_navigation": false,
+    "policy_gradient_or_RL": false,
+    "train_development_only": true
+  },
+  "seal_commit": "e24c4f6a62b6e86cd143e911d0dd9ae103daa209",
+  "source_commit": "e24c4f6a62b6e86cd143e911d0dd9ae103daa209",
+  "source_inventory": {
+    "etp_backbone": {
+      "bytes": 2264172675,
+      "path": "third_party/ETP-R1/pretrained/r2r_rxr_ce/mlm.sap_habitat_depth/store2/model_step_367500.pt",
+      "sha256": "203fe62cc22c63261a5c5b6a3638bc52fd3b08a7f09dd31d8539bf2beab6c3cf"
+    },
+    "etp_trainer": {
+      "bytes": 55474,
+      "path": "third_party/ETP-R1/vlnce_baselines/ss_trainer_ETP_R1.py",
+      "sha256": "9500d55628480981d2a4d9348c7e6e8da848723c553087ae29d93c7e3f5cdae8"
+    },
+    "mf3zk_r2r_outcome_manifest": {
+      "bytes": 445825,
+      "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/MF3ZK_R2R_DIRECT_SWITCH_MANIFEST.json",
+      "sha256": "1a3d1a45bd7c8cbaa61fc2d1d4b2ecfe11af0a032c8774ad7672369151a4e8b0"
+    },
+    "mf3zp_observation_status": {
+      "bytes": 32286,
+      "path": "artifacts/training/mf3zp_qwen_uad_reference_v2/MF3ZP_OBSERVATION_COLLECTION_STATUS.json",
+      "sha256": "c8a4e6825da0873a1f8421c8cdfae499acf1b4cfdfeb99e96873108ac5b7a3ec"
+    },
+    "mf3zq_population": {
+      "bytes": 458997,
+      "path": "artifacts/training/mf3zq_oracle_revealskill_headroom_v1/MF3ZQ_ORACLE_HEADROOM_POPULATION.jsonl",
+      "sha256": "76095a16939b35a1f201b3ffa72d094dda00fae71ab1d428e3b6293ebf5724aa"
+    },
+    "mf3zr_binding_audit": {
+      "bytes": 44155,
+      "path": "artifacts/training/mf3zr_option_bound_support_v1/MF3ZR_OPTION_BINDING_AUDIT.json",
+      "sha256": "09c6238db20630eb2bb1a88488b9d1f86c396540419d1354d7f4c57538ba3763"
+    },
+    "mf3zr_result": {
+      "bytes": 3104,
+      "path": "artifacts/training/mf3zr_option_bound_support_v1/MF3ZR_OPTION_BOUND_SUPPORT_RESULT.json",
+      "sha256": "c513d6a9ed527276cc9ff7df074d18ca6e837dc484cdb8c9750c082752328ce6"
+    },
+    "r2r_etp_checkpoint": {
+      "bytes": 1874802927,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_r2r_grpo/store/ckpt.iter270.pth",
+      "sha256": "8f90cebba7eefb9648054aa74e8c8664f23e643073ef033b99edfbe85c54f61c"
+    },
+    "r2r_train_gt": {
+      "bytes": 5710918,
+      "path": "third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/train/train_gt.json.gz",
+      "sha256": "b63fa10e5c57d1b80b241c49bdeddc3d481bbe54b41ca0d59f9584c10da7bd5d"
+    },
+    "rxr_etp_checkpoint": {
+      "bytes": 2523110172,
+      "path": "third_party/ETP-R1/data/logs/checkpoints/release_rxr_grpo/store/ckpt.iter1320.pth",
+      "sha256": "3796c9c94ff8674b8cfe99f2b4aab0f4b391f0d4c9c1e167e4736b3848f27821"
+    },
+    "rxr_target_manifest": {
+      "bytes": 92376,
+      "path": "artifacts/phase1/mf3b_uad_online/dataset_v1/MF3B_ONLINE_DATA_MANIFEST.json",
+      "sha256": "36884bae31718bb859f5856103654f5b3f25979fdfd0319c1ca344f00328e034"
+    },
+    "rxr_target_protocol": {
+      "bytes": 15979,
+      "path": "artifacts/phase1/mf3b_uad_online/dataset_v1/MF3B_ONLINE_DATA_PROTOCOL.json",
+      "sha256": "c857b0863062074987d497bb1b5b4a3cfbf768d1396ff15308e52ec6583e7346"
+    }
+  },
+  "status": "SEALED_BEFORE_MF3ZT_RESULTS",
+  "target_support_gate": {
+    "accepted_priority": [
+      "exact_train_native_action_or_candidate_supervision",
+      "exact_same_episode_same_prefix_branch_supervision",
+      "existing_frozen_causal_decision_target"
+    ],
+    "audited_preexisting_source_classes": {
+      "exact_same_episode_same_prefix_branch_supervision": [
+        "MF3ZK R2R exact-one-switch route-return manifest"
+      ],
+      "exact_train_native_candidate_supervision": [
+        "MF3B RxR exact current-ghost teacher arrays",
+        "R2R train_gt low-level trajectory schema",
+        "ETP-R1 runtime dynamic teacher implementation"
+      ],
+      "existing_frozen_causal_decision_target": [
+        "MF3ZQ/MF3ZP frozen native causal observations",
+        "MF3ZR option-binding audit"
+      ]
+    },
+    "forbidden_target_derivations": [
+      "frozen_native_action_self_label",
+      "public_split_target",
+      "cross_episode_pairing",
+      "nearest_candidate_mapping",
+      "route_truth_or_shortest_path_reconstruction",
+      "route_level_reward_or_utility",
+      "SR_SPL_nDTW_SDTW",
+      "CAR_post_hoc_rescue_label"
+    ],
+    "must_pass_before_population": true,
+    "negative_existence_claim_scope": "sealed audited source inventory, not a claim about data that could be newly generated",
+    "required_domains": [
+      "R2R",
+      "RxR"
+    ],
+    "requires_exact_candidate_set_alignment": true,
+    "requires_preexisting_materialization": true,
+    "status_on_fail": "MF3ZT_DECISION_TARGET_SUPPORT_FAIL",
+    "stop_before": [
+      "decision_population_materialization",
+      "memory_required_classification",
+      "evidence_memory_materialization",
+      "reranker_implementation",
+      "training",
+      "cross_validation",
+      "bootstrap",
+      "full_navigation"
+    ]
+  }
+}

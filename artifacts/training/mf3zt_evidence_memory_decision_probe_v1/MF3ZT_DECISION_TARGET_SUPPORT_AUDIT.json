@@ -1,0 +1,300 @@
+{
+  "audit_scope": "preexisting train-development exact candidate-ranking target support",
+  "bootstrap_authorized": false,
+  "conclusion": "R2R has no pre-existing exact candidate-aligned ranking target in the sealed source inventory; RxR support cannot compensate across domains.",
+  "decision_population_authorized": false,
+  "domain_support": {
+    "R2R": {
+      "accepted_source_count": 0,
+      "accepted_source_ids": [],
+      "legal_rankable_target_rows": 0,
+      "legal_raw_scene_count_lower_bound": 0,
+      "legal_target_rows": 0,
+      "legal_unique_episode_count_lower_bound": 0,
+      "rejected_source_ids": [
+        "mf3zq_r2r_frozen_native_observations",
+        "r2r_official_low_level_train_trajectory",
+        "mf3zk_r2r_exact_one_switch_route_outcomes"
+      ],
+      "status": "UNSUPPORTED"
+    },
+    "RxR": {
+      "accepted_source_count": 1,
+      "accepted_source_ids": [
+        "mf3b_rxr_exact_current_ghost_teacher"
+      ],
+      "legal_rankable_target_rows": 1428,
+      "legal_raw_scene_count_lower_bound": 59,
+      "legal_target_rows": 1488,
+      "legal_unique_episode_count_lower_bound": 156,
+      "rejected_source_ids": [
+        "mf3zq_rxr_frozen_native_observations"
+      ],
+      "status": "SUPPORTED"
+    }
+  },
+  "evidence_memory_authorized": false,
+  "first_failure": "decision_target_support",
+  "frozen_observation_corpus_audit": {
+    "R2R": {
+      "accepted": false,
+      "candidate_instances": 523,
+      "events": 40,
+      "legal_candidate_target_rows": 0,
+      "native_action_rows": 163,
+      "prefixes": 163,
+      "raw_scene_count": 37,
+      "rejection_reasons": [
+        "NO_CANDIDATE_TARGET_FIELD",
+        "NATIVE_ACTION_IS_FROZEN_POLICY_PREDICTION_NOT_SUPERVISION"
+      ],
+      "target_fields_in_arrays": [],
+      "target_fields_in_causal_rows": [],
+      "unique_episode_count": 40
+    },
+    "RxR": {
+      "accepted": false,
+      "candidate_instances": 852,
+      "events": 40,
+      "legal_candidate_target_rows": 0,
+      "native_action_rows": 262,
+      "prefixes": 262,
+      "raw_scene_count": 38,
+      "rejection_reasons": [
+        "NO_CANDIDATE_TARGET_FIELD",
+        "NATIVE_ACTION_IS_FROZEN_POLICY_PREDICTION_NOT_SUPERVISION"
+      ],
+      "target_fields_in_arrays": [],
+      "target_fields_in_causal_rows": [],
+      "unique_episode_count": 40
+    },
+    "observation_collection_status": {
+      "bytes": 32286,
+      "path": "artifacts/training/mf3zp_qwen_uad_reference_v2/MF3ZP_OBSERVATION_COLLECTION_STATUS.json",
+      "sha256": "c8a4e6825da0873a1f8421c8cdfae499acf1b4cfdfeb99e96873108ac5b7a3ec"
+    },
+    "run_summaries_checked": 80,
+    "source_population": {
+      "bytes": 458997,
+      "path": "artifacts/training/mf3zq_oracle_revealskill_headroom_v1/MF3ZQ_ORACLE_HEADROOM_POPULATION.jsonl",
+      "sha256": "76095a16939b35a1f201b3ffa72d094dda00fae71ab1d428e3b6293ebf5724aa"
+    }
+  },
+  "memory_required_classification_authorized": false,
+  "native_action_used_as_candidate_target": false,
+  "outcome_or_utility_payload_parsed": false,
+  "outcome_or_utility_used_as_candidate_target": false,
+  "protocol_sha256": "71ba83a89b58eb7797a953cbdae8b03d51dd4fdae7b6618c451a511d7fd01af2",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "r2r_rejected_source_audit": {
+    "mf3zk_route_outcome": {
+      "accepted": false,
+      "numerical_records_parsed": false,
+      "reason": "route return and utility are forbidden candidate targets",
+      "sealed_source_type": "paired route return with nDTW/SDTW/SPL utility",
+      "source": {
+        "bytes": 445825,
+        "path": "artifacts/training/mf3zk_joint_v1/r2r_collection/MF3ZK_R2R_DIRECT_SWITCH_MANIFEST.json",
+        "sha256": "1a3d1a45bd7c8cbaa61fc2d1d4b2ecfe11af0a032c8774ad7672369151a4e8b0"
+      }
+    },
+    "mf3zr_option_binding": {
+      "accepted_as_candidate_target": false,
+      "binding_edges": 4582,
+      "binding_state_counts": {
+        "UNRESOLVED": 4582
+      },
+      "source": {
+        "bytes": 44155,
+        "path": "artifacts/training/mf3zr_option_bound_support_v1/MF3ZR_OPTION_BINDING_AUDIT.json",
+        "sha256": "09c6238db20630eb2bb1a88488b9d1f86c396540419d1354d7f4c57538ba3763"
+      },
+      "valid_option_binding_events": 0
+    },
+    "official_train_gt": {
+      "accepted": false,
+      "candidate_target_fields": [],
+      "dynamic_ETP_candidate_ids_present": false,
+      "episode_records": 10819,
+      "fields": [
+        "actions",
+        "forward_steps",
+        "locations"
+      ],
+      "reason": "low-level train route cannot be post-hoc mapped to a dynamic frozen candidate set",
+      "source": {
+        "bytes": 5710918,
+        "path": "third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/train/train_gt.json.gz",
+        "sha256": "b63fa10e5c57d1b80b241c49bdeddc3d481bbe54b41ca0d59f9584c10da7bd5d"
+      }
+    },
+    "runtime_teacher_implementation": {
+      "accepted": false,
+      "accepted_preexisting_R2R_teacher_trace_in_sealed_inventory": false,
+      "exact_teacher_requires_runtime_dynamic_gmap_vp_ids": true,
+      "source": {
+        "bytes": 55474,
+        "path": "third_party/ETP-R1/vlnce_baselines/ss_trainer_ETP_R1.py",
+        "sha256": "9500d55628480981d2a4d9348c7e6e8da848723c553087ae29d93c7e3f5cdae8"
+      }
+    }
+  },
+  "reranker_or_training_authorized": false,
+  "revision": "mf3zt_evidence_memory_decision_probe_v1",
+  "route_truth_used_to_construct_candidate_target": false,
+  "rxr_exact_target_audit": {
+    "accepted": true,
+    "decision_rows": 1920,
+    "future_teacher_used_as_online_input": false,
+    "manifest_records": 156,
+    "observed_array_keys": [
+      "candidate_embeddings",
+      "candidate_mask",
+      "evidence_complete",
+      "expiry_hazard",
+      "history_embeddings",
+      "instruction_embedding",
+      "native_index",
+      "native_scores",
+      "outside_score",
+      "reveal_hazard",
+      "separation",
+      "target_in_set",
+      "target_index"
+    ],
+    "rankable_target_rows": 1428,
+    "raw_scene_count": 59,
+    "source_id": "mf3b_rxr_exact_current_ghost_teacher",
+    "source_manifest": {
+      "bytes": 92376,
+      "path": "artifacts/phase1/mf3b_uad_online/dataset_v1/MF3B_ONLINE_DATA_MANIFEST.json",
+      "sha256": "36884bae31718bb859f5856103654f5b3f25979fdfd0319c1ca344f00328e034"
+    },
+    "source_protocol": {
+      "bytes": 15979,
+      "path": "artifacts/phase1/mf3b_uad_online/dataset_v1/MF3B_ONLINE_DATA_PROTOCOL.json",
+      "sha256": "c857b0863062074987d497bb1b5b4a3cfbf768d1396ff15308e52ec6583e7346"
+    },
+    "target_rows": 1488,
+    "teacher_role": "label_only_after_native_policy_output",
+    "unique_episode_count": 156
+  },
+  "schema_version": "revealnav-mf3zt-decision-target-support-audit/1",
+  "source_discovery_boundary": {
+    "audited_preexisting_source_classes": {
+      "exact_same_episode_same_prefix_branch_supervision": [
+        "MF3ZK R2R exact-one-switch route-return manifest"
+      ],
+      "exact_train_native_candidate_supervision": [
+        "MF3B RxR exact current-ghost teacher arrays",
+        "R2R train_gt low-level trajectory schema",
+        "ETP-R1 runtime dynamic teacher implementation"
+      ],
+      "existing_frozen_causal_decision_target": [
+        "MF3ZQ/MF3ZP frozen native causal observations",
+        "MF3ZR option-binding audit"
+      ]
+    },
+    "negative_existence_claim_scope": "sealed audited source inventory, not a claim about data that could be newly generated",
+    "new_target_generation_attempted": false
+  },
+  "source_summaries": [
+    {
+      "accepted": true,
+      "dataset": "RxR",
+      "exact_candidate_set_alignment": true,
+      "exact_same_episode_prefix": true,
+      "preexisting": true,
+      "provenance": "exact_train_native_action_or_candidate_supervision",
+      "public_split_accessed": false,
+      "rankable_target_rows": 1428,
+      "raw_scene_count": 59,
+      "rejection_reasons": [],
+      "source_id": "mf3b_rxr_exact_current_ghost_teacher",
+      "target_rows": 1488,
+      "train_development_only": true,
+      "unique_episode_count": 156
+    },
+    {
+      "accepted": false,
+      "dataset": "R2R",
+      "exact_candidate_set_alignment": true,
+      "exact_same_episode_prefix": true,
+      "preexisting": true,
+      "provenance": "frozen_native_action_self_label",
+      "public_split_accessed": false,
+      "rankable_target_rows": 0,
+      "raw_scene_count": 37,
+      "rejection_reasons": [
+        "NO_CANDIDATE_TARGET_FIELD",
+        "NATIVE_ACTION_IS_FROZEN_POLICY_PREDICTION_NOT_SUPERVISION"
+      ],
+      "source_id": "mf3zq_r2r_frozen_native_observations",
+      "target_rows": 0,
+      "train_development_only": true,
+      "unique_episode_count": 40
+    },
+    {
+      "accepted": false,
+      "dataset": "RxR",
+      "exact_candidate_set_alignment": true,
+      "exact_same_episode_prefix": true,
+      "preexisting": true,
+      "provenance": "frozen_native_action_self_label",
+      "public_split_accessed": false,
+      "rankable_target_rows": 0,
+      "raw_scene_count": 38,
+      "rejection_reasons": [
+        "NO_CANDIDATE_TARGET_FIELD",
+        "NATIVE_ACTION_IS_FROZEN_POLICY_PREDICTION_NOT_SUPERVISION"
+      ],
+      "source_id": "mf3zq_rxr_frozen_native_observations",
+      "target_rows": 0,
+      "train_development_only": true,
+      "unique_episode_count": 40
+    },
+    {
+      "accepted": false,
+      "dataset": "R2R",
+      "exact_candidate_set_alignment": false,
+      "exact_same_episode_prefix": false,
+      "preexisting": true,
+      "provenance": "route_truth_reconstruction",
+      "public_split_accessed": false,
+      "rankable_target_rows": 0,
+      "raw_scene_count": 0,
+      "rejection_reasons": [
+        "LOW_LEVEL_TRAJECTORY_HAS_NO_DYNAMIC_ETP_CANDIDATE_IDS",
+        "POST_HOC_ROUTE_TO_CANDIDATE_MAPPING_FORBIDDEN"
+      ],
+      "source_id": "r2r_official_low_level_train_trajectory",
+      "target_rows": 0,
+      "train_development_only": true,
+      "unique_episode_count": 10819
+    },
+    {
+      "accepted": false,
+      "dataset": "R2R",
+      "exact_candidate_set_alignment": false,
+      "exact_same_episode_prefix": true,
+      "preexisting": true,
+      "provenance": "route_level_outcome",
+      "public_split_accessed": false,
+      "rankable_target_rows": 0,
+      "raw_scene_count": 0,
+      "rejection_reasons": [
+        "LABEL_IS_ROUTE_LEVEL_UTILITY_NOT_CANDIDATE_RANKING_TARGET"
+      ],
+      "source_id": "mf3zk_r2r_exact_one_switch_route_outcomes",
+      "target_rows": 0,
+      "train_development_only": true,
+      "unique_episode_count": 0
+    }
+  ],
+  "status": "MF3ZT_DECISION_TARGET_SUPPORT_FAIL"
+}
