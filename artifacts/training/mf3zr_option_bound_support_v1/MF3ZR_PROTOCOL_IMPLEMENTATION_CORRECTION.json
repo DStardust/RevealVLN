@@ -1,0 +1,22 @@
+{
+  "schema_version": "revealnav-mf3zr-protocol-implementation-correction/1",
+  "status": "PRE_FINAL_SUPPORT_RESULT_CORRECTION",
+  "protocol_path": "artifacts/training/mf3zr_option_bound_support_v1/MF3ZR_OPTION_BOUND_SUPPORT_PROTOCOL.json",
+  "reason": "The first sealed implementation inventory omitted one imported output constant from the joint-support runner. The runner was corrected before the final support audit; no outcome, oracle, or public-split result was read during the correction.",
+  "corrected_file": "scripts/audit_mf3zr_joint_support.py",
+  "superseded_pre_correction_sha256": "2e7063f924996abfb06b0eb600a16614bcc01753f7f50c3379a2c2852bcbc1d2",
+  "corrected_sha256": "71a5be03b3dc5c2e14eafede075d24f8e92a33ae3c9f4450ed9f7f4f54e59eb5",
+  "correction_scope": "import-only NameError fix; no scientific rule, population, threshold, binding semantics, or source file changed",
+  "final_support_result_not_yet_written_at_correction": true,
+  "outcome_payload_read": false,
+  "qwen_calls": 0,
+  "qwen_reads": 0,
+  "public_split_access": {
+    "val_seen": false,
+    "val_unseen": false,
+    "test": false,
+    "test_challenge": false
+  },
+  "checkpoint_generated": false,
+  "oracle_arms_run": []
+}

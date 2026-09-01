@@ -1,0 +1,575 @@
+{
+  "binding": {
+    "candidate_identity_source": "causal_opaque_alias_only",
+    "candidate_rank_is_not_semantic_truth": true,
+    "context_and_discriminative_mutually_exclusive": true,
+    "missing_dec_binding_is_failure": true,
+    "option_id_rule": "sha256({event_id, first_seen_step, candidate_id})",
+    "schema_version": "revealnav-mf3zr-option-evidence-binding/1",
+    "states": [
+      "SUPPORTS",
+      "CONTRADICTS",
+      "UNRESOLVED",
+      "SHARED_CONTEXT",
+      "NOT_APPLICABLE"
+    ]
+  },
+  "execution": {
+    "checkpoint_generated": false,
+    "oracle_arms_run": [],
+    "outcome_payload_read": false,
+    "public_split_access": {
+      "test": false,
+      "test_challenge": false,
+      "val_seen": false,
+      "val_unseen": false
+    },
+    "qwen_calls": 0,
+    "qwen_reads": 0
+  },
+  "forbidden_information": [
+    "reward",
+    "utility",
+    "delta_utility",
+    "success",
+    "SR",
+    "SPL",
+    "nDTW",
+    "SDTW",
+    "catastrophe",
+    "route_truth",
+    "correct_action",
+    "shortest_path",
+    "future_frame",
+    "public_split"
+  ],
+  "historical_boundary": {
+    "formal_mf3zp_protocol": {
+      "bytes": 35663,
+      "path": "artifacts/training/mf3zp_revealskill_v1/MF3ZP_REVEALSKILL_PROTOCOL.json",
+      "sha256": "d0f09395b86804d3afc58f4ec946afc7dfaffd1637c7b8a66a776d58a17cc0c9"
+    },
+    "mf3zq_failure_type": "FAIL_AT_POPULATION_SUPPORT",
+    "mf3zq_numeric_evidence": "NOT_OBSERVED",
+    "mf3zq_protocol": {
+      "bytes": 13416,
+      "path": "artifacts/training/mf3zq_oracle_revealskill_headroom_v1/MF3ZQ_ORACLE_HEADROOM_PROTOCOL.json",
+      "sha256": "4a317eea21878ac257da48c7999ed02a8104f8d71cfdc82baaa298c2bd7fd13d"
+    },
+    "mf3zq_result": {
+      "bytes": 9125,
+      "path": "artifacts/training/mf3zq_oracle_revealskill_headroom_v1/MF3ZQ_ORACLE_HEADROOM_RESULT.json",
+      "sha256": "bba5137f919fa38a88fc085773f842b2e7667a0749963a1b8831934357a68346"
+    },
+    "mf3zq_status": "MF3ZQ_EXPLORATORY_ORACLE_HEADROOM_FAIL",
+    "prohibited_reruns": [
+      "CAR",
+      "RCSP",
+      "DSR",
+      "MF3ZN",
+      "MF3ZO",
+      "MF3ZP",
+      "MF3ZQ"
+    ],
+    "single_decision_gate_family_stopped": true
+  },
+  "implementation_inventory": {
+    "METHOD_REVISION_3ZR_OPTION_BOUND_SUPPORT.md": {
+      "bytes": 2898,
+      "path": "METHOD_REVISION_3ZR_OPTION_BOUND_SUPPORT.md",
+      "sha256": "85c876b5feeb6f60dc88c0ba4dc647530117ac78e00ac8ff22743ff0a8c689b1"
+    },
+    "revealnav_mf3/evidence_option_graph.py": {
+      "bytes": 4205,
+      "path": "revealnav_mf3/evidence_option_graph.py",
+      "sha256": "68efc2e8ed64ad0a862d1ba808b13a7bc94ec23c8e3ff2c816b0f589f6eb70e3"
+    },
+    "revealnav_mf3/frozen_returnability.py": {
+      "bytes": 7603,
+      "path": "revealnav_mf3/frozen_returnability.py",
+      "sha256": "ba6c18f82a71e3f44ad64ead6a95705b592f0804f7fec4178c37e282429e6daf"
+    },
+    "revealnav_mf3/mf3zr_protocol.py": {
+      "bytes": 14753,
+      "path": "revealnav_mf3/mf3zr_protocol.py",
+      "sha256": "842447f06e2dfc358e653e8974644448790a8cdbfe33704942acdbd15376d7bd"
+    },
+    "revealnav_mf3/option_binding_audit.py": {
+      "bytes": 14723,
+      "path": "revealnav_mf3/option_binding_audit.py",
+      "sha256": "20b5e786e95ea63a3135587a0decab7faddb0aefb0bb1f9ecec12976e1460f4f"
+    },
+    "revealnav_mf3/option_binding_schema.py": {
+      "bytes": 10057,
+      "path": "revealnav_mf3/option_binding_schema.py",
+      "sha256": "a89f2783f201ea5adbc7d833a787f026479a1f3b68a289e1797a665bf380d862"
+    },
+    "revealnav_mf3/option_identity.py": {
+      "bytes": 6839,
+      "path": "revealnav_mf3/option_identity.py",
+      "sha256": "6e13f6781721749dd9a97f19ed88863fc9d495b9db800b724e057a79ed95de1d"
+    },
+    "revealnav_mf3/reveal_expiry_support.py": {
+      "bytes": 8968,
+      "path": "revealnav_mf3/reveal_expiry_support.py",
+      "sha256": "fb7f944884d0803170ee8f3521c1904b451f53cca7e483994ef0ff558de17a12"
+    },
+    "scripts/audit_mf3zr_joint_support.py": {
+      "bytes": 14401,
+      "path": "scripts/audit_mf3zr_joint_support.py",
+      "sha256": "71a5be03b3dc5c2e14eafede075d24f8e92a33ae3c9f4450ed9f7f4f54e59eb5"
+    },
+    "scripts/build_mf3zr_binding_review.py": {
+      "bytes": 4200,
+      "path": "scripts/build_mf3zr_binding_review.py",
+      "sha256": "baa94f5337f676aaa14345c715189f937eda1440dd6bed559464ea1885b5e921"
+    },
+    "scripts/materialize_mf3zr_option_bindings.py": {
+      "bytes": 5003,
+      "path": "scripts/materialize_mf3zr_option_bindings.py",
+      "sha256": "67d10d6be07b5f99c96a23ee4ef33241bc6c8178b26c4033f4a629c9b90d0fca"
+    },
+    "scripts/run_mf3zr_returnability_audit.py": {
+      "bytes": 4872,
+      "path": "scripts/run_mf3zr_returnability_audit.py",
+      "sha256": "c9fad673a73fec776d38512c6113cb57f11844ce50714614324bf868edd50b29"
+    },
+    "scripts/seal_mf3zr_protocol.py": {
+      "bytes": 840,
+      "path": "scripts/seal_mf3zr_protocol.py",
+      "sha256": "06d29aa9de8a193b14c9124bfb8d57033b49b0659adc175d8aa8ac12ac8cfc7b"
+    }
+  },
+  "pass_fail": {
+    "each_domain_coverage": ">=0.75",
+    "each_domain_supported_unique_episodes": ">=30",
+    "joint_coverage": ">=0.80",
+    "oracle_numerical_evidence": "NOT_OBSERVED",
+    "status_on_fail": "SUPPORT_FAIL",
+    "status_on_pass": "SUPPORT_PASS"
+  },
+  "population": {
+    "domain_counts": {
+      "R2R": 40,
+      "RxR": 40
+    },
+    "episode_ids": [
+      {
+        "dataset": "R2R",
+        "episode_id": "10046"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "10087"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "10098"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "10167"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "1463"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "1803"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "1859"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "2023"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "2178"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "2274"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "2380"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "2463"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "2501"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "3424"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "4025"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "4371"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "4665"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "4739"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "5010"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "5561"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "557"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "581"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6251"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6376"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6501"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6624"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6862"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6899"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "6964"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "7454"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "7594"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "8221"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "8391"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "8452"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "8626"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "875"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "8816"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "8886"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "9324"
+      },
+      {
+        "dataset": "R2R",
+        "episode_id": "9559"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "10944"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "13350"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "13621"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "14349"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "19342"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "19532"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "201"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "20697"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "2095"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "21018"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "22979"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "23358"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "23985"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "25479"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "27423"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "29198"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "3120"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "3150"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "32699"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "32764"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "33773"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "34202"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "35697"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "39800"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "42385"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "44661"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "45043"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "45585"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "47797"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "48100"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "486"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "5038"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "52731"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "53475"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "53615"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "55494"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "59670"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "6298"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "6437"
+      },
+      {
+        "dataset": "RxR",
+        "episode_id": "906"
+      }
+    ],
+    "events": 80,
+    "fixed_source_no_replacement": true,
+    "raw_mp3d_scenes": 39,
+    "scene_ids": [
+      "17DRP5sb8fy",
+      "1pXnuDYAj8r",
+      "29hnd4uzFmX",
+      "5q7pvUzZiYa",
+      "7y3sRwLe3Va",
+      "82sE5b5pLXE",
+      "8WUmhLawc2A",
+      "B6ByNegPMKs",
+      "D7G3Y4RVNrH",
+      "D7N2EKCX4Sj",
+      "E9uDoFAP3SH",
+      "EDJbREhghzL",
+      "GdvgFV5R1Z5",
+      "JeFG25nYj2p",
+      "JmbYfDe2QKZ",
+      "PX4nDJXEHrG",
+      "Pm6F8kyY3z2",
+      "S9hNv5qa7GM",
+      "VFuaQ6m2Qom",
+      "VLzqgDo317F",
+      "VVfe2KiqLaN",
+      "YmJkqBEsHnH",
+      "ZMojNkEp431",
+      "aayBHfsNo7d",
+      "ac26ZMwG7aT",
+      "cV4RVeZvu5T",
+      "e9zR4mvMWw7",
+      "gZ6f7yhEvPG",
+      "p5wJjkQkbXX",
+      "pRbA3pwrgk9",
+      "qoiz87JEwZ2",
+      "r1Q1Z4BcV1o",
+      "r47D5H71a5s",
+      "rPc6DW4iMge",
+      "s8pcmisQ38h",
+      "sT4fr6TAbpF",
+      "uNb9QFRL6hY",
+      "ur6pFq6Qu1A",
+      "vyrNrziPKCB"
+    ],
+    "unique_episodes": 80
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "revision": "mf3zr_option_bound_support_v1",
+  "schema_version": "revealnav-mf3zr-option-bound-support-protocol/1",
+  "scientific_scope": "data_and_observation_support_only; no learner, policy, oracle rollout, or public evaluation",
+  "seal_commit": "5e4fbcbd14d6a28b5d8edc1d590b6ca8f9a1adfb",
+  "source_commit": "5e4fbcbd14d6a28b5d8edc1d590b6ca8f9a1adfb",
+  "source_files": {
+    "binding_review_receipt": {
+      "bytes": 1095,
+      "path": "artifacts/training/mf3zr_option_bound_support_v1/MF3ZR_OPTION_BINDING_REVIEW_SOURCE_RECEIPT.json",
+      "sha256": "3fc400db6e5fa329c458337e612d35882d3b6e08d37bcb698e9b1e7b05a3b974"
+    },
+    "binding_review_source": {
+      "bytes": 3082670,
+      "path": "artifacts/training/mf3zr_option_bound_support_v1/MF3ZR_OPTION_BINDING_REVIEW_SOURCE.json",
+      "sha256": "34e36059888ab8fed9811228f5cca3eaf0979d9da7cc940497a27c439e375aae"
+    },
+    "mf3zq_population": {
+      "bytes": 458997,
+      "path": "artifacts/training/mf3zq_oracle_revealskill_headroom_v1/MF3ZQ_ORACLE_HEADROOM_POPULATION.jsonl",
+      "sha256": "76095a16939b35a1f201b3ffa72d094dda00fae71ab1d428e3b6293ebf5724aa"
+    },
+    "mf3zq_population_audit": {
+      "bytes": 9133,
+      "path": "artifacts/training/mf3zq_oracle_revealskill_headroom_v1/MF3ZQ_ORACLE_HEADROOM_POPULATION_AUDIT.json",
+      "sha256": "0ffbf30b1a4a63431368ab2a4e29770114583476ef98e2dbe5dba4906b438e63"
+    },
+    "mf3zq_visual_labels": {
+      "bytes": 827414,
+      "path": "artifacts/training/mf3zp_codex_visual_review_v1/MF3ZP_CODEX_VISUAL_REVIEW_LABELS.jsonl",
+      "sha256": "e664f8c637db0e8780e3ed47b8bea455a2fec7fd08d9277e1ad10981ef6bd9ba"
+    }
+  },
+  "status": "SEALED_BEFORE_MF3ZR_SUPPORT_RESULTS",
+  "support_definition": {
+    "K_stability": 3,
+    "domain_coverage_min": 0.75,
+    "expiry_censoring_allowed": true,
+    "joint_coverage_min": 0.8,
+    "memory_budget": 8,
+    "minimum_supported_unique_episodes_per_domain": 30,
+    "no_replacement": true,
+    "return_horizon": 8,
+    "returnability_must_be_control_backed": true,
+    "reveal_censoring_allowed": true
+  }
+}

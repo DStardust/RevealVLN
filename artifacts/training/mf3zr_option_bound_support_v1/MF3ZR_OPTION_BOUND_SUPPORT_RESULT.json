@@ -1,0 +1,126 @@
+{
+  "R2R_joint_coverage": 0.0,
+  "RxR_joint_coverage": 0.0,
+  "binding_edge_count": 4582,
+  "binding_state_counts": {
+    "UNRESOLVED": 4582
+  },
+  "binding_supported": 0,
+  "checkpoint_generated": false,
+  "domain_counts": {
+    "R2R": 40,
+    "RxR": 40
+  },
+  "domain_supported_unique_episodes": {
+    "R2R": 0,
+    "RxR": 0
+  },
+  "downstream_oracle_authorized": false,
+  "events": 80,
+  "expiry_supported": 0,
+  "failure_status_if_not_pass": "MF3ZR_OPTION_BOUND_SUPPORT_FAIL",
+  "joint_coverage": 0.0,
+  "joint_supported": 0,
+  "option_count": 578,
+  "oracle_arms_run": [],
+  "oracle_numerical_evidence": "NOT_OBSERVED",
+  "outcome_blind_diagnostics": {
+    "fields": [
+      "domain",
+      "raw_scene",
+      "instruction_token_length",
+      "total_constraint_count",
+      "dec_required_count",
+      "prerequisite_count",
+      "candidate_count",
+      "prefix_count",
+      "decision_step",
+      "trigger_type"
+    ],
+    "supported": {
+      "count": 0
+    },
+    "unsupported": {
+      "candidate_count": {
+        "max": 5,
+        "mean": 3.4375,
+        "min": 1
+      },
+      "count": 80,
+      "dec_required_count": {
+        "max": 8,
+        "mean": 3.1625,
+        "min": 1
+      },
+      "decision_step": {
+        "max": 18,
+        "mean": 2.2,
+        "min": 0
+      },
+      "domain_counts": {
+        "R2R": 40,
+        "RxR": 40
+      },
+      "instruction_token_length": {
+        "max": 450,
+        "mean": 79.8375,
+        "min": 8
+      },
+      "prefix_count": {
+        "max": 5,
+        "mean": 2.5,
+        "min": 1
+      },
+      "prerequisite_count": {
+        "max": 18,
+        "mean": 2.425,
+        "min": 0
+      },
+      "scene_count": 39,
+      "total_constraint_count": {
+        "max": 65,
+        "mean": 14.925,
+        "min": 5
+      }
+    }
+  },
+  "outcome_payload_read": false,
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "qwen_calls": 0,
+  "qwen_reads": 0,
+  "raw_mp3d_scenes": 39,
+  "ready_for_separately_versioned_mf3zs_oracle_protocol": false,
+  "returnability_callback_available": false,
+  "returnability_status_counts": {
+    "EXECUTION_UNAVAILABLE": 683
+  },
+  "returnability_supported": 0,
+  "reveal_expiry_status": {
+    "expiry_not_computable": 578,
+    "reveal_not_computable": 578
+  },
+  "reveal_supported": 0,
+  "revision": "mf3zr_option_bound_support_v1",
+  "schema_version": "revealnav-mf3zr-option-bound-support-result/1",
+  "signal_status": "OPTION_BOUND_SUPPORT_INSUFFICIENT",
+  "source_population_sha256": "76095a16939b35a1f201b3ffa72d094dda00fae71ab1d428e3b6293ebf5724aa",
+  "source_visual_label_sha256": "e664f8c637db0e8780e3ed47b8bea455a2fec7fd08d9277e1ad10981ef6bd9ba",
+  "status": "SUPPORT_FAIL",
+  "support_coverage_gate": {
+    "domain_min": 0.75,
+    "episodes_per_domain_min": 30,
+    "joint_min": 0.8
+  },
+  "unique_episodes": 80,
+  "unsupported_reason_counts": {
+    "UNSUPPORTED_MISSING_DEC_BINDING": 2,
+    "UNSUPPORTED_OPTION_IDENTITY": 44,
+    "UNSUPPORTED_RETURNABILITY": 80,
+    "UNSUPPORTED_UNVERIFIED_OPTION_BINDING": 80
+  }
+}
