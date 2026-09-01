@@ -1,0 +1,1950 @@
+{
+  "schema_version": "revealnav-mf3zp-codex-independent-visual-review-source/1",
+  "revision": "mf3zp_codex_visual_review_v1",
+  "provenance": "CODEX_INDEPENDENT_VISUAL_REVIEW_NOT_HUMAN_NOT_GOLD",
+  "review_policy": {
+    "qwen_factor_labels_read": false,
+    "qwen_uad_labels_read": false,
+    "qwen_rationales_read": false,
+    "old_training_results_used": false,
+    "causal_prefixes_reviewed_chronologically": true,
+    "factor_encoding": "instantiated-distinguishable-resolved",
+    "stability_k": 3
+  },
+  "expected_events": 80,
+  "labels_complete": true,
+  "events": [
+    {
+      "index": 0,
+      "event_id": "336d04526ba8492c6f7c1995e2469162e1dd3ef28314afaec1bbd76fa3c189de",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "REDUNDANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At the initial decision, the visible bed/foot region and small sitting area define the immediate route; the left door and bathroom belong to later decisions."
+    },
+    {
+      "index": 1,
+      "event_id": "87ba31b859d4abc7088e8d5dc2b229c9680bbe12ec9c1bcddbb2055062a37406",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "000", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c4": {"0": "000", "1": "000", "2": "100", "3": "100", "4": "110"},
+        "c5": {"0": "000", "1": "000", "2": "000", "3": "000", "4": "000"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix reaches the hall, but the end-of-hall bedroom is not yet visually confirmed at step 4; entering and waiting remain unresolved."
+    },
+    {
+      "index": 2,
+      "event_id": "4c156231fc90b0421100a20a825430f1555ca791941955524f10e33ed3d7f323",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "REDUNDANT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The current choice is the bathroom exit followed by the immediate left; the first later doorway, pink chair, and stopping condition are downstream."
+    },
+    {
+      "index": 3,
+      "event_id": "602ef49c20f80c3a488a9dad709647a9c9672fef1a803cd7ca621bc34c650366",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "INCORRECT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The initial decision is to continue down the visible stairs. Constraint c3 reverses the stated order and is incorrect; hallway and bedroom evidence is future."
+    },
+    {
+      "index": 4,
+      "event_id": "2556546e3ec44c61245fb80cda9b6242d5fe1e54d73840ba65fe096500e161c6",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The bathroom panorama shows the sink and nearby exit; the first left/door-near-sink instruction is the immediate DEC."
+    },
+    {
+      "index": 5,
+      "event_id": "fe0d31ae62dd528ca3b6f706bf449ca9365e35607e900f44e9aae27d2a510d0a",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "111", "1": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The right-hand hallway is visible from the bedroom and entered by step 1; the later bathroom-on-right stopping cue is not yet the current decision."
+    },
+    {
+      "index": 6,
+      "event_id": "9c3ebfaa7cfe7fd98bd65af66cee8b678f227a327ab83e993c6d6862178c0d5b",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT",
+        "c13": "FUTURE_NOT_RELEVANT",
+        "c14": "FUTURE_NOT_RELEVANT",
+        "c15": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c4": {"0": "110", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c5": {"0": "000", "1": "100", "2": "100", "3": "111", "4": "111"},
+        "c6": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"},
+        "c7": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix traverses bathroom and bedroom, then exposes the hall and the required left turn. End-of-hall/right/entryway evidence remains downstream."
+    },
+    {
+      "index": 7,
+      "event_id": "b4098d710061f6f207d90f7ee353d1daf12e3cf685586728bf48ad07b59e693f",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT",
+        "c13": "FUTURE_NOT_RELEVANT",
+        "c14": "FUTURE_NOT_RELEVANT",
+        "c15": "FUTURE_NOT_RELEVANT",
+        "c16": "FUTURE_NOT_RELEVANT",
+        "c17": "FUTURE_NOT_RELEVANT",
+        "c18": "FUTURE_NOT_RELEVANT",
+        "c19": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "100", "1": "111"},
+        "c4": {"0": "100", "1": "110"},
+        "c5": {"0": "110", "1": "111"},
+        "c6": {"0": "111", "1": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The immediate task is to proceed toward the first right-side exit sign; all turns after reaching that sign belong to later decisions."
+    },
+    {
+      "index": 8,
+      "event_id": "47c678ad5d327984de3d09be222360a76581884d2f165742d4e834e0ab0ef1a4",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c4": {"0": "000", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c5": {"0": "000", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c6": {"0": "000", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c7": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"},
+        "c8": {"0": "000", "1": "100", "2": "100", "3": "110", "4": "111"},
+        "c9": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "By step 4 the trajectory reaches the upper landing; the top-of-stairs landmark and stop condition define the current decision."
+    },
+    {
+      "index": 9,
+      "event_id": "c6dae5319d17ea56322fd629b677c7b1c4cde07dee62077974195f22c4b39116",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "111", "1": "111"},
+        "c4": {"0": "000", "1": "111"},
+        "c5": {"0": "100", "1": "111"},
+        "c6": {"0": "000", "1": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "After leaving the bathroom, the far-left route and main-room identity are the current evidence; the stop state is visible but not yet fulfilled."
+    },
+    {
+      "index": 10,
+      "event_id": "c40e8330169028c9503041d3a252d1d680e319adb303b42316997e90957d54ec",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "FUTURE_NOT_RELEVANT",
+        "c3": "INCORRECT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {"c1": {"0": "111"}},
+      "missing_dec_constraints": [],
+      "review_note": "The initial decision is the visible bathroom exit. Leaving the bedroom, taking a later first-left bathroom, and stopping at its sink are downstream; c3 is not a meaningful temporal atom."
+    },
+    {
+      "index": 11,
+      "event_id": "00d4bc170180c0193be87d93d46df4b9625ce06b43fc171a0387ab5e1225999a",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "FUTURE_NOT_RELEVANT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The current local decision is to leave the small room; the left-around-corner route and bed-side stop are not yet instantiated."
+    },
+    {
+      "index": 12,
+      "event_id": "f17cfe4c140afb972a268708b222fea6f540314d02161ae54253a92f2f44efda",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At step 0 the immediate evidence is leaving the bar and crossing the adjacent sitting area; double doors and all later turns are not yet the current branch decision."
+    },
+    {
+      "index": 13,
+      "event_id": "af9e2a764244030cd4c842e7cd83b5a04b5eac49741b42e85f07e21942ec0eb2",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c4": {"0": "100", "1": "100", "2": "110", "3": "110", "4": "111"},
+        "c5": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"},
+        "c6": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix walks across the large room and reaches the end where the left turn into the TV room becomes the active decision; the coffee-table stopping relation is later."
+    },
+    {
+      "index": 14,
+      "event_id": "8de152588e8715b71c1708a41a2dbfb46c8ff95501ad48419c9a05b1e89d0f16",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT",
+        "c13": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "110", "1": "111"},
+        "c3": {"0": "100", "1": "111"},
+        "c4": {"0": "100", "1": "111"},
+        "c5": {"0": "100", "1": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "By step 1 the bed is behind and the immediate left/door traversal is visually resolved; hall and sliding-door destination cues are downstream."
+    },
+    {
+      "index": 15,
+      "event_id": "3b3201de0cb101551c3500c4f4439534de15d976ae1fda6d18b6e22cc843baee",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"},
+        "c6": {"0": "111"},
+        "c7": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "This is a single local, fully visible bed-relative decision: cross to the opposite foot of the bed with the table on the right."
+    },
+    {
+      "index": 16,
+      "event_id": "9aa152c238f1b60fcf08f35bcb294e179f01ecc5f2a7e7fa1581360facd17b17",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "FUTURE_NOT_RELEVANT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Across the four prefixes, the immediate route stays the doorway on the opposite side; the black-top table is evidence needed only after exiting."
+    },
+    {
+      "index": 17,
+      "event_id": "705e427bf23f2999aaf9ef0b3debbd007ba82c4cda48f7a1658044138e327f71",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "FUTURE_NOT_RELEVANT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The faced doorway and straight exit are directly visible; the next-room crossing and hallway stop are future decisions."
+    },
+    {
+      "index": 18,
+      "event_id": "6ab6a69fbcc7fbdf4a19783720a73c19b0b5334e486bfc1c5221750be118fe1c",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED",
+        "c10": "DEC_REQUIRED",
+        "c11": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c2": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c3": {"3": "110", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c4": {"3": "100", "4": "110", "5": "111", "6": "111", "7": "111"},
+        "c5": {"3": "000", "4": "100", "5": "111", "6": "111", "7": "111"},
+        "c6": {"3": "000", "4": "000", "5": "100", "6": "110", "7": "111"},
+        "c7": {"3": "000", "4": "000", "5": "100", "6": "110", "7": "111"},
+        "c8": {"3": "100", "4": "100", "5": "100", "6": "110", "7": "111"},
+        "c9": {"3": "000", "4": "000", "5": "100", "6": "110", "7": "111"},
+        "c10": {"3": "100", "4": "100", "5": "110", "6": "111", "7": "111"},
+        "c11": {"3": "000", "4": "000", "5": "100", "6": "110", "7": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At the rope boundary, the current DEC is the end-of-seating right turn and the specific red-rug stopping region before the next doorway."
+    },
+    {
+      "index": 19,
+      "event_id": "eeb66ff2a378899d0ca25b89206de414981fec2e924f36dabdfedcf408cb695b",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"},
+        "c6": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The bedroom exit opens directly toward the hall and exterior-door region; all atoms jointly define the immediate local stop."
+    },
+    {
+      "index": 20,
+      "event_id": "97f2b3e00b66bd8d156533aaecc6753a827024865338334a21660f0369ae8301",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "INCORRECT",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "REDUNDANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "INCORRECT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111"},
+        "c4": {"0": "111", "1": "111", "2": "111"},
+        "c6": {"0": "111", "1": "111", "2": "111"},
+        "c7": {"0": "110", "1": "111", "2": "111"},
+        "c8": {"0": "100", "1": "110", "2": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At step 2 the supports and route into the main room are active. The graph reverses the two temporal-order atoms c5 and c12 relative to the instruction."
+    },
+    {
+      "index": 21,
+      "event_id": "09642666e30cf019695444e6842b2e51077d4c892376ccb8ffbc0aa86da81e29",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT",
+        "c13": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "111", "1": "111"},
+        "c4": {"0": "110", "1": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix moves from the bathroom into the bedroom; traversing that bedroom is the current decision, while its exit and cabinet-marked hall door are later."
+    },
+    {
+      "index": 22,
+      "event_id": "15621f8504d67dc145b3bcd6c44a7e038396b0f448ff1d58cfddc2291f4b82a8",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "INCORRECT",
+        "c3": "DEC_REQUIRED",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c3": {"0": "100"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Only the bedroom exit and immediate post-exit left are current. The left route is not visually resolved from the initial room; c2 is an empty temporal atom."
+    },
+    {
+      "index": 23,
+      "event_id": "8590bb23c2cb3f308a48262fad877b17231474f40353cc869d54c483e59bc28c",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The visible kitchenette and exit define the immediate path past the kitchen; the dining-table wait target is outside the current view."
+    },
+    {
+      "index": 24,
+      "event_id": "3374d93cc35c86054a2b7806842abead67287eb228c2285dfb58f0e1f09ae702",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "FUTURE_NOT_RELEVANT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "000", "1": "100"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix has left the closet and is in the bedroom. The bedroom exit exists but is not yet distinguished from the visible interior doorways; the later hall-right bedroom is future."
+    },
+    {
+      "index": 25,
+      "event_id": "707c4cf43f21e8b5ba44ad33742641eb292ef94c092a8ecd0dc6a2d11c45a43a",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"},
+        "c6": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Pews, the room front, religious imagery, and stage area are simultaneously visible and define the local route around the pews."
+    },
+    {
+      "index": 26,
+      "event_id": "9d00bf5365189963b51d225390d686292e7fb3c81480244469e3c77705aa3ec6",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "INCORRECT",
+        "c3": "DEC_REQUIRED",
+        "c4": "INCORRECT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "INCORRECT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "000", "1": "100", "2": "110", "3": "111", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The sequence reaches the hall and activates the left turn. The generated temporal atoms c2, c4, and c6 reverse the instruction order and are incorrect."
+    },
+    {
+      "index": 27,
+      "event_id": "30fe019c132ad35bb2a870566f9cae5e60eed7368e85c1e54d2dde8fa28cc632",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "FUTURE_NOT_RELEVANT",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c2": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "All reviewed frames remain on the staircase and expose only one executable continuation; the first doorway, bed, bathroom, and sink are later decisions."
+    },
+    {
+      "index": 28,
+      "event_id": "9f7d228d95487977a9debc1b962daecd838ee5b0df990e4d20e69ef16debc05c",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "FUTURE_NOT_RELEVANT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111"},
+        "c2": {"0": "110", "1": "110", "2": "111"},
+        "c3": {"0": "100", "1": "110", "2": "111"}
+      },
+      "missing_dec_constraints": [
+        {
+          "human_dec_item_id": "missing::stool_landmark",
+          "kind": "ENTITY",
+          "text": "stool used as the landmark for the first left turn",
+          "role": "DEC_REQUIRED",
+          "factors": {"0": "110", "1": "111", "2": "111"}
+        }
+      ],
+      "review_note": "The active decision is the first left after the stool. The graph references a stool but omits the stool entity itself; chair/mirror evidence belongs to the later second turn."
+    },
+    {
+      "index": 29,
+      "event_id": "52a2cd5be43df428b37d295426dc6783bf9d203a2ae5b31711c47f7bcd871ece",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT",
+        "c13": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The immediate choice is the right turn along the visible wall/double-door boundary. Serving-table, bar, and chair cues are later."
+    },
+    {
+      "index": 30,
+      "event_id": "859a6fc3d2de6137b87707f4ecd9e110a694ab8b835a176c9bfa173f484dc2aa",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111"},
+        "c3": {"0": "100", "1": "111", "2": "111"},
+        "c4": {"0": "100", "1": "111", "2": "111"},
+        "c5": {"0": "100", "1": "110", "2": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The stair landmark is passed and the adjacent doorway becomes the active target; the temporal order is visually resolved by step 2."
+    },
+    {
+      "index": 31,
+      "event_id": "3347fb0bafbbf7c457c5876de4c2f3b18ee1c41d2e287a617d0b6e06316e22d6",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "INCORRECT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "110"},
+        "c5": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The couch room is visible from the bathroom and defines the immediate exit/past-couch route. Constraint c6 reverses exiting the couch room and passing the couch."
+    },
+    {
+      "index": 32,
+      "event_id": "7811152fe2eb8c70ebac035252230700b3cb35545f26d6e3ccb7e2dce4b43c60",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c3": {"0": "000", "1": "100", "2": "110", "3": "111"},
+        "c4": {"0": "000", "1": "100", "2": "110", "3": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "After the initial right and doorway, the step-3 decision is the left turn into the hall; the next doorway and bedroom-right stop are downstream."
+    },
+    {
+      "index": 33,
+      "event_id": "9faff788d4e03876fca46c4d9395f1c74c07e00cfccc3a982fa3047ec81c5bab",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "100", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "000", "1": "100", "2": "110", "3": "111", "4": "111"},
+        "c4": {"0": "000", "1": "000", "2": "100", "3": "111", "4": "111"},
+        "c5": {"0": "000", "1": "000", "2": "100", "3": "110", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The screen turn is in history; the current chain is the second left, black-chair passage, and entry at the foot of the beds. The TV stop remains future."
+    },
+    {
+      "index": 34,
+      "event_id": "6473f74c0e45cf0c4fbf86b0d1dc7a628b81495ab918496fdbd990c5d76db636",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT",
+        "c12": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The initial decision is the rightward ninety-degree route preserving the sunken area on the right; fireplace and three-step turn cues are later."
+    },
+    {
+      "index": 35,
+      "event_id": "eee0f6524101a396952b662aedea454cd5babdab9b668b90c377d11377358b66",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "INCORRECT",
+        "c4": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "100", "1": "111"},
+        "c2": {"0": "100", "1": "110"}
+      },
+      "missing_dec_constraints": [
+        {
+          "human_dec_item_id": "missing::exit_after_water_cooler",
+          "kind": "TEMPORAL_ORDER",
+          "text": "exit the room after passing the water cooler",
+          "role": "DEC_REQUIRED",
+          "factors": {"0": "100", "1": "110"}
+        }
+      ],
+      "review_note": "The white water cooler and route past it emerge by step 1. Constraint c3 reverses the order; the correct room-exit atom is recorded separately."
+    },
+    {
+      "index": 36,
+      "event_id": "60ec6cf1a1a7e2a6070ea891bb61899ce7c0bb12c0ad4ca8352ebc6988630200",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "INCORRECT",
+        "c3": "FUTURE_NOT_RELEVANT",
+        "c4": "INCORRECT",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {"c1": {"0": "111"}},
+      "missing_dec_constraints": [],
+      "review_note": "The only immediate instruction is descending the visible staircase. Both generated temporal atoms reverse the order of the later left turns."
+    },
+    {
+      "index": 37,
+      "event_id": "c3a20d7d7968f3f99920b3aad0b92310c3c2cd5fff4a36e85eb97f0f8fbc2b9c",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The straight-then-left passage between the visible pillar and island is a single local DEC; living-room and couch-table waiting cues are downstream."
+    },
+    {
+      "index": 38,
+      "event_id": "051a16d530b6f6903f41409f97a6ca6030079dca3708329437493fd5f1197194",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT",
+        "c9": "FUTURE_NOT_RELEVANT",
+        "c10": "FUTURE_NOT_RELEVANT",
+        "c11": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c3": {"0": "000", "1": "100", "2": "110", "3": "111"},
+        "c4": {"0": "000", "1": "000", "2": "100", "3": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The reviewed sequence descends to the bottom landing, where the right turn becomes active. Sitting-area and blue-bedroom evidence is later."
+    },
+    {
+      "index": 39,
+      "event_id": "8fd0594605a078a2b28ba71bbeb630b56fa6e1305e2a04707b1f291d24cb0630",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "INCORRECT",
+        "c4": "DEC_REQUIRED",
+        "c5": "FUTURE_NOT_RELEVANT",
+        "c6": "FUTURE_NOT_RELEVANT",
+        "c7": "FUTURE_NOT_RELEVANT",
+        "c8": "FUTURE_NOT_RELEVANT"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111"},
+        "c4": {"0": "000", "1": "100", "2": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "By step 2 the agent has used the left exit and must turn right; the last right-hand door remains future. Constraint c3 reverses the action order."
+    },
+    {
+      "index": 40,
+      "event_id": "1ce3baec832523053746c323f9cd73068f0b1278a5f9299f318f7f807e09340e",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"},
+        "c6": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At the initial RxR decision, the grey sofa/wall establish orientation and the right-side circular-panel door is the immediate exit. Constraints c7-c64 describe later route segments."
+    },
+    {
+      "index": 41,
+      "event_id": "b0ecb47a0c1aeb80915c42284a5aa0c4f749767f5cb53f677c892f7248ab8236",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The bath and exit into the visible bedroom define the first decision. Left turns, dining table, wall, and lamp are later segments."
+    },
+    {
+      "index": 42,
+      "event_id": "380ec12b985055ad183b59bdfe38f9883f6625d39134677990d2cc9ce230056b",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The wooden wall/dark door provide orientation, while the open door exposed by turning left is the immediate exit. All outdoor-room, couch, painting, and stair evidence is future."
+    },
+    {
+      "index": 43,
+      "event_id": "3ab10552664eb4fa22e2c638b08da1294c64c00eff4f68f562cae2941833e808",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"1": "111", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c2": {"1": "111", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c3": {"1": "111", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c4": {"1": "100", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c5": {"1": "100", "2": "110", "3": "111", "4": "111", "5": "111"},
+        "c6": {"1": "000", "2": "100", "3": "110", "4": "111", "5": "111"},
+        "c7": {"1": "000", "2": "000", "3": "100", "4": "110", "5": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The stairs are passed on the left and the current option is the left bedroom entry. Portrait, wardrobe, and suitcase endpoint evidence is later."
+    },
+    {
+      "index": 44,
+      "event_id": "e12aee698ddbba92a558b7220d0558523225e4871b488532ffe73034ac1df2d4",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "INCORRECT",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c9": "INCORRECT"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c6": {"0": "111"},
+        "c7": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Two left-side openings and the closet-like space are visible; the right member is the immediate choice. c5 and c9 reverse the instruction's before/after order."
+    },
+    {
+      "index": 45,
+      "event_id": "62c5f570933da21d3d07154c8cfb1b5539144f4c861298c54bd905b6522fcb61",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At the start the down-left stair path and right closed door are both visible and distinguish the instructed forward-right choice. The later pair of doors, corner, seating area, and couch are not part of this decision."
+    },
+    {
+      "index": 46,
+      "event_id": "0982dd44f6b501a7ad14b59be042bd9512143b5c308616ea98851f8fc337892f",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111"},
+        "c3": {"0": "110", "1": "111", "2": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The current choice is the initial step toward the prominent fireplace in the living room. Windows, table, chairs, hallway opening, laundry closet, and dresser belong to later decisions."
+    },
+    {
+      "index": 47,
+      "event_id": "a88ea756b20d9b1f7b9935e52cac85d18fc9ed42a5355af2904c5434af66ae55",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "INCORRECT",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "PREREQUISITE_ONLY",
+        "c9": "DEC_REQUIRED",
+        "c10": "DEC_REQUIRED",
+        "c11": "DEC_REQUIRED",
+        "c12": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c2": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c4": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c5": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c6": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c7": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c8": {"14": "111", "15": "111", "16": "111", "17": "111", "18": "111"},
+        "c9": {"14": "110", "15": "110", "16": "110", "17": "111", "18": "111"},
+        "c10": {"14": "100", "15": "110", "16": "110", "17": "111", "18": "111"},
+        "c11": {"14": "110", "15": "110", "16": "111", "17": "111", "18": "111"},
+        "c12": {"14": "100", "15": "100", "16": "110", "17": "111", "18": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The reviewed window is already in the office corridor after the exit-sign turn. The decisive evidence is counting and choosing the second left office doorway and its threshold. c3 reverses the source instruction's order."
+    },
+    {
+      "index": 48,
+      "event_id": "e3827a0de509e857a69ca750d5e6983a7d1f24e1bdff8c08fc394fdf6a1a1a70",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The initial wall, slight-right step, and left-side window are already visible and determine the first move. Books, statue, stairs, and descent are future segments."
+    },
+    {
+      "index": 49,
+      "event_id": "3332c66fc93dbfd9717f8c7b93492367508947a694f11185492beaff65b59b3e",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c2": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c3": {"5": "110", "6": "111", "7": "111", "8": "111", "9": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "All five causal panoramas remain on the staircase; the immediate decision is the rightward continuation to finish ascending. The flag, hallway, and paintings have not yet become relevant."
+    },
+    {
+      "index": 50,
+      "event_id": "748ecb3cf21864a621bc7dfe479ef3b7f9df3793156bd798b1af6499dea76029",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"},
+        "c6": {"0": "111"},
+        "c7": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "From the bedroom doorway the burgundy chaise and the table on the red rug visibly bound the immediate rightward route between them. Curtains and final doorway are later evidence."
+    },
+    {
+      "index": 51,
+      "event_id": "3c7616822419ae89501b3597363fced00da82c772ed98f9f197ebbad830f4055",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c4": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c5": {"0": "110", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c6": {"0": "110", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c7": {"0": "110", "1": "110", "2": "111", "3": "111", "4": "111"},
+        "c8": {"0": "100", "1": "100", "2": "110", "3": "111", "4": "111"},
+        "c9": {"0": "100", "1": "100", "2": "110", "3": "110", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix progresses from the couch and circular table, past the obstructing chair and cabinet/barstools, to the staircase. The current decision is the right turn and first stair step; hallway and fireplace evidence is future."
+    },
+    {
+      "index": 52,
+      "event_id": "9860db0064b5e1abc1e09f8eb02fd06676cbd5e35f6211c9db5ed36acb6e98a9",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "DEC_REQUIRED",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "110"},
+        "c3": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The bed and its foot are visible behind the initial facing direction, grounding the turn-around and first approach. Llama picture, sink, closed door, rug, and window are later segments."
+    },
+    {
+      "index": 53,
+      "event_id": "606de8aef857aa9aeae03f92f4d54fabd70ecc8d19c6fec693210a9f5ce0b1a1",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c2": {"0": "110", "1": "111", "2": "111", "3": "111"},
+        "c3": {"0": "110", "1": "111", "2": "111", "3": "111"},
+        "c4": {"0": "100", "1": "110", "2": "111", "3": "111"},
+        "c5": {"0": "000", "1": "100", "2": "110", "3": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The sequence turns away from the balcony door, rounds the bed, and exposes the hallway. The current option is the right turn into that hallway; open door, closet, zebra, walkway, and destination bedroom are future."
+    },
+    {
+      "index": 54,
+      "event_id": "79ef7f4056fc057bbd63d830755378189d66a1dca28ff72eb0f2024b346dd39c",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The green wall, carpet, and dining table visibly define the immediate route toward the wall while keeping the table to the right. Kitchen entrance, island, shelf, and sink are later."
+    },
+    {
+      "index": 55,
+      "event_id": "c4aa4ad42922f8d2577511d98e083d245114e14d50c34fcbb326ae353b534c63",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "110", "1": "111"},
+        "c4": {"0": "110", "1": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The two panoramas show the compact pantry and its open exit; the current decision is the single step out toward the kitchen. Brown door and opposing stairs are only relevant after turning back."
+    },
+    {
+      "index": 56,
+      "event_id": "7b5b687de8771d3b92937380fd377814fce8ec8ec9f7f5096340a8b68612ac83",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"1": "111", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c2": {"1": "111", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c3": {"1": "110", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c4": {"1": "110", "2": "111", "3": "111", "4": "111", "5": "111"},
+        "c5": {"1": "000", "2": "100", "3": "110", "4": "111", "5": "111"},
+        "c6": {"1": "000", "2": "100", "3": "110", "4": "111", "5": "111"},
+        "c7": {"1": "000", "2": "100", "3": "110", "4": "111", "5": "111"},
+        "c8": {"1": "000", "2": "000", "3": "100", "4": "111", "5": "111"},
+        "c9": {"1": "000", "2": "000", "3": "100", "4": "110", "5": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The route advances through the archway/hall and reaches an open doorway whose visible four-post bed identifies the instructed room. The bed-side endpoint is later than the current door-entry decision."
+    },
+    {
+      "index": 57,
+      "event_id": "8230b7b4009925fea594e2f24568cd5de32bb40b876dd893447ab95bd7d87903",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "110"},
+        "c6": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The initial panorama exposes the bed, small corner dresser, and open doorway, grounding the rightward hop around the bed toward the dresser. Hall art, stairs, bathroom split, and shower are future."
+    },
+    {
+      "index": 58,
+      "event_id": "bfc24479e56d83d10bea6fd125469411bd9b646693992ca45e708c599aaa935e",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111"},
+        "c3": {"0": "100", "1": "100", "2": "110", "3": "110"},
+        "c4": {"0": "000", "1": "000", "2": "100", "3": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The scan remains on the marble staircase throughout this prefix. Descending is decisive now; the landing-left relation is only beginning to instantiate, while couch and glass-door evidence is future."
+    },
+    {
+      "index": 59,
+      "event_id": "ef5cb00e9cd1918d589589a3b01131b8a655b2db642c6dbe4066e11445113070",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c2": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c3": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c4": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c5": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c6": {"3": "111", "4": "111", "5": "111", "6": "111", "7": "111"},
+        "c7": {"3": "110", "4": "110", "5": "111", "6": "111", "7": "111"},
+        "c8": {"3": "100", "4": "110", "5": "110", "6": "111", "7": "111"},
+        "c9": {"3": "100", "4": "100", "5": "110", "6": "110", "7": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The red-carpet route advances through the first doorway toward the next doorway. The immediate evidence is the instruction to turn left before crossing that second threshold; railing and red stairs are not yet visible."
+    },
+    {
+      "index": 60,
+      "event_id": "08ad7d148cc0ad87c64fc967b8fdadb70706d8bf1c4c03003cb4a6950b02002e",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The pool and opposing small garden are visible in the start panorama, defining the turn-around and straight movement. The later right turn, glass-door entry, and table endpoint are separate decisions."
+    },
+    {
+      "index": 61,
+      "event_id": "75121fdb536b80b5ba6607aec138e483ecaa53372670ea4a910ccddb19b2ee84",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "100"},
+        "c4": {"0": "100"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The long wooden chairs are clear, but the opposite staircase is only weakly instantiated in the incomplete panorama. The turn-around is resolved; staircase approach remains visually ambiguous at this prefix."
+    },
+    {
+      "index": 62,
+      "event_id": "f7ff980f006c5520595e43e5ba92a5fdd545f1b10409c078f6edcca2cfec97f1",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "PREREQUISITE_ONLY",
+        "c9": "PREREQUISITE_ONLY",
+        "c10": "DEC_REQUIRED",
+        "c11": "DEC_REQUIRED",
+        "c12": "DEC_REQUIRED",
+        "c13": "DEC_REQUIRED",
+        "c14": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c2": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c3": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c4": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c5": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c6": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c7": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c8": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c9": {"2": "111", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c10": {"2": "100", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c11": {"2": "000", "3": "111", "4": "111", "5": "111", "6": "111"},
+        "c12": {"2": "100", "3": "110", "4": "111", "5": "111", "6": "111"},
+        "c13": {"2": "000", "3": "110", "4": "111", "5": "111", "6": "111"},
+        "c14": {"2": "000", "3": "100", "4": "110", "5": "111", "6": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The green vase becomes visible at prefix 3 and resolves which adjacent left-side opening to take. The chair, TV/table passage, plywood chest, and return between brick walls are later."
+    },
+    {
+      "index": 63,
+      "event_id": "d6a28274f20a32fec627d0baf079c03519de94d4a2e8c37a78d5d3e5f674e18f",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "PREREQUISITE_ONLY",
+        "c9": "PREREQUISITE_ONLY",
+        "c10": "DEC_REQUIRED",
+        "c11": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c2": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c3": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c4": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c5": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c6": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c7": {"4": "111", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c8": {"4": "110", "5": "111", "6": "111", "7": "111", "8": "111"},
+        "c9": {"4": "100", "5": "110", "6": "111", "7": "111", "8": "111"},
+        "c10": {"4": "100", "5": "100", "6": "110", "7": "111", "8": "111"},
+        "c11": {"4": "000", "5": "000", "6": "100", "7": "110", "8": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The prefix moves from the dining-table side toward the staircase; at decision step the foot of the stairs is clear and the immediate option is to ascend. Second-left laundry doorway evidence is future."
+    },
+    {
+      "index": 64,
+      "event_id": "708360c9677142dca801d0a7354e0f3fdeafbdd59bcc5d0dcdf4f94304662004",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED",
+        "c10": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111"},
+        "c4": {"0": "111", "1": "111", "2": "111"},
+        "c5": {"0": "110", "1": "111", "2": "111"},
+        "c6": {"0": "110", "1": "111", "2": "111"},
+        "c7": {"0": "110", "1": "111", "2": "111"},
+        "c8": {"0": "100", "1": "110", "2": "111"},
+        "c9": {"0": "100", "1": "110", "2": "111"},
+        "c10": {"0": "000", "1": "110", "2": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The first three views progress from the bed/bookshelf relation to the adjacent opening and then the hall threshold. The present option is the right turn through the open door; the long hallway route and final bedroom are future."
+    },
+    {
+      "index": 65,
+      "event_id": "673fa20c818ac8553dac5ea4c94832feabf77167ab9fdcbd954204e539c567c3",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "110"},
+        "c2": {"0": "111"},
+        "c3": {"0": "110"},
+        "c4": {"0": "110"},
+        "c5": {"0": "000"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The view from the laundry/kitchen edge supports the leftward passage/open-arch direction, but the couch is not visible enough to ground its stated side relation. Bedroom and washroom segments are future."
+    },
+    {
+      "index": 66,
+      "event_id": "c8b0b85178e3d765ca3c0cfbfd78fa7e298dcdf9bfb565b6e557b2d684f63da6",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "000", "1": "000"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "110", "1": "111"},
+        "c4": {"0": "100", "1": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The commode is not visible in the usable panorama, but the washroom exit and rightward turn into the hall are clear. First-left room, bed, stairs, and final mirror are later."
+    },
+    {
+      "index": 67,
+      "event_id": "23210fb9fd2d05c949900cea7d456fb5a9bdf1ddf63cbdffb30cc35d5598bfc1",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "111"},
+        "c6": {"0": "111"},
+        "c7": {"0": "111"},
+        "c8": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The panorama shows the outside house/trees on one side and the bathroom plus exit doorway on the other, resolving the turn-around and initial exit. Living-room furniture, sculpture, patio, and plants are later."
+    },
+    {
+      "index": 68,
+      "event_id": "8c1ac70a3f0a36239c7d7dfae11b1fde1787086fe1fd8e97155fc0127dd694a6",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "110"},
+        "c6": {"0": "110"},
+        "c7": {"0": "100"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At the upper staircase, the immediate right-side opening is visible and grounds the ascent/right turn. Its bathroom identity is only weakly instantiated; kitchen, refrigerator, and window are later."
+    },
+    {
+      "index": 69,
+      "event_id": "3255fb5dcc4072fd9a5b4a6c75165833e8684adb29720470a140e4926821829f",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The start wall and descending staircase are visible, so the immediate right turn and first descent are resolved. The second stair flight, vase, Christmas tree, living/dining areas, and refrigerator are future."
+    },
+    {
+      "index": 70,
+      "event_id": "28f9f948cf27e2476fddef5b3443498d8686527786c12a7f3eea1f28dd4de314",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Toilet tissue is visible at the starting orientation and the open doorway exposes the couch outside, resolving the rightward exit target. The final approach to the couch is not yet completed."
+    },
+    {
+      "index": 71,
+      "event_id": "9bf48707ab685ff7394afc03ea52a88808c9febd453e34dc62aa509d885849c4",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The sauna interior and door directly ahead are unambiguous, so exiting and then turning left form the current chain. Massage-bed hop, double doors, chair, and divider are later."
+    },
+    {
+      "index": 72,
+      "event_id": "a4a281a735ccc970a79c68d5c599be9c98e5ec0858ef8b6b444ca3351feeff37",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "DEC_REQUIRED",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "111", "1": "111"},
+        "c4": {"0": "110", "1": "111"},
+        "c5": {"0": "110", "1": "111"},
+        "c6": {"0": "100", "1": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Sink and mirror resolve the left-facing bathroom reference, while the right-side doorway initiates the exit into the dark-wood hall. Closed white door, stairs, ship painting, and final ascent are later."
+    },
+    {
+      "index": 73,
+      "event_id": "446923dd2f4cf7d365a6125ec36ae2edd271a17692c99f44395bfc6abfd3a50a",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED",
+        "c10": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c2": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c3": {"0": "111", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c4": {"0": "110", "1": "111", "2": "111", "3": "111", "4": "111"},
+        "c5": {"0": "100", "1": "110", "2": "110", "3": "111", "4": "111"},
+        "c6": {"0": "100", "1": "100", "2": "110", "3": "111", "4": "111"},
+        "c7": {"0": "100", "1": "100", "2": "110", "3": "111", "4": "111"},
+        "c8": {"0": "100", "1": "110", "2": "110", "3": "111", "4": "111"},
+        "c9": {"0": "000", "1": "100", "2": "110", "3": "110", "4": "111"},
+        "c10": {"0": "100", "1": "110", "2": "110", "3": "111", "4": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The causal views remain around the stone-walled stair segment; the immediate chain is the left turn toward the green/white armchair by the decorated wall. The second staircase and first-floor landmarks are later."
+    },
+    {
+      "index": 74,
+      "event_id": "d951e661e991a73ed65b66884a219d34ec337471014bee114655f5e5accc9384",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "111", "1": "111"},
+        "c4": {"0": "111", "1": "111"},
+        "c5": {"0": "110", "1": "111"},
+        "c6": {"0": "110", "1": "111"},
+        "c7": {"0": "110", "1": "111"},
+        "c8": {"0": "100", "1": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "Turning within the bedroom exposes the bed/stool on one side, TV/cabinets/chair on the other, and the exit ahead. The current decision is to leave for the hallway; all later room transitions are future."
+    },
+    {
+      "index": 75,
+      "event_id": "2553b7d2be8d521e617f160b13bd40563280b83d52e35410b33bbf295bdf1d33",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "PREREQUISITE_ONLY",
+        "c9": "PREREQUISITE_ONLY",
+        "c10": "PREREQUISITE_ONLY",
+        "c11": "PREREQUISITE_ONLY",
+        "c12": "DEC_REQUIRED",
+        "c13": "DEC_REQUIRED",
+        "c14": "DEC_REQUIRED",
+        "c15": "DEC_REQUIRED",
+        "c16": "DEC_REQUIRED",
+        "c17": "DEC_REQUIRED",
+        "c18": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c2": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c3": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c4": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c5": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c6": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c7": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c8": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c9": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c10": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c11": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c12": {"6": "100", "7": "110", "8": "111", "9": "111", "10": "111"},
+        "c13": {"6": "100", "7": "110", "8": "111", "9": "111", "10": "111"},
+        "c14": {"6": "100", "7": "110", "8": "111", "9": "111", "10": "111"},
+        "c15": {"6": "100", "7": "110", "8": "111", "9": "111", "10": "111"},
+        "c16": {"6": "110", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c17": {"6": "100", "7": "100", "8": "110", "9": "110", "10": "111"},
+        "c18": {"6": "000", "7": "100", "8": "110", "9": "110", "10": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "After the armchair sequence, the prefix exposes the pillar-side entrance, the double-door landmark, and the opposed up/right versus down/left steps. The current option is to reach the top of the down-left steps; bathroom evidence is later."
+    },
+    {
+      "index": 76,
+      "event_id": "9270649685d668f1eb70a169057433ba50037c951da39c556ad7992194875cd3",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "DEC_REQUIRED",
+        "c6": "DEC_REQUIRED",
+        "c7": "DEC_REQUIRED",
+        "c8": "DEC_REQUIRED",
+        "c9": "DEC_REQUIRED",
+        "c10": "DEC_REQUIRED",
+        "c11": "DEC_REQUIRED",
+        "c12": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c2": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c3": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c4": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c5": {"6": "110", "7": "110", "8": "111", "9": "111", "10": "111"},
+        "c6": {"6": "100", "7": "110", "8": "110", "9": "111", "10": "111"},
+        "c7": {"6": "110", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c8": {"6": "100", "7": "110", "8": "110", "9": "111", "10": "111"},
+        "c9": {"6": "100", "7": "100", "8": "110", "9": "111", "10": "111"},
+        "c10": {"6": "100", "7": "100", "8": "110", "9": "111", "10": "111"},
+        "c11": {"6": "111", "7": "111", "8": "111", "9": "111", "10": "111"},
+        "c12": {"6": "110", "7": "110", "8": "111", "9": "111", "10": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The hall contains multiple similar openings. Across prefixes the left member of the across-door pair becomes distinguishable, and its sink plus left massage bed confirm the intended room. Tub/bed endpoint is later."
+    },
+    {
+      "index": 77,
+      "event_id": "2616b69dba01c67016c7da86e2110a5c13759bd18ba99df11f7012b1cfd0174c",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "PREREQUISITE_ONLY",
+        "c5": "PREREQUISITE_ONLY",
+        "c6": "PREREQUISITE_ONLY",
+        "c7": "PREREQUISITE_ONLY",
+        "c8": "PREREQUISITE_ONLY",
+        "c9": "PREREQUISITE_ONLY",
+        "c10": "PREREQUISITE_ONLY",
+        "c11": "PREREQUISITE_ONLY",
+        "c12": "PREREQUISITE_ONLY",
+        "c13": "PREREQUISITE_ONLY",
+        "c14": "PREREQUISITE_ONLY",
+        "c15": "PREREQUISITE_ONLY",
+        "c16": "PREREQUISITE_ONLY",
+        "c17": "PREREQUISITE_ONLY",
+        "c18": "PREREQUISITE_ONLY",
+        "c19": "DEC_REQUIRED",
+        "c20": "DEC_REQUIRED",
+        "c21": "DEC_REQUIRED",
+        "c22": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c2": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c3": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c4": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c5": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c6": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c7": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c8": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c9": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c10": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c11": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c12": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c13": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c14": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c15": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c16": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c17": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c18": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c19": {"5": "111", "6": "111", "7": "111", "8": "111", "9": "111"},
+        "c20": {"5": "110", "6": "110", "7": "111", "8": "111", "9": "111"},
+        "c21": {"5": "110", "6": "110", "7": "111", "8": "111", "9": "111"},
+        "c22": {"5": "100", "6": "110", "7": "110", "8": "110", "9": "111"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "At the mini-pool terrace, the already traversed steps, pool, sofas, and coffee table establish context. The current decisive evidence is the bush directly ahead with three chairs behind it, selecting the forward approach. Door and all indoor segments are future."
+    },
+    {
+      "index": 78,
+      "event_id": "7095218d2100073368c1f00e0945ae2f65cf6153bf2282f5981d3840e9bb0888",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "PREREQUISITE_ONLY",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111", "1": "111"},
+        "c2": {"0": "111", "1": "111"},
+        "c3": {"0": "110", "1": "111"},
+        "c4": {"0": "100", "1": "111"},
+        "c5": {"0": "100", "1": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "After the restroom-facing step, the second panorama clearly exposes the glass divider between dining and living spaces. The current choice is to turn back and approach that divider; chair ordinal evidence is later."
+    },
+    {
+      "index": 79,
+      "event_id": "e7ea7ee6f3c047b7d07a2b84f1f7da462fb5c6924ed95b8e80d9a07ad14c220c",
+      "default_role": "FUTURE_NOT_RELEVANT",
+      "roles": {
+        "c1": "PREREQUISITE_ONLY",
+        "c2": "PREREQUISITE_ONLY",
+        "c3": "DEC_REQUIRED",
+        "c4": "DEC_REQUIRED",
+        "c5": "DEC_REQUIRED"
+      },
+      "factors": {
+        "c1": {"0": "111"},
+        "c2": {"0": "111"},
+        "c3": {"0": "111"},
+        "c4": {"0": "111"},
+        "c5": {"0": "110"}
+      },
+      "missing_dec_constraints": [],
+      "review_note": "The toilet behind the start and bathtub beyond the open room exit are visible in the causal panorama. The immediate chain is turn around, leave this room, and approach the bathtub; bedroom and staircase stages are future."
+    }
+  ]
+}

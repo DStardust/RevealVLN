@@ -1,0 +1,65 @@
+{
+  "authorization": {
+    "deployment_checkpoint": false,
+    "formal_label_validity": false,
+    "formal_ree": false,
+    "oracle_headroom": false,
+    "skill_policy": false
+  },
+  "inputs": {
+    "label_audit": {
+      "bytes": 820,
+      "path": "artifacts/training/mf3zp_codex_visual_review_v1/MF3ZP_CODEX_VISUAL_REVIEW_LABEL_AUDIT.json",
+      "sha256": "d6c237dbc708906cc6938774d47fa620dddf9c577a5eb83e907e60f0c0d55d09"
+    },
+    "label_manifest": {
+      "bytes": 1289,
+      "path": "artifacts/training/mf3zp_codex_visual_review_v1/MF3ZP_CODEX_VISUAL_REVIEW_LABEL_MANIFEST.json",
+      "sha256": "8abe214afbd8abe758d1d83ddb14291ac6c07608336e72e8a047c7a8f14dc2b2"
+    },
+    "labels": {
+      "bytes": 827414,
+      "path": "artifacts/training/mf3zp_codex_visual_review_v1/MF3ZP_CODEX_VISUAL_REVIEW_LABELS.jsonl",
+      "sha256": "e664f8c637db0e8780e3ed47b8bea455a2fec7fd08d9277e1ad10981ef6bd9ba"
+    },
+    "manual_source": {
+      "bytes": 79767,
+      "path": "artifacts/training/mf3zp_codex_visual_review_v1/MF3ZP_CODEX_VISUAL_REVIEW_SOURCE.json",
+      "sha256": "90c9742d4e17dc6484f4ea5dffb422bfcc672372ad28f77b46665071bc931343"
+    },
+    "primary_protocol": {
+      "bytes": 2344,
+      "path": "artifacts/training/mf3zp_codex_visual_review_v1/MF3ZP_CODEX_VISUAL_REVIEW_PROTOCOL.json",
+      "sha256": "cddefca85f56340f33e03cfef6adcbcb4a5837dfbcc7ca04295fba26fee53846"
+    }
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "purpose": "exploratory independent-visual-label temporal learnability",
+  "revision": "mf3zp_codex_visual_review_v1",
+  "schema_version": "revealnav-mf3zp-codex-visual-ree-training-protocol/1",
+  "status": "SEALED_AFTER_LABEL_COMPLETION_BEFORE_TRAINING_RESULT",
+  "training": {
+    "architecture": "TemporalRevealExpiryEncoder_hidden_64",
+    "arms": [
+      "snapshot",
+      "temporal"
+    ],
+    "checkpoint_generation": false,
+    "epochs": 250,
+    "fold_function": "historical_fixed_mf3zp_codex_proxy_ree_fold_v1",
+    "folds": 5,
+    "hyperparameter_search": false,
+    "learning_rate": 0.001,
+    "positive_signal_rule": "each_domain_factor_nll_improvement_gt_0_and_each_domain_uad_macro_f1_improvement_gt_0",
+    "prediction_boundary": 0.5,
+    "raw_scene_disjoint": true,
+    "seed": 20260901,
+    "stability_k": 3,
+    "weight_decay": 0.0001
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "checkpoint_generated": false,
+  "constraint_sequences": 447,
+  "device": "cuda:0",
+  "domains": {
+    "R2R": 168,
+    "RxR": 279
+  },
+  "events": 80,
+  "feature_dim": 125,
+  "folds": [
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.2281065732240677
+        },
+        "temporal": {
+          "final_training_loss": 0.16799584031105042
+        }
+      },
+      "evaluate_examples": 107,
+      "fold": 0,
+      "held_scenes": [
+        "8WUmhLawc2A",
+        "Pm6F8kyY3z2",
+        "ZMojNkEp431",
+        "aayBHfsNo7d",
+        "cV4RVeZvu5T",
+        "sT4fr6TAbpF",
+        "vyrNrziPKCB"
+      ],
+      "train_examples": 340
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.2399614453315735
+        },
+        "temporal": {
+          "final_training_loss": 0.1811334192752838
+        }
+      },
+      "evaluate_examples": 67,
+      "fold": 1,
+      "held_scenes": [
+        "82sE5b5pLXE",
+        "B6ByNegPMKs",
+        "D7G3Y4RVNrH",
+        "D7N2EKCX4Sj",
+        "PX4nDJXEHrG",
+        "qoiz87JEwZ2",
+        "r1Q1Z4BcV1o"
+      ],
+      "train_examples": 380
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.2008112519979477
+        },
+        "temporal": {
+          "final_training_loss": 0.14351141452789307
+        }
+      },
+      "evaluate_examples": 168,
+      "fold": 2,
+      "held_scenes": [
+        "17DRP5sb8fy",
+        "1pXnuDYAj8r",
+        "29hnd4uzFmX",
+        "5q7pvUzZiYa",
+        "7y3sRwLe3Va",
+        "JeFG25nYj2p",
+        "S9hNv5qa7GM",
+        "VLzqgDo317F",
+        "VVfe2KiqLaN",
+        "r47D5H71a5s",
+        "rPc6DW4iMge",
+        "uNb9QFRL6hY",
+        "ur6pFq6Qu1A"
+      ],
+      "train_examples": 279
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.23148956894874573
+        },
+        "temporal": {
+          "final_training_loss": 0.16610419750213623
+        }
+      },
+      "evaluate_examples": 70,
+      "fold": 3,
+      "held_scenes": [
+        "E9uDoFAP3SH",
+        "GdvgFV5R1Z5",
+        "JmbYfDe2QKZ",
+        "ac26ZMwG7aT",
+        "gZ6f7yhEvPG",
+        "p5wJjkQkbXX",
+        "s8pcmisQ38h"
+      ],
+      "train_examples": 377
+    },
+    {
+      "arms": {
+        "snapshot": {
+          "final_training_loss": 0.231904074549675
+        },
+        "temporal": {
+          "final_training_loss": 0.17016419768333435
+        }
+      },
+      "evaluate_examples": 35,
+      "fold": 4,
+      "held_scenes": [
+        "EDJbREhghzL",
+        "VFuaQ6m2Qom",
+        "YmJkqBEsHnH",
+        "e9zR4mvMWw7",
+        "pRbA3pwrgk9"
+      ],
+      "train_examples": 412
+    }
+  ],
+  "formal_label_validity_pass": false,
+  "human_labels_fabricated": false,
+  "label_manifest_sha256": "8abe214afbd8abe758d1d83ddb14291ac6c07608336e72e8a047c7a8f14dc2b2",
+  "limitations": [
+    "labels are independent Codex visual review, not human labels or gold",
+    "instruction constraint graphs remain frozen provisional audit objects",
+    "expiry supervision is unavailable and was not fabricated",
+    "this result cannot authorize Oracle Headroom, formal REE, skill policy, or public evaluation"
+  ],
+  "metrics": {
+    "R2R": {
+      "independent_visual_temporal_signal_positive": false,
+      "snapshot": {
+        "factor_mean_accuracy": 0.7604395604395604,
+        "factor_mean_nll": 0.5687768658002218,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.7604395604395604,
+            "count": 455,
+            "f1_positive": 0.8621997471554995,
+            "nll": 0.6260420083999634,
+            "positive_count": 355
+          },
+          "instantiated": {
+            "accuracy": 0.8901098901098901,
+            "count": 455,
+            "f1_positive": 0.9418604651162791,
+            "nll": 0.38381534814834595,
+            "positive_count": 406
+          },
+          "resolved": {
+            "accuracy": 0.6307692307692307,
+            "count": 455,
+            "f1_positive": 0.7593123209169055,
+            "nll": 0.696473240852356,
+            "positive_count": 314
+          }
+        },
+        "uad_counts": {
+          "A": 317,
+          "D": 89,
+          "U": 49
+        },
+        "uad_macro_f1": 0.48118279569892475
+      },
+      "temporal": {
+        "factor_mean_accuracy": 0.7684981684981684,
+        "factor_mean_nll": 0.7757309476534525,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.7626373626373626,
+            "count": 455,
+            "f1_positive": 0.8636363636363636,
+            "nll": 0.853744626045227,
+            "positive_count": 355
+          },
+          "instantiated": {
+            "accuracy": 0.8901098901098901,
+            "count": 455,
+            "f1_positive": 0.9418604651162791,
+            "nll": 0.44759005308151245,
+            "positive_count": 406
+          },
+          "resolved": {
+            "accuracy": 0.6527472527472528,
+            "count": 455,
+            "f1_positive": 0.7696793002915453,
+            "nll": 1.0258581638336182,
+            "positive_count": 314
+          }
+        },
+        "uad_counts": {
+          "A": 317,
+          "D": 89,
+          "U": 49
+        },
+        "uad_macro_f1": 0.46304911756444483
+      },
+      "temporal_minus_snapshot": {
+        "factor_nll_improvement": -0.20695408185323072,
+        "uad_macro_f1_improvement": -0.018133678134479914
+      }
+    },
+    "RxR": {
+      "independent_visual_temporal_signal_positive": false,
+      "snapshot": {
+        "factor_mean_accuracy": 0.8379681127178347,
+        "factor_mean_nll": 0.40907078981399536,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.8487208008898777,
+            "count": 899,
+            "f1_positive": 0.9177750906892382,
+            "nll": 0.3985854983329773,
+            "positive_count": 812
+          },
+          "instantiated": {
+            "accuracy": 0.9566184649610678,
+            "count": 899,
+            "f1_positive": 0.9778283115406482,
+            "nll": 0.19962090253829956,
+            "positive_count": 875
+          },
+          "resolved": {
+            "accuracy": 0.7085650723025584,
+            "count": 899,
+            "f1_positive": 0.8198074277854195,
+            "nll": 0.6290059685707092,
+            "positive_count": 696
+          }
+        },
+        "uad_counts": {
+          "A": 588,
+          "D": 287,
+          "U": 24
+        },
+        "uad_macro_f1": 0.49728516498425374
+      },
+      "temporal": {
+        "factor_mean_accuracy": 0.8298109010011124,
+        "factor_mean_nll": 0.47527024646600086,
+        "factors": {
+          "distinguishable": {
+            "accuracy": 0.8553948832035595,
+            "count": 899,
+            "f1_positive": 0.921116504854369,
+            "nll": 0.4387393593788147,
+            "positive_count": 812
+          },
+          "instantiated": {
+            "accuracy": 0.9365962180200222,
+            "count": 899,
+            "f1_positive": 0.9672601952900632,
+            "nll": 0.20514176785945892,
+            "positive_count": 875
+          },
+          "resolved": {
+            "accuracy": 0.6974416017797553,
+            "count": 899,
+            "f1_positive": 0.8084507042253521,
+            "nll": 0.781929612159729,
+            "positive_count": 696
+          }
+        },
+        "uad_counts": {
+          "A": 588,
+          "D": 287,
+          "U": 24
+        },
+        "uad_macro_f1": 0.5072744256648276
+      },
+      "temporal_minus_snapshot": {
+        "factor_nll_improvement": -0.0661994566520055,
+        "uad_macro_f1_improvement": 0.009989260680573875
+      }
+    }
+  },
+  "protocol_sha256": "93d72a5a90c1cc74196260620f904f02b67ad69c45021f163e408561c00afca5",
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "qwen_api_calls": 0,
+  "qwen_factor_cache_files_read": 0,
+  "revision": "mf3zp_codex_visual_review_v1",
+  "scenes": 39,
+  "schema_version": "revealnav-mf3zp-codex-visual-ree-result/1",
+  "signal_status": "EXPLORATORY_INDEPENDENT_VISUAL_TEMPORAL_SIGNAL_MIXED_OR_NEGATIVE",
+  "source_protocol": "SEALED_AFTER_LABEL_COMPLETION_BEFORE_TRAINING_RESULT",
+  "status": "EXPLORATORY_CODEX_INDEPENDENT_VISUAL_REE_COMPLETE"
+}

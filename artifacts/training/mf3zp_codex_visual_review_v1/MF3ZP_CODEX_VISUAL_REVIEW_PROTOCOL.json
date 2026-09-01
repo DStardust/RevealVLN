@@ -1,0 +1,72 @@
+{
+  "authorization": {
+    "deployment_checkpoint": false,
+    "formal_label_validity": false,
+    "formal_ree": false,
+    "oracle_headroom": false,
+    "skill_policy": false
+  },
+  "forbidden_label_sources": [
+    "qwen_preannotations/evidence",
+    "qwen_preannotations/evidence_v1_1",
+    "qwen_sge",
+    "qwen_uad",
+    "qwen_rationale",
+    "navigation_outcome",
+    "delta_utility",
+    "prior_model_prediction",
+    "public_split"
+  ],
+  "historical_scope_correction": {
+    "prior_result_bytes": 8117,
+    "prior_result_path": "artifacts/training/mf3zp_codex_proxy_ree_v1/MF3ZP_CODEX_PROXY_REE_RESULT.json",
+    "prior_result_sha256": "47bb3a63c640ebb0c8b9b0d00a391051a5e9e6be85d7b3d30684d129b48bd71c",
+    "status": "INADMISSIBLE_AS_INDEPENDENT_VISUAL_REVIEW"
+  },
+  "inputs": {
+    "causal_image_inventory": {
+      "count": 400,
+      "sha256": "4ac8d08f32b381ed85d7e9dc7d5e8ced4baf75337777bcce617cf13c3439e72a",
+      "total_bytes": 49246466
+    },
+    "review_template": {
+      "bytes": 661521,
+      "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_SINGLE_EXPERT_REVIEW_TEMPLATE.jsonl",
+      "sha256": "14f947f9c8ae301f3a71afc110b9586736378dd5aa9dde70d0bad414460a3189"
+    },
+    "selection": {
+      "bytes": 31353,
+      "path": "artifacts/training/mf3zp_single_expert_dec_scout_v1/MF3ZP_SINGLE_EXPERT_DEC_SCOUT_SELECTION.json",
+      "sha256": "89fc2227bb6a08ce35ee6d94489c9b06ef60cb0266b0b9e717fa6290ba4d9134"
+    }
+  },
+  "population": {
+    "events": 80,
+    "r2r": 40,
+    "rxr": 40,
+    "scenes": 39
+  },
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "review": {
+    "each_event_opened_separately": true,
+    "every_review_prefix_visually_inspected": true,
+    "graph_is_audited_not_assumed_gold": true,
+    "label_class": "CODEX_INDEPENDENT_VISUAL_REVIEW_NOT_HUMAN_NOT_GOLD",
+    "missing_dec_atoms_allowed": true,
+    "stability_k": 3
+  },
+  "schema_version": "revealnav-mf3zp-codex-visual-review-protocol/1",
+  "source_commit": "c5690ef308302ef422d301a4f419693d4cdebca0",
+  "status": "SEALED_BEFORE_CODEX_VISUAL_LABELS_AND_TRAINING",
+  "training": {
+    "authorized_after_complete_label_audit_only": true,
+    "checkpoint_generation": false,
+    "hyperparameter_search": false,
+    "raw_scene_disjoint": true
+  }
+}
