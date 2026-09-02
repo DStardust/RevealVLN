@@ -1,0 +1,95 @@
+{
+  "contract_repair_revision": "mf3zu_rxr_evidence_annotation_contract_recovery_v1r2",
+  "fail": 12,
+  "failures": [
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "2e149397bd7aabf3b24735aff80d3a1d4bd54b9308c09e77d1df3c124c1d2fb3"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "796a82176edd747c7736aebbcde9b4474087f31d26404fc0246f7b59a5114d08"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "b73f5527e9358af168764611cba783b6d9b65e08dd819ff00a7357f960533861"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "8a1874094a33f5ab7631d66be091276680efe37d6e8c0289a6732640aa115a7e"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "5847ca70fc31687b2bc9ead13e475889d543af59c05a2d6791e95ac2427ae5c9"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "37b1d97013e1fa9ad97922d8b3ff9306dd96e81104c2e81a501e65b604926761"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "5d64e4c7ca008a9ba0446b0fc0ae195180ff23059d538f1704b70f209d016e88"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "a2f6c8ce344243201e0efeec24c2ecf664494f67627116102b1cebdb9a8c9bdd"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "4b124375ceccaf4985c3205fd4604104a61e22876d16329065d969be7856a2c7"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "a22b66e8f70ae2e1fe4c1b2c1a12a7eba74b813e12ff6c0d4c6c3caab45b7901"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "465d243a94ab81c228b418b31e751d318170230f4948f3ddff6c3018da570132"
+    },
+    {
+      "error": "MF3ZUContractError: historical source must be strictly before the decision",
+      "request_id": "f0dfb7c8def48c81ce7a8241641c274ecdc1e635b10fa64937149d122576cf56"
+    }
+  ],
+  "fixed_reannotation": 89,
+  "gold": false,
+  "human_verified": false,
+  "mechanical_repair": 163,
+  "model": "qwen3.8-max",
+  "parent_pass_byte_reuse": 1176,
+  "pass": 1416,
+  "planned": 1428,
+  "public_split_access": false,
+  "ranking_label_read": false,
+  "repair_input_ledger": {
+    "bytes": 218969,
+    "path": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r2/MF3ZU_V1R2_REPAIR_INPUT_LEDGER.jsonl",
+    "sha256": "b9cf4de1cbfafd3cafd19048a037bcfada97908ea34c12309e30055d9da5e4f2"
+  },
+  "repair_output_ledger": {
+    "bytes": 252775,
+    "path": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r2/MF3ZU_V1R2_EVIDENCE_REPAIR_LEDGER.jsonl",
+    "sha256": "c97930fa227495811fd4935ed2240d8e570657a63e6ab094961bca4bcb33b85d"
+  },
+  "repair_protocol": {
+    "bytes": 7892,
+    "path": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r2/MF3ZU_V1R2_ANNOTATION_RECOVERY_PROTOCOL.json",
+    "sha256": "c2db5c28a0dc5d8c6c16aa55621c21a9fb0956826ab77893c8daf3251788e46d"
+  },
+  "response_bundle_sha256": "f90e335c3e6d5d53e38d05b0e603b3e796cfab181019cd3fe70afc5e3ffa0f50",
+  "response_files": 1428,
+  "revision": "mf3zu_rxr_evidence_memory_feasibility_v1",
+  "schema_version": "revealnav-mf3zu-evidence-annotation/1",
+  "source_evidence_input_manifest": {
+    "bytes": 1363,
+    "path": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r2/MF3ZU_EVIDENCE_INPUT_MANIFEST.json",
+    "sha256": "e518fb4370742ea6bc1a04e95a8a34e959f4ae2584684bc06770239ac27c9ffa"
+  },
+  "source_parent_evidence_manifest": {
+    "bytes": 46987,
+    "path": "artifacts/training/mf3zu_rxr_evidence_annotation_recovery_v1r1/MF3ZU_EVIDENCE_ANNOTATION_MANIFEST.json",
+    "sha256": "8f037b0382fca1077fc5e2f504877f058a85c597e71c50de41fca6f8ecd5fb59"
+  },
+  "status": "FAIL",
+  "task_metric_read": false
+}
