@@ -1,0 +1,107 @@
+{
+  "allowed_datasets": [
+    "R2R",
+    "RxR"
+  ],
+  "allowed_split": "train-development",
+  "checkpoint_generated": false,
+  "gates": {
+    "atom_coverage_minimum": 0.7,
+    "minimum_local_target_scenes_per_domain": 10,
+    "minimum_local_targets_per_domain": 30,
+    "minimum_state_scenes": 15,
+    "minimum_state_supported_episodes": 40,
+    "minimum_valid_atoms": 50,
+    "state_coverage_minimum": 0.7
+  },
+  "implementation_inventory": [
+    {
+      "bytes": 4172,
+      "path": "revealnav_mf3/progress_schema.py",
+      "sha256": "ce707917c55a9eb78f70b5285bc21f6f3d6a0eb08cab5337e208714ca187d6ec"
+    },
+    {
+      "bytes": 9507,
+      "path": "revealnav_mf3/progress_language_filter.py",
+      "sha256": "78cfa4028b7de05866c7e20c75b359a553b2c3219759e59d41d844acb83a8efc"
+    },
+    {
+      "bytes": 2450,
+      "path": "revealnav_mf3/progress_state_audit.py",
+      "sha256": "2497a604b3d972fa0fcbd134da8491929c7af354e6cca29c00fa725e9eca6fc0"
+    },
+    {
+      "bytes": 2448,
+      "path": "revealnav_mf3/progress_target_support.py",
+      "sha256": "097a240faa916dbe9c4205d256c9e0c3cb1a044165d5113d88444ad34cc08269"
+    },
+    {
+      "bytes": 3511,
+      "path": "revealnav_mf3/mf3zv_protocol.py",
+      "sha256": "4c3e2b60ba9329f070cd90b83d873de9971638716b5c190c0c6038aea7d163f8"
+    }
+  ],
+  "navigation_run": false,
+  "outcome_payload_read": false,
+  "parser": {
+    "earliest_unambiguous_atom_only": true,
+    "fixed_lexical_rules": true,
+    "no_post_result_parser_change": true
+  },
+  "progress_families": [
+    "ORDINAL",
+    "PASSED_LANDMARK"
+  ],
+  "public_split_access": {
+    "test": false,
+    "test_challenge": false,
+    "val_seen": false,
+    "val_unseen": false
+  },
+  "qwen_api_calls": 0,
+  "review": {
+    "R2R_nominal_maximum": 50,
+    "RxR_nominal_maximum": 50,
+    "maximum": 100
+  },
+  "review_provenance": "AI_ASSISTED_REVIEW_NOT_HUMAN_GOLD",
+  "revision": "mf3zv_minimal_progress_support_v1",
+  "schema_version": "revealnav-mf3zv-progress-support-protocol/1",
+  "source_commit": "ac67f43e04553d99cd64f33bb9c9c5e5fbe37858",
+  "source_files": {
+    "R2R_train": {
+      "bytes": 1808959,
+      "path": "data/mf3zv/sources/r2r_train.json.gz",
+      "sha256": "b6d356deff70d54050d45bc5ace0071e3d404b3ff8f68f528c625906f6b24662"
+    },
+    "RxR_causal_decision_inventory": {
+      "bytes": 2461510,
+      "path": "data/mf3zv/sources/rxr_causal_decisions.jsonl",
+      "sha256": "b545c8c5a711176067be541f7e5b82eea73fe3adb3a1a7060e02c7c8fa641af6"
+    },
+    "RxR_train_guide": {
+      "bytes": 26241241,
+      "path": "data/mf3zv/sources/rxr_train_guide.json.gz",
+      "sha256": "f06b2ef4dc947ca15d6c4a5a3d629c9212328f4cbdd38a13bed9c5c1fc224a94"
+    },
+    "causal_event_inventory": {
+      "bytes": 498970,
+      "path": "data/mf3zv/sources/causal_reveal_events.jsonl",
+      "sha256": "5636fa6991287aa61a4124df292e65e044cb6f968e9f6a24573cf417623a69d2"
+    },
+    "review_selection": {
+      "bytes": 167019,
+      "path": "artifacts/training/mf3zv_minimal_progress_support_v1/MF3ZV_REVIEW_SELECTION.json",
+      "sha256": "e26dbb5b3d8357f1b231470e609be4b0696c8e2fcab3a43b0ec62a7d9b46cc4b"
+    }
+  },
+  "stage_order": [
+    "LANGUAGE",
+    "ATOM",
+    "STATE",
+    "LOCAL_TARGET",
+    "FINAL_SUPPORT"
+  ],
+  "status": "SEALED_BEFORE_MF3ZV_SUPPORT_RESULTS",
+  "training_run": false
+}

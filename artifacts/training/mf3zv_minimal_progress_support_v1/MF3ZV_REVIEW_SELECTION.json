@@ -1,0 +1,3185 @@
+{
+  "causal_support_preference": [
+    "VISUAL_CAUSAL_PREFIX",
+    "SCALAR_CANDIDATE_TRACE"
+  ],
+  "domain_counts": {
+    "R2R": 32,
+    "RxR": 50
+  },
+  "eligible_with_causal_observations": 96,
+  "events": [
+    {
+      "atom": {
+        "atom_id": "547350cb61c02b4d89f9d20cc01fe3c0e0f879c3b04b3255ea797980754e15a7",
+        "family": "ORDINAL",
+        "instruction_span": "next room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "816b6b3a20e304449a0ad681c9a9b90f852ea0e112e0737ac150334c65724cea",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1368/attempt_001/media/prefix_001.jpg",
+        "event_id": "0029d1bbd4d99dca575d2089ef622904c4009ed76e6e7debf2421a3ac67509dc",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1368/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 47726,
+            "sha256": "f5bd7daa226b8ddcc7bd084cf5a6828209dbd63c65cae9bf27f44bafbcca49de"
+          },
+          "current_panorama": {
+            "bytes": 251027,
+            "sha256": "0475e9ccbb6a5968f8249347cde1da28fffd6e6b89520b2c6e4569353d2c0416"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "1368",
+      "instruction": "Walk through the open doors with golden decorations. Walk through the next room passed the ceiling lamp towards the grandfather clock up against the wall. Walk through the door to the left of the clock and into the next room that has glass chandeliers and wrap around Victorian couches. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "VLzqgDo317F",
+      "span_end": 79,
+      "span_start": 70
+    },
+    {
+      "atom": {
+        "atom_id": "e5ac9fcf333c6bda8e2c58229fbecec0d70893f51e37ce0671b5259021fa2947",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "After passing two doors on the left",
+        "relation": "PASSED",
+        "subject": "two_doors_on_the_left",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "e1d9b9f5c7d2e5f05599e7a4618fa4af790f952bddd20cc2e2eab03f42f9aece",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_10579/attempt_001/media/prefix_000.jpg",
+        "event_id": "ac91ca2043d5fc5cde344383654494b8f5656833ff53259c143289b51de23f7f",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_10579/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 8695,
+            "sha256": "78109198764669bae9effcce0d33b3f7ab6c6502733075d51c48392c3556f501"
+          },
+          "current_panorama": {
+            "bytes": 221492,
+            "sha256": "437f30a1531c03f58aa838cee9cf1850e552b5235d761b4a11ea8f90b39b36cf"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "10579",
+      "instruction": "Walk out the double doors near the fireplace. Walk down the hall. After passing two doors on the left, turn left into the living room. Stop near the white chair before the sofa. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "ac26ZMwG7aT",
+      "span_end": 101,
+      "span_start": 66
+    },
+    {
+      "atom": {
+        "atom_id": "b92f396c4c4bdc5519ca304c0f839882494a0fb53a1ff25b6014dea7158d1ee8",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Go past water cooler",
+        "relation": "PASSED",
+        "subject": "water_cooler",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "730e9a0529a5ebbc889564ba7be4aac623f7682dab9ce5f365afe8923e44d9e8",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8626/attempt_001/media/prefix_003.jpg",
+        "event_id": "db648dc7fc7af1687a5cff72292059b4ee6225e77685357c84535415a87e8f2b",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8626/attempt_001/storyboards/prefix_003.jpg",
+        "prefix_end": 3,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 54061,
+            "sha256": "4b47ac4736f084f4369ef078608cc3370152db97e4545ca92d83ad73538d8fce"
+          },
+          "current_panorama": {
+            "bytes": 124848,
+            "sha256": "0d75483083a87dc00573493dde8a66e1f86028c3965f5d7e8fd541638f624090"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "8626",
+      "instruction": "Go past water cooler. Exit the room. Stop in front of the desk. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "ur6pFq6Qu1A",
+      "span_end": 20,
+      "span_start": 0
+    },
+    {
+      "atom": {
+        "atom_id": "3b82a4dc746b4c31c2fad8c4c2f031b1db452f4d566772ac2b3590c3210b8c3d",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after the stool",
+        "relation": "PASSED",
+        "subject": "stool",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "2be39bc0ae24f7e2284941881c7f5db9a6990dbdb21caa32e372fcc0d605796f",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_3424/attempt_001/media/prefix_002.jpg",
+        "event_id": "9f7d228d95487977a9debc1b962daecd838ee5b0df990e4d20e69ef16debc05c",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_3424/attempt_001/storyboards/prefix_002.jpg",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 49296,
+            "sha256": "29b161f59910c0df9f49aae0a83aee0f8f377fd281a473d42806eb02b8b2584c"
+          },
+          "current_panorama": {
+            "bytes": 214077,
+            "sha256": "edd27d4a715ce4162fe2923e9c41076c7980e56597eaede95e5333574c228a30"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "3424",
+      "instruction": "Turn around and take a left after the stool. Take another left after the chair. Wait in front of the mirror on the other side of the open door. ",
+      "language": null,
+      "mechanical_reason": "after/past expression with a concrete landmark",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "qoiz87JEwZ2",
+      "span_end": 43,
+      "span_start": 28
+    },
+    {
+      "atom": {
+        "atom_id": "dc0aaae6079410a3365bff3070b9b382f529fc7bf0c2fae5376204eca14d522e",
+        "family": "ORDINAL",
+        "instruction_span": "first hallway",
+        "relation": "COUNT_TARGET",
+        "subject": "hallway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a9f377b91c984e48adcd19b569c855eea5886d956996403e37067bdcbd2c4975",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1859/attempt_001/media/prefix_001.jpg",
+        "event_id": "b4098d710061f6f207d90f7ee353d1daf12e3cf685586728bf48ad07b59e693f",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1859/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 31020,
+            "sha256": "9e78516e0ead9b9530db2f8378c0cdcfeadf0834d4838335cd80d2e591f8ca17"
+          },
+          "current_panorama": {
+            "bytes": 183472,
+            "sha256": "6a5cfd6b1f5dc1c21991c2b5bbf1cabbfe262d169e48fe535e5ec1ab3869fb92"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "1859",
+      "instruction": "Walk down the hallway towards the first exit sign on your right, take a left down the hallway right in front of the exit sign, take a left down the first hallway, stop under the exit sign. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "B6ByNegPMKs",
+      "span_end": 161,
+      "span_start": 148
+    },
+    {
+      "atom": {
+        "atom_id": "d27c9e4241f3251988afc3f2397009f9f837dabc7e57a8b4df22b302a1a9f306",
+        "family": "ORDINAL",
+        "instruction_span": "another massage room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "80e94254fd64027713b6259854f8e438339374e58a6c65ec41bfb79aefb880a8",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_5947/attempt_001/media/prefix_001.jpg",
+        "event_id": "63c262a93c09d1ed43214a9bc3356c3b061333ada7441b2edd721919344e3cc9",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_5947/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 35027,
+            "sha256": "11a32d5e614aca351deef4834e562304ebc934c43f33b7b75d75044a6a989b93"
+          },
+          "current_panorama": {
+            "bytes": 172171,
+            "sha256": "2d1a24c1c5ac1ecd68e774e5728713eff933d392c1b7dc293d272cd79338a7e9"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "5947",
+      "instruction": "Turn around and exit the massage room and turn left. Wait in the entryway of another massage room next to the plant. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "r47D5H71a5s",
+      "span_end": 97,
+      "span_start": 77
+    },
+    {
+      "atom": {
+        "atom_id": "0852a9292574e01e7fd6a16dc5adb7125fc3eda51e9ebaeb4404feb9516ce05f",
+        "family": "ORDINAL",
+        "instruction_span": "first doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "227d8abe62be9a5b28a093d2c2bf48d580eb6dce38cbd2d9ac2e0feca4bc9684",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_9384/attempt_001/media/prefix_001.jpg",
+        "event_id": "2f900db2609c76d22105e5ea84ee5dffccf9711dd2a9da223e61a0245c98fb11",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_9384/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 33027,
+            "sha256": "43729d8be3cb1f72ec43cd4328009924be4704f1fc263aa658d23ee708e2a574"
+          },
+          "current_panorama": {
+            "bytes": 172196,
+            "sha256": "b25f9efc7b23c7aa1cc3ff84c2501dfcff8fd6ca150767ee0ef505adf38a2b2e"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "9384",
+      "instruction": "Turn around to exit the bedroom. Walk down the hall past the movie posters on the wall. Turn right at the first doorway after the  posters. Stop inside the doorway. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "5q7pvUzZiYa",
+      "span_end": 119,
+      "span_start": 106
+    },
+    {
+      "atom": {
+        "atom_id": "f4f6caf3807e6fa53d2b6cb324f76064724c72af75bd63ee5e9e607b8a15395d",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after entering the bedroom",
+        "relation": "PASSED",
+        "subject": "entering_the_bedroom",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "d7deddfa8e549c664f206ab88015d33221bbf19670e97490f5dd3636efad67f0",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8391/attempt_001/media/prefix_003.jpg",
+        "event_id": "051a16d530b6f6903f41409f97a6ca6030079dca3708329437493fd5f1197194",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8391/attempt_001/storyboards/prefix_003.jpg",
+        "prefix_end": 3,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 62540,
+            "sha256": "d9b729273a499acf87cf7df56626dd103b8347450d957054251e6216ce4f2dba"
+          },
+          "current_panorama": {
+            "bytes": 204278,
+            "sha256": "c625ff428e49cf04f6185c9452ee1ecab021245f030b0be8d781abc21f4e418d"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "8391",
+      "instruction": "Go down the stairs and turn right at the very bottom.  Keep walking straight past the sitting area on the left and into the bedroom with the blue walls at the end of the hallway.  Stop just after entering the bedroom. ",
+      "language": null,
+      "mechanical_reason": "after expression does not identify a stable visual landmark",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "1pXnuDYAj8r",
+      "span_end": 216,
+      "span_start": 190
+    },
+    {
+      "atom": {
+        "atom_id": "9b40a4b04cfdc99f39a93ff590eafd34b527d9c0a7ff321e46d995bbcdc78e6c",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after going through this doorway",
+        "relation": "PASSED",
+        "subject": "going_through_this_doorway",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "70871ec7304142bb8be2066a5938028a31d039797b046e016655b19ddeb7ffa7",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6552/attempt_001/media/prefix_001.jpg",
+        "event_id": "881f1129037e91f6eb23e821fcfc8ff815267e7a7a5e3d1f3a0645c086f2fc4a",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6552/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 29236,
+            "sha256": "df7fbe159843ac158a095c2118d654b9d9f132043ab19ac247924ae77dfdb9c0"
+          },
+          "current_panorama": {
+            "bytes": 163849,
+            "sha256": "1803dbdf1eee478f29b6b1a5990e9763ec51454b9fb0e50800051ad03a6bb81c"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "6552",
+      "instruction": "With the sinks behind you, exit through the door on the left.  Turn left after going through this doorway and walk out the door and through the room to the door on the opposite side, just past the table with the horse statue on it.  Stop just after passing through the doorway. ",
+      "language": null,
+      "mechanical_reason": "after expression does not identify a stable visual landmark",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "sT4fr6TAbpF",
+      "span_end": 105,
+      "span_start": 73
+    },
+    {
+      "atom": {
+        "atom_id": "916367ef64838373ebe0c6ba5622477b8b268b86b8b216c6ad6ee21e954d9c03",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "go past the bed",
+        "relation": "PASSED",
+        "subject": "bed",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a57aa3ef1eb926ebbf135a93dd0489bbff225b68eb58bab47a812bba2b8e13b9",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_7866/attempt_001/media/prefix_001.jpg",
+        "event_id": "765dd3a49dccc4da4a9405e3f271709055ad5e7c653546f740be2ee05d977804",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_7866/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 33667,
+            "sha256": "ca77d68a44b0389a774b2d5c41f7ef6097856d0e4730e2507b3e39efbb9e9656"
+          },
+          "current_panorama": {
+            "bytes": 180588,
+            "sha256": "57f2f0dd84edd06a3917f742e6f12bcab21dd41ad20a443559ffc3d3e03b025c"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "7866",
+      "instruction": "Turn left and go past the bed and fireplace. Go straight into the bathroom. Wait near the towels on the left. Wait there. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "EDJbREhghzL",
+      "span_end": 29,
+      "span_start": 14
+    },
+    {
+      "atom": {
+        "atom_id": "52035a92e1626530e9a015325dde72a50e8e83c8489a0f06f031304081df7af8",
+        "family": "ORDINAL",
+        "instruction_span": "first right",
+        "relation": "COUNT_TARGET",
+        "subject": "right",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a915ab4e4491d3a605fec6c32f5d4d980383d0486bab2fcc016d74556886952b",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_3406/attempt_001/media/prefix_000.jpg",
+        "event_id": "8544d796b01d3c1a5890292a7757922dac1d6c71a0849e4be448d3244c1405bd",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_3406/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 15995,
+            "sha256": "238280ba47b377823cdcb687d145a061f30a3d0880ba4bf2106ef28a68f5a209"
+          },
+          "current_panorama": {
+            "bytes": 175719,
+            "sha256": "7aa3175632eb7a25f3c8e2f164b1c92681f18a6404f3473a328dcb1659767fe1"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "3406",
+      "instruction": "Turn left. Go through the door with the bed on your right. Take a left. Go down the hall. Cross the living room. Take your first right to enter the bedroom. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "s8pcmisQ38h",
+      "span_end": 134,
+      "span_start": 123
+    },
+    {
+      "atom": {
+        "atom_id": "c4f5aa686b63aaac4c18efb23ccab3bf82504f366c62b6d374efdde1834aff57",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Move past the glass wall",
+        "relation": "PASSED",
+        "subject": "glass_wall",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a38009b5e0c4019a502f919ea4aa172fd0188c368c01448c2b6ed2acc9e44a39",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1283/attempt_001/media/prefix_001.jpg",
+        "event_id": "456243230fcd2abe214e3aa33c3a73949bbd6e0868424194339efa56762633d5",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1283/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 40968,
+            "sha256": "4727f592a1b88c834777e126651cf1f8c8184ae67738cbc6fae9f61a276b4340"
+          },
+          "current_panorama": {
+            "bytes": 218827,
+            "sha256": "731a9c517f95fc4f6573db65363a073296d985f2aee1844fb143fa3ce29c878c"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "1283",
+      "instruction": "Move forward with the glass wall on your right side. Move past the glass wall and then the table with the computer on the left. Turn 45 degrees to the left after passing the table and move forward until you are 3 or 4 feet away from the ping pong table. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "ZMojNkEp431",
+      "span_end": 77,
+      "span_start": 53
+    },
+    {
+      "atom": {
+        "atom_id": "aca0b2724848a331488789f144b6f256e05ad04b4623628ee08ee21d63dd41f3",
+        "family": "ORDINAL",
+        "instruction_span": "first door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "34f318ab94d3a10385af6be275812825b0a890e9a0909d23cd70155372a0adec",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_557/attempt_001/media/prefix_002.jpg",
+        "event_id": "275c6c963870a3418e14212176d37daca3cc4dc3aafb6d150c187ad04cb6daf7",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_557/attempt_001/storyboards/prefix_002.jpg",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 42508,
+            "sha256": "e7eedf620c7e26a75e92e5c37e13a34f6697ab360a9356038749b4a9dfc1dae2"
+          },
+          "current_panorama": {
+            "bytes": 178884,
+            "sha256": "9d760e947037f95d32e4de8b0cbaedd9f6e83343e5b57242ad25ac932fd4164e"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "557",
+      "instruction": "Exit the bathroom, walk through the bedroom, exit the bedroom, walk down the hallway to the first door across from the cabinets, wait in the doorway. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "aayBHfsNo7d",
+      "span_end": 102,
+      "span_start": 92
+    },
+    {
+      "atom": {
+        "atom_id": "a83583552869f17c2bd0d286c833bef9bffdb3215d7edbb1cc5e06b937eaffc7",
+        "family": "ORDINAL",
+        "instruction_span": "first doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "f6b03eab0933de8935f4867132c576067f13fafe96d5a835c9862ab04eb2632e",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_2463/attempt_001/media/prefix_001.jpg",
+        "event_id": "4c156231fc90b0421100a20a825430f1555ca791941955524f10e33ed3d7f323",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_2463/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 21280,
+            "sha256": "1dafad9e6215563bb0fb54788e5070523282e6edfdc9a13e093e97788a2174e6"
+          },
+          "current_panorama": {
+            "bytes": 143231,
+            "sha256": "714c18422c538be93e72e4330fffdc131c02ae7ee1df5c4dcb7df5bed9d39a31"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "2463",
+      "instruction": "Exit the bathroom and turn left.  Walk through the first doorway on your left.  Step into the room through that doorway.  There will be a pink chair in the room.  Stop in the doorway. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "29hnd4uzFmX",
+      "span_end": 64,
+      "span_start": 51
+    },
+    {
+      "atom": {
+        "atom_id": "3c5c69c7497847791d67b06f25c2e876c56cbecaad5d96544905459a510c219c",
+        "family": "ORDINAL",
+        "instruction_span": "first door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "cffad4c7312993933e8fd3a9d4d33d009f0266430072e7df094812d207ff49ae",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_2391/attempt_001/media/prefix_001.jpg",
+        "event_id": "9b035c099572fe52ca7cb30f9f8df5ad689e8da369e9813dbd48ed93af044ac2",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_2391/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 20839,
+            "sha256": "71b2dddf666be66364d914b61e8ec973904d006ba9ae16102a9364dda41bf168"
+          },
+          "current_panorama": {
+            "bytes": 133721,
+            "sha256": "9bea4ca4548a0dbdd182810cd1e301cb624564b83c6dba2223798f27010eee72"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "2391",
+      "instruction": "Walk straight down the hallway towards the staircase, stop at the first door on the right after the staircase. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "7y3sRwLe3Va",
+      "span_end": 76,
+      "span_start": 66
+    },
+    {
+      "atom": {
+        "atom_id": "cf1a76dbc6385a61449196c634b51ef6994efc51e1a7246bacb36630500bdc93",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "walk past the couch",
+        "relation": "PASSED",
+        "subject": "couch",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "48f69a940fc863d9d6105610a3a79db34d6469339779fc3c1cabed47a6cfb05d",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6862/attempt_001/media/prefix_003.jpg",
+        "event_id": "98c79c0264c66ddd12b94b57247fd6e8827a8887280d5272b4286d53164cd7f1",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6862/attempt_001/storyboards/prefix_003.jpg",
+        "prefix_end": 3,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 59401,
+            "sha256": "c72a562323ef67a96129c597c104ff2c17b76cd683f1eb53378ee79d14a002ab"
+          },
+          "current_panorama": {
+            "bytes": 167481,
+            "sha256": "d3589e78f54f2198e8e0f890d27567e3dd1cd5e9b7ae47d5092a6c42062812de"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "6862",
+      "instruction": "Exit the bathroom and walk past the couch. Exit the room with the couch and wait in front of the door. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "rPc6DW4iMge",
+      "span_end": 41,
+      "span_start": 22
+    },
+    {
+      "atom": {
+        "atom_id": "3c6b832a3197601417986f6c7fc502af80deeb8d4381f0a13d73aace1cdb33e8",
+        "family": "ORDINAL",
+        "instruction_span": "first doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "b52b06b8d20297c10659bf4b66d75fc99d6c20d1c0df357677a61b5f24f30311",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8221/attempt_001/media/prefix_010.jpg",
+        "event_id": "30fe019c132ad35bb2a870566f9cae5e60eed7368e85c1e54d2dde8fa28cc632",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8221/attempt_001/storyboards/prefix_010.jpg",
+        "prefix_end": 10,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 228376,
+            "sha256": "cd694221efcf383a0ce80d76954d53e94a4b5c2bb5c7d48756e4135c594352b0"
+          },
+          "current_panorama": {
+            "bytes": 204773,
+            "sha256": "f110312b3582bb73ab0e92300e4026e4dd0101a74dd20a6666fcfb53e913a2db"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "8221",
+      "instruction": "Go up all the stairs and turn left in the first doorway.  Walk around the bed and into the bathroom on the other side.  Stop in front of the sink. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "pRbA3pwrgk9",
+      "span_end": 55,
+      "span_start": 42
+    },
+    {
+      "atom": {
+        "atom_id": "1f706c2d37becf806a00207a14ad38da629be142ac5dbba0f27f048754d90ea3",
+        "family": "ORDINAL",
+        "instruction_span": "next room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "00c9aa11b708b837e9a83575e42da38427d45b75b1618320a891d44215380e0c",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4665/attempt_001/media/prefix_001.jpg",
+        "event_id": "015cc50cd121580f85e2cd6365592d59afc1fbfafd3a0712108819ec3106be0b",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4665/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 25467,
+            "sha256": "b92b9490f097ccf8f55a40d53bc7b3abe66243f554d6e6ad485f192e6ca159b3"
+          },
+          "current_panorama": {
+            "bytes": 147874,
+            "sha256": "4416174d081a5a75726c19bb4a10ed79fe34334c9e0f6ce4760e90c2f33d0f09"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "4665",
+      "instruction": "Keep walking straight out the door you are facing and straight across the next room and enter the hallway and stop. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "VFuaQ6m2Qom",
+      "span_end": 83,
+      "span_start": 74
+    },
+    {
+      "atom": {
+        "atom_id": "7d831f99f59991d5003890a1b6b69ff0e953452b14ae51a16b9b69029e28f18d",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Go past washer",
+        "relation": "PASSED",
+        "subject": "washer",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "04dbb2bde45217ad99370bc6331e0fe36921c0633d33b821d191081a265638c0",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8860/attempt_001/media/prefix_000.jpg",
+        "event_id": "3ca0d60fb42d5beec0f07e77de2cb7295f91528d5ba4367d1bd06e100d20b123",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8860/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 15392,
+            "sha256": "30dd9785b007389e022b7c05150335734d2e0d90c9eec81927d65554b865276b"
+          },
+          "current_panorama": {
+            "bytes": 210139,
+            "sha256": "52aec13b0dfdeff8c9309e653d35d8378cc61e24b7e2f3504e13217329e42e1a"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "8860",
+      "instruction": "Go past washer and dryer and through the door. Turn right. Go past the cabinets and island. Stop at the table. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "vyrNrziPKCB",
+      "span_end": 14,
+      "span_start": 0
+    },
+    {
+      "atom": {
+        "atom_id": "d0bb140c513e1eea51e00f189d87e0ed3f01351fe9b0e7784998f624a7191369",
+        "family": "ORDINAL",
+        "instruction_span": "first door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "480c1b8a84cd7807ba6239dc9ffb71ba8e46ab6d8b93906b8e3ae2daad6a2a74",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4911/attempt_001/media/prefix_000.jpg",
+        "event_id": "2f219c21f159794bd2f2fb454a3b71785ec831b762bb3fa9c5f0350332fc2928",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4911/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 5566,
+            "sha256": "4ef6a4d80bc4aba7750dc71b095221dd6cd41c63874bfa37c60c04f016c52f0e"
+          },
+          "current_panorama": {
+            "bytes": 127365,
+            "sha256": "b97f4f4f778715ce8162ee68b4be3cc03e6ee349e04f69d5758fb87656ad16ca"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "4911",
+      "instruction": "Go out the door and turn right.Then go through the first door and stand at the bottom of the second flight of stairs. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "cV4RVeZvu5T",
+      "span_end": 61,
+      "span_start": 51
+    },
+    {
+      "atom": {
+        "atom_id": "eff99d557ed8ce6961e0e20e5e579e6bd2ee0cbfb748746d05bef09792fb0224",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Walk past the bed",
+        "relation": "PASSED",
+        "subject": "bed",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "6bc51722dbaece01103ef1c0e60991e257d65b72403bf13c5f65b8a6fc302046",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6251/attempt_001/media/prefix_001.jpg",
+        "event_id": "8de152588e8715b71c1708a41a2dbfb46c8ff95501ad48419c9a05b1e89d0f16",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6251/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 21234,
+            "sha256": "e87dd41ad4837a0976db8927c769e522a2e0e525a09de08ebf110fa56500974c"
+          },
+          "current_panorama": {
+            "bytes": 157785,
+            "sha256": "1258bed66ffa7d30ebbbd78b7845f5f3ee129597d2a2eb1c084c0f0b200251cb"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "6251",
+      "instruction": "Walk past the bed and turn left. Walk through the door and down the hall. Turn left and wait inside the large doorway next to the sliding double doors. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "PX4nDJXEHrG",
+      "span_end": 17,
+      "span_start": 0
+    },
+    {
+      "atom": {
+        "atom_id": "d397e3183fcc0b5c42956bc53d8cdc93b5b4ea07d4dceadc255c306f0d9f30a2",
+        "family": "ORDINAL",
+        "instruction_span": "next room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "6f1b4b3729202c810e9922a5bf241ad998b8d885d20024b65aabe4eeb5e23be3",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1463/attempt_001/media/prefix_007.jpg",
+        "event_id": "6ab6a69fbcc7fbdf4a19783720a73c19b0b5334e486bfc1c5221750be118fe1c",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1463/attempt_001/storyboards/prefix_007.jpg",
+        "prefix_end": 7,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 171967,
+            "sha256": "3b819551075b4426c76265b3e7a31f8045ad26beeb1717eba732d888d4fdeb6c"
+          },
+          "current_panorama": {
+            "bytes": 251403,
+            "sha256": "a7a68645229b444a7efe0d182561ef3d1e751e396c365517a3344904bf7cac3e"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "1463",
+      "instruction": "Follow the long red rug and leave the sitting room. walk froward in the open area and take a right at the end of the roped off seating area and stand on the red rug behind the sitting area before you reach the doorway into the next room/. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "VLzqgDo317F",
+      "span_end": 236,
+      "span_start": 227
+    },
+    {
+      "atom": {
+        "atom_id": "42405a9cad71be43cc0256ada5b26cd4d257655cefd84238a4f5fc166e7ae4d8",
+        "family": "ORDINAL",
+        "instruction_span": "next intersection",
+        "relation": "COUNT_TARGET",
+        "subject": "intersection",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "ea809a9edcf0bda73a65ee9eafebc30fb85eed63580d778fc5e753c2f0288a60",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_850/attempt_001/media/prefix_002.jpg",
+        "event_id": "d3cba37fe0b1876242acdf03e08f85377742239f76e475a8722500e8d69144b5",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_850/attempt_001/storyboards/prefix_002.jpg",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 45270,
+            "sha256": "45e1b14221423a81317fc91fc6bf25819b34d71157226bfde163495e6d9fa493"
+          },
+          "current_panorama": {
+            "bytes": 177855,
+            "sha256": "1ef2256293771f6e5f91764ee62f00905142bc927f912a3927455aa55a9fd387"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "850",
+      "instruction": "Go straight ahead, and take a right at the intersection. Walk forward to the next intersection, and stop in front of the exit sign. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "B6ByNegPMKs",
+      "span_end": 94,
+      "span_start": 77
+    },
+    {
+      "atom": {
+        "atom_id": "fd98e3f12cf99d278869cac258d67702cc9922285848f453df803001c0290dd0",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Go past the stairs",
+        "relation": "PASSED",
+        "subject": "stairs",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "5e3772a18a7be8aa767fcd598bbf403d03ae3a1baf488417779f68e75792dbae",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_2501/attempt_001/media/prefix_003.jpg",
+        "event_id": "5c1857cb6e3546e21b8389a73684dd7564b887f253f58f1525fb3e60d55c8670",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_2501/attempt_001/storyboards/prefix_003.jpg",
+        "prefix_end": 3,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 65583,
+            "sha256": "a1ec0f0049edce83b062d676d88654b8040f0933775287903e8adeca04e4b56b"
+          },
+          "current_panorama": {
+            "bytes": 186042,
+            "sha256": "9edcf2e1d024bae74543cc3c792805b337214a29a158d303ca5527b5015734f0"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "2501",
+      "instruction": "Go past the stairs and through the doorway. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "r47D5H71a5s",
+      "span_end": 18,
+      "span_start": 0
+    },
+    {
+      "atom": {
+        "atom_id": "77a5fef8bfe348d912548bce7ebc2db2ba8f9d963399a37e985155b9561d0e3d",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Walk past the chair",
+        "relation": "PASSED",
+        "subject": "chair",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "f8f7fcc31634e7e05c9651b3d1011c7f81d28e9970948c5c0afcf2873df46db9",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4779/attempt_001/media/prefix_002.jpg",
+        "event_id": "13516695fd27fb0fe5f858da997597a710bb4c1ad63bfdcfd5076bd64c372c5c",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4779/attempt_001/storyboards/prefix_002.jpg",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 52376,
+            "sha256": "e4fe683fde6780fdbf131912d7e7b082d3509f28c1ae189e99b378d3af24d191"
+          },
+          "current_panorama": {
+            "bytes": 160136,
+            "sha256": "a84585f92637833a672588b99b0b57c9ea43d569fc91b57b8245357b7b0fa2e6"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "4779",
+      "instruction": "Reverse your direction 180 degrees. Walk through the doorway to the right of the door leading outside. Walk past the chair and straight into the leftmost door. Walk through the bedroom into the bathroom. Wait by the sink. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "sT4fr6TAbpF",
+      "span_end": 122,
+      "span_start": 103
+    },
+    {
+      "atom": {
+        "atom_id": "e274d9494e81f5f15206b9aceb021c93b9c4f48c3369acfbfb3726e189b0c4b5",
+        "family": "ORDINAL",
+        "instruction_span": "first left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "64550a09c3fa700a025761c61fd39427cd71b8f9d78f1167efe536c8ab181378",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_5561/attempt_001/media/prefix_001.jpg",
+        "event_id": "b861850589d3d01fcb5e0c4fd1263870bd60e6e466a0c4de17a4a81ad37cea59",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_5561/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 38326,
+            "sha256": "4043a763e417cc5a52ed2e5188d5366380c0299731e465a3df0d2aa59fe71027"
+          },
+          "current_panorama": {
+            "bytes": 199321,
+            "sha256": "c38689dec92a2662d2a32448d61f4dc465f0f118f903cfd1ed6485b1f49bd408"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "5561",
+      "instruction": "Leave the bathroom and bedroom. Take the first left into the bathroom. Stop in front of the sink. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "EDJbREhghzL",
+      "span_end": 51,
+      "span_start": 41
+    },
+    {
+      "atom": {
+        "atom_id": "d9813113f979820bec9cf31861b1be379a7446d62edc4a38bc7afadc19d7ecb9",
+        "family": "ORDINAL",
+        "instruction_span": "next doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "2c260af6c906de7790128321fe3f4a17dae8fc7bd01313f03025250943efcf04",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_10098/attempt_001/media/prefix_005.jpg",
+        "event_id": "610d110f9dd949367c88e423335af703ba7559e8ae6ada81460e75cd343911c6",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_10098/attempt_001/storyboards/prefix_005.jpg",
+        "prefix_end": 5,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 88904,
+            "sha256": "29e3c8a9905243e104defe4b6c07db8bddd2e947078623da6017e6af2bac85ae"
+          },
+          "current_panorama": {
+            "bytes": 134204,
+            "sha256": "0819f65c9539b42306feb168e56b0b286125f5892caaf95d0cacf3049bfae308"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "10098",
+      "instruction": "Take a right, go through the doorway, take a left and head down the hall, keep going straight a head to the next doorway, take a right and stop once you are through the bedroom doorway on the right. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "s8pcmisQ38h",
+      "span_end": 120,
+      "span_start": 108
+    },
+    {
+      "atom": {
+        "atom_id": "471df3add84bc694aedbf5f9f80504b5225e78f0ae20673deaf0abe588e03508",
+        "family": "ORDINAL",
+        "instruction_span": "first open hallway",
+        "relation": "COUNT_TARGET",
+        "subject": "hallway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "ef11e496bfa84ce0932e03c5cdeda90042d9f8469aa1e6b611e37aa4def0e227",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_9763/attempt_001/media/prefix_000.jpg",
+        "event_id": "8660f777be75ce722d7135276656d0ec94ab6f6c4a1b8989f2c332f0fda83cd1",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_9763/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 19325,
+            "sha256": "038304571063afc627d625ca8a4bc4cd1a74abd346e4c3a9418a6a2559d7e826"
+          },
+          "current_panorama": {
+            "bytes": 172167,
+            "sha256": "ddcee57e7df24814b8911596d789ddc75dc25a93ff7dd4e549147015f85b81cf"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "9763",
+      "instruction": "Go passed the first two desks on the right and turn right into the first open hallway. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "ZMojNkEp431",
+      "span_end": 85,
+      "span_start": 67
+    },
+    {
+      "atom": {
+        "atom_id": "40107c55809a16a265b4aedfddc604c4599b05f940369816630a0d31d219bedb",
+        "family": "ORDINAL",
+        "instruction_span": "second door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "2"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "b2a0357af026980f8e473d222a61e272c1ec63e803cb416ad024196647bda825",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6706/attempt_001/media/prefix_001.jpg",
+        "event_id": "d1fb749f275057a415318dc96315ac3e5c034887e432c6870585df812af54950",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_6706/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 26557,
+            "sha256": "2531a62b8be4d8a7d8e1db6ee6a22a97f0bf5dd14f28638136602a1af2e7f04f"
+          },
+          "current_panorama": {
+            "bytes": 169759,
+            "sha256": "e7ab9c97c1f8b352e86f43995278a54ebb3a2a91ecfa5e5af8cb5e740378860d"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "6706",
+      "instruction": "Exit the bedroom, walking past the fireplace on your right. Walk forward to the second door on your right.  Wait in the entrance to the laundry room. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "aayBHfsNo7d",
+      "span_end": 91,
+      "span_start": 80
+    },
+    {
+      "atom": {
+        "atom_id": "c02caa0f210a01fbe36509b9a91e8341ca49ffd6ac095310364f2fbdad44459f",
+        "family": "ORDINAL",
+        "instruction_span": "next hallway",
+        "relation": "COUNT_TARGET",
+        "subject": "hallway",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "f54f721eb58b0705e8b7633da7ec1801d8e82f6fd04e181e55c6ed75f375263f",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4025/attempt_001/media/prefix_002.jpg",
+        "event_id": "19a1e8a85ac776435e1cfaae96e6ce6657e23956025fd50d40f656791cb73bfd",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_4025/attempt_001/storyboards/prefix_002.jpg",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 39524,
+            "sha256": "ae117c1b39d764bd7186239bb7d10480de80443e67c441e007b97ceb969f2921"
+          },
+          "current_panorama": {
+            "bytes": 151100,
+            "sha256": "e9d2cdd6d43ed8fd5af8b72ff261b39ea934c29ce5becc5b336e261199584f54"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "4025",
+      "instruction": "Turn left and exit the door near the sink. Then turn left and enter the next hallway. Turn right and enter room, Stop at the edge of the rug facing the couch. ",
+      "language": null,
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "7y3sRwLe3Va",
+      "span_end": 84,
+      "span_start": 72
+    },
+    {
+      "atom": {
+        "atom_id": "5b0ae2900cb5c0c1fee89018854dbc7f7e052697dc35cd1e94cd39537be02c01",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after you pass the last",
+        "relation": "PASSED",
+        "subject": "you_pass_the_last",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "504d46d134a846db5bfdb5bffd56309e4a2e5831bce859f14ad09e0670ee3832",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1980/attempt_001/media/prefix_000.jpg",
+        "event_id": "bd4a9f9e2769b9ca7f7f814397fc88f81d5492f5df1f2dc1a6199b75af52c793",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_1980/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 18417,
+            "sha256": "6c5989d3187f1d9c36322d3af972c45ba4f58d76e95ef6f4fcddf389c38df475"
+          },
+          "current_panorama": {
+            "bytes": 227959,
+            "sha256": "f0bb5b75518fbfdeb50b640e6cfd4e2164a666b90e8530d7370c85bbf698d282"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "1980",
+      "instruction": "Walk towards pool and continue to the right alongside it. Stay to the left of the lounging chairs and wait after you pass the last one, which is larger and round. ",
+      "language": null,
+      "mechanical_reason": "after expression does not identify a stable visual landmark",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "VFuaQ6m2Qom",
+      "span_end": 130,
+      "span_start": 107
+    },
+    {
+      "atom": {
+        "atom_id": "f6e2ffd9db7ab0967098151dd97c145360bebb413bcc0d5886d38452dc63fb08",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "head past the kitchen",
+        "relation": "PASSED",
+        "subject": "kitchen",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "47da74f619b9a9fe194d630615ce13adce6685950f391a83f05435c6b34eeb22",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8452/attempt_001/media/prefix_000.jpg",
+        "event_id": "8590bb23c2cb3f308a48262fad877b17231474f40353cc869d54c483e59bc28c",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/R2R/ep_8452/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 11071,
+            "sha256": "25373f2187cbf2b823608d360830b6d47cc925213f876b7bac3f63570dc61d82"
+          },
+          "current_panorama": {
+            "bytes": 121364,
+            "sha256": "f0e03082be60cf6b27099d2eabf970b5ebe4416cdf0cc1eb565e4c7a7c0bfa33"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "R2R",
+      "episode_id": "8452",
+      "instruction": "Exit room and head past the kitchen.  Wait at the dining table. ",
+      "language": null,
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "cV4RVeZvu5T",
+      "span_end": 35,
+      "span_start": 14
+    },
+    {
+      "atom": {
+        "atom_id": "f049c6d0215cdfe0d9ea128a2719d2203f225d54d286390cb27aa55ceeb89a8b",
+        "family": "ORDINAL",
+        "instruction_span": "next room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "e68c7b87baabbe9a96ec9cefdc74940035967dca3c216167bbf648503de6609d",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:VLzqgDo317F:17140:19",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_17140/base_trace.jsonl",
+        "prefix_end": 19,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "17140",
+      "instruction": "You are in a living room staring at a door, turn left look past the fireplace take the right through the doors. You will see a stanchion with velvet rope in front of you, follow the red carpet. Taking that left looking straight out you're going to go through the following archway across this next room. Go past the stairs. Take the door that's on the right when you get through that doorway and find the stanchion again look to the right and there will be a pink couch and a chair next to it. Enter that area there is a table hop over the table you will be at the corner of the two couches and the chair between them and stop.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "VLzqgDo317F",
+      "span_end": 302,
+      "span_start": 293
+    },
+    {
+      "atom": {
+        "atom_id": "cabec34e4bcbbb9df7f2a59bf5537e7cf87ad6f9154314a65421a41e5e4f3ac8",
+        "family": "ORDINAL",
+        "instruction_span": "another open entrance",
+        "relation": "COUNT_TARGET",
+        "subject": "entrance",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "34a5cf73ec272fba621b1eeb593da1b06f69f8dfd6aabbeec23876ccff12037c",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:i5noydFURQK:34282:0",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_34282/base_trace.jsonl",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "34282",
+      "instruction": "You are standing in a room facing closed door. Here you can find a table with two green color chairs and a black chair on either side of it. Take left and move towards the black chair. You are now facing the shelf and the wall in front of you. Turn around to find another open entrance. Move forward and enter into the open entrance. You have now entered a bedroom. Turn to your right, to find a small narrow path and a cabinet in front of you. Come out of the room and move forward. Now you are standing beside the cabinet which has flower vases on it, facing the portrait on the wall beside another open entrance. This would be your end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "i5noydFURQK",
+      "span_end": 285,
+      "span_start": 264
+    },
+    {
+      "atom": {
+        "atom_id": "a3887ba49d3942015f3206ea0aced3f6c9fb1ce557908db967dc24f60a0de044",
+        "family": "ORDINAL",
+        "instruction_span": "second mirror on your left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "2"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "03bcfeac37e67e51610bd4176a28656095c0c7dfdcfacbfcc0106643c191c8ea",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:ur6pFq6Qu1A:9655:22",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_9655/base_trace.jsonl",
+        "prefix_end": 22,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "9655",
+      "instruction": "You are in a bathroom facing towards the wash basins, turn to your right and move forward towards the water purifier. Turn slightly left and move forward towards the open entrance and pass through it. You can see an open door right in front of you, move forward towards the door and exit through it. Turn slightly right and move forward towards the reception area. Turn slightly right and move forward, move a few steps forward, turn slightly left and move forward walking in between the ceramic pots. Enter through the open glass door and move forward. Turn slightly to your right and you can see an open door, turn right and enter into it. There is a mirror on your left side, move forward and stop when you reach the second mirror on your left. You are facing towards an open bathroom door and this is your destination.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "ur6pFq6Qu1A",
+      "span_end": 746,
+      "span_start": 720
+    },
+    {
+      "atom": {
+        "atom_id": "c335a70912ebd9f02e76d9d43db9a1da03112c256f73ec9f264c48e5a60c2e9f",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after reaching the cabinet",
+        "relation": "PASSED",
+        "subject": "reaching_the_cabinet",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "fa3b675766679bc54b1e1a06a1ca72f8bc0d2c1857ead82a10477d917d02b2bf",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_45581/attempt_001/media/prefix_004.jpg",
+        "event_id": "3d146d422f9d590bb1085fdafe4a382bdb24f756c498e3e3a077e77ef1d3018f",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_45581/attempt_001/storyboards/prefix_004.jpg",
+        "prefix_end": 4,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 108693,
+            "sha256": "c8fb7fd7d6277a7379b07b995c92f29d83db2eaf0df12884805107b2a2f9613e"
+          },
+          "current_panorama": {
+            "bytes": 219261,
+            "sha256": "9fad04e955e9932e6bf0a3c12bf3de1272615fac08bfd61f8eb87b3ea9daf16d"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "45581",
+      "instruction": "You will be facing a wooden cabinet, walk straight towards it. Turn right after reaching the cabinet and you will see a brown grilled door which is open, walk towards the door. Turn left and walk inside the room. Turn slightly left and walk inside the room. Take another step towards the center of the room and stop. At this final point, you will have the foot of the bed on the left and a table with files on it on the right, this is the final point. ",
+      "language": "en-IN",
+      "mechanical_reason": "after/past expression with a concrete landmark",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "Pm6F8kyY3z2",
+      "span_end": 100,
+      "span_start": 74
+    },
+    {
+      "atom": {
+        "atom_id": "8adf2608e096f6fc9092b3e2a3a75bd19ac77715c6b05d8b271e031b9b018164",
+        "family": "ORDINAL",
+        "instruction_span": "first doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "42b3bb09abad3514917831c6d57f6faca589365a52b0ebd5567449964b86077e",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:qoiz87JEwZ2:20409:11",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_20409/base_trace.jsonl",
+        "prefix_end": 11,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "20409",
+      "instruction": "You'll start in a kitchen with a door behind you that says private. You're going to step through the first doorway on your right. Here you'll be in the dining area, to your left will be a Christmas tree. You're going to continue walking with the, to the right side of the table, passing the picture through your first doorway on your right. In here you'll see another Christmas tree to your left near some windows, two red chairs, and two gold chairs. You're going to walk between the red chair on your left, and the blue chair on your right to the edge of the carpet. Once you get here, you can look to your right, in between the red and the blue chairs you'll see what looks like a bathroom with red walls. You're going to step into the bathroom and stop.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "qoiz87JEwZ2",
+      "span_end": 114,
+      "span_start": 101
+    },
+    {
+      "atom": {
+        "atom_id": "361d0d143852212f72f4e0b62743e1ef0f803ea3eb9a29a8edeb2a3d6dfe298a",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Walk past the white couch",
+        "relation": "PASSED",
+        "subject": "white_couch",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "90b4150322c903348f919b1254204a0d1d7199d8669dd765bad884b9970366c1",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:Vvot9Ly1tCj:21600:13",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_21600/base_trace.jsonl",
+        "prefix_end": 13,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "21600",
+      "instruction": "Facing the window and chandelier. Turn to the right. Walk past the white couch. Make a left leading you outside. Veer to the left of the pool. Enter through the entrance with a glass door. Turn right. Go directly past the bed on the left and just in front of the white chair with a footrest. This is your destination.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "Vvot9Ly1tCj",
+      "span_end": 78,
+      "span_start": 53
+    },
+    {
+      "atom": {
+        "atom_id": "5f99dc7341d5ff2169699a74e53a2520dba6719c63840705e3e9775292a5a814",
+        "family": "ORDINAL",
+        "instruction_span": "second office on the left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "2"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a1f6eff1114f30005b662e955bb042bd7e8edd2cbf9066e7845b39794d9e87c6",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_486/attempt_001/media/prefix_018.jpg",
+        "event_id": "a88ea756b20d9b1f7b9935e52cac85d18fc9ed42a5355af2904c5434af66ae55",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_486/attempt_001/storyboards/prefix_018.jpg",
+        "prefix_end": 18,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 281745,
+            "sha256": "28212afffdfa09ccb0f723dd6bd408b20fae448800f204fcc4ad5e0c05f88af0"
+          },
+          "current_panorama": {
+            "bytes": 112755,
+            "sha256": "ba0fc1ed559b949343223cded69ca2b0f6146444b641dd271c00d54d4a73d5b4"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "486",
+      "instruction": "You're in an office, head out the door that is front of you and follow the hallway to the left. Head toward the exit sign in the distance. When you reach the exit sign, looking at the exit sign look to the right. Head into the second office on the left at the threshold of that door, stop.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "B6ByNegPMKs",
+      "span_end": 252,
+      "span_start": 227
+    },
+    {
+      "atom": {
+        "atom_id": "9dc5f5f51652bf0151ce84e0b7e044761a1d9868cf8755d191107a32956e5970",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Walk past the door on the left down",
+        "relation": "PASSED",
+        "subject": "door_on_the_left_down",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "2a5c2abf6a4841b98d186c2235fae310eafa1e103933d9e37f87a2acb6a9060f",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_16304/attempt_001/media/prefix_004.jpg",
+        "event_id": "4c0d169221cb4396db8ebcdb8e537a654d4a38053d696486911814a348eb4af4",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_16304/attempt_001/storyboards/prefix_004.jpg",
+        "prefix_end": 4,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 95629,
+            "sha256": "d1701880cfc30398fd0b3e07a92e9d51276ba9a43b8b702147d665ead7f81f3a"
+          },
+          "current_panorama": {
+            "bytes": 234129,
+            "sha256": "4d5a74eb20deb049fb96fc0d6b8dd16b3f57b2f4eea897e6b507ecec02d5114d"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "16304",
+      "instruction": "You're standing in a living room looking at a TV, on the left and right you can see windows looking out into a city. If you turn around a white couch on the left and a brown couch on the right, walk in between these. Continue to walk forward of this red chair to the right and you'll see a round table on the right and on the left is a bookshelf, walk between these. And you'll see a rug on the floor and to the left of this you'll see a wooden door with windows in it. Walk towards this door on the left and walk through the hallway you'll see a picture with a dog on the wall. Walk past the door on the left down the hallway. And then walk towards the opening on the left to the doors with windows in it and walk into the room that has the door with windows. And walk right past this rug where you can see a brown cabinet and shelf above it. And you should see a black background with a star on it and in front of you there's a door going to what looks like a bedroom. Go through this door. And walk to the gray bench in front of the bed. And you should be to the right of the gray bench now. Go right and you'll see a room to the left where you can see some white shelves in it. And you should be standing right before this room with the white shelves and to the left you'll see a closet with wood floors and you've reached the end. ",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "JeFG25nYj2p",
+      "span_end": 614,
+      "span_start": 579
+    },
+    {
+      "atom": {
+        "atom_id": "303aa4423e60218e87ac9ff51ef596f490c1930882abc2455f61048c93566809",
+        "family": "ORDINAL",
+        "instruction_span": "another hallway",
+        "relation": "COUNT_TARGET",
+        "subject": "hallway",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "275fae48360ddb5e4ac2aaeee7e75db7dc62b4434b97de78941c7f2c34e5c80f",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_19532/attempt_001/media/prefix_000.jpg",
+        "event_id": "8230b7b4009925fea594e2f24568cd5de32bb40b876dd893447ab95bd7d87903",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_19532/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 10221,
+            "sha256": "9ceb4fe950889c382208e3b6ebeca69dc5e6972c2bbc6aade28db98578135915"
+          },
+          "current_panorama": {
+            "bytes": 137423,
+            "sha256": "35a7607338c44fc5ade0213fe95e30061525062b7f5378c43876e9954c67c8c7"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "19532",
+      "instruction": "You will start out in a bedroom. Turn slightly to your right and you will see an open doorway with a small dresser in the corner of the bedroom. You want to hop over the bottom part of the bed and toward that small dresser and then turn just to your left and go through that open doorway out into the hall. Continue down that hall, passing three pieces of art on your right hand side. You're going to pass a set of stairs on your left and take one step toward the open bathroom door ahead of you. Then turn left so you are now facing another hallway. Take two steps down that hallway and then you will be facing two open doors, one directly ahead of you that looks like it goes into a bedroom and one to your right that looks like it goes into a bathroom. Enter the bathroom, then walk straight forward to the glass shower door and when you are standing on the bath mat facing the shower door, you will stop.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "S9hNv5qa7GM",
+      "span_end": 549,
+      "span_start": 534
+    },
+    {
+      "atom": {
+        "atom_id": "edcad782da83f0c8d68e87d7fd160f4689c5b8ee0f9d591ff220d60e6fa5bedf",
+        "family": "ORDINAL",
+        "instruction_span": "first left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "1723d7b87e91c987bd23b08f9c783a9802c0047173d3fd7f9bbde8985a5dddf4",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_418/attempt_001/media/prefix_001.jpg",
+        "event_id": "6fbae98de6499d835ddbcd65770785f8b7970d53aac8ec0a7d904edae5b312ce",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_418/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 19819,
+            "sha256": "c410ea5413e1cc6bc08521290d929082a6043d17837f648ecf59b00e008c7cd4"
+          },
+          "current_panorama": {
+            "bytes": 109950,
+            "sha256": "810aeed6df0bad5633bcd40672d096ad5fed340df4873ba171d96773b797282a"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "418",
+      "instruction": "Facing the exercise room, turn to the right, walk down the few stairs and through the open doorway in front of you. Take your first left and enter the bathroom, walk straight towards the window in front and stand in front of it with the shower to your left, the sink to your right, you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "uNb9QFRL6hY",
+      "span_end": 136,
+      "span_start": 126
+    },
+    {
+      "atom": {
+        "atom_id": "c998056886fa1bac58549aac43e55f28885e4dd5eee21e1d9c207689d8b069eb",
+        "family": "ORDINAL",
+        "instruction_span": "another doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "d244a2fa13e7fab0b54a4d77a4b9b36e0f5708c5c4bee018de29a50f5b311bae",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_55494/attempt_001/media/prefix_000.jpg",
+        "event_id": "9bf48707ab685ff7394afc03ea52a88808c9febd453e34dc62aa509d885849c4",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_55494/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 14208,
+            "sha256": "2cbba619f02acf864988aab2f5ff4cf8e4296c5de6970162fff580cd136c6520"
+          },
+          "current_panorama": {
+            "bytes": 151889,
+            "sha256": "3271547d44859d79a7cb0ebbd9ba8c93c34977dab5e9fb6c08dd47cc153b5c1e"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "55494",
+      "instruction": "You begin standing in a sauna. Exit through the door in front of you and then turn to the left. You will see an open doorway in the corner. Hop over the massage beds to exit through that door. Then you're going to turn slightly to the right and you're going to see a set of large open double doors. Take one step into this room so that you're standing just beside this brown chair here that is facing away from you and then turn ll the way around and if you look just to the right of the doorway that you came from you're going to see another doorway. So enter this one and then take two step forward so that you're standing just at the edge of the divider to your right and you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "r47D5H71a5s",
+      "span_end": 550,
+      "span_start": 535
+    },
+    {
+      "atom": {
+        "atom_id": "2234dc9a5d3c9660213f53aaf11cd67a929e360c736ea13938b780c00bdf9ab8",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "walk past a couple of art pieces",
+        "relation": "PASSED",
+        "subject": "a_couple_of_art_pieces",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a01a7e5c7157372a0f87a9e3a02a97d1fa0221a96d3f479d01a32ff8c36aea97",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:5q7pvUzZiYa:46198:22",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_46198/base_trace.jsonl",
+        "prefix_end": 22,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "46198",
+      "instruction": "You will start standing in the bedroom. Turn right and exit the bedroom. Turn right from here and continue to walk down the hallway. The staircase is on your left. You will walk past a couple of art pieces on your right and this hallway will direct you to another bedroom with light wooden floors. Now turn right into this bedroom and take a step towards the TV. Turn right once again and you will see the washroom. Go inside the washroom and take one step towards the bathtub. Once you're standing slightly beside the frosted glass door then you are done.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "5q7pvUzZiYa",
+      "span_end": 205,
+      "span_start": 173
+    },
+    {
+      "atom": {
+        "atom_id": "9b10779b1c6251f1857c726450aee004615cda4774b4ee1ef1b63bc5e254de77",
+        "family": "ORDINAL",
+        "instruction_span": "another room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "b4e461fb18fe120981a1a8cd1e4ef03bda06d395d751df070d69a3e8914a2175",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:PuKPg4mmafe:39012:12",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_39012/base_trace.jsonl",
+        "prefix_end": 12,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "39012",
+      "instruction": "You will start by standing inside a hall. Turn around and you will see a large double door opening in front of you. Make your way towards that and exit this room. You will be in another room with white tiled floors. Make your way towards the table that is second from the left side of the room. Jump over this table and walk towards the rectangular table on the left. It is the only rectangular table in this room. Now jump over this rectangular table and stand in front of that wall divider. Once you're standing in between the rectangular table and the wall divider in front of you then you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "PuKPg4mmafe",
+      "span_end": 190,
+      "span_start": 178
+    },
+    {
+      "atom": {
+        "atom_id": "a7fb50e925d9c558c7224343a91fb86b8e83f0132a7e4d5eb854e8b5b4003c4e",
+        "family": "ORDINAL",
+        "instruction_span": "another step down the hallway",
+        "relation": "COUNT_TARGET",
+        "subject": "hallway",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "c66dc1acfd518cd087dbb9a41c56c8dbf5670549cb149cea85f76ccd38f55f28",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:1pXnuDYAj8r:27433:12",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_27433/base_trace.jsonl",
+        "prefix_end": 12,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "27433",
+      "instruction": "You're starting in a bathroom. Turn around. Exit this bathroom toward the brown cabinet with the window over it. Turn right and walk into this kitchen area. Pass the island on your right and the refrigerator on your left. At the end of the counter, by the chair, take a left into the hallway. Take another step down the hallway by the post on the left and then take a step toward the double doors- the front doors. Then step onto the second rug that says Woodside Homes. Once you're on the rug that's the farthest from the house on the front porch, you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "1pXnuDYAj8r",
+      "span_end": 327,
+      "span_start": 298
+    },
+    {
+      "atom": {
+        "atom_id": "ccdf9af096dd84ae78e13d7e0477f576c3aa32e358bae82ce4e9da3004f26f33",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "walk past those",
+        "relation": "PASSED",
+        "subject": "those",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "2f01519274be1eba18375f0e921557b6f53defdcfee9f0438c419b001da7e81d",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_20697/attempt_001/media/prefix_000.jpg",
+        "event_id": "1ce3baec832523053746c323f9cd73068f0b1278a5f9299f318f7f807e09340e",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_20697/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 26650,
+            "sha256": "332ebb0ed76e83475d29f2b6909a004354b3f306128e061d49e490491f324eb9"
+          },
+          "current_panorama": {
+            "bytes": 230358,
+            "sha256": "bce047a5b26f43c14551704be0e34748a785c231776c81981dfbbe01fd862641"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "20697",
+      "instruction": "We're facing towards this grey sofa, and we're also looking at this grey wall... Turn around... On your right there's a grey door with a circular panel on top, walk towards it and exit this room towards a hallway... You'' be facing towards a round mirror, on your right there's a double door, and below the mirror there's a small console table, turn towards the left... In front of you there's a sink area and you'll be facing a mirror, walk towards that area, on your right there'll be a toilet, it's actually a bathroom, turn around, take one step further, pass the console table on your left... In front of you there's a small room with two islands, and on your right there's what appears to be a dining area, walk towards that area, past the top chair that's in front of that table... You're now facing towards a TV, turn slightly to the left... On your left there's a counter with three chairs, walk past those... You're now in a living room, on your right  there's a beige sofa, there's a blue carpet and in the middle there are three coffee tables, on the left there's a TV, exit this room and walk towards the room that's in front of you, pass the doorway... We're now in a bedroom, on the right there's a bed, and in front of you there's a TV, and on the left there's a blue chair, take a few steps forward, walk past the bed and turn towards the right...  You'll be facing towards the corner of a wall, on the left there's a window covered with blinds, actually, there are four windows on your left but you'll be facing towards the last one, turn slightly to the right, in front of you there's a closet, walk towards the small wall between the closet and the window, and you've arrived.   ",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "17DRP5sb8fy",
+      "span_end": 915,
+      "span_start": 900
+    },
+    {
+      "atom": {
+        "atom_id": "db458e37b10f4783b3667074e465a0eb04639146cc7002adb5f94cdb65d3273a",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after going out of the",
+        "relation": "PASSED",
+        "subject": "going_out_of_the",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "772569e0ed03f626edae99c4ba8766948631aaee03dac7f6807b6aaab7333ceb",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:sT4fr6TAbpF:46490:22",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_46490/base_trace.jsonl",
+        "prefix_end": 22,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "46490",
+      "instruction": "Move forward and exit the room, after going out of the room, move near to the cupboard, and from the cupboard, take left and move forward and enter into another room, after entering into another room, take right near the chair and move forward near to the wall, and from the wall, take left and move forward near to the table, and from the table, take left and move forward to enter into another room, after entering into another room, take right and move forward near to the bed, and from the bed, move forward near to the door, and end near the door.",
+      "language": "en-IN",
+      "mechanical_reason": "after expression does not identify a stable visual landmark",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "sT4fr6TAbpF",
+      "span_end": 54,
+      "span_start": 32
+    },
+    {
+      "atom": {
+        "atom_id": "451ceebddb87df73b6d8cf17dc1418fbe3afeec257436b3a7e73fe08823a6620",
+        "family": "ORDINAL",
+        "instruction_span": "another open door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "e1b004f893ec2bc4849d0a6340fc8f0d0ccdcb98c6fe63b6088c7d9857aff00d",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:GdvgFV5R1Z5:45669:7",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_45669/base_trace.jsonl",
+        "prefix_end": 7,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "45669",
+      "instruction": "Now you are in a bed room facing towards a curtain, now slightly turn to your right and move forward, you can see a sky blue colored mat on the floor, walk on the mat and take right, there is an open door, enter into it, now turn to your right, you can see another open door, enter into it, slightly turn to your right, you can see a opened door with a curtain to your left, go near that and stand facing towards a curtain, that's your end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "GdvgFV5R1Z5",
+      "span_end": 274,
+      "span_start": 257
+    },
+    {
+      "atom": {
+        "atom_id": "b2df700b0b23755f6894d05d72be647515a04c31261603a79c38d94b847e35e5",
+        "family": "ORDINAL",
+        "instruction_span": "another white door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "fa42cdd558140bd0585b0c2333424d07f3e85158998ef1909faf7ea1e3b95ce0",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:HxpKQynjfin:21583:4",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_21583/base_trace.jsonl",
+        "prefix_end": 4,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "21583",
+      "instruction": "You are in a living area, facing towards a small table, which has a plant on it. Turn towards your left and keep moving forward. Turn towards your slight left and in front, you find a glass table. Walk through the glass table and go near the window, beside a sofa set. Turn towards your left again and keep moving forward. In front, you find a bed, go near the bed and turn towards your slight left. Walk in front of the bed and turn towards your slight right. In front, you find an other door, go walk through the door and you enter into your washroom. Turn towards your left and move forward. In front, you find an other door, which is brown in color. Go pass through that door and you enter into your inner washroom, where you find a come out basin to your front. Walk beside that and turn towards your left, you find another white door. Go pass through that door and you reach back to the same living area and the same starting point. You reached your destination.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "HxpKQynjfin",
+      "span_end": 839,
+      "span_start": 821
+    },
+    {
+      "atom": {
+        "atom_id": "fe9a3573bf38f98182f09f8e97b6029032faf8c78f21d8264630883e160427ec",
+        "family": "ORDINAL",
+        "instruction_span": "first step of that staircase",
+        "relation": "COUNT_TARGET",
+        "subject": "staircase",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "84f30606da0d457833c944be46c489c8483845d972a21d3b616d1bac1b352e90",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_27423/attempt_001/media/prefix_004.jpg",
+        "event_id": "3c7616822419ae89501b3597363fced00da82c772ed98f9f197ebbad830f4055",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_27423/attempt_001/storyboards/prefix_004.jpg",
+        "prefix_end": 4,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 95167,
+            "sha256": "8120c2c641a91392edb3324a75521e92db52f6d1c821a0b40a76267c75772003"
+          },
+          "current_panorama": {
+            "bytes": 225856,
+            "sha256": "f1c1c570c76114ba3f4027c4274cb9caa267e4230d34bb8a374b5ebb7c4f148c"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "27423",
+      "instruction": "We start off looking at the back of a couch. Turn to your right and you will see a circular table. Hop over the chair in front of you towards the cabinet straight ahead from the chair. You will now be next to like the barstools. Next to that cabinet. Turn to your right. Take a step onto the first step of that staircase. Turn to your left. Take a step down the hallway. To the left of the glass to the doors with a mirror on them. Continue to walk down that hallway until you have reached a chair next to a fire place. Stop next to the chair to the left of the fireplace. So if you are looking at the fireplace you are to the chair to the left and you are done.  ",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "EDJbREhghzL",
+      "span_end": 320,
+      "span_start": 292
+    },
+    {
+      "atom": {
+        "atom_id": "2f788d464382381d6d8c552672e7710a44103184e303ac8139e88bcb6f7b2f07",
+        "family": "ORDINAL",
+        "instruction_span": "another set of staircase",
+        "relation": "COUNT_TARGET",
+        "subject": "staircase",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "57a00b53a6f548912aae48119fbf9b69af3a2d6503c84e2ed26fd17dd1b9925f",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_22979/attempt_001/media/prefix_006.jpg",
+        "event_id": "ab0ef6457381e74002c8b21679e921d631a17eec968257430ab4a9d44b04a0c7",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_22979/attempt_001/storyboards/prefix_006.jpg",
+        "prefix_end": 6,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 131504,
+            "sha256": "434ecfeaae261cc0d05957fbdbc5cfedb97c2bf235f3f1478fcec2b6d88e0fab"
+          },
+          "current_panorama": {
+            "bytes": 209382,
+            "sha256": "6d4676b415804262c0da6f88eac85b70ff89718160740c40bbfa01bdfe6588c6"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "22979",
+      "instruction": "You will start by standing in the middle of the stairs facing the glass railing. Turn to your right and take a step down. Now turn to your left in front of you you will see a green armchair. Walk towards that green and white arm chair closer to the stoned decorated wall. Once you are in front of the wall turn to your right and you will see another set of staircase. Walk down the stairs following the railing continue walking down. Once you are on the first floor and slightly above you you will see three arched windows. Turn to your right and you will see a carpet rectangular carpet. Walk towards that rectangular carpet. On your right there will be a wine barrel and what looks like a cart. Take another step forward towards the bench on the right side of the wall. There will be a very long bench on your right and also a metal looking vase on your right as well. When you're in front of that bench then you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "s8pcmisQ38h",
+      "span_end": 366,
+      "span_start": 342
+    },
+    {
+      "atom": {
+        "atom_id": "c3de7d11f04846d2b537a09cf507dcab75a53fc748d74da052a5bdcf3af66be7",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "go past the microwave to your left",
+        "relation": "PASSED",
+        "subject": "microwave_to_your_left",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a76cdebccb35f97639b47f33a399414999447750a2ce2a85fe7eabe93fccc0c1",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:Uxmj2M2itWa:43069:23",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_43069/base_trace.jsonl",
+        "prefix_end": 23,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "43069",
+      "instruction": "As you're facing the silver wall in front of you, look slightly to your left and head towards the black chairs. You're gonna go along the wall between you the wall and the black chairs and kind of make a small left so you don't run into the red cabinets. Then once you see some stairs on your right, you're gonna take those. At the top of the stairs, you're gonna make a left. So you're gonna be on the left side of the small island with a sink. Once you go around that, you're gonna go past the microwave to your left and left so you can get outside. As soon as you get outside, you're gonna go right back inside making that 1st left from the patio. In the next room, you're gonna see some red kind of lazy chairs. You're gonna go over those. You're gonna go past the bed to your right and you'll pass the mirror. And make a left into that next room. This will bring you into a bathroom and at the top of the toilet where you'd flush the toilet is gonna be your stop.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "Uxmj2M2itWa",
+      "span_end": 518,
+      "span_start": 484
+    },
+    {
+      "atom": {
+        "atom_id": "461e071094c2229fb4d569c1e81631e6897e937f387f40adf586a00807e0f3aa",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "after the last picture you'll see",
+        "relation": "PASSED",
+        "subject": "last_picture_you'll_see",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "6f512d149a579deb1625b3a631a742a03286388f23d41c55df9ef78529c5792a",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:sKLMLpTHeUy:13693:13",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_13693/base_trace.jsonl",
+        "prefix_end": 13,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "13693",
+      "instruction": "You're standing on a balcony, in front of you can see a blue house. If you turn 180 degrees behind you you'll see an open glass door going to a bedroom. Go through this glass door. And walk to the foot of this bed to the right of you. And you'll see a brown door to the right going out, walk towards this door. And walk out this door into this hallway. And then go left down the hallway, to the right you'll see about five pictures and after the last picture you'll see a doorway to the left. Go through this doorway. And take a step into this bedroom and walk towards the sheep in front of you. And then to the left you'll see a bathroom, take one step into the bathroom. And you've reached the end. ",
+      "language": "en-US",
+      "mechanical_reason": "after expression does not identify a stable visual landmark",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "sKLMLpTHeUy",
+      "span_end": 469,
+      "span_start": 436
+    },
+    {
+      "atom": {
+        "atom_id": "0ba1960de606b95ea95b74632e521142f56dc70a6cd1c1315a652eaeea7a26d7",
+        "family": "ORDINAL",
+        "instruction_span": "second open door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "2"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "47eca2a05a6e3ae58b3663c6fb575636601b4891a612cf6f309c74c9b43201cf",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_35697/attempt_001/media/prefix_017.jpg",
+        "event_id": "9c8ae3095e893d4abe6fb6cf78a66848d6c2078d041b7633780167219d25d7b8",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_35697/attempt_001/storyboards/prefix_017.jpg",
+        "prefix_end": 17,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 257953,
+            "sha256": "b14392a4723f6328aa0064c4b51eac43d96173c3d641b42ba09daafa6ae16ec1"
+          },
+          "current_panorama": {
+            "bytes": 156947,
+            "sha256": "e66a0bdd20178e491b5cd7a67b6436c87937a909202b436908e250860daf06d7"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "35697",
+      "instruction": "You begin looking towards a potted ficus in a corner. Turn completely around and continue moving along the painted wall, behind the couch, towards the potted lesser ficus in front of you. Once you're standing right beside the small potted ficus, move ahead towards the left side of the glass dining table. Once you're there, you're gonna turn slightly right and move towards the foot of the stairs in front of you. Once you're at the foot of those stairs go ahead up them. Once you've ascended the stairs you're going to go right into the second open door on the left. You should be looking into a laundry room, and if you are, then you're in the right doorway. Just stand in the doorway and you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "aayBHfsNo7d",
+      "span_end": 555,
+      "span_start": 539
+    },
+    {
+      "atom": {
+        "atom_id": "9269ecd544158ed3d4d25b470c073f1bb7160ebb3f2a271794ea1cf26db5f5f7",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Move past the little red seat",
+        "relation": "PASSED",
+        "subject": "little_red_seat",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "38ec86b6fc5a00896d1d31412b7b12255bc1c2a961f90f7374441194fd45ccf4",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:b8cTxDM8gDG:26596:19",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_26596/base_trace.jsonl",
+        "prefix_end": 19,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "26596",
+      "instruction": "You begin looking over a beach from a glass railed balcony. Turn completely around and you should see some strange seats with almost tent-like protrusions covering them. Move between these two seats and you should suddenly come upon a black table, with a plant in the middle of it. Step over the black coffee table and towards the sliding door that is open on the right side. You should be entering a bedroom as you step into the sliding glass door, which has a open doorway across from it. Go ahead and just move across the bedroom to that open door. You should be entering a hallway with a little red chair on the right side, and an open door in front of you. Move past the little red seat, through the open door, and you should start seeing a staircase on your right, and Marilyn Monroe on your left. Move past her, keep the stairs on your right, as you move down about three steps. Actually, don't move down the steps. Stand at the top of the three steps down, looking into the clean white room. Just stand there, on top of those three steps. Don't step down them! Just on top of them, that's where you finish.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "b8cTxDM8gDG",
+      "span_end": 691,
+      "span_start": 662
+    },
+    {
+      "atom": {
+        "atom_id": "65ec4853c242ae80c506b13096f83603ac503db4549bd11a966368636e59a096",
+        "family": "ORDINAL",
+        "instruction_span": "another open door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "4c1925e69bfb790577ff83f3154ceee3b33985f6e4bf516c952173b451e67347",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:E9uDoFAP3SH:52922:11",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_52922/base_trace.jsonl",
+        "prefix_end": 11,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "52922",
+      "instruction": "You are facing towards an entrance, enter into the entrance, walk straight towards the dining table in-front of you, pass the dining table, on your right side you can see an open door, enter into the open door. Immediately turn to your left and enter into an another open door, stand in-front of the glass door which is in-front of you. You have reached your destination.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "E9uDoFAP3SH",
+      "span_end": 276,
+      "span_start": 259
+    },
+    {
+      "atom": {
+        "atom_id": "f3bd307ccaaa9759875a738a26c6182112596c4f5e0bf1e106136b1531c5151b",
+        "family": "ORDINAL",
+        "instruction_span": "second open door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "2"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "b4cf11d52b92619343b11fd8b305fc87b2756ecd2629dec8c956b04a891d4e95",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:29hnd4uzFmX:14093:2",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_14093/base_trace.jsonl",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "14093",
+      "instruction": "Okay, now you are at the entrance of a room facing towards the wooden wall, turn to your right and exit the room through the open door, which is in front of you. Now turn left and go straight until you reach the second open door on your left side. Now turn left and enter the room through that open door. Now you are in the washroom, turn to your right and move towards the steel grill casing, which is in front of you and that is the end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "29hnd4uzFmX",
+      "span_end": 228,
+      "span_start": 212
+    },
+    {
+      "atom": {
+        "atom_id": "65f0ca0ff567456b54683fff56c269deb54f0565cbafc24f4ff7d8d402f46df0",
+        "family": "ORDINAL",
+        "instruction_span": "another door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "5f972c68e09ad38964b54eee4bd52fdf76d046f89997d34800d22d9a604b56e3",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_45043/attempt_001/media/prefix_002.jpg",
+        "event_id": "e4e8299f66e6d44e181e91b8c9dd84e3eb33789ec46c1662e9d831775ec712ec",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_45043/attempt_001/storyboards/prefix_002.jpg",
+        "prefix_end": 2,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 39319,
+            "sha256": "d6795b535f29c0dff4c521b309cc3905c9744c865a9f4677034126f84005268c"
+          },
+          "current_panorama": {
+            "bytes": 148263,
+            "sha256": "b8affa93ccebd5415fc544920ea8f3b2ec508ce1d16a5224cdfd97781f30d839"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "45043",
+      "instruction": "You begin in a white bathroom. There should be two doors to your left. Proceed through the one that is on the right. You will see a closet-like space, step into it, and then head through the door on the left. Once you are outside this door, you should see another door open in front of you, ignore it, go right instead, towards the pictures. You should see a bedroom on your right. Proceed towards the column. Well... The column-like entity on the left, near the bed's foot. You're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "7y3sRwLe3Va",
+      "span_end": 268,
+      "span_start": 256
+    },
+    {
+      "atom": {
+        "atom_id": "1d3501ebe8c2385ea1ab5341c4e34c0c1cc6f28435f3fb21f5fa04dbff69f1e1",
+        "family": "ORDINAL",
+        "instruction_span": "another bed room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "97f9be5ecf424930dec960a698f3cdac57b09014e8d3fd0cb70f098b69994bcc",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:1LXtFkjw3qL:3197:5",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_3197/base_trace.jsonl",
+        "prefix_end": 5,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "3197",
+      "instruction": "\"Okay now, you are in the bedroom facing towards the bed. Turn left, and exit the bed room. Now slightly turn right and move forward until, you see the closet room on the left side. Now turn around, and move forward. Now, you are at the entrance of the room with a table and two chairs in it. Now turn left, and move forward. Now, you are at the entrance of the another bed room. Now turn slightly right and enter into the bedroom, you can see the bed on the left side. Move forward until, you see the television and a beautiful painting on the left side. Now, you have reached your destination.\"",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "1LXtFkjw3qL",
+      "span_end": 378,
+      "span_start": 362
+    },
+    {
+      "atom": {
+        "atom_id": "4ff954a728cf04124ca61285dbad8833ce5df6ad4858c7208d947d70ed744e0b",
+        "family": "ORDINAL",
+        "instruction_span": "first doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "08179d70abc92bcc89d7fed0e51f8edc0b00a160839c10265726a8e4b87cf544",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_42385/attempt_001/media/prefix_001.jpg",
+        "event_id": "a4a281a735ccc970a79c68d5c599be9c98e5ec0858ef8b6b444ca3351feeff37",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_42385/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 28779,
+            "sha256": "f8b66d61c86e9a376ae28dfc4dc0e5d806a4158112dff6b8a5bf1199db743ce5"
+          },
+          "current_panorama": {
+            "bytes": 146734,
+            "sha256": "35b3c0f7e74c157812df4e2dca031834556469c9181db7f7b08b616f200c27f4"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "42385",
+      "instruction": "We are in a bathroom. Turn left toward the sink and mirror. Take a right out the door into the dark wood hallway. When you are in the hallway veer to the right and forward toward the closed white door in  front of you. On the right of the closed right door in front of you, take a right into that hallway.  Now you are going to see some stairs. Walk on the landing about two steps before you reach the stairs.  Then turn  back around behind you where you will see a painting of an old large ship in brown and white.  Turn left in the hallway. Continue forward down the hall with the painting on your right and into the first doorway forward and on the stairs to your left.  Go up about 2 to 4 steps and you are done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "rPc6DW4iMge",
+      "span_end": 632,
+      "span_start": 619
+    },
+    {
+      "atom": {
+        "atom_id": "6f4c9f2905b05a651d08aa44a29c490f1077217e241ed269e88d84ea2ba8d0a7",
+        "family": "ORDINAL",
+        "instruction_span": "second open entrance",
+        "relation": "COUNT_TARGET",
+        "subject": "entrance",
+        "target_value": "2"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "048c6e23dbf3d46e450891cb80241d44c9132d157194d90584fa05086206435b",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:kEZ7cmS4wCh:35542:7",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_35542/base_trace.jsonl",
+        "prefix_end": 7,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "35542",
+      "instruction": "Okay, now you are in the verandah facing towards an open entrance, turn left and walk straight and stand in front of the lawn. Now turn right and walk straight until you reach the end of the second open entrance, which is on the right side. Now slightly turn right and move towards the wide open entrance, which is in front of you. Now you are standing at the entrance of a room. Now turn right and go straight in between the curtain, which is on the right side an the dining table, which is on the left side. Now slightly turn right and walk straight in the narrow passage until you reach another room. Now you are standing next to the curtain, which is on the right side and this is the end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "kEZ7cmS4wCh",
+      "span_end": 211,
+      "span_start": 191
+    },
+    {
+      "atom": {
+        "atom_id": "9d0359c779896ddc55633a07d787d54279cd5c45e4147cfb7050cd901632b2be",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "move past the island towards the center of",
+        "relation": "PASSED",
+        "subject": "island_towards_the_center_of",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "1c8b99d6358cf74dac691cb9b595c20caa31489efdb449f8c963cc26e72f1d38",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_30113/attempt_001/media/prefix_001.jpg",
+        "event_id": "7b81493a9c18813a9d78c59d751631f3f6bd6924c839ccd59e32158aa6646b67",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_30113/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 22527,
+            "sha256": "cf5de815b023b8284fc63a9b203784011fbaaef85dc59d4e2f3923bd3d49a654"
+          },
+          "current_panorama": {
+            "bytes": 150168,
+            "sha256": "beeeff7c184d5d70796a972dd4b92e27570d00b4d1d87c4901673d72af9c77b0"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "30113",
+      "instruction": "You begin on the landing of a black staircase. Turn to your left and finish going up the stairs. Once at the top of the stairs, you should see a blue runner to your left, the long, thin rug. Go ahead and step on the near side of that, and then turn hard to the right. Step down those few black steps towards the wooden thing next to the couch down there, I guess that's a speaker with a microphone on top of it. From there turn left, hard left, and move towards the left end of the sectional chocolate-covered couch. Once you're there, turn left, and you're moving kind of in the direction you came, towards the end of the counter of what looks like a kitchen space. You should get there and be right next to two copper vessels of some type. I suppose vases? They look decorative, not entirely functional. Keep going, on the left side of the kitchen island, behind the bar stools, and move past the island towards the center of the large windows. Once you are standing at the end of the kitchen island, next to the large windows, you're done.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "pRbA3pwrgk9",
+      "span_end": 927,
+      "span_start": 885
+    },
+    {
+      "atom": {
+        "atom_id": "54d7c4af16b344cd5887ad1fb78e71285a2a04e867f5386ba298b55b6427cff8",
+        "family": "ORDINAL",
+        "instruction_span": "another room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "893abf3ca482c8fb76e94c3c1d2f48a096fd436f8e69151d4ab20a19147e4659",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_2442/attempt_001/media/prefix_003.jpg",
+        "event_id": "7c6f7dc9b738a5ba34bb81a489daf6b23c0897505dfe62b02f13c89d52d3f0f9",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_2442/attempt_001/storyboards/prefix_003.jpg",
+        "prefix_end": 3,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 47974,
+            "sha256": "a37ae2700bc62d86c65fde4ac86e819b3125a4f98af4802bcc281e0903014b95"
+          },
+          "current_panorama": {
+            "bytes": 123934,
+            "sha256": "a485a015a1fc6e55f2d619b1b4d85abdb1b9492e6fe27e79ff4dccd9d5201eff"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "2442",
+      "instruction": "We're facing towards a corner of a wall, on the right there's a double door and on the left there's the Eiffel Tower picture, on the left side of that  picture there's a beige chair, and beside it there's a small stool with a telephone on top, turn around... On the right there's a bed covered with a white sheet and there are three pillows on top, one pink, one brown, one which is black and white, on the left there's an entrance to another room, and in front of you there's the exit way, take a few steps further turn towards the left slightly and exit the bedroom, we're now inside a hallway, on the right there's a handrail, on the left there's a double door that leads us to the exterior of the house, and next to it there's a wall which has a picture on it, walk past that wall, and walk past that handrail, on your left there'll be a bedroom that has a white carpet on the floor, pas that bedroom, continue walking down the hallway, on your left there is a double glass door which has a beautiful design, and you'll be facing towards a staircase going down, on your right there'll be a fence and in front of you there'll be a continuation of the hallway and your destination is right here. ",
+      "language": "en-US",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "VFuaQ6m2Qom",
+      "span_end": 447,
+      "span_start": 435
+    },
+    {
+      "atom": {
+        "atom_id": "8fff8ecdc9169b8333f5ff1f7a2740f3ff6c057e84d3c5fe3698641fa1a2d7b3",
+        "family": "ORDINAL",
+        "instruction_span": "first opening",
+        "relation": "COUNT_TARGET",
+        "subject": "opening",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "7ba6c371ab7c878c1142c1ee5bf3882d78470c4ffd3d40192f52c1ea1dfb8d6f",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:VzqfbhrpDEA:13440:24",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_13440/base_trace.jsonl",
+        "prefix_end": 24,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "13440",
+      "instruction": "You are facing a TV on the wall, turn right and towards the golf bags and stuff in front of you, turn right towards the garage door. Once you are at the garage door turn right and reach the opening and exit. Now you should be facing two cars in front of you, turn right from the black car and move towards straight ahead near the brown door, exit through the first opening on your right and enter the kitchen in front of you, all the way down in the kitchen near the white sink and the faucet, turn left inside a mini kitchen once you are inside the mini kitchen move straight ahead and exit moving straight ahead and enter the living room, once you are here near the dining table and the chairs their  should be a main entrance in front of you, and you are done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "VzqfbhrpDEA",
+      "span_end": 372,
+      "span_start": 359
+    },
+    {
+      "atom": {
+        "atom_id": "51b1cebc1fcf5a649c93ac156bd5988bbb4674164ed9b4f8916a6f4c8dcd2aa4",
+        "family": "ORDINAL",
+        "instruction_span": "first room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "4816e74278df2ec29f07802b9f73cdd8c17c45e85a1632b6a681a50ee2b1e444",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_23358/attempt_001/media/prefix_001.jpg",
+        "event_id": "c8b0b85178e3d765ca3c0cfbfd78fa7e298dcdf9bfb565b6e557b2d684f63da6",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_23358/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 26652,
+            "sha256": "0122a971f07aa82b5076b4bb67b6d8bd94d56d0484f34be0f926610b669738cf"
+          },
+          "current_panorama": {
+            "bytes": 134579,
+            "sha256": "d601a80137e22007e4326df92d5d1ba939375d3033a992802677bd346b18acba"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "23358",
+      "instruction": "You are facing towards the commode right now, turn right and exit the washroom, move forward, enter into the first room which is to your left side, go near the bed, turn back, go near the stair case which is to your left, enter the room which is infront of you, stand infront of the bed, where to the right you can find a mirror, that would be your end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "e9zR4mvMWw7",
+      "span_end": 119,
+      "span_start": 109
+    },
+    {
+      "atom": {
+        "atom_id": "03eb77cc18a5e5bae4fe703cf6076db51909d1dfdbe2c963a35edc30a2bc454f",
+        "family": "ORDINAL",
+        "instruction_span": "another bedroom",
+        "relation": "COUNT_TARGET",
+        "subject": "bedroom",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "8986d262c38a3cb53a0646ffc6b1dcce3c54d4a94b340fc2beccaea208ed6163",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:5LpN3gDmAk7:33745:14",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_33745/base_trace.jsonl",
+        "prefix_end": 14,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "33745",
+      "instruction": "You begin on a balcony looking over a glass railing at a... I guess, mountainous suburb. Turn to your left and enter the bedroom. You're going to go to the open door out of the bedroom on the left. And continue to the left, past the railing, the glass railing, on the left of the stairs, into the room on the left of that railing, to the left. Once you're inside that room you should see a hideous painting in front of you that is black with silver and gold dust, it looks like. Continue to the left of that painting and into another bedroom. Move towards the end of the rug, under the bed, and then out onto the balcony behind what looks like a couch. Yeah, once you're standing behind the couch on the balcony, you are done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "5LpN3gDmAk7",
+      "span_end": 541,
+      "span_start": 526
+    },
+    {
+      "atom": {
+        "atom_id": "4bb044d2a1f2f107770b538eb730f976b0ef7d12db2b5e898af53ecc9e137dda",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "After we reach the stairs",
+        "relation": "PASSED",
+        "subject": "we_reach_the_stairs",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "924645813f7d766b8e054e4f87e90db0bccc115c66559883ef0559483c06ea26",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_16880/attempt_001/media/prefix_012.jpg",
+        "event_id": "6eed6ceb07c86e2c64ae6fe6cda6f1dadd97bdcec7319691d3f614f539dd8e8e",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_16880/attempt_001/storyboards/prefix_012.jpg",
+        "prefix_end": 12,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 219315,
+            "sha256": "36b7b7e5e22872cbd7bf84ac6c3cfb9644ad5ec569ed9790671a4fa96367f8c1"
+          },
+          "current_panorama": {
+            "bytes": 188084,
+            "sha256": "9e6a2994044d4ebec49ba16b1652126c62ec54de97ed03c42df430869ac47ab5"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_COUNT_INCREASE",
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "16880",
+      "instruction": "We are going to start by seeing a large garden area with a pool, we are going to walk and take one step to the left, and now we are going to turn right and see that there is a path that we must follow until we reach a fireplace, so let's go. Now,as you reach the fireplace, we are going to see that there are some stairs in front that will reach a balcony, we are going to walk to the right side of these stairs. After we reach the stairs, we are going to lean a little bit to the right and see some glassy doorways, we are going to walk to the one that's in front of us. As we reach the doorway, we are going to notice that we are inside a gameroom, we are going to walk inside the gameroom, and now we are going to turn left and see that there are three opened doorways, we are going to walk to the mdidle one, then we are going to be inside a bedroom, we are going to turn our heads to the right, and there is a minigame soccer table, we are going to walk in front of it, and then we are going to walk to the shelf that is on our left side, and then we are going to see a black chair and walk to the right side of it, and that will be your destination.",
+      "language": "en-US",
+      "mechanical_reason": "after expression does not identify a stable visual landmark",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "vyrNrziPKCB",
+      "span_end": 438,
+      "span_start": 413
+    },
+    {
+      "atom": {
+        "atom_id": "cef703c859f460fd735c74a71faeec71772c25f03d9c0d8629498c3b2257d478",
+        "family": "ORDINAL",
+        "instruction_span": "another left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "3b16d146a1aec5cc6f1cda41ae7a107ae89cad46382bcc9cc59d9ed4298ac1b0",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:cV4RVeZvu5T:19503:12",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_19503/base_trace.jsonl",
+        "prefix_end": 12,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "19503",
+      "instruction": "We're going to start facing a dresser with the mirror. Turn to the left, and we're going to see a gray door that is open, that leads to the hallway. Take that door, turn slightly left, and go up the four steps in front of you. Go all the way until the end. Take a left once you see the fridge. Take one step towards the other room, that is a laundry room, and make a left. Take one step towards the painting on the wall, and you're going to take another left, that is going to take you to be right on top of the toilet, and that is going to be the destination.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "cV4RVeZvu5T",
+      "span_end": 458,
+      "span_start": 446
+    },
+    {
+      "atom": {
+        "atom_id": "b4abda1d3fa6072e45ba70c027a0baa8f548c4a1a55a2c566874be262b4ac558",
+        "family": "ORDINAL",
+        "instruction_span": "another open door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "400c042791b8dcacdb1859127018ff10f249b21b4628f28ef986788e823c70bb",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:759xd9YjKW5:3655:22",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_3655/base_trace.jsonl",
+        "prefix_end": 22,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "3655",
+      "instruction": "You're standing in a room near the table, turn left and move forward, to the right, there's an open arch, walk into the arch, as you walk into the arch, in front, there's a couch, now walk behind the couch towards the wooden cupboard, from the wooden cupboard to the right, you could see an open entrance, walk into the open entrance, as you walk into the open entrance you could see a staircase to the left and an open door to the right, now go near the right side door, from the door, turn left, there's another open door, walk into the open door and turn right, you could see a dining table, from the dining table turn left, there's another open door which leads to gym room stand near the door, This would be your end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "759xd9YjKW5",
+      "span_end": 523,
+      "span_start": 506
+    },
+    {
+      "atom": {
+        "atom_id": "fc88ed84b46d555f8a965c757638d8f51b8ec611a7be36feee6d0fd0a89cbd8d",
+        "family": "ORDINAL",
+        "instruction_span": "next room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "NEXT"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "e1cb419e4d7da6c7cb48ea7398af3969fbb5e624261fff11f15a9eec6bad02d1",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:PX4nDJXEHrG:41030:21",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_41030/base_trace.jsonl",
+        "prefix_end": 21,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "41030",
+      "instruction": "You're beside table, from there go straight, you'll find brown color table, go straight near the class door, then turn right, you'll enter in to next room, go straight,then turn right, then go straight, you'll find black color chair, go near the glass window, beside black color chair at the corner you'll find your destination.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "PX4nDJXEHrG",
+      "span_end": 154,
+      "span_start": 145
+    },
+    {
+      "atom": {
+        "atom_id": "ab302e640ed4fd148337e6e70f5920baf4b29db8271ae00ded0070987653a7a7",
+        "family": "ORDINAL",
+        "instruction_span": "another room",
+        "relation": "COUNT_TARGET",
+        "subject": "room",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "66c79209ab6d957dbf7a5a0be7ca2777d6566eb318d08b1f8448beffd19e596e",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:VLzqgDo317F:1826:15",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_1826/base_trace.jsonl",
+        "prefix_end": 15,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "1826",
+      "instruction": "Okay, now you are facing towards the pillar. Slightly turn to your left and in front of you there is a staircase, go up the stairs and stand on the third step. Now turn behind and slightly turn to your left, and in front of you there is a narrow carpet, go straight and stand on the narrow carpet. Now turn to your left and in front of you there is an open entrance, go straight through the open entrance passing the chair on the left side, until you reach the entrance of another room. Now slightly turn to your right and in front of you there is an open entrance, go straight and stand near the open entrance. Now you are facing towards three chairs, go straight and stand next to the first chair. Now slightly turn to your left and in front of you there is a mirror behind the chairs, go straight and stand next to the mirror, and that is the end point.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "VLzqgDo317F",
+      "span_end": 485,
+      "span_start": 473
+    },
+    {
+      "atom": {
+        "atom_id": "9bb1aa64717c4490fed396787f8bbe89ce30dab8981a64fde737f3e86e1452a8",
+        "family": "ORDINAL",
+        "instruction_span": "another door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "b55d70b5813629ee9dd8b2c2ddeef735348b6798687d6f110934e6c5a7d9e908",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_59670/attempt_001/media/prefix_012.jpg",
+        "event_id": "2b2a73b8302bcb2ba259646720bb19e97e676346765a5bec280863215f404c0e",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_59670/attempt_001/storyboards/prefix_012.jpg",
+        "prefix_end": 12,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 182060,
+            "sha256": "01ec6ead0af9ea5074d4876de5bcc6a6724032cd497b53199179f7ebce77d3c5"
+          },
+          "current_panorama": {
+            "bytes": 128343,
+            "sha256": "1d6a6c6f6792d9a5c4a8efe88d37a575384cb07a244db2c6ce8f65cc0ebe78b2"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "59670",
+      "instruction": "You begin looking into a corner with a strange little tube that looks too narrow to be a wastebasket, below you. Turn to the left and exit this room through the open door with a swoosh on it. Once you're out of that room you're going to go into the room directly across... The room in the wall directly across. The one on the left. I mean, they're both on the right side, but there's two of them, one of them's on the left... It's another door with a swoosh on it, just- just bear with me here. Once you're inside that door you should see a sink in front of you and to your left a massage bed. Go to the foot of that massage bed, and then continue to go forward between the massage bed and the little tub lookin' thing. Once you are between the tub and the massage bed you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "ur6pFq6Qu1A",
+      "span_end": 443,
+      "span_start": 431
+    },
+    {
+      "atom": {
+        "atom_id": "cfb7d38a90243682428115a907829bd60e7ac0c0765555ca31bfad630a002c6a",
+        "family": "ORDINAL",
+        "instruction_span": "first left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "67aa03f51a76784040e990b331039cfe0357c5e1033f0d42c8083bae9334c359",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:B6ByNegPMKs:9540:11",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_9540/base_trace.jsonl",
+        "prefix_end": 11,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "9540",
+      "instruction": "You're starting in an empty conference room with frosted glass walls. Turn to your left and exit the door into the hallway. Take a left down the hallway and go down until you get to your first left and then turn down that way. This is another hallway with frosted glass walls. There is one open door on your right. You're going to go past it. Walk all the way to the end of the hallway, going through the door in front of you. You can see a large window on the other side with a black frame. When you're in the threshold between the hallway and this last office, just take one more step into this room. This is another empty conference room. There are two black chairs at the end. If you're here, you are done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "B6ByNegPMKs",
+      "span_end": 197,
+      "span_start": 187
+    },
+    {
+      "atom": {
+        "atom_id": "155c84daff51d9f3e15870503739ef29f1d6a47aba4aa3de566a431fefb7e1b1",
+        "family": "ORDINAL",
+        "instruction_span": "another open doorway",
+        "relation": "COUNT_TARGET",
+        "subject": "doorway",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "45a921701e5946aef8613d2a85c677cb941462e8d6ab144f7c2ed0d4b904e7ab",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:S9hNv5qa7GM:35105:1",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_35105/base_trace.jsonl",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "35105",
+      "instruction": "You will start by standing on a doorway. Turn to your right and you will see another open doorway which is on the exact opposite side of where you are. Walk straight towards this doorway. Enter this empty room and stand in the middle. You're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "S9hNv5qa7GM",
+      "span_end": 97,
+      "span_start": 77
+    },
+    {
+      "atom": {
+        "atom_id": "3d7dbf0065590d451408839e454bf79caaefdf79ad0652ca08e23fd190144911",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "Continue past the fridge",
+        "relation": "PASSED",
+        "subject": "fridge",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "724b3759a94aa3c24d508d47a5a9dfc4b5ae8ceb1c80372b859575611f621e5d",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_17197/attempt_001/media/prefix_000.jpg",
+        "event_id": "12380a0394432ee31c0fc79337a354f00175468a9bf10b4dde398a7b8ea61dc9",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_17197/attempt_001/storyboards/prefix_000.jpg",
+        "prefix_end": 0,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 16755,
+            "sha256": "3d6196a681fb5ac52e6aaa388836e63f1eb68e4dfcade8f492a79d8bf1c8a965"
+          },
+          "current_panorama": {
+            "bytes": 201528,
+            "sha256": "35d6263519e2b5f1cc0d23987748e8c86e9eb29958f9412df6ef0930fbb961f0"
+          }
+        },
+        "trigger_types": [
+          "PREFIX_START"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "17197",
+      "instruction": "Facing the hallway so the large painting of a person is on the right, turn 180 degrees and walk down the other hallway toward the Albert Einstein picture. Once you reach the part of the hallway where there's an open doorway on the left, walk into that doorway. It's a bedroom, the bed is facing an outdoor balcony, turn 180 degrees, you'll see a staircase just to the right. Walk up the staircase. Stop at the Jimi Hendrix poster at the top. Turn to the right and walk down the hall, keeping the railing to the stairs on the right and the kitchen on your left. Continue past the fridge, you'll see a kitchen table, continue past it staying to the right of it. Walk in between the fireplace and the pillar on the right. There's two abstract face paintings on the wall directly in front of you. Head towards the one on the right that is next to some DJ equipment. You're done, once you're standing in front of the painting and the DJ equipment to your right.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "5q7pvUzZiYa",
+      "span_end": 585,
+      "span_start": 561
+    },
+    {
+      "atom": {
+        "atom_id": "930a14b07886dc7f4dbf6b84e5f9a5789285845aa489f8c60c7a3f0126fde2bf",
+        "family": "PASSED_LANDMARK",
+        "instruction_span": "continue past the bar stools",
+        "relation": "PASSED",
+        "subject": "bar_stools",
+        "target_value": "true"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "f3034c6b7df96cf04a581c392cedb0486d2019ea26589c18c18c11eccd84f41e",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:17DRP5sb8fy:25772:1",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_25772/base_trace.jsonl",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "25772",
+      "instruction": "You begin in a doorway between a bedroom with a large white bed, and a living space with a semi-circular couch, a large painting, and a television mounted on a transparent wall. Keep stepping forward between the strangely geometric blue rug, and the wall with the paining on it. You should pass by the painting, and continue past the bar stools.Once you are next to the second of three bar stools, look past the bar, to the left of it, sort of, into the recessed hallway. There should be a room in there that you can see a mirror with lights all around it. Step right outside that room. Once you're outside that room, look back the way you came. Step into the area behind the bar, then, turn around,back the way you came here. You should see the place... The bathroom that you just came from, and, to the left of that, an open door, a light switch, and finally a painting, You'll want to step towards the painting and the dining table. Once there step past the bar stools again, until you are... Between the second and third bar stool. You're done.",
+      "language": "en-US",
+      "mechanical_reason": "explicit causal motion-past landmark expression",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "17DRP5sb8fy",
+      "span_end": 344,
+      "span_start": 316
+    },
+    {
+      "atom": {
+        "atom_id": "32877605aebddba95a4f578e0caac60efdb1e31209ae7df71388267591bade4d",
+        "family": "ORDINAL",
+        "instruction_span": "another wooden door",
+        "relation": "COUNT_TARGET",
+        "subject": "door",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "3a4aff91f57e8a0fb986407a514c062603d49c4ab9ac427ddab16eb514e58d89",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:sT4fr6TAbpF:14078:10",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_14078/base_trace.jsonl",
+        "prefix_end": 10,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "14078",
+      "instruction": "You're in a washroom facing towards the closed glass door, now slightly turn to your left, and you can see an open wooden door in front of you, exit the door and then turn to your left, walk a few steps forward and you can another wooden door open in front of you, exit the door and take left, now you can see a glass dining table on to your right side, walk a few steps forward and towards your right, you can see a wooden railing, now you can see a switch board towards your wall, which is on your left side, slightly turn to your right, and you can see an open passage in front of you, exit the passage, and in front of the glass door is your final destination. ",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "sT4fr6TAbpF",
+      "span_end": 242,
+      "span_start": 223
+    },
+    {
+      "atom": {
+        "atom_id": "94edd31a8a19ad6f519e76bd458bb1d80e645fcb60c58e7fc108ab1f20eb72ce",
+        "family": "ORDINAL",
+        "instruction_span": "first left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "1cfd2490c665f900be163577dfda9967da2f211ed6641ef1109b14a6f60ba565",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_23006/attempt_001/media/prefix_009.jpg",
+        "event_id": "76b97c8078438c7d3e88f295d2977075d49db24c363d625f735b32e3807b2738",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_23006/attempt_001/storyboards/prefix_009.jpg",
+        "prefix_end": 9,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 192853,
+            "sha256": "8d704396a0bba8501ad9d4e61748274a10fb433bc768257dcf7b18eac3c23e07"
+          },
+          "current_panorama": {
+            "bytes": 192618,
+            "sha256": "0363867879e0d654ee02e717e8a9a72d5ab4e619ce46e6a3b1d38008df873054"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "23006",
+      "instruction": "Look around, right behind you, you see a fireplace and right in front of you, you see a brown-framed mirror. Veer towards your left down the hallway until the white-and-red flowers in front of you. Veer towards your left, and walk up those brown staircases on your first left. Once you're at the top of the brown staircases, you'll notice you're in a study room now. Take two steps forward out of the study room and into the outside patio. Once you're standing on top of the red mat, veer towards your right until you see the grey fountain on top of the green lawn to your left. Take three steps forward, until you're at a rectangular green lawn with a circular garden at the middle. Veer towards your right, keeping the circular garden with the red-and-white flowers to your left. Now hop over that circular garden until it's right behind you. Once the circular garden is directly behind you with the red-and-white flowers, and you're at the beginning of a long narrow pathway with two lion statues on each side at the end of it, you're done.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "EDJbREhghzL",
+      "span_end": 275,
+      "span_start": 265
+    },
+    {
+      "atom": {
+        "atom_id": "b5b8b2e0f89aa08c9c6c4c90a68cd4623d9b7a13cad692f949920883c85e12df",
+        "family": "ORDINAL",
+        "instruction_span": "another hallway",
+        "relation": "COUNT_TARGET",
+        "subject": "hallway",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "47da2760c295ae2b2e527f2f457a1c4bcf5ad5e636e7b97f6753ea8990367029",
+        "causal_support_kind": "VISUAL_CAUSAL_PREFIX",
+        "current_panorama_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_47532/attempt_001/media/prefix_001.jpg",
+        "event_id": "c4fe364a89087ece6de46efdce258a7e33c98bb844fd708a6292ab8719e00e9c",
+        "observation_path": "artifacts/training/mf3zp_qwen_uad_reference_v2/observations/RxR/ep_47532/attempt_001/storyboards/prefix_001.jpg",
+        "prefix_end": 1,
+        "prefix_start": 0,
+        "source_image_inventory": {
+          "causal_storyboard": {
+            "bytes": 27256,
+            "sha256": "fddd7c54b49f4f0770c1d70e05d9e24af63d5012554a45b3bc3f153ef395e320"
+          },
+          "current_panorama": {
+            "bytes": 106695,
+            "sha256": "44fb4197ac71a7764c2830c8fa12dc55981ad255fdcb67b44424d8df1cf9e27c"
+          }
+        },
+        "trigger_types": [
+          "CANDIDATE_IDENTITY_CHANGE",
+          "CANDIDATE_RANK_CHANGE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "47532",
+      "instruction": "We start off looking down a hallway. Turn around and you will see another hallway with two openings at the end. Take a step towards that wall that separates the openings. Take a step into the opening on the left. Turn and face the opening across the hallway. Take a step through that doorway. Hop over the bed with the white comforter and into the corner. Stop and the corner of the room and you are done. ",
+      "language": "en-US",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "s8pcmisQ38h",
+      "span_end": 81,
+      "span_start": 66
+    },
+    {
+      "atom": {
+        "atom_id": "d91f591606c1c32d450ace9e9c63c170f11f929c7820825dc562376a603ad106",
+        "family": "ORDINAL",
+        "instruction_span": "another right turn",
+        "relation": "COUNT_TARGET",
+        "subject": "right_turn",
+        "target_value": "ANOTHER"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "a0608768993d07916c2a51b770acf4b9c719d088dd2dc335a38727b16e15dab9",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:aayBHfsNo7d:43876:13",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_43876/base_trace.jsonl",
+        "prefix_end": 13,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "43876",
+      "instruction": "Right now you are facing towards a class railing. Turn around and go forward in the narrow path. Take a slight right turn and go towards the bed. Take another right turn and go forward towards the lamp. Take a right turn and enter the closet, at this point you have reached your destination.",
+      "language": "en-IN",
+      "mechanical_reason": "ordinal bound to a navigational object and local motion cue",
+      "mechanical_review_status": "VALID_PROGRESS_ATOM",
+      "scene_id": "aayBHfsNo7d",
+      "span_end": 169,
+      "span_start": 151
+    },
+    {
+      "atom": {
+        "atom_id": "67807832183086f232cb3724062898eddb4caa9b86640e7ea0bc2f945988dd46",
+        "family": "ORDINAL",
+        "instruction_span": "first set of left",
+        "relation": "COUNT_TARGET",
+        "subject": "left",
+        "target_value": "1"
+      },
+      "causal_support": {
+        "causal_prefix_sha256": "d25801278dce169e99fe3530e012d30182fff20c6cd1844b4f517e982d85d897",
+        "causal_support_kind": "SCALAR_CANDIDATE_TRACE",
+        "current_panorama_path": null,
+        "event_id": "RxR:E9uDoFAP3SH:5401:20",
+        "observation_path": "artifacts/phase1/mf3b_uad_online/dataset_v1/runs/ep_5401/base_trace.jsonl",
+        "prefix_end": 20,
+        "prefix_start": 0,
+        "source_image_inventory": {},
+        "trigger_types": [
+          "EXACT_CAUSAL_DECISION_TRACE"
+        ]
+      },
+      "dataset": "RxR",
+      "episode_id": "5401",
+      "instruction": "You are standing in a narrow alcove and you will see light to your right and walk toward the middle taking a direct left to the first set of left doors. These doors lead into a formal dinning room table with several chairs around it. Before you get to the dinning table take a left.  Here you have the option to go left or right, go through the left door that is smaller, not the larger door on the right. You want to move forward into the arched hallways, keep moving forward until you reach the room with the flowery carpet and the staircase on your left. Continue past the staircase, then take a left. Then you want to go to the first room on the right. This room has a wooden arched doorway and a vase on your right as you walk in. You will see on your left at the far end what looks like a throne.  Walk almost to the throne and turn left.  From here you will see a wooden path to the end of the room there is a window with red long drapes. You want to walk almost all the way to the window and this is your destination.  You should see a few chairs outside the window.",
+      "language": "en-US",
+      "mechanical_reason": "ordinal may be a static descriptor or lacks a local sequential-motion cue",
+      "mechanical_review_status": "AMBIGUOUS_PROGRESS_ATOM",
+      "scene_id": "E9uDoFAP3SH",
+      "span_end": 145,
+      "span_start": 128
+    }
+  ],
+  "outcome_payload_read": false,
+  "reviewed_count": 82,
+  "revision": "mf3zv_minimal_progress_support_v1",
+  "scene_count": 41,
+  "schema_version": "revealnav-mf3zv-review-selection/1",
+  "selection_forbidden_inputs": [
+    "success",
+    "reward",
+    "SPL",
+    "nDTW",
+    "SDTW",
+    "utility",
+    "delta_utility",
+    "model_failure"
+  ],
+  "selection_inputs": [
+    "dataset",
+    "episode_id",
+    "raw_scene_id",
+    "instruction_text",
+    "causal_observation_availability"
+  ],
+  "selection_rule": "mechanical lexical candidates with pre-existing strictly causal observation support; deterministic scene round-robin; maximum 50 per domain",
+  "status": "OUTCOME_BLIND_REVIEW_SELECTION_COMPLETE"
+}
