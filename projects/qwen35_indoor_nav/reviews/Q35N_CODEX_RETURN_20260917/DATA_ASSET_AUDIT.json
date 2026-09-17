@@ -1,0 +1,471 @@
+{
+  "status": "DATA_ASSET_GAP",
+  "candidate_family": "WF_SHORT_REVISIT_V3_004",
+  "export_path": "data_pipeline/mechanism_runtime_v1/witness_first_v1/short_revisit_v3/run_v1/bundles/WF_SHORT_REVISIT_V3_004/export_v4",
+  "manifest_sha256": "7df77c63813665d3319256e7c7807b579723eac6cd66d189b1bfb3e1ec7eb271",
+  "measured_scope": "CPU existing export/label/state/content validation, no new physical replay",
+  "source_recorded_physical_certified": true,
+  "source_training_admission": false,
+  "task_revision": "observable_see2_then_stop.v4",
+  "task_programs": {
+    "task_A": {
+      "anchor": "anchor_A",
+      "terminal": "terminal",
+      "instruction": "First see the bed in the bedroom in two consecutive observations, then see the tv in the living room in two consecutive observations, and stop immediately."
+    },
+    "task_B": {
+      "anchor": "anchor_B",
+      "terminal": "terminal",
+      "instruction": "First see the chair in the living room in two consecutive observations, then see the tv in the living room in two consecutive observations, and stop immediately."
+    }
+  },
+  "control_semantics": "completed_subgoal_revisit_placement_not_event_free_detour",
+  "physical_house": "17DRP5sb8fy",
+  "histories": 3,
+  "continuations": 3,
+  "tasks": 2,
+  "canonical_traces": 9,
+  "recorded_certificate_replays": 27,
+  "recorded_certificate_evaluations": 54,
+  "recorded_entire_run_counts": {
+    "traces": 42,
+    "actual_actions": 11352,
+    "collisions": 0,
+    "complete_traces": 42
+  },
+  "labels_recomputed": {
+    "labels_recomputed": 18,
+    "ce_owners_verified": 492,
+    "outcomes": {
+      "pass": 12,
+      "fail": 6,
+      "unknown": 0
+    }
+  },
+  "content_arrays_sha_and_raw_bytes_verified": 424,
+  "current_short_window_variants": 1,
+  "policy_payload_keys": [
+    "executed_actions",
+    "instruction",
+    "memory_reset",
+    "rgb",
+    "task_type"
+  ],
+  "decoded_rgb_sizes": [
+    150528,
+    150528
+  ],
+  "prefix_observations": 249,
+  "history_event_distances": {
+    "H_A/task_A": {
+      "last_anchor_step": 237,
+      "steps_since_last_anchor": 11,
+      "full_prefix_observations": 249,
+      "evidence_rgb_sha256": [
+        "4144f10a7d53f552a1dd62d8984422dec48454bdf93e0fb77ce366ae0b7a6563",
+        "9fc09f2124cb3cc73c946bd3f6d197da29a60ef5a90faee98758f7a2704ebc43"
+      ],
+      "state_at_cutoff": {
+        "decision_step": 248,
+        "state": "WAIT_TERMINAL_WITNESS",
+        "truth_known": true,
+        "loss_mask": 1,
+        "causal_event_cutoff_step": 248
+      }
+    },
+    "H_A/task_B": {
+      "last_anchor_step": null,
+      "steps_since_last_anchor": null,
+      "full_prefix_observations": 249,
+      "evidence_rgb_sha256": [],
+      "state_at_cutoff": {
+        "decision_step": 248,
+        "state": "WAIT_ANCHOR",
+        "truth_known": true,
+        "loss_mask": 1,
+        "causal_event_cutoff_step": 248
+      }
+    },
+    "H_B/task_A": {
+      "last_anchor_step": null,
+      "steps_since_last_anchor": null,
+      "full_prefix_observations": 249,
+      "evidence_rgb_sha256": [],
+      "state_at_cutoff": {
+        "decision_step": 248,
+        "state": "WAIT_ANCHOR",
+        "truth_known": true,
+        "loss_mask": 1,
+        "causal_event_cutoff_step": 248
+      }
+    },
+    "H_B/task_B": {
+      "last_anchor_step": 71,
+      "steps_since_last_anchor": 177,
+      "full_prefix_observations": 249,
+      "evidence_rgb_sha256": [
+        "8f8975bde7b1ce62ad90233225e24f6c11a004c64613c449f8437a9573b1e21f",
+        "c2d6f6ebd8600ec9bfe919e2707ccd2b1cfb70521bfb494a875d7e381f5ec6fb"
+      ],
+      "state_at_cutoff": {
+        "decision_step": 248,
+        "state": "WAIT_TERMINAL_WITNESS",
+        "truth_known": true,
+        "loss_mask": 1,
+        "causal_event_cutoff_step": 248
+      }
+    },
+    "H_A_I/task_A": {
+      "last_anchor_step": 229,
+      "steps_since_last_anchor": 19,
+      "full_prefix_observations": 249,
+      "evidence_rgb_sha256": [
+        "4144f10a7d53f552a1dd62d8984422dec48454bdf93e0fb77ce366ae0b7a6563",
+        "9fc09f2124cb3cc73c946bd3f6d197da29a60ef5a90faee98758f7a2704ebc43"
+      ],
+      "state_at_cutoff": {
+        "decision_step": 248,
+        "state": "WAIT_TERMINAL_WITNESS",
+        "truth_known": true,
+        "loss_mask": 1,
+        "causal_event_cutoff_step": 248
+      }
+    },
+    "H_A_I/task_B": {
+      "last_anchor_step": null,
+      "steps_since_last_anchor": null,
+      "full_prefix_observations": 249,
+      "evidence_rgb_sha256": [],
+      "state_at_cutoff": {
+        "decision_step": 248,
+        "state": "WAIT_ANCHOR",
+        "truth_known": true,
+        "loss_mask": 1,
+        "causal_event_cutoff_step": 248
+      }
+    }
+  },
+  "matrix": [
+    {
+      "history_id": "H_A",
+      "task_id": "task_A",
+      "continuation_id": "C0",
+      "y": 1
+    },
+    {
+      "history_id": "H_A",
+      "task_id": "task_A",
+      "continuation_id": "C_A",
+      "y": 1
+    },
+    {
+      "history_id": "H_A",
+      "task_id": "task_A",
+      "continuation_id": "C_B",
+      "y": 1
+    },
+    {
+      "history_id": "H_A",
+      "task_id": "task_B",
+      "continuation_id": "C0",
+      "y": 0
+    },
+    {
+      "history_id": "H_A",
+      "task_id": "task_B",
+      "continuation_id": "C_A",
+      "y": 0
+    },
+    {
+      "history_id": "H_A",
+      "task_id": "task_B",
+      "continuation_id": "C_B",
+      "y": 1
+    },
+    {
+      "history_id": "H_B",
+      "task_id": "task_A",
+      "continuation_id": "C0",
+      "y": 0
+    },
+    {
+      "history_id": "H_B",
+      "task_id": "task_A",
+      "continuation_id": "C_A",
+      "y": 1
+    },
+    {
+      "history_id": "H_B",
+      "task_id": "task_A",
+      "continuation_id": "C_B",
+      "y": 0
+    },
+    {
+      "history_id": "H_B",
+      "task_id": "task_B",
+      "continuation_id": "C0",
+      "y": 1
+    },
+    {
+      "history_id": "H_B",
+      "task_id": "task_B",
+      "continuation_id": "C_A",
+      "y": 1
+    },
+    {
+      "history_id": "H_B",
+      "task_id": "task_B",
+      "continuation_id": "C_B",
+      "y": 1
+    },
+    {
+      "history_id": "H_A_I",
+      "task_id": "task_A",
+      "continuation_id": "C0",
+      "y": 1
+    },
+    {
+      "history_id": "H_A_I",
+      "task_id": "task_A",
+      "continuation_id": "C_A",
+      "y": 1
+    },
+    {
+      "history_id": "H_A_I",
+      "task_id": "task_A",
+      "continuation_id": "C_B",
+      "y": 1
+    },
+    {
+      "history_id": "H_A_I",
+      "task_id": "task_B",
+      "continuation_id": "C0",
+      "y": 0
+    },
+    {
+      "history_id": "H_A_I",
+      "task_id": "task_B",
+      "continuation_id": "C_A",
+      "y": 0
+    },
+    {
+      "history_id": "H_A_I",
+      "task_id": "task_B",
+      "continuation_id": "C_B",
+      "y": 1
+    }
+  ],
+  "normalization_events": [
+    {
+      "history": "H_A",
+      "continuation": "C0",
+      "step": 240,
+      "raw_rgb_sha": "06519c42b7d83e0e0a4b082027b0a707a402e98e52cffac14969975a03aebfeb",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "rgb": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "semantic": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_A",
+      "continuation": "C_A",
+      "step": 240,
+      "raw_rgb_sha": "06519c42b7d83e0e0a4b082027b0a707a402e98e52cffac14969975a03aebfeb",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "rgb": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "semantic": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_A",
+      "continuation": "C_B",
+      "step": 240,
+      "raw_rgb_sha": "06519c42b7d83e0e0a4b082027b0a707a402e98e52cffac14969975a03aebfeb",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "rgb": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "semantic": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_B",
+      "continuation": "C0",
+      "step": 240,
+      "raw_rgb_sha": "4f54996ee32086c3b9b7e581e7da5dd195b16869861aa592f573ea2312664bc7",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ],
+        "rgb": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ],
+        "semantic": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_B",
+      "continuation": "C_A",
+      "step": 240,
+      "raw_rgb_sha": "4f54996ee32086c3b9b7e581e7da5dd195b16869861aa592f573ea2312664bc7",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ],
+        "rgb": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ],
+        "semantic": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_B",
+      "continuation": "C_B",
+      "step": 240,
+      "raw_rgb_sha": "4f54996ee32086c3b9b7e581e7da5dd195b16869861aa592f573ea2312664bc7",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ],
+        "rgb": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ],
+        "semantic": [
+          3.5762786865234375e-07,
+          1.192092895507811e-07
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_A_I",
+      "continuation": "C0",
+      "step": 240,
+      "raw_rgb_sha": "06519c42b7d83e0e0a4b082027b0a707a402e98e52cffac14969975a03aebfeb",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "rgb": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "semantic": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_A_I",
+      "continuation": "C_A",
+      "step": 240,
+      "raw_rgb_sha": "06519c42b7d83e0e0a4b082027b0a707a402e98e52cffac14969975a03aebfeb",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "rgb": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "semantic": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    },
+    {
+      "history": "H_A_I",
+      "continuation": "C_B",
+      "step": 240,
+      "raw_rgb_sha": "06519c42b7d83e0e0a4b082027b0a707a402e98e52cffac14969975a03aebfeb",
+      "canonical_rgb_sha": "a195972f880b861d423eda4f431c9dfaacf4a255b0b51538ff72f118524fc971",
+      "corrections": {
+        "agent": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "rgb": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ],
+        "semantic": [
+          9.5367431640625e-07,
+          5.9604644775390605e-08
+        ]
+      },
+      "protocol": "bounded_numerical_join.v1"
+    }
+  ],
+  "new_physical_trajectories": 0,
+  "new_labels_generated": 0,
+  "gaps": [
+    "SEE2 visual witness is not geodesic room visit",
+    "Completed-subgoal revisit control is not an event-free irrelevant spatial detour",
+    "No history-irrelevant goal-only task in the chosen two-task family",
+    "This one inspected house is already exposed; no independently certified new house/language split in this audit",
+    "Numerical normalization is recorded; raw/canonical boundary must be evaluated under any new shared-state contract",
+    "248-step prefix is not evidence that differentiable memory unroll fits the future budget",
+    "No qualified research backbone, memory implementation or measured cross-step gradients",
+    "Typed query indices depend on per-compiler vocabulary; cannot train directly on unbound local category IDs",
+    "Global family grouping and all-arm shared action-pool manifest are not prepared for this research protocol"
+  ]
+}

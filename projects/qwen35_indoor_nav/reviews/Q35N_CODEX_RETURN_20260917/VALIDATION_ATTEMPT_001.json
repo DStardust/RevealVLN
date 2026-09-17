@@ -1,0 +1,14 @@
+{
+  "status": "FAILED_SOURCE_COMMIT_PROVENANCE_CHECK",
+  "stage": "Delivery validation, not the 14 CPU model-interface contract tests",
+  "corrections": [
+    {
+      "claim_id": "E04b",
+      "source_path": "closed_loop_bench/ordinary_history_pair_eval_r1/COMPARISON_RESULT.json",
+      "incorrect_source_commit": "9d22783e646ef86232ba3a3a59d7bb9ce8a8c0a7",
+      "reason": "Local recorded result exists but is absent from the claimed Git commit"
+    }
+  ],
+  "fix": "Set source_commit null and explicitly label the existing local historical source; do not alter source results",
+  "formal_starts": 0
+}

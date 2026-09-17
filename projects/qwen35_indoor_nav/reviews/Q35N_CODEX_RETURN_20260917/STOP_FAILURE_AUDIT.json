@@ -1,0 +1,1015 @@
+{
+  "scope": "Read-only historical best4k INTERNAL_DEV100; not new A/B",
+  "episodes": 100,
+  "category_counts": {
+    "entered_goal_budget_no_legal_stop": 8,
+    "left_goal_then_stopped_far": 18,
+    "far_stop_never_entered": 37,
+    "budget_never_entered": 16,
+    "success": 21
+  },
+  "failed_entered_with_repetition": 6,
+  "stop_margin_definition": "native STOP logit minus max of three motion logits at pre-action geodesic distance <3m; audit-only distance",
+  "rows": [
+    {
+      "index": 0,
+      "episode_id": 3965,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 63,
+      "in_goal_before_action_decisions": 42,
+      "in_goal_stop_margin_median": -4.73793625831604,
+      "terminal_stop_margin": -8.332943201065063
+    },
+    {
+      "index": 1,
+      "episode_id": 7979,
+      "category": "left_goal_then_stopped_far",
+      "steps": 352,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 35,
+      "in_goal_stop_margin_median": -3.2800960540771484,
+      "terminal_stop_margin": 0.08070087432861328
+    },
+    {
+      "index": 2,
+      "episode_id": 5093,
+      "category": "left_goal_then_stopped_far",
+      "steps": 87,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 20,
+      "in_goal_stop_margin_median": -3.483953356742859,
+      "terminal_stop_margin": 0.22059184312820435
+    },
+    {
+      "index": 3,
+      "episode_id": 6638,
+      "category": "far_stop_never_entered",
+      "steps": 65,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.10642385482788086
+    },
+    {
+      "index": 4,
+      "episode_id": 2156,
+      "category": "success",
+      "steps": 62,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 13,
+      "in_goal_stop_margin_median": -2.477726995944977,
+      "terminal_stop_margin": 0.4469497799873352
+    },
+    {
+      "index": 5,
+      "episode_id": 1263,
+      "category": "far_stop_never_entered",
+      "steps": 135,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 1.3638883829116821
+    },
+    {
+      "index": 6,
+      "episode_id": 704,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 410,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -2.9742276668548584
+    },
+    {
+      "index": 7,
+      "episode_id": 6584,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 467,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -3.741174101829529
+    },
+    {
+      "index": 8,
+      "episode_id": 7994,
+      "category": "left_goal_then_stopped_far",
+      "steps": 125,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -2.9883617758750916,
+      "terminal_stop_margin": 0.6585869193077087
+    },
+    {
+      "index": 9,
+      "episode_id": 10634,
+      "category": "success",
+      "steps": 59,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 21,
+      "in_goal_stop_margin_median": -4.491645336151123,
+      "terminal_stop_margin": 0.3017808198928833
+    },
+    {
+      "index": 10,
+      "episode_id": 7268,
+      "category": "far_stop_never_entered",
+      "steps": 22,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.4798184633255005
+    },
+    {
+      "index": 11,
+      "episode_id": 196,
+      "category": "left_goal_then_stopped_far",
+      "steps": 101,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 27,
+      "in_goal_stop_margin_median": -4.853826284408569,
+      "terminal_stop_margin": 0.03124198317527771
+    },
+    {
+      "index": 12,
+      "episode_id": 3425,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 411,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -2.340663731098175
+    },
+    {
+      "index": 13,
+      "episode_id": 37,
+      "category": "far_stop_never_entered",
+      "steps": 12,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.9981093928217888
+    },
+    {
+      "index": 14,
+      "episode_id": 656,
+      "category": "success",
+      "steps": 62,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 21,
+      "in_goal_stop_margin_median": -2.949607253074646,
+      "terminal_stop_margin": 0.5532301217317581
+    },
+    {
+      "index": 15,
+      "episode_id": 4451,
+      "category": "success",
+      "steps": 54,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 14,
+      "in_goal_stop_margin_median": -4.555405348539352,
+      "terminal_stop_margin": 0.012987971305847168
+    },
+    {
+      "index": 16,
+      "episode_id": 2423,
+      "category": "far_stop_never_entered",
+      "steps": 117,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.5496557950973511
+    },
+    {
+      "index": 17,
+      "episode_id": 2636,
+      "category": "far_stop_never_entered",
+      "steps": 101,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.7559372708201408
+    },
+    {
+      "index": 18,
+      "episode_id": 7613,
+      "category": "far_stop_never_entered",
+      "steps": 62,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.5677523165941238
+    },
+    {
+      "index": 19,
+      "episode_id": 7790,
+      "category": "far_stop_never_entered",
+      "steps": 31,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.35070718824863434
+    },
+    {
+      "index": 20,
+      "episode_id": 2399,
+      "category": "left_goal_then_stopped_far",
+      "steps": 100,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -3.217704653739929,
+      "terminal_stop_margin": 0.20637431740760803
+    },
+    {
+      "index": 21,
+      "episode_id": 8294,
+      "category": "far_stop_never_entered",
+      "steps": 33,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.14522981643676758
+    },
+    {
+      "index": 22,
+      "episode_id": 3782,
+      "category": "far_stop_never_entered",
+      "steps": 131,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 1.9556545913219452
+    },
+    {
+      "index": 23,
+      "episode_id": 7706,
+      "category": "success",
+      "steps": 110,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 13,
+      "in_goal_stop_margin_median": -3.9614564776420593,
+      "terminal_stop_margin": 0.07050812244415283
+    },
+    {
+      "index": 24,
+      "episode_id": 3785,
+      "category": "far_stop_never_entered",
+      "steps": 45,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.2626778334379196
+    },
+    {
+      "index": 25,
+      "episode_id": 1355,
+      "category": "left_goal_then_stopped_far",
+      "steps": 63,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 24,
+      "in_goal_stop_margin_median": -2.241217851638794,
+      "terminal_stop_margin": 0.5037646889686584
+    },
+    {
+      "index": 26,
+      "episode_id": 4766,
+      "category": "success",
+      "steps": 61,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 27,
+      "in_goal_stop_margin_median": -2.003060817718506,
+      "terminal_stop_margin": 0.31686511635780334
+    },
+    {
+      "index": 27,
+      "episode_id": 8981,
+      "category": "success",
+      "steps": 63,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 33,
+      "in_goal_stop_margin_median": -2.589142858982086,
+      "terminal_stop_margin": 0.4619905948638916
+    },
+    {
+      "index": 28,
+      "episode_id": 1640,
+      "category": "success",
+      "steps": 62,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 32,
+      "in_goal_stop_margin_median": -7.520771026611328,
+      "terminal_stop_margin": 1.3475514650344849
+    },
+    {
+      "index": 29,
+      "episode_id": 7160,
+      "category": "far_stop_never_entered",
+      "steps": 195,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.40149660408496857
+    },
+    {
+      "index": 30,
+      "episode_id": 1859,
+      "category": "far_stop_never_entered",
+      "steps": 157,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.05023857019841671
+    },
+    {
+      "index": 31,
+      "episode_id": 3005,
+      "category": "far_stop_never_entered",
+      "steps": 330,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.13380646705627441
+    },
+    {
+      "index": 32,
+      "episode_id": 6698,
+      "category": "far_stop_never_entered",
+      "steps": 63,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.590521052479744
+    },
+    {
+      "index": 33,
+      "episode_id": 4919,
+      "category": "left_goal_then_stopped_far",
+      "steps": 223,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 21,
+      "in_goal_stop_margin_median": -3.259293794631958,
+      "terminal_stop_margin": 0.2956310510635376
+    },
+    {
+      "index": 34,
+      "episode_id": 7697,
+      "category": "left_goal_then_stopped_far",
+      "steps": 210,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 16,
+      "in_goal_stop_margin_median": -1.9260884821414948,
+      "terminal_stop_margin": 0.020079612731933594
+    },
+    {
+      "index": 35,
+      "episode_id": 4292,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 342,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -2.43743896484375
+    },
+    {
+      "index": 36,
+      "episode_id": 4208,
+      "category": "far_stop_never_entered",
+      "steps": 36,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.26864422857761383
+    },
+    {
+      "index": 37,
+      "episode_id": 9743,
+      "category": "left_goal_then_stopped_far",
+      "steps": 133,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 24,
+      "in_goal_stop_margin_median": -3.6671628952026367,
+      "terminal_stop_margin": 0.36593782901763916
+    },
+    {
+      "index": 38,
+      "episode_id": 8807,
+      "category": "left_goal_then_stopped_far",
+      "steps": 163,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -4.163931369781494,
+      "terminal_stop_margin": 0.21772225201129913
+    },
+    {
+      "index": 39,
+      "episode_id": 7331,
+      "category": "far_stop_never_entered",
+      "steps": 11,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.16571331024169922
+    },
+    {
+      "index": 40,
+      "episode_id": 4487,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 457,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -4.1681435108184814
+    },
+    {
+      "index": 41,
+      "episode_id": 8108,
+      "category": "success",
+      "steps": 29,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 5,
+      "in_goal_stop_margin_median": -1.203975796699524,
+      "terminal_stop_margin": 0.525335431098938
+    },
+    {
+      "index": 42,
+      "episode_id": 3392,
+      "category": "left_goal_then_stopped_far",
+      "steps": 280,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 25,
+      "in_goal_stop_margin_median": -3.2047698497772217,
+      "terminal_stop_margin": 0.16249245405197144
+    },
+    {
+      "index": 43,
+      "episode_id": 6485,
+      "category": "far_stop_never_entered",
+      "steps": 133,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.5306380391120911
+    },
+    {
+      "index": 44,
+      "episode_id": 2531,
+      "category": "success",
+      "steps": 58,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 16,
+      "in_goal_stop_margin_median": -1.2937693893909454,
+      "terminal_stop_margin": 0.2197367399930954
+    },
+    {
+      "index": 45,
+      "episode_id": 1059,
+      "category": "left_goal_then_stopped_far",
+      "steps": 291,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 22,
+      "in_goal_stop_margin_median": -3.457146406173706,
+      "terminal_stop_margin": 0.5523360520601273
+    },
+    {
+      "index": 46,
+      "episode_id": 9941,
+      "category": "success",
+      "steps": 57,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 14,
+      "in_goal_stop_margin_median": -1.8241636753082275,
+      "terminal_stop_margin": 0.22453605383634567
+    },
+    {
+      "index": 47,
+      "episode_id": 1406,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 464,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -2.9395259618759155
+    },
+    {
+      "index": 48,
+      "episode_id": 4694,
+      "category": "far_stop_never_entered",
+      "steps": 58,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.0861518383026123
+    },
+    {
+      "index": 49,
+      "episode_id": 8657,
+      "category": "success",
+      "steps": 64,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 37,
+      "in_goal_stop_margin_median": -2.676552414894104,
+      "terminal_stop_margin": 0.09246677160263062
+    },
+    {
+      "index": 50,
+      "episode_id": 10094,
+      "category": "far_stop_never_entered",
+      "steps": 95,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.21263949573040009
+    },
+    {
+      "index": 51,
+      "episode_id": 4568,
+      "category": "far_stop_never_entered",
+      "steps": 175,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.7109703421592712
+    },
+    {
+      "index": 52,
+      "episode_id": 7727,
+      "category": "far_stop_never_entered",
+      "steps": 59,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.19640058279037476
+    },
+    {
+      "index": 53,
+      "episode_id": 635,
+      "category": "far_stop_never_entered",
+      "steps": 117,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.04497388005256653
+    },
+    {
+      "index": 54,
+      "episode_id": 10505,
+      "category": "far_stop_never_entered",
+      "steps": 198,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.1306818723678589
+    },
+    {
+      "index": 55,
+      "episode_id": 1550,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 281,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -4.670996308326721,
+      "terminal_stop_margin": -9.905159950256348
+    },
+    {
+      "index": 56,
+      "episode_id": 9845,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 431,
+      "in_goal_stop_margin_median": -4.787812829017639,
+      "terminal_stop_margin": -4.163332223892212
+    },
+    {
+      "index": 57,
+      "episode_id": 6965,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 486,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -2.001921236515045
+    },
+    {
+      "index": 58,
+      "episode_id": 9833,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 78,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -11.596591472625732
+    },
+    {
+      "index": 59,
+      "episode_id": 109,
+      "category": "left_goal_then_stopped_far",
+      "steps": 163,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -3.7710959911346436,
+      "terminal_stop_margin": 0.2324233055114746
+    },
+    {
+      "index": 60,
+      "episode_id": 4376,
+      "category": "far_stop_never_entered",
+      "steps": 184,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.40588241815567017
+    },
+    {
+      "index": 61,
+      "episode_id": 2561,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 24,
+      "in_goal_stop_margin_median": -2.013682186603546,
+      "terminal_stop_margin": -2.4076353311538696
+    },
+    {
+      "index": 62,
+      "episode_id": 6194,
+      "category": "far_stop_never_entered",
+      "steps": 26,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.1418737769126892
+    },
+    {
+      "index": 63,
+      "episode_id": 5246,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 488,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -4.233486294746399
+    },
+    {
+      "index": 64,
+      "episode_id": 677,
+      "category": "left_goal_then_stopped_far",
+      "steps": 91,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 14,
+      "in_goal_stop_margin_median": -2.0782033503055573,
+      "terminal_stop_margin": 0.34183094650506973
+    },
+    {
+      "index": 65,
+      "episode_id": 7361,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 478,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -4.01483154296875
+    },
+    {
+      "index": 66,
+      "episode_id": 4994,
+      "category": "left_goal_then_stopped_far",
+      "steps": 267,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 30,
+      "in_goal_stop_margin_median": -1.9926113933324814,
+      "terminal_stop_margin": 0.07234340906143188
+    },
+    {
+      "index": 67,
+      "episode_id": 6011,
+      "category": "left_goal_then_stopped_far",
+      "steps": 88,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -3.270033299922943,
+      "terminal_stop_margin": 0.06678265333175659
+    },
+    {
+      "index": 68,
+      "episode_id": 2969,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 478,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -3.74990975856781
+    },
+    {
+      "index": 69,
+      "episode_id": 3863,
+      "category": "far_stop_never_entered",
+      "steps": 10,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.7189077083021402
+    },
+    {
+      "index": 70,
+      "episode_id": 1763,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 442,
+      "in_goal_before_action_decisions": 479,
+      "in_goal_stop_margin_median": -3.7270928621292114,
+      "terminal_stop_margin": -2.1606138348579407
+    },
+    {
+      "index": 71,
+      "episode_id": 9449,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 453,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -3.3895567655563354
+    },
+    {
+      "index": 72,
+      "episode_id": 8927,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 277,
+      "in_goal_before_action_decisions": 160,
+      "in_goal_stop_margin_median": -4.3798412680625916,
+      "terminal_stop_margin": -9.441166877746582
+    },
+    {
+      "index": 73,
+      "episode_id": 2213,
+      "category": "far_stop_never_entered",
+      "steps": 28,
+      "repeated_decisions": 1,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.4092821478843689
+    },
+    {
+      "index": 74,
+      "episode_id": 10529,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 332,
+      "in_goal_before_action_decisions": 26,
+      "in_goal_stop_margin_median": -4.525114953517914,
+      "terminal_stop_margin": -11.606276035308838
+    },
+    {
+      "index": 75,
+      "episode_id": 4397,
+      "category": "far_stop_never_entered",
+      "steps": 44,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.06496986746788025
+    },
+    {
+      "index": 76,
+      "episode_id": 7580,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 476,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -3.1991316080093384
+    },
+    {
+      "index": 77,
+      "episode_id": 7121,
+      "category": "far_stop_never_entered",
+      "steps": 50,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.1178131103515625
+    },
+    {
+      "index": 78,
+      "episode_id": 10322,
+      "category": "success",
+      "steps": 47,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 16,
+      "in_goal_stop_margin_median": -2.2306649684906006,
+      "terminal_stop_margin": 0.7203299403190613
+    },
+    {
+      "index": 79,
+      "episode_id": 2105,
+      "category": "far_stop_never_entered",
+      "steps": 16,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.31354692578315735
+    },
+    {
+      "index": 80,
+      "episode_id": 6287,
+      "category": "success",
+      "steps": 53,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 21,
+      "in_goal_stop_margin_median": -5.774854898452759,
+      "terminal_stop_margin": 0.20857316255569458
+    },
+    {
+      "index": 81,
+      "episode_id": 942,
+      "category": "success",
+      "steps": 37,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 16,
+      "in_goal_stop_margin_median": -2.278553158044815,
+      "terminal_stop_margin": 0.8624852150678635
+    },
+    {
+      "index": 82,
+      "episode_id": 3377,
+      "category": "success",
+      "steps": 60,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 15,
+      "in_goal_stop_margin_median": -2.2339040637016296,
+      "terminal_stop_margin": 0.5271960571408272
+    },
+    {
+      "index": 83,
+      "episode_id": 921,
+      "category": "entered_goal_budget_no_legal_stop",
+      "steps": 500,
+      "repeated_decisions": 390,
+      "in_goal_before_action_decisions": 33,
+      "in_goal_stop_margin_median": -2.916462779045105,
+      "terminal_stop_margin": -3.9614953994750977
+    },
+    {
+      "index": 84,
+      "episode_id": 333,
+      "category": "success",
+      "steps": 44,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 23,
+      "in_goal_stop_margin_median": -3.511690855026245,
+      "terminal_stop_margin": 0.19382013101130724
+    },
+    {
+      "index": 85,
+      "episode_id": 6704,
+      "category": "far_stop_never_entered",
+      "steps": 45,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.4977726638317108
+    },
+    {
+      "index": 86,
+      "episode_id": 8606,
+      "category": "far_stop_never_entered",
+      "steps": 50,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.2544047236442566
+    },
+    {
+      "index": 87,
+      "episode_id": 2678,
+      "category": "far_stop_never_entered",
+      "steps": 23,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.12074150890111923
+    },
+    {
+      "index": 88,
+      "episode_id": 2510,
+      "category": "left_goal_then_stopped_far",
+      "steps": 46,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 22,
+      "in_goal_stop_margin_median": -2.6268505454063416,
+      "terminal_stop_margin": 0.07120537757873535
+    },
+    {
+      "index": 89,
+      "episode_id": 3908,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 387,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -2.078788846731186
+    },
+    {
+      "index": 90,
+      "episode_id": 7781,
+      "category": "success",
+      "steps": 46,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 29,
+      "in_goal_stop_margin_median": -4.802987456321716,
+      "terminal_stop_margin": 0.03817504644393921
+    },
+    {
+      "index": 91,
+      "episode_id": 7217,
+      "category": "far_stop_never_entered",
+      "steps": 88,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.46189701557159424
+    },
+    {
+      "index": 92,
+      "episode_id": 5627,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 477,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -3.9176859855651855
+    },
+    {
+      "index": 93,
+      "episode_id": 1838,
+      "category": "success",
+      "steps": 62,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 18,
+      "in_goal_stop_margin_median": -2.6103301644325256,
+      "terminal_stop_margin": 0.6969549059867859
+    },
+    {
+      "index": 94,
+      "episode_id": 4088,
+      "category": "budget_never_entered",
+      "steps": 500,
+      "repeated_decisions": 418,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": -7.101051330566406
+    },
+    {
+      "index": 95,
+      "episode_id": 981,
+      "category": "far_stop_never_entered",
+      "steps": 22,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.19116798043251038
+    },
+    {
+      "index": 96,
+      "episode_id": 311,
+      "category": "success",
+      "steps": 82,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 33,
+      "in_goal_stop_margin_median": -1.769888699054718,
+      "terminal_stop_margin": 0.11586111783981323
+    },
+    {
+      "index": 97,
+      "episode_id": 9437,
+      "category": "success",
+      "steps": 64,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 15,
+      "in_goal_stop_margin_median": -1.063116580247879,
+      "terminal_stop_margin": 0.4457084834575653
+    },
+    {
+      "index": 98,
+      "episode_id": 3230,
+      "category": "far_stop_never_entered",
+      "steps": 29,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 0,
+      "in_goal_stop_margin_median": null,
+      "terminal_stop_margin": 0.2824821174144745
+    },
+    {
+      "index": 99,
+      "episode_id": 1817,
+      "category": "left_goal_then_stopped_far",
+      "steps": 107,
+      "repeated_decisions": 0,
+      "in_goal_before_action_decisions": 38,
+      "in_goal_stop_margin_median": -3.051984965801239,
+      "terminal_stop_margin": 1.1456422209739685
+    }
+  ]
+}

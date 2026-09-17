@@ -1,0 +1,67 @@
+{
+  "status": "DRAFT_NOT_EXECUTABLE",
+  "research_status": "RESEARCH_HYPOTHESIS_UNTESTED",
+  "training_authorized": false,
+  "simulation_authorized": false,
+  "qualified_backbone_sha256": null,
+  "allowed_gpus": null,
+  "max_gpu_hours": null,
+  "environment_interactions": null,
+  "real_trajectory_cap": null,
+  "optimizer_steps_per_arm": null,
+  "sequence_unroll_length": null,
+  "max_output_gib": null,
+  "common_hyperparameter_search_trials": null,
+  "auxiliary_loss_lambda": null,
+  "ordinary_to_family_action_sampling_ratio": null,
+  "primary_effect_margin": null,
+  "equivalence_margin": null,
+  "memory_slots_proposed": 8,
+  "seeds_per_arm_proposed": 3,
+  "selected_seed_values": null,
+  "reference_backbone_calls_per_navigation_decision": 2,
+  "reference_aux_query_gru_width": 128,
+  "null_budget_reasons": {
+    "allowed_gpus": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "max_gpu_hours": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "environment_interactions": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "real_trajectory_cap": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "optimizer_steps_per_arm": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "sequence_unroll_length": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "max_output_gib": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "common_hyperparameter_search_trials": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "auxiliary_loss_lambda": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "ordinary_to_family_action_sampling_ratio": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "primary_effect_margin": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it",
+    "equivalence_margin": "Requires G1-qualified backbone, verified family split and actual differentiable memory-path resource evidence; existing action-only timings do not measure it"
+  },
+  "existing_evidence_paths": [
+    "deployment/ordinary_v1/DEPLOYMENT_ACCEPTANCE.json",
+    "sft_acceptance/ordinary_learnability_v1/current/RESULT.json",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/run_001/LAUNCH_RESULT.json",
+    "research/continuation_memory_v1/GRADIENT_ASSET_INDICES.json"
+  ],
+  "existing_evidence_limits": [
+    "16-input action interface has no recurrent memory",
+    "Smallset single-decision fit does not measure 233/236/249 observation BPTT",
+    "Censored navigation timings do not predict memory training hours"
+  ],
+  "admission_before_training": [
+    "G1 qualified base with full valid closed-loop comparison",
+    "Physically legal minimally discriminating real family and group splits",
+    "Runtime input firewall and event-spanning gradients actually passed",
+    "B1/B2/Ours same initialization and trajectory-pool manifest",
+    "All resource/selection/primary endpoint fields frozen and separately authorized"
+  ],
+  "termination_action": "STOP_AND_HAND_BACK; never automatically enlarge training or enter another stage",
+  "stop_conditions": [
+    "Strong simple alternative not exceeded within registered budget",
+    "Only auxiliary readout improves",
+    "Template-only gain",
+    "Natural navigation degradation",
+    "Future leakage",
+    "Invalid physics or unobservable key event",
+    "Resource/numerical invalidity: UNKNOWN, not scientific failure"
+  ],
+  "confirmation_seed_note": "Three is a proposed minimum planning count, not current allocation or a reliability guarantee"
+}

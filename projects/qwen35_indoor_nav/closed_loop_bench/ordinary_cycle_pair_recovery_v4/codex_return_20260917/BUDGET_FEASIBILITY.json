@@ -1,0 +1,71 @@
+{
+  "method": "Extrapolation from existing censored logs only, not a new timing experiment",
+  "records": [
+    {
+      "case": "ordinary_cycle_recovery_v1",
+      "source_status": "SERVICE_FAILED",
+      "actions": 5256,
+      "completed": 33,
+      "recorded_launcher_seconds": 676.0831877139863,
+      "recorded_evaluation_seconds": 594.5097146034241,
+      "evaluation_seconds_per_action": 0.11311067629441098,
+      "preprocessing_and_inference_seconds_per_action": 0.0740734574837625,
+      "unaccounted_startup_cleanup_and_snapshot_lag_seconds": 81.57347311056219
+    },
+    {
+      "case": "ordinary_cycle_pair_v2",
+      "source_status": "RESOURCE_CENSORED",
+      "actions": 808,
+      "completed": 3,
+      "recorded_launcher_seconds": 223.85459949285723,
+      "recorded_evaluation_seconds": 108.42517304420471,
+      "evaluation_seconds_per_action": 0.13418957059926326,
+      "preprocessing_and_inference_seconds_per_action": 0.06592860933171936,
+      "unaccounted_startup_cleanup_and_snapshot_lag_seconds": 115.42942644865252
+    },
+    {
+      "case": "ordinary_cycle_pair_gpu1_v3",
+      "source_status": "RESOURCE_CENSORED",
+      "actions": 4064,
+      "completed": 19,
+      "recorded_launcher_seconds": 554.0686675680336,
+      "recorded_evaluation_seconds": 448.11682295799255,
+      "evaluation_seconds_per_action": 0.11026496627903361,
+      "preprocessing_and_inference_seconds_per_action": 0.06780595650417935,
+      "unaccounted_startup_cleanup_and_snapshot_lag_seconds": 105.95184461004101
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "two_historical_native_action_counts_for_sensitivity_only",
+      "assumed_decisions": 38244,
+      "seconds_interval": [
+        4332.402796824013,
+        5247.375364446876
+      ]
+    },
+    {
+      "name": "historical_native_plus_B_at_500_each",
+      "assumed_decisions": 69122,
+      "seconds_interval": [
+        7737.164425588014,
+        9390.880925410927
+      ]
+    },
+    {
+      "name": "full_decision_cap",
+      "assumed_decisions": 100000,
+      "seconds_interval": [
+        11141.926054352014,
+        13534.386486374979
+      ]
+    }
+  ],
+  "budget_seconds": 4100,
+  "timing_verdict": "AT_RISK_NOT_DEMONSTRATED_FEASIBLE",
+  "guaranteed_finish": false,
+  "obvious_impossibility_proven": false,
+  "new_tensor_and_full_parameter_fingerprint_overhead_seconds": null,
+  "caution": "Episode/house/instruction lengths, scene loads, interrupted sampling and new read-only instrumentation are not controlled by this extrapolation; historical A action count is not the new A result",
+  "additional_navigation_starts": 0
+}

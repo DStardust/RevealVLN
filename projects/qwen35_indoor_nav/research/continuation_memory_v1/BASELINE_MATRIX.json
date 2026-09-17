@@ -1,0 +1,95 @@
+{
+  "status": "FUTURE_NOT_AUTHORIZED",
+  "shared_contract": {
+    "backbone_checkpoint_sha256": null,
+    "initial_state_dict_sha256": null,
+    "trajectory_pool_manifest_sha256": null,
+    "memory_slots": 8,
+    "hidden_size_source": "runtime/models/Qwen3.5-2B_15852e8/config.json:text_config.hidden_size",
+    "new_lora_layers": false,
+    "action_owner_and_exposure_identical": true,
+    "unroll_and_detach_plan_identical": true,
+    "optimizer_steps_identical": true,
+    "hyperparameter_selection_budget_identical": true,
+    "auxiliary_capacity_match": "Match where meaningful; report exact params/calls/tokens and remaining query-vs-state supervision asymmetry"
+  },
+  "arms": [
+    {
+      "id": "B0",
+      "architecture": "original short window",
+      "supervision": "action BC",
+      "question": "Engineering reference; not same-architecture treatment control",
+      "launched": false
+    },
+    {
+      "id": "B1",
+      "architecture": "shared memory",
+      "supervision": "action BC",
+      "question": "Architecture and expanded legal action pool sufficient?",
+      "launched": false
+    },
+    {
+      "id": "B2",
+      "architecture": "shared memory",
+      "supervision": "action BC + exact compositional program state",
+      "question": "Strong simplest automatically supervised alternative",
+      "launched": false
+    },
+    {
+      "id": "B3",
+      "architecture": "shared memory",
+      "supervision": "action BC + ordinary future event prediction",
+      "question": "General predictive auxiliary supervision sufficient?",
+      "launched": false
+    },
+    {
+      "id": "Ours",
+      "architecture": "shared memory",
+      "supervision": "action BC + full crossed continuation outcomes",
+      "question": "Increment of this exact supervision operator",
+      "launched": false
+    },
+    {
+      "id": "Abl-H",
+      "architecture": "shared memory",
+      "supervision": "action BC + registered loss/sampling without cross-history relations",
+      "question": "Requires actual removal of relation constraints without incorrect labels",
+      "launched": false
+    },
+    {
+      "id": "Abl-G",
+      "architecture": "shared memory",
+      "supervision": "action BC + registered loss/sampling without cross-task relations",
+      "question": "Requires actual removal of relation constraints without incorrect labels",
+      "launched": false
+    }
+  ],
+  "first_screen_only": [
+    "B1",
+    "B2",
+    "Ours"
+  ],
+  "confirmation_requires_separate_authorization": true,
+  "all_matched_arms_receive_same_legal_trajectory_pool": true,
+  "ablation_constraints": [
+    "Never mismatch q/Y or make false negatives",
+    "Never withhold valid action trajectories",
+    "Match task/query/label marginals and valid auxiliary calls",
+    "Same triples with different batch order do not remove their inherent relation",
+    "Report unmatchable distributions as confounds"
+  ],
+  "B2_compositional_fields": [
+    "anchor_seen_strictly_before",
+    "anchor_seen_through_current",
+    "terminal_witness_now",
+    "ordered_ready_to_stop"
+  ],
+  "B2_current_semantics": "SEE2 only; use sufficient verified program state for any future expanded program",
+  "B3_target_contract": "Events in registered future horizon under same causal prefix; unknown evidence masked; no future input to memory/action",
+  "invalid_B2": [
+    "scalar progress percentage",
+    "arbitrary task/state ID",
+    "unreviewed LLM label"
+  ],
+  "reject_model_increment_if_B2_equivalent_or_better_and_simpler": true
+}

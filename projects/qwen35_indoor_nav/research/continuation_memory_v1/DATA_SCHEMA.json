@@ -1,0 +1,509 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "q35n.continuation_memory.contract.v1",
+  "title": "Future family transport contract; no newly certified family is supplied by this schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "q35n.continuation_memory.contract.v1"
+    },
+    "policy_prefixes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "observations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/PolicyObservation"
+            },
+            "minItems": 1
+          }
+        },
+        "required": [
+          "observations"
+        ]
+      },
+      "minItems": 1
+    },
+    "train_queries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ContinuationQuery"
+      },
+      "minItems": 1
+    },
+    "supervision": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "audit_pairing": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "prefix_index": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "task_index": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "query_index": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "prefix_index",
+              "task_index",
+              "query_index"
+            ]
+          },
+          "certificate": {
+            "$ref": "#/$defs/LabelCertificate"
+          },
+          "exact_state_targets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/ExactState"
+            },
+            "minItems": 0
+          },
+          "action_owner_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "audit_pairing",
+          "certificate",
+          "exact_state_targets",
+          "action_owner_refs"
+        ]
+      },
+      "minItems": 1
+    },
+    "audit_only": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "family_split": {
+          "$ref": "#/$defs/FamilySplit"
+        },
+        "shared_state_certificate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observable_event_certificates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "task_programs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "program_version_sha256": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trajectory_pool_manifest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_replay_status": {
+          "enum": [
+            "CERTIFIED_UNDER_REFERENCED_PROTOCOL",
+            "UNKNOWN",
+            "UNVERIFIED"
+          ]
+        }
+      },
+      "required": [
+        "family_split",
+        "shared_state_certificate",
+        "observable_event_certificates",
+        "task_programs",
+        "program_version_sha256",
+        "trajectory_pool_manifest",
+        "physical_replay_status"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "policy_prefixes",
+    "train_queries",
+    "supervision",
+    "audit_only"
+  ],
+  "$defs": {
+    "PolicyObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "instruction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rgb": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "description": "Decoded runtime value must be exactly 224*224*3 raw RGB bytes; paths/IDs/SHA are never model input"
+          },
+          "minItems": 1,
+          "maxItems": 2
+        },
+        "executed": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "move_forward",
+              "turn_left",
+              "turn_right"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 8
+        }
+      },
+      "required": [
+        "instruction",
+        "rgb",
+        "executed"
+      ]
+    },
+    "PrefixTrace": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PolicyObservation"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "observations"
+      ]
+    },
+    "ContinuationQuery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "query_schema_version": {
+          "const": "q35n.continuation_query.v4"
+        },
+        "coordinate_frame": {
+          "const": "agent_relative_discrete"
+        },
+        "sequence": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "movement"
+                  },
+                  "action": {
+                    "enum": [
+                      "MOVE_FORWARD",
+                      "TURN_LEFT",
+                      "TURN_RIGHT"
+                    ]
+                  },
+                  "repeat": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "order": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "kind",
+                  "action",
+                  "repeat",
+                  "order"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "observe"
+                  },
+                  "object_category": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "room_category": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "min_pixels": {
+                    "const": 256
+                  },
+                  "consecutive_frames": {
+                    "const": 2
+                  },
+                  "order": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "kind",
+                  "object_category",
+                  "room_category",
+                  "min_pixels",
+                  "consecutive_frames",
+                  "order"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "act"
+                  },
+                  "action": {
+                    "const": "STOP"
+                  },
+                  "order": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "kind",
+                  "action",
+                  "order"
+                ]
+              }
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "query_schema_version",
+        "coordinate_frame",
+        "sequence"
+      ]
+    },
+    "LabelCertificate": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "outcome": {
+              "const": "PASS"
+            },
+            "y": {
+              "const": 1
+            },
+            "mask": {
+              "const": 1
+            }
+          },
+          "required": [
+            "outcome",
+            "y",
+            "mask"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "outcome": {
+              "const": "FAIL"
+            },
+            "y": {
+              "const": 0
+            },
+            "mask": {
+              "const": 1
+            }
+          },
+          "required": [
+            "outcome",
+            "y",
+            "mask"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "outcome": {
+              "const": "UNKNOWN"
+            },
+            "y": {
+              "const": null
+            },
+            "mask": {
+              "const": 0
+            }
+          },
+          "required": [
+            "outcome",
+            "y",
+            "mask"
+          ]
+        }
+      ]
+    },
+    "FamilySplit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "split": {
+          "enum": [
+            "train",
+            "dev",
+            "test"
+          ]
+        },
+        "house_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_family_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_routes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "history_lineages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "continuation_lineages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "language_families": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "exposure": {
+          "enum": [
+            "already_exposed",
+            "unexposed_provenance_pending",
+            "independent_provenance_verified"
+          ]
+        }
+      },
+      "required": [
+        "split",
+        "house_id",
+        "physical_family_id",
+        "physical_routes",
+        "history_lineages",
+        "continuation_lineages",
+        "language_families",
+        "exposure"
+      ]
+    },
+    "ExactState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "step": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "truth_known": {
+          "type": "boolean"
+        },
+        "loss_mask": {
+          "enum": [
+            0,
+            1
+          ]
+        },
+        "anchor_seen_strictly_before": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "anchor_seen_through_current": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "terminal_witness_now": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "ordered_ready_to_stop": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "step",
+        "truth_known",
+        "loss_mask",
+        "anchor_seen_strictly_before",
+        "anchor_seen_through_current",
+        "terminal_witness_now",
+        "ordered_ready_to_stop"
+      ]
+    }
+  },
+  "$comment": "Only policy_arguments may enter runtime. JSON schema does not prove causal alignment, physical certificates, split provenance, vocabulary binding or gradient flow. schema.py/check_tasks.py implement bounded CPU portions; full family compilation is not implemented."
+}
