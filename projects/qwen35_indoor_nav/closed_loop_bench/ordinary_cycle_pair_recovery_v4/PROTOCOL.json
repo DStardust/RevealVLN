@@ -1,0 +1,222 @@
+{
+  "id": "Q35N_ORDINARY_CYCLE_PAIR_RECOVERY_V4",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "checkpoint_updates": 4000,
+  "seed": 1209,
+  "environment_seed": 0,
+  "episode_count": 200,
+  "house_count": 5,
+  "max_steps": 500,
+  "wall_seconds": 4100,
+  "gpu_memory_gib": 28,
+  "cpu_memory_gib": 64,
+  "output_gib": 4,
+  "gpu": null,
+  "gpu_uuid": null,
+  "rgb_size": 224,
+  "hfov": 90,
+  "camera_height": 1.25,
+  "agent_height": 1.5,
+  "agent_radius": 0.1,
+  "forward_m": 0.25,
+  "turn_deg": 15.0,
+  "allow_sliding": true,
+  "success_distance": 3.0,
+  "greedy": false,
+  "optimizer_updates": 0,
+  "metric_backend": "Unmodified official Habitat v0.1.7 class bodies with isolated adapter",
+  "main_criterion": "Same-process matched prefixes/logits plus original absolute and paired improvement gates",
+  "official_full_trainer_or_leaderboard_run": false,
+  "houses": [
+    "82sE5b5pLXE",
+    "B6ByNegPMKs",
+    "PuKPg4mmafe",
+    "XcA2TqTSSAj",
+    "aayBHfsNo7d"
+  ],
+  "house_counts": {
+    "82sE5b5pLXE": 50,
+    "B6ByNegPMKs": 50,
+    "PuKPg4mmafe": 38,
+    "XcA2TqTSSAj": 12,
+    "aayBHfsNo7d": 50
+  },
+  "lanes": 8,
+  "gt_path": "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/train/train_gt.json.gz",
+  "ndtw_backend": "exact Euclidean DTW, official FDTW=False semantics",
+  "previous_tiny_episode_ids": [],
+  "checkpoint_selection": "Same frozen best4k as historical matched development baseline",
+  "parity_threshold": {
+    "max_abs": 0.15,
+    "relative_l2": 0.03,
+    "all_argmax_identical": true
+  },
+  "parity_fallback_batch_size": 1,
+  "parity_pass_batch_size": 1,
+  "checkpoint_role": "shared_process_native_and_recovery",
+  "comparison_batch_size_forced": 1,
+  "native_policy_greedy": true,
+  "recovery": "Least attempted motion on repeated complete causal input; logits break ties; native STOP preserved",
+  "base_episode_count": 100,
+  "paired_arms": {
+    "native_indices": [
+      0,
+      99
+    ],
+    "recovery_indices": [
+      100,
+      199
+    ]
+  },
+  "review_base_commit": "9d22783e646ef86232ba3a3a59d7bb9ce8a8c0a7",
+  "status": "CONTRACT_RECORDED_RESOURCE_NOT_RESERVED",
+  "formal_launch_ready": false,
+  "inherited_device_provenance_only": {
+    "gpu": 1,
+    "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+  },
+  "question": "Causal INTERNAL_DEV delta SR from the unchanged exact-input cycle controller under one shared best4k model",
+  "sole_arm_variable": "controller_enabled",
+  "controller_arms": {
+    "A": false,
+    "B": true
+  },
+  "controller_sha256": "75eb778a4a8b93f1ef00de1704330a83fdd23b4a5cac294982cde4e59cafb430",
+  "model_source": "sft_acceptance/ordinary_sync_recovery_v1/model.py",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "episode_asset": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_gpu1_v3/EPISODES_PRIVILEGED.json",
+  "episode_asset_sha256": "634f3065130061dea3d6f4f591d285d25803b92b79b7042d0ddc01ed8d75aa77",
+  "episodes_per_arm": 100,
+  "house_counts_per_arm": {
+    "82sE5b5pLXE": 25,
+    "B6ByNegPMKs": 25,
+    "PuKPg4mmafe": 19,
+    "XcA2TqTSSAj": 6,
+    "aayBHfsNo7d": 25
+  },
+  "model_loads_max": 1,
+  "batch_size": 1,
+  "formal_starts_max": 1,
+  "model_memory_gib": 25,
+  "total_environment_decisions_max": 100000,
+  "scheduler": "Frozen V3 schedules: range(lane,200,8); no regrouping or reordering",
+  "resources": {
+    "accepted_proof": [
+      "scheduler allocation verified with scheduler",
+      "dedicated window confirmed by actual GPU users with auditable receipt"
+    ],
+    "required_binding": [
+      "GPU UUID",
+      "host",
+      "window start and end",
+      "allocation ID or coordination provenance"
+    ],
+    "minimum_formal_window_seconds": 4100,
+    "local_flock_is_global_reservation": false,
+    "current_idle_is_reservation": false,
+    "auto_retry": false,
+    "auto_change_gpu": false,
+    "foreign_context_action": "RESOURCE_CENSORED and cleanup only verified owned processes",
+    "cleanup_seconds_max": 30,
+    "cpu_summary_seconds_max": 1800
+  },
+  "identity_contract": {
+    "loaded_parameters": "all names/shapes/dtypes/content SHA before and after",
+    "persistent_buffers": "all names/shapes/dtypes/content SHA before and after",
+    "base_weights": "all actual source files SHA",
+    "incremental_checkpoint": "exact best4k SHA",
+    "processor_tokenizer": "source configs and effective configuration SHA",
+    "runtime": [
+      "software versions",
+      "GPU UUID",
+      "driver",
+      "attention dispatch",
+      "FLA dispatch",
+      "available Triton compile/selection configuration"
+    ],
+    "unreadable": "explicit unavailable with reason; do not infer runtime evidence from disk hashes"
+  },
+  "decision_log_fields": [
+    "original input key",
+    "instruction/raw RGB SHA window/executed history",
+    "input_ids SHA",
+    "attention_mask SHA",
+    "mm_token_type_ids SHA",
+    "image_grid_thw SHA",
+    "pixel_values SHA",
+    "exec_index SHA",
+    "action_index SHA",
+    "four native logits",
+    "native_action",
+    "executed_action",
+    "override",
+    "inference seconds",
+    "controller seconds"
+  ],
+  "prefix_gate": {
+    "inclusive_first_actual_override": true,
+    "raw_input_exact": true,
+    "processed_input_exact": true,
+    "native_logit_max_abs_difference": 0,
+    "pre_override_executed_actions_exact": true,
+    "no_override_pairs": "identical full trajectory and terminal state",
+    "first_difference": "stop own execution immediately; NUMERIC_OR_TRANSPORT_INVALID",
+    "allowed_extra_measurement": "only first-divergence localization package when prerequisites exist: inputs, parameters/buffers, rope, vision, layers, action head, runtime/kernel settings"
+  },
+  "paired_gates": {
+    "sr_B_gt_sr_A": true,
+    "spl_B_ge_spl_A": true,
+    "ndtw_B_ge_ndtw_A_minus": 0.01
+  },
+  "historical_guard": {
+    "sr_B_gt": 0.21,
+    "spl_B_ge": 0.18016983923442284,
+    "ndtw_B_ge": 0.3558797007353029
+  },
+  "primary_metric": "delta_sr over exactly 100 complete valid same-process pairs; old SR cannot replace arm A",
+  "report_contract": [
+    "paired wins/losses and IDs",
+    "retained successes",
+    "five houses separately",
+    "repeated input decisions and per-trajectory fractions",
+    "first override step",
+    "override counts",
+    "collisions",
+    "total decisions",
+    "entered range without successful STOP",
+    "far STOP",
+    "p50/p95 inference/controller latency",
+    "descriptive paired uncertainty with episode/house correlation caveat"
+  ],
+  "valid_terminal_statuses": [
+    "RESOURCE_NOT_RESERVED",
+    "RESOURCE_CENSORED",
+    "NUMERIC_OR_TRANSPORT_INVALID",
+    "VALID_COMPLETE_NOT_ADOPTED",
+    "VALID_COMPLETE_ENGINEERING_CANDIDATE"
+  ],
+  "interpretation": {
+    "candidate": "INTERNAL_DEV engineering candidate only; no deployment or checkpoint change",
+    "valid_not_adopted": "stop polishing this rule",
+    "invalid_or_censored": "benefit unknown; neither algorithm success nor failure"
+  },
+  "prohibited": [
+    "training",
+    "FIT replay repetition",
+    "learnability repetition",
+    "kernel replacement or scan",
+    "threshold search",
+    "random exploration",
+    "approximate image key",
+    "privileged policy inputs",
+    "old trajectory stitching",
+    "full val_unseen",
+    "automatic deployment",
+    "direction A or B experiments"
+  ],
+  "exposure_boundary": "INTERNAL_DEV and historical val_unseen1839 are already exposed. Future SR40 on this protocol is engineering validation, not blind generalization. Freeze before new independent scenes/tests or compliant hidden testing.",
+  "integration_status": "Resource gate closed before GPU evaluator instrumentation/integration; CPU contracts are not runtime acceptance"
+}

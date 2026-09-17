@@ -1,0 +1,36 @@
+test_500_decisions_include_stop_and_recovery (__main__.ContractTests) ... ok
+test_actual_override_written_to_history (__main__.ContractTests) ... ok
+test_all_seven_preprocessed_tensors_are_required (__main__.ContractTests) ... ok
+test_changed_parameters_cannot_admit_results (__main__.ContractTests) ... ok
+test_cleanup_refuses_nonowner_or_reused_pid (__main__.ContractTests) ... ok
+test_episode_reset_does_not_share_memory (__main__.ContractTests) ... ok
+test_first_difference_fails_even_if_argmax_matches (__main__.ContractTests) ... ok
+test_least_count_then_logit_then_original_index (__main__.ContractTests) ... ok
+test_native_stop_never_overridden (__main__.ContractTests) ... ok
+test_no_override_requires_entire_trajectory_and_terminal (__main__.ContractTests) ... ok
+test_official_success_requires_stop_and_strict_distance (__main__.ContractTests) ... ERROR
+test_override_decision_itself_must_match (__main__.ContractTests) ... ok
+test_raw_inputs_and_history_must_match (__main__.ContractTests) ... ok
+test_timeout_or_missing_episode_cannot_admit_sr (__main__.ContractTests) ... ok
+test_unrepeated_input_is_native_argmax (__main__.ContractTests) ... ok
+
+======================================================================
+ERROR: test_official_success_requires_stop_and_strict_distance (__main__.ContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_recovery_v4/test_cpu.py", line 114, in test_official_success_requires_stop_and_strict_distance
+    measures = metrics.OfficialMetrics(sim, [1., 0., 0.])
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_tiny_v1/metrics.py", line 49, in __init__
+    measure.reset_metric(episode=self.episode, task=self.task)
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/habitat-lab/habitat/tasks/nav/nav.py", line 578, in reset_metric
+    self.update_metric(  # type:ignore
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/habitat-lab/habitat/tasks/nav/nav.py", line 591, in update_metric
+    self._agent_episode_distance += self._euclidean_distance(
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/habitat-lab/habitat/tasks/nav/nav.py", line 583, in _euclidean_distance
+    return np.linalg.norm(position_b - position_a, ord=2)
+TypeError: unsupported operand type(s) for -: 'list' and 'list'
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.041s
+
+FAILED (errors=1)
