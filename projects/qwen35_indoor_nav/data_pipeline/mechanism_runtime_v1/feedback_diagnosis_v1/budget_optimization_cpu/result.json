@@ -1,0 +1,22 @@
+{
+  "status": "READY_FOR_MAIN_AGENT_REVIEW",
+  "class": "SingleCommitBudgetLedger",
+  "cpu_tests_passed": 21,
+  "cpu_test_seconds": 0.006,
+  "normal_success_and_rejection_final_state_equivalence": true,
+  "journal_byte_equivalence": false,
+  "all_failure_intermediate_memory_state_equivalence": false,
+  "successful_reservation_persist_calls_original": 2,
+  "successful_reservation_persist_calls_new": 1,
+  "rejected_reservation_persist_calls_each": 1,
+  "durable_callback_ack_required_before_backend": true,
+  "persist_failure_poisons_and_prevents_backend": true,
+  "failure_injection_scope": "memory-only synchronous callback simulations; not real journal filesystem fault injection",
+  "real_fsync_benchmark_run": false,
+  "real_throughput_speedup": null,
+  "active_v2_integrated": false,
+  "gpu_used": false,
+  "training_started": false,
+  "scientific_pass": false,
+  "report": "REPORT_ZH.md"
+}

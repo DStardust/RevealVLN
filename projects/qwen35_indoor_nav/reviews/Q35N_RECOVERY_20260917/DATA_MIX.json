@@ -1,0 +1,123 @@
+{
+  "full_pool": {
+    "source": "sft_acceptance/ordinary_expanded_v1/SAMPLE_INDEX.jsonl",
+    "groups": {
+      "ENVDROP_OFFICIAL_CE_TRAIN": {
+        "actions": [
+          782748,
+          230643,
+          222646,
+          19566
+        ],
+        "weighted_actions": [
+          1329414.9999937806,
+          502068.00000099366,
+          495135.800000993,
+          62611.19999997811
+        ],
+        "records": 19566,
+        "houses": 50,
+        "total_actions": 1255603,
+        "stop_fraction": 0.015582950980524896
+      },
+      "RxR": {
+        "actions": [
+          538434,
+          161605,
+          153441,
+          8848
+        ],
+        "weighted_actions": [
+          918015.399997368,
+          352270.20000056847,
+          340377.200000542,
+          28313.600000004244
+        ],
+        "records": 8848,
+        "houses": 48,
+        "total_actions": 862328,
+        "stop_fraction": 0.010260596895844737
+      },
+      "R2R": {
+        "actions": [
+          332004,
+          98344,
+          93368,
+          8700
+        ],
+        "weighted_actions": [
+          565232.6000004517,
+          214154.2000001723,
+          208918.60000015973,
+          27840.000000004136
+        ],
+        "records": 8700,
+        "houses": 51,
+        "total_actions": 532416,
+        "stop_fraction": 0.016340605842048325
+      }
+    },
+    "total_reads": 2650347
+  },
+  "history_pair_4000_steps": {
+    "source": "sft_acceptance/ordinary_history8_paired_train_v1/SELECTED_SAMPLES.jsonl",
+    "groups": {
+      "RxR": {
+        "actions": [
+          78237,
+          23203,
+          22311,
+          1300
+        ],
+        "weighted_actions": [
+          133522.99999995474,
+          50575.39999999132,
+          49663.59999999182,
+          4159.999999999901
+        ],
+        "records": 8789,
+        "houses": 48,
+        "total_actions": 125051,
+        "stop_fraction": 0.010395758530519548
+      },
+      "R2R": {
+        "actions": [
+          47827,
+          14270,
+          13579,
+          1263
+        ],
+        "weighted_actions": [
+          81517.79999997665,
+          31238.600000003877,
+          30369.4000000038,
+          4041.599999999907
+        ],
+        "records": 8693,
+        "houses": 51,
+        "total_actions": 76939,
+        "stop_fraction": 0.01641560197039213
+      },
+      "ENVDROP_OFFICIAL_CE_TRAIN": {
+        "actions": [
+          113466,
+          33295,
+          32322,
+          2927
+        ],
+        "weighted_actions": [
+          192217.2000000829,
+          72206.39999997609,
+          72025.39999997555,
+          9366.399999999938
+        ],
+        "records": 19542,
+        "houses": 50,
+        "total_actions": 182010,
+        "stop_fraction": 0.01608153398164936
+      }
+    },
+    "total_reads": 384000
+  },
+  "interpretation": "Descriptive composition, not a causal attribution of navigation regression; no label rewriting or new selection."
+}

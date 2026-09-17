@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>普通导航基座 · SR40目标</title>
+<style>
+body{max-width:1050px;margin:32px auto;padding:0 20px;font:16px/1.65 system-ui;background:#0d1423;color:#e6edf7}
+.card{padding:22px;background:#182339;border-radius:12px;margin:18px 0}h1{font-size:26px}h2{font-size:20px}
+.muted{color:#abbad0}.big{font-size:25px;color:#87d8ff}table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:9px;border-bottom:1px solid #344158}#error{color:#ffaaaa}
+.scroll{overflow-x:auto}.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.stage{padding:14px;border:1px solid #465777;border-radius:8px}.stage.active{border-color:#87d8ff}
+@media(max-width:650px){.stages{grid-template-columns:1fr}.card{padding:14px}}
+</style>
+<h1>普通导航基座 · 先达到 SR 40%+</h1>
+<p>当前先建设可靠基座，再验证论文贡献。沿用原监控端口；本页不提供启动、停止或修改接口。</p>
+<div id="error" role="alert"></div>
+<div class="card"><h2>三阶段路线（目标，不是已实现成绩）</h2>
+<div class="stages">
+<div class="stage active"><strong>A · 当前目标</strong><p>仅普通导航数据<br>完整基准 SR ≥40%</p></div>
+<div class="stage"><strong>B · 后续验证</strong><p>一个具体轻量贡献<br>同基座、同预算做对照</p></div>
+<div class="stage"><strong>C · 后续研究目标</strong><p>任务记忆与交叉结果监督<br>向普通导航 SR 约60%推进</p></div>
+</div><p class="muted">阶段B/C尚未执行，不预设叠加模块一定能达到60%。特殊任务完成率另报，不能代替普通导航SR。</p></div>
+<div class="card"><h2>当前执行状态</h2><p id="phase" class="big">读取中…</p>
+<p id="count"></p><p id="next"></p><p id="snapshot" class="muted"></p>
+<p>优先核对成熟的历史输入与训练配方，统一执行入口。原STOP专项暂停；其32输入数值诊断通过，但旧全量一致性失败与退出回执失败均保留，尚无新训练权重。</p></div>
+<div class="card" id="navigation-results"><h2>完整 R2R-CE v1-3 val_unseen · 1,839条</h2>
+<div class="scroll"><table><thead><tr><th>结果/目标</th><th>SR</th><th>SPL</th><th>说明</th></tr></thead><tbody id="official"></tbody></table></div>
+<p id="gate"></p><p class="muted">历史完整结果来自41800步权重、batch8；新阶段拟固定batch1并单独登记，不能视为已完成的严格配对提升。传感器、动作、显式STOP&lt;3m、500动作预算及官方指标不放宽。新结果也须完整报告nDTW、失败和成本。</p></div>
+<div class="card"><h2>内部开发集 · 100条（不是完整基准）</h2>
+<div class="scroll"><table><thead><tr><th>版本</th><th>SR</th><th>SPL</th><th>nDTW</th></tr></thead><tbody id="internal"></tbody></table></div>
+<p class="muted">同一内部集已经多次暴露，仅用于开发筛选，不代替40%验收；不把与完整基准不同权重/集合的分数连成学习曲线。</p></div>
+<div class="card"><h2>只读资源状态</h2><p id="resource"></p>
+<p>GPU高占用可能是保留占位，不代表在训练。未启动SR40训练；不重启已结束生产，不改旧冻结源码、权重或输入锁，不使用付费API。</p><p id="updated" class="muted"></p></div>
+<script src="/refresh.js"></script></html>
+

@@ -1,0 +1,278 @@
+{
+  "node": "Q35N_MECHANISM_FIVE_BUNDLE_P0_V1",
+  "decision": "P0_YIELD_DIAGNOSTIC_CLOSED",
+  "planned_bundles": 5,
+  "started_bundles": 5,
+  "status_counts": {
+    "resource_censored": 1,
+    "metadata_ineligible": 4
+  },
+  "preflight_frozen": 0,
+  "certified_candidates": 0,
+  "new_geometric_families": 0,
+  "exact_duplicates": 0,
+  "geometry_clusters": 0,
+  "certified_per_planned": 0.0,
+  "certified_per_started": 0.0,
+  "confirmed_physical_actions": 2393,
+  "reserved_physical_actions": 2393,
+  "collision_returns": 58,
+  "saved_probe_traces": 74,
+  "unique_RGB_referenced_by_saved_traces": 1011,
+  "unique_semantic_referenced_by_saved_traces": 663,
+  "trace_file_and_internal_hash_verification": true,
+  "journal_chain_pass": true,
+  "protected_hashes_pass": true,
+  "gpu_cleanup_complete": true,
+  "supervisor": {
+    "returncode": 0,
+    "error": null,
+    "wall_seconds": 767.0978927419055,
+    "cleanup_complete": true,
+    "new_placeholder_created": false,
+    "sampled_limits_only": true,
+    "final_disk_bytes_before_result": 306866844,
+    "cleanup_errors": []
+  },
+  "rows": [
+    {
+      "candidate_id": "MP5_00",
+      "house_id": "17DRP5sb8fy",
+      "planned_configurations": 56,
+      "started": true,
+      "status": "resource_censored",
+      "physical_actions_confirmed": 2393,
+      "collision_returns": 58,
+      "saved_traces": 74,
+      "complete_probe_traces": 16,
+      "unknown_evidence_observations": 0,
+      "completed_configuration_rejections": 3,
+      "configuration_reasons": {
+        "NO_VALID_LOOP": 3
+      },
+      "route_reasons": {
+        "OUTBOUND_EVENT_OR_LEGALITY": 58
+      },
+      "reject_details": [
+        {
+          "bundle": "MP5_00",
+          "config": {
+            "index": 0,
+            "public_tail": "LRLRLRLR",
+            "u_index": 0,
+            "u_position": [
+              0.21045300364494324,
+              0.07244700193405151,
+              -4.657410144805908
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "bundle": "MP5_00",
+          "config": {
+            "index": 1,
+            "public_tail": "LRLRLRLR",
+            "u_index": 1,
+            "u_position": [
+              0.4026130139827728,
+              0.07244700193405151,
+              -3.2701399326324463
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "bundle": "MP5_00",
+          "config": {
+            "index": 2,
+            "public_tail": "LRLRLRLR",
+            "u_index": 2,
+            "u_position": [
+              0.25068199634552,
+              0.07244700193405151,
+              -1.3370699882507324
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        }
+      ],
+      "observed_role_frame_counts": {
+        "irrelevant": 1257,
+        "anchor_A": 46,
+        "anchor_B": 35
+      },
+      "preflight_frozen": false,
+      "certified": false,
+      "reason": "discovery wall-time budget: resource_censored",
+      "details": {
+        "phase": "discovery"
+      },
+      "wall_seconds": 727.354040552862,
+      "export_loader_pass": null,
+      "eligible_instance_counts": {
+        "anchor_A": 1,
+        "anchor_B": 1,
+        "terminal": 1,
+        "irrelevant": 8
+      },
+      "unexhausted_or_not_started_configurations": 53
+    },
+    {
+      "candidate_id": "MP5_01",
+      "house_id": "1LXtFkjw3qL",
+      "planned_configurations": 40,
+      "started": true,
+      "status": "metadata_ineligible",
+      "physical_actions_confirmed": 0,
+      "collision_returns": 0,
+      "saved_traces": 0,
+      "complete_probe_traces": 0,
+      "unknown_evidence_observations": 0,
+      "completed_configuration_rejections": 0,
+      "configuration_reasons": {},
+      "route_reasons": {},
+      "reject_details": [],
+      "observed_role_frame_counts": {},
+      "preflight_frozen": false,
+      "certified": false,
+      "reason": "ELIGIBLE_SET_EMPTY",
+      "details": {
+        "empty_roles": [
+          "irrelevant"
+        ]
+      },
+      "wall_seconds": 9.973464834038168,
+      "export_loader_pass": null,
+      "eligible_instance_counts": {
+        "anchor_A": 1,
+        "anchor_B": 1,
+        "terminal": 8,
+        "irrelevant": 0
+      },
+      "unexhausted_or_not_started_configurations": 40
+    },
+    {
+      "candidate_id": "MP5_02",
+      "house_id": "1pXnuDYAj8r",
+      "planned_configurations": 48,
+      "started": true,
+      "status": "metadata_ineligible",
+      "physical_actions_confirmed": 0,
+      "collision_returns": 0,
+      "saved_traces": 0,
+      "complete_probe_traces": 0,
+      "unknown_evidence_observations": 0,
+      "completed_configuration_rejections": 0,
+      "configuration_reasons": {},
+      "route_reasons": {},
+      "reject_details": [],
+      "observed_role_frame_counts": {},
+      "preflight_frozen": false,
+      "certified": false,
+      "reason": "ELIGIBLE_SET_EMPTY",
+      "details": {
+        "empty_roles": [
+          "anchor_A"
+        ]
+      },
+      "wall_seconds": 13.092311198124662,
+      "export_loader_pass": null,
+      "eligible_instance_counts": {
+        "anchor_A": 0,
+        "anchor_B": 3,
+        "terminal": 4,
+        "irrelevant": 11
+      },
+      "unexhausted_or_not_started_configurations": 48
+    },
+    {
+      "candidate_id": "MP5_03",
+      "house_id": "29hnd4uzFmX",
+      "planned_configurations": 48,
+      "started": true,
+      "status": "metadata_ineligible",
+      "physical_actions_confirmed": 0,
+      "collision_returns": 0,
+      "saved_traces": 0,
+      "complete_probe_traces": 0,
+      "unknown_evidence_observations": 0,
+      "completed_configuration_rejections": 0,
+      "configuration_reasons": {},
+      "route_reasons": {},
+      "reject_details": [],
+      "observed_role_frame_counts": {},
+      "preflight_frozen": false,
+      "certified": false,
+      "reason": "ELIGIBLE_SET_EMPTY",
+      "details": {
+        "empty_roles": [
+          "anchor_A",
+          "irrelevant"
+        ]
+      },
+      "wall_seconds": 5.345329490955919,
+      "export_loader_pass": null,
+      "eligible_instance_counts": {
+        "anchor_A": 0,
+        "anchor_B": 1,
+        "terminal": 2,
+        "irrelevant": 0
+      },
+      "unexhausted_or_not_started_configurations": 48
+    },
+    {
+      "candidate_id": "MP5_04",
+      "house_id": "5LpN3gDmAk7",
+      "planned_configurations": 40,
+      "started": true,
+      "status": "metadata_ineligible",
+      "physical_actions_confirmed": 0,
+      "collision_returns": 0,
+      "saved_traces": 0,
+      "complete_probe_traces": 0,
+      "unknown_evidence_observations": 0,
+      "completed_configuration_rejections": 0,
+      "configuration_reasons": {},
+      "route_reasons": {},
+      "reject_details": [],
+      "observed_role_frame_counts": {},
+      "preflight_frozen": false,
+      "certified": false,
+      "reason": "ELIGIBLE_SET_EMPTY",
+      "details": {
+        "empty_roles": [
+          "anchor_A"
+        ]
+      },
+      "wall_seconds": 9.003860806114972,
+      "export_loader_pass": null,
+      "eligible_instance_counts": {
+        "anchor_A": 0,
+        "anchor_B": 1,
+        "terminal": 3,
+        "irrelevant": 10
+      },
+      "unexhausted_or_not_started_configurations": 40
+    }
+  ],
+  "training_admission": false,
+  "scientific_pass": false,
+  "P1_authorized": false,
+  "SFT_results_read": false,
+  "SFT_modified": false,
+  "source_scope": "five_existing_FIT_houses_only_not_unseen_generalization",
+  "completed_probe_is_not_certified_family": true
+}

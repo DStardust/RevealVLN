@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "script": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_stop_calibrated_dev_v1/tests.py",
+      "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.025s\n\nOK\n"
+    },
+    {
+      "script": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_ORDINARY_STOP_CALIBRATION_V1/test_counterfactual.py",
+      "output": ".............\n----------------------------------------------------------------------\nRan 13 tests in 0.022s\n\nOK\n"
+    },
+    {
+      "script": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_ORDINARY_STOP_CALIBRATION_V1/test_final_gate.py",
+      "output": ".\n----------------------------------------------------------------------\nRan 1 test in 0.003s\n\nOK\n"
+    },
+    {
+      "script": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_ORDINARY_STOP_CALIBRATION_V1/test_metric_v2.py",
+      "output": "{\"zero_bias_episodes\": 64, \"max_abs_error\": {\"success\": 0.0, \"spl\": 0.0, \"ndtw\": 0.0, \"steps\": 0.0, \"navigation_error_m\": 0.0, \"path_length_m\": 0.0}}\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.787s\n\nOK\n"
+    }
+  ],
+  "only_one_frozen_bias": true
+}

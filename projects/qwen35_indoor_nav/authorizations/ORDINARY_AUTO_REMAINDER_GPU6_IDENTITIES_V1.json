@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-10",
+  "project_root": "/mnt/data_nas/deeprobotics/daiyang/vla",
+  "source": "data_pipeline/ordinary_fullscale_source_v1/runtime_v3/lanes/gpu_6/attempt_000/RESULT.json plus fresh /proc and tmux identity readback",
+  "holders": [{
+    "gpu_device": 6,
+    "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+    "pid": 3360704,
+    "starttime_ticks": 132836882,
+    "proc_uid": 0,
+    "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+    "cmdline": [".envs/etpr1/bin/python", "-u", "scripts/occupy_idle_gpu.py", "--gpu", "6", "--reserve-mib", "2048", "--max-initial-used-mib", "1024", "--tag", "vla_idle_occupancy_20260904"],
+    "pane_id": "%151",
+    "pane_target": "vla_idle_occupancy_20260904:3.0",
+    "pane_pid": 3360704,
+    "pane_dead": false,
+    "project_cache_environment": {},
+    "remain_on_exit": "off",
+    "verified_holder_gpu_mib": 29334,
+    "revalidate_before_signal": true
+  }]
+}

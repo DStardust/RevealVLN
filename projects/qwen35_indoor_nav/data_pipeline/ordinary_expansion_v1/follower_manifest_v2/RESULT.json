@@ -1,0 +1,33 @@
+{
+  "executable": false,
+  "runtime_allowed": false,
+  "source_accepted_candidates": 97,
+  "instruction_aliases": 97,
+  "houses": 6,
+  "counts": {
+    "raw_follower_episodes": 58752,
+    "english_fit": 16495,
+    "ORIGINAL_GOAL_CHANGED": 15628,
+    "non_english_excluded": 39336,
+    "non_fit_excluded": 2921,
+    "OFFICIAL_FOLLOWER_ALIGNMENT_LOW": 214,
+    "GUIDE_WAYPOINT_ORDER_NOT_COVERED": 196,
+    "ORIGINAL_START_POSE_CHANGED": 190,
+    "existing_or_duplicate_geometry": 169,
+    "duplicate_follower_gt": 1
+  },
+  "actual_generated_routes": 0,
+  "full_natural_language_semantics_certified": false,
+  "official_gt_cross_comparison_with_guide_pending": true,
+  "quality_gate": "requires_original_strict_compiler_and_double_replay_then_strict_audit",
+  "input_hashes": {
+    "data/phase0/raw/rxr_vlnce_v0/train/train_guide.json.gz": "fe127cfe9350123e7ff511c858f866b2d538564bac910da698bfff4ee46be07e",
+    "data/phase0/raw/r2r_vlnce_v1-3/train/train.json.gz": "f411066b53f96d1241c045fd05a6a9e01b484c2ed9369f5b6f41806969056a34",
+    "projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/acquisition_v3/train_follower.json.gz": "c329fd107a261381659b79373cf8e42471e19957ef2790382cb7b6676b8657ab",
+    "projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/acquisition_v3/train_follower_gt.json.gz": "49c36f04f5b4a9dca6afa13ae10a67870404b0315654e997e749da03547d7489",
+    "projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/acquisition_v3/RESULT.json": "3d46f5ec9a8d1b8e8d4907ca35cc59a93ce4526d0004c2f7529e461b081b04c5",
+    "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/SPLIT_FREEZE.json": "c292a652f2f08aaddabb3f0df51c2a78d6c60638710444d1163d8e742499d379",
+    "projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/json_stream.py": "ce8689f83e3e12c1389b8ced1a7ba18c43c42bf35219f0b8c00ff747d03799b9",
+    "projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/follower_manifest.py": "fe8a71965755e1c8aa17ff5d0ee237a24e707cdb4fb268fd2c8dfb15c04d7635"
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "decision": "BLOCKED_ENGINEERING_GATE_NOT_SCIENTIFIC_FAILURE",
+  "DDP_interface_pass": false,
+  "learnability_pass": null,
+  "scientific_pass": false,
+  "source_integrity_pass": true,
+  "completed_training_updates_per_rank": [
+    0,
+    0
+  ],
+  "unique_shared_DDP_training_updates": 0,
+  "diagnostic_update_records": [
+    {
+      "gradient": {
+        "relative_L2": 0.07414769381284714,
+        "max_abs": 44.0,
+        "cosine": 0.9988055010010476
+      },
+      "update": {
+        "relative_L2": 0.20202843844890594,
+        "max_abs": 0.000244140625,
+        "cosine": 0.9796833888633033
+      },
+      "pass_gate": false,
+      "rank_parameter_sha256": "e0bdfd784111572526726d879faf7b7a0c20bde130dce896dfcd736362b9f3db",
+      "single_rank_reference_diagnostic_updates": 1,
+      "DDP_shared_diagnostic_updates": 1
+    },
+    {
+      "gradient": {
+        "relative_L2": 0.03972460702061653,
+        "max_abs": 32.0,
+        "cosine": 0.9995003436706741
+      },
+      "update": {
+        "relative_L2": 0.16316036880016327,
+        "max_abs": 0.000244140625,
+        "cosine": 0.9867491105878248
+      },
+      "pass_gate": false,
+      "rank_parameter_sha256": "e0bdfd784111572526726d879faf7b7a0c20bde130dce896dfcd736362b9f3db",
+      "single_rank_reference_diagnostic_updates": 1,
+      "DDP_shared_diagnostic_updates": 1
+    }
+  ],
+  "training_decisions": 0,
+  "training_action_exposures": {},
+  "subset_routes": 10,
+  "subset_decisions": 565,
+  "subset_action_counts": {
+    "turn_right": 90,
+    "move_forward": 339,
+    "turn_left": 126,
+    "STOP": 10
+  },
+  "subset_constant_frequency_CE": 1.0051544427614443,
+  "subset_always_forward_accuracy": 0.6,
+  "before": null,
+  "after": null,
+  "D0_summary": {
+    "0": {
+      "normal_memory_RMS": [
+        3.9195921421051025,
+        4.133429527282715,
+        4.249366283416748,
+        4.330922603607178
+      ],
+      "embedding_weight_rms": 0.015007928013801575,
+      "logit_sensitivity_max_abs": {
+        "zero_memory": 1.0673812329769135,
+        "mismatched_instruction": 0.24117131531238556,
+        "mismatched_images": 0.3632381558418274
+      },
+      "largest_gradients": [
+        [
+          "action_head.weight",
+          {
+            "dtype": "torch.float32",
+            "grad_norm": 114.69755554199219,
+            "parameter_norm": 1.1425445079803467
+          }
+        ],
+        [
+          "write_query",
+          {
+            "dtype": "torch.bfloat16",
+            "grad_norm": 48.6263542175293,
+            "parameter_norm": 1.2801545858383179
+          }
+        ],
+        [
+          "action_query",
+          {
+            "dtype": "torch.bfloat16",
+            "grad_norm": 36.0401725769043,
+            "parameter_norm": 0.4591003358364105
+          }
+        ],
+        [
+          "old_slot",
+          {
+            "dtype": "torch.bfloat16",
+            "grad_norm": 11.606087684631348,
+            "parameter_norm": 1.2870761156082153
+          }
+        ],
+        [
+          "base.model.language_model.base_model.model.layers.23.self_attn.q_proj.lora_B.default.weight",
+          {
+            "dtype": "torch.float32",
+            "grad_norm": 4.42057466506958,
+            "parameter_norm": 0.3721441924571991
+          }
+        ],
+        [
+          "writer.weight",
+          {
+            "dtype": "torch.float32",
+            "grad_norm": 3.990399122238159,
+            "parameter_norm": 26.27465057373047
+          }
+        ]
+      ]
+    },
+    "1": {
+      "normal_memory_RMS": [
+        3.967653512954712,
+        4.166125297546387,
+        4.284493923187256,
+        4.35845947265625
+      ],
+      "embedding_weight_rms": 0.015007928013801575,
+      "logit_sensitivity_max_abs": {
+        "zero_memory": 1.1402771472930908,
+        "mismatched_instruction": 0.370394229888916,
+        "mismatched_images": 0.23451852798461914
+      },
+      "largest_gradients": [
+        [
+          "action_head.weight",
+          {
+            "dtype": "torch.float32",
+            "grad_norm": 117.3227310180664,
+            "parameter_norm": 1.1425445079803467
+          }
+        ],
+        [
+          "write_query",
+          {
+            "dtype": "torch.bfloat16",
+            "grad_norm": 45.871280670166016,
+            "parameter_norm": 1.2801545858383179
+          }
+        ],
+        [
+          "action_query",
+          {
+            "dtype": "torch.bfloat16",
+            "grad_norm": 24.053939819335938,
+            "parameter_norm": 0.4591003358364105
+          }
+        ],
+        [
+          "old_slot",
+          {
+            "dtype": "torch.bfloat16",
+            "grad_norm": 19.393882751464844,
+            "parameter_norm": 1.2870761156082153
+          }
+        ],
+        [
+          "base.model.language_model.base_model.model.layers.23.self_attn.q_proj.lora_B.default.weight",
+          {
+            "dtype": "torch.float32",
+            "grad_norm": 5.05662727355957,
+            "parameter_norm": 0.3721441924571991
+          }
+        ],
+        [
+          "base.model.language_model.base_model.model.layers.11.self_attn.q_proj.lora_B.default.weight",
+          {
+            "dtype": "torch.float32",
+            "grad_norm": 3.3069958686828613,
+            "parameter_norm": 0.4861101508140564
+          }
+        ]
+      ]
+    }
+  },
+  "execution": {
+    "error": "AssertionError()",
+    "returncodes": [
+      1,
+      1
+    ],
+    "wall_seconds": 118.04664421081543,
+    "GPU_count": 2,
+    "conservative_GPU_seconds": 236.09328985214233,
+    "real_tasks_stopped": 0,
+    "all_leased_holders_restored": true
+  },
+  "restoration": {
+    "5": {
+      "restored": true,
+      "pid": 2909778,
+      "command": ".envs/etpr1/bin/python -u scripts/occupy_idle_gpu.py --gpu 5 --reserve-mib 2048 --max-initial-used-mib 1024 --tag vla_idle_occupancy_20260904",
+      "pane": "vla_idle_occupancy_20260904:2.0",
+      "gpu": {
+        "gpu": 5,
+        "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+        "memory_mib": 29853.0,
+        "processes": [
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2781015",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2900192",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2909778",
+            "type": "C",
+            "process_name": ".envs/etpr1/bin/python",
+            "used_memory": "29334 MiB"
+          }
+        ]
+      }
+    },
+    "6": {
+      "restored": true,
+      "pid": 2909968,
+      "command": ".envs/etpr1/bin/python -u scripts/occupy_idle_gpu.py --gpu 6 --reserve-mib 2048 --max-initial-used-mib 1024 --tag vla_idle_occupancy_20260904",
+      "pane": "vla_idle_occupancy_20260904:3.0",
+      "gpu": {
+        "gpu": 6,
+        "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+        "memory_mib": 29853.0,
+        "processes": [
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2781015",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2900192",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2909968",
+            "type": "C",
+            "process_name": ".envs/etpr1/bin/python",
+            "used_memory": "29334 MiB"
+          }
+        ]
+      }
+    }
+  },
+  "peak_total_GPU_MiB": 15175.0,
+  "peak_worker_RSS_bytes": 6683328512,
+  "failures": [
+    {
+      "error": "AssertionError('REAL_DDP_EQUIVALENCE_FAILED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/d1_v1/worker.py\", line 253, in <module>\n    try:main()\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/d1_v1/worker.py\", line 235, in main\n    ddp=equivalence(policy,initial,records);event('real_equivalence_pass')\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/d1_v1/worker.py\", line 161, in equivalence\n    assert passed, 'REAL_DDP_EQUIVALENCE_FAILED'\nAssertionError: REAL_DDP_EQUIVALENCE_FAILED\n"
+    },
+    {
+      "error": "AssertionError('REAL_DDP_EQUIVALENCE_FAILED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/d1_v1/worker.py\", line 253, in <module>\n    try:main()\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/d1_v1/worker.py\", line 235, in main\n    ddp=equivalence(policy,initial,records);event('real_equivalence_pass')\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/d1_v1/worker.py\", line 161, in equivalence\n    assert passed, 'REAL_DDP_EQUIVALENCE_FAILED'\nAssertionError: REAL_DDP_EQUIVALENCE_FAILED\n"
+    }
+  ],
+  "navigation_episodes": 0,
+  "downloads": 0,
+  "new_mechanism_training": false,
+  "next_action": "Review numerical/input/optimization evidence; no automatic D2"
+}

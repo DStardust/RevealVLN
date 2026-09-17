@@ -1,0 +1,50 @@
+{
+  "status": "FAILED",
+  "unix": 1789317560.507956,
+  "error": "AssertionError('TOTAL_CPU_RSS_BUDGET')",
+  "rank_cleanup": [
+    {
+      "pid": 3741412,
+      "exit_code": 2,
+      "exited": true,
+      "signals": [
+        15
+      ],
+      "cleanup_error": null
+    },
+    {
+      "pid": 3741413,
+      "exit_code": 2,
+      "exited": true,
+      "signals": [],
+      "cleanup_error": null
+    },
+    {
+      "pid": 3741416,
+      "exit_code": 2,
+      "exited": true,
+      "signals": [],
+      "cleanup_error": null
+    }
+  ],
+  "descendant_signals": [],
+  "gpu_after": [
+    {
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 12.0,
+      "pids": []
+    },
+    {
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "memory_mib": 5.0,
+      "pids": []
+    },
+    {
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "memory_mib": 5.0,
+      "pids": []
+    }
+  ],
+  "wall_seconds": 200.98972190194763,
+  "other_processes_signaled": []
+}

@@ -1,0 +1,89 @@
+{
+  "node": "Q35N_G0R_DEPENDENCY_RECOVERY_V1",
+  "closed_at": "2026-09-09T04:59:38.390880+00:00",
+  "decision": "RUNTIME_AND_RENDERER_ENGINEERING_PASS",
+  "dependency_acquisition_pass": true,
+  "official_wheel_hashes_verified": 22,
+  "runtime_pass": true,
+  "renderer_pass": true,
+  "accepted_smoke_directory": "smoke_v2",
+  "scientific_pass": false,
+  "navigation_gain": null,
+  "new_training_runs": 0,
+  "model_loads": 0,
+  "family_replays": 0,
+  "new_navigation_evaluation_episodes": 0,
+  "actual_smoke_counts": {
+    "simulator_constructions_attempted": 1,
+    "simulator_constructions_succeeded": 1,
+    "explicit_resets": 1,
+    "explicit_actions": 1
+  },
+  "historical_failures_preserved": true,
+  "steps": {
+    "build.result.json": {
+      "returncode": 1,
+      "elapsed_seconds": 156.36838793754578
+    },
+    "build_relocated.result.json": {
+      "returncode": 1,
+      "elapsed_seconds": 466.8100018501282
+    },
+    "check.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 1.1742615699768066
+    },
+    "check_native.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 0.7230243682861328
+    },
+    "configure_relocated.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 44.727872371673584
+    },
+    "download.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 36.86676359176636
+    },
+    "install.result.json": {
+      "returncode": 1,
+      "elapsed_seconds": 0.6226985454559326
+    },
+    "install_local.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 80.1697883605957
+    },
+    "install_native.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 18.947876453399658
+    },
+    "package_existing.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 30.207525730133057
+    },
+    "smoke_v1.result.json": {
+      "returncode": 1,
+      "elapsed_seconds": 4.487284421920776,
+      "max_child_rss_kib": 251076,
+      "sampled_peak_total_device_mib": 524.0,
+      "peak_measurement": "sampled whole-device upper bound, not exact continuous process peak",
+      "renderer_pass": false,
+      "scientific_pass": false
+    },
+    "smoke.result.json": {
+      "returncode": 0,
+      "elapsed_seconds": 7.155476331710815,
+      "max_child_rss_kib": 756012,
+      "sampled_peak_total_device_mib": 614.0,
+      "peak_measurement": "sampled whole-device upper bound, not exact continuous process peak",
+      "renderer_pass": true,
+      "scientific_pass": false
+    }
+  },
+  "next_scientific_dependency": "G1F physical family and label acceptance; not automatically authorized",
+  "resource_measurement_limitations": [
+    "No exhaustive network-control byte meter",
+    "No exact aggregate concurrent host RSS peak"
+  ],
+  "g1_execution_approved_by_this_script": false
+}

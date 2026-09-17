@@ -1,0 +1,96 @@
+{
+  "status": "MEASURED_COST_SCENARIOS_NOT_PRODUCTION_FORECAST",
+  "evidence": {
+    "scout_completed_houses": 6,
+    "scout_total_seconds": 2574.5132848499343,
+    "scout_seconds_per_house": 429.085547474989,
+    "scout_actual_actions": 27564,
+    "positive_family_whole_run_seconds": 794.6237096728291,
+    "positive_certification_seconds": 542.0105526470579,
+    "positive_certification_actual_actions": 7695,
+    "positive_readback_CE_unique_owners": 492,
+    "positive_content_bytes": 69899264,
+    "v3_run_apparent_bytes": 141590487,
+    "scout_run_apparent_bytes": [
+      2076002590,
+      2549765037
+    ],
+    "measurement": "read-only du -sb; closed run trees; directory entry sizes included"
+  },
+  "capacity": {
+    "mechanism_FIT_houses": 43,
+    "completed_scout_houses": 6,
+    "remaining_houses": 37,
+    "current_max_hubs_per_house": 2,
+    "current_max_independent_hubs": 86,
+    "current_one_candidate_per_hub_recipe_max_selected_families": 86,
+    "currently_prepared_first_slice_max_hubs": 6,
+    "10000_families_required_mean_per_hub_if_all_86_hubs_usable": 116.27906976744185,
+    "role_seed_language_variants_are_new_independent_hubs": false,
+    "remaining37_scout_gpu_hours_at_observed_mean": 4.410045904604054,
+    "next18_scout_gpu_hours_at_observed_mean": 2.1454277373749453,
+    "remaining37_scout_nominal_factory_budget_hours_13_shards": 15.166666666666666,
+    "remaining37_scout_apparent_GiB_at_observed_mean": 26.566504531695198,
+    "yield_of_quality_families_across_new_houses": null,
+    "bottleneck": "current two-hub one-candidate recipe cannot reach 10000 families; discovery/certification expansion requires a separately frozen recipe and actual yield evidence"
+  },
+  "scenarios": [
+    {
+      "target_quality_families": 1000,
+      "cross_cells": 18000,
+      "mandatory_actual_replays": 27000,
+      "single_positive_certification_actions_scaled": 7695000,
+      "certification_only_gpu_hours_if_same_cost_all_success": 150.55848684640497,
+      "full_construction_gpu_hours_if_same_cost_all_success": 220.72880824245254,
+      "raw_run_TiB_if_same_size_no_interfamily_dedup": 0.12877579774794867,
+      "content_TiB_if_same_size_no_interfamily_dedup": 0.06357301026582718,
+      "CE_records_if_same_density_not_forecast": 492000,
+      "attempt_yield_sensitivity_not_measured": [
+        {
+          "assumed_yield": 1,
+          "gpu_hours_if_each_attempt_costs_like_positive": 220.72880824245254
+        },
+        {
+          "assumed_yield": 0.5,
+          "gpu_hours_if_each_attempt_costs_like_positive": 441.4576164849051
+        },
+        {
+          "assumed_yield": 0.2,
+          "gpu_hours_if_each_attempt_costs_like_positive": 1103.6440412122627
+        }
+      ]
+    },
+    {
+      "target_quality_families": 10000,
+      "cross_cells": 180000,
+      "mandatory_actual_replays": 270000,
+      "single_positive_certification_actions_scaled": 76950000,
+      "certification_only_gpu_hours_if_same_cost_all_success": 1505.5848684640498,
+      "full_construction_gpu_hours_if_same_cost_all_success": 2207.2880824245253,
+      "raw_run_TiB_if_same_size_no_interfamily_dedup": 1.2877579774794867,
+      "content_TiB_if_same_size_no_interfamily_dedup": 0.6357301026582718,
+      "CE_records_if_same_density_not_forecast": 4920000,
+      "attempt_yield_sensitivity_not_measured": [
+        {
+          "assumed_yield": 1,
+          "gpu_hours_if_each_attempt_costs_like_positive": 2207.2880824245253
+        },
+        {
+          "assumed_yield": 0.5,
+          "gpu_hours_if_each_attempt_costs_like_positive": 4414.576164849051
+        },
+        {
+          "assumed_yield": 0.2,
+          "gpu_hours_if_each_attempt_costs_like_positive": 11036.440412122625
+        }
+      ]
+    }
+  ],
+  "scientific_pass": false,
+  "limits": [
+    "One accepted physical family is not a throughput/yield distribution.",
+    "Scenarios do not include failed-attempt overhead, training, asset downloads, or new engineering.",
+    "More distinct semantic programs at the same hub can be training samples but remain correlated.",
+    "No thresholds, replay counts, current runtime files, or frozen selection were changed."
+  ]
+}

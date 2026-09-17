@@ -1,0 +1,17 @@
+{
+  "decision": "REPAIR_BASELINE_BEFORE_MECHANISM_TRAINING",
+  "scope": "CPU_evidence_audit_and_versioned_repair_plan",
+  "evidence": "EVIDENCE.json",
+  "report": "REPORT_ZH.md",
+  "execution_allowed": false,
+  "multi_gpu_permission_acknowledged": true,
+  "multi_gpu_interface_tested": false,
+  "recommended_sequence": ["D0_readonly_memory_and_input_diagnostic", "D1_ten_train_route_learnability_gate_and_two_GPU_equivalence", "D2_fixed_multiepoch_bounded_class_weighted_SFT_with_matched_control", "D3_train_only_real_recovery_data_only_if_needed"],
+  "target_GPU_count_after_interface_gate": 4,
+  "existing_SFT_source_modified": false,
+  "new_GPU_operations": 0,
+  "new_training_runs": 0,
+  "SFT_final_closed_loop_verdict": "pending_original_executor_delivery",
+  "scientific_pass": false,
+  "basic_training_repairs_claimed_as_novelty": false
+}

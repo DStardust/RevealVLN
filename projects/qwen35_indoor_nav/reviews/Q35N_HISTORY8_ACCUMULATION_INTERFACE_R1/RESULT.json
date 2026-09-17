@@ -1,0 +1,58 @@
+{
+  "status": "FAIL_NUMERICAL_INTERFACE",
+  "unix": 1789316428.0126343,
+  "results": {
+    "control_recent2": {
+      "passed": false,
+      "gradient_relative_l2": 0.04742642119526863,
+      "gradient_cosine": 0.9989973306655884,
+      "logit_relative_l2": 0.009473888203501701,
+      "argmax_equal": false,
+      "cost": [
+        {
+          "microbatch": 8,
+          "wall_seconds": 37.43878139508888,
+          "peak_allocated_bytes": 10765707776,
+          "peak_reserved_bytes": 10848567296
+        },
+        {
+          "microbatch": 4,
+          "wall_seconds": 4.162457832833752,
+          "peak_allocated_bytes": 7632463360,
+          "peak_reserved_bytes": 7677673472
+        }
+      ]
+    },
+    "treatment_prefix8": {
+      "passed": false,
+      "gradient_relative_l2": 0.06175769865512848,
+      "gradient_cosine": 0.9982107281684875,
+      "logit_relative_l2": 0.008962052874267101,
+      "argmax_equal": true,
+      "cost": [
+        {
+          "microbatch": 8,
+          "wall_seconds": 23.98240562202409,
+          "peak_allocated_bytes": 19812427776,
+          "peak_reserved_bytes": 19931332608
+        },
+        {
+          "microbatch": 4,
+          "wall_seconds": 0.5377214041072875,
+          "peak_allocated_bytes": 12155840512,
+          "peak_reserved_bytes": 12236881920
+        }
+      ]
+    }
+  },
+  "old32_max_abs": 0.0,
+  "source_bridge_sha256": "aa4e3d3bb9be97e4b906bc56834c3cc008c17eeef52ed51c24ac0bbb052466e5",
+  "trainable_fingerprint": "0ed7dd6f9ea4c9e5ca18cbc33dbe1f7c0f213b31225e77c0f3c7b071864446c3",
+  "trainable_exact_unchanged": true,
+  "forward_decisions": 96,
+  "backward_calls": 6,
+  "optimizer_steps": 0,
+  "simulator_actions": 0,
+  "navigation_gain": false,
+  "recommended_microbatch": null
+}

@@ -1,0 +1,76 @@
+{
+  "status": "READ_ONLY_COMMITTED_PREFIX_OBSERVATION_NOT_RECOVERY_ADMISSION",
+  "journal_head_verified_against_exact_committed_prefix": true,
+  "journal_head_sha256": "5c8f95b46261ef03ad492b020c905192cb30dcb90573ad17391d66c9f20eac6c",
+  "full_log_sha256": "446b972b85f1461e1ced776519921adab9f71f1df1e9536152e83969fd7e014b",
+  "head_committed_bytes": 88895035,
+  "head_committed_records": 123431,
+  "uncommitted_tail_bytes": 943,
+  "uncommitted_tail_sha256": "32eaa310345fb5dabf22918c6bf063c780c30a3acc242d0f2cc5176b4c63274c",
+  "uncommitted_tail_used_for_budget_or_labels": false,
+  "original_files_modified": false,
+  "original_store_close_fabricated": false,
+  "validator_modified": false,
+  "original_batch_eligibility_pass": false,
+  "quality_pass": false,
+  "scientific_pass": false,
+  "next_step": "completed first bundle may undergo separate read-only content/semantic audit; no original runtime terminal PASS is inferred",
+  "bundles": [
+    {
+      "candidate_id": "WF_WIND_6d5f6b1a173f14eb1e1cc0e7",
+      "house_id": "17DRP5sb8fy",
+      "first_confirmed_action_seq": 17,
+      "committed_confirmed_actions": 10342,
+      "frozen_seq": 16753,
+      "certification_started_seq": 16756,
+      "committed_certification_trace_count": 27,
+      "all_committed_cert_trace_files_exact_hash_complete": true,
+      "candidate_bundle_result": {
+        "candidate_id": "WF_WIND_6d5f6b1a173f14eb1e1cc0e7",
+        "house_id": "17DRP5sb8fy",
+        "physical_certified": true,
+        "training_admission": false,
+        "status": "PHYSICAL_REPLAY_CERTIFIED_PENDING_FULL_QUALITY",
+        "exact_action_counts_matched": true
+      },
+      "retained_export_metadata": {
+        "FROZEN_CANDIDATE.json": "559e2a0a779158812b3a2a30da11d66e616f94266c595f33d232d8bbf31097a7",
+        "CERTIFICATE.json": "99ebf8c299a7e65e4d24535d8a0090bd64b9c0dabd0a26221681f870a7554c89",
+        "READBACK.json": "ce66a2a7b75e33ce8f68b593bbdaac7ecd96ee8684b5e4181a4f91ce7002623c",
+        "COUNT_SHORTCUT_CONTROL.json": "bc70c92355510bc45f01e8ec8659496e3481046179e7c8d17a576d116d266465"
+      },
+      "export_directory_present": true,
+      "quality_pass": false
+    },
+    {
+      "candidate_id": "WF_WIND_8bbc6829df69a1c7f35b22e3",
+      "house_id": "1LXtFkjw3qL",
+      "first_confirmed_action_seq": 52144,
+      "committed_confirmed_actions": 14196,
+      "frozen_seq": 82316,
+      "certification_started_seq": 82319,
+      "committed_certification_trace_count": 17,
+      "all_committed_cert_trace_files_exact_hash_complete": true,
+      "candidate_bundle_result": null,
+      "retained_export_metadata": {
+        "FROZEN_CANDIDATE.json": "41017dec33511340b701f424d650c8ab9f065ff6a25b4671ae7cc6dfcad9287f"
+      },
+      "export_directory_present": false,
+      "quality_pass": false
+    },
+    {
+      "candidate_id": "WF_WIND_60fcf234588ab4e74937813f",
+      "house_id": "1pXnuDYAj8r",
+      "first_confirmed_action_seq": null,
+      "committed_confirmed_actions": 0,
+      "frozen_seq": null,
+      "certification_started_seq": null,
+      "committed_certification_trace_count": 0,
+      "all_committed_cert_trace_files_exact_hash_complete": false,
+      "candidate_bundle_result": null,
+      "retained_export_metadata": {},
+      "export_directory_present": false,
+      "quality_pass": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "error": "RuntimeError('SIMULATOR_EOF_LANE_6')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v1/evaluate.py\", line 125, in main\n    if cursors[lane]<len(schedules[lane]):reset(lane)\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v1/evaluate.py\", line 97, in reset\n    assert windows[lane].receive(call(lane,dict(op='reset',index=index)))\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v1/evaluate.py\", line 93, in call\n    if not line:raise RuntimeError('SIMULATOR_EOF_LANE_'+str(lane))\nRuntimeError: SIMULATOR_EOF_LANE_6\n",
+  "completed": 13,
+  "total_actions": 3279
+}

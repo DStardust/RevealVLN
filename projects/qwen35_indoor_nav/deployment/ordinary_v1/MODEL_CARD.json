@@ -1,0 +1,19 @@
+{
+  "name": "Qwen3.5-2B ordinary navigation best4k",
+  "status": "experimental baseline; SR40 target not achieved",
+  "checkpoint": "sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "checkpoint_updates": 4000,
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "seed": 1209,
+  "input": "Original instruction, last one or two chronological 224x224 RGB frames, last at most eight actually executed movement primitives",
+  "actions": ["move_forward", "turn_left", "turn_right", "STOP"],
+  "training": "Ordinary R2R, RxR and EnvDrop data; frozen Qwen3.5-2B with q_proj/v_proj rank-8 LoRA and navigation head",
+  "internal_dev_100": {"sr": 0.21, "spl": 0.18016983923442284, "ndtw": 0.3658797007353029},
+  "full_val_unseen_this_checkpoint": null,
+  "robot_validation": null,
+  "cycle_recovery_enabled": false,
+  "learnability_diagnostic_checkpoint_used": false,
+  "base_weights": "runtime/models/Qwen3.5-2B_15852e8; obtain separately under its original license",
+  "runtime": ".envs/q35n_qwen_g2_v1; accepted official FLA 0.5.2 dependencies in sft_acceptance/ordinary_speedup_10x_v1"
+}

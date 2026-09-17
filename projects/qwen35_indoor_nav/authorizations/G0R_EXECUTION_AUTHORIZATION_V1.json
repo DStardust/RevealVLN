@@ -1,0 +1,57 @@
+{
+  "authorization_id": "Q35N_G0R_OWNER_AUTHORIZATION_V1",
+  "date": "2026-09-09",
+  "gate_id": "Q35N_G0R_RUNTIME_SETUP_ACCEPTANCE_V1",
+  "status": "AUTHORIZED_NOT_STARTED_BY_MAIN_AGENT",
+  "user_statement": "MP3D合法取得，有授权文件，批准预算，如果没有空闲gpu可以释放后面占位的程序释放gpu，并在用完之后占用回去",
+  "scope": "Independent Habitat runtime setup and bounded renderer smoke only",
+  "mp3d": {
+    "lawful_acquisition_and_local_research_use": "OWNER_CONFIRMED_IN_RESPONSE_TO_G0R_REQUEST",
+    "authorization_document_exists": "OWNER_ATTESTED",
+    "authorization_document_reviewed_by_main_agent": false,
+    "document_reference": null,
+    "external_release_allowed_by_this_authorization": false,
+    "commercial_use_allowed_by_this_authorization": false
+  },
+  "permissions": {
+    "create_isolated_environment_and_install_pinned_dependencies": true,
+    "write_runtime_setup_and_smoke_scripts_inside_line_root": true,
+    "download_registered_runtime_dependencies_within_budget": true,
+    "read_registered_project_local_scene_assets": true,
+    "run_bounded_simulator_renderer_smoke": true,
+    "select_one_currently_idle_gpu_after_read_only_checks": true,
+    "temporarily_release_verified_owner_placeholder_on_rear_gpu_if_no_idle_gpu": true,
+    "restore_only_placeholders_released_by_this_gate": true,
+    "interrupt_actual_training_inference_or_unknown_processes": false,
+    "family_generation_or_replay": false,
+    "download_or_load_qwen_or_other_models": false,
+    "training_or_navigation_gain_experiments": false
+  },
+  "resource_caps": {
+    "incremental_disk_gib": 40,
+    "environment_disk_gib": 12,
+    "build_disk_gib": 8,
+    "cache_disk_gib": 16,
+    "logs_and_smoke_disk_gib": 4,
+    "network_download_gib": 12,
+    "host_ram_gib": 32,
+    "wall_clock_hours": 8,
+    "concurrent_render_gpus": 1,
+    "render_process_vram_gib": 8
+  },
+  "gpu_guardrails": [
+    "Use a free GPU first; only if none is free inspect higher-index cards for verified owner placeholders",
+    "Record device UUID/ordinal, PID/start time, ownership, exact command and project-local script, tmux pane/session and original settings before any release",
+    "Verify a restorable launch method before stopping a placeholder; utilization or memory occupancy alone does not identify a placeholder",
+    "Recheck PID identity immediately before action; no broad pkill, process-group kill or tmux server/session termination",
+    "Stopping execution with SIGSTOP does not generally release GPU memory; verify actual resource release and do not use a blind STOP/CONT recipe",
+    "Restore the recorded placeholder configuration on the original device after own GPU context is closed, on success, failure or interruption",
+    "Do not create a placeholder on an originally idle card or duplicate one already restored; report if an unrelated task now prevents safe restoration",
+    "Record restoration evidence; restoration failure leaves GPU cleanup incomplete and must be reported"
+  ],
+  "all_new_files_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "main_agent_review_required_after_execution": true,
+  "automatic_downstream_execution": false,
+  "scientific_pass": false,
+  "runtime_verified": false
+}

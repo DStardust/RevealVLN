@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "actual_trace_and_contract_tests": 3,
+  "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.404s\n\nOK\n",
+  "protocol_changes": {
+    "id": [
+      "Q35N_EXPANDED_DEV_AFTER_SINGLE_V1",
+      "Q35N_ORDINARY_CYCLE_RECOVERY_V1"
+    ],
+    "wall_seconds": [
+      3600,
+      2700
+    ],
+    "gpu": [
+      1,
+      4
+    ],
+    "gpu_uuid": [
+      "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    ],
+    "greedy": [
+      true,
+      false
+    ],
+    "main_criterion": [
+      "Correct matched batch-1 development comparison; not scientific PASS",
+      "SR > .21, SPL >= .18016983923442284, nDTW >= .3558797007353029; matched prefixes required"
+    ],
+    "checkpoint_selection": [
+      "fixed before 51301 / final bounded pilot after",
+      "Same frozen best4k as historical matched development baseline"
+    ],
+    "checkpoint_role": [
+      "after_matched_single",
+      "best4k_cycle_recovery"
+    ],
+    "native_policy_greedy": [
+      null,
+      true
+    ],
+    "recovery": [
+      null,
+      "Least attempted motion on repeated complete causal input; logits break ties; native STOP preserved"
+    ]
+  },
+  "generated_sources_parse": true,
+  "source_lock_count": 167,
+  "geometry_preflight_reused": "Identical episodes and simulator geometry; real resets recheck distances"
+}

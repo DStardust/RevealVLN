@@ -1,0 +1,47 @@
+{
+  "gate_id": "Q35N_P2R1_SPEC_CORRECTIONS_V1",
+  "decision": "READY_FOR_MAIN_AGENT_REVIEW",
+  "date": "2026-09-09",
+  "scope": "bounded static corrections R1-R7 only",
+  "mainline_changed": false,
+  "backbone": "Qwen/Qwen3.5-2B",
+  "primary_environment": "Habitat-Sim v0.1.7 challenge-2021 with MP3D semantic scenes",
+  "ordinary_data_source": "R2R-CE v1-3 train",
+  "correction_summary": {
+    "requested": 7,
+    "statically_resolved": 7,
+    "unresolved_static": 0,
+    "deferred_runtime": 7
+  },
+  "correction_matrix": "CORRECTION_MATRIX.json",
+  "original_p2": {
+    "preserved": true,
+    "sha256sum_entries_checked": 13,
+    "sha256sum_entries_passed": 13
+  },
+  "proposed_next_gates": [
+    {"gate_id": "Q35N_G0R_RUNTIME_SETUP_ACCEPTANCE_V1", "executable": false, "requires_main_agent_authorization": true},
+    {"gate_id": "Q35N_G1F_MINIMAL_FAMILY_REPLAY_ACCEPTANCE_V2", "executable": false, "requires_main_agent_authorization": true, "depends_on": "accepted G0R runtime fingerprint and owner local-use confirmation"}
+  ],
+  "remaining_preconditions": [
+    "Main agent must separately decide whether to authorize runtime setup; current installation, download, simulator and GPU permissions remain false.",
+    "An owner must assign an idle rendering GPU and confirm lawful MP3D acquisition plus controlled local research use before either runtime scene smoke or replay.",
+    "The bounded 17DR family routes, SEE2 witnesses, merge equality, T/F/U labels and 27 physical replay/54 task-evaluation ledger remain runtime-unverified.",
+    "The Qwen full-token/MRoPE/cache/PEFT/query-reader/M2/gradient contracts remain for a separate G2 and are not part of family replay.",
+    "External release of raw or derived MP3D/R2R-CE artifacts and future commercial deployment remain blocked pending appropriate legal/owner authorization."
+  ],
+  "source_evidence_scope": "Local pinned source and asset metadata plus main-agent pinned official Qwen review; official Qwen raw URL could not be re-fetched in this executor turn and no legal terms body was accepted or interpreted.",
+  "main_agent_review_required": true,
+  "g1_execution_approved": false,
+  "scientific_pass": false,
+  "implementation_allowed": false,
+  "training_allowed": false,
+  "runtime_verified": false,
+  "new_training_runs": 0,
+  "new_navigation_episodes": 0,
+  "measured_navigation_gain": null,
+  "downloads_or_installs": 0,
+  "simulator_or_model_runs": 0,
+  "gpu_operations": 0,
+  "stopped_after_static_checks": true
+}

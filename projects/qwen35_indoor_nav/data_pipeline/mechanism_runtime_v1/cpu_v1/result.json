@@ -1,0 +1,45 @@
+{
+  "decision": "CPU_INTEGRATION_PASS",
+  "pass": true,
+  "tests": {
+    "test_backend": {
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "pass": true
+    },
+    "test_guard": {
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "pass": true
+    },
+    "test_export": {
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "pass": true
+    },
+    "test_supervisor": {
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "pass": true
+    }
+  },
+  "total_tests": 58,
+  "protected_before": {
+    "reviews/Q35N_G1R_FAMILY_CERTIFICATION_V1": "9b7f0f4fe8bc14c9cc42d7c9060709648e26fedb9343a1083b13336221f617ea",
+    "data_pipeline/mechanism_factory_v2": "9ce2a4ff914b58c8be57d7956440bffd61aba5205e17d594f200ccb0cf32dfdc",
+    "reviews/Q35N_G1R_TASK_INSTANCE_V3": "66a6f5a0773b8ccd7752fd8cf2fe9502bf20b0add3511b23b7326afb7a2e179c"
+  },
+  "protected_after": {
+    "reviews/Q35N_G1R_FAMILY_CERTIFICATION_V1": "9b7f0f4fe8bc14c9cc42d7c9060709648e26fedb9343a1083b13336221f617ea",
+    "data_pipeline/mechanism_factory_v2": "9ce2a4ff914b58c8be57d7956440bffd61aba5205e17d594f200ccb0cf32dfdc",
+    "reviews/Q35N_G1R_TASK_INSTANCE_V3": "66a6f5a0773b8ccd7752fd8cf2fe9502bf20b0add3511b23b7326afb7a2e179c"
+  },
+  "gpu_operations": 0,
+  "simulator_runs": 0,
+  "sft_results_read": false,
+  "scientific_pass": false
+}

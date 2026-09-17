@@ -1,0 +1,42 @@
+<section class="panel full" style="margin-top:20px">
+ <h2>当前：普通导航完整一轮覆盖 · 三卡 V4</h2>
+ <p>保持原数据、模型、损失和余弦学习率，从 8,000 步继续到固定 31,059 步。较好 4,000 步模型保留，不挑中间检查点、不启用两个失败控制器、不混特殊数据。</p>
+ <p id="full-coverage">正在读取整轮覆盖…</p>
+ <p id="full-workflow">等待检查点与工作流状态…</p>
+ <p id="full-budget">本段上限 4 小时；占位会恢复，无自动第二轮。</p>
+ <table id="navigation-results"><thead><tr><th>同100条、batch=1</th><th>状态</th><th>SR</th><th>SPL</th><th>nDTW</th></tr></thead><tbody id="full-nav-rows"></tbody></table>
+ <p>旧失败保留：高LR续训、低LR分支、FIT停止校准未通过开发门槛。FIT校准的拟合收益不是验证收益。所有这里的100条结果均为5屋INTERNAL_DEV，不是独立确认或完整官方val_unseen。</p>
+ <p>普通池有 2,650,347 条指令条件决策；低LR失败分支重复计算的 341,939 条另计，不算新覆盖。</p>
+ <p id="full-error" role="status"></p>
+</section>
+<script>
+(() => {
+ let busy=false;
+ const put=(id,text)=>{document.getElementById(id).textContent=text;};
+ const pct=x=>Number.isFinite(x)?(100*x).toFixed(2)+'%':'未完成';
+ const number=x=>Number.isFinite(x)?x.toLocaleString('zh-CN'):'—';
+ async function refreshFullEpoch(){
+  if(busy)return;busy=true;
+  const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),8000);
+  try{
+   const response=await fetch('/api/status',{cache:'no-store',signal:ctrl.signal});
+   if(!response.ok)throw new Error('HTTP '+response.status);
+   const d=await response.json();
+   put('full-coverage','累计覆盖 '+number(d.decisions)+' / 2,650,347（'+pct(d.full_epoch_coverage)+'）；本段新增 '+number(d.current_segment_new_decisions)+' / 1,967,696。');
+   const w=d.continuation_workflow||{};
+   put('full-workflow','工作流：'+(w.status||'准备中')+'；首个检查点审核：'+(w.first_checkpoint_accepted?'通过':'见后续审核状态')+'；状态 '+d.display_state+'。');
+   const eta=d.estimated_segment_remaining_seconds;
+   put('full-budget', '本段上限4小时，结束恢复占位，不自动第二轮。'+(Number.isFinite(eta)?' 按近期吞吐估算剩余 '+Math.ceil(eta/60)+' 分钟（早期估算会波动）'+(d.estimated_completion_within_budget===false?'；当前估计可能触及预算上限。':'。'):''));
+   const tbody=document.getElementById('full-nav-rows');tbody.replaceChildren();
+   for(const [key,label] of [['before','扩产前'],['matched','较好4000步'],['high_lr','高LR 8000（失败）'],['continued','低LR 8000（失败）'],['stop_calibrated','FIT停止校准（失败）'],['full_epoch','完整一轮31059步']]){
+    const c=d.navigation[key]||{},r=c.result||{},tr=document.createElement('tr');
+    for(const text of [label,c.status||'未开始',pct(r.sr),pct(r.spl),pct(r.ndtw)]){const td=document.createElement('td');td.textContent=text;tr.appendChild(td);}
+    tbody.appendChild(tr);
+   }
+   put('full-error','');
+  }catch(error){put('full-error','暂时无法读取；保留上次显示，自动重试：'+error.message);}
+  finally{clearTimeout(timer);busy=false;}
+ }
+ refreshFullEpoch();setInterval(refreshFullEpoch,10000);
+})();
+</script>

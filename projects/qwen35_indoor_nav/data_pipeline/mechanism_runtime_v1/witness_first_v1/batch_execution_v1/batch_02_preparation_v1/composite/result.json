@@ -1,0 +1,128 @@
+{
+  "status": "CPU_BATCH02_SOURCE_READY_NOT_EXECUTABLE",
+  "selected_indices": [
+    1,
+    2,
+    3
+  ],
+  "selected_houses": [
+    "2n8kARJN3HM",
+    "5LpN3gDmAk7",
+    "29hnd4uzFmX"
+  ],
+  "selected_hubs": [
+    1,
+    0,
+    0
+  ],
+  "validated_constructors": 3,
+  "source_hashes_verified": 130,
+  "changed_instructions": 2,
+  "prior_candidate_comparisons": 18,
+  "within_new_batch_comparisons": 3,
+  "no_same_house_hub_below_1m": true,
+  "gpu_operations": 0,
+  "simulator_runs": 0,
+  "runtime_allowed": false,
+  "executable": false,
+  "scientific_pass": false,
+  "validation": [
+    {
+      "candidate_id": "WF_WIND_eb629329dddc71193388a39b_B02_LR1",
+      "house_id": "2n8kARJN3HM",
+      "hub_index": 1,
+      "cpu_constructor_pass": true,
+      "backend_calls": 0,
+      "task_predicates_unchanged": true,
+      "history_actions_before_public_tail": 172,
+      "public_tail_actions": 8,
+      "history_actions_including_public_tail": 180,
+      "exact_history_FLR_counts_before_tail": {
+        "F": 44,
+        "L": 28,
+        "R": 100
+      },
+      "continuation_actions": {
+        "C0": 36,
+        "C_A": 68,
+        "C_B": 118
+      },
+      "source_observation_query_estimates": {
+        "C0": 46,
+        "C_A": 67,
+        "C_B": 87
+      },
+      "query_estimates_not_new_runtime_observations": true,
+      "required_neutral_spin_directions": [
+        "L",
+        "R"
+      ],
+      "physical_replay_certified": false,
+      "training_admission": false
+    },
+    {
+      "candidate_id": "WF_WIND_d42a6f952947c0851cf870ac_B02_LR1",
+      "house_id": "5LpN3gDmAk7",
+      "hub_index": 0,
+      "cpu_constructor_pass": true,
+      "backend_calls": 0,
+      "task_predicates_unchanged": true,
+      "history_actions_before_public_tail": 198,
+      "public_tail_actions": 8,
+      "history_actions_including_public_tail": 206,
+      "exact_history_FLR_counts_before_tail": {
+        "F": 88,
+        "L": 67,
+        "R": 43
+      },
+      "continuation_actions": {
+        "C0": 3,
+        "C_A": 87,
+        "C_B": 77
+      },
+      "source_observation_query_estimates": {
+        "C0": 3,
+        "C_A": 57,
+        "C_B": 53
+      },
+      "query_estimates_not_new_runtime_observations": true,
+      "required_neutral_spin_directions": [
+        "L"
+      ],
+      "physical_replay_certified": false,
+      "training_admission": false
+    },
+    {
+      "candidate_id": "WF_WIND_756e47e60519cae5e7c93f31_B02_LR1",
+      "house_id": "29hnd4uzFmX",
+      "hub_index": 0,
+      "cpu_constructor_pass": true,
+      "backend_calls": 0,
+      "task_predicates_unchanged": true,
+      "history_actions_before_public_tail": 234,
+      "public_tail_actions": 8,
+      "history_actions_including_public_tail": 242,
+      "exact_history_FLR_counts_before_tail": {
+        "F": 108,
+        "L": 51,
+        "R": 75
+      },
+      "continuation_actions": {
+        "C0": 17,
+        "C_A": 67,
+        "C_B": 113
+      },
+      "source_observation_query_estimates": {
+        "C0": 6,
+        "C_A": 28,
+        "C_B": 76
+      },
+      "query_estimates_not_new_runtime_observations": true,
+      "required_neutral_spin_directions": [
+        "R"
+      ],
+      "physical_replay_certified": false,
+      "training_admission": false
+    }
+  ]
+}

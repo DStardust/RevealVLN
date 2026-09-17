@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "unix": 1789312935.3907971,
+  "sampling_comparisons": 10000,
+  "process_checks": [
+    "normal_exit_and_zombie_reap",
+    "poll_procfs_exit_race",
+    "transient_missing_is_not_terminal",
+    "refuse_live_start",
+    "refuse_live_argv",
+    "refuse_live_cwd",
+    "bounded_term_then_kill"
+  ],
+  "snapshot_report": {
+    "training_index_sha256": "cde540543491579d644ffeca8f42127511c45876a3a34830f15f27f35758d7ec",
+    "records": 37114,
+    "decisions_per_epoch": 2650347,
+    "snapshot_seal_sha256": "c4fe79b445f18ab850e0ef8edba8afbfc78e619085033187394efd23b285d335"
+  },
+  "actual_records": [
+    {
+      "record_idx": 0,
+      "source": "ENVDROP_OFFICIAL_CE_TRAIN",
+      "decisions": 77
+    },
+    {
+      "record_idx": 2,
+      "source": "RxR",
+      "decisions": 95
+    },
+    {
+      "record_idx": 5,
+      "source": "R2R",
+      "decisions": 83
+    }
+  ],
+  "offline_samples": 24,
+  "offline_online_and_inference_context_tensor_comparisons": 18,
+  "gpu_launches": 0,
+  "parameter_updates": 0,
+  "simulator_actions": 0,
+  "navigation_gain": false
+}

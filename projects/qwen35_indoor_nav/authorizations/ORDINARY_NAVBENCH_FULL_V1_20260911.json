@@ -1,0 +1,22 @@
+{
+  "id": "Q35N_R2R_CE_FULL_V1",
+  "user_request": "测一下目前最新checkpoint完整的基准结果看看",
+  "scope": "Full R2R-CE val_unseen, all 1839 instructions in 11 houses, one latest committed checkpoint selected before freeze",
+  "write_scope": "projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v1 plus this authorization",
+  "training_changes_allowed": false,
+  "optimizer_updates": 0,
+  "max_environment_actions": 919500,
+  "max_wall_seconds": 64800,
+  "physical_gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "gpu_admission": "empty including graphics contexts; no holder borrowing",
+  "max_gpu_gib": 28,
+  "max_cpu_gib": 64,
+  "max_output_gib": 8,
+  "batching": "up to 8 independent episodes, frozen CPU checks and real GPU batch parity gate; fall back to batch 1 on gate failure before any benchmark action",
+  "automatic_retry": false,
+  "checkpoint_switching": false,
+  "external_process_signals_allowed": false,
+  "monitor": "new isolated read-only loopback endpoint, existing 18766 trainer unchanged",
+  "scientific_performance_pass_threshold": null
+}

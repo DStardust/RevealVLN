@@ -1,0 +1,18 @@
+{
+  "user_statement": "执行下一步",
+  "node": "Q35N_MECHANISM_RUNTIME_INTEGRATION_V1",
+  "write_root": "data_pipeline/mechanism_runtime_v1",
+  "scope": "Habitat_backend_V4_export_loader_resource_guard_implementation_and_gated_acceptance",
+  "delegation": "continue_user_requested_parallel_work_disjoint_modules_CPU_only",
+  "cpu_execution_allowed": true,
+  "runtime_execution_requires": "main_agent_recorded_code_asset_GPU_review_and_exact_phase_config",
+  "initial_runtime_smoke_cap": {"wall_seconds": 600, "actions": 12000, "disk_GiB": 2, "seed": 1109, "existing_family_traces": 9},
+  "P0_only_after_smoke_pass": true,
+  "P0_budget_source": "parallel_readiness/v2/multifamily_plan/protocol.json",
+  "SFT_preemption_allowed": false,
+  "unknown_GPU_process_stop_allowed": false,
+  "verified_holder_release_restore_allowed_after_lease_record": true,
+  "downloads_environment_changes_allowed": false,
+  "training_allowed": false,
+  "scientific_pass": false
+}

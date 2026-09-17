@@ -1,0 +1,59 @@
+{
+  "status": "CPU_BINDING_CHECKED_PENDING_PIXEL_AND_MODEL_ENTRY",
+  "snapshot_sha256": "cde540543491579d644ffeca8f42127511c45876a3a34830f15f27f35758d7ec",
+  "groups": {
+    "train": [
+      "SN83YJsR3w2",
+      "r47D5H71a5s",
+      "JeFG25nYj2p",
+      "jh4fc5c5qoQ",
+      "s8pcmisQ38h",
+      "ULsKaCPVFJR",
+      "sT4fr6TAbpF",
+      "JmbYfDe2QKZ",
+      "Uxmj2M2itWa",
+      "HxpKQynjfin",
+      "E9uDoFAP3SH",
+      "D7N2EKCX4Sj"
+    ],
+    "check": [
+      "mJXqzFtmKg4",
+      "qoiz87JEwZ2",
+      "r1Q1Z4BcV1o",
+      "5q7pvUzZiYa"
+    ]
+  },
+  "counts": {
+    "records": 8700,
+    "decisions": 532416
+  },
+  "motion_bindings": {
+    "turns": 191712,
+    "moves": 332004,
+    "moves_3d_over_0251": 37654
+  },
+  "unique_inputs": 532416,
+  "conflicting_inputs": 0,
+  "excluded_conflict_occurrences": 0,
+  "selected": 384,
+  "class_counts": {
+    "train": [
+      64,
+      64,
+      64,
+      64
+    ],
+    "check": [
+      32,
+      32,
+      32,
+      32
+    ]
+  },
+  "input_sha256": "b4506347d4c6117613d6d81c9da96334471360db367fc5c785bb75c661131573",
+  "label_sha256": "041d14ddc9025742b9a40ddcd1c694868280ec13187ebdf0b3dd745432be4c84",
+  "original_frame_target_index": "observation[t] -> actions[t]; executed=actions[max(0,t-8):t]",
+  "selection_uses_predictions": false,
+  "official_eval_read": false,
+  "navigation_gain": null
+}

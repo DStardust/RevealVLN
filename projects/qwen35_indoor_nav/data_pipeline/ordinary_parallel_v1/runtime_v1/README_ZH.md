@@ -1,0 +1,23 @@
+# 普通下一1000路线：四独立分片、两借卡链（CPU草案）
+
+固定已有ordinary_parallel_v1计划，不改1000 JOBS/全部aliases/48个FIT屋分片或pilot100+前批1000排除表。GPU6顺序片0/2（250/253路线），GPU7顺序片1/3（244/253路线）；输出严格沿已冻结 production/shard_0000..0003，各自content/routes/ledger/quality/shards，不写旧batch或互写新片。
+
+prepare.py只读验证旧plan及所有来源锁，实际计算48屋192个glb/navmesh/house/semantic资产SHA；在四新输出根创建独立只读输入副本，冻结新源码/配置/来源/官方source与授权/精确GPU身份。每屋真实加载前仍重新计算4资产hash并与冻结ASSETS比较，不用旧cache代替资产核验。ENV固定本线q35n_habitat_v017_g0r；进程cache独立写每lane新attempt目录。
+
+原ordinary_scale_v1 worker经恰好一次的源码替换运输OUT/LINE/ROOT/只读prepare/audit路径、GPU赋值和资产核验；原pilot run_job实际双重replay完全不变。audit使用与recovery_v4相同的recovery_v1逐路线strict quarantine，turn位移<1e-6等阈值不变；只接AssertionError为隔离，未知IO/权限失败停止，旧异常不改标签。quarantine独立写片内quality，不把replay-certified当strict training。
+
+预算采用已被main接受的更保守静态分配：每片3600秒（worker3480秒含早停余量），每lane7200秒含借还；4片合计4h。每片49GiB、早停48GiB，四片196GiB，余4GiB分配本runtime元数据和合并（元数据3GiB早停）；每worker RAM12GiB/自身GPU保守显存上界4GiB。失败尝试时间保留并扣除，不能重置；监督每5秒检查全进程XML/RAM，每30秒目录计量。已知原子临时文件消失可保守计量，其他ENOENT/IO/权限错误及symlink都fail closed。
+
+启动唯一由main审核：各lane单独创建MAIN_AGENT_APPROVAL_GPU6.json或GPU7.json，内容严格等于common.approval_value(gpu)，绑定runtime INPUT_LOCK和身份文件hash。然后标准stdlib Python执行run.py --gpu 6/7。缺审批不查询GPU、不建lane输出。已有精确身份来自authorizations/ORDINARY_PARALLEL_GPU67_IDENTITIES_V1.json；signal前再次比对pid/starttime/uid/cwd/argv/pane。仅SIGTERM明确占位、不升级杀占位，不停任何外部实际任务。finally只清自己worker，核对临时sleep身份后同cwd/argv恢复占位。GPU出现不安全外部实际任务时停止自身、报告不能安全恢复，不动外部任务。
+
+两lane各flock防双launch，worker各片flock防双producer。完成片永不自动重跑；合法终态前缀可续跑未尝试route。未完成route目录、partial ledger、未封存index或无RESULT的旧attempt均阻断，需独立版本恢复/人工主agent裁决，不覆盖、不默默重试。每次attempt保存进度/计数与恢复收据。正常恢复借用可依据此前已核验的RESTORATION新PID身份，不沿用过期PID。
+
+针对已实测的占位退出竞态：SIGTERM后仅用/proc/stat的starttime及进程状态判断退出，cwd先消失和ENOENT不触发错误的fullidentity读取；zombie视为退出，pid复用仍拒绝。pane_dead转变有界等待，不立即断言；只有新占位同argv/cwd/uid且GPU显存实际恢复后才恢复原remain-on-exit选项。恢复失败保持remain-on，绝不因设off删除唯一恢复pane。对应六项CPU负例/时序测试不访问真实GPU。
+
+退出后的GPU context另有最多20秒drain窗口，保存每个raw XML解析样本：仅等待刚释放的自有PID消退，不忽略其他新external的1380MiB等实际负载；旧PID消失且总显存<1024MiB后才走原准入。恢复时同样等待已停止的本worker context释放。临时sleep须精确身份核验后仅SIGTERM该自有PID、有界等pane_dead，再使用无-k的respawn-pane，避免tmux杀未知pane进程。
+
+合并执行使用有PIL/numpy的本线环境（纯CPU，无模型/仿真）：ENV/bin/python3 -I -B runtime_v1/merge.py。取得两lane与四片producer锁；要求每attempt已有RESULT且占位已恢复，四片全部完成，或main明确写对应CENSOR_RECEIPT（精确shard和ledger SHA、不把未尝试当失败）。逐strict路线再次调用原独立audit_route核对全部alias、RGB像素hash、supervision/diagnostic/replay，索引与重审结果须完全一致；任何异常fail closed。物理路线及(source,episode_id)全局排重，隔离与失败/未审计候选分别统计。
+
+唯一合并索引为原计划merge/TRAINING_INDEX.jsonl，每条增加明确sourceRoot（相对项目ROOT），policy_file等仍相对此sourceRoot。消费者不能把所有相对RGB路径解析到共享根。结果分开报告strict路线、指令、unique route decisions、instruction-conditioned decisions，不将manifest行、replay条数或别名数混作物理路线数。新合并不训练、不主张自然语言完整语义或导航收益。
+
+这是CPU实现与待审批执行草案；没有本节点GPU渲染验收。实际生产、GPU借还与最终完整合并仍须main执行并核验结果。

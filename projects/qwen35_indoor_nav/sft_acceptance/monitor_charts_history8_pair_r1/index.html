@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>普通导航 · SR40基座训练</title>
+<style>body{max-width:1050px;margin:32px auto;padding:0 20px;font:16px/1.65 system-ui;background:#0d1423;color:#e6edf7}.card{padding:22px;background:#182339;border-radius:12px;margin:18px 0}h1{font-size:26px}h2{font-size:20px}.muted{color:#abbad0}.big{font-size:25px;color:#87d8ff}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:9px;border-bottom:1px solid #344158}.scroll{overflow-x:auto}#error{color:#ffaaaa}svg{width:100%;height:auto}progress{width:100%}</style>
+<h1>普通导航基座 · 先达到 SR 40%+</h1><p>普通基座 → 轻量贡献 → 任务记忆，向约60%推进。后两阶段尚未执行，60%不是已实现成绩。</p><div id="error" role="alert"></div>
+<div class="card"><h2>当前工作：2帧 / 8帧配对训练 · 内存修复R1</h2><p class="big" id="phase">读取中…</p><p>两分支同38.4万普通决策、51个FIT房屋、4000次更新；固定微批4，每卡累积8次，三卡全局96。只改变RGB历史，特殊与64条纠错数据均不加入。</p><p id="diagnostic" class="muted"></p><p id="prior-memory" class="muted"></p><p>每分支训练上限5小时；固定最终权重，不按中间成绩挑选。训练完成后还需闭环评测。</p>
+<div class="scroll"><table><thead><tr><th>分支</th><th>更新</th><th>决策</th><th>训练CE</th><th>实际存活rank</th><th>状态</th></tr></thead><tbody id="training"></tbody></table></div><p id="training-time" class="muted"></p></div>
+<div class="card"><h2>训练损失（不是导航SR）</h2><svg id="loss-chart" viewBox="0 0 900 240" aria-label="两分支训练交叉熵随更新次数变化"></svg><p class="muted">蓝：2帧对照；橙：8帧历史。横轴0–4000更新；纵轴训练CE。同一分支的真实日志才会画线，没有训练时不生成假曲线。</p></div>
+<div class="card" id="navigation-results"><h2>导航成绩与验收目标</h2><div class="scroll"><table><thead><tr><th>范围</th><th>版本</th><th>SR</th><th>SPL</th></tr></thead><tbody id="navigation"></tbody></table></div><p>完整1,839条至少成功736条，才达到SR≥40%；同步报告nDTW、失败和成本。历史完整结果为旧41800权重/batch8，新阶段固定batch1，不能直接当严格配对增益。</p><p class="muted">内部100条已多次暴露，只用于开发筛选，不代替完整基准。B8与B4等价性检验的失败保留；当前固定B4，不放宽原数值门槛。</p></div>
+<div class="card"><h2>资源与边界</h2><p id="resource"></p><p>高显存也可能来自原占位。是否训练以实际rank存活身份和回执为准；不重启生产、不改旧冻结源码/权重/输入锁、不使用付费API。本页只读，不提供启动停止接口。</p><p id="updated" class="muted"></p></div><script src="/refresh.js"></script></html>
+
+

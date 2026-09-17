@@ -1,0 +1,642 @@
+{
+  "status": "COMPLETE",
+  "learnability_pass": true,
+  "updates": 400,
+  "training_reads": 12800,
+  "stop_reason": null,
+  "evaluations": [
+    {
+      "updates": 0,
+      "training_reads": 0,
+      "elapsed_seconds": 145.93404495297,
+      "groups": {
+        "train": {
+          "n": 256,
+          "ce": 0.9220274686813354,
+          "accuracy": 0.6171875,
+          "recall": [
+            0.796875,
+            0.71875,
+            0.734375,
+            0.21875
+          ],
+          "confusion": [
+            [
+              51,
+              7,
+              6,
+              0
+            ],
+            [
+              15,
+              46,
+              3,
+              0
+            ],
+            [
+              13,
+              4,
+              47,
+              0
+            ],
+            [
+              14,
+              16,
+              20,
+              14
+            ]
+          ],
+          "scenes": {
+            "SN83YJsR3w2": {
+              "n": 24,
+              "correct": 15
+            },
+            "r47D5H71a5s": {
+              "n": 24,
+              "correct": 18
+            },
+            "JeFG25nYj2p": {
+              "n": 24,
+              "correct": 13
+            },
+            "jh4fc5c5qoQ": {
+              "n": 24,
+              "correct": 19
+            },
+            "s8pcmisQ38h": {
+              "n": 20,
+              "correct": 10
+            },
+            "ULsKaCPVFJR": {
+              "n": 20,
+              "correct": 15
+            },
+            "sT4fr6TAbpF": {
+              "n": 20,
+              "correct": 9
+            },
+            "JmbYfDe2QKZ": {
+              "n": 20,
+              "correct": 15
+            },
+            "Uxmj2M2itWa": {
+              "n": 20,
+              "correct": 9
+            },
+            "HxpKQynjfin": {
+              "n": 20,
+              "correct": 16
+            },
+            "E9uDoFAP3SH": {
+              "n": 20,
+              "correct": 13
+            },
+            "D7N2EKCX4Sj": {
+              "n": 20,
+              "correct": 6
+            }
+          }
+        },
+        "check": {
+          "n": 128,
+          "ce": 0.9146912097930908,
+          "accuracy": 0.6015625,
+          "recall": [
+            0.75,
+            0.65625,
+            0.59375,
+            0.40625
+          ],
+          "confusion": [
+            [
+              24,
+              2,
+              6,
+              0
+            ],
+            [
+              9,
+              21,
+              2,
+              0
+            ],
+            [
+              12,
+              1,
+              19,
+              0
+            ],
+            [
+              11,
+              3,
+              5,
+              13
+            ]
+          ],
+          "scenes": {
+            "mJXqzFtmKg4": {
+              "n": 32,
+              "correct": 19
+            },
+            "qoiz87JEwZ2": {
+              "n": 32,
+              "correct": 17
+            },
+            "r1Q1Z4BcV1o": {
+              "n": 32,
+              "correct": 21
+            },
+            "5q7pvUzZiYa": {
+              "n": 32,
+              "correct": 20
+            }
+          }
+        }
+      }
+    },
+    {
+      "updates": 100,
+      "training_reads": 3200,
+      "elapsed_seconds": 676.3861536949407,
+      "groups": {
+        "train": {
+          "n": 256,
+          "ce": 0.000895171717274934,
+          "accuracy": 1.0,
+          "recall": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "confusion": [
+            [
+              64,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              64,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              64,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              64
+            ]
+          ],
+          "scenes": {
+            "SN83YJsR3w2": {
+              "n": 24,
+              "correct": 24
+            },
+            "r47D5H71a5s": {
+              "n": 24,
+              "correct": 24
+            },
+            "JeFG25nYj2p": {
+              "n": 24,
+              "correct": 24
+            },
+            "jh4fc5c5qoQ": {
+              "n": 24,
+              "correct": 24
+            },
+            "s8pcmisQ38h": {
+              "n": 20,
+              "correct": 20
+            },
+            "ULsKaCPVFJR": {
+              "n": 20,
+              "correct": 20
+            },
+            "sT4fr6TAbpF": {
+              "n": 20,
+              "correct": 20
+            },
+            "JmbYfDe2QKZ": {
+              "n": 20,
+              "correct": 20
+            },
+            "Uxmj2M2itWa": {
+              "n": 20,
+              "correct": 20
+            },
+            "HxpKQynjfin": {
+              "n": 20,
+              "correct": 20
+            },
+            "E9uDoFAP3SH": {
+              "n": 20,
+              "correct": 20
+            },
+            "D7N2EKCX4Sj": {
+              "n": 20,
+              "correct": 20
+            }
+          }
+        },
+        "check": {
+          "n": 128,
+          "ce": 1.9307998418807983,
+          "accuracy": 0.671875,
+          "recall": [
+            0.625,
+            0.625,
+            0.625,
+            0.8125
+          ],
+          "confusion": [
+            [
+              20,
+              3,
+              4,
+              5
+            ],
+            [
+              7,
+              20,
+              1,
+              4
+            ],
+            [
+              7,
+              1,
+              20,
+              4
+            ],
+            [
+              5,
+              0,
+              1,
+              26
+            ]
+          ],
+          "scenes": {
+            "mJXqzFtmKg4": {
+              "n": 32,
+              "correct": 24
+            },
+            "qoiz87JEwZ2": {
+              "n": 32,
+              "correct": 20
+            },
+            "r1Q1Z4BcV1o": {
+              "n": 32,
+              "correct": 21
+            },
+            "5q7pvUzZiYa": {
+              "n": 32,
+              "correct": 21
+            }
+          }
+        }
+      }
+    },
+    {
+      "updates": 200,
+      "training_reads": 6400,
+      "elapsed_seconds": 1155.6532899399754,
+      "groups": {
+        "train": {
+          "n": 256,
+          "ce": 0.0001323304168181494,
+          "accuracy": 1.0,
+          "recall": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "confusion": [
+            [
+              64,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              64,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              64,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              64
+            ]
+          ],
+          "scenes": {
+            "SN83YJsR3w2": {
+              "n": 24,
+              "correct": 24
+            },
+            "r47D5H71a5s": {
+              "n": 24,
+              "correct": 24
+            },
+            "JeFG25nYj2p": {
+              "n": 24,
+              "correct": 24
+            },
+            "jh4fc5c5qoQ": {
+              "n": 24,
+              "correct": 24
+            },
+            "s8pcmisQ38h": {
+              "n": 20,
+              "correct": 20
+            },
+            "ULsKaCPVFJR": {
+              "n": 20,
+              "correct": 20
+            },
+            "sT4fr6TAbpF": {
+              "n": 20,
+              "correct": 20
+            },
+            "JmbYfDe2QKZ": {
+              "n": 20,
+              "correct": 20
+            },
+            "Uxmj2M2itWa": {
+              "n": 20,
+              "correct": 20
+            },
+            "HxpKQynjfin": {
+              "n": 20,
+              "correct": 20
+            },
+            "E9uDoFAP3SH": {
+              "n": 20,
+              "correct": 20
+            },
+            "D7N2EKCX4Sj": {
+              "n": 20,
+              "correct": 20
+            }
+          }
+        },
+        "check": {
+          "n": 128,
+          "ce": 2.0952987670898438,
+          "accuracy": 0.671875,
+          "recall": [
+            0.625,
+            0.625,
+            0.59375,
+            0.84375
+          ],
+          "confusion": [
+            [
+              20,
+              3,
+              4,
+              5
+            ],
+            [
+              7,
+              20,
+              1,
+              4
+            ],
+            [
+              8,
+              1,
+              19,
+              4
+            ],
+            [
+              4,
+              0,
+              1,
+              27
+            ]
+          ],
+          "scenes": {
+            "mJXqzFtmKg4": {
+              "n": 32,
+              "correct": 23
+            },
+            "qoiz87JEwZ2": {
+              "n": 32,
+              "correct": 21
+            },
+            "r1Q1Z4BcV1o": {
+              "n": 32,
+              "correct": 21
+            },
+            "5q7pvUzZiYa": {
+              "n": 32,
+              "correct": 21
+            }
+          }
+        }
+      }
+    },
+    {
+      "updates": 400,
+      "training_reads": 12800,
+      "elapsed_seconds": 2069.2005078268703,
+      "groups": {
+        "train": {
+          "n": 256,
+          "ce": 4.42320088041015e-05,
+          "accuracy": 1.0,
+          "recall": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "confusion": [
+            [
+              64,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              64,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              64,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              64
+            ]
+          ],
+          "scenes": {
+            "SN83YJsR3w2": {
+              "n": 24,
+              "correct": 24
+            },
+            "r47D5H71a5s": {
+              "n": 24,
+              "correct": 24
+            },
+            "JeFG25nYj2p": {
+              "n": 24,
+              "correct": 24
+            },
+            "jh4fc5c5qoQ": {
+              "n": 24,
+              "correct": 24
+            },
+            "s8pcmisQ38h": {
+              "n": 20,
+              "correct": 20
+            },
+            "ULsKaCPVFJR": {
+              "n": 20,
+              "correct": 20
+            },
+            "sT4fr6TAbpF": {
+              "n": 20,
+              "correct": 20
+            },
+            "JmbYfDe2QKZ": {
+              "n": 20,
+              "correct": 20
+            },
+            "Uxmj2M2itWa": {
+              "n": 20,
+              "correct": 20
+            },
+            "HxpKQynjfin": {
+              "n": 20,
+              "correct": 20
+            },
+            "E9uDoFAP3SH": {
+              "n": 20,
+              "correct": 20
+            },
+            "D7N2EKCX4Sj": {
+              "n": 20,
+              "correct": 20
+            }
+          }
+        },
+        "check": {
+          "n": 128,
+          "ce": 2.2251698970794678,
+          "accuracy": 0.671875,
+          "recall": [
+            0.625,
+            0.625,
+            0.59375,
+            0.84375
+          ],
+          "confusion": [
+            [
+              20,
+              3,
+              4,
+              5
+            ],
+            [
+              7,
+              20,
+              1,
+              4
+            ],
+            [
+              8,
+              1,
+              19,
+              4
+            ],
+            [
+              4,
+              0,
+              1,
+              27
+            ]
+          ],
+          "scenes": {
+            "mJXqzFtmKg4": {
+              "n": 32,
+              "correct": 23
+            },
+            "qoiz87JEwZ2": {
+              "n": 32,
+              "correct": 21
+            },
+            "r1Q1Z4BcV1o": {
+              "n": 32,
+              "correct": 21
+            },
+            "5q7pvUzZiYa": {
+              "n": 32,
+              "correct": 21
+            }
+          }
+        }
+      }
+    }
+  ],
+  "parameter_update_l2": {
+    "action_query": 0.03675592690706253,
+    "base.model.language_model.base_model.model.layers.3.self_attn.q_proj.lora_A.default.weight": 0.1316961944103241,
+    "base.model.language_model.base_model.model.layers.3.self_attn.q_proj.lora_B.default.weight": 0.21085287630558014,
+    "base.model.language_model.base_model.model.layers.3.self_attn.v_proj.lora_A.default.weight": 0.14640745520591736,
+    "base.model.language_model.base_model.model.layers.3.self_attn.v_proj.lora_B.default.weight": 0.07740224152803421,
+    "base.model.language_model.base_model.model.layers.7.self_attn.q_proj.lora_A.default.weight": 0.1442902684211731,
+    "base.model.language_model.base_model.model.layers.7.self_attn.q_proj.lora_B.default.weight": 0.21413008868694305,
+    "base.model.language_model.base_model.model.layers.7.self_attn.v_proj.lora_A.default.weight": 0.13490062952041626,
+    "base.model.language_model.base_model.model.layers.7.self_attn.v_proj.lora_B.default.weight": 0.07735653221607208,
+    "base.model.language_model.base_model.model.layers.11.self_attn.q_proj.lora_A.default.weight": 0.12687954306602478,
+    "base.model.language_model.base_model.model.layers.11.self_attn.q_proj.lora_B.default.weight": 0.22166164219379425,
+    "base.model.language_model.base_model.model.layers.11.self_attn.v_proj.lora_A.default.weight": 0.14478476345539093,
+    "base.model.language_model.base_model.model.layers.11.self_attn.v_proj.lora_B.default.weight": 0.08366300910711288,
+    "base.model.language_model.base_model.model.layers.15.self_attn.q_proj.lora_A.default.weight": 0.14107896387577057,
+    "base.model.language_model.base_model.model.layers.15.self_attn.q_proj.lora_B.default.weight": 0.23447208106517792,
+    "base.model.language_model.base_model.model.layers.15.self_attn.v_proj.lora_A.default.weight": 0.16122542321681976,
+    "base.model.language_model.base_model.model.layers.15.self_attn.v_proj.lora_B.default.weight": 0.08444742113351822,
+    "base.model.language_model.base_model.model.layers.19.self_attn.q_proj.lora_A.default.weight": 0.17122609913349152,
+    "base.model.language_model.base_model.model.layers.19.self_attn.q_proj.lora_B.default.weight": 0.23828597366809845,
+    "base.model.language_model.base_model.model.layers.19.self_attn.v_proj.lora_A.default.weight": 0.16959190368652344,
+    "base.model.language_model.base_model.model.layers.19.self_attn.v_proj.lora_B.default.weight": 0.08335448056459427,
+    "base.model.language_model.base_model.model.layers.23.self_attn.q_proj.lora_A.default.weight": 0.3416479229927063,
+    "base.model.language_model.base_model.model.layers.23.self_attn.q_proj.lora_B.default.weight": 0.3235670030117035,
+    "base.model.language_model.base_model.model.layers.23.self_attn.v_proj.lora_A.default.weight": 0.3273443877696991,
+    "base.model.language_model.base_model.model.layers.23.self_attn.v_proj.lora_B.default.weight": 0.08223015069961548,
+    "exec_embed.weight": 0.08841365575790405,
+    "action_head.weight": 0.09577842056751251,
+    "action_head.bias": 0.0008758020121604204
+  },
+  "all_parameters_and_optimizer_finite": true,
+  "wall_seconds": 2093.3892573688645,
+  "peak_reserved_bytes": 5395972096,
+  "peak_rss_bytes": 5775048704,
+  "checkpoint": "sft_acceptance/ordinary_learnability_v1/current/final.pt",
+  "checkpoint_sha256": "dfc23db37e9f7c20e6ffbb2b3a364bcc321062c98ab956c375f316ab49e7945c",
+  "navigation_gain": null
+}

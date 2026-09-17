@@ -1,0 +1,60 @@
+{
+  "id": "Q35N_ORDINARY_EXECUTION_V4_SEGMENT_1",
+  "user_authorization": "2026-09-10: \u51c6\u5907\u5f00\u59cb\u8bad\u7ec3\uff0c\u8be5\u91cd\u542f\u7684\u91cd\u542f\uff0c\u8981\u6709\u80fd\u8fdc\u7a0b\u76d1\u63a7\u7684\u63a5\u53e3",
+  "scope": "Preserve V1/V2/V3 failures. V3 immutable checkpoint state fix alone did not satisfy real exact GPU repeatability. Enable deterministic PyTorch/CuBLAS execution and persist pre/post restore and per-parameter update diagnostics; unchanged exact gates, architecture, loss, data and segment budget.",
+  "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+  "gpu_index": 2,
+  "production_policy": "Do not stop the six healthy queues or external contexts. GPU2 old queue self-failed; hold its existing flock during this training segment, preserve batch244 failure and pending245-247. No holder existed on GPU2, none to restore.",
+  "training": {
+    "epochs": 3,
+    "chunk_steps": 4,
+    "seed": 1109,
+    "gradient_accumulation_chunks": 8,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "gradient_clip": 1,
+    "loss": "unweighted_action_ce",
+    "schedule": "constant",
+    "max_sequence_tokens": 1024
+  },
+  "budget": {
+    "wall_seconds": 86400,
+    "probe_seconds": 1200,
+    "max_forward_tokens": 328704000,
+    "max_decisions": 321000,
+    "max_updates": 10000,
+    "max_gpu_memory_bytes": 30064771072,
+    "max_new_disk_bytes": 17179869184,
+    "external_gpu_mib": 2048,
+    "external_per_process_mib": 768
+  },
+  "checkpoint_updates": 100,
+  "progress_seconds": 10,
+  "outer_watchdog": {
+    "poll_seconds": 10,
+    "stale_heartbeat_seconds": 600,
+    "terminate_grace_seconds": 60,
+    "signals_only_owned_child": true
+  },
+  "probe": {
+    "old_forward_max_abs": 1e-06,
+    "checkpoint_tensors_exact": true,
+    "longest_real_input_chunk_steps": 4,
+    "finite_nonzero_gradient_required": true,
+    "real_STOP_gradient_required": true,
+    "input_sensitivity_diagnostic_only": true,
+    "probe_updates_discarded_before_training": true
+  },
+  "snapshot": "../ordinary_baseline_v2/snapshot_v1",
+  "reference_protocol": "../ordinary_baseline_v2/PROTOCOL.json",
+  "sampling": "deterministic full-route instruction shuffle seed1109+epoch; each instruction once per epoch; retain final STOP; no truncation or class reweighting",
+  "evaluation": {
+    "online_training_metrics_are_not_closed_loop": true,
+    "closed_loop_executed": false,
+    "navigation_gain_verified": false
+  },
+  "automatic_retry": false,
+  "segment_completion": "First of 10000 optimizer updates, 23h50m graceful time limit, 320000 decisions at flushed boundary, or 3 complete epochs; checkpoint and stop. Full dataset is accessible, but this bounded segment does not promise one full epoch. Further execution must preserve checkpoint/order/budget and use a new run namespace.",
+  "deterministic_algorithms": true,
+  "cublas_workspace_config": ":4096:8"
+}

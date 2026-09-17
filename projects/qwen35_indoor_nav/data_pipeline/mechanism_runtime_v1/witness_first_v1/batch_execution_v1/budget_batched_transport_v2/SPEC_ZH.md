@@ -1,0 +1,7 @@
+# Batch08：新物理hub的相同fresh-only认证运输
+
+从new_hub_bank_v1/language_ready_v1的冻结NEXT12依次取前三个不同physical hub；实际list位置0/1/2，对应source indices0/24/48。三者同8W房屋但不同新3D位置，相距至少1米；它们不是三个独立房屋，不改任何旧cohort成员。
+
+仅私有复用封存budget_batched_transport_v1，将batch07精确目标路径替换为batch08；prepare保留原WF来源范围，无需放宽目录。原clock batching fresh-only/no-resume、factory/runner/27完整认证、3900秒supervisor/3600秒factory/60000动作/原内存与GPU护栏不变。磁盘实际原护栏为7GiB，原样保留，比8GiB要求更严格。
+
+本节点只CPU准备并验证INPUT_LOCK，生成的EXECUTION_CONFIG沿原prepare格式标注运行用途，不代表本节点已授权或启动GPU。只有主agent独立批准后才可执行batch_08/run.py；本节点不提供自动启动器、不借占位、不删除旧结果。

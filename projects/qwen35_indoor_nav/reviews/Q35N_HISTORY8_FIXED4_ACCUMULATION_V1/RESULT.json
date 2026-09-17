@@ -1,0 +1,42 @@
+{
+  "status": "PASS_INTERFACE_ONLY",
+  "unix": 1789317065.2826633,
+  "results": {
+    "control_recent2": {
+      "passed": true,
+      "gradient_relative_l2": 4.39161214543209e-08,
+      "gradient_cosine": 0.999999999999983,
+      "logits_max_abs": 0.0,
+      "argmax_equal": true,
+      "wall_seconds": [
+        39.87070270185359,
+        1.1243777619674802
+      ],
+      "peak_allocated_bytes": 8988210176,
+      "peak_reserved_bytes": 9045016576
+    },
+    "treatment_prefix8": {
+      "passed": true,
+      "gradient_relative_l2": 4.509873093472485e-08,
+      "gradient_cosine": 0.9999999999999789,
+      "logits_max_abs": 0.0,
+      "argmax_equal": true,
+      "wall_seconds": [
+        2.133163654943928,
+        2.08432755805552
+      ],
+      "peak_allocated_bytes": 13493045760,
+      "peak_reserved_bytes": 13583253504
+    }
+  },
+  "old32_max_abs": 0.0,
+  "source_bridge_sha256": "aa4e3d3bb9be97e4b906bc56834c3cc008c17eeef52ed51c24ac0bbb052466e5",
+  "trainable_fingerprint": "0ed7dd6f9ea4c9e5ca18cbc33dbe1f7c0f213b31225e77c0f3c7b071864446c3",
+  "trainable_exact_unchanged": true,
+  "forward_decisions": 192,
+  "backward_calls": 32,
+  "optimizer_steps": 0,
+  "simulator_actions": 0,
+  "navigation_gain": false,
+  "recommended_microbatch": 4
+}

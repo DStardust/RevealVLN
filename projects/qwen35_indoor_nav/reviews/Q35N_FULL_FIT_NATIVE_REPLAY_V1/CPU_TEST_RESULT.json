@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "unix": 1789339937.973011,
+  "input_rows": 5487,
+  "original_occurrences": 7225,
+  "fit_houses": 16,
+  "decoded_rgb_files": 5434,
+  "tensors_equal_inputs": 32,
+  "rejected_privileged_fields": 6,
+  "process_checks": [
+    "normal_exit_and_zombie_reap",
+    "poll_procfs_exit_race",
+    "transient_missing_is_not_terminal",
+    "refuse_live_start",
+    "refuse_live_argv",
+    "refuse_live_cwd",
+    "bounded_term_then_kill"
+  ],
+  "resource_checks": 8,
+  "logit_audit_cases": 4,
+  "native_prefix_exact": true,
+  "simulator_entry_removed": true,
+  "gpu_context_created": false,
+  "model_forwards": 0,
+  "optimizer_updates": 0
+}

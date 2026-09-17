@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>普通导航数据扩产 · 实时连接监控</title>
+<style>
+body{font:16px/1.65 system-ui,sans-serif;background:#101b2c;color:#e4ecf8;max-width:1150px;margin:30px auto;padding:0 18px}h1{font-size:26px}.banner{padding:12px 16px;border:1px solid #8d763c;background:#322e21;border-radius:8px}.live{background:#183c34;border-color:#4eaf8e}.offline{background:#482d26;border-color:#eb9a65}button,a{color:#b3dcff}button{background:#243c58;border:1px solid #6585a4;border-radius:5px;padding:6px 12px;cursor:pointer}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #3b506c;text-align:left}td:last-child{font-size:13px;overflow-wrap:anywhere}progress{width:100%;height:24px}.muted{color:#abbaca}pre{white-space:pre-wrap}#count{font-size:23px}.scroll{overflow-x:auto}
+</style>
+<h1>普通导航数据扩产 · 三卡 V2</h1>
+<p id="training">训练状态读取中</p><p id="benchmark">完整基准状态读取中</p>
+<div id="connection" class="banner" role="status">@@BANNER@@</div>
+<p class="muted"><span id="last-success">正在确认更新时间</span> · <button id="retry" type="button">立即重连</button> · <a href="./">重新加载页面</a></p>
+<p id="count">@@COUNT@@</p><progress id="bar" max="9661" value="0"></progress>
+<p id="note">生成、严格审核和最终合并分别统计；中断不等于任务失败。</p>
+<div class="scroll"><table><thead><tr><th>GPU</th><th>生产状态</th><th>已处理 / 计划</th><th>合格路线</th><th>合格动作</th><th>停止原因</th></tr></thead><tbody id="rows">@@ROWS@@</tbody></table></div>
+<h2>旧数据 CPU 恢复审核（单列）</h2><p id="old-summary">读取中</p>
+<details><summary>查看旧数据审核明细</summary><pre id="old"></pre></details>
+<h2>本波最终合并</h2><p id="final">读取中</p>
+<details><summary>连接排查</summary><p>页面能显示但刷新失败时，表格可能是上次成功的旧快照，不代表生产停止。确认原 SSH / VS Code 端口转发仍在线。本服务仅监听服务器 127.0.0.1:18769；浏览器连接恢复后自动重试。若使用代理，请保留地址末尾斜杠并在同一浏览器登录代理。</p><p id="api-url"></p><p>本地 SSH 可使用：<code>ssh -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -N -L 18769:127.0.0.1:18769 用户名@服务器地址</code></p></details>
+<p class="muted">只读监控修订版：正常 10 秒刷新，断连退避重试。生产状态与网页连接状态分开显示。</p>
+<script id="bootstrap" type="application/json">@@BOOTSTRAP@@</script>
+<script>@@CLIENT@@</script></html>

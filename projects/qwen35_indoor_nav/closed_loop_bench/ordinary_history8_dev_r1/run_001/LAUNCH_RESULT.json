@@ -1,0 +1,150 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "returncode": 0,
+  "wall_seconds": 2272.3670284571126,
+  "peak_gpu_mib": 16506,
+  "peak_rss_bytes": 39116312576,
+  "peak_output_bytes": 70587157,
+  "cleanup": {
+    "signaled": false,
+    "remaining": []
+  },
+  "gpus_after": [
+    {
+      "index": 0,
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "memory_mib": 23185,
+      "contexts": [
+        {
+          "pid": 3451602,
+          "kind": "C",
+          "name": "/mnt/zrh/miniconda3/envs/navrl/bin/python",
+          "used_memory": "9602 MiB"
+        },
+        {
+          "pid": 3515015,
+          "kind": "C+G",
+          "name": "/mnt/zrh/miniconda3/envs/navrl/bin/python",
+          "used_memory": "13514 MiB"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "memory_mib": 12,
+      "contexts": []
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "memory_mib": 15,
+      "contexts": []
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 29864,
+      "contexts": [
+        {
+          "pid": 3887550,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 3887646,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 3887737,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 3996270,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 112240,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    }
+  ],
+  "training_after": {
+    "status": {
+      "control_recent2": {
+        "status": "COMPLETE",
+        "unix": 1789324892.671028,
+        "arm": "control_recent2",
+        "updates": 4000,
+        "global_decisions": 384000,
+        "latest_checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_history8_paired_train_r1/control_recent2/run_001/checkpoint_000004000.pt",
+        "stop_code": 0,
+        "wall_seconds": 5723.3253906031605,
+        "navigation_gain_verified": false
+      },
+      "treatment_prefix8": {
+        "status": "COMPLETE",
+        "unix": 1789334767.5455883,
+        "arm": "treatment_prefix8",
+        "updates": 4000,
+        "global_decisions": 384000,
+        "latest_checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_history8_paired_train_r1/treatment_prefix8/run_001/checkpoint_000004000.pt",
+        "stop_code": 0,
+        "wall_seconds": 9646.44719748688,
+        "navigation_gain_verified": false
+      }
+    },
+    "processes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "training_processes_unchanged": false,
+  "borrowed_holders": [],
+  "foreign_processes_signaled": [],
+  "optimizer_updates": 0,
+  "surviving_training_process_identities_unchanged": true
+}

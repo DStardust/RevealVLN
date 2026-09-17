@@ -1,0 +1,21 @@
+<section class="panel full" style="margin-top:20px">
+<h2>扩产基座：已验证结果与下一段配对</h2>
+<p id="targeted-state">正在读取；全部纯模型固定 batch=1，保护组单列。</p>
+<div class="scroll"><table id="navigation-results"></table></div>
+<p class="muted">同100条 INTERNAL_DEV／5屋，不是旧1,839条 val_unseen全量。首段SR从14%到21%，但两个房屋退步；不可据此宣称稳定泛化。</p>
+<p class="warn">视觉停滞保护没有提高SR/SPL，保持关闭。第二段只继续原数据计划与优化器，不加入保护、特殊数据或STOP权重调整。</p>
+<p id="paired-summary"></p>
+<p id="workflow-state" class="muted"></p>
+</section>
+<script>
+function renderTargeted(d){
+ const t=d.training_completion||{}, nav=d.navigation||{};
+ document.getElementById('targeted-state').textContent='本段新增更新 '+fmt(d.current_segment_new_updates)+' / 4,000；新增训练决策 '+fmt(d.current_segment_new_decisions)+' / '+fmt(d.current_segment_planned_decisions)+'。'+(t.completed_budget?(t.holder_restoration_verified?'训练完成、占位已恢复。':'训练完成，等待占位恢复。'):'保留优化器及数据位置继续；不是从头重训。');
+ const labels={before:'扩产前纯模型',matched:'扩产首段·4,000更新',guard:'首段＋保护（失败，未采用）',continued:'扩产第二段·8,000更新'};
+ const states={COMPLETE:'完整审核通过',EVALUATING:'评测中',COMPLETE_PENDING_AUDIT:'完整轨迹待审核',PREPARED:'等待训练结束',NOT_STARTED:'等待训练结束',LOADING:'加载模型',FAILED_OR_CENSORED:'失败/资源截断'};
+ table('navigation-results',['版本','完成 / 状态','Batch','SR','SPL','nDTW','OSR'],Object.entries(labels).map(([k,label])=>{const n=nav[k]||{},r=n.result||{};return [label,(n.completed??0)+'/100 · '+(states[n.status]||n.status||'未知'),r.selected_batch_size??n.progress?.selected_batch_size??'—',pct(r.sr),pct(r.spl),pct(r.ndtw),pct(r.osr)]}));
+ const out=d.continuation_result;
+ document.getElementById('paired-summary').textContent=out?'第二段配对：新增成功 '+fmt(out.paired.wins)+' 条，失去成功 '+fmt(out.paired.losses)+' 条；正向工程门槛：'+(out.positive_development_signal?'满足':'不满足')+'。完整逐屋结果见报告；不等于论文科学通过。':'本段门槛事前固定：相对首段，SR上升、SPL不下降、nDTW下降不超过1个百分点。未完整审核不显示部分均值。';
+ document.getElementById('workflow-state').textContent='串行任务：'+(d.continuation_workflow?.status||'准备中')+'；仅接续一次冻结评测，不自动下一轮训练。';
+}
+</script>

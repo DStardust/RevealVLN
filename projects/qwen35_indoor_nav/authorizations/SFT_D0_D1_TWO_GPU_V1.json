@@ -1,0 +1,20 @@
+{
+  "user_statement": "进行该步骤，后面几张卡都能用，记得用完占位回去就可以",
+  "scope": "D0 read-only diagnosis plus ten-route D1 learnability and two-GPU equivalence acceptance",
+  "output": "sft_acceptance/d1_v1",
+  "spec": "sft_acceptance/d1_v1/SPEC_ZH.md",
+  "physical_GPUs": [5, 6],
+  "release_verified_holders_only": true,
+  "restore_on_success_failure_interruption": true,
+  "real_task_preemption": false,
+  "new_training_configurations": 1,
+  "training_updates_max": 200,
+  "diagnostic_update_scope": "one single-rank reference update per rank and one shared DDP update, discarded before D1",
+  "max_lease_wall_seconds": 7200,
+  "max_aggregate_GPU_seconds": 14400,
+  "D2_full_training_allowed": false,
+  "mechanism_training_allowed": false,
+  "new_navigation_episodes_allowed": false,
+  "new_downloads_allowed": false,
+  "old_SFT_immutable": true
+}

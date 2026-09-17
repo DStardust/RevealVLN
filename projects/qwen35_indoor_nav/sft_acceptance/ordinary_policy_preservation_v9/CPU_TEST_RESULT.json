@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "unix": 1789289814.320979,
+  "checks": [
+    "kl_matches_installed_torch",
+    "kl_gradient_direction",
+    "identical_distribution_zero_kl",
+    "initial_parity",
+    "three_rank_global_weighted_loss",
+    "fixed_source_not_current_student",
+    "student_parameters_exactly_restored",
+    "parameter_object_identity_preserved",
+    "no_teacher_rng_consumption",
+    "optimizer_state_untouched",
+    "forward_accounting_no_teacher_grads",
+    "exception_finally_restores_student",
+    "student_backward_after_swap",
+    "compiled_sources_parse",
+    "all_wrapper_sources_parse"
+  ],
+  "count": 15,
+  "cuda_initialized": false,
+  "navigation_gain_verified": false,
+  "source_sha256": {
+    "anchor.py": "1d935d20c662d66a5310b92434bb443bd410543cb48423200938578e8654f722",
+    "reuse.py": "e8b2c59082a80c9cd36ff6e42793a34cef88c6c4e802238b362354fa0d7ab960",
+    "tests.py": "79bec818f3151c9683b4337260a8c460197d2f0cf875dd3ec78dcf1014a456c4"
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "status": "PASS_SAVED_LOG_AND_STATIC_SOURCE_INSPECTION_ONLY",
+  "unix": 1789328970.0981636,
+  "source_prefixes": {
+    "control_recent2": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_history8_paired_train_r1/control_recent2/run_001/PROGRESS.jsonl",
+      "selected_prefix_lines": 61,
+      "selected_prefix_sha256": "8c8613bd4fa21fc28e7a08aa9856d6b1f1380a681dc723469a0a10863e9f2bda"
+    },
+    "treatment_prefix8": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_history8_paired_train_r1/treatment_prefix8/run_001/PROGRESS.jsonl",
+      "selected_prefix_lines": 61,
+      "selected_prefix_sha256": "00aeb8e154ba1856a487f04df6da90bfae5a83fc80f65d20f44d3791f6899ea9"
+    }
+  },
+  "matched_target_counts": true,
+  "end_update": 1200,
+  "periods": [
+    {
+      "first_update": 1,
+      "last_update": 200,
+      "arms": {
+        "control_recent2": {
+          "decisions": 19200,
+          "confusion": [
+            [
+              9326,
+              1260,
+              1324,
+              61
+            ],
+            [
+              1193,
+              2117,
+              178,
+              22
+            ],
+            [
+              1150,
+              156,
+              2094,
+              23
+            ],
+            [
+              89,
+              63,
+              69,
+              75
+            ]
+          ],
+          "accuracy": 0.7089583333333334,
+          "action_recall": [
+            0.7790493693091638,
+            0.6031339031339031,
+            0.6117440841367222,
+            0.2533783783783784
+          ],
+          "support": [
+            11971,
+            3510,
+            3423,
+            296
+          ],
+          "predicted_stop": 181,
+          "stop_precision": 0.4143646408839779
+        },
+        "treatment_prefix8": {
+          "decisions": 19200,
+          "confusion": [
+            [
+              8698,
+              1659,
+              1601,
+              13
+            ],
+            [
+              1821,
+              1378,
+              303,
+              8
+            ],
+            [
+              1800,
+              297,
+              1324,
+              2
+            ],
+            [
+              127,
+              88,
+              78,
+              3
+            ]
+          ],
+          "accuracy": 0.59390625,
+          "action_recall": [
+            0.7265892573719823,
+            0.3925925925925926,
+            0.3867952088810985,
+            0.010135135135135136
+          ],
+          "support": [
+            11971,
+            3510,
+            3423,
+            296
+          ],
+          "predicted_stop": 26,
+          "stop_precision": 0.11538461538461539
+        }
+      }
+    },
+    {
+      "first_update": 201,
+      "last_update": 1000,
+      "arms": {
+        "control_recent2": {
+          "decisions": 76800,
+          "confusion": [
+            [
+              36694,
+              5291,
+              5641,
+              241
+            ],
+            [
+              4656,
+              8624,
+              792,
+              79
+            ],
+            [
+              4678,
+              731,
+              8205,
+              92
+            ],
+            [
+              311,
+              249,
+              245,
+              271
+            ]
+          ],
+          "accuracy": 0.7004427083333333,
+          "action_recall": [
+            0.7665824054150041,
+            0.6094268956257508,
+            0.5986429301036043,
+            0.25185873605947956
+          ],
+          "support": [
+            47867,
+            14151,
+            13706,
+            1076
+          ],
+          "predicted_stop": 683,
+          "stop_precision": 0.3967789165446559
+        },
+        "treatment_prefix8": {
+          "decisions": 76800,
+          "confusion": [
+            [
+              36453,
+              5652,
+              5626,
+              136
+            ],
+            [
+              5956,
+              7126,
+              1005,
+              64
+            ],
+            [
+              5927,
+              978,
+              6732,
+              69
+            ],
+            [
+              353,
+              320,
+              292,
+              111
+            ]
+          ],
+          "accuracy": 0.6565364583333333,
+          "action_recall": [
+            0.7615476215346689,
+            0.5035686523920571,
+            0.4911717495987159,
+            0.10315985130111524
+          ],
+          "support": [
+            47867,
+            14151,
+            13706,
+            1076
+          ],
+          "predicted_stop": 380,
+          "stop_precision": 0.29210526315789476
+        }
+      }
+    },
+    {
+      "first_update": 1001,
+      "last_update": 1200,
+      "arms": {
+        "control_recent2": {
+          "decisions": 19200,
+          "confusion": [
+            [
+              9387,
+              1271,
+              1306,
+              55
+            ],
+            [
+              1171,
+              2182,
+              180,
+              33
+            ],
+            [
+              1149,
+              199,
+              1974,
+              19
+            ],
+            [
+              68,
+              77,
+              64,
+              65
+            ]
+          ],
+          "accuracy": 0.70875,
+          "action_recall": [
+            0.7810133954571927,
+            0.6118900729108244,
+            0.5908410655492368,
+            0.23722627737226276
+          ],
+          "support": [
+            12019,
+            3566,
+            3341,
+            274
+          ],
+          "predicted_stop": 172,
+          "stop_precision": 0.37790697674418605
+        },
+        "treatment_prefix8": {
+          "decisions": 19200,
+          "confusion": [
+            [
+              9346,
+              1360,
+              1271,
+              42
+            ],
+            [
+              1330,
+              2002,
+              217,
+              17
+            ],
+            [
+              1346,
+              224,
+              1754,
+              17
+            ],
+            [
+              83,
+              82,
+              75,
+              34
+            ]
+          ],
+          "accuracy": 0.6841666666666667,
+          "action_recall": [
+            0.7776021299608953,
+            0.5614133482893999,
+            0.5249925172104161,
+            0.12408759124087591
+          ],
+          "support": [
+            12019,
+            3566,
+            3341,
+            274
+          ],
+          "predicted_stop": 110,
+          "stop_precision": 0.3090909090909091
+        }
+      }
+    }
+  ],
+  "projection_inventory": {
+    "config_sha256": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py",
+    "source_sha256": "67cf849081143a998f0e189c551e4b5f532365a055805570747385e400372abb",
+    "checkpoint_audit_sha256": "8f8f5ee3cf6a07e1c85ab71ab61439efc53037dd9278b434c129f9c0826d4141",
+    "full_attention_layers": 6,
+    "frozen_linear_attention_layers": 18,
+    "actual_current_trainable_parameters": 434180,
+    "hypothetical_standard_rank8_linear_qkv_out_adapters_added_parameters": 1769472,
+    "hypothetical_total_trainable_parameters": 2203652,
+    "extra_fp32_weights_gradients_two_adam_moments_bytes": 28311552,
+    "activation_or_total_memory_estimate": null,
+    "runtime_adapter_reachability_verified": false,
+    "explanation": "Native forward calls both projection modules, but this static inspection does not verify decorated runtime dispatch or actual gradients. No adapters created.",
+    "novelty_claim": false,
+    "training_authorized_by_this_inspection": false
+  },
+  "limitations": [
+    "Changing models measured on training batches, not held-out validation or fixed-checkpoint inference.",
+    "Both arms start from the same two-frame-trained bridge; this tests finite-budget input adaptation, not history capacity from scratch.",
+    "No global pooled CE is reconstructed from window mean CE because weight sums were not saved.",
+    "No navigation gain, full-benchmark eligibility, or causal capacity bottleneck is established."
+  ],
+  "new_training_updates": 0,
+  "new_policy_forwards": 0,
+  "new_simulator_actions": 0,
+  "frozen_sources_modified": false
+}

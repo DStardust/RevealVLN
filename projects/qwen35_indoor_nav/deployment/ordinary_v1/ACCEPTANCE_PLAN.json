@@ -1,0 +1,18 @@
+{
+  "role": "Offline deployment interface parity only",
+  "gpu": 4,
+  "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+  "wall_seconds": 300,
+  "max_gpu_gib": 28,
+  "max_rss_gib": 32,
+  "optimizer_updates": 0,
+  "inputs": 16,
+  "source_sha256": "7468f65fb332c60c3719307edd2c03537e7f08f389b9d9b272f55c676afb834f",
+  "expected": "projects/qwen35_indoor_nav/closed_loop_bench/ordinary_expanded_dev_after_single_v1/run_001/BATCH_PARITY_GATE.json",
+  "threshold": {
+    "argmax_identical": true,
+    "max_abs": 0.15,
+    "relative_l2": 0.03
+  },
+  "before": "Only after owned learnability job exits and GPU4 is empty"
+}

@@ -1,0 +1,40 @@
+{
+  "updated": "2026-09-17T17:28:00.493624+08:00",
+  "phase": "DIAGNOSTICS_CLOSED_HANDOFF_READY",
+  "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
+  "current_report": "reviews/Q35N_RECOVERY_20260917/REPORT_ZH.md",
+  "learnability": {
+    "status": "COMPLETE_PASS",
+    "updates": 400,
+    "train_accuracy": 1.0,
+    "check_accuracy": 0.671875,
+    "coverage_expansion_skipped": true,
+    "result": "sft_acceptance/ordinary_learnability_v1/current/RESULT.json"
+  },
+  "deployment": {
+    "status": "OFFLINE_INTERFACE_PASS",
+    "path": "deployment/ordinary_v1",
+    "real_robot_tested": false
+  },
+  "cycle_recovery": {
+    "status": "UNVERIFIED_V1_TRANSPORT_ABORT_V2_V3_RESOURCE_CENSORED",
+    "path": "closed_loop_bench/ordinary_cycle_pair_gpu1_v3",
+    "gpu": 1,
+    "episodes_per_arm": 100,
+    "shared_model_process": true,
+    "old_result": "closed_loop_bench/ordinary_cycle_recovery_v1/run_001/CONTROLLED_TRANSPORT_ABORT.json",
+    "running": false,
+    "adopted": false,
+    "measured_gain": null
+  },
+  "future_option_1": "FUTURE_OPTION_1_SMALL_OBJECT_NAV_ZH.md",
+  "github_handoff": {
+    "status": "SNAPSHOT_PREPARED",
+    "branch": "codex/q35n-recovery-20260917",
+    "repository": "DStardust/RevealVLN",
+    "packet": "reviews/Q35N_RECOVERY_20260917/PRO_REVIEW_PACKET_ZH.md",
+    "pro_review_received": false
+  },
+  "legacy_status_note": "STATUS.json and lower historical README/AGENTS entries are not current process state",
+  "final_review": "reviews/Q35N_RECOVERY_20260917/FINAL_REVIEW.json"
+}

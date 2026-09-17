@@ -1,0 +1,23 @@
+{
+  "approved": true,
+  "user_basis": "可以稳定生成之后其余卡都可以使用增加效率",
+  "scope": "Previously unattempted frozen full-source shard6, not a retry or budget reset of shards0/1",
+  "source_plan": "data_pipeline/ordinary_fullscale_source_v1/PLAN.json",
+  "runtime": "data_pipeline/ordinary_fullscale_source_v1/runtime_v5",
+  "holder_identities": "authorizations/ORDINARY_FULLSCALE_SHARD6_GPU3_IDENTITIES_V1.json",
+  "gpu_to_sequential_shards": {"3": [6]},
+  "max_new_routes": 651,
+  "max_new_total_gib": 53,
+  "max_worker_ram_gib": 12,
+  "max_own_gpu_mib": 4096,
+  "shard_wall_seconds": {"6": 14400},
+  "lane_wall_seconds": {"3": 14520},
+  "max_wall_seconds_per_gpu_chain": 14520,
+  "cleanup_margin_seconds": 120,
+  "budget_status": "prospective_finite_engineering_cap_not_measured_completion_forecast",
+  "actual_external_tasks_may_be_stopped": false,
+  "restore_holders_on_success_failure_or_interruption": true,
+  "no_temporary_sleeper": true,
+  "training_allowed": false,
+  "scientific_pass": false
+}

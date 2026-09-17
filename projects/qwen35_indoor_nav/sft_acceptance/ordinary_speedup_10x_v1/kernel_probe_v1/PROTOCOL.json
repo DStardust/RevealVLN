@@ -1,0 +1,65 @@
+{
+  "id": "Q35N_ORDINARY_SPEEDUP_KERNEL_PROBE_V1",
+  "created_unix": 1789020100,
+  "authorization": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_speedup_10x_v1/AUTHORIZATION.json",
+  "authorization_gate": "first_gpu_gate",
+  "scope": "One bounded official-kernel (fla-core 0.5.2 chunk_gated_delta_rule) numerical and performance probe on one drained GPU. Reference process runs the current pure-Torch fallback with fla absent; candidate process resolves the official FLA function via the transformers use_kernel_func_from_hub_with_fallback mechanism. 0 formal training updates, 0 navigation episodes, probe optimizer updates discarded.",
+  "gpu": {
+    "index": 3,
+    "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+    "pane": "vla_idle_occupancy_20260904:0.0",
+    "pane_id": "%153",
+    "holder_command": ".envs/etpr1/bin/python -u scripts/occupy_idle_gpu.py --gpu 3 --reserve-mib 2048 --max-initial-used-mib 1536 --tag vla_idle_occupancy_20260904",
+    "holder_identity_read_live_at_execution": true,
+    "holder_restored_on_success_failure_or_interruption": true
+  },
+  "budget": {
+    "lease_wall_seconds": 1200,
+    "probe_internal_wall_seconds": 1000,
+    "max_forward_decisions": 512,
+    "planned_forward_decisions": 98,
+    "max_probe_optimizer_updates": 8,
+    "planned_optimizer_updates": 2,
+    "max_own_gpu_memory_bytes": 30064771072
+  },
+  "dependencies": {
+    "fla": "ordinary_speedup_10x_v1/official_fla_0_5_2/deps (wheel sha256 5e830c85bad3d0d34677f98ac7074d08687a3756f0f0499d95ceb96eb6920761, MIT license, sys.path only)",
+    "einops": "ordinary_speedup_10x_v1/official_einops_0_8_1/deps (sys.path only)",
+    "existing_environment_changed": false,
+    "network": "disabled: HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1"
+  },
+  "fixed_decision_set": {
+    "source": "ordinary_baseline_v2/snapshot_v1 via sealed runner.preflight (CPU, read-only)",
+    "chunks": [
+      "short: rows[0], steps 0-3",
+      "longest_mid: TOKEN_AUDIT longest_records[0], steps min(8,decisions-4)..+3",
+      "longest_stop: same record, terminal STOP step",
+      "mid_a: first distinct record with decisions>=12, steps 4-7",
+      "mid_b: same record, steps 8-11"
+    ],
+    "total_forward_decisions_per_process": 17,
+    "timing_block": "short record, min(16,len) decisions, 1 warmup + 1 measured pass, forward+backward, no optimizer step",
+    "loss": "unweighted 4-class CE summed over the fixed set (matches v6 unweighted_action_ce)",
+    "optimizer": "AdamW lr=1e-4 wd=0.01 betas=(0.9,0.999) eps=1e-8, clip=1.0, exactly 1 diagnostic update per process, discarded"
+  },
+  "thresholds": {
+    "logits_max_abs_diff": 0.05,
+    "final_memory_max_abs_diff": 0.02,
+    "loss_relative_diff": 0.001,
+    "grad_relative_l2": 0.05,
+    "grad_cosine_min": 0.9999,
+    "update_relative_l2": 0.15,
+    "argmax_agreement": "100% on all 17 fixed decisions",
+    "rationale": "BF16 reduction-order tolerance; q/k are l2-normalized before FP32 in the fallback so small absolute differences are expected. update_relative_l2 reuses the D1 gate value 0.15. No threshold is relaxed after observation; FAIL stays FAIL."
+  },
+  "determinism": "torch.use_deterministic_algorithms(True) in both processes, matching current training. If the official kernel cannot execute under deterministic mode the probe records FAIL instead of flipping the flag.",
+  "causal_conv1d": "stays pure-Torch fallback in both modes (causal_conv1d package not acquired); identical across modes",
+  "code_sha256": {
+    "probe.py": "67517904fe9a8f13db399fe16d7ea8d2178db863b173eadb0bfab1ba08f7fc47",
+    "compare.py": "ea3c8f8e75b3a69e9bdea6eb9422610f16d52ee455ac8973c81556e076d64331",
+    "lease.py": "f89a5f8c8b0f5bed8ce6ee79499b399caa1dff812c9401cb9ae3f60b0d99e7f0",
+    "test_compare.py": "d2a2abf63495ea6fc22c421633ef4759e6d3c3572d5135325b434c613f9da540"
+  },
+  "output": "kernel_probe_v1/run_v1/ (LEASE_BEFORE, LEASE_ACTIVE, drain jsonl, PROBE_REFERENCE/CANDIDATE .pt+.json, RESTORATION, LEASE_RESULT, COMPARISON)",
+  "not_authorized_here": "formal training, navigation episodes, multi-GPU, any production queue or GPU0/1/2/6/7 process, environment mutation"
+}

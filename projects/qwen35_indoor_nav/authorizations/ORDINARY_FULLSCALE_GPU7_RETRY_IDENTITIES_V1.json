@@ -1,0 +1,34 @@
+{
+  "project_root": "/mnt/data_nas/deeprobotics/daiyang/vla",
+  "holders": [
+    {
+      "gpu_device": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "pid": 3270116,
+      "starttime_ticks": 132111485,
+      "pane_id": "%152",
+      "pane_target": "vla_idle_occupancy_20260904:4.0",
+      "pane_pid": 3270116,
+      "pane_dead": false,
+      "proc_uid": 0,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+      "cmdline": [
+        ".envs/etpr1/bin/python",
+        "-u",
+        "scripts/occupy_idle_gpu.py",
+        "--gpu",
+        "7",
+        "--reserve-mib",
+        "2048",
+        "--max-initial-used-mib",
+        "1024",
+        "--tag",
+        "vla_idle_occupancy_20260904"
+      ],
+      "project_cache_environment": {},
+      "remain_on_exit": "off"
+    }
+  ],
+  "restore_same_cwd_and_cmdline": true,
+  "unknown_or_nonholder_process_signal_allowed": false
+}

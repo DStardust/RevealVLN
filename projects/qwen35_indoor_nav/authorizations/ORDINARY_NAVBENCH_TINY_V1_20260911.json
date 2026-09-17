@@ -1,0 +1,20 @@
+{
+  "id": "Q35N_R2R_CE_TINY_V1",
+  "user_request": "能否做一个很小的真正基准上的测试看看目前普通导航基座的结果",
+  "scope": "Fixed checkpoint 34800, 8 preselected official val_unseen-derived episodes, read-only baseline inference only",
+  "output": "closed_loop_bench/r2r_ce_tiny_v1",
+  "gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "requires_empty_gpu_preflight": true,
+  "holder_or_training_signals_allowed": false,
+  "training_updates": 0,
+  "max_episodes": 8,
+  "max_actions": 4000,
+  "max_wall_seconds": 2400,
+  "max_gpu_memory_gib": 28,
+  "max_cpu_memory_gib": 40,
+  "max_output_gib": 2,
+  "runtime_requires_code_input_lock_and_cpu_tests": true,
+  "automatic_retry_or_expansion": false,
+  "scientific_gain_claim_allowed": false
+}

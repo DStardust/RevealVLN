@@ -1,0 +1,50 @@
+{
+  "approved": true,
+  "date": "2026-09-10",
+  "user_basis": "到时候训练的话需要多少特殊和普通数据，把这些都挂上，你挂的有点少了，一次性才生成没多少",
+  "scope": "Versioned data-only multi-GPU production scaleout; all existing results and immutable inputs preserved",
+  "project_root": "/mnt/data_nas/deeprobotics/daiyang/vla",
+  "special_gpus": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7
+  ],
+  "ordinary_gpu": 6,
+  "holder_identities": "authorizations/DATA_SCALEOUT_HOLDER_IDENTITIES_V1.json",
+  "special_lane_wall_seconds": 43200,
+  "max_special_jobs": 131,
+  "max_special_candidates": 393,
+  "max_special_total_gib": 1024,
+  "special_per_batch": {
+    "supervisor_seconds": 3900,
+    "factory_seconds": 3600,
+    "action_cap": 60000,
+    "disk_gib": 7,
+    "audit_seconds": 1200
+  },
+  "split": "FIT_ONLY_NO_INTERNAL_DEV_CONFIRM_OFFICIAL_VAL_TEST",
+  "no_automatic_retry_of_failed_or_partial": true,
+  "move_unattempted_reservations_only": true,
+  "read_only_prior_inputs": true,
+  "holder_chain_binding_required": true,
+  "restore_holder_after_each_batch": true,
+  "unknown_or_external_process_signals_allowed": false,
+  "gpu0_operations_allowed": false,
+  "gpu_accounting_amendment": {
+    "version": "active_conservative_max_v1",
+    "raw_first": true,
+    "derived_decision_separate": true,
+    "strict_original_idle_restore": true,
+    "preserve_original_quality_thresholds": true,
+    "resource_amendment_indicated_in_audit": true,
+    "active_only": true,
+    "conservative_total_must_be_less_than_mib": 4096,
+    "external_per_process_mib": 768,
+    "external_total_mib": 2048
+  },
+  "training_allowed": false,
+  "main_launch_requires_frozen_inputs_and_tests": true
+}

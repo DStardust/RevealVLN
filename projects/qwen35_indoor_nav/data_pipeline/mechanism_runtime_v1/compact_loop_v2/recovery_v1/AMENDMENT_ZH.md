@@ -1,0 +1,5 @@
+# V2 输出根适配恢复
+
+首个V2启动在任何simulator/动作前被旧TrackedContentStore限定feedback_generation_v1目录的保护拒绝：0动作、0族。旧结果与输入锁保留，不覆写、不归为科学失败。
+
+本恢复只对只读加载的store模块实例绑定FEEDBACK_ROOT为本recovery_v1精确目录，不允许任何别的目录；原源码、数据格式、fsync、poison/完整审计不变。CPU实测新目录raw提交和最终审核，并拒绝scope外路径。新worker在本目录run_v1生成，原V2的算法、三候选和所有物理门槛不变。总监督扣除首启动5.707秒并预留余量，恢复上限2990秒。GPU1不动外部，普通后台不动，无训练。

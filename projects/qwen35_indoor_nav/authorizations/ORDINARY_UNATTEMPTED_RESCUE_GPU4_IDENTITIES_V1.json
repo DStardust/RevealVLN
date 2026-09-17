@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-10",
+  "project_root": "/mnt/data_nas/deeprobotics/daiyang/vla",
+  "source": "data_pipeline/ordinary_parallel_v1/holder_recovery_v3/runs/gpu_4_attempt_000/RESULT.json",
+  "holders": [{
+    "gpu_device": 4,
+    "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+    "pid": 3294955,
+    "starttime_ticks": 132285808,
+    "proc_uid": 0,
+    "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+    "cmdline": [".envs/etpr1/bin/python", "-u", "scripts/occupy_idle_gpu.py", "--gpu", "4", "--reserve-mib", "2048", "--max-initial-used-mib", "1024", "--tag", "vla_idle_occupancy_20260904"],
+    "pane_id": "%149",
+    "pane_target": "vla_idle_occupancy_20260904:1.0",
+    "pane_pid": 3294955,
+    "pane_dead": false,
+    "project_cache_environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "XDG_CACHE_HOME": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/recovery_r1/cache",
+      "CUDA_CACHE_PATH": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/recovery_r1/cache/cuda",
+      "TMPDIR": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/recovery_r1/tmp"
+    },
+    "remain_on_exit": "off",
+    "verified_holder_gpu_mib": 29334,
+    "revalidate_before_signal": true
+  }]
+}

@@ -1,0 +1,60 @@
+{
+  "approved": true,
+  "user_basis": "现在补齐自动生成；后部已核实占位可借用并用后恢复",
+  "scope": "1362 genuinely unattempted routes only; explicit conservative active-process telemetry accounting amendment",
+  "source_plan": "data_pipeline/ordinary_fullscale_source_v1/PLAN.json",
+  "rescue_source": "data_pipeline/ordinary_fullscale_source_v1/auto_generation_v4/source_v1",
+  "rescue_jobs_sha256": "ca0a291592b8a008e8acee91115260b69112d0e8e628493bc6c31f007ce84dcf",
+  "runtime": "data_pipeline/ordinary_fullscale_source_v1/auto_generation_v4",
+  "new_output_parent": "data_pipeline/ordinary_fullscale_source_v1/auto_generation_v4_production",
+  "holder_identities": "authorizations/ORDINARY_AUTO_REMAINDER_GPU6_IDENTITIES_V4.json",
+  "gpu_to_sequential_shards": {
+    "6": [
+      2,
+      4
+    ]
+  },
+  "expected_unattempted_per_old_shard": {
+    "2": 364,
+    "4": 998
+  },
+  "max_new_routes": 1362,
+  "max_new_total_gib": 102,
+  "max_worker_ram_gib": 12,
+  "max_own_gpu_mib": 4096,
+  "shard_wall_seconds": {
+    "2": 7200,
+    "4": 4800
+  },
+  "lane_wall_seconds": {
+    "6": 12120
+  },
+  "max_wall_seconds_per_gpu_chain": 12120,
+  "cleanup_margin_seconds": 120,
+  "budget_status": "prospective_finite_engineering_cap_not_measured_completion_forecast",
+  "old_failed_and_interrupted_routes_may_be_retried": false,
+  "old_production_roots_may_be_modified": false,
+  "actual_external_tasks_may_be_stopped": false,
+  "restore_holders_on_success_failure_or_interruption": true,
+  "no_temporary_sleeper": true,
+  "training_allowed": false,
+  "scientific_pass": false,
+  "prior_preworker_wall_seconds": 209.07168883481063,
+  "remaining_chain_wall_seconds": 11910.92831116519,
+  "preserve_both_queue_approval_failures": true,
+  "prior_wall_scope": "Legacy schema field prior_preworker_wall_seconds now accounts ALL prior attempts including actual V2 production; NOT a claim of zero physical attempts",
+  "metadata_root_disjoint_from_production": true,
+  "original_disk_guard_and_census_unchanged": true,
+  "gpu_accounting_guard_amended": true,
+  "quantitative_memory_limits_unchanged": true,
+  "gpu_accounting_amendment": {
+    "version": "conservative_max_active_v1",
+    "scope": "active registered own process only; no-own/readiness/restore original guard unchanged",
+    "reported_total": "max(device_memory_mib,sum(process_memory_mib))",
+    "inconsistent_sample_total_must_be_less_than_mib": 4096,
+    "external_process_max_mib": 768,
+    "external_sum_max_mib": 2048,
+    "raw_readings_preserved": true,
+    "old_guard_pass_not_claimed_for_inconsistent_samples": true
+  }
+}

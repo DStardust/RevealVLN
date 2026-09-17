@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "status": "PASS_ACTUAL_WINDOW_AND_AUDIT_CPU",
+  "unix": 1789319560.732853,
+  "arms": {
+    "control_recent2": {
+      "real_record_indices": [
+        0,
+        2,
+        5
+      ],
+      "actual_trace_inputs": 255,
+      "actual_offline_online_tensor_comparisons": 18,
+      "reset_and_terminal_passed": true
+    },
+    "treatment_prefix8": {
+      "real_record_indices": [
+        0,
+        2,
+        5
+      ],
+      "actual_trace_inputs": 255,
+      "actual_offline_online_tensor_comparisons": 18,
+      "reset_and_terminal_passed": true
+    }
+  },
+  "corruption_rejections": 216,
+  "all_500_online_indices_checked": true,
+  "physics_and_metric_source_unchanged": true,
+  "training_updates": 0,
+  "gpu_launches": 0,
+  "simulator_actions": 0,
+  "sources": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history_pair_eval_r1/history_audit.py": "b6ba2dd4bdc3e33f95e0181017d2b7ebb06f1bc3df098e654cc3e7c4e707a97d",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history_pair_eval_r1/reuse.py": "ebfb8b023be4ce481366d884e2e25c09c085e662a0261e88bc2d2dd30c34cf3e",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history_pair_eval_r1/tests.py": "dd020c6a357ddf33ef5614cea3373389fc37186d22d6594fb71d2087e26b0c4d",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/aggregate.py": "96518f92944be2079b5c429d6f4a595573511b7da1a51ecfb22513caf27eceac",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/common.py": "5fa04d77f83431dc55da2a734025ea6dbe2e36d8c3a9a3d0ea4ab0ec17697faa",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/evaluate.py": "b41a0012056ff53e2f68f6201c28ac6b5b4c052a722cf44c41212e28ca15609a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/executor.py": "48ceb8d900786c032a475d58d234a79a0090cec4e164c369c73e1baf82355b10",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/launch.py": "3e14bf13613c7bc4b203e1af8563e74e11086aa4e08841b9bc9d0ed47f7c0614",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/official_distance.py": "cc5c46ddbc3691de9477072eff42596661bfa0e5fc08e3e6e2c1196f315b82d7",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/path_metrics.py": "9f85a76e47d00b632491c711a9a76eb8503943e39ffa4711fa957dd538486502",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/reuse.py": "e6809fd220b804cb8cd23dd240353d9a0d67a8d8bdfa44a0f36f54d83dd9dd5e",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history2_dev_r1/tree_size.py": "331c54965a7e9e5b162a7eee8ba2caa0e90f01a3c75232ec5a9d12b7077e8135",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/aggregate.py": "96518f92944be2079b5c429d6f4a595573511b7da1a51ecfb22513caf27eceac",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/common.py": "5fa04d77f83431dc55da2a734025ea6dbe2e36d8c3a9a3d0ea4ab0ec17697faa",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/evaluate.py": "b41a0012056ff53e2f68f6201c28ac6b5b4c052a722cf44c41212e28ca15609a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/executor.py": "48ceb8d900786c032a475d58d234a79a0090cec4e164c369c73e1baf82355b10",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/launch.py": "3e14bf13613c7bc4b203e1af8563e74e11086aa4e08841b9bc9d0ed47f7c0614",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/official_distance.py": "cc5c46ddbc3691de9477072eff42596661bfa0e5fc08e3e6e2c1196f315b82d7",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/path_metrics.py": "9f85a76e47d00b632491c711a9a76eb8503943e39ffa4711fa957dd538486502",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/reuse.py": "09cf09e7f3304352ad7a1cda9b2529bf6c445e934ac4c90aa5ac7797c4540f52",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_history8_dev_r1/tree_size.py": "331c54965a7e9e5b162a7eee8ba2caa0e90f01a3c75232ec5a9d12b7077e8135"
+  }
+}

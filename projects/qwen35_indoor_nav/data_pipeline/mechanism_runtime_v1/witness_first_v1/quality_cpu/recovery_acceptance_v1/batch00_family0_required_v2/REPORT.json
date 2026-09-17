@@ -1,0 +1,181 @@
+{
+  "grade": "RECOVERED_FAMILY_REQUIRED_CONTENT_VERIFIED_RUNTIME_CENSORED",
+  "recovery_content_pass": true,
+  "quality_pass": false,
+  "training_admission": false,
+  "requires_main_training_admission": true,
+  "original_batch_pass": false,
+  "scientific_pass": false,
+  "model_gain_pass": false,
+  "candidate_id": "WF_WIND_6d5f6b1a173f14eb1e1cc0e7",
+  "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_00/run_v1",
+  "errors": [],
+  "source_and_phase_binding_verified": true,
+  "preaction_configuration_verified": true,
+  "semantics": {
+    "semantic_content_pass": true,
+    "original_quality_pass": false,
+    "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+    "house_id": "17DRP5sb8fy",
+    "hub_position": [
+      -4.333799839019775,
+      0.07244700193405151,
+      -1.4684200286865234
+    ],
+    "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+    "matrix": {
+      "action_counts": {
+        "H_A": {
+          "F": 88,
+          "L": 54,
+          "R": 54
+        },
+        "H_B": {
+          "F": 88,
+          "L": 54,
+          "R": 54
+        },
+        "H_A_I": {
+          "F": 88,
+          "L": 54,
+          "R": 54
+        }
+      },
+      "history_reversals": [
+        [
+          "task_A",
+          "C0"
+        ],
+        [
+          "task_A",
+          "C_B"
+        ],
+        [
+          "task_B",
+          "C0"
+        ],
+        [
+          "task_B",
+          "C_A"
+        ]
+      ],
+      "task_differences": [
+        [
+          "H_A",
+          "C0"
+        ],
+        [
+          "H_A",
+          "C_A"
+        ],
+        [
+          "H_B",
+          "C0"
+        ],
+        [
+          "H_B",
+          "C_B"
+        ],
+        [
+          "H_A_I",
+          "C0"
+        ],
+        [
+          "H_A_I",
+          "C_A"
+        ]
+      ]
+    },
+    "cells_verified": 18,
+    "replays_verified": 27,
+    "evaluations_verified": 54,
+    "evidence_verified": true,
+    "policy_future_query_excluded": true,
+    "source_error_is_distinct_from_postprocess_acceptance": true,
+    "grade": "SEMANTIC_CONTENT_VERIFIED_WITHOUT_RUNTIME_TERMINAL_ADMISSION"
+  },
+  "committed_prefix": {
+    "committed_bytes": 88895035,
+    "committed_records": 123431,
+    "uncommitted_tail_bytes": 943,
+    "uncommitted_tail_sha256": "32eaa310345fb5dabf22918c6bf063c780c30a3acc242d0f2cc5176b4c63274c",
+    "tail_used_for_labels_or_budget": false
+  },
+  "family_completion": {
+    "certified_seq": 52127,
+    "closed_budget_seq": 52128,
+    "family_budget": {
+      "certification": {
+        "actions": 7020,
+        "finished": 1315106.402406455,
+        "started": 1314632.358759961
+      },
+      "discovery": {
+        "actions": 3322,
+        "finished": 1314632.348025582,
+        "started": 1314397.264052238
+      }
+    },
+    "confirmed_actions_by_phase": {
+      "discovery": 3322,
+      "certification": 7020
+    },
+    "budget_snapshot_at_family_completion": {
+      "active": null,
+      "bundles": {
+        "WF_WIND_6d5f6b1a173f14eb1e1cc0e7": {
+          "certification": {
+            "actions": 7020,
+            "finished": 1315106.402406455,
+            "started": 1314632.358759961
+          },
+          "discovery": {
+            "actions": 3322,
+            "finished": 1314632.348025582,
+            "started": 1314397.264052238
+          }
+        }
+      },
+      "created": 1314390.334333538,
+      "last_clock": 1315106.402406455,
+      "limits": {
+        "certification_actions": 20000,
+        "certification_seconds": 1500,
+        "discovery_actions": 15000,
+        "discovery_seconds": 1000,
+        "total_actions": 60000,
+        "total_seconds": 3600
+      },
+      "total_reserved_actions": 10342,
+      "version": 2
+    },
+    "all_confirmed_actions_durably_reserved_first": true
+  },
+  "resource_evidence": {
+    "all_recorded_resource_samples_pass": true,
+    "samples": 319,
+    "family_result_local_mtime": 1788962847.457746,
+    "process_started_unix": 1788962130.8787615,
+    "supervisor_result_local_mtime": 1788963858.0732408,
+    "maximum_observed_sample_gap_seconds": 7.6023861579597,
+    "original_resource_error": "AssertionError('EXTERNAL_RESOURCE_LOAD')",
+    "failed_trigger_snapshot_available": false,
+    "continuous_resource_compliance_proven": false,
+    "precise_family_sample_time_alignment_proven": false,
+    "scope": "all_persisted_samples_and_trusted_local_file_order_only_not_original_supervisor_pass",
+    "own_renderer_absent_at_original_terminal": true
+  },
+  "whole_store_inventory_pass": true,
+  "original_store_closed_pass": false,
+  "excluded_uncommitted_partials": [],
+  "required_blob_count": 834,
+  "required_main_decision": "admit separately graded recovered required-content family to FIT training with provenance; original failed batch/store remain failed",
+  "language_scope": "controlled templates only; no natural language transfer or model gain",
+  "scope": "family dependency closure, not whole-store or original-run completion",
+  "auditor_sources": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/recovery_acceptance_v1/family_scope_v2.py": "034718cd96df36e8f39003d739f221f31874f33499ea6443765f44310de3d913",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/recovery_acceptance_v1/recovery.py": "a091d6d29e0c91c573aaea9771a5f44207f23a0f41fbff4899ef11d739009011",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/recovery_acceptance_v1/semantics.py": "144b9d8bbb85c155a760d78eaca46345a535226b9fa50a3c3f2c7f7c51291931"
+  },
+  "read_bytes_counted": 1287428907
+}

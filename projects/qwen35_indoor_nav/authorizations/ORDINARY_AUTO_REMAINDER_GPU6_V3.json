@@ -1,0 +1,48 @@
+{
+  "approved": true,
+  "user_basis": "现在补齐自动生成；后部已核实占位可借用并用后恢复",
+  "scope": "1363 genuinely unattempted routes only; all historical terminal and partial routes excluded",
+  "source_plan": "data_pipeline/ordinary_fullscale_source_v1/PLAN.json",
+  "rescue_source": "data_pipeline/ordinary_fullscale_source_v1/auto_generation_v3/source_v1",
+  "rescue_jobs_sha256": "b97447713ba4c840d461d115ce6d388be73ba140b4301d97502da7f0a787b3ce",
+  "runtime": "data_pipeline/ordinary_fullscale_source_v1/auto_generation_v3",
+  "new_output_parent": "data_pipeline/ordinary_fullscale_source_v1/auto_generation_v3_production",
+  "holder_identities": "authorizations/ORDINARY_AUTO_REMAINDER_GPU6_IDENTITIES_V3.json",
+  "gpu_to_sequential_shards": {
+    "6": [
+      2,
+      4
+    ]
+  },
+  "expected_unattempted_per_old_shard": {
+    "2": 365,
+    "4": 998
+  },
+  "max_new_routes": 1363,
+  "max_new_total_gib": 102,
+  "max_worker_ram_gib": 12,
+  "max_own_gpu_mib": 4096,
+  "shard_wall_seconds": {
+    "2": 7200,
+    "4": 4800
+  },
+  "lane_wall_seconds": {
+    "6": 12120
+  },
+  "max_wall_seconds_per_gpu_chain": 12120,
+  "cleanup_margin_seconds": 120,
+  "budget_status": "prospective_finite_engineering_cap_not_measured_completion_forecast",
+  "old_failed_and_interrupted_routes_may_be_retried": false,
+  "old_production_roots_may_be_modified": false,
+  "actual_external_tasks_may_be_stopped": false,
+  "restore_holders_on_success_failure_or_interruption": true,
+  "no_temporary_sleeper": true,
+  "training_allowed": false,
+  "scientific_pass": false,
+  "prior_preworker_wall_seconds": 184.1455736728385,
+  "remaining_chain_wall_seconds": 11935.854426327161,
+  "preserve_both_queue_approval_failures": true,
+  "prior_wall_scope": "Legacy schema field prior_preworker_wall_seconds now accounts ALL prior attempts including actual V2 production; NOT a claim of zero physical attempts",
+  "metadata_root_disjoint_from_production": true,
+  "original_disk_guard_and_census_unchanged": true
+}

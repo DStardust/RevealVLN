@@ -1,0 +1,28 @@
+{
+  "launcher": "readiness_v1",
+  "status": "LAUNCH_FAILED",
+  "exception": {
+    "type": "AssertionError",
+    "message": "EXTERNAL_RESOURCE_LOAD",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/readiness_v1.py\", line 130, in run_main\n    module.main()\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/compact_loop_v2/run.py::active_accounting_v1\", line 62, in main\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/readiness_v1.py\", line 48, in __call__\n    upper=self.check_gpu(snapshot)\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/compact_loop_v2/run.py::active_accounting_v1\", line 37, in check_gpu\nAssertionError: EXTERNAL_RESOURCE_LOAD\n"
+  },
+  "wall_seconds": 0.5468409990426153,
+  "readiness_limit_seconds": 60,
+  "original_supervisor_limit_seconds": 3900,
+  "nominal_readiness_plus_supervision_seconds": 3960,
+  "original_bounded_cleanup_grace_unchanged": true,
+  "first_real_idle_observed": false,
+  "readiness_samples": 1,
+  "readiness_elapsed_seconds": 0.4949742490425706,
+  "process_record_present": false,
+  "supervisor_result_present": false,
+  "cleanup_authority": "original_supervisor_only_no_outer_process_termination",
+  "external_processes_stopped_by_launcher": 0,
+  "raw_gpu_samples_not_modified": true,
+  "scientific_pass": false,
+  "original_launcher_guards_relaxed_field": false,
+  "accounting_acceptance_amended": true,
+  "quantitative_thresholds_relaxed": false,
+  "idle_final_guard_unchanged": true,
+  "resource_protocol": "special_active_conservative_accounting_v1"
+}

@@ -1,0 +1,522 @@
+{
+  "decision": "FAIL_BOUNDED_TEN_TRAIN_ROUTE_LEARNABILITY",
+  "execution_complete": true,
+  "scientific_pass": false,
+  "learnability_pass": false,
+  "bucket_correctness_pass": true,
+  "old_D1_update_equivalence_failure_preserved": true,
+  "source_integrity_pass": true,
+  "shared_training_updates": 200,
+  "local_training_updates": [
+    200,
+    200
+  ],
+  "shared_diagnostic_updates": 1,
+  "training_decisions": 6277,
+  "train_target_counts": {
+    "1": 1403,
+    "0": 3757,
+    "2": 1006,
+    "3": 111
+  },
+  "train_prediction_counts": {
+    "1": 410,
+    "2": 180,
+    "3": 38,
+    "0": 5649
+  },
+  "cache_selection": {
+    "enabled": false,
+    "rank_votes": [
+      false,
+      false
+    ],
+    "selection": "engineering throughput only; no dev"
+  },
+  "cache_profiles": [
+    {
+      "raw_seconds": [
+        1.8773145128507167,
+        1.8937471420504153,
+        1.9324664031155407
+      ],
+      "cold_seconds": 1.9219215151388198,
+      "hot_seconds": [
+        1.9322822920512408,
+        1.8228389350697398,
+        1.8697807921562344
+      ],
+      "raw_median": 1.8937471420504153,
+      "hot_median": 1.8697807921562344,
+      "hot_speedup": 1.0128177324286998,
+      "same_card_logit_noise": 0.0,
+      "same_card_gradient_noise": 0.02495979145169258,
+      "cache_logit_difference": 0.0,
+      "cache_gradient_difference": 0.030610572546720505,
+      "correctness_pass": true,
+      "local_cache_candidate": false,
+      "tensor_cache_hit_exact": true,
+      "stats": {
+        "processor": {
+          "hits": 13,
+          "misses": 4,
+          "tensor_bytes": 11024952,
+          "entries": 4
+        },
+        "vision": {
+          "hits": 14,
+          "misses": 4,
+          "tensor_bytes": 5505024,
+          "entries": 4
+        }
+      },
+      "optimizer_updates": 0
+    },
+    {
+      "raw_seconds": [
+        2.014825073070824,
+        2.022459603147581,
+        2.029445343883708
+      ],
+      "cold_seconds": 2.2300876388326287,
+      "hot_seconds": [
+        2.020996331004426,
+        1.9774564481340349,
+        2.0712020609062165
+      ],
+      "raw_median": 2.022459603147581,
+      "hot_median": 2.020996331004426,
+      "hot_speedup": 1.0007240350319826,
+      "same_card_logit_noise": 0.0,
+      "same_card_gradient_noise": 0.059666454792022705,
+      "cache_logit_difference": 0.0,
+      "cache_gradient_difference": 0.04236508905887604,
+      "correctness_pass": true,
+      "local_cache_candidate": false,
+      "tensor_cache_hit_exact": true,
+      "stats": {
+        "processor": {
+          "hits": 13,
+          "misses": 4,
+          "tensor_bytes": 11026776,
+          "entries": 4
+        },
+        "vision": {
+          "hits": 14,
+          "misses": 4,
+          "tensor_bytes": 5505024,
+          "entries": 4
+        }
+      },
+      "optimizer_updates": 0
+    }
+  ],
+  "efficiency": {
+    "median_update_seconds": 8.943092107772827,
+    "steady_effective_decisions_per_second": 3.514821673850933,
+    "training_wall_seconds": 1785.8076703548431,
+    "warm_cache_speedups": [
+      1.0128177324286998,
+      1.0007240350319826
+    ],
+    "four_GPU_speedup": null,
+    "full_epoch_wall_seconds": null
+  },
+  "before": {
+    "stage": "before",
+    "decisions": 565,
+    "CE": 3.071228990987339,
+    "accuracy": 0.13628318584070798,
+    "macro_recall": 0.22977243994943108,
+    "recall": [
+      0.061946902654867256,
+      0.07936507936507936,
+      0.4777777777777778,
+      0.3
+    ],
+    "STOP_precision": 0.016666666666666666,
+    "STOP_recall": 0.3,
+    "confusion": [
+      [
+        21,
+        15,
+        207,
+        96
+      ],
+      [
+        8,
+        10,
+        65,
+        43
+      ],
+      [
+        8,
+        1,
+        43,
+        38
+      ],
+      [
+        0,
+        2,
+        5,
+        3
+      ]
+    ],
+    "learnability_pass": false
+  },
+  "after": {
+    "stage": "after",
+    "decisions": 565,
+    "CE": 0.9083674631023829,
+    "accuracy": 0.6247787610619469,
+    "macro_recall": 0.2853736479842674,
+    "recall": [
+      0.9970501474926253,
+      0.05555555555555555,
+      0.08888888888888889,
+      0.0
+    ],
+    "STOP_precision": 0.0,
+    "STOP_recall": 0.0,
+    "confusion": [
+      [
+        338,
+        1,
+        0,
+        0
+      ],
+      [
+        119,
+        7,
+        0,
+        0
+      ],
+      [
+        77,
+        5,
+        8,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0
+      ]
+    ],
+    "learnability_pass": false
+  },
+  "workers": [
+    {
+      "DDP_bucket_correctness_pass": true,
+      "cache_enabled": false,
+      "learnability_pass": false,
+      "before": {
+        "stage": "before",
+        "decisions": 565,
+        "CE": 3.071228990987339,
+        "accuracy": 0.13628318584070798,
+        "macro_recall": 0.22977243994943108,
+        "recall": [
+          0.061946902654867256,
+          0.07936507936507936,
+          0.4777777777777778,
+          0.3
+        ],
+        "STOP_precision": 0.016666666666666666,
+        "STOP_recall": 0.3,
+        "confusion": [
+          [
+            21,
+            15,
+            207,
+            96
+          ],
+          [
+            8,
+            10,
+            65,
+            43
+          ],
+          [
+            8,
+            1,
+            43,
+            38
+          ],
+          [
+            0,
+            2,
+            5,
+            3
+          ]
+        ],
+        "learnability_pass": false
+      },
+      "after": {
+        "stage": "after",
+        "decisions": 565,
+        "CE": 0.9083674631023829,
+        "accuracy": 0.6247787610619469,
+        "macro_recall": 0.2853736479842674,
+        "recall": [
+          0.9970501474926253,
+          0.05555555555555555,
+          0.08888888888888889,
+          0.0
+        ],
+        "STOP_precision": 0.0,
+        "STOP_recall": 0.0,
+        "confusion": [
+          [
+            338,
+            1,
+            0,
+            0
+          ],
+          [
+            119,
+            7,
+            0,
+            0
+          ],
+          [
+            77,
+            5,
+            8,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            0
+          ]
+        ],
+        "learnability_pass": false
+      },
+      "terminal_updates": 200,
+      "train_wall_seconds": 1785.8076703548431,
+      "cache_stats": {
+        "processor": {
+          "hits": 13,
+          "misses": 4,
+          "tensor_bytes": 11024952,
+          "entries": 4
+        },
+        "vision": {
+          "hits": 14,
+          "misses": 4,
+          "tensor_bytes": 5505024,
+          "entries": 4
+        }
+      },
+      "reload_max_abs": 0.0,
+      "scientific_pass": false,
+      "local_forward_tokens": 739861
+    },
+    {
+      "DDP_bucket_correctness_pass": true,
+      "cache_enabled": false,
+      "learnability_pass": false,
+      "before": {
+        "stage": "before",
+        "decisions": 565,
+        "CE": 3.071228990987339,
+        "accuracy": 0.13628318584070798,
+        "macro_recall": 0.22977243994943108,
+        "recall": [
+          0.061946902654867256,
+          0.07936507936507936,
+          0.4777777777777778,
+          0.3
+        ],
+        "STOP_precision": 0.016666666666666666,
+        "STOP_recall": 0.3,
+        "confusion": [
+          [
+            21,
+            15,
+            207,
+            96
+          ],
+          [
+            8,
+            10,
+            65,
+            43
+          ],
+          [
+            8,
+            1,
+            43,
+            38
+          ],
+          [
+            0,
+            2,
+            5,
+            3
+          ]
+        ],
+        "learnability_pass": false
+      },
+      "after": {
+        "stage": "after",
+        "decisions": 565,
+        "CE": 0.9083674631023829,
+        "accuracy": 0.6247787610619469,
+        "macro_recall": 0.2853736479842674,
+        "recall": [
+          0.9970501474926253,
+          0.05555555555555555,
+          0.08888888888888889,
+          0.0
+        ],
+        "STOP_precision": 0.0,
+        "STOP_recall": 0.0,
+        "confusion": [
+          [
+            338,
+            1,
+            0,
+            0
+          ],
+          [
+            119,
+            7,
+            0,
+            0
+          ],
+          [
+            77,
+            5,
+            8,
+            0
+          ],
+          [
+            10,
+            0,
+            0,
+            0
+          ]
+        ],
+        "learnability_pass": false
+      },
+      "terminal_updates": 200,
+      "train_wall_seconds": 1785.7657010555267,
+      "cache_stats": {
+        "processor": {
+          "hits": 13,
+          "misses": 4,
+          "tensor_bytes": 11026776,
+          "entries": 4
+        },
+        "vision": {
+          "hits": 14,
+          "misses": 4,
+          "tensor_bytes": 5505024,
+          "entries": 4
+        }
+      },
+      "reload_max_abs": 0.0,
+      "scientific_pass": false,
+      "local_forward_tokens": 723340
+    }
+  ],
+  "execution": {
+    "error": null,
+    "returncodes": [
+      0,
+      0
+    ],
+    "wall_seconds": 1996.1708154678345,
+    "GPU_count": 2,
+    "conservative_GPU_seconds": 3992.3416318893433,
+    "real_tasks_stopped": 0,
+    "all_leased_holders_restored": true
+  },
+  "restoration": {
+    "5": {
+      "restored": true,
+      "pid": 2958555,
+      "command": ".envs/etpr1/bin/python -u scripts/occupy_idle_gpu.py --gpu 5 --reserve-mib 2048 --max-initial-used-mib 1024 --tag vla_idle_occupancy_20260904",
+      "pane": "vla_idle_occupancy_20260904:2.0",
+      "gpu": {
+        "gpu": 5,
+        "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+        "memory_mib": 29853.0,
+        "processes": [
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2781015",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2900192",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2958555",
+            "type": "C",
+            "process_name": ".envs/etpr1/bin/python",
+            "used_memory": "29334 MiB"
+          }
+        ]
+      }
+    },
+    "6": {
+      "restored": true,
+      "pid": 2958821,
+      "command": ".envs/etpr1/bin/python -u scripts/occupy_idle_gpu.py --gpu 6 --reserve-mib 2048 --max-initial-used-mib 1024 --tag vla_idle_occupancy_20260904",
+      "pane": "vla_idle_occupancy_20260904:3.0",
+      "gpu": {
+        "gpu": 6,
+        "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+        "memory_mib": 29853.0,
+        "processes": [
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2781015",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2900192",
+            "type": "C",
+            "process_name": "python",
+            "used_memory": "246 MiB"
+          },
+          {
+            "gpu_instance_id": "N/A",
+            "compute_instance_id": "N/A",
+            "pid": "2958821",
+            "type": "C",
+            "process_name": ".envs/etpr1/bin/python",
+            "used_memory": "29334 MiB"
+          }
+        ]
+      }
+    }
+  },
+  "failures": [
+    null,
+    null
+  ],
+  "navigation_episodes": 0,
+  "foundation_navigation_complete": false,
+  "new_downloads": 0
+}

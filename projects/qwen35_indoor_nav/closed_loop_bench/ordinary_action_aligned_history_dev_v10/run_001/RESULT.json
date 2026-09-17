@@ -1,0 +1,92 @@
+{
+  "status": "COMPLETE",
+  "unix": 1789299249.023367,
+  "checkpoint_updates": 1000,
+  "checkpoint_sha256": "4b75be8e4a74edbb188482997f152a85324df014c8a49946581c3bf7c04a3c36",
+  "benchmark": "R2R-CE train INTERNAL_DEV; action-aligned two-frame ordinary base",
+  "planned": 100,
+  "completed": 100,
+  "missing": 0,
+  "n": 100,
+  "successes": 19,
+  "sr": 0.19,
+  "spl": 0.1689927517533272,
+  "ne_m": 10.06284705977887,
+  "osr": 0.45,
+  "ndtw": 0.34937565356104655,
+  "sdtw": 0.16263190062848243,
+  "house_count": 5,
+  "by_house": {
+    "82sE5b5pLXE": {
+      "n": 25,
+      "successes": 3,
+      "sr": 0.12,
+      "spl": 0.08743535095512568,
+      "ne_m": 9.749524300545454,
+      "osr": 0.52,
+      "ndtw": 0.2148843692154634,
+      "sdtw": 0.07846467047177615
+    },
+    "B6ByNegPMKs": {
+      "n": 25,
+      "successes": 8,
+      "sr": 0.32,
+      "spl": 0.2857819637324485,
+      "ne_m": 9.84178017437458,
+      "osr": 0.48,
+      "ndtw": 0.4131617511265602,
+      "sdtw": 0.2883778498207404
+    },
+    "PuKPg4mmafe": {
+      "n": 19,
+      "successes": 0,
+      "sr": 0.0,
+      "spl": 0.0,
+      "ne_m": 17.534921407699585,
+      "osr": 0.3157894736842105,
+      "ndtw": 0.18517921931873785,
+      "sdtw": 0.0
+    },
+    "XcA2TqTSSAj": {
+      "n": 6,
+      "successes": 1,
+      "sr": 0.16666666666666666,
+      "spl": 0.16666666666666666,
+      "ne_m": 6.935701111952464,
+      "osr": 0.6666666666666666,
+      "ndtw": 0.3068427910511964,
+      "sdtw": 0.15828350727526044
+    },
+    "aayBHfsNo7d": {
+      "n": 25,
+      "successes": 7,
+      "sr": 0.28,
+      "spl": 0.26275369232573464,
+      "ne_m": 5.668975227475166,
+      "osr": 0.4,
+      "ndtw": 0.5550780173676347,
+      "sdtw": 0.24569704047535065
+    }
+  },
+  "stopped": 73,
+  "failure_categories": {
+    "success": 19,
+    "entered_goal_but_no_successful_stop": 26,
+    "stopped_without_reaching_goal": 36,
+    "budget_exhausted_without_reaching_goal": 19
+  },
+  "collisions": 7863,
+  "environment_actions": 20468,
+  "trace_audit_passed": true,
+  "audited_actions": 20468,
+  "source_lock_verified": true,
+  "selected_history_audited_actions": 20468,
+  "frame_stride": 8,
+  "selected_batch_size": 1,
+  "optimizer_updates": 0,
+  "scientific_gain_verified": false,
+  "wall_seconds": 1895.0047472100705,
+  "training_processes_signaled": [],
+  "checkpoint_role": "base4000_plus_action_aligned1000_optimizer5000_pure_model",
+  "run_dir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_action_aligned_history_dev_v10/run_001"
+}

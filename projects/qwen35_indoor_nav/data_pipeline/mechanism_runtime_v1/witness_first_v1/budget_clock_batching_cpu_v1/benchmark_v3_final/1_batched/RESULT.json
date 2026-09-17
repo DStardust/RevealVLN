@@ -1,0 +1,278 @@
+{
+  "implementation": "ClockBatchingBudgetLedger",
+  "actions": 48,
+  "successful_final_snapshot": {
+    "version": 2,
+    "limits": {
+      "total_actions": 49,
+      "total_seconds": 10000,
+      "discovery_actions": 49,
+      "discovery_seconds": 10000,
+      "certification_actions": 49,
+      "certification_seconds": 10000
+    },
+    "created": 0.0,
+    "last_clock": 0.194,
+    "total_reserved_actions": 48,
+    "active": null,
+    "bundles": {
+      "cpu": {
+        "certification": {
+          "started": 0.001,
+          "finished": 0.194,
+          "actions": 48
+        }
+      }
+    }
+  },
+  "budget_records": 51,
+  "all_journal_records": 100,
+  "journal_bytes": 38296,
+  "real_fsync_calls_acknowledged": 301,
+  "wall_seconds": 1.3214221738744527,
+  "every_reservation_three_actual_fsync_before_mock_action": true,
+  "reserve_proofs": [
+    {
+      "action": 0,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "bf06ff26093b9bba69c28248e9122e9600c96392aff367ad6007842c2647cddf"
+    },
+    {
+      "action": 1,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "f568937f1429e6556bed79d35d4a997932c5d1bac81c00d570fd4b7409224dbd"
+    },
+    {
+      "action": 2,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "e61961e0543e22872c6c006bba25c2ca01fe7fc2844f61c4b859cfef10a988fd"
+    },
+    {
+      "action": 3,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "2957d3eebd0cf1fd3b7bba371c5af2645d220efa5a85ae5511e9678bfd953a9c"
+    },
+    {
+      "action": 4,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "13e679b0c479cace85716bb0aa46d99a8892ba6565bb66fbc3560f74fe01dccd"
+    },
+    {
+      "action": 5,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "58286603236a8822f699dcdf4f8b9910b66d5df82b8be6c927f494313e1568c0"
+    },
+    {
+      "action": 6,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "044aa35afb5a9267f68f264189cf2c5b48e5e5150350f6a19ed9e8345c3c38d2"
+    },
+    {
+      "action": 7,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "749f6d128b02a969ff5c4af0369b70f8dc00bf307a6995d8bfac5e13087e0717"
+    },
+    {
+      "action": 8,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "6aee9abfae7e9c6190d1056659f694106f80f6fe95ad7e8974e1f912c1d2686c"
+    },
+    {
+      "action": 9,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "ef88b295dbad8547c70b26777c341b34ced69e49b63b8d2cec56af76b2a20e42"
+    },
+    {
+      "action": 10,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "a56231aa2d63a96cd7330434c3c04a268e4b02b3a646e5c278d58f8091a99df7"
+    },
+    {
+      "action": 11,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "5217f7c82ce3da0e4ddccd251b2fd7315e1aad6d53290d13d1dd12b6021eb434"
+    },
+    {
+      "action": 12,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "389c898a29f3fffb0df38c2840a88f5760fe06e1fecf3210fd79c0d0d6818aaa"
+    },
+    {
+      "action": 13,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "df35366c4950abc4c5bab88c9fe0038ddaa600cb14d8dff7bf8b8212cda7e5ce"
+    },
+    {
+      "action": 14,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "56f3ec4472972f5bbe12f7210c68095f6a219ef3a974619d17b27d75b2882120"
+    },
+    {
+      "action": 15,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "7ab49e88b7c753dfdb3d52a7cc480ba0b63f496d3865b6b579a201b7455d5987"
+    },
+    {
+      "action": 16,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "fe65163f8fcde9e1ca2d72c0bca7fb1f53e7da63cca29b6a8d879ff6a311bf8e"
+    },
+    {
+      "action": 17,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "f1f433a6073644f7bfa1026d9330d9e5c80ee95252fcede290382e32e175a19a"
+    },
+    {
+      "action": 18,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "69a736856c6a407828f03b31680e809e3c67c1491bf1af011ad6cc3113555863"
+    },
+    {
+      "action": 19,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "f0e5f68d7126d8d3475c708810dbeb4e64f1cdd36a5c65eecf3b3c3935453485"
+    },
+    {
+      "action": 20,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "26f218814f4dca8e0255804a8270683841972e9787081227d174eea19d77bbbc"
+    },
+    {
+      "action": 21,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "2f455ca9b149eb8a8c86ecf3359c7af9032c9e840df76e6912eab51de137f50f"
+    },
+    {
+      "action": 22,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "df45201d541830d5d8c34b49883201daddf8ced07cd17b9d699548ed7558e607"
+    },
+    {
+      "action": 23,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "a1d0179bc8e15c812b468db4fd80e7dd2f436e03e81e4402821750a37659917b"
+    },
+    {
+      "action": 24,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "27e0f51385d0f0e76a6a7e42d2e845299c3beb3c4f53f6658caf1b3dde962157"
+    },
+    {
+      "action": 25,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "19a314626ee9e0a1f97711b584879e007d107e54d858dbcf0378a2062994c4f4"
+    },
+    {
+      "action": 26,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "77df7578c4d93c207cd9c1a023e409ccf2a74d3d4bf68228f0979660653419c9"
+    },
+    {
+      "action": 27,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "1fd8e4a475e8d8c8d0f6af6ebc006f36c429cbed2d81f73e5e7bf77d13078fb2"
+    },
+    {
+      "action": 28,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "c69df39b77fd8be00e1bbf51787277bbcd28ef25ccb3857d5e338fde3fd53ae1"
+    },
+    {
+      "action": 29,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "6cab529514264da4e11872532b8542e62a0201abb7db4b543dfbc04a6a2c8d2d"
+    },
+    {
+      "action": 30,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "e2fd2150ceca7e9bc5d3ec4b99cea3412439d2b70a3c98f9bd3745504dff7ded"
+    },
+    {
+      "action": 31,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "b3d9d5b2d2ca1453566992ccd58a9add7a22c5929c6fade8508be614fe25f121"
+    },
+    {
+      "action": 32,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "3d1e2a280e5cbca1a96f79e22a7235281113aa6a33b58e24a895f263c8afb6bc"
+    },
+    {
+      "action": 33,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "3986227f234f2f1b266e44a51c973ac45ea6c4d1d5eb6a530632811f4a424b57"
+    },
+    {
+      "action": 34,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "fbc6e19be7c9cd9e57f11c03e2899af07daf534db083fff0ec7f94b41c68e114"
+    },
+    {
+      "action": 35,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "a92a2f06ba75597ca6c843f9fd03924d0337e6cbd41a2b4efd90f2f64d100410"
+    },
+    {
+      "action": 36,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "85d760f6d2c49a977a208205bd9989c4cd8284a36e1904a0de22bc942aca11cf"
+    },
+    {
+      "action": 37,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "31b374cab0c8b70100c9974cae59e1f6bf5780d3439df4ec0b741508b210e154"
+    },
+    {
+      "action": 38,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "10f647a148f5ea3cc8912d614621f9663326f5476cf69a42d783628446a057f1"
+    },
+    {
+      "action": 39,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "d032cc0db1474cf1e4731a063384b1b7ecb41d6208a6ff9d7612ce7df3b585db"
+    },
+    {
+      "action": 40,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "34900d104125323ce28a117303c23daca8328f1dbb70491e01d3601e9e6f4bde"
+    },
+    {
+      "action": 41,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "8a9dc6a62012a4ac8d978384b541b6514652a501ac1df462510472e4f73af784"
+    },
+    {
+      "action": 42,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "b709a7a0aed35b2bf6dd96cee3d0b22785ab2baa90c6816e15317c5769960328"
+    },
+    {
+      "action": 43,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "3168eee265ba1294737a58f3f5cdc6d3408e77bea07431b980bc4251d5b76e27"
+    },
+    {
+      "action": 44,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "39a1bc3788e44adfceb2198a03f52b37413a78c02d26e005315b1b8aad42f418"
+    },
+    {
+      "action": 45,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "1f18412cab11b4a7063934f13df96e11b70dfe50973e76becafccd5ee1eb1eac"
+    },
+    {
+      "action": 46,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "b36baa36262e4a5ab4fda0adf64c8e2a70d477f49ca11c255946abc392edc9af"
+    },
+    {
+      "action": 47,
+      "real_fsyncs_before_mock_action": 3,
+      "head_record_hash": "7a45222c95fe0455a12b81e8e5b78c25f902720fc0657639a1418ed82c8a5645"
+    }
+  ],
+  "journal_head_sha256": "a9f8d94c18ff4dd3096ba8e2cc923dfe3b858306460066aefe962e0e846d5e20",
+  "journal_events_sha256": "26a8003fa74ffdd55b4b06aefdc6f15dea2d0c77464faac168fd3195c71cea73"
+}

@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>普通导航 · 真实访问状态纠错监督 V6</title><style>
+body{font:16px system-ui;background:#101824;color:#e3eaf5;margin:0}main{max-width:1100px;margin:auto;padding:28px}
+section{background:#192638;border:1px solid #334357;border-radius:12px;padding:20px;margin:18px 0}h1{font-size:26px}h2{font-size:20px}
+small,.note{color:#bac9da}progress{width:100%;height:24px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:10px;text-align:left;border-bottom:1px solid #334357}
+#warning{color:#ffc168}canvas{width:100%;height:220px}.metrics{display:flex;gap:28px;flex-wrap:wrap}.metrics b{font-size:24px}
+</style><main><h1>普通导航 · 真实访问状态纠错监督 V6</h1>
+<p>较好 4,000 步仍保留。R2R 适配已以 SR 15% 关闭为失败；当前先审核训练房屋中的真实访问状态纠错监督，尚未启动新训练。</p>
+<section><h2>当前任务：FIT 真实回放与教师建议审核</h2><p id="recovery-status">等待数据状态</p><progress id="recovery-bar" max="64" value="0"></progress><pre id="recovery-counts" style="white-space:pre-wrap"></pre><p class="note">距离接口初次0动作失败已保留，当前为仅修复接口的V2。只有数据关通过才另行冻结短程训练。数据合格不等于导航提升；不使用开发/确认房屋状态。</p></section><h2>上一轮 R2R 适配（已关闭）</h2><p id="warning">正在读取实时状态…</p><section><h2 id="state">等待状态</h2><progress id="bar" max="4000" value="0"></progress>
+<div class="metrics"><p>本段新更新<br><b id="updates">—</b> / 4,000</p><p>本段决策<br><b id="decisions">—</b> / 396,001</p><p>训练剩余估时<br><b id="eta">—</b></p><p>评测进度<br><b id="eval">—</b></p></div>
+<p id="workflow"></p><p id="restoration"></p><small id="fresh"></small></section>
+<section><h2>训练损失（实际日志）</h2><canvas id="loss"></canvas><p class="note">灰色：保留的首段；蓝色：本次 R2R 新段。不同分支不连线。损失下降不等于导航效果提高。</p></section>
+<section id="navigation-results"><h2>同一组 100 条路线的完整评测</h2><table><thead><tr><th>版本</th><th>SR</th><th>SPL</th><th>nDTW</th><th>状态</th></tr></thead><tbody id="nav"></tbody></table>
+<p id="gate"></p><p class="note">5 个已多次暴露的 INTERNAL_DEV 房屋，不是官方 val_unseen，也不是独立确认。保留全部失败，不挑中间检查点。</p></section>
+<section><h2>运行边界</h2><p id="budget"></p><p>训练仅借 GPU3/4/5 原占位并恢复；评测只用空闲 GPU1。没有 STOP 偏置、停滞控制或特殊数据。此页仅可读取，没有启动、停止或写入接口。</p></section>
+<script src="/refresh.js"></script></main></html>

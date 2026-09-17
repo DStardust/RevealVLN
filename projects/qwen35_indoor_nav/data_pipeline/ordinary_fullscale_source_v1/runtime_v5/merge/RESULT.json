@@ -1,0 +1,38 @@
+{
+  "status": "STRICT_CPU_READBACK_MERGED_NOT_TRAINED",
+  "scope": "SELECTED_WAVE_NOT_FULL_POOL",
+  "selected_shards": [
+    6
+  ],
+  "all_plan_shards": 7,
+  "shards": [
+    {
+      "shard": 6,
+      "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/production/shard_0006",
+      "terminal_jobs": 651,
+      "assigned_routes": 651,
+      "complete": true,
+      "unattempted_or_censored_routes": 0,
+      "replay_certified_routes": 631,
+      "strict_routes": 496,
+      "quarantine_routes": 135,
+      "replay_certified_not_yet_strict_audited": 0,
+      "rejected_routes": 20,
+      "strict_instruction_records": 1488,
+      "unique_route_decisions": 33707,
+      "instruction_conditioned_decisions": 101121,
+      "audited_subshards": 14
+    }
+  ],
+  "strict_routes": 496,
+  "instruction_records": 1488,
+  "unique_route_decisions": 33707,
+  "instruction_conditioned_decisions": 101121,
+  "physical_duplicates": 0,
+  "alias_duplicates": 0,
+  "complete_alias_ownership": true,
+  "sourceRoot_required": true,
+  "index_sha256": "7990d33cbfdfec343d5c3e43e9b920146e0f69576d8c54d2263745a9f746958c",
+  "training_started": false,
+  "scientific_pass": false
+}

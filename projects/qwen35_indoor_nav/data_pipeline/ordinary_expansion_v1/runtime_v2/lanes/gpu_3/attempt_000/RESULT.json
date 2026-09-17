@@ -1,0 +1,62 @@
+{
+  "error": "AssertionError('SHARD_WALL_BUDGET')",
+  "workers": [
+    {
+      "shard": 0,
+      "returncode": 0,
+      "wall_seconds": 116.02427831012756
+    },
+    {
+      "shard": 3,
+      "returncode": 1,
+      "wall_seconds": 2881.8010640521534
+    }
+  ],
+  "wall_seconds": 3019.230435949983,
+  "previous_lane_seconds": 0,
+  "restoration": {
+    "restored": true,
+    "new_identity": {
+      "pid": 1476990,
+      "starttime_ticks": 147299185,
+      "proc_uid": 0,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+      "cmdline": [
+        ".envs/etpr1/bin/python",
+        "-u",
+        "scripts/occupy_idle_gpu.py",
+        "--gpu",
+        "3",
+        "--reserve-mib",
+        "2048",
+        "--max-initial-used-mib",
+        "1536",
+        "--tag",
+        "vla_idle_occupancy_20260904"
+      ]
+    },
+    "gpu": {
+      "gpu": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 29864.0,
+      "utilization": 100.0,
+      "processes": {
+        "1476990": 29846.0
+      },
+      "process_rows": [
+        {
+          "gpu_instance_id": "N/A",
+          "compute_instance_id": "N/A",
+          "pid": "1476990",
+          "type": "C",
+          "process_name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    "recovery_pane_preserved_if_failed": false
+  },
+  "holders_touched": true,
+  "external_processes_stopped": 0,
+  "scientific_pass": false
+}

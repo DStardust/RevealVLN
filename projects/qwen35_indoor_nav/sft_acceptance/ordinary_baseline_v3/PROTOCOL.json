@@ -1,0 +1,73 @@
+{
+  "id": "Q35N_ORDINARY_BASELINE_V3",
+  "created": "2026-09-10",
+  "recipe": "RECIPE_DECISION.md (VLN-CE MIT teacher-forcing + inflection weighting 3.2; NaVILA Apache-2.0 SFT envelope lr1e-4 cosine warmup3%)",
+  "seed": 1109,
+  "epochs": 3,
+  "batching": {
+    "mode": "token_budget",
+    "max_tokens": 6144,
+    "order": "length_sorted_seeded_tiebreak_block_shuffle",
+    "drop_tail_to_world_multiple": true
+  },
+  "optimizer": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "gradient_clip": 1.0,
+    "schedule": "cosine",
+    "warmup_ratio": 0.03
+  },
+  "loss": "inflection_weighted_4class_ce; per-rank sum * world / global_weight_sum; DDP grad averaging == global weighted mean",
+  "data": {
+    "num_workers": 6,
+    "prefetch_factor": 4
+  },
+  "snapshot": {
+    "training_index_sha256": "2cb9d375f7228824c7d5f68b5c4395afeed7cf669b62b923980b4c090818c5e7",
+    "decisions_per_epoch": 1394744,
+    "path": "../ordinary_baseline_v2/snapshot_v1"
+  },
+  "sample_index_sha256": "d8e82e6b7f8aa497c9992a26666ae4aee1110653d7f39166a3946e218137d04c",
+  "code_sha256": {
+    "data.py": "b54f149d16c13a37a535cf118464b83c398ec21145fe90bb6c7396c990715c70",
+    "model.py": "e539c9ec1c268fbb4ce5e88acaef18df5489ec67bfaeb12547029d8aea390aa8",
+    "train.py": "8c2228df11f8b4b025c4b07ef253dd8bcc2c59306857666d7f2d267883a04a59",
+    "test_v3.py": "e4baab1c020dc83c83e6ca5b3fe783f02d4dd8e7e9b28c7e396329f1660d1dd5"
+  },
+  "progress_seconds": 10,
+  "evaluation": {
+    "online_metrics_not_closed_loop": true,
+    "dev_eval_separate": true
+  },
+  "fla_dependency": {
+    "wheel_sha256": "5e830c85bad3d0d34677f98ac7074d08687a3756f0f0499d95ceb96eb6920761",
+    "path": "../ordinary_speedup_10x_v1/official_fla_0_5_2/deps",
+    "license": "MIT"
+  },
+  "einops_dependency": {
+    "path": "../ordinary_speedup_10x_v1/official_einops_0_8_1/deps"
+  },
+  "kernel": "fla",
+  "world_size": 4,
+  "gpus": [
+    "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+    "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+    "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+    "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+  ],
+  "budget": {
+    "wall_seconds": 86100,
+    "max_decisions": 4500000,
+    "max_updates": 45000,
+    "max_gpu_memory_bytes_per_rank": 27917287424
+  },
+  "checkpoint_updates": 200,
+  "resume_semantics": "state restore exact (trainable/optimizer/RNG/cursor); forward bitwise equality not claimed under triton kernels",
+  "note": "kernel=fla valid only if ACCEPTANCE.json panel PASS; otherwise PROTOCOL_FALLBACK.json is used",
+  "allocator": "expandable_segments:True"
+}

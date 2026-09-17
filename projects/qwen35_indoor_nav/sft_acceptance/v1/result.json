@@ -1,0 +1,134 @@
+{
+  "experiment_id": "Q35N_ORDINARY_ACTION_SFT_ACCEPTANCE_V1",
+  "decision": "COMPLETED_BOUNDED_ACCEPTANCE",
+  "data_integrity_pass": true,
+  "training_interface_pass": true,
+  "offline_learning_signal": true,
+  "closed_loop_interface_pass": true,
+  "paired_navigation_change": {
+    "stopped_within_3m": 0.0,
+    "ever_within_3m": 0.1,
+    "collisions": 504.1,
+    "motion_actions": 510.9,
+    "geodesic_ndtw": -0.30753963077055196,
+    "terminal_goal_distance_geodesic_m": -0.487241268157959
+  },
+  "scientific_pass": false,
+  "official_sr": null,
+  "official_spl": null,
+  "offline_before": {
+    "decisions": 3864,
+    "decision_micro_CE": 3.3743679157318933,
+    "decision_micro_accuracy": 0.11283643892339544,
+    "route_macro_CE": 3.4063290898369813,
+    "route_macro_accuracy": 0.11440879620506227,
+    "confusion_target_rows_prediction_columns": [
+      [
+        78,
+        101,
+        1135,
+        1074
+      ],
+      [
+        32,
+        31,
+        291,
+        378
+      ],
+      [
+        27,
+        24,
+        300,
+        321
+      ],
+      [
+        3,
+        4,
+        38,
+        27
+      ]
+    ],
+    "STOP_TP": 27,
+    "STOP_FP": 1773,
+    "STOP_FN": 45,
+    "STOP_TN": 2019
+  },
+  "offline_after": {
+    "decisions": 3864,
+    "decision_micro_CE": 1.0650498660794203,
+    "decision_micro_accuracy": 0.6229296066252588,
+    "route_macro_CE": 1.0690608956444765,
+    "route_macro_accuracy": 0.6241617964658229,
+    "confusion_target_rows_prediction_columns": [
+      [
+        2382,
+        0,
+        6,
+        0
+      ],
+      [
+        704,
+        0,
+        28,
+        0
+      ],
+      [
+        647,
+        0,
+        25,
+        0
+      ],
+      [
+        72,
+        0,
+        0,
+        0
+      ]
+    ],
+    "STOP_TP": 0,
+    "STOP_FP": 0,
+    "STOP_FN": 72,
+    "STOP_TN": 3792
+  },
+  "optimizer_updates": 400,
+  "terminal_checkpoint_effective_updates": 399,
+  "cost": {
+    "gpu_stage_wall_seconds": 8505.201437473297,
+    "gpu_hours": 2.362555954853694,
+    "optimizer_updates": 400,
+    "gpu_peak_total_mib": 14317.0,
+    "worker_tree_peak_rss_bytes": 4140535808,
+    "new_output_bytes_before_report": 83389615,
+    "new_downloads": 0,
+    "episode_starts": 20,
+    "episode_completions": 20,
+    "training_tokens": 2483315,
+    "all_forward_tokens": null,
+    "recovery_all_forward_tokens": 4231685,
+    "original_all_forward_tokens_upper_bound": 2000000,
+    "note": "First process failed before recording all-forward token total; its full GPU wall time and actual update/token ledger are retained, not counted as zero."
+  },
+  "gpu_restored": true,
+  "failure": {
+    "error": "RuntimeError('Worker exited 1; no automatic retry')",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/launch.py\", line 99, in main\n    if proc.returncode:raise RuntimeError(f'Worker exited {proc.returncode}; no automatic retry')\nRuntimeError: Worker exited 1; no automatic retry\n"
+  },
+  "scope": "5 FIT_PILOT houses; 75 train routes / 24 seen-house route-dev; descriptive engineering results, no unseen-house generalization, SOTA or mechanism evidence",
+  "engineering_amendment": "recovery_r1/AMENDMENT.json",
+  "execution_attempts": [
+    {
+      "returncode": 1,
+      "error": "RuntimeError('Worker exited 1; no automatic retry')",
+      "gpu_stage_wall_seconds": 638.7873804569244,
+      "real_tasks_stopped": 0
+    },
+    {
+      "returncode": 0,
+      "error": null,
+      "gpu_stage_wall_seconds": 7866.414057016373,
+      "real_tasks_stopped": 0
+    }
+  ],
+  "checkpoint_reload_pass": true,
+  "spec_sha256": "87a6840a62dab085478d18a0088ed1e200a59ae19139b53da0203321c9968a6a"
+}

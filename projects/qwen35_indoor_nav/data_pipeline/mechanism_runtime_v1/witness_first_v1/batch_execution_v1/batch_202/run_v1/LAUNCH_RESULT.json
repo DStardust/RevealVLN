@@ -1,0 +1,24 @@
+{
+  "launcher": "readiness_v1",
+  "status": "LAUNCH_FAILED",
+  "exception": {
+    "type": "SystemExit",
+    "message": "1",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/readiness_v1.py\", line 130, in run_main\n    module.main()\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/compact_loop_v2/run.py\", line 104, in main\n    if error or not proc or proc.returncode or not clean: raise SystemExit(1)\nSystemExit: 1\n"
+  },
+  "wall_seconds": 994.1100290820468,
+  "readiness_limit_seconds": 60,
+  "original_supervisor_limit_seconds": 3900,
+  "nominal_readiness_plus_supervision_seconds": 3960,
+  "original_bounded_cleanup_grace_unchanged": true,
+  "first_real_idle_observed": true,
+  "readiness_samples": 1,
+  "readiness_elapsed_seconds": 0.416215033037588,
+  "process_record_present": true,
+  "supervisor_result_present": true,
+  "cleanup_authority": "original_supervisor_only_no_outer_process_termination",
+  "external_processes_stopped_by_launcher": 0,
+  "guards_relaxed": false,
+  "raw_gpu_samples_not_modified": true,
+  "scientific_pass": false
+}

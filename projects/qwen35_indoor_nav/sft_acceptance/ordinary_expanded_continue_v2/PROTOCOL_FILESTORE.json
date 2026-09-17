@@ -1,0 +1,136 @@
+{
+  "id": "Q35N_ORDINARY_EXPANDED_CONTINUE_V2",
+  "created": "2026-09-12",
+  "recipe": "RECIPE_DECISION.md (VLN-CE MIT teacher-forcing + inflection weighting 3.2; NaVILA Apache-2.0 SFT envelope lr1e-4 cosine warmup3%)",
+  "seed": 1209,
+  "epochs": 1,
+  "batching": {
+    "mode": "token_budget",
+    "max_tokens": 6144,
+    "order": "length_sorted_seeded_tiebreak_block_shuffle",
+    "drop_tail_to_world_multiple": true
+  },
+  "optimizer": {
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "gradient_clip": 1.0,
+    "schedule": "cosine",
+    "warmup_ratio": 0.03
+  },
+  "loss": "inflection_weighted_4class_ce; per-rank sum * world / global_weight_sum; DDP grad averaging == global weighted mean",
+  "data": {
+    "num_workers": 6,
+    "prefetch_factor": 4
+  },
+  "snapshot": {
+    "training_index_sha256": "cde540543491579d644ffeca8f42127511c45876a3a34830f15f27f35758d7ec",
+    "decisions_per_epoch": 2650347,
+    "path": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/training_snapshot_20260912_v1/run_001"
+  },
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "code_sha256": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/control.py": "66cf4397a46fb7380dbc636a902d32c28853efade515fc52d373169c8e67e78a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/data.py": "1c98ef6716500e69c4778e011d523db6c149c10e32d1a1d36b52aca924da74d9",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/launcher.py": "467b0a6637213b07f12098e2f7cc33ff0f19d15e98f9e368baad20978c884010",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/lease_run.py": "2c4852f0bf2ee58655de4d6cfc919e373bba84bdd957d5900749622158f2381c",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/model.py": "ec94aa7bde9f236529c1549fe896d99c5715c6c88e609067433df2f7fa274b7b",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/prepare.py": "71ed44e1ed6c5d85ecbb2e662154472e5b60fce24d8464ccc68e8fd224acebe7",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/reuse.py": "109953572581f3b04d0565f806c85c9225a6ec59699f236890174559ba16f3d8",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/supervise_filestore.py": "89356edc2a98a27cd07070890c2c1df66b6c0ac3e7efb997ce0489c211df6b42",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/test_expanded.py": "60cb809b14ec769eda8c8ad472bb54874f185ddf98d329b8fbf2835adf6c7d23",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/train_filestore.py": "1fcffc16d3eac0a3a1e3cbffbf4789a26776e7f248aeff36c83f21d797162a8d",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/PLAN_ZH.md": "e94a5cfc73ba8b4c5b183bd59530a8e620411ea626ad565d30bf36f2b0dd62d8",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/data.py": "b54f149d16c13a37a535cf118464b83c398ec21145fe90bb6c7396c990715c70",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/model.py": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/control.py": "7502c5389f93581d0596be5d25c029ccba9a6adcbb7186ae234ca87caa10f68d",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/train_filestore.py": "b56913d7d6f109c5a29b932653b3e31ef36021bfe36ce5b02eb65c973e814c2a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/supervise_filestore.py": "0937bbd041f8560ae24d8755c58c5c70825c33ff5d6130aca110ed08c3f3cb95",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/launcher.py": "631dac96bbb386ec81bcba0a0ebf2039cecd92bce6c21df39d864f278b0cb58f",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/lease_run.py": "06343e1da28f19df10311759e992dab59554bc4b3824621dca937d4692b22a89",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_baseline_v2/data.py": "7631d0f57384d2979c8d5b1d7e35748c9f428377c805ea3292e7b0260e43b788",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_baseline_v2/runner.py": "fe8c88ea5d3f0199c166c1e82586bf97771886a7c2d7397efa204f309f4e7df4",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_G2_INTERFACE_ACCEPTANCE_V1/TOKENIZER_ADDITION.json": "8304f1e28adcf1e3c95713b706f011c5969db678b59ac0decf5fe9283690aa31",
+    "control.py": "66cf4397a46fb7380dbc636a902d32c28853efade515fc52d373169c8e67e78a",
+    "data.py": "1c98ef6716500e69c4778e011d523db6c149c10e32d1a1d36b52aca924da74d9",
+    "launcher.py": "467b0a6637213b07f12098e2f7cc33ff0f19d15e98f9e368baad20978c884010",
+    "lease_run.py": "2c4852f0bf2ee58655de4d6cfc919e373bba84bdd957d5900749622158f2381c",
+    "model.py": "ec94aa7bde9f236529c1549fe896d99c5715c6c88e609067433df2f7fa274b7b",
+    "prepare.py": "9869aa202905a5789bc9a16bedb574a6e71669086cc9fced073e54905d8e3920",
+    "reuse.py": "3efc412c9cf7bc06489a9b4c071215dc12e632b22a75e817a16e3f6ea49d2429",
+    "supervise_filestore.py": "89356edc2a98a27cd07070890c2c1df66b6c0ac3e7efb997ce0489c211df6b42",
+    "tests.py": "99bd2a6c4150203d5233808e62e193a7ecb207220fc9fc39523273950bcbea45",
+    "train_filestore.py": "1fcffc16d3eac0a3a1e3cbffbf4789a26776e7f248aeff36c83f21d797162a8d",
+    "PLAN_ZH.md": "440c41ed99bc3ffd95007a2c1b631ad6ccdcd2a88d1638f1e55c10db66c8d499",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+    "RESUME_AUDIT.json": "894ace1da341d0eddc94d8b99c2984561596360e638a1a81ce854d9921d2990c"
+  },
+  "progress_seconds": 10,
+  "evaluation": {
+    "online_metrics_not_closed_loop": true,
+    "dev_eval_separate": true
+  },
+  "fla_dependency": {
+    "wheel_sha256": "5e830c85bad3d0d34677f98ac7074d08687a3756f0f0499d95ceb96eb6920761",
+    "path": "../ordinary_speedup_10x_v1/official_fla_0_5_2/deps",
+    "license": "MIT"
+  },
+  "einops_dependency": {
+    "path": "../ordinary_speedup_10x_v1/official_einops_0_8_1/deps"
+  },
+  "kernel": "fla",
+  "world_size": 3,
+  "gpus": [
+    "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+    "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+    "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+  ],
+  "budget": {
+    "wall_seconds": 4200,
+    "max_decisions": 700712,
+    "max_updates": 8000,
+    "max_gpu_memory_bytes_per_rank": 27917287424
+  },
+  "checkpoint_updates": 200,
+  "resume_semantics": "same data plan / optimizer moments / cursor preserved; original rank0 RNG restoration convention retained",
+  "note": "kernel=fla valid only if ACCEPTANCE.json panel PASS; otherwise PROTOCOL_FALLBACK.json is used",
+  "allocator": "expandable_segments:True",
+  "resume_from": {
+    "path": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+    "sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+    "receipt_sha256": "c2675762e695cbef10218d6c78d74088d71fd03e9e23697f9018173ada94065b",
+    "updates": 4000
+  },
+  "segment_note": "Continue positions [4000,8000); no controller, special data, optimizer reset or automatic retry",
+  "log_every_updates": 20,
+  "max_global_batch_decisions": 154,
+  "accounting": {
+    "initial_charged_decisions": 340712,
+    "deadline_unix": 1789231523.0595613,
+    "legacy_decisions_in_this_stage": 340712
+  },
+  "transport_amendment": {
+    "store": "fresh FileStore per attempt",
+    "process_group": "NCCL 180 seconds",
+    "interfaces": "lo for single-node bootstrap",
+    "reason": "TCPStore client validation timed out on both hostname and 127.0.0.1, libuv variants; raw loopback TCP and three-rank FileStore Gloo passed.",
+    "old_seal_preserved": "de2166c6bd532b330f7034551c26d2ab20021b39c545d5329b7a270863fc634e",
+    "no_gpu_attempt_before_amendment": true
+  },
+  "full_epoch_updates": 31059,
+  "automatic_retry": false,
+  "automatic_long_training": false,
+  "current_segment_start_updates": 4000,
+  "current_segment_max_new_updates": 4000,
+  "current_segment_planned_decisions": 341939,
+  "current_segment_by_source": {
+    "ENVDROP_OFFICIAL_CE_TRAIN": 162596,
+    "R2R": 69418,
+    "RxR": 109925
+  },
+  "initial_stage_protocol": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json"
+}

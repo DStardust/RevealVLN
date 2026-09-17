@@ -1,0 +1,38 @@
+{
+  "approved": true,
+  "user_basis": "可以稳定生成之后其余卡都可以使用增加效率",
+  "scope": "GPU7-only zero-worker startup recovery, same frozen unattempted shards 3/5, preserve original metadata and failures",
+  "source_plan": "data_pipeline/ordinary_fullscale_source_v1/PLAN.json",
+  "runtime": "data_pipeline/ordinary_fullscale_source_v1/runtime_v4",
+  "holder_identities": "authorizations/ORDINARY_FULLSCALE_GPU7_RETRY_IDENTITIES_V1.json",
+  "gpu_to_sequential_shards": {
+    "7": [
+      3,
+      5
+    ]
+  },
+  "max_new_routes": 1997,
+  "max_new_total_gib": 102,
+  "max_worker_ram_gib": 12,
+  "max_own_gpu_mib": 4096,
+  "shard_wall_seconds": {
+    "3": 4800,
+    "5": 4800
+  },
+  "lane_wall_seconds": {
+    "7": 9720
+  },
+  "max_wall_seconds_per_gpu_chain": 9720,
+  "cleanup_margin_seconds": 120,
+  "restore_holders_on_success_failure_or_interruption": true,
+  "actual_external_tasks_may_be_stopped": false,
+  "training_allowed": false,
+  "scientific_pass": false,
+  "original_quality_and_source_filters_unchanged": true,
+  "predecessor_runtime": "data_pipeline/ordinary_fullscale_source_v1/runtime_v3",
+  "predecessor_attempt": "data_pipeline/ordinary_fullscale_source_v1/runtime_v3/lanes/gpu_7/attempt_000",
+  "recovery_receipt": "data_pipeline/ordinary_parallel_v1/preworker_holder_recovery_v3/run_v1/RESULT.json",
+  "charge_predecessor_seconds": true,
+  "no_temporary_sleeper": true,
+  "retain_dead_pane_until_verified_restore": true
+}

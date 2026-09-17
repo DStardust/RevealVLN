@@ -1,0 +1,85 @@
+{
+  "scope": "READ_ONLY_DIAGNOSTIC_NOT_FORMAL_QUALITY",
+  "batch": "batch_01",
+  "bundles": [
+    {
+      "candidate_id": "WF_WIND_44b1f81e2410bb68cef87eec",
+      "house_id": "17DRP5sb8fy",
+      "configured_history_F_L_R": {
+        "F": 104,
+        "L": 64,
+        "R": 40
+      },
+      "configured_counts_match_expected": true,
+      "configured_history_actions": 208,
+      "required_neutral_spins": [
+        "L"
+      ],
+      "trace_count_read": 0,
+      "traces": [],
+      "terminal_result": null,
+      "language_risks": [
+        {
+          "task": "task_A",
+          "type": "ROOM_CODE_TV_NOT_RENDERED_AS_TV_ROOM",
+          "formal_quality_decision_deferred": true
+        },
+        {
+          "task": "task_B",
+          "type": "ROOM_CODE_TV_NOT_RENDERED_AS_TV_ROOM",
+          "formal_quality_decision_deferred": true
+        }
+      ],
+      "frozen_candidate_present": false,
+      "physical_certificate_file_present": false
+    },
+    {
+      "candidate_id": "WF_WIND_8c0ad3efaf9c9dac811f0045",
+      "house_id": "1pXnuDYAj8r",
+      "configured_history_F_L_R": {
+        "F": 30,
+        "L": 39,
+        "R": 39
+      },
+      "configured_counts_match_expected": true,
+      "configured_history_actions": 108,
+      "required_neutral_spins": [],
+      "trace_count_read": 0,
+      "traces": [],
+      "terminal_result": null,
+      "language_risks": [],
+      "frozen_candidate_present": false,
+      "physical_certificate_file_present": false
+    },
+    {
+      "candidate_id": "WF_WIND_a04bc0d8aeacfe392c5cf3e1",
+      "house_id": "29hnd4uzFmX",
+      "configured_history_F_L_R": {
+        "F": 48,
+        "L": 55,
+        "R": 31
+      },
+      "configured_counts_match_expected": true,
+      "configured_history_actions": 134,
+      "required_neutral_spins": [
+        "L"
+      ],
+      "trace_count_read": 0,
+      "traces": [],
+      "terminal_result": null,
+      "language_risks": [],
+      "frozen_candidate_present": false,
+      "physical_certificate_file_present": false
+    }
+  ],
+  "progress": null,
+  "process_record_present": false,
+  "gpu_admission_record_present": false,
+  "batch_terminal_result_present": false,
+  "partially_written_or_changing_files_not_judged": [],
+  "source_hashes_at_read": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_01/run_v1/EXECUTION_CONFIG.json": "004049afc35151fc1aa95f4c8164fe1f6489eb600f817a86140d40c4a45d771d"
+  },
+  "runtime_or_process_modified": false,
+  "scientific_pass": false
+}

@@ -1,0 +1,23 @@
+{
+  "approved": true,
+  "user_basis": "可以稳定生成之后其余卡都可以使用增加效率",
+  "scope": "New fixed 12 semantic programs, four prospective batches; GPU1 batches 03 then 05 only",
+  "cohort": "data_pipeline/mechanism_runtime_v1/witness_first_v1/multi_program_bank_v1/language_ready_v1/COHORT_V2.json",
+  "source_snapshot": "data_pipeline/mechanism_runtime_v1/witness_first_v1/multi_program_bank_v1/language_ready_v1",
+  "gpu_device": 1,
+  "batch_indices": {"batch_03": [0,1,2], "batch_05": [6,7,8]},
+  "max_factory_seconds_per_batch": 3600,
+  "max_supervision_seconds_per_batch": 3900,
+  "max_actions_per_batch": 60000,
+  "max_output_gib_per_batch": 8,
+  "per_candidate_discovery_seconds": 1000,
+  "per_candidate_certification_seconds": 1500,
+  "source_and_cohort_lock_before_action_required": true,
+  "all_candidates_attempted_or_explicitly_censored": true,
+  "replace_failed_candidates": false,
+  "original_quality_and_resource_thresholds_unchanged": true,
+  "gpu1_requires_actual_idle_readiness": true,
+  "holders_or_external_processes_may_be_stopped": false,
+  "training_allowed": false,
+  "scientific_pass": false
+}

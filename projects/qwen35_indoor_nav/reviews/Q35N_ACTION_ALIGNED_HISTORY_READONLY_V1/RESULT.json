@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE",
+  "unix": 1789294018.1421018,
+  "scope": "FIT-only read-only temporal visibility and reconstructability",
+  "stride": 8,
+  "stride_reason": "aligned with the already-fixed eight executed-action window; no stride sweep",
+  "counts": {
+    "decisions": 7225,
+    "image_count_unchanged": 7225,
+    "full_eight_action_windows": 6713,
+    "older_frame_differs_from_recent_previous": 4978,
+    "adjacent_pair_identical": 1765,
+    "aligned_pair_identical": 1735,
+    "adjacent_identical_but_aligned_distinct": 30
+  },
+  "recovery_inputs_reconstructable": 4983,
+  "new_view_target_conflicts": 0,
+  "new_view_unique_fingerprints": 4983,
+  "extra_training_updates": 0,
+  "extra_simulator_actions": 0,
+  "stronger_navigation_unproven": true,
+  "not_a_novel_architecture": true,
+  "files": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/ordinary_onpolicy_recovery_v2/run_001/POLICY_INPUTS.jsonl": "516461692a02ccc125146e3d5f2b371c8970431fb936d10c309f35ad561ae7fc",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/ordinary_onpolicy_recovery_v2/run_001/SUPERVISION_ONLY.jsonl": "c8fc53ccaa77f463b1d61c1f25fb5c162d30404505673937352740a8d1960334",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_ACTION_ALIGNED_HISTORY_READONLY_V1/check.py": "ebdd133bfbe0e4e89415adca47451c2352310c0740c2afe15d70468bfc9d4073"
+  }
+}

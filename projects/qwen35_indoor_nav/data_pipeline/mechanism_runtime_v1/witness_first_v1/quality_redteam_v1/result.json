@@ -1,0 +1,85 @@
+{
+  "status": "CPU_REDTEAM_COMPLETE",
+  "TEST_FIXTURE": true,
+  "positive_reaudit_pass": true,
+  "source_builder_positive_pass": true,
+  "negative_variants": 7,
+  "correctly_rejected": 7,
+  "results": [
+    {
+      "name": "01_flipped_label_with_self_consistent_outcome",
+      "expected_rejection": "LABEL_RECOMPUTATION",
+      "correctly_rejected": true,
+      "quality_pass": false,
+      "errors": [
+        "ValueError: LABEL_RECOMPUTATION"
+      ],
+      "scientific_pass": false
+    },
+    {
+      "name": "02_history_count_shortcut_rehashed",
+      "expected_rejection": "ACTION_COUNT_SHORTCUT",
+      "correctly_rejected": true,
+      "quality_pass": false,
+      "errors": [
+        "ValueError: ACTION_COUNT_SHORTCUT"
+      ],
+      "scientific_pass": false
+    },
+    {
+      "name": "03_missing_one_certification_trace",
+      "expected_rejection": "REPLAY_PATH_COUNT",
+      "correctly_rejected": true,
+      "quality_pass": false,
+      "errors": [
+        "ValueError: REPLAY_PATH_COUNT"
+      ],
+      "scientific_pass": false
+    },
+    {
+      "name": "04_future_query_added_to_policy",
+      "expected_rejection": "POLICY_FIELDS",
+      "correctly_rejected": true,
+      "quality_pass": false,
+      "errors": [
+        "ValueError: POLICY_FIELDS"
+      ],
+      "scientific_pass": false
+    },
+    {
+      "name": "05_unsealed_candidate",
+      "expected_rejection": "UNSEALED_FILE:",
+      "correctly_rejected": true,
+      "quality_pass": false,
+      "errors": [
+        "ValueError: UNSEALED_FILE:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/short_revisit_v3/run_v1/bundles/WF_SHORT_REVISIT_V3_004/FROZEN_CANDIDATE.json"
+      ],
+      "scientific_pass": false
+    },
+    {
+      "name": "06_changed_candidate_hash",
+      "expected_rejection": "SEALED_HASH_MISMATCH",
+      "correctly_rejected": true,
+      "quality_pass": false,
+      "errors": [
+        "ValueError: SEALED_HASH_MISMATCH"
+      ],
+      "scientific_pass": false
+    },
+    {
+      "name": "07_changed_locked_source",
+      "entrypoint": "acceptance.inspect_run",
+      "expected_rejection": "LOCKED_SOURCE_CHANGED:",
+      "correctly_rejected": true,
+      "error": "ValueError: LOCKED_SOURCE_CHANGED:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/core_bridge.py",
+      "scientific_pass": false
+    }
+  ],
+  "original_files_unchanged": true,
+  "original_files_verified": 603,
+  "new_physical_families": 0,
+  "training_admission": false,
+  "scientific_pass": false,
+  "harness_interruption_preserved": "HARNESS_INTERRUPTION.json",
+  "scope": "bounded fault injection; not proof of complete validator soundness"
+}

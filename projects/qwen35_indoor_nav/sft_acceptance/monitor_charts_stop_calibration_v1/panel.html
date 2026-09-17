@@ -1,0 +1,35 @@
+<section class="panel full" style="margin-bottom:20px">
+  <h2>当前：普通导航 STOP 校准 · 仅 FIT 拟合</h2>
+  <p>高/低学习率续训均未超过原基座，失败结果保留在下方。当前固定较好的 4,000 步模型，只检查一个统一停止参数；训练未重启，特殊数据未混入。</p>
+  <p>采集 V1 在正式路线开始前遇到临时缓存目录扫描竞态，失败已保留；V2 仅修复扫描，同 64 条 FIT 路线、同模型和预算。</p>
+  <p id="stop-calibration-progress">正在读取 FIT 校准进度…</p>
+  <p id="stop-calibration-parameter">参数未确定；不得使用开发集选择阈值。</p>
+  <p id="stop-calibration-dev">开发核验尚未完成。</p>
+  <p id="stop-calibration-error" role="status"></p>
+</section>
+<script>
+(() => {
+  let busy = false;
+  const put = (id, text) => { document.getElementById(id).textContent = text; };
+  const pct = x => Number.isFinite(x) ? (100*x).toFixed(2)+'%' : '未完成';
+  async function refreshStopCalibration() {
+    if (busy) return;
+    busy = true;
+    const ctrl = new AbortController(), timer = setTimeout(() => ctrl.abort(), 8000);
+    try {
+      const response = await fetch('/api/status', {cache:'no-store', signal:ctrl.signal});
+      if (!response.ok) throw new Error('HTTP '+response.status);
+      const s = (await response.json()).stop_calibration;
+      if (!s || !s.fit) throw new Error('缺少校准状态');
+      const f = s.fit;
+      put('stop-calibration-progress', 'FIT 采集：'+f.status+' · '+(f.completed ?? 0)+'/64 条 · 16 个训练房屋。不是验证集成绩。');
+      put('stop-calibration-parameter', s.calibration ? 'FIT 参数裁决：'+s.calibration.status+'；偏置 b = '+(s.calibration.bias ?? '无合格参数') : '参数未确定；全部 64 条完成审核后才拟合。');
+      put('stop-calibration-dev', s.dev_result ? '唯一固定参数真实开发核验：'+s.dev_result.completed+'/100；SR '+pct(s.dev_result.sr)+'，SPL '+pct(s.dev_result.spl)+'。小型开发集，不是独立确认。' : s.dev ? '真实开发核验：'+s.dev.status+' · '+(s.dev.completed ?? 0)+'/100' : '真实开发核验未开始；FIT 未过门槛时不自动扩大搜索。');
+      put('stop-calibration-error','');
+    } catch (error) {
+      put('stop-calibration-error','状态暂不可读，保留上次显示并自动重试：'+error.message);
+    } finally {clearTimeout(timer); busy=false;}
+  }
+  refreshStopCalibration(); setInterval(refreshStopCalibration,10000);
+})();
+</script>

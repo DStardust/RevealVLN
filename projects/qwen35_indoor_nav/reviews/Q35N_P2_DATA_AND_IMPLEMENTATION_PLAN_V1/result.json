@@ -1,0 +1,58 @@
+{
+  "gate_id": "Q35N_P2_DATA_AND_IMPLEMENTATION_PLAN_V1",
+  "decision": "READY_FOR_MAIN_AGENT_REVIEW",
+  "date": "2026-09-09",
+  "primary_environment": "Habitat-Sim v0.1.7 challenge-2021 with Matterport3D semantic scenes",
+  "primary_data_source": "R2R-CE v1-3 train split for ordinary demonstrations; MP3D 17DRP5sb8fy for the first old-exposed interface family",
+  "critical_gaps": [
+    "The candidate 17DRP5sb8fy region names, object witnesses, physical loops, continuations, merge equality and 18-cell Y table have not been simulator-replayed.",
+    "A new Q35N-isolated Habitat runtime has not been created or accepted; the dirty ETP-R1 tree and legacy writable environments are not reusable runtimes.",
+    "The Qwen3.5-2B continuous-memory wrapper, multimodal MRoPE placeholder handling, cache reset, LoRA matching and short-sequence gradient path are runtime-unverified.",
+    "Matterport3D/R2R-CE derivative and redistribution permissions require review before any compiled images, semantic frames or routes are released.",
+    "Clean development/confirmation houses and navigation statistical sample size/effect threshold are not yet frozen; no Q35N GPU memory or throughput measurement exists."
+  ],
+  "source_evidence_scope": {
+    "status": "STATICALLY_SUPPORTED",
+    "covered": [
+      "official VLN-CE/R2R-CE source, version, split counts and license statements",
+      "local Habitat-Sim source commit/tag and relevant API locations",
+      "local MP3D scene file presence, sizes and selected-scene hashes",
+      "official Qwen3.5-2B model revision/config and Transformers v5.15.0 source interfaces",
+      "read-only local disk-size anchors"
+    ],
+    "not_covered": ["simulator runtime", "model runtime", "labels", "gradients", "training", "navigation performance", "scientific novelty or gain"]
+  },
+  "evidence_status": {
+    "primary_environment_source_and_api": "STATICALLY_SUPPORTED",
+    "ordinary_data_source": "STATICALLY_SUPPORTED",
+    "selected_family_physical_constructability": "UNVERIFIED",
+    "semantic_event_interface": "STATICALLY_SUPPORTED",
+    "selected_scene_event_instances": "UNVERIFIED",
+    "automatic_label_schema_and_isolation_contract": "STATICALLY_SUPPORTED",
+    "qwen_official_model_interface": "STATICALLY_SUPPORTED",
+    "qwen_custom_memory_mrope_runtime": "UNVERIFIED",
+    "future_query_isolation_design": "STATICALLY_SUPPORTED",
+    "early_history_gradient_reachability": "UNVERIFIED",
+    "strong_shared_state_match": "UNVERIFIED",
+    "resource_estimate_traceability": "STATICALLY_SUPPORTED",
+    "mp3d_derivative_release": "BLOCKED"
+  },
+  "proposed_next_gate": {
+    "gate_id": "Q35N_G1_MINIMAL_FAMILY_DATA_ACCEPTANCE_V1",
+    "executable": false,
+    "scope": "one old-exposed interface house, one 18-cell family, three full replays per cell, zero model/training/GPU/navigation-gain work",
+    "requires_main_agent_authorization": true
+  },
+  "main_agent_review_required": true,
+  "scientific_pass": false,
+  "implementation_allowed": false,
+  "training_allowed": false,
+  "new_training_runs": 0,
+  "new_navigation_episodes": 0,
+  "measured_navigation_gain": null,
+  "runtime_verified": false,
+  "gpu_operations": 0,
+  "downloads_or_installs": 0,
+  "global_state_modified": false,
+  "stopped_after_static_checks": true
+}

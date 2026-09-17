@@ -1,0 +1,112 @@
+{
+  "error": "AssertionError('SHARD_WALL_BUDGET')",
+  "workers": [
+    {
+      "shard": 0,
+      "returncode": 0,
+      "wall_seconds": 78.48852606490254
+    },
+    {
+      "shard": 1,
+      "returncode": 0,
+      "wall_seconds": 1682.9604628328234
+    },
+    {
+      "shard": 2,
+      "returncode": 0,
+      "wall_seconds": 2028.0937244240195
+    },
+    {
+      "shard": 3,
+      "returncode": 0,
+      "wall_seconds": 2210.100396355847
+    },
+    {
+      "shard": 4,
+      "returncode": 0,
+      "wall_seconds": 2584.916742966976
+    },
+    {
+      "shard": 5,
+      "returncode": 0,
+      "wall_seconds": 3550.3219452551566
+    },
+    {
+      "shard": 6,
+      "returncode": 0,
+      "wall_seconds": 1743.0320246980991
+    },
+    {
+      "shard": 7,
+      "returncode": 0,
+      "wall_seconds": 1700.011936693918
+    },
+    {
+      "shard": 8,
+      "returncode": 0,
+      "wall_seconds": 2417.0572898900136
+    },
+    {
+      "shard": 9,
+      "returncode": 0,
+      "wall_seconds": 2501.3412579479627
+    },
+    {
+      "shard": 10,
+      "returncode": 0,
+      "wall_seconds": 2342.0840948189143
+    },
+    {
+      "shard": 11,
+      "returncode": 1,
+      "wall_seconds": 4081.9483807499055
+    }
+  ],
+  "wall_seconds": 26946.48797446303,
+  "previous_lane_seconds": 0,
+  "restoration": {
+    "restored": true,
+    "new_identity": {
+      "pid": 3996270,
+      "starttime_ticks": 138504076,
+      "proc_uid": 0,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+      "cmdline": [
+        ".envs/etpr1/bin/python",
+        "-u",
+        "scripts/occupy_idle_gpu.py",
+        "--gpu",
+        "6",
+        "--reserve-mib",
+        "2048",
+        "--max-initial-used-mib",
+        "1024",
+        "--tag",
+        "vla_idle_occupancy_20260904"
+      ]
+    },
+    "gpu": {
+      "gpu": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "memory_mib": 29856.0,
+      "utilization": 100.0,
+      "processes": {
+        "3996270": 29846.0
+      },
+      "process_rows": [
+        {
+          "gpu_instance_id": "N/A",
+          "compute_instance_id": "N/A",
+          "pid": "3996270",
+          "type": "C",
+          "process_name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    "recovery_pane_preserved_if_failed": false
+  },
+  "holders_touched": true,
+  "external_processes_stopped": 0,
+  "scientific_pass": false
+}

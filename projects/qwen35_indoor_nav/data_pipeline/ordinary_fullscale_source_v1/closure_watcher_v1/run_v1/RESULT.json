@@ -1,0 +1,168 @@
+{
+  "states": {
+    "3": "STRICT_MERGE_VERIFIED",
+    "4": "STRICT_MERGE_VERIFIED",
+    "6": "FAILED_OR_UNVERIFIED_NO_RETRY",
+    "7": "STRICT_MERGE_VERIFIED"
+  },
+  "outcomes": {
+    "3": {
+      "status": "STRICT_CPU_READBACK_MERGED_NOT_TRAINED",
+      "scope": "SELECTED_WAVE_NOT_FULL_POOL",
+      "selected_shards": [
+        6
+      ],
+      "all_plan_shards": 7,
+      "shards": [
+        {
+          "shard": 6,
+          "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/production/shard_0006",
+          "terminal_jobs": 651,
+          "assigned_routes": 651,
+          "complete": true,
+          "unattempted_or_censored_routes": 0,
+          "replay_certified_routes": 631,
+          "strict_routes": 496,
+          "quarantine_routes": 135,
+          "replay_certified_not_yet_strict_audited": 0,
+          "rejected_routes": 20,
+          "strict_instruction_records": 1488,
+          "unique_route_decisions": 33707,
+          "instruction_conditioned_decisions": 101121,
+          "audited_subshards": 14
+        }
+      ],
+      "strict_routes": 496,
+      "instruction_records": 1488,
+      "unique_route_decisions": 33707,
+      "instruction_conditioned_decisions": 101121,
+      "physical_duplicates": 0,
+      "alias_duplicates": 0,
+      "complete_alias_ownership": true,
+      "sourceRoot_required": true,
+      "index_sha256": "7990d33cbfdfec343d5c3e43e9b920146e0f69576d8c54d2263745a9f746958c",
+      "training_started": false,
+      "scientific_pass": false
+    },
+    "7": {
+      "status": "STRICT_CPU_READBACK_MERGED_NOT_TRAINED",
+      "scope": "SELECTED_WAVE_NOT_FULL_POOL",
+      "selected_shards": [
+        3,
+        5
+      ],
+      "all_plan_shards": 7,
+      "shards": [
+        {
+          "shard": 3,
+          "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/production/shard_0003",
+          "terminal_jobs": 1000,
+          "assigned_routes": 1000,
+          "complete": true,
+          "unattempted_or_censored_routes": 0,
+          "replay_certified_routes": 917,
+          "strict_routes": 534,
+          "quarantine_routes": 383,
+          "replay_certified_not_yet_strict_audited": 0,
+          "rejected_routes": 83,
+          "strict_instruction_records": 1603,
+          "unique_route_decisions": 42870,
+          "instruction_conditioned_decisions": 128717,
+          "audited_subshards": 20
+        },
+        {
+          "shard": 5,
+          "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/production/shard_0005",
+          "terminal_jobs": 997,
+          "assigned_routes": 997,
+          "complete": true,
+          "unattempted_or_censored_routes": 0,
+          "replay_certified_routes": 964,
+          "strict_routes": 675,
+          "quarantine_routes": 289,
+          "replay_certified_not_yet_strict_audited": 0,
+          "rejected_routes": 33,
+          "strict_instruction_records": 2025,
+          "unique_route_decisions": 53951,
+          "instruction_conditioned_decisions": 161853,
+          "audited_subshards": 20
+        }
+      ],
+      "strict_routes": 1209,
+      "instruction_records": 3628,
+      "unique_route_decisions": 96821,
+      "instruction_conditioned_decisions": 290570,
+      "physical_duplicates": 0,
+      "alias_duplicates": 0,
+      "complete_alias_ownership": true,
+      "sourceRoot_required": true,
+      "index_sha256": "4af8480d5e521581acd0a4c1f0e6d93c09f3df84cc867602b0b5d664875df788",
+      "training_started": false,
+      "scientific_pass": false
+    },
+    "6": {
+      "error": "AssertionError('PRODUCTION_FAILED_NO_AUTOMATIC_RETRY')"
+    },
+    "4": {
+      "status": "STRICT_CPU_READBACK_MERGED_NOT_TRAINED",
+      "scope": "UNATTEMPTED_RESCUE_SUBSET_ONLY_NOT_ORIGINAL_FULL_SHARDS",
+      "selected_shards": [
+        0,
+        1
+      ],
+      "all_plan_shards": 7,
+      "shards": [
+        {
+          "shard": 0,
+          "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/rescue_production/shard_0000",
+          "terminal_jobs": 279,
+          "assigned_routes": 279,
+          "complete": true,
+          "unattempted_or_censored_routes": 0,
+          "replay_certified_routes": 263,
+          "strict_routes": 93,
+          "quarantine_routes": 170,
+          "replay_certified_not_yet_strict_audited": 0,
+          "rejected_routes": 16,
+          "strict_instruction_records": 279,
+          "unique_route_decisions": 8540,
+          "instruction_conditioned_decisions": 25620,
+          "audited_subshards": 6
+        },
+        {
+          "shard": 1,
+          "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/rescue_production/shard_0001",
+          "terminal_jobs": 674,
+          "assigned_routes": 674,
+          "complete": true,
+          "unattempted_or_censored_routes": 0,
+          "replay_certified_routes": 648,
+          "strict_routes": 567,
+          "quarantine_routes": 81,
+          "replay_certified_not_yet_strict_audited": 0,
+          "rejected_routes": 26,
+          "strict_instruction_records": 1700,
+          "unique_route_decisions": 55782,
+          "instruction_conditioned_decisions": 167331,
+          "audited_subshards": 14
+        }
+      ],
+      "strict_routes": 660,
+      "instruction_records": 1979,
+      "unique_route_decisions": 64322,
+      "instruction_conditioned_decisions": 192951,
+      "physical_duplicates": 0,
+      "alias_duplicates": 0,
+      "complete_alias_ownership": true,
+      "sourceRoot_required": true,
+      "index_sha256": "6cb9e013a9dae7ad1b2b2b519088817a66d7025c30bd587a990c808030386f69",
+      "training_started": false,
+      "scientific_pass": false
+    }
+  },
+  "elapsed_seconds": 6635.285923515912,
+  "production_retries": 0,
+  "gpu_operations": 0,
+  "training_started": false,
+  "scientific_pass": false
+}

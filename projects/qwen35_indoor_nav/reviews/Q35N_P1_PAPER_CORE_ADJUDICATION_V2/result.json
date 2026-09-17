@@ -1,0 +1,36 @@
+{
+  "gate_id": "Q35N_P1_PAPER_CORE_ADJUDICATION_V2",
+  "date": "2026-09-09",
+  "review_type": "sequential_machine_adjudication_not_independent_peer_review",
+  "decision": "GO_FOR_IMPLEMENTATION_PLANNING",
+  "mainline_freeze": "../../MAINLINE_FREEZE_V3.md",
+  "novelty_review": "PASS_FOR_SPECIFIED_CLAIM",
+  "claim": "Executable crossed-history continuation-outcome compilation coupled to causal runtime execution-memory and action training for indoor VLN",
+  "scope": "Specific algorithm research preclearance, not novelty of PSR or automata, exhaustive prior-art exclusion, empirical contribution sufficiency or acceptance assurance",
+  "contribution_sufficiency": "UNTESTED",
+  "scientific_pass": false,
+  "runtime_verified": false,
+  "new_training_runs": 0,
+  "new_navigation_episodes": 0,
+  "measured_navigation_gain": null,
+  "implementation_planning_allowed": true,
+  "implementation_allowed": false,
+  "training_allowed": false,
+  "method_experiments_allowed": false,
+  "next_gate": "Q35N_P2_DATA_AND_IMPLEMENTATION_PLAN_V1",
+  "critical_controls": [
+    "same architecture and trajectory pool with action supervision only",
+    "same data with high-quality program-state auxiliary supervision",
+    "same architecture with generic future prediction auxiliary supervision",
+    "crossed-history and crossed-task relation ablations"
+  ],
+  "remaining_risks": [
+    "physically executable matched histories and reliable observable event certificates",
+    "training query leakage or shortcut prediction",
+    "equivalence to simpler matched-data state supervision in practice",
+    "template-only gains without natural instruction transfer",
+    "no intrinsic historical label contrast for memoryless static ObjectNav",
+    "unmeasured compute and robot deployment constraints"
+  ],
+  "artifacts": ["REPORT_ZH.md", "../../MAINLINE_FREEZE_V3.md", "../../ROBOT_NAV_BACKBONE_CONTRACT_V1.md"]
+}

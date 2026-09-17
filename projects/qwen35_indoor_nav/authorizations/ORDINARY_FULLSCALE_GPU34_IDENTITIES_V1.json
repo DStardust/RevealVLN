@@ -1,0 +1,43 @@
+{
+  "scope": "Read-only verified 2026-09-09 23:12 CST; recheck immediately before any signal",
+  "project_root": "/mnt/data_nas/deeprobotics/daiyang/vla",
+  "holders": [
+    {
+      "gpu_device": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "pid": 2802421,
+      "starttime_ticks": 128991955,
+      "proc_uid": 0,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+      "cmdline": [".envs/etpr1/bin/python", "-u", "scripts/occupy_idle_gpu.py", "--gpu", "3", "--reserve-mib", "2048", "--max-initial-used-mib", "1536", "--tag", "vla_idle_occupancy_20260904"],
+      "pane_id": "%153",
+      "pane_target": "vla_idle_occupancy_20260904:0.0",
+      "pane_pid": 2802421,
+      "pane_dead": false,
+      "project_cache_environment": {},
+      "remain_on_exit": "off"
+    },
+    {
+      "gpu_device": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "pid": 2902871,
+      "starttime_ticks": 129713755,
+      "proc_uid": 0,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+      "cmdline": [".envs/etpr1/bin/python", "-u", "scripts/occupy_idle_gpu.py", "--gpu", "4", "--reserve-mib", "2048", "--max-initial-used-mib", "1024", "--tag", "vla_idle_occupancy_20260904"],
+      "pane_id": "%149",
+      "pane_target": "vla_idle_occupancy_20260904:1.0",
+      "pane_pid": 2902871,
+      "pane_dead": false,
+      "project_cache_environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "XDG_CACHE_HOME": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/recovery_r1/cache",
+        "CUDA_CACHE_PATH": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/recovery_r1/cache/cuda",
+        "TMPDIR": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/v1/recovery_r1/tmp"
+      },
+      "remain_on_exit": "off"
+    }
+  ],
+  "restore_same_cwd_and_cmdline": true,
+  "unknown_or_nonholder_process_signal_allowed": false
+}

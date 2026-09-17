@@ -1,0 +1,176 @@
+{
+  "status": "COMPLETE",
+  "reason": null,
+  "returncode": 0,
+  "wall_seconds": 238.48203750699759,
+  "peak_gpu_mib": 6086,
+  "peak_rss_bytes": 17283842048,
+  "peak_output_bytes": 28544911,
+  "cleanup": {
+    "signaled": false,
+    "remaining": []
+  },
+  "gpus_after": [
+    {
+      "index": 0,
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "memory_mib": 30,
+      "contexts": [
+        {
+          "pid": 1246459,
+          "kind": "G",
+          "name": "/mnt/zrh/miniconda3/envs/navrl/bin/python",
+          "used_memory": "6 MiB"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "memory_mib": 12,
+      "contexts": []
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "memory_mib": 19903,
+      "contexts": [
+        {
+          "pid": 1246265,
+          "kind": "C",
+          "name": "/mnt/zrh/miniconda3/envs/navrl/bin/python",
+          "used_memory": "5938 MiB"
+        },
+        {
+          "pid": 1246459,
+          "kind": "C+G",
+          "name": "/mnt/zrh/miniconda3/envs/navrl/bin/python",
+          "used_memory": "13903 MiB"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 22472,
+      "contexts": [
+        {
+          "pid": 1151311,
+          "kind": "C",
+          "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+          "used_memory": "22446 MiB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "memory_mib": 22484,
+      "contexts": [
+        {
+          "pid": 1151312,
+          "kind": "C",
+          "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+          "used_memory": "22466 MiB"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "memory_mib": 22704,
+      "contexts": [
+        {
+          "pid": 1151313,
+          "kind": "C",
+          "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+          "used_memory": "22686 MiB"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 3996270,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 112240,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    }
+  ],
+  "training_after": {
+    "status": {
+      "status": "TRAINING",
+      "unix": 1789109929.315093,
+      "run_dir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/formal/attempt_001",
+      "attempt": 1,
+      "launcher_pid": 1151310,
+      "progress_age_seconds": 2.973557472229004,
+      "latest_updates": 37820,
+      "resume": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_baseline_v3/formal/run_0001/checkpoint_000030400.pt",
+      "deadline_unix": 1789149774.8039117,
+      "max_attempts": 3,
+      "monitor": "http://127.0.0.1:18767",
+      "model_navigation_gain_verified": false
+    },
+    "processes": [
+      {
+        "pid": 1151310,
+        "state": "S",
+        "ppid": 1151306,
+        "pgid": 1151306,
+        "sid": 1151306,
+        "start_ticks": 145795655,
+        "rss_bytes": 20393984
+      },
+      {
+        "pid": 1151311,
+        "state": "S",
+        "ppid": 1151310,
+        "pgid": 1151306,
+        "sid": 1151306,
+        "start_ticks": 145795662,
+        "rss_bytes": 8853979136
+      },
+      {
+        "pid": 1151312,
+        "state": "S",
+        "ppid": 1151310,
+        "pgid": 1151306,
+        "sid": 1151306,
+        "start_ticks": 145795662,
+        "rss_bytes": 9075085312
+      },
+      {
+        "pid": 1151313,
+        "state": "S",
+        "ppid": 1151310,
+        "pgid": 1151306,
+        "sid": 1151306,
+        "start_ticks": 145795662,
+        "rss_bytes": 8988549120
+      }
+    ]
+  },
+  "training_processes_unchanged": true,
+  "borrowed_holders": [],
+  "foreign_processes_signaled": [],
+  "optimizer_updates": 0
+}

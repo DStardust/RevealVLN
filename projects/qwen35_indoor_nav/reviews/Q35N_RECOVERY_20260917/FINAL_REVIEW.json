@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-17T17:28:00.493624+08:00",
+  "status": "DIAGNOSTICS_COMPLETE_CLOSED_LOOP_RESOURCE_BLOCKED_HANDOFF_READY",
+  "sr40_achieved": false,
+  "learnability_pass": true,
+  "learnability_updates": 400,
+  "train_accuracy": 1.0,
+  "check_accuracy": 0.671875,
+  "independent_inference_pass": true,
+  "closed_loop_recovery_gain": null,
+  "engineering_candidate_pass": null,
+  "recovery_rule_adopted": false,
+  "all_owned_gpu_jobs_closed": true,
+  "external_processes_signaled": [],
+  "gpu_node_wall_seconds": 3619.568655680632,
+  "cases": [
+    {
+      "case": "ordinary_cycle_recovery_v1",
+      "status": "SERVICE_FAILED",
+      "reason": "LAUNCHER_ERROR",
+      "completed": 33,
+      "planned": 100,
+      "actions": 5256,
+      "wall_seconds": 676.0831877139863,
+      "owned_cleanup_complete": true
+    },
+    {
+      "case": "ordinary_cycle_pair_v2",
+      "status": "RESOURCE_CENSORED",
+      "reason": "FOREIGN_GPU_CONTEXT_APPEARED",
+      "completed": 3,
+      "planned": 200,
+      "actions": 808,
+      "wall_seconds": 223.85459949285723,
+      "owned_cleanup_complete": true
+    },
+    {
+      "case": "ordinary_cycle_pair_gpu1_v3",
+      "status": "RESOURCE_CENSORED",
+      "reason": "FOREIGN_GPU_CONTEXT_APPEARED",
+      "completed": 19,
+      "planned": 200,
+      "actions": 4064,
+      "wall_seconds": 554.0686675680336,
+      "owned_cleanup_complete": true
+    }
+  ],
+  "future_option_1": "FUTURE_OPTION_1_SMALL_OBJECT_NAV_ZH.md",
+  "pro_review_received": false,
+  "next": "User-authorized GitHub branch snapshot and Pro review packet; no additional resource retries in this node"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "STRICT_CPU_READBACK_MERGED_NOT_TRAINED",
+  "scope": "UNATTEMPTED_RESCUE_SUBSET_ONLY_NOT_ORIGINAL_FULL_SHARDS",
+  "selected_shards": [
+    0,
+    1
+  ],
+  "all_plan_shards": 7,
+  "shards": [
+    {
+      "shard": 0,
+      "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/rescue_production/shard_0000",
+      "terminal_jobs": 279,
+      "assigned_routes": 279,
+      "complete": true,
+      "unattempted_or_censored_routes": 0,
+      "replay_certified_routes": 263,
+      "strict_routes": 93,
+      "quarantine_routes": 170,
+      "replay_certified_not_yet_strict_audited": 0,
+      "rejected_routes": 16,
+      "strict_instruction_records": 279,
+      "unique_route_decisions": 8540,
+      "instruction_conditioned_decisions": 25620,
+      "audited_subshards": 6
+    },
+    {
+      "shard": 1,
+      "sourceRoot": "projects/qwen35_indoor_nav/data_pipeline/ordinary_fullscale_source_v1/rescue_production/shard_0001",
+      "terminal_jobs": 674,
+      "assigned_routes": 674,
+      "complete": true,
+      "unattempted_or_censored_routes": 0,
+      "replay_certified_routes": 648,
+      "strict_routes": 567,
+      "quarantine_routes": 81,
+      "replay_certified_not_yet_strict_audited": 0,
+      "rejected_routes": 26,
+      "strict_instruction_records": 1700,
+      "unique_route_decisions": 55782,
+      "instruction_conditioned_decisions": 167331,
+      "audited_subshards": 14
+    }
+  ],
+  "strict_routes": 660,
+  "instruction_records": 1979,
+  "unique_route_decisions": 64322,
+  "instruction_conditioned_decisions": 192951,
+  "physical_duplicates": 0,
+  "alias_duplicates": 0,
+  "complete_alias_ownership": true,
+  "sourceRoot_required": true,
+  "index_sha256": "6cb9e013a9dae7ad1b2b2b519088817a66d7025c30bd587a990c808030386f69",
+  "training_started": false,
+  "scientific_pass": false
+}

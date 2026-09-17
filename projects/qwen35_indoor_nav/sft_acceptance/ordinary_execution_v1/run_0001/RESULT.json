@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_NO_AUTOMATIC_RETRY",
+  "error": "ValueError('LIVE_GPU_UUID_MISMATCH')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_execution_v1/execute.py\", line 326, in main\n    backend = ref.TorchBackend(copy.deepcopy(protocol['training']), dict(gpu_uuid=protocol['gpu_uuid'], budget=copy.deepcopy(protocol['budget'])))\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_baseline_v2/runner.py\", line 299, in __init__\n    require(str(gpu.uuid) == permit['gpu_uuid'], 'LIVE_GPU_UUID_MISMATCH')\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_baseline_v2/runner.py\", line 26, in require\n    raise ValueError(reason)\nValueError: LIVE_GPU_UUID_MISMATCH\n",
+  "unix": 1789011013.8528297,
+  "navigation_gain_verified": false
+}

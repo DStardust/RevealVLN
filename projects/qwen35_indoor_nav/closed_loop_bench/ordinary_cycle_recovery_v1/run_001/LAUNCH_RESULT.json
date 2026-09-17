@@ -1,0 +1,133 @@
+{
+  "status": "SERVICE_FAILED",
+  "reason": "LAUNCHER_ERROR",
+  "returncode": -15,
+  "wall_seconds": 676.0831877139863,
+  "peak_gpu_mib": 18652,
+  "peak_rss_bytes": 33996058624,
+  "peak_output_bytes": 31764827,
+  "cleanup": {
+    "signaled": true,
+    "remaining": []
+  },
+  "gpus_after": [
+    {
+      "index": 0,
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "memory_mib": 14550,
+      "contexts": [
+        {
+          "pid": 4023782,
+          "kind": "C",
+          "name": "python",
+          "used_memory": "1694 MiB"
+        },
+        {
+          "pid": 4023841,
+          "kind": "C+G",
+          "name": "python",
+          "used_memory": "12776 MiB"
+        },
+        {
+          "pid": 4056123,
+          "kind": "G",
+          "name": "python",
+          "used_memory": "6 MiB"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "memory_mib": 11298,
+      "contexts": [
+        {
+          "pid": 4056123,
+          "kind": "C+G",
+          "name": "python",
+          "used_memory": "11247 MiB"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "memory_mib": 23386,
+      "contexts": [
+        {
+          "pid": 3903965,
+          "kind": "C",
+          "name": "/root/SparseDrive/.venv/bin/python",
+          "used_memory": "23376 MiB"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 23754,
+      "contexts": [
+        {
+          "pid": 3903966,
+          "kind": "C",
+          "name": "/root/SparseDrive/.venv/bin/python",
+          "used_memory": "23744 MiB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "memory_mib": 5,
+      "contexts": []
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "memory_mib": 24332,
+      "contexts": [
+        {
+          "pid": 3903967,
+          "kind": "C",
+          "name": "/root/SparseDrive/.venv/bin/python",
+          "used_memory": "24322 MiB"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "memory_mib": 23334,
+      "contexts": [
+        {
+          "pid": 3903963,
+          "kind": "C",
+          "name": "/root/SparseDrive/.venv/bin/python",
+          "used_memory": "23324 MiB"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "memory_mib": 24800,
+      "contexts": [
+        {
+          "pid": 3903964,
+          "kind": "C",
+          "name": "/root/SparseDrive/.venv/bin/python",
+          "used_memory": "24790 MiB"
+        }
+      ]
+    }
+  ],
+  "training_after": {
+    "status": "No external training process supervision in this run",
+    "processes": []
+  },
+  "training_processes_unchanged": null,
+  "borrowed_holders": [],
+  "foreign_processes_signaled": [],
+  "optimizer_updates": 0,
+  "surviving_training_process_identities_unchanged": null
+}

@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETE_READONLY_DIAGNOSTIC",
+  "unix": 1789283136.0521293,
+  "source_sha256": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_onpolicy_adapt_v6r1/formal/attempt_001/checkpoint_000001000.pt": "d5fd559cb78038c806ca0c13bf97241f7bd4bd3d7326b7bd02779916fce8dc0a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_onpolicy_adapt_v6/formal/attempt_001/checkpoint_000000950.pt": "a00a6006bdea3ec0d30b79cfad538deaf44242f9c2e972c1f43207ca43433cda"
+  },
+  "rows": [
+    {
+      "name": "action_query",
+      "elements": 2048,
+      "parameter_dtype": "torch.bfloat16",
+      "moment_dtype": "torch.bfloat16",
+      "learning_rate": 4.7784309460913035e-06,
+      "saved_optimizer_step": 5000,
+      "actual_changed_coordinates_4000_to_corrected1000": 137,
+      "actual_changed_coordinates_950_to1000": 78,
+      "static_intended_nonzero_coordinates": 2048,
+      "static_bf16_rounds_to_same": 2024,
+      "static_fp32_rounds_to_same": 2,
+      "intended_abs_update_median": 5.202918313823579e-07,
+      "parameter_abs_median": 0.0078125
+    },
+    {
+      "name": "exec_embed.weight",
+      "elements": 6144,
+      "parameter_dtype": "torch.bfloat16",
+      "moment_dtype": "torch.bfloat16",
+      "learning_rate": 4.7784309460913035e-06,
+      "saved_optimizer_step": 5000,
+      "actual_changed_coordinates_4000_to_corrected1000": 3,
+      "actual_changed_coordinates_950_to1000": 0,
+      "static_intended_nonzero_coordinates": 6144,
+      "static_bf16_rounds_to_same": 6144,
+      "static_fp32_rounds_to_same": 237,
+      "intended_abs_update_median": 5.143684864705733e-07,
+      "parameter_abs_median": 0.66796875
+    }
+  ],
+  "model_or_optimizer_mutated": false,
+  "optimizer_steps_executed": 0,
+  "gpu_actions": 0,
+  "probe_scope": "float64 ideal proposal using frozen saved moments, then representation rounding; not actual past-step replay",
+  "inference": "BF16 numerical absorption may constrain these two trainable groups; impact on navigation remains untested",
+  "navigation_gain_verified": false,
+  "automatic_training_allowed": false
+}

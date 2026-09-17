@@ -1,0 +1,213 @@
+{
+  "status": "LIVE_TRAINING_AND_CHECKPOINT_ACCEPTED",
+  "unix": 1789187626.8378768,
+  "snapshot_counts": {
+    "strict_routes": 25415,
+    "instruction_records": 37114,
+    "instruction_conditioned_decisions": 2650347,
+    "unique_route_decisions": 1720480
+  },
+  "training_index_sha256": "cde540543491579d644ffeca8f42127511c45876a3a34830f15f27f35758d7ec",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "source_checkpoint_updates": 51301,
+  "new_stage_updates": 500,
+  "new_stage_decisions": 43110,
+  "accepted_checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000000200.pt",
+  "accepted_checkpoint_sha256": "5778b16bcb549b632d798ab80b1db8f474396335dd1c9be67dd1bd8aea7e5bd2",
+  "checkpoint_parameters_changed": 28,
+  "all_checkpoint_tensors_finite": true,
+  "code_and_old_input_locks_unchanged": true,
+  "ranks": [
+    {
+      "pid": 2063716,
+      "state": "R",
+      "start": 153930988,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+        "-B",
+        "-u",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/train_filestore.py",
+        "--protocol",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json",
+        "--run-dir",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001",
+        "--resume",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/initial_from_51301.pt"
+      ]
+    },
+    {
+      "pid": 2063717,
+      "state": "R",
+      "start": 153930988,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+        "-B",
+        "-u",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/train_filestore.py",
+        "--protocol",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json",
+        "--run-dir",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001",
+        "--resume",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/initial_from_51301.pt"
+      ]
+    },
+    {
+      "pid": 2063718,
+      "state": "R",
+      "start": 153930988,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+        "-B",
+        "-u",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/train_filestore.py",
+        "--protocol",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json",
+        "--run-dir",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001",
+        "--resume",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/initial_from_51301.pt"
+      ]
+    }
+  ],
+  "gpu_snapshot": [
+    {
+      "index": 0,
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "memory": "14 MiB",
+      "contexts": []
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "memory": "11579 MiB",
+      "contexts": [
+        {
+          "pid": 2065373,
+          "type": "C",
+          "used": "4926 MiB"
+        },
+        {
+          "pid": 2070084,
+          "type": "G",
+          "used": "371 MiB"
+        },
+        {
+          "pid": 2070085,
+          "type": "G",
+          "used": "371 MiB"
+        },
+        {
+          "pid": 2070086,
+          "type": "G",
+          "used": "371 MiB"
+        },
+        {
+          "pid": 2070087,
+          "type": "G",
+          "used": "2271 MiB"
+        },
+        {
+          "pid": 2070088,
+          "type": "G",
+          "used": "2067 MiB"
+        },
+        {
+          "pid": 2070089,
+          "type": "G",
+          "used": "371 MiB"
+        },
+        {
+          "pid": 2070090,
+          "type": "G",
+          "used": "365 MiB"
+        },
+        {
+          "pid": 2070091,
+          "type": "G",
+          "used": "371 MiB"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "memory": "15 MiB",
+      "contexts": []
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory": "22448 MiB",
+      "contexts": [
+        {
+          "pid": 2063716,
+          "type": "C",
+          "used": "22424 MiB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "memory": "22480 MiB",
+      "contexts": [
+        {
+          "pid": 2063717,
+          "type": "C",
+          "used": "22464 MiB"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "memory": "22400 MiB",
+      "contexts": [
+        {
+          "pid": 2063718,
+          "type": "C",
+          "used": "22384 MiB"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "memory": "29856 MiB",
+      "contexts": [
+        {
+          "pid": 3996270,
+          "type": "C",
+          "used": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "memory": "29856 MiB",
+      "contexts": [
+        {
+          "pid": 112240,
+          "type": "C",
+          "used": "29846 MiB"
+        }
+      ]
+    }
+  ],
+  "recent_measured_throughput_range": [
+    93.44215462317482,
+    165.73398196782676
+  ],
+  "monitor_port": 18766,
+  "monitor_data_counts_correct": true,
+  "gpu6_gpu7_holder_identities_unchanged": true,
+  "current_gpu3_gpu4_gpu5_restoration_pending": true,
+  "navigation_gain_verified": false,
+  "architecture_innovation_claimed": false,
+  "development_comparison_status": "EVALUATING_BEFORE"
+}

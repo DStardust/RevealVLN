@@ -1,0 +1,71 @@
+{
+  "node": "BUDGET_CENSOR_EMPTY_ARGV_HOLDER_RECOVERY_V3",
+  "gpu": 3,
+  "restoration": {
+    "restored": true,
+    "new_identity": {
+      "pid": 3294720,
+      "starttime_ticks": 132284629,
+      "proc_uid": 0,
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+      "cmdline": [
+        ".envs/etpr1/bin/python",
+        "-u",
+        "scripts/occupy_idle_gpu.py",
+        "--gpu",
+        "3",
+        "--reserve-mib",
+        "2048",
+        "--max-initial-used-mib",
+        "1536",
+        "--tag",
+        "vla_idle_occupancy_20260904"
+      ]
+    },
+    "gpu": {
+      "gpu": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 29860.0,
+      "utilization": 15.0,
+      "processes": {
+        "2781015": 246.0,
+        "2900192": 246.0,
+        "3294720": 29334.0
+      },
+      "process_rows": [
+        {
+          "gpu_instance_id": "N/A",
+          "compute_instance_id": "N/A",
+          "pid": "2781015",
+          "type": "C",
+          "process_name": "python",
+          "used_memory": "246 MiB"
+        },
+        {
+          "gpu_instance_id": "N/A",
+          "compute_instance_id": "N/A",
+          "pid": "2900192",
+          "type": "C",
+          "process_name": "python",
+          "used_memory": "246 MiB"
+        },
+        {
+          "gpu_instance_id": "N/A",
+          "compute_instance_id": "N/A",
+          "pid": "3294720",
+          "type": "C",
+          "process_name": ".envs/etpr1/bin/python",
+          "used_memory": "29334 MiB"
+        }
+      ]
+    },
+    "recovery_pane_preserved_if_failed": false
+  },
+  "old_receipts_unchanged": true,
+  "changed_scope": "only externally verified identical sleeper argv passed to sealed restore function",
+  "old_runtime_result_overridden": false,
+  "external_processes_stopped": 0,
+  "scientific_pass": false,
+  "data_status": "UNCHANGED_RESOURCE_CENSORED_NOT_FULLY_GENERATED",
+  "full_dataset_certified": false
+}

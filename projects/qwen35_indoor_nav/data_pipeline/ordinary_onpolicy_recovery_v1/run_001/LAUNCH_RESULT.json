@@ -1,0 +1,126 @@
+{
+  "status": "SERVICE_FAILED",
+  "reason": null,
+  "returncode": 1,
+  "wall_seconds": 19.444767633918673,
+  "peak_gpu_mib": 30,
+  "peak_rss_bytes": 891719680,
+  "peak_output_bytes": 10545,
+  "cleanup": {
+    "signaled": false,
+    "remaining": []
+  },
+  "gpus_after": [
+    {
+      "index": 0,
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "memory_mib": 4785,
+      "contexts": [
+        {
+          "pid": 2826942,
+          "kind": "C",
+          "name": "/mnt/zrh/miniconda3/envs/navrl/bin/python",
+          "used_memory": "4764 MiB"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "memory_mib": 12,
+      "contexts": []
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "memory_mib": 15,
+      "contexts": []
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "memory_mib": 29864,
+      "contexts": [
+        {
+          "pid": 2756725,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 2756886,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 2756973,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 3996270,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "memory_mib": 29856,
+      "contexts": [
+        {
+          "pid": 112240,
+          "kind": "C",
+          "name": ".envs/etpr1/bin/python",
+          "used_memory": "29846 MiB"
+        }
+      ]
+    }
+  ],
+  "training_after": {
+    "status": {
+      "status": "STOPPED",
+      "unix": 1789267488.5169363,
+      "run_dir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_r2r_adapt_v5/formal/attempt_001",
+      "charged_decisions": 736713,
+      "attempts": 1,
+      "model_navigation_gain_verified": false
+    },
+    "processes": [
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "training_processes_unchanged": false,
+  "borrowed_holders": [],
+  "foreign_processes_signaled": [],
+  "optimizer_updates": 0,
+  "surviving_training_process_identities_unchanged": true
+}

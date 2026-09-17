@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_NO_AUTOMATIC_RETRY",
+  "error": "AssertionError('RESUMED_UPDATE')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_execution_v2/execute.py\", line 337, in main\n    evidence = probe(backend, rows, data, out, binding)\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_execution_v2/execute.py\", line 167, in probe\n    assert tensor_equal(first_update['trainable'], second_update['trainable'], torch), 'RESUMED_UPDATE'\nAssertionError: RESUMED_UPDATE\n",
+  "unix": 1789011258.031058,
+  "navigation_gain_verified": false
+}

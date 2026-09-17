@@ -1,0 +1,113 @@
+{
+  "id": "Q35N_ORDINARY_SYNC_RECOVERY_V1",
+  "created": "2026-09-11",
+  "recipe": "RECIPE_DECISION.md (VLN-CE MIT teacher-forcing + inflection weighting 3.2; NaVILA Apache-2.0 SFT envelope lr1e-4 cosine warmup3%)",
+  "seed": 1109,
+  "epochs": 3,
+  "batching": {
+    "mode": "token_budget",
+    "max_tokens": 6144,
+    "order": "length_sorted_seeded_tiebreak_block_shuffle",
+    "drop_tail_to_world_multiple": true
+  },
+  "optimizer": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "gradient_clip": 1.0,
+    "schedule": "cosine",
+    "warmup_ratio": 0.03
+  },
+  "loss": "inflection_weighted_4class_ce; per-rank sum * world / global_weight_sum; DDP grad averaging == global weighted mean",
+  "data": {
+    "num_workers": 6,
+    "prefetch_factor": 4
+  },
+  "snapshot": {
+    "training_index_sha256": "2cb9d375f7228824c7d5f68b5c4395afeed7cf669b62b923980b4c090818c5e7",
+    "decisions_per_epoch": 1394744,
+    "path": "../ordinary_baseline_v2/snapshot_v1"
+  },
+  "sample_index_sha256": "d8e82e6b7f8aa497c9992a26666ae4aee1110653d7f39166a3946e218137d04c",
+  "code_sha256": {
+    "train.py": "01095a62600f58bd0e3f7f1e67de22055ea7b1bcb1ac43293670788f0014afb1",
+    "data.py": "b54f149d16c13a37a535cf118464b83c398ec21145fe90bb6c7396c990715c70",
+    "model.py": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+    "control.py": "7502c5389f93581d0596be5d25c029ccba9a6adcbb7186ae234ca87caa10f68d",
+    "supervise.py": "1f4310fc07a6e4486c9aa3082da6ffb078fd248fa88cb712bda5a379aa61d723",
+    "lease_run.py": "06343e1da28f19df10311759e992dab59554bc4b3824621dca937d4692b22a89",
+    "test_v3.py": "e4baab1c020dc83c83e6ca5b3fe783f02d4dd8e7e9b28c7e396329f1660d1dd5",
+    "test_control.py": "109aa9aea5ad3165bb81508115a175c42f074ab80af941cb35e698c5f8e74cfc",
+    "prepare.py": "df3a10fa30c7adcd0170a6fb3d19da89e34ed89a0602a2f53cd55984bb1aaaf1",
+    "monitor.py": "3d6d863549d97c21fee9bdfda4800c394f26a829f41afb2405bc125f54f3b90e",
+    "index.html": "f4d5d0dcc08b417eafab510cfa99ce9a82e98f9dcde6f0cb33ba7fa163237123",
+    "train_filestore.py": "b56913d7d6f109c5a29b932653b3e31ef36021bfe36ce5b02eb65c973e814c2a",
+    "supervise_filestore.py": "0937bbd041f8560ae24d8755c58c5c70825c33ff5d6130aca110ed08c3f3cb95",
+    "launcher.py": "631dac96bbb386ec81bcba0a0ebf2039cecd92bce6c21df39d864f278b0cb58f",
+    "test_file_store.py": "a7ea75050292a1b2aeda10951af2d85965df8d6c58ddeee77c62621c0a81295a",
+    "freeze_transport.py": "79d6aa03cc2d6cfb6b02ec44d0aa5152177808f14f97d2150a3c61e62715e8bb"
+  },
+  "progress_seconds": 10,
+  "evaluation": {
+    "online_metrics_not_closed_loop": true,
+    "dev_eval_separate": true
+  },
+  "fla_dependency": {
+    "wheel_sha256": "5e830c85bad3d0d34677f98ac7074d08687a3756f0f0499d95ceb96eb6920761",
+    "path": "../ordinary_speedup_10x_v1/official_fla_0_5_2/deps",
+    "license": "MIT"
+  },
+  "einops_dependency": {
+    "path": "../ordinary_speedup_10x_v1/official_einops_0_8_1/deps"
+  },
+  "kernel": "fla",
+  "world_size": 3,
+  "gpus": [
+    "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+    "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+    "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+  ],
+  "budget": {
+    "wall_seconds": 86100,
+    "max_decisions": 4500000,
+    "max_updates": 60000,
+    "max_gpu_memory_bytes_per_rank": 27917287424
+  },
+  "checkpoint_updates": 200,
+  "resume_semantics": "state restore exact (trainable/optimizer/RNG/cursor); forward bitwise equality not claimed under triton kernels",
+  "note": "kernel=fla valid only if ACCEPTANCE.json panel PASS; otherwise PROTOCOL_FALLBACK.json is used",
+  "allocator": "expandable_segments:True",
+  "gpu2_note": "GPU2 occupied by a foreign NavDP training (pid 362210/362569, started 2026-09-11 00:01) after v6 segment completed; foreign processes are never signalled, so the formal run executes on the three drained cards GPU3/4/5. Per-card steady throughput measured 48.56 d/s, aggregate projection >> 10x gate.",
+  "resume_from": {
+    "path": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_baseline_v3/formal/run_0001/checkpoint_000030400.pt",
+    "sha256": "49e59020ef5fa4b9b870ec524816d1a9b4217380dc3ae6ed15ef13344562d73e",
+    "receipt_sha256": "de9bce473cdf78100e2ff99af789161981864c44f8f4e94df1a6f5e9ec944ff6",
+    "updates": 30400
+  },
+  "segment_note": "Versioned collective/device/accounting repair; unchanged model definition/data/loss/LR.",
+  "log_every_updates": 20,
+  "max_global_batch_decisions": 137,
+  "parent_protocol_sha256": "c3839f783a07bb18f32d041890ca6738aff7671d61120a9a463f5904bd731b98",
+  "accounting": {
+    "initial_charged_decisions": 2401387,
+    "observed_window_decisions": 2232128,
+    "highest_legacy_counter": 2236987,
+    "legacy_unobserved_tail": "UNKNOWN; conservative budget reservation, not measured usage",
+    "legacy_reserve_decisions": 164400,
+    "legacy_attempt_marker_count": 6,
+    "first_observed_unix": 1789063674.8039117,
+    "deadline_unix": 1789149774.8039117
+  },
+  "transport_amendment": {
+    "store": "fresh FileStore per attempt",
+    "process_group": "NCCL 180 seconds",
+    "interfaces": "lo for single-node bootstrap",
+    "reason": "TCPStore client validation timed out on both hostname and 127.0.0.1, libuv variants; raw loopback TCP and three-rank FileStore Gloo passed.",
+    "old_seal_preserved": "de2166c6bd532b330f7034551c26d2ab20021b39c545d5329b7a270863fc634e",
+    "no_gpu_attempt_before_amendment": true
+  }
+}

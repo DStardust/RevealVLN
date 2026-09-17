@@ -1,0 +1,21 @@
+{
+  "approved": true,
+  "user_basis": ["此次会话任务就是完成特殊样本的批量生产和普通样本的稳定生产", "后面几张占用的卡都能用，把进程释放跑完实验再占用回去就可以"],
+  "scope": "Next frozen disjoint 1000 ordinary routes in four independently writable shards; no training",
+  "source_plan": "data_pipeline/ordinary_parallel_v1/PLAN.json",
+  "runtime": "data_pipeline/ordinary_parallel_v1/runtime_v1",
+  "gpu_to_sequential_shards": {"6": [0, 2], "7": [1, 3]},
+  "holder_identities": "authorizations/ORDINARY_PARALLEL_GPU67_IDENTITIES_V1.json",
+  "prelaunch_requirements": ["CPU tests and source/asset/input lock verification by main agent", "strict unchanged route/export/replay acceptance", "complete prospective shard configs before action", "exact holder identity recheck and pre-signal restoration receipt", "no concurrent producer to any old or new shard"],
+  "max_new_routes": 1000,
+  "max_wall_seconds_per_gpu_chain": 14400,
+  "max_new_total_gib": 200,
+  "max_worker_ram_gib": 12,
+  "max_own_gpu_mib": 4096,
+  "isolate_rejected_routes_without_relaxing_thresholds": true,
+  "merge_requires_all_attempts_accounted_and_strict_index_hashes": true,
+  "restore_holders_on_success_failure_or_interruption": true,
+  "actual_external_tasks_may_be_stopped": false,
+  "training_allowed": false,
+  "scientific_pass": false
+}

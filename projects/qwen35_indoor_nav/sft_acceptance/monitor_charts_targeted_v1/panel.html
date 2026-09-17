@@ -1,0 +1,23 @@
+<section class="panel full" style="margin-top:20px">
+<h2>导航闭环：同一批 100 条开发路线</h2>
+<p id="targeted-state">读取中。纯模型与执行保护分开统计，未完成的指标保持空缺。</p>
+<div class="scroll"><table id="navigation-results"></table></div>
+<p class="muted">这是 5 个 INTERNAL_DEV 房屋，不是 1,839 条官方 val_unseen 全量。旧 41,800 步完整评测 SR 22.02% / SPL 18.68% 不能与此表直接相减。</p>
+<p class="warn">原扩产前后实际推理批量不同（1 对 8）。必须使用“扩产后·匹配复测”与扩产前比较；保护组是“模型＋控制器”，不是纯模型成绩。部分路线完成时不显示部分均值。</p>
+<h3>失败定位：不是把 STOP 权重调大就能解决</h3>
+<div class="scroll"><table id="failure-results"></table></div>
+<p id="paired-summary" class="muted"></p>
+<p class="muted">原地重复：前进后 RGB 与位姿完全不变；位姿仅用于离线核查，保护本身只看 RGB 和已执行动作。训练中的 STOP Recall 是单步分类指标，不是闭环成功率。</p>
+</section>
+<script>
+function renderTargeted(d){
+ const nav=d.navigation||{}, t=d.training_completion||{}, labels={before:'扩产前·纯模型',after_batch8:'扩产后·原批量8（参考）',matched:'扩产后·匹配复测',guard:'扩产后·视觉停滞保护'};
+ const states={COMPLETE:'已完整审核',EVALUATING:'评测中',COMPLETE_PENDING_AUDIT:'完整轨迹待审核',PREPARED:'已准备，待前置检查',NOT_STARTED:'准备中',LOADING:'加载模型',FAILED_OR_CENSORED:'失败/资源截断'};
+ document.getElementById('targeted-state').textContent=(t.completed_budget?'训练已按计划完成 4,000 次新更新，不是异常掉线。':'训练状态待核实。')+(t.holder_restoration_verified?'三卡占位恢复已验收。':'资源恢复待核实。')+'本轮不自动续训。';
+ table('navigation-results',['版本','进度 / 状态','推理批量','SR','SPL','nDTW','曾进入目标区 OSR'],Object.entries(labels).map(([k,label])=>{const n=nav[k]||{},r=n.result||{};return [label,(n.completed??0)+'/100 · '+(states[n.status]||n.status||'未知')+(n.heartbeat_stale?' · 心跳陈旧':''),r.selected_batch_size??n.progress?.selected_batch_size??'—',pct(r.sr),pct(r.spl),pct(r.ndtw),pct(r.osr)]}));
+ const diag=d.failure_diagnosis||{}, cases=diag.cases||{}, alias={before:labels.before,after_batch8:labels.after_batch8,after_matched_single:labels.matched,guard:labels.guard};
+ table('failure-results',['版本','原地重复≥8步路线','其中失败超时','重复前进动作 / 全部前进','进过目标区但未成功停止'],Object.entries(cases).map(([k,v])=>[alias[k]||k,fmt(v.episodes_with_stagnant_run_at_least_8),fmt(v.stagnant_episodes_unsuccessful_timeouts),fmt(v.stagnant_forward_steps)+' / '+fmt(v.forward_attempts),fmt(v.result?.failure_categories?.entered_goal_but_no_successful_stop)]));
+ const p=diag.pairs?.corrected_model_comparison, g=diag.pairs?.guard_vs_pure_model;
+ document.getElementById('paired-summary').textContent=p?'同批量纯模型配对：新增成功 '+fmt(p.wins)+' 条，失去成功 '+fmt(p.losses)+' 条；SR 变化 '+(100*p.delta.success).toFixed(1)+' 个百分点。'+(g?'保护组配对：新增成功 '+fmt(g.wins)+' 条，失去成功 '+fmt(g.losses)+' 条。':'保护组效果尚待验证。')+'仅作开发诊断，不是论文收益证明。':'同批量比较尚未完整审核，不据原来的 +3 个百分点宣布提升。';
+}
+</script>

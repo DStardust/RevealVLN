@@ -1,0 +1,6261 @@
+{
+  "status": "CPU_FAILURE_EVIDENCE_AUDIT_COMPLETE",
+  "journal_chain_and_head_pass": true,
+  "journal_records": 85897,
+  "journal_kind_counts": {
+    "__config__": 1,
+    "budget": 71473,
+    "freeze": 6,
+    "trace_saved": 141,
+    "feedback_targets": 34,
+    "action_completed": 14205,
+    "route_rejected": 14,
+    "discovery_rejected": 23
+  },
+  "candidates": [
+    {
+      "candidate_id": "MS1_000030e854f14b80a58e",
+      "house_id": "17DRP5sb8fy",
+      "outcome": {
+        "candidate_id": "MS1_000030e854f14b80a58e",
+        "house_id": "17DRP5sb8fy",
+        "physical_certified": false,
+        "training_admission": false,
+        "status": "RESOURCE_CENSORED",
+        "reason": "discovery wall-time budget: resource_censored",
+        "trace_count": 57
+      },
+      "frozen_configurations": 16,
+      "unique_feedback_configurations": 2,
+      "explicitly_rejected_configurations": 1,
+      "target_calls_by_role": {
+        "anchor_A": {
+          "calls": 2,
+          "empty": 0,
+          "nonempty": 2,
+          "accepted_targets": 16
+        },
+        "anchor_B": {
+          "calls": 2,
+          "empty": 0,
+          "nonempty": 2,
+          "accepted_targets": 16
+        }
+      },
+      "target_events": [
+        {
+          "position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 2,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.200243353843689,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -4.745240211486816,
+                0.07244700193405151,
+                -2.595939874649048
+              ]
+            },
+            {
+              "angle": 1,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.5665733814239502,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -3.861356735229492,
+                0.07244700193405151,
+                -2.9620563983917236
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.653655767440796,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -5.240840911865234,
+                0.07244700193405151,
+                -2.8511180877685547
+              ]
+            },
+            {
+              "angle": 2,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.6787209510803223,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -4.745240211486816,
+                0.07244700193405151,
+                -3.095939874649048
+              ]
+            },
+            {
+              "angle": 1,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.8510117530822754,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -4.21491003036499,
+                0.07244700193405151,
+                -3.3156096935272217
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.9086942672729492,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -5.136810302734375,
+                0.07244700193405151,
+                -3.1999764442443848
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 2.4015042781829834,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -3.9952402114868164,
+                0.07244700193405151,
+                -3.845939874649048
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 2.5210678577423096,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -3.4952402114868164,
+                0.07244700193405151,
+                -3.845939874649048
+              ]
+            }
+          ],
+          "yaw": 0
+        },
+        {
+          "position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "role": "anchor_B",
+          "targets": [
+            {
+              "angle": 7,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.286157608032227,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -8.710896492004395,
+                0.07244700193405151,
+                0.3758164644241333
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.541262149810791,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -9.594779968261719,
+                0.07244700193405151,
+                0.00969994068145752
+              ]
+            },
+            {
+              "angle": 7,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.741288661956787,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -9.06445026397705,
+                0.07244700193405151,
+                0.7293698787689209
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.859058380126953,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -9.594779968261719,
+                0.07244700193405151,
+                0.5096999406814575
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.129535675048828,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -8.493439674377441,
+                0.07244700193405151,
+                1.2596999406814575
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.176089763641357,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -8.844779968261719,
+                0.07244700193405151,
+                1.2596999406814575
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.356611251831055,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -10.257619857788086,
+                0.07244700193405151,
+                0.48633819818496704
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.396487236022949,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -10.125109672546387,
+                0.07244700193405151,
+                0.7293698787689209
+              ]
+            }
+          ],
+          "yaw": 0
+        },
+        {
+          "position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 2,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.200243353843689,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -4.745240211486816,
+                0.07244700193405151,
+                -2.595939874649048
+              ]
+            },
+            {
+              "angle": 1,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.5665733814239502,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -3.861356735229492,
+                0.07244700193405151,
+                -2.9620563983917236
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.653655767440796,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -5.240840911865234,
+                0.07244700193405151,
+                -2.8511180877685547
+              ]
+            },
+            {
+              "angle": 2,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.6787209510803223,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -4.745240211486816,
+                0.07244700193405151,
+                -3.095939874649048
+              ]
+            },
+            {
+              "angle": 1,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.8510117530822754,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -4.21491003036499,
+                0.07244700193405151,
+                -3.3156096935272217
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 1.9086942672729492,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -5.136810302734375,
+                0.07244700193405151,
+                -3.1999764442443848
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 2.4015042781829834,
+              "instance": 130,
+              "radius": 0.75,
+              "target": [
+                -3.9952402114868164,
+                0.07244700193405151,
+                -3.845939874649048
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -4.745240211486816,
+                0.41530919075012207,
+                -3.845939874649048
+              ],
+              "distance": 2.5210678577423096,
+              "instance": 130,
+              "radius": 1.25,
+              "target": [
+                -3.4952402114868164,
+                0.07244700193405151,
+                -3.845939874649048
+              ]
+            }
+          ],
+          "yaw": 6
+        },
+        {
+          "position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "role": "anchor_B",
+          "targets": [
+            {
+              "angle": 7,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.286157608032227,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -8.710896492004395,
+                0.07244700193405151,
+                0.3758164644241333
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.541262149810791,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -9.594779968261719,
+                0.07244700193405151,
+                0.00969994068145752
+              ]
+            },
+            {
+              "angle": 7,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.741288661956787,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -9.06445026397705,
+                0.07244700193405151,
+                0.7293698787689209
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 5.859058380126953,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -9.594779968261719,
+                0.07244700193405151,
+                0.5096999406814575
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.129535675048828,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -8.493439674377441,
+                0.07244700193405151,
+                1.2596999406814575
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.176089763641357,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -8.844779968261719,
+                0.07244700193405151,
+                1.2596999406814575
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.356611251831055,
+              "instance": 158,
+              "radius": 1.25,
+              "target": [
+                -10.257619857788086,
+                0.07244700193405151,
+                0.48633819818496704
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                -9.594779968261719,
+                0.1968369483947754,
+                1.2596999406814575
+              ],
+              "distance": 6.396487236022949,
+              "instance": 158,
+              "radius": 0.75,
+              "target": [
+                -10.125109672546387,
+                0.07244700193405151,
+                0.7293698787689209
+              ]
+            }
+          ],
+          "yaw": 6
+        }
+      ],
+      "rejection_counts": {
+        "route_rejected:OUTBOUND_EVENT_OR_LEGALITY:anchor_B": 8,
+        "discovery_rejected:NO_VALID_LOOP:anchor_B": 1
+      },
+      "rejection_events": [
+        {
+          "journal_seq": 1573,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 2059,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 2571,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 3070,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 3662,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 4231,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 4775,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 5342,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 5343,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000030e854f14b80a58e",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              -4.333799839019775,
+              0.07244700193405151,
+              -1.4684200286865234
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        }
+      ],
+      "traces": [
+        {
+          "index": 0,
+          "journal_seq": 11,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 1,
+          "journal_seq": 74,
+          "length": 10,
+          "actions": {
+            "L": 3,
+            "F": 4,
+            "R": 3
+          },
+          "observations": 11,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 2,
+          "journal_seq": 139,
+          "length": 10,
+          "actions": {
+            "L": 3,
+            "F": 4,
+            "R": 3
+          },
+          "observations": 11,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 3,
+          "journal_seq": 840,
+          "length": 116,
+          "actions": {
+            "L": 54,
+            "F": 8,
+            "R": 54
+          },
+          "observations": 117,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 4,
+          "journal_seq": 1061,
+          "length": 36,
+          "actions": {
+            "L": 14,
+            "F": 8,
+            "R": 14
+          },
+          "observations": 37,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 5,
+          "journal_seq": 1315,
+          "length": 42,
+          "actions": {
+            "L": 15,
+            "F": 21,
+            "R": 6
+          },
+          "observations": 43,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 6,
+          "journal_seq": 1572,
+          "length": 42,
+          "actions": {
+            "L": 15,
+            "F": 21,
+            "R": 6
+          },
+          "observations": 43,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 7,
+          "journal_seq": 1813,
+          "length": 40,
+          "actions": {
+            "L": 15,
+            "F": 22,
+            "R": 3
+          },
+          "observations": 41,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 8,
+          "journal_seq": 2058,
+          "length": 40,
+          "actions": {
+            "L": 15,
+            "F": 22,
+            "R": 3
+          },
+          "observations": 41,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 9,
+          "journal_seq": 2313,
+          "length": 42,
+          "actions": {
+            "L": 14,
+            "F": 23,
+            "R": 5
+          },
+          "observations": 43,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 10,
+          "journal_seq": 2570,
+          "length": 42,
+          "actions": {
+            "L": 14,
+            "F": 23,
+            "R": 5
+          },
+          "observations": 43,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 11,
+          "journal_seq": 2818,
+          "length": 41,
+          "actions": {
+            "L": 15,
+            "F": 23,
+            "R": 3
+          },
+          "observations": 42,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 12,
+          "journal_seq": 3069,
+          "length": 41,
+          "actions": {
+            "L": 15,
+            "F": 23,
+            "R": 3
+          },
+          "observations": 42,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 13,
+          "journal_seq": 3362,
+          "length": 49,
+          "actions": {
+            "L": 16,
+            "F": 24,
+            "R": 9
+          },
+          "observations": 50,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 14,
+          "journal_seq": 3661,
+          "length": 49,
+          "actions": {
+            "L": 16,
+            "F": 24,
+            "R": 9
+          },
+          "observations": 50,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 15,
+          "journal_seq": 3943,
+          "length": 47,
+          "actions": {
+            "L": 15,
+            "F": 24,
+            "R": 8
+          },
+          "observations": 48,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 16,
+          "journal_seq": 4230,
+          "length": 47,
+          "actions": {
+            "L": 15,
+            "F": 24,
+            "R": 8
+          },
+          "observations": 48,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 17,
+          "journal_seq": 4499,
+          "length": 45,
+          "actions": {
+            "L": 17,
+            "F": 25,
+            "R": 3
+          },
+          "observations": 46,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 18,
+          "journal_seq": 4774,
+          "length": 45,
+          "actions": {
+            "L": 17,
+            "F": 25,
+            "R": 3
+          },
+          "observations": 46,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 19,
+          "journal_seq": 5054,
+          "length": 47,
+          "actions": {
+            "L": 18,
+            "F": 25,
+            "R": 4
+          },
+          "observations": 48,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 20,
+          "journal_seq": 5341,
+          "length": 47,
+          "actions": {
+            "L": 18,
+            "F": 25,
+            "R": 4
+          },
+          "observations": 48,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 21,
+          "journal_seq": 5349,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 22,
+          "journal_seq": 5436,
+          "length": 14,
+          "actions": {
+            "R": 8,
+            "F": 4,
+            "L": 2
+          },
+          "observations": 15,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 23,
+          "journal_seq": 5525,
+          "length": 14,
+          "actions": {
+            "R": 8,
+            "F": 4,
+            "L": 2
+          },
+          "observations": 15,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 24,
+          "journal_seq": 6274,
+          "length": 124,
+          "actions": {
+            "R": 58,
+            "F": 8,
+            "L": 58
+          },
+          "observations": 125,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 25,
+          "journal_seq": 6495,
+          "length": 36,
+          "actions": {
+            "R": 26,
+            "F": 8,
+            "L": 2
+          },
+          "observations": 37,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 26,
+          "journal_seq": 6713,
+          "length": 36,
+          "actions": {
+            "L": 9,
+            "F": 21,
+            "R": 6
+          },
+          "observations": 37,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 27,
+          "journal_seq": 6934,
+          "length": 36,
+          "actions": {
+            "L": 9,
+            "F": 21,
+            "R": 6
+          },
+          "observations": 37,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 28,
+          "journal_seq": 10395,
+          "length": 576,
+          "actions": {
+            "L": 267,
+            "F": 42,
+            "R": 267
+          },
+          "observations": 577,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 29,
+          "journal_seq": 10916,
+          "length": 86,
+          "actions": {
+            "L": 22,
+            "F": 42,
+            "R": 22
+          },
+          "observations": 87,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 30,
+          "journal_seq": 11120,
+          "length": 34,
+          "actions": {
+            "L": 9,
+            "F": 22,
+            "R": 3
+          },
+          "observations": 35,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 31,
+          "journal_seq": 11329,
+          "length": 34,
+          "actions": {
+            "L": 9,
+            "F": 22,
+            "R": 3
+          },
+          "observations": 35,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 32,
+          "journal_seq": 14910,
+          "length": 596,
+          "actions": {
+            "L": 276,
+            "F": 44,
+            "R": 276
+          },
+          "observations": 597,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 33,
+          "journal_seq": 15407,
+          "length": 82,
+          "actions": {
+            "L": 31,
+            "F": 44,
+            "R": 7
+          },
+          "observations": 83,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 34,
+          "journal_seq": 15625,
+          "length": 36,
+          "actions": {
+            "L": 8,
+            "F": 23,
+            "R": 5
+          },
+          "observations": 37,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 35,
+          "journal_seq": 15846,
+          "length": 36,
+          "actions": {
+            "L": 8,
+            "F": 23,
+            "R": 5
+          },
+          "observations": 37,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 36,
+          "journal_seq": 19595,
+          "length": 624,
+          "actions": {
+            "L": 289,
+            "F": 46,
+            "R": 289
+          },
+          "observations": 625,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 37,
+          "journal_seq": 20140,
+          "length": 90,
+          "actions": {
+            "L": 22,
+            "F": 46,
+            "R": 22
+          },
+          "observations": 91,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 38,
+          "journal_seq": 20351,
+          "length": 35,
+          "actions": {
+            "L": 9,
+            "F": 23,
+            "R": 3
+          },
+          "observations": 36,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 39,
+          "journal_seq": 20566,
+          "length": 35,
+          "actions": {
+            "L": 9,
+            "F": 23,
+            "R": 3
+          },
+          "observations": 36,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 40,
+          "journal_seq": 24303,
+          "length": 622,
+          "actions": {
+            "L": 288,
+            "F": 46,
+            "R": 288
+          },
+          "observations": 623,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 41,
+          "journal_seq": 24824,
+          "length": 86,
+          "actions": {
+            "L": 32,
+            "F": 46,
+            "R": 8
+          },
+          "observations": 87,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 42,
+          "journal_seq": 25080,
+          "length": 43,
+          "actions": {
+            "L": 10,
+            "F": 24,
+            "R": 9
+          },
+          "observations": 44,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 43,
+          "journal_seq": 25343,
+          "length": 43,
+          "actions": {
+            "L": 10,
+            "F": 24,
+            "R": 9
+          },
+          "observations": 44,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 44,
+          "journal_seq": 29320,
+          "length": 662,
+          "actions": {
+            "L": 307,
+            "F": 48,
+            "R": 307
+          },
+          "observations": 663,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 45,
+          "journal_seq": 29901,
+          "length": 96,
+          "actions": {
+            "L": 24,
+            "F": 48,
+            "R": 24
+          },
+          "observations": 97,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 46,
+          "journal_seq": 30146,
+          "length": 41,
+          "actions": {
+            "L": 9,
+            "F": 24,
+            "R": 8
+          },
+          "observations": 42,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 47,
+          "journal_seq": 30397,
+          "length": 41,
+          "actions": {
+            "L": 9,
+            "F": 24,
+            "R": 8
+          },
+          "observations": 42,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 48,
+          "journal_seq": 34350,
+          "length": 658,
+          "actions": {
+            "L": 305,
+            "F": 48,
+            "R": 305
+          },
+          "observations": 659,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 49,
+          "journal_seq": 34919,
+          "length": 94,
+          "actions": {
+            "L": 23,
+            "F": 48,
+            "R": 23
+          },
+          "observations": 95,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 50,
+          "journal_seq": 35151,
+          "length": 39,
+          "actions": {
+            "L": 11,
+            "F": 25,
+            "R": 3
+          },
+          "observations": 40,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 51,
+          "journal_seq": 35390,
+          "length": 39,
+          "actions": {
+            "L": 11,
+            "F": 25,
+            "R": 3
+          },
+          "observations": 40,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 52,
+          "journal_seq": 39463,
+          "length": 678,
+          "actions": {
+            "L": 314,
+            "F": 50,
+            "R": 314
+          },
+          "observations": 679,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 53,
+          "journal_seq": 39996,
+          "length": 88,
+          "actions": {
+            "L": 31,
+            "F": 50,
+            "R": 7
+          },
+          "observations": 89,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 54,
+          "journal_seq": 40239,
+          "length": 41,
+          "actions": {
+            "L": 12,
+            "F": 25,
+            "R": 4
+          },
+          "observations": 42,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 55,
+          "journal_seq": 40490,
+          "length": 41,
+          "actions": {
+            "L": 12,
+            "F": 25,
+            "R": 4
+          },
+          "observations": 42,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 56,
+          "journal_seq": 44587,
+          "length": 682,
+          "actions": {
+            "L": 316,
+            "F": 50,
+            "R": 316
+          },
+          "observations": 683,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -4.333799839019775,
+            0.07244700193405151,
+            -1.4684200286865234
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        }
+      ],
+      "trace_count": 57,
+      "complete_trace_count": 57,
+      "zero_action_trace_count": 2,
+      "trace_action_count": 7396,
+      "trace_action_composition": {
+        "L": 3089,
+        "F": 1494,
+        "R": 2813
+      },
+      "trace_length_range": [
+        0,
+        682
+      ],
+      "journal_completed_actions": 7419,
+      "journal_actions_without_saved_trace": 23,
+      "action_events_after_last_saved_trace": 23,
+      "unsealed_tail_action_composition": {
+        "L": 4,
+        "F": 17,
+        "R": 2
+      },
+      "geometry": {
+        "unique_selected_starts": 4,
+        "selected_start_y": [
+          0.07244700193405151
+        ],
+        "source_position_count": 35,
+        "source_y_range": [
+          0.07244700193405151,
+          0.16362358629703522
+        ],
+        "shared_metadata_levels": [
+          0
+        ],
+        "role_object_region_ids": {
+          "anchor_A": [
+            "0_7"
+          ],
+          "anchor_B": [
+            "0_8"
+          ],
+          "terminal": [
+            "0_4"
+          ],
+          "irrelevant": [
+            "0_2"
+          ]
+        },
+        "role_center_y_ranges": {
+          "anchor_A": [
+            0.41530919075012207,
+            0.41530919075012207
+          ],
+          "anchor_B": [
+            0.1968369483947754,
+            0.1968369483947754
+          ],
+          "terminal": [
+            1.5076899528503418,
+            1.5076899528503418
+          ],
+          "irrelevant": [
+            0.6006879806518555,
+            0.6006879806518555
+          ]
+        },
+        "starts": [
+          {
+            "position": [
+              -5.48891019821167,
+              0.07244700193405151,
+              -1.4484000205993652
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 2.5335344642281195,
+                "min_unsnapped_ring_euclidean_m": 1.409768508056361,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 4.920106180529088,
+                "min_unsnapped_ring_euclidean_m": 3.704650363815821,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 6.828226910982246,
+                "min_unsnapped_ring_euclidean_m": 5.644683985731788,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 3.228890932100019,
+                "min_unsnapped_ring_euclidean_m": 2.043240092275649,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              -4.357860088348389,
+              0.07244700193405151,
+              -0.10836700350046158
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 3.773204050600547,
+                "min_unsnapped_ring_euclidean_m": 2.540794487871247,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 5.414093631548609,
+                "min_unsnapped_ring_euclidean_m": 4.216943223638644,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 6.2166795696905925,
+                "min_unsnapped_ring_euclidean_m": 5.083697759560233,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 1.5481549489478812,
+                "min_unsnapped_ring_euclidean_m": 0.7170608475668131,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              -4.333799839019775,
+              0.07244700193405151,
+              -1.4684200286865234
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 2.437096280117228,
+                "min_unsnapped_ring_euclidean_m": 1.2482542463997144,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 5.927564706211433,
+                "min_unsnapped_ring_euclidean_m": 4.751384662186429,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 5.728727466829996,
+                "min_unsnapped_ring_euclidean_m": 4.576447185110621,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 2.786797831102742,
+                "min_unsnapped_ring_euclidean_m": 1.632717733653775,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              -3.1296799182891846,
+              0.07244700193405151,
+              -1.4360400438308716
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 2.921507613554009,
+                "min_unsnapped_ring_euclidean_m": 1.7267400957686114,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 7.005712353432298,
+                "min_unsnapped_ring_euclidean_m": 5.869265312171556,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 4.627534324709255,
+                "min_unsnapped_ring_euclidean_m": 3.5425872151696303,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 2.748150692747627,
+                "min_unsnapped_ring_euclidean_m": 1.591479575281117,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          }
+        ],
+        "closest_source_position_to_anchor_A": [
+          -4.333799839019775,
+          0.07244700193405151,
+          -1.4684200286865234
+        ],
+        "closest_source_anchor_A_center_distance_m": 2.437096280117228,
+        "target_snap_distances_recorded": false,
+        "target_filter_reason_counters_recorded": false,
+        "global_reachability_or_wrong_floor_proven": false,
+        "scope": "Euclidean pre-snap geometry and stored metadata only; not navmesh/geodesic evaluation"
+      }
+    },
+    {
+      "candidate_id": "MS1_001fb50f0dbcd0bf157c",
+      "house_id": "1LXtFkjw3qL",
+      "outcome": {
+        "candidate_id": "MS1_001fb50f0dbcd0bf157c",
+        "house_id": "1LXtFkjw3qL",
+        "physical_certified": false,
+        "training_admission": false,
+        "status": "REJECTED",
+        "reason": "CONFIGURATIONS_EXHAUSTED",
+        "trace_count": 16
+      },
+      "frozen_configurations": 16,
+      "unique_feedback_configurations": 16,
+      "explicitly_rejected_configurations": 16,
+      "target_calls_by_role": {
+        "anchor_A": {
+          "calls": 16,
+          "empty": 16,
+          "nonempty": 0,
+          "accepted_targets": 0
+        }
+      },
+      "target_events": [
+        {
+          "position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 0
+        },
+        {
+          "position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 6
+        },
+        {
+          "position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 12
+        },
+        {
+          "position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 18
+        },
+        {
+          "position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 0
+        },
+        {
+          "position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 6
+        },
+        {
+          "position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 12
+        },
+        {
+          "position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 18
+        },
+        {
+          "position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 0
+        },
+        {
+          "position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 6
+        },
+        {
+          "position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 12
+        },
+        {
+          "position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 18
+        },
+        {
+          "position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 0
+        },
+        {
+          "position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 6
+        },
+        {
+          "position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 12
+        },
+        {
+          "position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "role": "anchor_A",
+          "targets": [],
+          "yaw": 18
+        }
+      ],
+      "rejection_counts": {
+        "discovery_rejected:NO_VALID_LOOP:anchor_A": 16
+      },
+      "rejection_events": [
+        {
+          "journal_seq": 44744,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              -0.19566600024700165,
+              0.0844111442565918,
+              12.493499755859375
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44753,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              -0.19566600024700165,
+              0.0844111442565918,
+              12.493499755859375
+            ],
+            "yaw_bin": 6
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44762,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              -0.19566600024700165,
+              0.0844111442565918,
+              12.493499755859375
+            ],
+            "yaw_bin": 12
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44771,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              -0.19566600024700165,
+              0.0844111442565918,
+              12.493499755859375
+            ],
+            "yaw_bin": 18
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44780,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1819000244140625,
+              0.0844111442565918,
+              11.299300193786621
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44789,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1819000244140625,
+              0.0844111442565918,
+              11.299300193786621
+            ],
+            "yaw_bin": 6
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44798,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1819000244140625,
+              0.0844111442565918,
+              11.299300193786621
+            ],
+            "yaw_bin": 12
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44807,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1819000244140625,
+              0.0844111442565918,
+              11.299300193786621
+            ],
+            "yaw_bin": 18
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44816,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              0.9237880110740662,
+              0.0844111442565918,
+              9.343119621276855
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44825,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              0.9237880110740662,
+              0.0844111442565918,
+              9.343119621276855
+            ],
+            "yaw_bin": 6
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44834,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              0.9237880110740662,
+              0.0844111442565918,
+              9.343119621276855
+            ],
+            "yaw_bin": 12
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44843,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              0.9237880110740662,
+              0.0844111442565918,
+              9.343119621276855
+            ],
+            "yaw_bin": 18
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44852,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1838899850845337,
+              0.0844111442565918,
+              13.864700317382812
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44861,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1838899850845337,
+              0.0844111442565918,
+              13.864700317382812
+            ],
+            "yaw_bin": 6
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44870,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1838899850845337,
+              0.0844111442565918,
+              13.864700317382812
+            ],
+            "yaw_bin": 12
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 44879,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_001fb50f0dbcd0bf157c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              1.1838899850845337,
+              0.0844111442565918,
+              13.864700317382812
+            ],
+            "yaw_bin": 18
+          },
+          "details": {
+            "role": "anchor_A"
+          },
+          "reason": "NO_VALID_LOOP"
+        }
+      ],
+      "traces": [
+        {
+          "index": 0,
+          "journal_seq": 44741,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 1,
+          "journal_seq": 44750,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 2,
+          "journal_seq": 44759,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 3,
+          "journal_seq": 44768,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            -0.19566600024700165,
+            0.0844111442565918,
+            12.493499755859375
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 4,
+          "journal_seq": 44777,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 5,
+          "journal_seq": 44786,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 6,
+          "journal_seq": 44795,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 7,
+          "journal_seq": 44804,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1819000244140625,
+            0.0844111442565918,
+            11.299300193786621
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 8,
+          "journal_seq": 44813,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 9,
+          "journal_seq": 44822,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 10,
+          "journal_seq": 44831,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 11,
+          "journal_seq": 44840,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            0.9237880110740662,
+            0.0844111442565918,
+            9.343119621276855
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 12,
+          "journal_seq": 44849,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 13,
+          "journal_seq": 44858,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 14,
+          "journal_seq": 44867,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 15,
+          "journal_seq": 44876,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            1.1838899850845337,
+            0.0844111442565918,
+            13.864700317382812
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        }
+      ],
+      "trace_count": 16,
+      "complete_trace_count": 16,
+      "zero_action_trace_count": 16,
+      "trace_action_count": 0,
+      "trace_action_composition": {},
+      "trace_length_range": [
+        0,
+        0
+      ],
+      "journal_completed_actions": 0,
+      "journal_actions_without_saved_trace": 0,
+      "action_events_after_last_saved_trace": 0,
+      "unsealed_tail_action_composition": {},
+      "geometry": {
+        "unique_selected_starts": 4,
+        "selected_start_y": [
+          0.0844111442565918
+        ],
+        "source_position_count": 96,
+        "source_y_range": [
+          -2.915588855743408,
+          3.5832509994506836
+        ],
+        "shared_metadata_levels": [
+          1
+        ],
+        "role_object_region_ids": {
+          "anchor_A": [
+            "1_6"
+          ],
+          "anchor_B": [
+            "1_12"
+          ],
+          "terminal": [
+            "1_10"
+          ],
+          "irrelevant": [
+            "1_11"
+          ]
+        },
+        "role_center_y_ranges": {
+          "anchor_A": [
+            1.050479769706726,
+            1.0684599876403809
+          ],
+          "anchor_B": [
+            0.38512325286865234,
+            0.38512325286865234
+          ],
+          "terminal": [
+            0.5502309799194336,
+            0.5502309799194336
+          ],
+          "irrelevant": [
+            1.1050891876220703,
+            1.1050891876220703
+          ]
+        },
+        "starts": [
+          {
+            "position": [
+              -0.19566600024700165,
+              0.0844111442565918,
+              12.493499755859375
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 10.456200541165066,
+                "min_unsnapped_ring_euclidean_m": 9.226391798548693,
+                "all_unsnapped_ring_points_beyond_8m": true
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 4.30786126430416,
+                "min_unsnapped_ring_euclidean_m": 3.0857547957694433,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 3.09385951320777,
+                "min_unsnapped_ring_euclidean_m": 1.8926752600596608,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 2.083590234603056,
+                "min_unsnapped_ring_euclidean_m": 1.2622796948867376,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              0.9237880110740662,
+              0.0844111442565918,
+              9.343119621276855
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 7.671702511995729,
+                "min_unsnapped_ring_euclidean_m": 6.52113070197829,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 1.4543550712264048,
+                "min_unsnapped_ring_euclidean_m": 0.4758872368197633,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 6.391850457665893,
+                "min_unsnapped_ring_euclidean_m": 5.195195365843625,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 5.259552973721823,
+                "min_unsnapped_ring_euclidean_m": 4.127826172372077,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              1.1819000244140625,
+              0.0844111442565918,
+              11.299300193786621
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 9.596095463996,
+                "min_unsnapped_ring_euclidean_m": 8.418118728229752,
+                "all_unsnapped_ring_points_beyond_8m": true
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 2.5778876425288124,
+                "min_unsnapped_ring_euclidean_m": 1.4683326937819146,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 4.629227520520445,
+                "min_unsnapped_ring_euclidean_m": 3.5013567280337337,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 3.6548594928777782,
+                "min_unsnapped_ring_euclidean_m": 2.5131288262862213,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              1.1838899850845337,
+              0.0844111442565918,
+              13.864700317382812
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 12.059656252407724,
+                "min_unsnapped_ring_euclidean_m": 10.853639177054584,
+                "all_unsnapped_ring_points_beyond_8m": true
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 5.002915644223394,
+                "min_unsnapped_ring_euclidean_m": 3.7980572351429838,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 2.528159241082221,
+                "min_unsnapped_ring_euclidean_m": 1.3239533305184445,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 2.2300931660122325,
+                "min_unsnapped_ring_euclidean_m": 1.2876259600441646,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          }
+        ],
+        "closest_source_position_to_anchor_A": [
+          -0.636201024055481,
+          0.7751564383506775,
+          1.3061699867248535
+        ],
+        "closest_source_anchor_A_center_distance_m": 1.0977479881174452,
+        "target_snap_distances_recorded": false,
+        "target_filter_reason_counters_recorded": false,
+        "global_reachability_or_wrong_floor_proven": false,
+        "scope": "Euclidean pre-snap geometry and stored metadata only; not navmesh/geodesic evaluation"
+      }
+    },
+    {
+      "candidate_id": "MS1_000081669feaacf45b1c",
+      "house_id": "1pXnuDYAj8r",
+      "outcome": {
+        "candidate_id": "MS1_000081669feaacf45b1c",
+        "house_id": "1pXnuDYAj8r",
+        "physical_certified": false,
+        "training_admission": false,
+        "status": "RESOURCE_CENSORED",
+        "reason": "discovery wall-time budget: resource_censored",
+        "trace_count": 68
+      },
+      "frozen_configurations": 16,
+      "unique_feedback_configurations": 7,
+      "explicitly_rejected_configurations": 6,
+      "target_calls_by_role": {
+        "anchor_A": {
+          "calls": 7,
+          "empty": 0,
+          "nonempty": 7,
+          "accepted_targets": 56
+        },
+        "anchor_B": {
+          "calls": 7,
+          "empty": 4,
+          "nonempty": 3,
+          "accepted_targets": 15
+        }
+      },
+      "target_events": [
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.516375720500946,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.594499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.5651527047157288,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                10.881290435791016,
+                0.3141460120677948,
+                5.68743371963501
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.6061959266662598,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.900486946105957,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8075404167175293,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8227145671844482,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.11414599418640137,
+                4.842195987701416
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.9026868343353271,
+              "instance": 694,
+              "radius": 0.75,
+              "target": [
+                12.094499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 7,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.9440374374389648,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.433473587036133,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                13.426300048828125,
+                1.559800148010254,
+                5.7961201667785645
+              ],
+              "distance": 0.9925753474235535,
+              "instance": 625,
+              "radius": 1.25,
+              "target": [
+                12.176300048828125,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            }
+          ],
+          "yaw": 0
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_B",
+          "targets": [],
+          "yaw": 0
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.516375720500946,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.594499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.5651527047157288,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                10.881290435791016,
+                0.3141460120677948,
+                5.68743371963501
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.6061959266662598,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.900486946105957,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8075404167175293,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8227145671844482,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.11414599418640137,
+                4.842195987701416
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.9026868343353271,
+              "instance": 694,
+              "radius": 0.75,
+              "target": [
+                12.094499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 7,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.9440374374389648,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.433473587036133,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                13.426300048828125,
+                1.559800148010254,
+                5.7961201667785645
+              ],
+              "distance": 0.9925753474235535,
+              "instance": 625,
+              "radius": 1.25,
+              "target": [
+                12.176300048828125,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            }
+          ],
+          "yaw": 6
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_B",
+          "targets": [],
+          "yaw": 6
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.516375720500946,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.594499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.5651527047157288,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                10.881290435791016,
+                0.3141460120677948,
+                5.68743371963501
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.6061959266662598,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.900486946105957,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8075404167175293,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8227145671844482,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.11414599418640137,
+                4.842195987701416
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.9026868343353271,
+              "instance": 694,
+              "radius": 0.75,
+              "target": [
+                12.094499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 7,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.9440374374389648,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.433473587036133,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                13.426300048828125,
+                1.559800148010254,
+                5.7961201667785645
+              ],
+              "distance": 0.9925753474235535,
+              "instance": 625,
+              "radius": 1.25,
+              "target": [
+                12.176300048828125,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            }
+          ],
+          "yaw": 12
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_B",
+          "targets": [],
+          "yaw": 12
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.516375720500946,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.594499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.5651527047157288,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                10.881290435791016,
+                0.3141460120677948,
+                5.68743371963501
+              ]
+            },
+            {
+              "angle": 0,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.6061959266662598,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.900486946105957,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8075404167175293,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.8227145671844482,
+              "instance": 694,
+              "radius": 1.25,
+              "target": [
+                11.960616111755371,
+                0.11414599418640137,
+                4.842195987701416
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.844499588012695,
+                1.5908594131469727,
+                5.72607946395874
+              ],
+              "distance": 0.9026868343353271,
+              "instance": 694,
+              "radius": 0.75,
+              "target": [
+                12.094499588012695,
+                0.3141460120677948,
+                5.72607946395874
+              ]
+            },
+            {
+              "angle": 7,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.9440374374389648,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                10.433473587036133,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                13.426300048828125,
+                1.559800148010254,
+                5.7961201667785645
+              ],
+              "distance": 0.9925753474235535,
+              "instance": 625,
+              "radius": 1.25,
+              "target": [
+                12.176300048828125,
+                0.3141460120677948,
+                5.764219284057617
+              ]
+            }
+          ],
+          "yaw": 18
+        },
+        {
+          "position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "role": "anchor_B",
+          "targets": [],
+          "yaw": 18
+        },
+        {
+          "position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.4544104337692261,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                7.800020217895508,
+                0.11414599418640137,
+                5.911599636077881
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.7190291285514832,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                8.166136741638184,
+                0.11414599418640137,
+                5.027716159820557
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.75967937707901,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                8.299590110778809,
+                0.11414599418640137,
+                5.832859992980957
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.7982224822044373,
+              "instance": 673,
+              "radius": 0.75,
+              "target": [
+                8.300020217895508,
+                0.11414599418640137,
+                5.911599636077881
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 1.1099541187286377,
+              "instance": 673,
+              "radius": 0.75,
+              "target": [
+                8.600486755371094,
+                0.11414599418640137,
+                5.264219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 1.1800940036773682,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                8.665706634521484,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 1.242311716079712,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                8.795743942260742,
+                0.11414599418640137,
+                5.863626956939697
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 1.4110785722732544,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                8.166136741638184,
+                0.11414599418640137,
+                6.795483112335205
+              ]
+            }
+          ],
+          "yaw": 0
+        },
+        {
+          "position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "role": "anchor_B",
+          "targets": [
+            {
+              "angle": 5,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.590543270111084,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                11.262616157531738,
+                0.11414599418640137,
+                11.71422004699707
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.599300384521484,
+                0.5388059616088867,
+                12.696298599243164
+              ],
+              "distance": 7.677652359008789,
+              "instance": 536,
+              "radius": 1.25,
+              "target": [
+                11.350486755371094,
+                0.11414599418640137,
+                11.71422004699707
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.7185468673706055,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                12.146499633789062,
+                0.11414599418640137,
+                11.314220428466797
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                15.06089973449707,
+                0.4790372848510742,
+                10.309399604797363
+              ],
+              "distance": 7.812641620635986,
+              "instance": 503,
+              "radius": 1.25,
+              "target": [
+                14.177016258239746,
+                0.11414599418640137,
+                9.064220428466797
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.973205089569092,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                10.896499633789062,
+                0.11414599418640137,
+                12.75269889831543
+              ]
+            }
+          ],
+          "yaw": 0
+        },
+        {
+          "position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.4544104337692261,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                7.800020217895508,
+                0.11414599418640137,
+                5.911599636077881
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.7190291285514832,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                8.166136741638184,
+                0.11414599418640137,
+                5.027716159820557
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.75967937707901,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                8.299590110778809,
+                0.11414599418640137,
+                5.832859992980957
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.7982224822044373,
+              "instance": 673,
+              "radius": 0.75,
+              "target": [
+                8.300020217895508,
+                0.11414599418640137,
+                5.911599636077881
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 1.1099541187286377,
+              "instance": 673,
+              "radius": 0.75,
+              "target": [
+                8.600486755371094,
+                0.11414599418640137,
+                5.264219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 1.1800940036773682,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                8.665706634521484,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 1.242311716079712,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                8.795743942260742,
+                0.11414599418640137,
+                5.863626956939697
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 1.4110785722732544,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                8.166136741638184,
+                0.11414599418640137,
+                6.795483112335205
+              ]
+            }
+          ],
+          "yaw": 6
+        },
+        {
+          "position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "role": "anchor_B",
+          "targets": [
+            {
+              "angle": 5,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.590543270111084,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                11.262616157531738,
+                0.11414599418640137,
+                11.71422004699707
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.599300384521484,
+                0.5388059616088867,
+                12.696298599243164
+              ],
+              "distance": 7.677652359008789,
+              "instance": 536,
+              "radius": 1.25,
+              "target": [
+                11.350486755371094,
+                0.11414599418640137,
+                11.71422004699707
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.7185468673706055,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                12.146499633789062,
+                0.11414599418640137,
+                11.314220428466797
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                15.06089973449707,
+                0.4790372848510742,
+                10.309399604797363
+              ],
+              "distance": 7.812641620635986,
+              "instance": 503,
+              "radius": 1.25,
+              "target": [
+                14.177016258239746,
+                0.11414599418640137,
+                9.064220428466797
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.973205089569092,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                10.896499633789062,
+                0.11414599418640137,
+                12.75269889831543
+              ]
+            }
+          ],
+          "yaw": 6
+        },
+        {
+          "position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "role": "anchor_A",
+          "targets": [
+            {
+              "angle": 4,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.4544104337692261,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                7.800020217895508,
+                0.11414599418640137,
+                5.911599636077881
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.7190291285514832,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                8.166136741638184,
+                0.11414599418640137,
+                5.027716159820557
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 0.75967937707901,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                8.299590110778809,
+                0.11414599418640137,
+                5.832859992980957
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 0.7982224822044373,
+              "instance": 673,
+              "radius": 0.75,
+              "target": [
+                8.300020217895508,
+                0.11414599418640137,
+                5.911599636077881
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 1.1099541187286377,
+              "instance": 673,
+              "radius": 0.75,
+              "target": [
+                8.600486755371094,
+                0.11414599418640137,
+                5.264219284057617
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 1.1800940036773682,
+              "instance": 652,
+              "radius": 1.25,
+              "target": [
+                8.665706634521484,
+                0.11414599418640137,
+                4.948976516723633
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                9.549590110778809,
+                1.2102599143981934,
+                5.832859992980957
+              ],
+              "distance": 1.242311716079712,
+              "instance": 652,
+              "radius": 0.75,
+              "target": [
+                8.795743942260742,
+                0.11414599418640137,
+                5.863626956939697
+              ]
+            },
+            {
+              "angle": 3,
+              "center": [
+                9.050020217895508,
+                0.547088623046875,
+                5.911599636077881
+              ],
+              "distance": 1.4110785722732544,
+              "instance": 673,
+              "radius": 1.25,
+              "target": [
+                8.166136741638184,
+                0.11414599418640137,
+                6.795483112335205
+              ]
+            }
+          ],
+          "yaw": 12
+        },
+        {
+          "position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "role": "anchor_B",
+          "targets": [
+            {
+              "angle": 5,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.590543270111084,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                11.262616157531738,
+                0.11414599418640137,
+                11.71422004699707
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                12.599300384521484,
+                0.5388059616088867,
+                12.696298599243164
+              ],
+              "distance": 7.677652359008789,
+              "instance": 536,
+              "radius": 1.25,
+              "target": [
+                11.350486755371094,
+                0.11414599418640137,
+                11.71422004699707
+              ]
+            },
+            {
+              "angle": 6,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.7185468673706055,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                12.146499633789062,
+                0.11414599418640137,
+                11.314220428466797
+              ]
+            },
+            {
+              "angle": 5,
+              "center": [
+                15.06089973449707,
+                0.4790372848510742,
+                10.309399604797363
+              ],
+              "distance": 7.812641620635986,
+              "instance": 503,
+              "radius": 1.25,
+              "target": [
+                14.177016258239746,
+                0.11414599418640137,
+                9.064220428466797
+              ]
+            },
+            {
+              "angle": 4,
+              "center": [
+                12.146499633789062,
+                0.3593721389770508,
+                12.75269889831543
+              ],
+              "distance": 7.973205089569092,
+              "instance": 559,
+              "radius": 1.25,
+              "target": [
+                10.896499633789062,
+                0.11414599418640137,
+                12.75269889831543
+              ]
+            }
+          ],
+          "yaw": 12
+        }
+      ],
+      "rejection_counts": {
+        "discovery_rejected:NO_VALID_LOOP:anchor_B": 6,
+        "route_rejected:OUTBOUND_EVENT_OR_LEGALITY:anchor_B": 6
+      },
+      "rejection_events": [
+        {
+          "journal_seq": 45607,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000081669feaacf45b1c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              11.296299934387207,
+              0.2381303608417511,
+              5.31141996383667
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 46281,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000081669feaacf45b1c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              11.296299934387207,
+              0.2381303608417511,
+              5.31141996383667
+            ],
+            "yaw_bin": 6
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 46811,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000081669feaacf45b1c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              11.296299934387207,
+              0.2381303608417511,
+              5.31141996383667
+            ],
+            "yaw_bin": 12
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 47389,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000081669feaacf45b1c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              11.296299934387207,
+              0.2381303608417511,
+              5.31141996383667
+            ],
+            "yaw_bin": 18
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 48800,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 49479,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 50287,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 50954,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 51584,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 51585,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000081669feaacf45b1c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              7.619349956512451,
+              0.11414599418640137,
+              5.494649887084961
+            ],
+            "yaw_bin": 0
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        },
+        {
+          "journal_seq": 72347,
+          "kind": "route_rejected",
+          "reason": "OUTBOUND_EVENT_OR_LEGALITY",
+          "role": "anchor_B"
+        },
+        {
+          "journal_seq": 78639,
+          "kind": "discovery_rejected",
+          "bundle": "MS1_000081669feaacf45b1c",
+          "config": {
+            "public_tail": "LRLRLRLR",
+            "u_position": [
+              7.619349956512451,
+              0.11414599418640137,
+              5.494649887084961
+            ],
+            "yaw_bin": 6
+          },
+          "details": {
+            "role": "anchor_B"
+          },
+          "reason": "NO_VALID_LOOP"
+        }
+      ],
+      "traces": [
+        {
+          "index": 0,
+          "journal_seq": 44891,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 1,
+          "journal_seq": 44989,
+          "length": 16,
+          "actions": {
+            "R": 11,
+            "F": 1,
+            "L": 4
+          },
+          "observations": 17,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 2,
+          "journal_seq": 45090,
+          "length": 16,
+          "actions": {
+            "R": 11,
+            "F": 1,
+            "L": 4
+          },
+          "observations": 17,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 3,
+          "journal_seq": 45431,
+          "length": 56,
+          "actions": {
+            "R": 27,
+            "F": 2,
+            "L": 27
+          },
+          "observations": 57,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 4,
+          "journal_seq": 45604,
+          "length": 28,
+          "actions": {
+            "R": 13,
+            "F": 2,
+            "L": 13
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 5,
+          "journal_seq": 45613,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 6,
+          "journal_seq": 45699,
+          "length": 14,
+          "actions": {
+            "L": 12,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 15,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 7,
+          "journal_seq": 45788,
+          "length": 14,
+          "actions": {
+            "L": 12,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 15,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 8,
+          "journal_seq": 46105,
+          "length": 52,
+          "actions": {
+            "L": 25,
+            "F": 2,
+            "R": 25
+          },
+          "observations": 53,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 9,
+          "journal_seq": 46278,
+          "length": 28,
+          "actions": {
+            "L": 25,
+            "F": 2,
+            "R": 1
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 10,
+          "journal_seq": 46287,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 11,
+          "journal_seq": 46337,
+          "length": 8,
+          "actions": {
+            "L": 6,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 9,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 12,
+          "journal_seq": 46390,
+          "length": 8,
+          "actions": {
+            "L": 6,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 9,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 13,
+          "journal_seq": 46635,
+          "length": 40,
+          "actions": {
+            "L": 19,
+            "F": 2,
+            "R": 19
+          },
+          "observations": 41,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 14,
+          "journal_seq": 46808,
+          "length": 28,
+          "actions": {
+            "L": 25,
+            "F": 2,
+            "R": 1
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 15,
+          "journal_seq": 46817,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 16,
+          "journal_seq": 46879,
+          "length": 10,
+          "actions": {
+            "R": 5,
+            "F": 1,
+            "L": 4
+          },
+          "observations": 11,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 17,
+          "journal_seq": 46944,
+          "length": 10,
+          "actions": {
+            "R": 5,
+            "F": 1,
+            "L": 4
+          },
+          "observations": 11,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 18,
+          "journal_seq": 47213,
+          "length": 44,
+          "actions": {
+            "R": 21,
+            "F": 2,
+            "L": 21
+          },
+          "observations": 45,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 19,
+          "journal_seq": 47386,
+          "length": 28,
+          "actions": {
+            "R": 13,
+            "F": 2,
+            "L": 13
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            11.296299934387207,
+            0.2381303608417511,
+            5.31141996383667
+          ],
+          "initial_yaw": 18,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 20,
+          "journal_seq": 47395,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 21,
+          "journal_seq": 47493,
+          "length": 16,
+          "actions": {
+            "R": 11,
+            "F": 1,
+            "L": 4
+          },
+          "observations": 17,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 22,
+          "journal_seq": 47594,
+          "length": 16,
+          "actions": {
+            "R": 11,
+            "F": 1,
+            "L": 4
+          },
+          "observations": 17,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 23,
+          "journal_seq": 47935,
+          "length": 56,
+          "actions": {
+            "R": 27,
+            "F": 2,
+            "L": 27
+          },
+          "observations": 57,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 24,
+          "journal_seq": 48108,
+          "length": 28,
+          "actions": {
+            "R": 13,
+            "F": 2,
+            "L": 13
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 25,
+          "journal_seq": 48452,
+          "length": 57,
+          "actions": {
+            "R": 18,
+            "F": 30,
+            "L": 9
+          },
+          "observations": 58,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 26,
+          "journal_seq": 48799,
+          "length": 57,
+          "actions": {
+            "R": 18,
+            "F": 30,
+            "L": 9
+          },
+          "observations": 58,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 27,
+          "journal_seq": 49137,
+          "length": 56,
+          "actions": {
+            "R": 17,
+            "F": 30,
+            "L": 9
+          },
+          "observations": 57,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 28,
+          "journal_seq": 49478,
+          "length": 56,
+          "actions": {
+            "R": 17,
+            "F": 30,
+            "L": 9
+          },
+          "observations": 57,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 29,
+          "journal_seq": 49879,
+          "length": 67,
+          "actions": {
+            "R": 24,
+            "F": 31,
+            "L": 12
+          },
+          "observations": 68,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 30,
+          "journal_seq": 50286,
+          "length": 67,
+          "actions": {
+            "R": 24,
+            "F": 31,
+            "L": 12
+          },
+          "observations": 68,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 31,
+          "journal_seq": 50618,
+          "length": 55,
+          "actions": {
+            "R": 17,
+            "F": 31,
+            "L": 7
+          },
+          "observations": 56,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 32,
+          "journal_seq": 50953,
+          "length": 55,
+          "actions": {
+            "R": 17,
+            "F": 31,
+            "L": 7
+          },
+          "observations": 56,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 33,
+          "journal_seq": 51266,
+          "length": 52,
+          "actions": {
+            "R": 14,
+            "F": 31,
+            "L": 7
+          },
+          "observations": 53,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 34,
+          "journal_seq": 51583,
+          "length": 52,
+          "actions": {
+            "R": 14,
+            "F": 31,
+            "L": 7
+          },
+          "observations": 53,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 0,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 35,
+          "journal_seq": 51591,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 36,
+          "journal_seq": 51681,
+          "length": 15,
+          "actions": {
+            "L": 13,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 16,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 37,
+          "journal_seq": 51776,
+          "length": 15,
+          "actions": {
+            "L": 13,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 16,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 38,
+          "journal_seq": 52105,
+          "length": 54,
+          "actions": {
+            "L": 26,
+            "F": 2,
+            "R": 26
+          },
+          "observations": 55,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 39,
+          "journal_seq": 52278,
+          "length": 28,
+          "actions": {
+            "L": 25,
+            "F": 2,
+            "R": 1
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 40,
+          "journal_seq": 52610,
+          "length": 55,
+          "actions": {
+            "L": 17,
+            "F": 30,
+            "R": 8
+          },
+          "observations": 56,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 41,
+          "journal_seq": 52945,
+          "length": 55,
+          "actions": {
+            "L": 17,
+            "F": 30,
+            "R": 8
+          },
+          "observations": 56,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 42,
+          "journal_seq": 57930,
+          "length": 830,
+          "actions": {
+            "L": 385,
+            "F": 60,
+            "R": 385
+          },
+          "observations": 831,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 43,
+          "journal_seq": 58607,
+          "length": 112,
+          "actions": {
+            "L": 26,
+            "F": 60,
+            "R": 26
+          },
+          "observations": 113,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 44,
+          "journal_seq": 58932,
+          "length": 54,
+          "actions": {
+            "L": 17,
+            "F": 30,
+            "R": 7
+          },
+          "observations": 55,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 45,
+          "journal_seq": 59261,
+          "length": 54,
+          "actions": {
+            "L": 17,
+            "F": 30,
+            "R": 7
+          },
+          "observations": 55,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 46,
+          "journal_seq": 64234,
+          "length": 828,
+          "actions": {
+            "L": 384,
+            "F": 60,
+            "R": 384
+          },
+          "observations": 829,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 47,
+          "journal_seq": 64911,
+          "length": 112,
+          "actions": {
+            "L": 26,
+            "F": 60,
+            "R": 26
+          },
+          "observations": 113,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 48,
+          "journal_seq": 65299,
+          "length": 65,
+          "actions": {
+            "L": 20,
+            "F": 31,
+            "R": 14
+          },
+          "observations": 66,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 49,
+          "journal_seq": 65694,
+          "length": 65,
+          "actions": {
+            "L": 20,
+            "F": 31,
+            "R": 14
+          },
+          "observations": 66,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 50,
+          "journal_seq": 70943,
+          "length": 874,
+          "actions": {
+            "L": 406,
+            "F": 62,
+            "R": 406
+          },
+          "observations": 875,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 51,
+          "journal_seq": 71704,
+          "length": 126,
+          "actions": {
+            "L": 32,
+            "F": 62,
+            "R": 32
+          },
+          "observations": 127,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 52,
+          "journal_seq": 72023,
+          "length": 53,
+          "actions": {
+            "L": 15,
+            "F": 31,
+            "R": 7
+          },
+          "observations": 54,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 53,
+          "journal_seq": 72346,
+          "length": 53,
+          "actions": {
+            "L": 15,
+            "F": 31,
+            "R": 7
+          },
+          "observations": 54,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 54,
+          "journal_seq": 72647,
+          "length": 50,
+          "actions": {
+            "L": 15,
+            "F": 31,
+            "R": 4
+          },
+          "observations": 51,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 55,
+          "journal_seq": 72952,
+          "length": 50,
+          "actions": {
+            "L": 15,
+            "F": 31,
+            "R": 4
+          },
+          "observations": 51,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 56,
+          "journal_seq": 78021,
+          "length": 844,
+          "actions": {
+            "L": 391,
+            "F": 62,
+            "R": 391
+          },
+          "observations": 845,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 57,
+          "journal_seq": 78638,
+          "length": 102,
+          "actions": {
+            "L": 32,
+            "F": 62,
+            "R": 8
+          },
+          "observations": 103,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 6,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 58,
+          "journal_seq": 78645,
+          "length": 0,
+          "actions": {},
+          "observations": 1,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 59,
+          "journal_seq": 78699,
+          "length": 9,
+          "actions": {
+            "L": 7,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 10,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 60,
+          "journal_seq": 78758,
+          "length": 9,
+          "actions": {
+            "L": 7,
+            "F": 1,
+            "R": 1
+          },
+          "observations": 10,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 61,
+          "journal_seq": 79015,
+          "length": 42,
+          "actions": {
+            "L": 20,
+            "F": 2,
+            "R": 20
+          },
+          "observations": 43,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 62,
+          "journal_seq": 79188,
+          "length": 28,
+          "actions": {
+            "L": 25,
+            "F": 2,
+            "R": 1
+          },
+          "observations": 29,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 63,
+          "journal_seq": 79484,
+          "length": 49,
+          "actions": {
+            "L": 11,
+            "F": 30,
+            "R": 8
+          },
+          "observations": 50,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 64,
+          "journal_seq": 79783,
+          "length": 49,
+          "actions": {
+            "L": 11,
+            "F": 30,
+            "R": 8
+          },
+          "observations": 50,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 65,
+          "journal_seq": 84696,
+          "length": 818,
+          "actions": {
+            "L": 379,
+            "F": 60,
+            "R": 379
+          },
+          "observations": 819,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 66,
+          "journal_seq": 85373,
+          "length": 112,
+          "actions": {
+            "L": 26,
+            "F": 60,
+            "R": 26
+          },
+          "observations": 113,
+          "complete": true,
+          "collisions": 0,
+          "kind": "factory_replay",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        },
+        {
+          "index": 67,
+          "journal_seq": 85662,
+          "length": 48,
+          "actions": {
+            "L": 11,
+            "F": 30,
+            "R": 7
+          },
+          "observations": 49,
+          "complete": true,
+          "collisions": 0,
+          "kind": "actual_state_feedback_v1",
+          "failure_reason": null,
+          "initial_position": [
+            7.619349956512451,
+            0.11414599418640137,
+            5.494649887084961
+          ],
+          "initial_yaw": 12,
+          "reset_position_error": 0.0
+        }
+      ],
+      "trace_count": 68,
+      "complete_trace_count": 68,
+      "zero_action_trace_count": 7,
+      "trace_action_count": 6748,
+      "trace_action_composition": {
+        "R": 2616,
+        "F": 1352,
+        "L": 2780
+      },
+      "trace_length_range": [
+        0,
+        874
+      ],
+      "journal_completed_actions": 6786,
+      "journal_actions_without_saved_trace": 38,
+      "action_events_after_last_saved_trace": 38,
+      "unsealed_tail_action_composition": {
+        "L": 8,
+        "F": 27,
+        "R": 3
+      },
+      "geometry": {
+        "unique_selected_starts": 4,
+        "selected_start_y": [
+          0.11414599418640137,
+          0.2381303608417511,
+          3.514145851135254
+        ],
+        "source_position_count": 76,
+        "source_y_range": [
+          -0.08585400879383087,
+          3.514145851135254
+        ],
+        "shared_metadata_levels": [
+          0
+        ],
+        "role_object_region_ids": {
+          "anchor_A": [
+            "0_17"
+          ],
+          "anchor_B": [
+            "0_14",
+            "1_9"
+          ],
+          "terminal": [
+            "0_23"
+          ],
+          "irrelevant": [
+            "0_16"
+          ]
+        },
+        "role_center_y_ranges": {
+          "anchor_A": [
+            0.547088623046875,
+            1.5908594131469727
+          ],
+          "anchor_B": [
+            -0.032501220703125,
+            4.163118839263916
+          ],
+          "terminal": [
+            0.20513582229614258,
+            0.5972599983215332
+          ],
+          "irrelevant": [
+            0.6798059940338135,
+            0.6798059940338135
+          ]
+        },
+        "starts": [
+          {
+            "position": [
+              7.619349956512451,
+              0.11414599418640137,
+              5.494649887084961
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 1.5518066277328952,
+                "min_unsnapped_ring_euclidean_m": 0.6276369622784327,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 8.149653753683987,
+                "min_unsnapped_ring_euclidean_m": 7.156447330885308,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 12.444263286436794,
+                "min_unsnapped_ring_euclidean_m": 11.248627228480638,
+                "all_unsnapped_ring_points_beyond_8m": true
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 3.2938219061820257,
+                "min_unsnapped_ring_euclidean_m": 2.167981883742715,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              8.024129867553711,
+              3.514145851135254,
+              4.054989814758301
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 3.2856874065815567,
+                "min_unsnapped_ring_euclidean_m": 2.5531790732349404,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 8.267938420273131,
+                "min_unsnapped_ring_euclidean_m": 7.1058800840532355,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 11.321617526823873,
+                "min_unsnapped_ring_euclidean_m": 10.171042197713051,
+                "all_unsnapped_ring_points_beyond_8m": true
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 4.348755871891425,
+                "min_unsnapped_ring_euclidean_m": 3.4969955268148687,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              11.296299934387207,
+              0.2381303608417511,
+              5.31141996383667
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 2.065897088623227,
+                "min_unsnapped_ring_euclidean_m": 1.2034301476401355,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 6.2617927379050515,
+                "min_unsnapped_ring_euclidean_m": 5.02815571893049,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 11.78134753444326,
+                "min_unsnapped_ring_euclidean_m": 10.532338312008894,
+                "all_unsnapped_ring_points_beyond_8m": true
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 6.70944071764412,
+                "min_unsnapped_ring_euclidean_m": 5.491217502316782,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          },
+          {
+            "position": [
+              11.350199699401855,
+              0.11414599418640137,
+              2.3051600456237793
+            ],
+            "roles": {
+              "anchor_A": {
+                "min_center_euclidean_m": 3.8406683915380815,
+                "min_unsnapped_ring_euclidean_m": 2.673926612468903,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "anchor_B": {
+                "min_center_euclidean_m": 8.830078783629164,
+                "min_unsnapped_ring_euclidean_m": 7.66964850917904,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "terminal": {
+                "min_center_euclidean_m": 8.78565437159866,
+                "min_unsnapped_ring_euclidean_m": 7.538791224327741,
+                "all_unsnapped_ring_points_beyond_8m": false
+              },
+              "irrelevant": {
+                "min_center_euclidean_m": 6.867259054916559,
+                "min_unsnapped_ring_euclidean_m": 5.671099754806484,
+                "all_unsnapped_ring_points_beyond_8m": false
+              }
+            }
+          }
+        ],
+        "closest_source_position_to_anchor_A": [
+          7.619349956512451,
+          0.11414599418640137,
+          5.494649887084961
+        ],
+        "closest_source_anchor_A_center_distance_m": 1.5518066277328952,
+        "target_snap_distances_recorded": false,
+        "target_filter_reason_counters_recorded": false,
+        "global_reachability_or_wrong_floor_proven": false,
+        "scope": "Euclidean pre-snap geometry and stored metadata only; not navmesh/geodesic evaluation"
+      }
+    }
+  ],
+  "observed_completed_actions": 14205,
+  "saved_trace_actions": 14144,
+  "global_result": {
+    "node": "Q35N_FEEDBACK_MECHANISM_GENERATION_V1",
+    "bundles": [
+      {
+        "candidate_id": "MS1_000030e854f14b80a58e",
+        "house_id": "17DRP5sb8fy",
+        "physical_certified": false,
+        "training_admission": false,
+        "status": "RESOURCE_CENSORED",
+        "reason": "discovery wall-time budget: resource_censored",
+        "trace_count": 57
+      },
+      {
+        "candidate_id": "MS1_001fb50f0dbcd0bf157c",
+        "house_id": "1LXtFkjw3qL",
+        "physical_certified": false,
+        "training_admission": false,
+        "status": "REJECTED",
+        "reason": "CONFIGURATIONS_EXHAUSTED",
+        "trace_count": 16
+      },
+      {
+        "candidate_id": "MS1_000081669feaacf45b1c",
+        "house_id": "1pXnuDYAj8r",
+        "physical_certified": false,
+        "training_admission": false,
+        "status": "RESOURCE_CENSORED",
+        "reason": "discovery wall-time budget: resource_censored",
+        "trace_count": 68
+      }
+    ],
+    "error": null,
+    "counts": {
+      "traces": 141,
+      "actual_actions": 14205,
+      "collisions": 0,
+      "complete_traces": 141
+    },
+    "wall_seconds": 1256.684379426064,
+    "new_physical_families": 0,
+    "new_train_ready_families": 0,
+    "training_started": false,
+    "scientific_pass": false
+  },
+  "gpu_operations": 0,
+  "old_files_modified": false,
+  "scientific_pass": false
+}

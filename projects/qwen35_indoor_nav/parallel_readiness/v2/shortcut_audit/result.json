@@ -1,0 +1,158 @@
+{
+  "decision": "AUDIT_COMPLETE_PENDING_MAIN_AGENT_REVIEW",
+  "scientific_pass": false,
+  "independent_families": 1,
+  "cells": 18,
+  "label_counts": {
+    "pass": 12,
+    "fail": 6
+  },
+  "fit_upper_bounds": {
+    "task_only": {
+      "groups": 2,
+      "mixed_groups": 2,
+      "fit_upper_correct": 12,
+      "denominator": 18,
+      "fit_upper_fraction": 0.6666666666666666
+    },
+    "query_only": {
+      "groups": 3,
+      "mixed_groups": 3,
+      "fit_upper_correct": 12,
+      "denominator": 18,
+      "fit_upper_fraction": 0.6666666666666666
+    },
+    "task_query": {
+      "groups": 6,
+      "mixed_groups": 4,
+      "fit_upper_correct": 14,
+      "denominator": 18,
+      "fit_upper_fraction": 0.7777777777777778
+    },
+    "current_rgb_only": {
+      "groups": 1,
+      "mixed_groups": 1,
+      "fit_upper_correct": 12,
+      "denominator": 18,
+      "fit_upper_fraction": 0.6666666666666666
+    },
+    "two_rgb_only": {
+      "groups": 1,
+      "mixed_groups": 1,
+      "fit_upper_correct": 12,
+      "denominator": 18,
+      "fit_upper_fraction": 0.6666666666666666
+    },
+    "recent8_actions_only": {
+      "groups": 1,
+      "mixed_groups": 1,
+      "fit_upper_correct": 12,
+      "denominator": 18,
+      "fit_upper_fraction": 0.6666666666666666
+    },
+    "history_length_only": {
+      "groups": 1,
+      "mixed_groups": 1,
+      "fit_upper_correct": 12,
+      "denominator": 18,
+      "fit_upper_fraction": 0.6666666666666666
+    },
+    "short_context_task_query": {
+      "groups": 6,
+      "mixed_groups": 4,
+      "fit_upper_correct": 14,
+      "denominator": 18,
+      "fit_upper_fraction": 0.7777777777777778
+    },
+    "action_counts_task_query": {
+      "groups": 18,
+      "mixed_groups": 0,
+      "fit_upper_correct": 18,
+      "denominator": 18,
+      "fit_upper_fraction": 1.0
+    },
+    "action_set_task_query": {
+      "groups": 6,
+      "mixed_groups": 4,
+      "fit_upper_correct": 14,
+      "denominator": 18,
+      "fit_upper_fraction": 0.7777777777777778
+    },
+    "event_counts_task_query": {
+      "groups": 18,
+      "mixed_groups": 0,
+      "fit_upper_correct": 18,
+      "denominator": 18,
+      "fit_upper_fraction": 1.0
+    },
+    "event_set_task_query": {
+      "groups": 12,
+      "mixed_groups": 0,
+      "fit_upper_correct": 18,
+      "denominator": 18,
+      "fit_upper_fraction": 1.0
+    },
+    "m2_oracle_state_task_query": {
+      "groups": 12,
+      "mixed_groups": 0,
+      "fit_upper_correct": 18,
+      "denominator": 18,
+      "fit_upper_fraction": 1.0
+    }
+  },
+  "m2_oracle_correct": 18,
+  "threshold_summary": [
+    {
+      "threshold": 192,
+      "physical_traces": 27,
+      "task_evaluations": 54,
+      "outcome_changes_from_256": 3,
+      "raw_boundary_outcome_changes": 0,
+      "normalization_boundary_event_changes": 0,
+      "event_time_records_changed_from_256": 585
+    },
+    {
+      "threshold": 224,
+      "physical_traces": 27,
+      "task_evaluations": 54,
+      "outcome_changes_from_256": 0,
+      "raw_boundary_outcome_changes": 0,
+      "normalization_boundary_event_changes": 0,
+      "event_time_records_changed_from_256": 297
+    },
+    {
+      "threshold": 256,
+      "physical_traces": 27,
+      "task_evaluations": 54,
+      "outcome_changes_from_256": 0,
+      "raw_boundary_outcome_changes": 0,
+      "normalization_boundary_event_changes": 0,
+      "event_time_records_changed_from_256": 0
+    },
+    {
+      "threshold": 288,
+      "physical_traces": 27,
+      "task_evaluations": 54,
+      "outcome_changes_from_256": 0,
+      "raw_boundary_outcome_changes": 0,
+      "normalization_boundary_event_changes": 0,
+      "event_time_records_changed_from_256": 162
+    },
+    {
+      "threshold": 320,
+      "physical_traces": 27,
+      "task_evaluations": 54,
+      "outcome_changes_from_256": 0,
+      "raw_boundary_outcome_changes": 0,
+      "normalization_boundary_event_changes": 0,
+      "event_time_records_changed_from_256": 333
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "source_files_verified": 987,
+  "unit_tests_pass": true,
+  "new_model_runs": 0,
+  "new_simulator_runs": 0,
+  "new_training_runs": 0,
+  "scope": "Empirical single-family separability and label sensitivity, not model accuracy/generalization/contribution evidence"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "COMPLETE",
+  "unix": 1789241535.8312788,
+  "checkpoint_updates": 4000,
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "benchmark": "R2R-CE train INTERNAL_DEV; single FIT-calibrated STOP offset",
+  "planned": 100,
+  "completed": 100,
+  "missing": 0,
+  "n": 100,
+  "successes": 16,
+  "sr": 0.16,
+  "spl": 0.1486884632399732,
+  "ne_m": 8.431388508528471,
+  "osr": 0.21,
+  "ndtw": 0.4346743015451716,
+  "sdtw": 0.13712220241000994,
+  "house_count": 5,
+  "by_house": {
+    "82sE5b5pLXE": {
+      "n": 25,
+      "successes": 4,
+      "sr": 0.16,
+      "spl": 0.13472531741880217,
+      "ne_m": 6.9574391293525695,
+      "osr": 0.2,
+      "ndtw": 0.45709904269231716,
+      "sdtw": 0.11769157848127536
+    },
+    "B6ByNegPMKs": {
+      "n": 25,
+      "successes": 3,
+      "sr": 0.12,
+      "spl": 0.12,
+      "ne_m": 8.367675909996033,
+      "osr": 0.2,
+      "ndtw": 0.4554532690971951,
+      "sdtw": 0.11080202052350582
+    },
+    "PuKPg4mmafe": {
+      "n": 19,
+      "successes": 1,
+      "sr": 0.05263157894736842,
+      "spl": 0.048762879060435325,
+      "ne_m": 13.599553340359739,
+      "osr": 0.15789473684210525,
+      "ndtw": 0.263019970124727,
+      "sdtw": 0.03622496963801164
+    },
+    "XcA2TqTSSAj": {
+      "n": 6,
+      "successes": 1,
+      "sr": 0.16666666666666666,
+      "spl": 0.1655267779551338,
+      "ne_m": 8.552838365236918,
+      "osr": 0.16666666666666666,
+      "ndtw": 0.371270989202007,
+      "sdtw": 0.15608506319856474
+    },
+    "aayBHfsNo7d": {
+      "n": 25,
+      "successes": 7,
+      "sr": 0.28,
+      "spl": 0.2632423207459277,
+      "ne_m": 6.012097248435021,
+      "osr": 0.28,
+      "ndtw": 0.5371446796879,
+      "sdtw": 0.25500381854271414
+    }
+  },
+  "stopped": 91,
+  "failure_categories": {
+    "success": 16,
+    "stopped_without_reaching_goal": 70,
+    "entered_goal_but_no_successful_stop": 5,
+    "budget_exhausted_without_reaching_goal": 9
+  },
+  "collisions": 4442,
+  "environment_actions": 8090,
+  "trace_audit_passed": true,
+  "audited_actions": 8090,
+  "source_lock_verified": true,
+  "selected_batch_size": 1,
+  "optimizer_updates": 0,
+  "scientific_gain_verified": false,
+  "wall_seconds": 880.2901011789218,
+  "training_processes_signaled": [],
+  "checkpoint_role": "base4000_fit_calibrated_stop",
+  "run_dir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_stop_calibrated_dev_v1/run_001"
+}

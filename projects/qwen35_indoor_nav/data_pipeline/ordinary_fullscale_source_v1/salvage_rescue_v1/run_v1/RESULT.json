@@ -1,0 +1,57 @@
+{
+  "status": "STRICT_SALVAGE_AND_UNATTEMPTED_ONLY_PROSPECTIVE_SOURCE",
+  "executable": false,
+  "runtime_allowed": false,
+  "scientific_pass": false,
+  "training_started": false,
+  "shards": [
+    {
+      "gpu": 3,
+      "shard": 0,
+      "assigned": 999,
+      "terminal": 719,
+      "interrupted": 1,
+      "unattempted": 279,
+      "partial_ledger_tail": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "generation_rejected": 14,
+      "prior_quarantine": 168,
+      "new_quarantine": 3,
+      "strict_routes": 534,
+      "instruction_records": 1604,
+      "unique_route_decisions": 54039,
+      "instruction_conditioned_decisions": 162260
+    },
+    {
+      "gpu": 4,
+      "shard": 1,
+      "assigned": 997,
+      "terminal": 322,
+      "interrupted": 1,
+      "unattempted": 674,
+      "partial_ledger_tail": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "generation_rejected": 16,
+      "prior_quarantine": 24,
+      "new_quarantine": 2,
+      "strict_routes": 280,
+      "instruction_records": 840,
+      "unique_route_decisions": 24417,
+      "instruction_conditioned_decisions": 73150
+    }
+  ],
+  "strict_routes": 814,
+  "instruction_records": 2444,
+  "unique_route_decisions": 78456,
+  "instruction_conditioned_decisions": 235410,
+  "rescue_routes": 953,
+  "rescue_instruction_aliases": 2858,
+  "interrupted_not_retried": 2,
+  "training_index_sha256": "f720098a31965a95546af8f90252279fcb5ea9f6de3b2d6b8c934996650d31a4",
+  "rescue_jobs_sha256": "d68f813bf7d21f3d013acc81116f21f0774d1d15b1bba09f012639e3f0ef554a",
+  "old_sources_unchanged": true
+}

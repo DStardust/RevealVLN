@@ -1,0 +1,30 @@
+{
+  "gate_id": "Q35N_P2_MAIN_AGENT_REVIEW_V1",
+  "reviewed_gate": "Q35N_P2_DATA_AND_IMPLEMENTATION_PLAN_V1",
+  "decision": "RETURN_FOR_BOUNDED_CORRECTIONS",
+  "preferred_environment_and_data_accepted_for_planning": true,
+  "mainline_changed": false,
+  "original_p2_artifacts_modified": false,
+  "original_artifact_checksum_entries_passed": 13,
+  "protected_file_entries_passed_before_main_agent_state_update": 16,
+  "protected_before_after_identical": true,
+  "required_corrections": [
+    {"id": "R1", "issue": "renderer GPU and isolated setup conflict with zero GPU/download and five GiB total cap"},
+    {"id": "R2", "issue": "bedside language, room membership and hidden fixed-instance semantics exceed actual predicates"},
+    {"id": "R3", "issue": "event false versus unknown and semantic schema assertions incomplete"},
+    {"id": "R4", "issue": "continuation query is an arbitrary ID rather than specified executable movement/event content"},
+    {"id": "R5", "issue": "task-state auxiliary control and conditioned action deduplication underspecified"},
+    {"id": "R6", "issue": "Qwen action inputs, appended query position shapes and frozen-vision gradient probe underspecified"},
+    {"id": "R7", "issue": "bounded physical candidate search/config and local-use license preconditions incomplete"}
+  ],
+  "next_gate": "Q35N_P2R1_SPEC_CORRECTIONS_V1",
+  "g1_execution_approved": false,
+  "scientific_pass": false,
+  "implementation_allowed": false,
+  "training_allowed": false,
+  "runtime_verified": false,
+  "new_training_runs": 0,
+  "new_navigation_episodes": 0,
+  "measured_navigation_gain": null,
+  "review_scope": "Static artifact, primary source and consistency audit; no simulator/model/schema-runtime acceptance or legal clearance"
+}

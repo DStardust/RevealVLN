@@ -1,0 +1,69 @@
+{
+  "status": "EVIDENCE_AND_ROADMAP_AUDITED",
+  "unix": 1789311051.2307794,
+  "user_goal": "ordinary_navigation_full_val_unseen_SR_at_least_40_percent",
+  "pass_goal": false,
+  "stage": "BASELINE_RESET_PREPARATION",
+  "official_episode_count": 1839,
+  "minimum_successes_for_40": 736,
+  "snapshot": {
+    "strict_routes": 25415,
+    "instruction_records": 37114,
+    "instruction_conditioned_decisions": 2650347,
+    "unique_route_decisions": 1720480
+  },
+  "fit_houses": 51,
+  "best_internal": {
+    "sr": 0.21,
+    "spl": 0.18016983923442284,
+    "ndtw": 0.3658797007353029,
+    "newstage_decisions": 340712
+  },
+  "full_epoch_internal": {
+    "sr": 0.14,
+    "spl": 0.1298740061076182,
+    "ndtw": 0.3537311656243797
+  },
+  "historical_full": {
+    "checkpoint_updates": 41800,
+    "sr": 0.22022838499184338,
+    "spl": 0.18682570665384785,
+    "selected_batch_size": 8
+  },
+  "model_layers": {
+    "linear_attention": 18,
+    "full_attention": 6
+  },
+  "prior_stop_fit_started": false,
+  "prefix_diagnostic": {
+    "numerical_32_pass": true,
+    "launcher_failure_retained": true,
+    "unknown_child_exit_code": null,
+    "current_process_gone": true,
+    "current_gpu1_empty": true,
+    "no_signal_sent_by_audit": true
+  },
+  "old_goal": "SUPERSEDED_BY_USER_NOT_ACHIEVED",
+  "new_gpu_launches": 0,
+  "new_training_updates": 0,
+  "new_simulator_actions": 0,
+  "next_action": "Pin and inspect ordinary-history/adapter recipe; fix common execution and exit-race tests before bounded new training",
+  "files": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/ordinary_expansion_v1/training_snapshot_20260912_v1/run_001/RESULT.json": "f020a62a2fc2a016f6cdbd31827bbd883c13b5658448e7661cc12942c52d8ef4",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_expanded_dev_after_single_v1/run_001/RESULT.json": "9b04be9753d2a105efd9f2bba707a620cddf7bebc24705321e372d37de9fb973",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt.json": "c2675762e695cbef10218d6c78d74088d71fd03e9e23697f9018173ada94065b",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_full_epoch_dev_v4/run_001/RESULT.json": "ba7bdb4ee827fff90767d155433e81b30ae68fc3ba82dbb7e17807a08c18ae11",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v2/run_001/RESULT.json": "3fcb3ec173f65ace966f457642ff716f1c0ad4c9b17a1d49eddbc5c61fefda12",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v2/PROTOCOL.json": "8d80e8ffec53125ddaa4940b3dad8f59d0611cd9e27231d2563dedf1b1ed08b2",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/r2r_ce_full_v2/EPISODES_PRIVILEGED.json": "e342d0ad1121ab1b613bf38fddbb34acb2204ff51321b80fc00700244ec572af",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/runtime/models/Qwen3.5-2B_15852e8/config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_sync_recovery_v1/model.py": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_row_v12/FEATURE_PARITY.json": "02e8ee00d09ecfd3858d355a3044af0fb6b76a1ad16955149f85bf217832c38e",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_STOP_FEATURE_PREFIX_DIAGNOSTIC_V2/RESULT.json": "3a92558194a088abc4f0022269c816c6464d11d574b1c034f78994bc78c20a5d",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_STOP_FEATURE_PREFIX_DIAGNOSTIC_V2/LAUNCH_FAILURE.json": "9007f11608fb19c035ae5429681f240b8dbeafaecd27a4461372b9aa168838a6",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reviews/Q35N_STOP_FEATURE_PREFIX_DIAGNOSTIC_V2/PROCESS.json": "4785bb7cf55edc414584dac98383f090bebf3a63e811112ebdf9434aeba43abf",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/reports/TEACHER_INNOVATION_ADJUDICATION_20260911_V2_ZH.md": "e8759fa181709f088d5309184edefc4a9b92c15783297b7ee055a2856626157c"
+  },
+  "roadmap_sha256": "3d6c2e6da98afd32f10a36c2d3f3a75cf6d0109cebccd22200a0ff8f653af8df",
+  "audit_sha256": "d46a8505b93ad1232fe4c5a00699e448fc67e54ba22b5a45086fbc5afbea0230"
+}

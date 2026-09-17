@@ -1,0 +1,38 @@
+{
+  "gate_id": "Q35N_P2R1_MAIN_AGENT_ACCEPTANCE_V1",
+  "reviewed_gate": "Q35N_P2R1_SPEC_CORRECTIONS_V1",
+  "decision": "ACCEPTED_FOR_RUNTIME_GATE_WITH_PRECONDITIONS",
+  "p2_planning_closed": true,
+  "mainline_changed": false,
+  "reviewed_correction_ids": ["R1", "R2", "R3", "R4", "R5", "R6", "R7"],
+  "further_p2_document_round_required": false,
+  "implementation_clarifications": [
+    "decision-index continuation begins at prefix cutoff t, not t+1",
+    "M2 READY_TO_STOP requires strictly earlier anchor",
+    "Qwen rope helper call direction and tuple must match pinned source",
+    "synthetic examples never become measured records by flipping a flag"
+  ],
+  "integrity_checks": {
+    "p2r1_artifact_hash_entries_passed": 13,
+    "original_p2_artifact_hash_entries_passed": 13,
+    "protected_files_passed_before_main_agent_updates": 23,
+    "protected_before_after_identical": true,
+    "full_json_schema_runtime_validation_performed": false
+  },
+  "next_gate": "Q35N_G0R_RUNTIME_SETUP_ACCEPTANCE_V1",
+  "runtime_gate_status": "AWAITING_OWNER_CONFIRMATIONS",
+  "required_owner_confirmations": [
+    "lawful existing MP3D acquisition and controlled local research use",
+    "installation/download/rendering within the stated resource envelope",
+    "specific idle GPU or explicit permission to select an idle GPU without preemption"
+  ],
+  "runtime_setup_execution_allowed_now": false,
+  "g1_execution_approved": false,
+  "implementation_allowed": false,
+  "training_allowed": false,
+  "scientific_pass": false,
+  "runtime_verified": false,
+  "new_training_runs": 0,
+  "new_navigation_episodes": 0,
+  "measured_navigation_gain": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "q35n.g0r.result.v1",
+  "gate_id": "Q35N_G0R_RUNTIME_SETUP_ACCEPTANCE_V1",
+  "completed_at": "2026-09-09T12:21:48+08:00",
+  "decision": "BLOCKED_DEPENDENCY_ACQUISITION",
+  "runtime_pass": false,
+  "renderer_pass": false,
+  "resource_caps_respected": true,
+  "cleanup_complete": true,
+  "scientific_pass": false,
+  "navigation_gain": null,
+  "new_training_runs": 0,
+  "new_navigation_episodes": 0,
+  "qwen_download_count": 0,
+  "qwen_load_count": 0,
+  "family_generation_count": 0,
+  "simulator_import_attempt_count": 0,
+  "simulator_smoke_run_count": 0,
+  "scene_load_count": 0,
+  "reset_count": 0,
+  "action_count": 0,
+  "collision_feedback_count": 0,
+  "renderer_context_count": 0,
+  "gpu_processes_stopped": 0,
+  "placeholders_released": 0,
+  "placeholders_restored": 0,
+  "source_snapshot": {
+    "habitat_sim_version": "0.1.7",
+    "commit": "856d4b08c1a2632626bf0d205bf46471a99502b7",
+    "complete_pinned_submodule_manifest": true,
+    "file_count": 17940
+  },
+  "partial_environment": {
+    "python_copied_and_relocated": true,
+    "python_version": "3.10.20",
+    "runtime_dependencies_installed": false,
+    "habitat_sim_built": false,
+    "habitat_sim_installed": false
+  },
+  "blocking_condition": "Both the official PyPI index and the predeclared workspace mirror transport failed before the first pinned distribution could be downloaded. Continuing would require forbidden legacy environment/cache reuse, source/pin changes, or an unregistered acquisition path.",
+  "required_for_retry": "Restore a working authorized route to the frozen Python distribution set, then execute a new main-agent-authorized continuation/retry under the same fixed source; do not infer G1F authorization.",
+  "next_gate_executed": false
+}

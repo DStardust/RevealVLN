@@ -1,0 +1,15 @@
+{
+  "user_statement": "实现下一步",
+  "node": "Q35N_GENERIC_FACTORY_CPU_V2",
+  "scope": "versioned_generic_mechanism_factory_implementation_and_CPU_tests",
+  "write_root": "data_pipeline/mechanism_factory_v2",
+  "parallel_delegation": "continuation_of_user_requested_parallel_data_work; disjoint_module_ownership",
+  "root_state_writer": "main_agent_only",
+  "protected": ["sealed_reviews", "mechanism_family_v1", "parallel_readiness/v2", "external_sft", "environments", "weights"],
+  "gpu_operations_allowed": false,
+  "simulator_execution_allowed": false,
+  "model_execution_allowed": false,
+  "training_allowed": false,
+  "new_data_generation_allowed": false,
+  "scientific_pass": false
+}

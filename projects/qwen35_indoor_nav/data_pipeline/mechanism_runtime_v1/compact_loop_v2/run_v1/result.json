@@ -1,0 +1,19 @@
+{
+  "node": "Q35N_COMPACT_LOOP_MECHANISM_GENERATION_V2",
+  "bundles": [],
+  "error": {
+    "error": "ValueError('tracked store must be a new feedback_generation_v1 child')",
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/feedback_generation_v1/worker.py\", line 34, in main\n    with TrackedContentStore(out/'content',6*1024**3) as store,Journal(out/'journal',cfg) as journal:\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/feedback_generation_v1/store.py\", line 53, in __init__\n    raise ValueError(\"tracked store must be a new feedback_generation_v1 child\")\nValueError: tracked store must be a new feedback_generation_v1 child\n"
+  },
+  "counts": {
+    "traces": 0,
+    "actual_actions": 0,
+    "collisions": 0,
+    "complete_traces": 0
+  },
+  "wall_seconds": 0.0032698740251362324,
+  "new_physical_families": 0,
+  "new_train_ready_families": 0,
+  "training_started": false,
+  "scientific_pass": false
+}

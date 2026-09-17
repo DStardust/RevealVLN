@@ -1,0 +1,45 @@
+{
+  "approved": true,
+  "user_basis": "可以稳定生成之后其余卡都可以使用增加效率",
+  "scope": "Next frozen disjoint English FIT shards 2-5, with prospective measured-house cost wall budgets",
+  "source_plan": "data_pipeline/ordinary_fullscale_source_v1/PLAN.json",
+  "runtime": "data_pipeline/ordinary_fullscale_source_v1/runtime_v3",
+  "holder_identities": "authorizations/ORDINARY_FULLSCALE_WAVE2_GPU67_IDENTITIES_V1.json",
+  "gpu_to_sequential_shards": {
+    "6": [
+      2,
+      4
+    ],
+    "7": [
+      3,
+      5
+    ]
+  },
+  "max_new_routes": 3995,
+  "max_new_total_gib": 200,
+  "max_worker_ram_gib": 12,
+  "max_own_gpu_mib": 4096,
+  "shard_wall_seconds": {
+    "2": 12600,
+    "3": 4800,
+    "4": 4200,
+    "5": 4800
+  },
+  "lane_wall_seconds": {
+    "6": 16920,
+    "7": 9720
+  },
+  "max_wall_seconds_per_gpu_chain": 16920,
+  "cleanup_margin_seconds": 120,
+  "restore_holders_on_success_failure_or_interruption": true,
+  "actual_external_tasks_may_be_stopped": false,
+  "training_allowed": false,
+  "scientific_pass": false,
+  "original_quality_and_source_filters_unchanged": true,
+  "budget_reason": "Closed-batch measured slow-house reference-length cost; no active-run budgets changed",
+  "prelaunch_requirements": [
+    "main CPU tests, immutable and scene lock verification",
+    "stable exact sleeper capture and same original holder restoration",
+    "strict unchanged per-route double replay, geometric and turn acceptance"
+  ]
+}

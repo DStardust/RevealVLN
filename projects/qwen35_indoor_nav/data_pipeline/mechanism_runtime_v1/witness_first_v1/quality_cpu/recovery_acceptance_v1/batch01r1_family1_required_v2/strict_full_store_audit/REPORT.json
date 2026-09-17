@@ -1,0 +1,187 @@
+{
+  "recovery_content_pass": false,
+  "quality_pass": false,
+  "original_batch_pass": false,
+  "training_admission": false,
+  "requires_main_training_admission": true,
+  "scientific_pass": false,
+  "model_gain_pass": false,
+  "grade": "RECOVERY_EVIDENCE_INSUFFICIENT",
+  "errors": [
+    "ValueError: READ_ONLY_STORE_RESEAL_FAILED"
+  ],
+  "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_01r1/run_v1",
+  "candidate_id": "WF_WIND_8c0ad3efaf9c9dac811f0045_LR1",
+  "auditor_sources": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/recovery_acceptance_v1/recovery.py": "a091d6d29e0c91c573aaea9771a5f44207f23a0f41fbff4899ef11d739009011",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/recovery_acceptance_v1/semantics.py": "144b9d8bbb85c155a760d78eaca46345a535226b9fa50a3c3f2c7f7c51291931",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/acceptance.py": "a2cae535b132b652c289d753bcf11dc2f55413bb942fd731528198a8ab4fa7d8",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/quality.py": "fdebf7078c59dda3217587e6b3ad580cf6df75dede93369700e1b79329df0e76"
+  },
+  "semantics": {
+    "semantic_content_pass": true,
+    "original_quality_pass": false,
+    "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+    "house_id": "1pXnuDYAj8r",
+    "hub_position": [
+      6.4357099533081055,
+      0.11414599418640137,
+      7.757599830627441
+    ],
+    "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+    "matrix": {
+      "action_counts": {
+        "H_A": {
+          "F": 30,
+          "L": 43,
+          "R": 43
+        },
+        "H_B": {
+          "F": 30,
+          "L": 43,
+          "R": 43
+        },
+        "H_A_I": {
+          "F": 30,
+          "L": 43,
+          "R": 43
+        }
+      },
+      "history_reversals": [
+        [
+          "task_A",
+          "C0"
+        ],
+        [
+          "task_A",
+          "C_B"
+        ],
+        [
+          "task_B",
+          "C0"
+        ],
+        [
+          "task_B",
+          "C_A"
+        ]
+      ],
+      "task_differences": [
+        [
+          "H_A",
+          "C0"
+        ],
+        [
+          "H_A",
+          "C_A"
+        ],
+        [
+          "H_B",
+          "C0"
+        ],
+        [
+          "H_B",
+          "C_B"
+        ],
+        [
+          "H_A_I",
+          "C0"
+        ],
+        [
+          "H_A_I",
+          "C_A"
+        ]
+      ]
+    },
+    "cells_verified": 18,
+    "replays_verified": 27,
+    "evaluations_verified": 54,
+    "evidence_verified": true,
+    "policy_future_query_excluded": true,
+    "source_error_is_distinct_from_postprocess_acceptance": true,
+    "grade": "SEMANTIC_CONTENT_VERIFIED_WITHOUT_RUNTIME_TERMINAL_ADMISSION"
+  },
+  "committed_prefix": {
+    "committed_bytes": 64438735,
+    "committed_records": 92490,
+    "uncommitted_tail_bytes": 0,
+    "uncommitted_tail_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tail_used_for_labels_or_budget": false
+  },
+  "family_completion": {
+    "certified_seq": 92480,
+    "closed_budget_seq": 92481,
+    "family_budget": {
+      "certification": {
+        "actions": 4500,
+        "finished": 1316775.52618001,
+        "started": 1316446.059731091
+      },
+      "discovery": {
+        "actions": 2090,
+        "finished": 1316446.044840555,
+        "started": 1316302.147811673
+      }
+    },
+    "confirmed_actions_by_phase": {
+      "discovery": 2090,
+      "certification": 4500
+    },
+    "budget_snapshot_at_family_completion": {
+      "active": null,
+      "bundles": {
+        "WF_WIND_44b1f81e2410bb68cef87eec_LR1": {
+          "certification": {
+            "actions": 7983,
+            "finished": 1316289.099525593,
+            "started": 1315756.69153784
+          },
+          "discovery": {
+            "actions": 3755,
+            "finished": 1315756.679355506,
+            "started": 1315481.870577175
+          }
+        },
+        "WF_WIND_8c0ad3efaf9c9dac811f0045_LR1": {
+          "certification": {
+            "actions": 4500,
+            "finished": 1316775.52618001,
+            "started": 1316446.059731091
+          },
+          "discovery": {
+            "actions": 2090,
+            "finished": 1316446.044840555,
+            "started": 1316302.147811673
+          }
+        }
+      },
+      "created": 1315475.162129861,
+      "last_clock": 1316775.52618001,
+      "limits": {
+        "certification_actions": 20000,
+        "certification_seconds": 1500,
+        "discovery_actions": 15000,
+        "discovery_seconds": 1000,
+        "total_actions": 60000,
+        "total_seconds": 3600
+      },
+      "total_reserved_actions": 18328,
+      "version": 2
+    },
+    "all_confirmed_actions_durably_reserved_first": true
+  },
+  "resource_evidence": {
+    "all_recorded_resource_samples_pass": true,
+    "samples": 243,
+    "family_result_local_mtime": 1788964516.5816267,
+    "process_started_unix": 1788963215.67044,
+    "supervisor_result_local_mtime": 1788964522.9457371,
+    "maximum_observed_sample_gap_seconds": 6.561339993029833,
+    "original_resource_error": "AssertionError('MEMORY_ACCOUNTING')",
+    "failed_trigger_snapshot_available": false,
+    "continuous_resource_compliance_proven": false,
+    "precise_family_sample_time_alignment_proven": false,
+    "scope": "all_persisted_samples_and_trusted_local_file_order_only_not_original_supervisor_pass",
+    "own_renderer_absent_at_original_terminal": true
+  },
+  "read_bytes_counted": 472981500
+}

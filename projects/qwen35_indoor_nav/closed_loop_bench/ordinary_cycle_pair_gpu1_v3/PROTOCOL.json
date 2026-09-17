@@ -1,0 +1,74 @@
+{
+  "id": "Q35N_ORDINARY_CYCLE_PAIR_GPU1_V3",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "checkpoint_updates": 4000,
+  "seed": 1209,
+  "environment_seed": 0,
+  "episode_count": 200,
+  "house_count": 5,
+  "max_steps": 500,
+  "wall_seconds": 4100,
+  "gpu_memory_gib": 28,
+  "cpu_memory_gib": 64,
+  "output_gib": 4,
+  "gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "rgb_size": 224,
+  "hfov": 90,
+  "camera_height": 1.25,
+  "agent_height": 1.5,
+  "agent_radius": 0.1,
+  "forward_m": 0.25,
+  "turn_deg": 15.0,
+  "allow_sliding": true,
+  "success_distance": 3.0,
+  "greedy": false,
+  "optimizer_updates": 0,
+  "metric_backend": "Unmodified official Habitat v0.1.7 class bodies with isolated adapter",
+  "main_criterion": "Same-process matched prefixes/logits plus original absolute and paired improvement gates",
+  "official_full_trainer_or_leaderboard_run": false,
+  "houses": [
+    "82sE5b5pLXE",
+    "B6ByNegPMKs",
+    "PuKPg4mmafe",
+    "XcA2TqTSSAj",
+    "aayBHfsNo7d"
+  ],
+  "house_counts": {
+    "82sE5b5pLXE": 50,
+    "B6ByNegPMKs": 50,
+    "PuKPg4mmafe": 38,
+    "XcA2TqTSSAj": 12,
+    "aayBHfsNo7d": 50
+  },
+  "lanes": 8,
+  "gt_path": "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/train/train_gt.json.gz",
+  "ndtw_backend": "exact Euclidean DTW, official FDTW=False semantics",
+  "previous_tiny_episode_ids": [],
+  "checkpoint_selection": "Same frozen best4k as historical matched development baseline",
+  "parity_threshold": {
+    "max_abs": 0.15,
+    "relative_l2": 0.03,
+    "all_argmax_identical": true
+  },
+  "parity_fallback_batch_size": 1,
+  "parity_pass_batch_size": 1,
+  "checkpoint_role": "shared_process_native_and_recovery",
+  "comparison_batch_size_forced": 1,
+  "native_policy_greedy": true,
+  "recovery": "Least attempted motion on repeated complete causal input; logits break ties; native STOP preserved",
+  "base_episode_count": 100,
+  "paired_arms": {
+    "native_indices": [
+      0,
+      99
+    ],
+    "recovery_indices": [
+      100,
+      199
+    ]
+  }
+}

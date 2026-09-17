@@ -1,0 +1,1757 @@
+{
+  "version": "AT_LEAST_TWO_BATCHES_V2",
+  "preliminary_cross_house_production_pass": false,
+  "scope": "initial_cross_house_repeated_production_only",
+  "all_supplied_batches_in_verdict": true,
+  "batch_count": 4,
+  "per_batch": [
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1",
+      "attempted_independent_hubs": 3,
+      "qualified_independent_hubs": 3,
+      "single_batch_eligible": true,
+      "errors": []
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1",
+      "attempted_independent_hubs": 3,
+      "qualified_independent_hubs": 3,
+      "single_batch_eligible": true,
+      "errors": []
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1",
+      "attempted_independent_hubs": 3,
+      "qualified_independent_hubs": 3,
+      "single_batch_eligible": true,
+      "errors": []
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1",
+      "attempted_independent_hubs": 1,
+      "qualified_independent_hubs": 0,
+      "single_batch_eligible": false,
+      "errors": [
+        "UNVERIFIED_COMPLETE_RUN_BINDINGS",
+        "FROZEN_ATTEMPT_DENOMINATOR_INCOMPLETE",
+        "BATCH_NEEDS_THREE_ATTEMPTED_DISTINCT_HUBS",
+        "BATCH_NEEDS_TWO_QUALIFIED_DISTINCT_HUBS"
+      ]
+    }
+  ],
+  "distinct_complete_run_qualified_hubs": 6,
+  "complete_run_fit_houses": 6,
+  "control_type_counts": {
+    "completed_subgoal_revisit_placement_not_event_free_detour": 9
+  },
+  "errors": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1:UNVERIFIED_COMPLETE_RUN_BINDINGS",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1:FROZEN_ATTEMPT_DENOMINATOR_INCOMPLETE",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1:BATCH_NEEDS_THREE_ATTEMPTED_DISTINCT_HUBS",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1:BATCH_NEEDS_TWO_QUALIFIED_DISTINCT_HUBS"
+  ],
+  "recovery_inventory": {
+    "families": 0,
+    "distinct_hubs": 0,
+    "fit_houses": 0,
+    "used_for_batch_gate": false
+  },
+  "combined_data_inventory_only": {
+    "distinct_hubs": 6,
+    "fit_houses": 6,
+    "not_a_batch_gate": true
+  },
+  "statistical_stability_pass": false,
+  "model_generalization_pass": false,
+  "scientific_pass": false,
+  "evaluation_cohort": {
+    "schema_version": "q35n.production_cohort.v2",
+    "criteria_version": "AT_LEAST_TWO_BATCHES_V2",
+    "cohort_id": "Q35N_MULTI_PROGRAM_LANGUAGE_READY_FOUR_BATCHES_R1_V2",
+    "mechanism_version": "winding_v1__multi_program_bank_v1__finite_language_realization_v1",
+    "transport_version": "GPU1_readiness_v1__GPU5_exact_identity_transport_v4_input_file_cap2048",
+    "declared_run_roots": [
+      "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1",
+      "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1",
+      "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1",
+      "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1"
+    ],
+    "members": [
+      {
+        "batch_id": "batch_03r1",
+        "gpu_device": 1,
+        "source_indices": [
+          0,
+          1,
+          2
+        ],
+        "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1",
+        "candidate_ids": [
+          "WF_MULTI_6d477e65b41e4921d9fa57d5",
+          "WF_MULTI_1cc38f41922d895b14c7c38d",
+          "WF_MULTI_666b9ad8889322e26058b4ae"
+        ],
+        "canonical_program_ids": [
+          "7648b378c1e9448500e11906e9c005422325e42dde48af338df707702b513be3",
+          "1d3598f1f9332aec7e9ab737bd883ec2f16635e1cf19d40365d381a5899683ed",
+          "c9346749cf39bb9efb6887bb75e6593f615343a823670ed9acd552d5d4910545"
+        ],
+        "hubs": [
+          {
+            "house_id": "17DRP5sb8fy",
+            "hub_position": [
+              -3.1296799182891846,
+              0.07244700193405151,
+              -1.4360400438308716
+            ]
+          },
+          {
+            "house_id": "1LXtFkjw3qL",
+            "hub_position": [
+              1.3899799585342407,
+              -1.4192103147506714,
+              1.628640055656433
+            ]
+          },
+          {
+            "house_id": "1pXnuDYAj8r",
+            "hub_position": [
+              6.4357099533081055,
+              0.11414599418640137,
+              7.757599830627441
+            ]
+          }
+        ]
+      },
+      {
+        "batch_id": "batch_04r1",
+        "gpu_device": 5,
+        "source_indices": [
+          3,
+          4,
+          5
+        ],
+        "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1",
+        "candidate_ids": [
+          "WF_MULTI_e3ae15fde7875e9c5fcb089c",
+          "WF_MULTI_12742144e605d52cabd56f62",
+          "WF_MULTI_542c4cab54931d0c6a1f62e1"
+        ],
+        "canonical_program_ids": [
+          "4ecd6446ea07f9cf194c7426509495fd5a49a35c00f638bab64e3876dc78e013",
+          "c65e16a0a335cf769a76be3f67bb87d089b6ffebac596e53796ec734608ff0f2",
+          "d1032b8de895fa6b17d845f28d1646dba3533e19254edd421a410d84f03dcfd3"
+        ],
+        "hubs": [
+          {
+            "house_id": "29hnd4uzFmX",
+            "hub_position": [
+              -4.872129917144775,
+              -0.2089579850435257,
+              -1.094920039176941
+            ]
+          },
+          {
+            "house_id": "2n8kARJN3HM",
+            "hub_position": [
+              6.060579776763916,
+              0.13123798370361328,
+              10.951499938964844
+            ]
+          },
+          {
+            "house_id": "5LpN3gDmAk7",
+            "hub_position": [
+              8.674449920654297,
+              -1.0843499898910522,
+              8.6083402633667
+            ]
+          }
+        ]
+      },
+      {
+        "batch_id": "batch_05r1",
+        "gpu_device": 1,
+        "source_indices": [
+          6,
+          7,
+          8
+        ],
+        "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1",
+        "candidate_ids": [
+          "WF_MULTI_3bba1d1a339059269bd0666a",
+          "WF_MULTI_948046897f8db6cc5447a345",
+          "WF_MULTI_63b2935eecadb4d487144800"
+        ],
+        "canonical_program_ids": [
+          "45ec0989202e44740ac94285944898e30403d14ac5fafd542db20b8da8c4a8f5",
+          "01a9c85e123b7c4fc8fdcf4c80fe490f81fce86ab5405966ac969e38875e30c9",
+          "519c3e35f860bc966841c604f6342e2e409038c93f6993529a693a1358958659"
+        ],
+        "hubs": [
+          {
+            "house_id": "17DRP5sb8fy",
+            "hub_position": [
+              -3.1296799182891846,
+              0.07244700193405151,
+              -1.4360400438308716
+            ]
+          },
+          {
+            "house_id": "1LXtFkjw3qL",
+            "hub_position": [
+              1.3899799585342407,
+              -1.4192103147506714,
+              1.628640055656433
+            ]
+          },
+          {
+            "house_id": "1pXnuDYAj8r",
+            "hub_position": [
+              6.4357099533081055,
+              0.11414599418640137,
+              7.757599830627441
+            ]
+          }
+        ]
+      },
+      {
+        "batch_id": "batch_06r1",
+        "gpu_device": 5,
+        "source_indices": [
+          9,
+          10,
+          11
+        ],
+        "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1",
+        "candidate_ids": [
+          "WF_MULTI_c39579597231648a5904a8d5",
+          "WF_MULTI_ce745afb425daffc217fd036",
+          "WF_MULTI_8ffc0ee17b2b2df85a4c63ad"
+        ],
+        "canonical_program_ids": [
+          "5c14069c550ad46558ee4bf893fbf847173129d3041bfaadfdba9d8cece3b0cc",
+          "9e3bc0db9e6268d7b35ab7535a012bb4009b06cecff02106c09cac562f271639",
+          "a8c6e2fa2e4b8b2aa8d5216c33af2678609dd1cde5e6487354b4784e610d290a"
+        ],
+        "hubs": [
+          {
+            "house_id": "29hnd4uzFmX",
+            "hub_position": [
+              -4.872129917144775,
+              -0.2089579850435257,
+              -1.094920039176941
+            ]
+          },
+          {
+            "house_id": "2n8kARJN3HM",
+            "hub_position": [
+              6.060579776763916,
+              0.13123798370361328,
+              10.951499938964844
+            ]
+          },
+          {
+            "house_id": "5LpN3gDmAk7",
+            "hub_position": [
+              8.674449920654297,
+              -1.0843499898910522,
+              8.6083402633667
+            ]
+          }
+        ]
+      }
+    ],
+    "source_configuration": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/multi_program_bank_v1/language_ready_v2/CONFIG_DRAFT.json",
+    "source_configuration_sha256": "71c662affb5ad896d0b4f687925dff9181fd1d834cc3269c1dfcac7f6d11d275",
+    "predeclared_unix": 1788967776.1319165,
+    "all_members_remain_in_verdict_including_failures": true,
+    "prior_failed_batches_retained_in_exposure_not_retroactively_in_this_cohort": true,
+    "planned_distinct_hubs": 6,
+    "planned_distinct_FIT_houses": 6,
+    "planned_programs": 12,
+    "same_hub_programs_statistically_independent": false,
+    "original_quality_thresholds_unchanged": true,
+    "runtime_allowed": false,
+    "training_allowed": false,
+    "scientific_pass": false,
+    "superseded_unstarted_cohort": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/multi_program_bank_v1/language_ready_v1/COHORT_V2.json",
+      "reason": "INPUT_LOCK_CLOSURE_COUNT_ONLY",
+      "not_current_cohort": true,
+      "sha256": "f7bc936e11318a65c9be465d3cf61eaf9f0a7361a90052575623da811054ce39"
+    }
+  },
+  "cohort_manifest_sha256": "63bfb440ce1233f6a132ad0706d521cd7a5027627887f1f0c58cdcd5b36d71f8",
+  "all_four_members_retained": true,
+  "family_audit_input_hashes": {
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/BATCH_REPORT.json": "1f1a34a1bf53b5529fedf2f236df23d3cbf2335b8916040942be1a9e983b7b14",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/INDIVIDUAL_BATCH_ONLY.json": "d00ee96a893690e29a0bd3bd85a777160134629afc138b49bea98d7281ae76ef",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_1cc38f41922d895b14c7c38d/CONTROL_EVIDENCE.json": "68c6b77b0580697707c4301f6d94300ddd5b832766ff628f1a4d17ed4369af82",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_1cc38f41922d895b14c7c38d/EVIDENCE.json": "e59e7abac1f83a226a2bf4d0e372ec551a81fa1f0fd5ce37f72c65084e7559c0",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_1cc38f41922d895b14c7c38d/FAMILY_REPORT.json": "0d4e461e54a9077d9763670a828978ea01a28f7a218d57309ccd5584651aa9b7",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_1cc38f41922d895b14c7c38d/RESOURCE_FINAL.json": "5569e51b3052e4d4f1d7a5b0cae8df633de6b7bcd2efdf53da85fcf7c289ea36",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_1cc38f41922d895b14c7c38d/SOURCE_AUDIT.json": "abec58766bdb67cc45330c9d0c5c353b84d738a1a23d7dbd6e21e31901ff09eb",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_666b9ad8889322e26058b4ae/CONTROL_EVIDENCE.json": "d514d38de34ae848473b0f4374dfe509dd485e64762d1fe169385911b046f060",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_666b9ad8889322e26058b4ae/EVIDENCE.json": "af19ba405a15da34380aa652d34d56012c6bfb190f513b514f345fdb3ebcbcc6",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_666b9ad8889322e26058b4ae/FAMILY_REPORT.json": "55529e867677a2fa1f1b2224b780e287d5f2ebbd842270eb25a1fc0d40ab8704",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_666b9ad8889322e26058b4ae/RESOURCE_FINAL.json": "5569e51b3052e4d4f1d7a5b0cae8df633de6b7bcd2efdf53da85fcf7c289ea36",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_666b9ad8889322e26058b4ae/SOURCE_AUDIT.json": "2c36477b5b2695610cd18638ca62721f778063a8d21612f333749bf40c3047c6",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_6d477e65b41e4921d9fa57d5/CONTROL_EVIDENCE.json": "8bd75d32ce5418bee9c3619a6dd790e978e9b01ce5d00837083ea717cae3ef59",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_6d477e65b41e4921d9fa57d5/EVIDENCE.json": "83f281044ed0e6a632ce19a46d7f0306a45d22154f3db32ae122fd376d1b5bab",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_6d477e65b41e4921d9fa57d5/FAMILY_REPORT.json": "184a13bcc64b4a217513ae3290f38fac4dcdf3b0c9262f33d3da49a335e83a59",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_6d477e65b41e4921d9fa57d5/RESOURCE_FINAL.json": "5569e51b3052e4d4f1d7a5b0cae8df633de6b7bcd2efdf53da85fcf7c289ea36",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_03r1/WF_MULTI_6d477e65b41e4921d9fa57d5/SOURCE_AUDIT.json": "2ac48464b8a8c869022effec9c5e758753f3acc2e56b39afee04cf9a8c1fec24",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/BATCH_REPORT.json": "e9a85a567889bc096de48790795a189e03f98d8f56c33c3d46541403910be3f6",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/INDIVIDUAL_BATCH_ONLY.json": "2aed6b0b03abce79ed830532b78e0a003648df2a13a89be81a5c367fcbefdb4a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_12742144e605d52cabd56f62/CONTROL_EVIDENCE.json": "2a51f252f4da143241a34e5211b26d0474cd0af995967851df3efddba1cc3a36",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_12742144e605d52cabd56f62/EVIDENCE.json": "b4bc4e6a24d3d56a6e01e41953171c9bc8a4c5fd7261a3b709cdc0b95371ee0e",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_12742144e605d52cabd56f62/FAMILY_REPORT.json": "ca16fa88d60e2dc888cafcd82b457d293cddf4b5c2cb45178cb5f652a19d118a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_12742144e605d52cabd56f62/RESOURCE_FINAL.json": "289cdf264cdae3bb4b5e19b8e4c3a5cbe8569549e875991ddd49a6a27a4b5ebc",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_12742144e605d52cabd56f62/SOURCE_AUDIT.json": "cd243200f3da6cf0250b3379a4f73c147d74cffb2bdd7d6e0057726de9ec1ce5",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_542c4cab54931d0c6a1f62e1/CONTROL_EVIDENCE.json": "95fbb55d77ec48946074cea5d8925599ba0a976526ce8da54e16a7e328e5c60c",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_542c4cab54931d0c6a1f62e1/EVIDENCE.json": "dd66d284cb1e2b269504b8e65707bd50b416d8af82998d9ace6f18390dfa4d29",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_542c4cab54931d0c6a1f62e1/FAMILY_REPORT.json": "86f41876f793116c4d0a3a883a6337d8aff2a0303acdba5202296db918fb1448",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_542c4cab54931d0c6a1f62e1/RESOURCE_FINAL.json": "289cdf264cdae3bb4b5e19b8e4c3a5cbe8569549e875991ddd49a6a27a4b5ebc",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_542c4cab54931d0c6a1f62e1/SOURCE_AUDIT.json": "1a960c89b3c3691880343ae2411fbfca584bfca232da9f0215ac9858e18c48e3",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_e3ae15fde7875e9c5fcb089c/CONTROL_EVIDENCE.json": "67d0e3768349e290ff8b515721b4d9a5a4b858b825f1a650468beadb057be22e",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_e3ae15fde7875e9c5fcb089c/EVIDENCE.json": "1774ab943963f96456ae4288faa40e6864eae69d04755f73fd976d1889acb209",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_e3ae15fde7875e9c5fcb089c/FAMILY_REPORT.json": "0f4b0ce31d2bc7927c19d1e9fd920212e01f500b28b0b68fbc4a241c13102d7a",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_e3ae15fde7875e9c5fcb089c/RESOURCE_FINAL.json": "289cdf264cdae3bb4b5e19b8e4c3a5cbe8569549e875991ddd49a6a27a4b5ebc",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_04r1/WF_MULTI_e3ae15fde7875e9c5fcb089c/SOURCE_AUDIT.json": "b97e0b5ce84dd51aff9f34b5462e979225b23863ff9d2d1c509eed1c105af6e4",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/BATCH_REPORT.json": "c92bed23c33d4c7daf80aee987b5c872b7c2d6340d7926e01ca0f121ab2b44c0",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/INDIVIDUAL_BATCH_ONLY.json": "ea0c690f2827525b8196811d3a905fbcc8ec54d39c5481466840e4f653d00891",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_3bba1d1a339059269bd0666a/CONTROL_EVIDENCE.json": "989bcc3fc967beb6930f842ed2dfcbf2be19e04ef28dba5e61d9eea5aee0c996",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_3bba1d1a339059269bd0666a/EVIDENCE.json": "42e83442d0268f7bde7e292937ccb50cdd2b49655f83c0525bc075b93f984346",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_3bba1d1a339059269bd0666a/FAMILY_REPORT.json": "6701943e68cc78aa02924137121df967102d894cdb1b4cfbd658bbcf70845caf",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_3bba1d1a339059269bd0666a/RESOURCE_FINAL.json": "1749616b5df2fda796a0d1b26ce39d2eccb9c43d0abbbb30afee15007f328858",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_3bba1d1a339059269bd0666a/SOURCE_AUDIT.json": "30773f1a79f451945e349d7c02574de1a9a06ebf9d03910534cd5b9bf63101c9",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_63b2935eecadb4d487144800/CONTROL_EVIDENCE.json": "ebcaf62757093c4fca828bacc0c16edbc24557c9dbb4c7aa260b0cb564b67909",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_63b2935eecadb4d487144800/EVIDENCE.json": "9fbcf7066c06f9b55cc3ae3a156318a45c32c3a3fa615091ae2cc86232cce2b6",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_63b2935eecadb4d487144800/FAMILY_REPORT.json": "eb19184fb0763c550e3ef1c2c7183430192794a93424078755b637ccbdf4d220",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_63b2935eecadb4d487144800/RESOURCE_FINAL.json": "1749616b5df2fda796a0d1b26ce39d2eccb9c43d0abbbb30afee15007f328858",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_63b2935eecadb4d487144800/SOURCE_AUDIT.json": "b129fbb861c1b9861dbe4308156929de49652d7a65dac55874899e5c859279a3",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_948046897f8db6cc5447a345/CONTROL_EVIDENCE.json": "108de2798ccd99f97908d27af295f0786cdbb044c4d998422fe34ba2e507fd47",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_948046897f8db6cc5447a345/EVIDENCE.json": "29ce8d031785bd86bf981e4bed996e1c4df1964b290e036e6e261e618bd53be1",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_948046897f8db6cc5447a345/FAMILY_REPORT.json": "2efd883ae932fda56e08f407f468ff49dd658982a32a1ba8101eaf2834560113",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_948046897f8db6cc5447a345/RESOURCE_FINAL.json": "1749616b5df2fda796a0d1b26ce39d2eccb9c43d0abbbb30afee15007f328858",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_05r1/WF_MULTI_948046897f8db6cc5447a345/SOURCE_AUDIT.json": "f520e5e2d11e9a02d6d64439f3c3fa4a4ed81bce728eb4521a1e280c9a9a8422",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_06r1/BATCH_REPORT.json": "20a9a2ebc2b77cc1db6f4edac31de8391c06f0fef42a5f9e80454a4b35de88c8",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/quality_cpu/batch_acceptance_v1/gate_v3_manifest_capacity/independent_03_04_07_v1/batch_06r1/FAILURE_AND_PARTIAL_RECEIPT.json": "13b4ff7538edcec1e9748f7694796b9a865f278dbde2e6ca838b08311b4af3c4"
+  },
+  "independent_batch_reports": [
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1",
+      "bindings_verified": true,
+      "all_frozen_candidates_attempted_and_terminal": true,
+      "attempts": [
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "17DRP5sb8fy",
+          "hub_position": [
+            -3.1296799182891846,
+            0.07244700193405151,
+            -1.4360400438308716
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 104,
+                "L": 68,
+                "R": 44
+              },
+              "H_B": {
+                "F": 104,
+                "L": 68,
+                "R": 44
+              },
+              "H_A_I": {
+                "F": 104,
+                "L": 68,
+                "R": 44
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 177511782,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_6d477e65b41e4921d9fa57d5",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1"
+        },
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "1LXtFkjw3qL",
+          "hub_position": [
+            1.3899799585342407,
+            -1.4192103147506714,
+            1.628640055656433
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 162,
+                "L": 88,
+                "R": 112
+              },
+              "H_B": {
+                "F": 162,
+                "L": 88,
+                "R": 112
+              },
+              "H_A_I": {
+                "F": 162,
+                "L": 88,
+                "R": 112
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 239251246,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_1cc38f41922d895b14c7c38d",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1"
+        },
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "1pXnuDYAj8r",
+          "hub_position": [
+            6.4357099533081055,
+            0.11414599418640137,
+            7.757599830627441
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 30,
+                "L": 43,
+                "R": 43
+              },
+              "H_B": {
+                "F": 30,
+                "L": 43,
+                "R": 43
+              },
+              "H_A_I": {
+                "F": 30,
+                "L": 43,
+                "R": 43
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 96103424,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_666b9ad8889322e26058b4ae",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1"
+        }
+      ],
+      "frozen_candidate_ids": [
+        "WF_MULTI_6d477e65b41e4921d9fa57d5",
+        "WF_MULTI_1cc38f41922d895b14c7c38d",
+        "WF_MULTI_666b9ad8889322e26058b4ae"
+      ],
+      "source_errors": [],
+      "exposure_status": "COMPLETE_RUN_INDEPENDENTLY_AUDITED",
+      "uncommitted_tail_bytes": 0,
+      "head_committed_prefix_verified_for_exposure": true,
+      "LAUNCH_RESULT.json": {
+        "launcher": "readiness_v1",
+        "status": "ORIGINAL_SUPERVISOR_RETURNED",
+        "exception": null,
+        "wall_seconds": 2672.749007337028,
+        "readiness_limit_seconds": 60,
+        "original_supervisor_limit_seconds": 3900,
+        "nominal_readiness_plus_supervision_seconds": 3960,
+        "original_bounded_cleanup_grace_unchanged": true,
+        "first_real_idle_observed": true,
+        "readiness_samples": 1,
+        "readiness_elapsed_seconds": 0.5901448130607605,
+        "process_record_present": true,
+        "supervisor_result_present": true,
+        "cleanup_authority": "original_supervisor_only_no_outer_process_termination",
+        "external_processes_stopped_by_launcher": 0,
+        "guards_relaxed": false,
+        "raw_gpu_samples_not_modified": true,
+        "scientific_pass": false
+      },
+      "SUPERVISOR_RESULT.json": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 2672.1117098920513,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "memory_mib": 1178,
+          "utilization": 0,
+          "processes": {
+            "2315628": {
+              "mib": 650,
+              "type": "C"
+            },
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1",
+      "bindings_verified": true,
+      "all_frozen_candidates_attempted_and_terminal": true,
+      "attempts": [
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "29hnd4uzFmX",
+          "hub_position": [
+            -4.872129917144775,
+            -0.2089579850435257,
+            -1.094920039176941
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 48,
+                "L": 59,
+                "R": 35
+              },
+              "H_B": {
+                "F": 48,
+                "L": 59,
+                "R": 35
+              },
+              "H_A_I": {
+                "F": 48,
+                "L": 59,
+                "R": 35
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 124772051,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_e3ae15fde7875e9c5fcb089c",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1"
+        },
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "2n8kARJN3HM",
+          "hub_position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 88,
+                "L": 47,
+                "R": 47
+              },
+              "H_B": {
+                "F": 88,
+                "L": 47,
+                "R": 47
+              },
+              "H_A_I": {
+                "F": 88,
+                "L": 47,
+                "R": 47
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 122149990,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_12742144e605d52cabd56f62",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1"
+        },
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "5LpN3gDmAk7",
+          "hub_position": [
+            8.674449920654297,
+            -1.0843499898910522,
+            8.6083402633667
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 88,
+                "L": 71,
+                "R": 47
+              },
+              "H_B": {
+                "F": 88,
+                "L": 71,
+                "R": 47
+              },
+              "H_A_I": {
+                "F": 88,
+                "L": 71,
+                "R": 47
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 137494763,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_542c4cab54931d0c6a1f62e1",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1"
+        }
+      ],
+      "frozen_candidate_ids": [
+        "WF_MULTI_e3ae15fde7875e9c5fcb089c",
+        "WF_MULTI_12742144e605d52cabd56f62",
+        "WF_MULTI_542c4cab54931d0c6a1f62e1"
+      ],
+      "source_errors": [],
+      "exposure_status": "COMPLETE_RUN_INDEPENDENTLY_AUDITED",
+      "uncommitted_tail_bytes": 0,
+      "head_committed_prefix_verified_for_exposure": true,
+      "LEASE_RESULT.json": {
+        "execute_returned": true,
+        "error": null,
+        "holder_signal_attempted": true,
+        "holder_restored": true,
+        "external_processes_stopped": 0,
+        "scientific_pass": false,
+        "original_supervisor_worker_cleanup_unchanged": true
+      },
+      "LAUNCH_RESULT.json": {
+        "launcher": "readiness_v1",
+        "status": "ORIGINAL_SUPERVISOR_RETURNED",
+        "exception": null,
+        "wall_seconds": 2068.718413877068,
+        "readiness_limit_seconds": 60,
+        "original_supervisor_limit_seconds": 3900,
+        "nominal_readiness_plus_supervision_seconds": 3960,
+        "original_bounded_cleanup_grace_unchanged": true,
+        "first_real_idle_observed": true,
+        "readiness_samples": 1,
+        "readiness_elapsed_seconds": 0.20088355103507638,
+        "process_record_present": true,
+        "supervisor_result_present": true,
+        "cleanup_authority": "original_supervisor_only_no_outer_process_termination",
+        "external_processes_stopped_by_launcher": 0,
+        "guards_relaxed": false,
+        "raw_gpu_samples_not_modified": true,
+        "scientific_pass": false
+      },
+      "SUPERVISOR_RESULT.json": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 2068.4960986769293,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "memory_mib": 514,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1",
+      "bindings_verified": true,
+      "all_frozen_candidates_attempted_and_terminal": true,
+      "attempts": [
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "17DRP5sb8fy",
+          "hub_position": [
+            -3.1296799182891846,
+            0.07244700193405151,
+            -1.4360400438308716
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 104,
+                "L": 68,
+                "R": 44
+              },
+              "H_B": {
+                "F": 104,
+                "L": 68,
+                "R": 44
+              },
+              "H_A_I": {
+                "F": 104,
+                "L": 68,
+                "R": 44
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 179206879,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_3bba1d1a339059269bd0666a",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1"
+        },
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "1LXtFkjw3qL",
+          "hub_position": [
+            1.3899799585342407,
+            -1.4192103147506714,
+            1.628640055656433
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 162,
+                "L": 88,
+                "R": 112
+              },
+              "H_B": {
+                "F": 162,
+                "L": 88,
+                "R": 112
+              },
+              "H_A_I": {
+                "F": 162,
+                "L": 88,
+                "R": 112
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 260589359,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_948046897f8db6cc5447a345",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1"
+        },
+        {
+          "quality_pass": true,
+          "grade": "QUALITY_VERIFIED_CANDIDATE_FIT_NOT_MODEL_GAIN",
+          "scientific_pass": false,
+          "model_gain_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour",
+          "m2_status": "COMPLETE_RECOMPUTED_STRONG_PROGRAM_STATE",
+          "errors": [],
+          "language_scope": "controlled_task_instructions_only_no_natural_language_transfer_claim",
+          "house_id": "1pXnuDYAj8r",
+          "hub_position": [
+            6.4357099533081055,
+            0.11414599418640137,
+            7.757599830627441
+          ],
+          "matrix": {
+            "action_counts": {
+              "H_A": {
+                "F": 30,
+                "L": 43,
+                "R": 43
+              },
+              "H_B": {
+                "F": 30,
+                "L": 43,
+                "R": 43
+              },
+              "H_A_I": {
+                "F": 30,
+                "L": 43,
+                "R": 43
+              }
+            },
+            "history_reversals": [
+              [
+                "task_A",
+                "C0"
+              ],
+              [
+                "task_A",
+                "C_B"
+              ],
+              [
+                "task_B",
+                "C0"
+              ],
+              [
+                "task_B",
+                "C_A"
+              ]
+            ],
+            "task_differences": [
+              [
+                "H_A",
+                "C0"
+              ],
+              [
+                "H_A",
+                "C_A"
+              ],
+              [
+                "H_B",
+                "C0"
+              ],
+              [
+                "H_B",
+                "C_B"
+              ],
+              [
+                "H_A_I",
+                "C0"
+              ],
+              [
+                "H_A_I",
+                "C_A"
+              ]
+            ]
+          },
+          "cells_verified": 18,
+          "replays_verified": 27,
+          "evaluations_verified": 54,
+          "evidence_verified": true,
+          "read_bytes_counted": 96542932,
+          "policy_future_query_excluded": true,
+          "source_error_is_distinct_from_postprocess_acceptance": true,
+          "source_and_phase_binding_verified": true,
+          "preaction_configuration_verified": true,
+          "attempt_id": "WF_MULTI_63b2935eecadb4d487144800",
+          "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1"
+        }
+      ],
+      "frozen_candidate_ids": [
+        "WF_MULTI_3bba1d1a339059269bd0666a",
+        "WF_MULTI_948046897f8db6cc5447a345",
+        "WF_MULTI_63b2935eecadb4d487144800"
+      ],
+      "source_errors": [],
+      "exposure_status": "COMPLETE_RUN_INDEPENDENTLY_AUDITED",
+      "uncommitted_tail_bytes": 0,
+      "head_committed_prefix_verified_for_exposure": true,
+      "LAUNCH_RESULT.json": {
+        "launcher": "readiness_v1",
+        "status": "ORIGINAL_SUPERVISOR_RETURNED",
+        "exception": null,
+        "wall_seconds": 2681.6949854418635,
+        "readiness_limit_seconds": 60,
+        "original_supervisor_limit_seconds": 3900,
+        "nominal_readiness_plus_supervision_seconds": 3960,
+        "original_bounded_cleanup_grace_unchanged": true,
+        "first_real_idle_observed": true,
+        "readiness_samples": 1,
+        "readiness_elapsed_seconds": 0.33848226396366954,
+        "process_record_present": true,
+        "supervisor_result_present": true,
+        "cleanup_authority": "original_supervisor_only_no_outer_process_termination",
+        "external_processes_stopped_by_launcher": 0,
+        "guards_relaxed": false,
+        "raw_gpu_samples_not_modified": true,
+        "scientific_pass": false
+      },
+      "SUPERVISOR_RESULT.json": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 2681.2970149219036,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "memory_mib": 1178,
+          "utilization": 0,
+          "processes": {
+            "2315628": {
+              "mib": 650,
+              "type": "C"
+            },
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1",
+      "bindings_verified": false,
+      "all_frozen_candidates_attempted_and_terminal": false,
+      "attempts": [
+        {
+          "candidate_id": "WF_MULTI_c39579597231648a5904a8d5",
+          "house_id": "29hnd4uzFmX",
+          "hub_position": [
+            -4.872129917144775,
+            -0.2089579850435257,
+            -1.094920039176941
+          ],
+          "quality_pass": false,
+          "control_type": "completed_subgoal_revisit_placement_not_event_free_detour"
+        }
+      ],
+      "frozen_candidate_ids": [
+        "WF_MULTI_c39579597231648a5904a8d5",
+        "WF_MULTI_ce745afb425daffc217fd036",
+        "WF_MULTI_8ffc0ee17b2b2df85a4c63ad"
+      ],
+      "source_errors": [
+        "FileNotFoundError(2, 'No such file or directory')"
+      ],
+      "exposure_status": "CLOSED_REJECTED_SOURCE_OR_TERMINAL",
+      "uncommitted_tail_bytes": 0,
+      "head_committed_prefix_verified_for_exposure": true,
+      "LEASE_RESULT.json": {
+        "execute_returned": false,
+        "error": {
+          "type": "SystemExit",
+          "message": "1"
+        },
+        "holder_signal_attempted": true,
+        "holder_restored": true,
+        "external_processes_stopped": 0,
+        "scientific_pass": false,
+        "original_supervisor_worker_cleanup_unchanged": true
+      },
+      "LAUNCH_RESULT.json": {
+        "launcher": "readiness_v1",
+        "status": "LAUNCH_FAILED",
+        "exception": {
+          "type": "SystemExit",
+          "message": "1",
+          "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/readiness_v1.py\", line 130, in run_main\n    module.main()\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/compact_loop_v2/run.py\", line 104, in main\n    if error or not proc or proc.returncode or not clean: raise SystemExit(1)\nSystemExit: 1\n"
+        },
+        "wall_seconds": 11.528347039129585,
+        "readiness_limit_seconds": 60,
+        "original_supervisor_limit_seconds": 3900,
+        "nominal_readiness_plus_supervision_seconds": 3960,
+        "original_bounded_cleanup_grace_unchanged": true,
+        "first_real_idle_observed": true,
+        "readiness_samples": 1,
+        "readiness_elapsed_seconds": 0.23840521881356835,
+        "process_record_present": true,
+        "supervisor_result_present": true,
+        "cleanup_authority": "original_supervisor_only_no_outer_process_termination",
+        "external_processes_stopped_by_launcher": 0,
+        "guards_relaxed": false,
+        "raw_gpu_samples_not_modified": true,
+        "scientific_pass": false
+      },
+      "SUPERVISOR_RESULT.json": {
+        "returncode": -15,
+        "error": "AssertionError('MEMORY_ACCOUNTING')",
+        "wall_seconds": 11.268614117056131,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "memory_mib": 514,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    }
+  ],
+  "batch07_excluded": true,
+  "independent_strong_family_audits_reused_without_relabelling": true,
+  "failed_members_not_replaced": true,
+  "source_and_metric_code_unchanged": true,
+  "all_history_exposure": [
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_00/run_v1",
+      "config_sha256": "5024889ccab1b922e63b628af7ea30a21f0c89086dc4a891b974f4cdb1271b7d",
+      "supervisor_result": {
+        "returncode": -15,
+        "error": "AssertionError('EXTERNAL_RESOURCE_LOAD')",
+        "wall_seconds": 1727.2008855410386,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+          "memory_mib": 1909,
+          "utilization": 2,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            },
+            "3190639": {
+              "mib": 1380,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_01/run_v1",
+      "config_sha256": "004049afc35151fc1aa95f4c8164fe1f6489eb600f817a86140d40c4a45d771d",
+      "supervisor_result": null
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_01r1/run_v1",
+      "config_sha256": "bbcb81833d8264df917684f59e893232c94702a6ccaa611f30a0d48c4021895f",
+      "supervisor_result": {
+        "returncode": -15,
+        "error": "AssertionError('MEMORY_ACCOUNTING')",
+        "wall_seconds": 1307.2823760299943,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "memory_mib": 1178,
+          "utilization": 0,
+          "processes": {
+            "2315628": {
+              "mib": 650,
+              "type": "C"
+            },
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_02/run_v1",
+      "config_sha256": "1171ba590a808944d88b417709f835a7300bf064130d0b95570855005678ecb0",
+      "supervisor_result": null
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_02r1/run_v1",
+      "config_sha256": "f092b3b1c92896ae5ce2196cdf9fd95b290bc4d422efb185808d9d995b174a6f",
+      "supervisor_result": null
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_02r2/run_v1",
+      "config_sha256": "3181028de7ec000f0ed8837cc79dc48254e4dd878972d4f72204eb67e1e6e97d",
+      "supervisor_result": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 1654.1767342740204,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "memory_mib": 514,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03/run_v1",
+      "config_sha256": "00cb452718c7975ef4ff65d787d12a6487bea4734d61f570ade2f35e3c71db5b",
+      "supervisor_result": null
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_03r1/run_v1",
+      "config_sha256": "473381b84fa9a36239bed72e84f4ec8bbc69a8d89249de9c9d68fde6be7a7d0e",
+      "supervisor_result": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 2672.1117098920513,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "memory_mib": 1178,
+          "utilization": 0,
+          "processes": {
+            "2315628": {
+              "mib": 650,
+              "type": "C"
+            },
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04/run_v1",
+      "config_sha256": "ca800fa48fd808d07ae07b8e6575313a8064b4a3fb2a311898992b5dd91ec49d",
+      "supervisor_result": null
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_04r1/run_v1",
+      "config_sha256": "fbb365aeac258474a2490083c743835bed7ad36117afb049824b7e89d2e22d8b",
+      "supervisor_result": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 2068.4960986769293,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "memory_mib": 514,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_05r1/run_v1",
+      "config_sha256": "a21789d9c98d9fbc4269aa3246036db6d46e00c36565f7f46c6042a070330ee7",
+      "supervisor_result": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 2681.2970149219036,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "memory_mib": 1178,
+          "utilization": 0,
+          "processes": {
+            "2315628": {
+              "mib": 650,
+              "type": "C"
+            },
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r1/run_v1",
+      "config_sha256": "f38a9cbbb6e2ccbe9b0b7dce848fb6d31f2c843be0ac46a25b79c98d7a69fd43",
+      "supervisor_result": {
+        "returncode": -15,
+        "error": "AssertionError('MEMORY_ACCOUNTING')",
+        "wall_seconds": 11.268614117056131,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "memory_mib": 514,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_06r2/run_v1",
+      "config_sha256": "0b8307dadbf673b71372fc5fcacc97b8739aaa76ca88f197fc3fe9c07a83a815",
+      "supervisor_result": null
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_07/run_v1",
+      "config_sha256": "254df1ac9a008fdd32bd61ce49522f9be81d810fd94e96179c0fa4a00a10db73",
+      "supervisor_result": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 1268.599152817158,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+          "memory_mib": 522,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    },
+    {
+      "run_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/data_pipeline/mechanism_runtime_v1/witness_first_v1/batch_execution_v1/batch_08/run_v1",
+      "config_sha256": "e37e4db264a64a16068073a6b13105f079265ccb7ca78d1ea30d3f5d14425540",
+      "supervisor_result": {
+        "returncode": 0,
+        "error": null,
+        "wall_seconds": 1588.4902604459785,
+        "cleanup_complete": true,
+        "external_processes_stopped": 0,
+        "holders_touched": false,
+        "holder_restoration_required": false,
+        "gpu_after": {
+          "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+          "memory_mib": 522,
+          "utilization": 0,
+          "processes": {
+            "2781015": {
+              "mib": 246,
+              "type": "C"
+            },
+            "2900192": {
+              "mib": 246,
+              "type": "C"
+            }
+          }
+        },
+        "scientific_pass": false
+      }
+    }
+  ]
+}
