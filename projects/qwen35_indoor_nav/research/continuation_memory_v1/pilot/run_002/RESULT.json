@@ -1,0 +1,94 @@
+{
+  "status": "DEBUG_FORWARD_BACKWARD_UPDATES_COMPLETE",
+  "arms": {
+    "B2": {
+      "initial": {
+        "action_ce": 1.9639860391616821,
+        "exact_state_bce": 0.6615203619003296,
+        "crossed_result_bce": 0.6892040967941284,
+        "action_accuracy": 0.5121951103210449,
+        "query_accuracy": 0.7222222089767456,
+        "action_owners": 492,
+        "state_derived_query_accuracy": 0.6666666865348816,
+        "effective_query_accuracy": 0.6666666865348816,
+        "query_cells": 18,
+        "state_known_steps": 1494
+      },
+      "final": {
+        "action_ce": 1.783623218536377,
+        "exact_state_bce": 0.29622432589530945,
+        "crossed_result_bce": 0.7090928554534912,
+        "action_accuracy": 0.599593460559845,
+        "query_accuracy": 0.3333333432674408,
+        "action_owners": 492,
+        "state_derived_query_accuracy": 1.0,
+        "effective_query_accuracy": 1.0,
+        "query_cells": 18,
+        "state_known_steps": 1494
+      },
+      "updates": 100,
+      "initial_state_sha256": "1dc4d533bf164ba3d3d0e8e0d0255f9b3f6d80088f0694978ef671186f0ec91b",
+      "final_state_sha256": "a12f8f57499fa40498601d81b94afe2717eef99143a56bb8d9eee39b52c6a314",
+      "seconds": 45.15228571789339
+    },
+    "Ours": {
+      "initial": {
+        "action_ce": 1.9639860391616821,
+        "exact_state_bce": 0.6615203619003296,
+        "crossed_result_bce": 0.6892040967941284,
+        "action_accuracy": 0.5121951103210449,
+        "query_accuracy": 0.7222222089767456,
+        "action_owners": 492,
+        "state_derived_query_accuracy": 0.6666666865348816,
+        "effective_query_accuracy": 0.7222222089767456,
+        "query_cells": 18,
+        "state_known_steps": 1494
+      },
+      "final": {
+        "action_ce": 1.7735639810562134,
+        "exact_state_bce": 0.7252002954483032,
+        "crossed_result_bce": 0.3287454843521118,
+        "action_accuracy": 0.6056910157203674,
+        "query_accuracy": 0.8333333134651184,
+        "action_owners": 492,
+        "state_derived_query_accuracy": 0.6666666865348816,
+        "effective_query_accuracy": 0.8333333134651184,
+        "query_cells": 18,
+        "state_known_steps": 1494
+      },
+      "updates": 100,
+      "initial_state_sha256": "1dc4d533bf164ba3d3d0e8e0d0255f9b3f6d80088f0694978ef671186f0ec91b",
+      "final_state_sha256": "6e68e718f134096cf59ac14f11a26958a84811d8c66ff7639bc213217029bea7",
+      "seconds": 46.48453693394549
+    }
+  },
+  "gradient_update": {
+    "real_features": true,
+    "full_prefix_observations": 249,
+    "critical_event": {
+      "history": "H_B",
+      "task": "task_B",
+      "step": 14,
+      "supervision_step": 248,
+      "writer_output_gradient_norm": 3.347207166370936e-05
+    },
+    "action_memory_gradient_norm": 0.051068585366010666,
+    "action_memory_effect_max_abs": 0.1196126937866211,
+    "future_query_mutates_memory": false,
+    "initial_state_sha256": "1dc4d533bf164ba3d3d0e8e0d0255f9b3f6d80088f0694978ef671186f0ec91b",
+    "updated_state_sha256": "5f0cbec4ad6fceb65f2f90bd048946692d6f8bd8160aa843e78ffaf92dd02a3e",
+    "diagnostic_optimizer_updates": 1,
+    "encoder_trained": false,
+    "closed_loop_memory_gain_tested": false
+  },
+  "shared_data_sha256": "e65aca3fa088c1992d770b3118aed2253224dba402926cfcf4c611446e7ab380",
+  "shared_feature_sha256": "ea68821c8dad700a7da9d88261fea32c87c51e7f8985d82e45f7891729d1f299",
+  "parameters": 1430725,
+  "diagnostic_updates": 1,
+  "comparison_updates": 200,
+  "seeds": 1,
+  "independent_test": false,
+  "closed_loop_memory_evaluation": false,
+  "scientific_superiority": "UNTESTED",
+  "scope": "Single exposed SEE2 family; auxiliary fitting and implementation diagnostic only; neither B2 superiority nor Ours superiority established"
+}

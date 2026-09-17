@@ -1,0 +1,62 @@
+{
+  "status": "REAL_PILOT_ARTIFACTS_VERIFIED",
+  "arms": {
+    "B2": {
+      "updates": 100,
+      "changed_tensors": [
+        "writer.weight",
+        "writer.bias",
+        "recurrent.weight",
+        "action.weight",
+        "state_head.weight",
+        "state_head.bias"
+      ],
+      "final_fingerprint_verified": true
+    },
+    "Ours": {
+      "updates": 100,
+      "changed_tensors": [
+        "writer.weight",
+        "writer.bias",
+        "recurrent.weight",
+        "action.weight",
+        "query_embedding.weight",
+        "query_gru.weight_ih_l0",
+        "query_gru.weight_hh_l0",
+        "query_gru.bias_ih_l0",
+        "query_gru.bias_hh_l0",
+        "result_head.0.weight",
+        "result_head.0.bias",
+        "result_head.2.weight",
+        "result_head.2.bias"
+      ],
+      "final_fingerprint_verified": true
+    }
+  },
+  "artifacts": {
+    "B2_MEMORY.pt": {
+      "bytes": 5728163,
+      "sha256": "2b0822c497abc0f00c5f06c8f8787adf7d79b1d1029e9bd223f016cb6ab96acb",
+      "local_only": true
+    },
+    "FEATURES.pt": {
+      "bytes": 6272813,
+      "sha256": "ea68821c8dad700a7da9d88261fea32c87c51e7f8985d82e45f7891729d1f299",
+      "local_only": true
+    },
+    "INITIAL_MEMORY.pt": {
+      "bytes": 5728393,
+      "sha256": "2fbfdf68db078112bc462605a87ca8aa369d690a8f0d0ba523831ef34e76e97f",
+      "local_only": true
+    },
+    "Ours_MEMORY.pt": {
+      "bytes": 5728199,
+      "sha256": "f05d0610f1405ce3f95abb57a6ea56308139f3a0ad49bb14a7fe9682ae9a875e",
+      "local_only": true
+    }
+  },
+  "cpu_only": true,
+  "new_model_forwards": 0,
+  "new_optimizer_updates": 0,
+  "comparison_scope": "single exposed SEE2 family; not independent generalization or closed-loop gain"
+}

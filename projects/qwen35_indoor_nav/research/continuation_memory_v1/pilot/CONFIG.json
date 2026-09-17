@@ -1,0 +1,38 @@
+{
+  "id": "V5_FROZEN_CAUSAL_FEATURE_MEMORY_DEBUG_V1",
+  "status": "AUTHORIZED_DEBUG_ONLY",
+  "seed": 1209,
+  "arms": [
+    "B2",
+    "Ours"
+  ],
+  "steps_per_arm": 100,
+  "learning_rate": 0.001,
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "memory_slots": 8,
+  "slot_width": 64,
+  "retention": 0.99,
+  "query_width": 64,
+  "feature_source": "Frozen best4k action-query hidden state,2048d; same causal RGB/instruction/executed-action interface",
+  "backbone_trainable": false,
+  "loss": "mean shared492 action owners CE + mean known auxiliary BCE; lambda1",
+  "lambda_aux": 1.0,
+  "max_gpu_seconds": 14400,
+  "max_continuous_seconds": 10800,
+  "max_output_gib": 20,
+  "hyperparameter_search_trials": 0,
+  "unroll": "all249 prefix observations plus real suffix steps for shared action owners",
+  "data": "Existing WF_SHORT_REVISIT_V3_004 SEE2, debug only; original training_admission false preserved",
+  "query": "Original compiler typed semantic sequence; bound vocabulary, training reader only",
+  "comparison_scope": "Single exposed family and one seed; fitting/gradient diagnostic, not held-out efficacy or superiority",
+  "success_evidence": [
+    "real frozen feature forward",
+    "event-step gradient reaches memory writer",
+    "memory read affects actual action logits",
+    "one and100optimizer updates change trainable parameters",
+    "task/query input boundary checks"
+  ],
+  "scientific_generalization": false,
+  "B2_query_readout": "Exact task logic applied to predicted compositional state plus legal future query events; not its untrained Ours head"
+}

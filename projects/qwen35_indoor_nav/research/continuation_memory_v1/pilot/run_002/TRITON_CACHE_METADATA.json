@@ -1,0 +1,4358 @@
+{
+  "cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/2O2LOSSHB42426GCOA6AAF75B2NH2TWRYCHELHMYO34EXEKLMLGA/recompute_w_u_fwd_kernel.json": {
+    "hash": "d3b4b74a470f35cd78c2703c0017fd0e9a7d4ed1c08e459d9876f84b914b62cc",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 4,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 37376,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/2XN7J7ZHBPHRGYPR2CER76XLVSCQQ7NRGIE533S2WJIT2N5VXKWA/recompute_w_u_fwd_kernel.json": {
+    "hash": "d5dbf4ff270bcf1361f1d0891ffaebac85087db13209ddee5ab2513d37b5baac",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 4,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 37376,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/__grp__chunk_fwd_kernel_o.json": {
+    "child_paths": {
+      "chunk_fwd_kernel_o.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.source",
+      "chunk_fwd_kernel_o.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.ttir",
+      "chunk_fwd_kernel_o.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.ttgir",
+      "chunk_fwd_kernel_o.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.llir",
+      "chunk_fwd_kernel_o.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.ptx",
+      "chunk_fwd_kernel_o.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.cubin",
+      "chunk_fwd_kernel_o.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.json"
+    }
+  },
+  "cache/triton/2YR6PZ4BE6KPMWORVM2J2OBGFLBH7P2NRUC3IMKBFGVJRRVEZ5YA/chunk_fwd_kernel_o.json": {
+    "hash": "d623e7e7812794f659d1ab349d38262ac27fbf4d8d05b4314129aa98c6a4cf70",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 49152,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_fwd_kernel_o"
+  },
+  "cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/3AHESPKMBPZM6ZNHCSY2BHA2C5MYM3SYKDPPDMXNBQ324XSNK3QQ/l2norm_fwd_kernel.json": {
+    "hash": "d80e493d4c0bf2cf65a714b1a09c1a1759866e5850def1b2ed0c37ae5e4d56e1",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 32,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/__grp__chunk_fwd_kernel_o.json": {
+    "child_paths": {
+      "chunk_fwd_kernel_o.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.source",
+      "chunk_fwd_kernel_o.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.ttir",
+      "chunk_fwd_kernel_o.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.ttgir",
+      "chunk_fwd_kernel_o.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.llir",
+      "chunk_fwd_kernel_o.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.ptx",
+      "chunk_fwd_kernel_o.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.cubin",
+      "chunk_fwd_kernel_o.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.json"
+    }
+  },
+  "cache/triton/54SXEM5326IZTNNY6SEG7NPFRCGXC3QDPYWITXKR4ZVXNOTM45ZQ/chunk_fwd_kernel_o.json": {
+    "hash": "ef257233bbd79199b5b8f4886fb5e5888d716e037e2c89dd51e66b76ba6ce773",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 49152,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_fwd_kernel_o"
+  },
+  "cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/__grp__chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json"
+    }
+  },
+  "cache/triton/6RI26JFUJGENDREMUSBG5PHEBXNTBL6RZUNRMMCBCVLRWHPYPDBQ/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "hash": "f451af24b44988d1c48ca4826ebce40ddb30afd1cd1b16304115571b1df878c3",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 2,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 47872,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kernel_h_blockdim64"
+  },
+  "cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/__grp__chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json"
+    }
+  },
+  "cache/triton/6U7RMM7GNPFH6JDOESWBWH2TI4LNV37BNQXUSXL6QKAZ277AUJLA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "hash": "f53f1633e66bca7f246e24ac1b1f534716daefe16c2f495d7e82819d7fe0a256",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 2,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 62208,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kernel_h_blockdim64"
+  },
+  "cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/__grp__chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.source",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json"
+    }
+  },
+  "cache/triton/6VH3D6GYLRB2S3UBBBAKZAPLGVLCZLC4GLKZTTMZPK6PQAC4RSWQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "hash": "f54fb1f8d85c43a96e810840ac81eb35562cac5c32d599cd997abcf8005c8cad",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 4224,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kkt_solve_kernel"
+  },
+  "cache/triton/73G5JTXUSC34DRZIML5B2UGJ7KHKVAL7R32EO3SZOVQT55KTOZWA/l2norm_fwd_kernel.autotune.json": {
+    "key": [
+      128,
+      1,
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.float32"
+    ],
+    "configs_timings": [
+      [
+        {
+          "kwargs": {
+            "BT": 8
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 16
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.004095999989658594,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 32
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.006111999973654747,
+          0.006304000038653612
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 64
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.008191999979317188,
+          0.006175999995321035,
+          0.008191999979317188
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 128
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.014336000196635723,
+          0.014303999952971935,
+          0.014368000440299511
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 8
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.006111999973654747
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 16
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006207999773323536
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 32
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.006111999973654747,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 64
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.006111999973654747,
+          0.008031999692320824
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 128
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.008191999979317188,
+          0.008128000423312187,
+          0.008224000222980976
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 8
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006175999995321035
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 16
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.0052608000114560145
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 32
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006207999773323536
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 64
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006175999995321035
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 128
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.006144000217318535,
+          0.006175999995321035
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 8
+          },
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.006111999973654747
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 16
+          },
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006175999995321035
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 32
+          },
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.006124800071120263
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 64
+          },
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.004095999989658594,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 128
+          },
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006175999995321035
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 8
+          },
+          "num_warps": 16,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 16
+          },
+          "num_warps": 16,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.005254400148987771
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 32
+          },
+          "num_warps": 16,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.005280000157654285
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 64
+          },
+          "num_warps": 16,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BT": 128
+          },
+          "num_warps": 16,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.006144000217318535,
+          0.0060800001956522465,
+          0.006207999773323536
+        ]
+      ]
+    ]
+  },
+  "cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/AVYSWHDSR2HEIYNZTBM72OH32O6KIYNQYO7K3TVP6B47ASK3NNUA/recompute_w_u_fwd_kernel.json": {
+    "hash": "05712b1c728e8e4461b99859fd38fbd3bca461b0c3beadceaff079f0495b6b68",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 29184,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/DMABOFKYXESURHCE2OGBXRWAVRP7IZV26UYG6NCW5U5V4X6YYL6A/l2norm_fwd_kernel.json": {
+    "hash": "1b00171558b925489c44d38c1bc6c0ac5ff466baf5306f3456ed3b5e5fd8c2fc",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 16,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 64,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/DQREUI7FZPV2T7W5CXLHJJSNWR3EHP6J2SJ67AL3VDLQ7UWDRHMQ/chunk_local_cumsum_scalar_kernel.autotune.json": {
+    "key": [
+      1,
+      16,
+      64,
+      false,
+      false,
+      "torch.float32",
+      "torch.float32"
+    ],
+    "configs_timings": [
+      [
+        {
+          "kwargs": {},
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.0049600000493228436
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.004127999767661095
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.0041600000113248825,
+          0.004064000211656094,
+          0.006144000217318535
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.004095999989658594,
+          0.004095999989658594,
+          0.004127999767661095
+        ]
+      ]
+    ]
+  },
+  "cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/EB2SFK5ZCLFJ7ABOW6URRORAI5SU46F3QQH2CHMB6ZEE63MDHJWA/l2norm_fwd_kernel.json": {
+    "hash": "207522abb912ca9f802eb7a918ba2047654e78bb840fa11d81f6484f6d833a6c",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 32,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/ETMNDC6RHVBSLVZGW6AW4BET7XSBQX23VUXMZTXGCC5JN64BHULQ/chunk_fwd_kernel_o.autotune.json": {
+    "key": [
+      16,
+      16,
+      128,
+      128,
+      64,
+      false,
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.float32",
+      "torch.bfloat16"
+    ],
+    "configs_timings": [
+      [
+        {
+          "kwargs": {
+            "BK": 128,
+            "BV": 128
+          },
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.00940799992531538,
+          0.009312000125646591,
+          0.009440000168979168
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 64,
+            "BV": 64
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.009279999881982803,
+          0.007360000163316727,
+          0.009440000168979168
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 32,
+            "BV": 32
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.010400000028312206,
+          0.010208000428974628,
+          0.01119999960064888
+        ]
+      ]
+    ]
+  },
+  "cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/__grp__chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.source",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json"
+    }
+  },
+  "cache/triton/FJBLBPAVZJ3F3TJAONG27AEFSRYD4JSPRLIDRRYFAOVXRNLSCVMA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "hash": "2a42b0bc15ca765dcd20734daf808594703e264f8ad038c70503ab78b5721558",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 8448,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kkt_solve_kernel"
+  },
+  "cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/__grp__chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.source",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json"
+    }
+  },
+  "cache/triton/FP5GV56QOXLA6T5ARR4A36OUCM7I7SVIBLR22TCBKJE6WQTHENLA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "hash": "2bfa6af7d075d60f4fa08c780df9d4133e8fcaa80ae3ad4c415249eb42672356",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 3712,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kkt_solve_kernel"
+  },
+  "cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/G3J4PHYKLCHEVXAE4URKCYZDDBKVKUMOQF4TRXAL7ND44JABKQ2Q/l2norm_fwd_kernel.json": {
+    "hash": "36d3c79f0a588e4adc04e522a16323185555518e817938dc0bfb47ce24015435",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 512,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/__grp__chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json"
+    }
+  },
+  "cache/triton/G3UHJSUBOWV4UFKJXNQH23ASHKKP6QEGNMBTFF233ZS6DQOQH72A/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "hash": "36e874ca8175abca1549bb607d6c123a94ff40866b0332975bde65e1c1d03ff4",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 1,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 24576,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kernel_h_blockdim64"
+  },
+  "cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/__grp__chunk_local_cumsum_scalar_kernel.json": {
+    "child_paths": {
+      "chunk_local_cumsum_scalar_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.source",
+      "chunk_local_cumsum_scalar_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.ttir",
+      "chunk_local_cumsum_scalar_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.ttgir",
+      "chunk_local_cumsum_scalar_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.llir",
+      "chunk_local_cumsum_scalar_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.ptx",
+      "chunk_local_cumsum_scalar_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.cubin",
+      "chunk_local_cumsum_scalar_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.json"
+    }
+  },
+  "cache/triton/G7WPCT2B4UQHQPPFRD4S4JWMECOKIKVEZG3WRXFHCD5ELLHIEFTQ/chunk_local_cumsum_scalar_kernel.json": {
+    "hash": "37ecf14f41e520783de588f92e26cc209ca42aa4c9b768dca710fa45ace82167",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 0,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_local_cumsum_scalar_kernel"
+  },
+  "cache/triton/HDHJPVKNIEVQBCJTDOFPZ67FVVBRDCNY4QXY3EBNHIS36XKD7CPQ/recompute_w_u_fwd_kernel.autotune.json": {
+    "key": [
+      16,
+      16,
+      128,
+      128,
+      64,
+      64,
+      64,
+      false,
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.float32"
+    ],
+    "configs_timings": [
+      [
+        {
+          "kwargs": {},
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 2,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.012384000234305859,
+          0.012223999947309494,
+          0.01321600005030632
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.01128000020980835,
+          0.011136000044643879,
+          0.01228800043463707
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 4,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.011264000087976456,
+          0.011103999800980091,
+          0.01228800043463707
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 2,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.01033599954098463,
+          0.01017600018531084,
+          0.011168000288307667
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.009119999594986439,
+          0.008287999778985977,
+          0.010239999741315842
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 4,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.009151999838650227,
+          0.008224000222980976,
+          0.010239999741315842
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 2,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.01027199998497963,
+          0.010143999941647053,
+          0.011136000044643879
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.009119999594986439,
+          0.008294399827718735,
+          0.010208000428974628
+        ]
+      ],
+      [
+        {
+          "kwargs": {},
+          "num_warps": 8,
+          "num_ctas": 1,
+          "num_stages": 4,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.007360000163316727,
+          0.0072639998979866505,
+          0.007391999941319227
+        ]
+      ]
+    ]
+  },
+  "cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/__grp__chunk_local_cumsum_scalar_kernel.json": {
+    "child_paths": {
+      "chunk_local_cumsum_scalar_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.source",
+      "chunk_local_cumsum_scalar_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.ttir",
+      "chunk_local_cumsum_scalar_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.ttgir",
+      "chunk_local_cumsum_scalar_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.llir",
+      "chunk_local_cumsum_scalar_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.ptx",
+      "chunk_local_cumsum_scalar_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.cubin",
+      "chunk_local_cumsum_scalar_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.json"
+    }
+  },
+  "cache/triton/HGHN7A77Y5MJJLLS5S5SK7ANJC767R5TJVJCWIANBGO3GV6XK2GQ/chunk_local_cumsum_scalar_kernel.json": {
+    "hash": "398edf83ffc75894ad72ecbb257c0d48bfefc7b34d522b200d099db357d7568d",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 8,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_local_cumsum_scalar_kernel"
+  },
+  "cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/HNRQEWIF3LOYYNQ74BLCBBQXPW6IIITQ6AP56P3PO32SQG52QQ3A/l2norm_fwd_kernel.json": {
+    "hash": "3b63025905dadd8c361fe0562086177dbc842270f01fdf3f6f76f5281bba8436",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 128,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/HXS4ASOUFBHOERSKWMDQXFFUFJSILH6WGEDLGYX3TI375HLAAWMA/recompute_w_u_fwd_kernel.json": {
+    "hash": "3de5c049d4284ee2464ab3070b94b42a64859fd63106b362fb9a37fe9d600598",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 4,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 35072,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/J3YQAGAYU6MXPV3GCALVS56HNDUWZQ5LBGHNOWMXW7ZXMDE6O7XA/l2norm_fwd_kernel.json": {
+    "hash": "4ef1001818a79977d76610175977c768e96cc3ab098ed75997b7f3760c9e77ee",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 64,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/__grp__chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.source",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json"
+    }
+  },
+  "cache/triton/JA3FEXJY55ZDNIV474FLJTHLBOHJGRICKH2WTBVN3LXMSXKXSUUA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "hash": "4836525d38ef7236a2bcff0ab4cceb0b8e93450251f56986addaeec95d579528",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 7296,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kkt_solve_kernel"
+  },
+  "cache/triton/K5WVJOP6JQTRAIOVD674XTITAACSP4TXRJ3IS7RBGNSQXRY7V3GQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.autotune.json": {
+    "key": [
+      16,
+      16,
+      128,
+      16,
+      "torch.bfloat16",
+      "torch.float32",
+      "torch.bfloat16",
+      "torch.bfloat16"
+    ],
+    "configs_timings": [
+      [
+        {
+          "kwargs": {
+            "BK": 32
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.019648000597953796,
+          0.019551999866962433,
+          0.019680000841617584
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 32
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.02054399996995926,
+          0.020447999238967896,
+          0.021407999098300934
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 32
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.022431999444961548,
+          0.021376000717282295,
+          0.022624000906944275
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 64
+          },
+          "num_warps": 1,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.01759999990463257,
+          0.017503999173641205,
+          0.017632000148296356
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 64
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.017503999173641205,
+          0.015584000386297703,
+          0.017632000148296356
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BK": 64
+          },
+          "num_warps": 4,
+          "num_ctas": 1,
+          "num_stages": 3,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.019328000023961067,
+          0.01849599927663803,
+          0.01958400011062622
+        ]
+      ]
+    ]
+  },
+  "cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/KOI3RFCUOHODSCGMSD6VSUYBC22DGTRYV6PCZXFYPSV7MTCU266A/l2norm_fwd_kernel.json": {
+    "hash": "5391b8945471dc3908cc90fd59530116b4334e38af9e2cdcb87cabf64c54d7bc",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 64,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/__grp__chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.source",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json"
+    }
+  },
+  "cache/triton/KPBRSYEZ4KBZ5VBPQOCLLAPYV4G677GO5WQZFKUPS4IEAXYX4QBA/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "hash": "53c3196099e2839ed42f8384b581f8af0deffcceeda192aa8f9710405f17e402",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 7296,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kkt_solve_kernel"
+  },
+  "cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/LRQXZKUELJMO2RTBXW5G6NFXSKMCM4TKOHPDCU2W6Z6FEVHBBPIQ/l2norm_fwd_kernel.json": {
+    "hash": "5c617caa845a58ed4661bdba6f34b7929826726a71de315356f67c5254e10bd1",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 128,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/__grp__chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.source",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ttgir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.llir",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.ptx",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.cubin",
+      "chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json"
+    }
+  },
+  "cache/triton/M4QRCEMDPEVSFZSQZYLBMBVYOWXX5ACWXCZ6ORH5GDDAVUYBZ4VQ/chunk_gated_delta_rule_fwd_kkt_solve_kernel.json": {
+    "hash": "6721111183792b22e650ce161606b875af7e8056b8b3e744fd30c60ad301cf2b",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 4352,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kkt_solve_kernel"
+  },
+  "cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/NS75WNAB223HRNF3X4DCFUKRGADMJCYRTFCIUWUUSP3GZSSHQEWA/l2norm_fwd_kernel.json": {
+    "hash": "6cbfdb3401d6b678b4bbbf0622d1513006c48b1199448a5a9493f66cca47812c",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 16,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 64,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/OH7JKJPYJOFXMCAEACRVTDU5KI72UEF2OVQHIKE6XLSNSZEZHDQA/l2norm_fwd_kernel.json": {
+    "hash": "71fe9525f84b8b76080400a3598e9d523faa10ba756074289ebae4d9649938e0",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 64,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/PDIOURE6KRJNDGQY6JSI6CPY52GWCSE2IP77ZEXBMD647YOWK2HQ/l2norm_fwd_kernel.json": {
+    "hash": "78d0ea449e5452d19a18f2648f09f8ee8d61489a43fffc92e160fdcfe1d6568f",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 16,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 128,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/PHL5MOBPVET34HS54Q24UUP3AOUXMCQA2QU75HV7WWY2WQJWD3DA/recompute_w_u_fwd_kernel.json": {
+    "hash": "79d7d6382fa927be1e5de435ca51fb03a9760a00d429fe9ebfb5b1ab41361ec6",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 26880,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/POGRQZUYXT64M74X3F3GEDGA5UDTKS3QTKE7VSLL67XHWU6CGIBA/l2norm_fwd_kernel.json": {
+    "hash": "7b8d186698bcfdc67f97d976620cc0ed07354b709a89fac96bf7ee7b53c23202",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 512,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/__grp__chunk_local_cumsum_scalar_kernel.json": {
+    "child_paths": {
+      "chunk_local_cumsum_scalar_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.source",
+      "chunk_local_cumsum_scalar_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.ttir",
+      "chunk_local_cumsum_scalar_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.ttgir",
+      "chunk_local_cumsum_scalar_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.llir",
+      "chunk_local_cumsum_scalar_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.ptx",
+      "chunk_local_cumsum_scalar_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.cubin",
+      "chunk_local_cumsum_scalar_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.json"
+    }
+  },
+  "cache/triton/PYPHW55E56I7FY6G7FN5S76DD5RNKFHYNRVKSH6OTNKWW62MLWDA/chunk_local_cumsum_scalar_kernel.json": {
+    "hash": "7e1e7b77a4ef91f2e3c6f95bd97fc31f62d514f86c6aa91fce9b556b7b4c5d86",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 8,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_local_cumsum_scalar_kernel"
+  },
+  "cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/QFDCTYDCYH24VXJ2A7QO2TUHMJIX2ZGSVNWY2NXDEFXJ3OZPD7HQ/l2norm_fwd_kernel.json": {
+    "hash": "814629e062c1f5cadd3a07e0ed4e8762517d64d2ab6d8d36e3216e9dbb2f1fcf",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 256,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/__grp__chunk_local_cumsum_scalar_kernel.json": {
+    "child_paths": {
+      "chunk_local_cumsum_scalar_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.source",
+      "chunk_local_cumsum_scalar_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.ttir",
+      "chunk_local_cumsum_scalar_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.ttgir",
+      "chunk_local_cumsum_scalar_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.llir",
+      "chunk_local_cumsum_scalar_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.ptx",
+      "chunk_local_cumsum_scalar_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.cubin",
+      "chunk_local_cumsum_scalar_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.json"
+    }
+  },
+  "cache/triton/QOJDWSYQYDZBRZS24J5ADLABCNDLN47FKWFWWABOJ7PDYPD52PMA/chunk_local_cumsum_scalar_kernel.json": {
+    "hash": "83923b4b10c0f218e65ae27a01ac011346b6f3e5558b6b002e4fde3c3c7dd3d8",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 8,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_local_cumsum_scalar_kernel"
+  },
+  "cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/__grp__chunk_fwd_kernel_o.json": {
+    "child_paths": {
+      "chunk_fwd_kernel_o.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.source",
+      "chunk_fwd_kernel_o.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.ttir",
+      "chunk_fwd_kernel_o.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.ttgir",
+      "chunk_fwd_kernel_o.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.llir",
+      "chunk_fwd_kernel_o.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.ptx",
+      "chunk_fwd_kernel_o.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.cubin",
+      "chunk_fwd_kernel_o.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.json"
+    }
+  },
+  "cache/triton/RQIBU6TP44UB6AKKFBV5IHMH32YBHUF5A2CC4QJBKNZY6T3GHKKA/chunk_fwd_kernel_o.json": {
+    "hash": "8c101a7a6fe7281f014a286bd41d87deb013d0bd06842e412153738f4f663a94",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 20480,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_fwd_kernel_o"
+  },
+  "cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/SF75BYHHT5BSB2ZF6MHMZXCJP7KTPDYPWZ2JDPUUJRGMTYPIOMPA/l2norm_fwd_kernel.json": {
+    "hash": "917fd0e0e79f4320eb25f30eccdc497fd5378f0fb67491be944c4cc9e1e8731e",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 32,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/U5MIPJOD2LIUBFYHJANQIJFCEFVT7JKVAOXH2HCRBLGMKIFAGX7Q/l2norm_fwd_kernel.json": {
+    "hash": "a75887a5c3d2d1409707481b0424a2216b3fa55503ae7d1c510accc520a035ff",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 64,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/UGT5DNN5GBCME2JIAQKI7HBF7XDMHSSRVSHF6ENGLF4JWM6BTHMQ/recompute_w_u_fwd_kernel.json": {
+    "hash": "a1a7d1b5bd3044c2692804148f9c25fdc6c3ca51ac8e5f11a659789b33c199d9",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 29184,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/V4L2WXB72G6NSXIL5XW57CYGL3MDUCLHCN3XU2CZLG3RXNAQKKMQ/recompute_w_u_fwd_kernel.json": {
+    "hash": "af17ab5c3fd1bcd95d0bededdf8b065ed83a096713777a685959b71bb4105299",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 2,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 18688,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/VDBQXYK6JZ53J6F666D5Y2DNFIM2WJFLR4YXI37SLSGL7XSSIH6A/recompute_w_u_fwd_kernel.json": {
+    "hash": "a8c30be15e4e7bb4f8bef787dc686d2a19ab24ab8f31746ff25c8cbfde5241fc",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 2,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 20992,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/__grp__recompute_w_u_fwd_kernel.json": {
+    "child_paths": {
+      "recompute_w_u_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.source",
+      "recompute_w_u_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.ttir",
+      "recompute_w_u_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.ttgir",
+      "recompute_w_u_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.llir",
+      "recompute_w_u_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.ptx",
+      "recompute_w_u_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.cubin",
+      "recompute_w_u_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.json"
+    }
+  },
+  "cache/triton/WE7UPGM3BJMZQ657XED7OEIC5Q22VLSS4MXU7P2U7E334YAGUPMA/recompute_w_u_fwd_kernel.json": {
+    "hash": "b13f47999b0a59987bbfb907f71102ec35aaae52e32f4fbf54f937be6006a3d8",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 2,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 20992,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "recompute_w_u_fwd_kernel"
+  },
+  "cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/WJCB2SJ77U2YIGX5SRNBEK4XESCWZO67YPY36AAIBXV3QVSEJSEA/l2norm_fwd_kernel.json": {
+    "hash": "b2441d493ffd35841afd945a122b9724856cbbdfc3f1bf00080debb856444c88",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 1,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 256,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/WZPBN7DYKWYVD4INIRTOTAFDPKIHIVEXM5SICRVWPLTO5FXPFYAQ/l2norm_fwd_kernel.json": {
+    "hash": "b65e16fc7855b151f10d4466e980a37a9074549767648146b67ae6ee96ef2e01",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 128,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/X655EIOB63IOEI6OEY7MOGY6EM4L6AAXXGZUBCRLYRWTI7J7VHOQ/l2norm_fwd_kernel.json": {
+    "hash": "bfbbd221c1f6d0e223ce263ec71b1e2338bf0017b9b3408a2bc46d347d3fa9dd",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 32,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/XG6RPRPP4R2VFSX2XX53GL4JISNE5WNNWTP3T57GKGUOYZ3LHINA/l2norm_fwd_kernel.json": {
+    "hash": "b9bd17c5efe47552cafabdfbb32f89449a4ed9adb4dfb9f7e651a8ec676b3a1a",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 256,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/XS7NKITGTEMJZQ26FKOCZXX33CYG4U3XHAKTP5DAUF322BRI5TVA/l2norm_fwd_kernel.json": {
+    "hash": "bcbed5226699189cc35e2a9c2cdefbd8b06e5377381537f460a177ad0628ecea",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 8,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 512,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/Y6VDH6HIUQEJWLDQ5M63BL3ZS6VFITNSGSKSLJAB5MAS5ZZMNIHA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.autotune.json": {
+    "key": [
+      16,
+      16,
+      128,
+      128,
+      64,
+      false,
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.bfloat16",
+      "torch.float32",
+      "torch.bfloat16"
+    ],
+    "configs_timings": [
+      [
+        {
+          "kwargs": {
+            "BV": 32
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 2,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.011136000044643879,
+          0.010239999741315842,
+          0.011392000131309032
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BV": 64
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 2,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.013535999692976475,
+          0.013472000136971474,
+          0.015552000142633915
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BV": 32
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 1,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.013504000380635262,
+          0.013344000093638897,
+          0.013535999692976475
+        ]
+      ],
+      [
+        {
+          "kwargs": {
+            "BV": 64
+          },
+          "num_warps": 2,
+          "num_ctas": 1,
+          "num_stages": 1,
+          "maxnreg": null,
+          "pre_hook": null,
+          "ir_override": null
+        },
+        [
+          0.020255999639630318,
+          0.019328000023961067,
+          0.020608000457286835
+        ]
+      ]
+    ]
+  },
+  "cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/YMYVBOIFSIKQELSKQKFJDAJAH5IN5YMD2ULESW5I4TZDMV2NPWLQ/l2norm_fwd_kernel.json": {
+    "hash": "c33150b9059215022e4a828a9181203f50dee183d516495ba8e4f236574d7d97",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 16,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 256,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/__grp__chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "child_paths": {
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.source",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ttgir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.llir",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.ptx",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.cubin",
+      "chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json"
+    }
+  },
+  "cache/triton/YQFU4VQKQSRAAXDIP2GG2YDDX3GZPAW3J36CGLTZW675PXH4A5LA/chunk_gated_delta_rule_fwd_kernel_h_blockdim64.json": {
+    "hash": "c40b4e560a84a2005c687e8c6d6063becd9782db4efc232e79b7bfd7dcfc0756",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 1,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 16384,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "chunk_gated_delta_rule_fwd_kernel_h_blockdim64"
+  },
+  "cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/Z6GRRS7RBZKAXVQQHUW33YWAHEHM47FLLSYSSBBKYS6L6NSCIXKA/l2norm_fwd_kernel.json": {
+    "hash": "cf8d18cbf10e540bd6103d2dbde2c0390ece7cab5cb129042ac4bcbf364245d4",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 16,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 512,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/Z6ZNC5ADV43FRGQAHZ3JMYNSQ6JNWZIXSBLMIHHNF6METPWIUX5Q/l2norm_fwd_kernel.json": {
+    "hash": "cfb2d17403af36589a003e769661b28792db65179056c41ced2f9849bec8a5fb",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 2,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 512,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/ZL7A42HKL4HYRGPQ3DKOD3ZJVAXTKJVV4ESBFFT7MHDTBXOOESEA/l2norm_fwd_kernel.json": {
+    "hash": "cafe0e68ea5f0f8899f0d8d4e1ef29a82f3526b5e12412967f61c730ddce2488",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 128,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  },
+  "cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/__grp__l2norm_fwd_kernel.json": {
+    "child_paths": {
+      "l2norm_fwd_kernel.source": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.source",
+      "l2norm_fwd_kernel.ttir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.ttir",
+      "l2norm_fwd_kernel.ttgir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.ttgir",
+      "l2norm_fwd_kernel.llir": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.llir",
+      "l2norm_fwd_kernel.ptx": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.ptx",
+      "l2norm_fwd_kernel.cubin": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.cubin",
+      "l2norm_fwd_kernel.json": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/pilot/run_002/cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.json"
+    }
+  },
+  "cache/triton/ZTVATB2G3QQYIIST7TNH53IJODC74EZCEN2LFYY74GRRWNOZYT3Q/l2norm_fwd_kernel.json": {
+    "hash": "ccea098746dc21842253fcda7eed0970c5fe13222374b2e31fe1a31b35d9c4f7",
+    "target": {
+      "backend": "cuda",
+      "arch": 120,
+      "warp_size": 32
+    },
+    "num_warps": 4,
+    "num_ctas": 1,
+    "num_stages": 3,
+    "maxnreg": null,
+    "cluster_dims": [
+      1,
+      1,
+      1
+    ],
+    "ptx_version": null,
+    "ptx_options": null,
+    "ir_override": null,
+    "enable_fp_fusion": true,
+    "launch_cooperative_grid": false,
+    "launch_pdl": false,
+    "supported_fp8_dtypes": [
+      "fp8e4b15",
+      "fp8e4nv",
+      "fp8e5"
+    ],
+    "deprecated_fp8_dot_operand_dtypes": [
+      "fp8e4b15"
+    ],
+    "default_dot_input_precision": "tf32",
+    "allowed_dot_input_precisions": [
+      "tf32",
+      "tf32x3",
+      "ieee"
+    ],
+    "max_num_imprecise_acc_default": 0,
+    "extern_libs": [
+      [
+        "libdevice",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/lib/python3.10/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+      ]
+    ],
+    "debug": false,
+    "backend_name": "cuda",
+    "sanitize_overflow": true,
+    "arch": "sm120",
+    "triton_version": "3.4.0",
+    "tensordesc_meta": [],
+    "shared": 256,
+    "tmem_size": 0,
+    "global_scratch_size": 0,
+    "global_scratch_align": 1,
+    "name": "l2norm_fwd_kernel"
+  }
+}

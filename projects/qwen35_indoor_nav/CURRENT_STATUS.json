@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-17T17:28:00.493624+08:00",
-  "phase": "DIAGNOSTICS_CLOSED_HANDOFF_READY",
+  "updated": "2026-09-18T00:55:03.461100+08:00",
+  "phase": "V5_ENGINEERING_AND_DEBUG_PILOT_COMPLETE",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
-  "current_report": "reviews/Q35N_RECOVERY_20260917/REPORT_ZH.md",
+  "current_report": "closed_loop_bench/ordinary_cycle_pair_recovery_v5/REPORT_ZH.md",
   "learnability": {
     "status": "COMPLETE_PASS",
     "updates": 400,
@@ -38,5 +38,52 @@
   "legacy_status_note": "STATUS.json and lower historical README/AGENTS entries are not current process state",
   "final_review": "reviews/Q35N_RECOVERY_20260917/FINAL_REVIEW.json",
   "cycle_pair_recovery_v4_report": "closed_loop_bench/ordinary_cycle_pair_recovery_v4/REPORT_ZH.md",
-  "codex_return_20260917_report": "reviews/Q35N_CODEX_RETURN_20260917/DECISION_ZH.md"
+  "codex_return_20260917_report": "reviews/Q35N_CODEX_RETURN_20260917/DECISION_ZH.md",
+  "cycle_pair_recovery_v5": {
+    "running": false,
+    "protocol": "closed_loop_bench/ordinary_cycle_pair_recovery_v5/PROTOCOL.json",
+    "progress": "closed_loop_bench/ordinary_cycle_pair_recovery_v5/sessions/session_001/PROGRESS.json",
+    "result": "closed_loop_bench/ordinary_cycle_pair_recovery_v5/RESULT.json",
+    "authorization": "User V5 supersedes exclusive lease/4100s/single-start and SR40 pilot prerequisites; old results remain historical",
+    "status": "COMPLETE",
+    "complete_pairs": 100,
+    "pending_pairs": 0,
+    "episode_executions": 200,
+    "behavioral_comparison_valid": true,
+    "logits_bitwise_equal": true,
+    "max_logit_delta": 0.0,
+    "argmax_flip_count": 0,
+    "delta_sr": 0.0,
+    "A_sr": 0.2,
+    "B_sr": 0.2,
+    "benefit": "NO_SR_GAIN",
+    "adopted": false,
+    "gpu_hours": 1.363966404063847,
+    "report": "closed_loop_bench/ordinary_cycle_pair_recovery_v5/REPORT_ZH.md"
+  },
+  "continuation_memory_pilot_v5": {
+    "running": false,
+    "status": "DEBUG_FORWARD_BACKWARD_UPDATES_COMPLETE",
+    "result": "research/continuation_memory_v1/pilot/run_002/RESULT.json",
+    "real_qwen_forwards": 764,
+    "frozen_encoder_unchanged": true,
+    "diagnostic_updates": 1,
+    "B2_updates": 100,
+    "Ours_updates": 100,
+    "gpu_hours": 0.07592740745160781,
+    "failed_before_model_load_attempts": 1,
+    "repairs": "Tuple/list JSON serialization identity; labels/features/hyperparameters unchanged",
+    "B2_effective_query_fit_accuracy": 1.0,
+    "Ours_effective_query_fit_accuracy": 0.8333333134651184,
+    "independent_test": false,
+    "closed_loop_gain_tested": false,
+    "scientific_superiority": "UNTESTED",
+    "original_training_admission": false
+  },
+  "v5_handoff": {
+    "branch": "codex/q35n-v5-runtime-20260917",
+    "reviewed_start_commit": "7f65fd04b54cea7f3844ec128a493f75501bbeb2",
+    "report": "closed_loop_bench/ordinary_cycle_pair_recovery_v5/REPORT_ZH.md",
+    "stop_reason": "Authorized engineering100 pairs and bounded real prototype/B2-Ours updates completed; no automatic next experiment"
+  }
 }

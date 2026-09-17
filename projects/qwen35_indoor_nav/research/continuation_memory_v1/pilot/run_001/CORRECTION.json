@@ -1,0 +1,19 @@
+{
+  "unix": 1789663690.8742175,
+  "root_cause": "Compiler categories/rooms tuples compared directly against JSON lists",
+  "evidence": "Only those two Python container types differed; complete JSON roundtrip equality was true",
+  "fix": "prepare returns its complete JSON representation",
+  "data_sha256": "e65aca3fa088c1992d770b3118aed2253224dba402926cfcf4c611446e7ab380",
+  "labels_features_model_and_hyperparameters_changed": false,
+  "model_loaded_in_failed_attempt": false,
+  "real_forwards_in_failed_attempt": 0,
+  "regression_test": {
+    "passed": true,
+    "tests": 1,
+    "seconds": 5.020049315877259,
+    "gpu_used": false,
+    "real_qwen_features": false,
+    "regression": "Compiler tuple vocabulary roundtrips to identical persisted JSON; no label/feature change"
+  },
+  "retry_reason": "Deterministic data serialization interface repair, not numerical reroll or score selection"
+}
