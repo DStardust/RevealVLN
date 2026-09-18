@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-18T12:50:10.668582+08:00",
-  "phase": "V7_MEMORY_TRANSFER_CLOSED_LOOP_RUNNING",
+  "updated": "2026-09-18T15:10:50.643116+08:00",
+  "phase": "V8_COLD_START_REPAIR_TRAINING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
-  "current_report": "reviews/Q35N_V6_REPAIR_20260918/REPORT_ZH.md",
+  "current_report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
   "learnability": {
     "status": "COMPLETE_PASS",
     "updates": 400,
@@ -145,7 +145,7 @@
     ],
     "updates_per_arm": 600,
     "benefit": "NO_CLEAR_INCREMENT_OVER_MATCHED_CONTROLS",
-    "closed_loop_gain_tested": false,
+    "closed_loop_gain_tested": true,
     "authorization": "User removed GPU-hour bound on2026-09-18; shared-resource protections retained",
     "result": "research/continuation_memory_v1/multifamily_v7/run_001/RESULT.json",
     "review": "research/continuation_memory_v1/multifamily_v7/REVIEW.json",
@@ -154,7 +154,7 @@
     "gpu_hours": 1.1488805877913384
   },
   "memory_transfer_v7": {
-    "running": true,
+    "running": false,
     "protocol": "closed_loop_bench/ordinary_memory_transfer_v7/PROTOCOL.json",
     "arms": {
       "A": "native",
@@ -168,8 +168,37 @@
     "seed_selected_by_score": false,
     "progress": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/PROGRESS.json",
     "process": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/PROCESS.json",
-    "latest_confirmed_milestone": 20,
-    "milestone_report": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/MILESTONE_020.json",
-    "full_effect_conclusion_pending": true
+    "latest_confirmed_milestone": 100,
+    "milestone_report": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/MILESTONE_100.json",
+    "full_effect_conclusion_pending": false,
+    "status": "VALID_COMPLETE",
+    "complete_quartets": 100,
+    "episode_executions": 400,
+    "decisions": 81425,
+    "sr": {
+      "A": 0.2,
+      "B": 0.18,
+      "C": 0.14,
+      "D": 0.16
+    },
+    "benefit": "NO_NAVIGATION_GAIN",
+    "adopted": false,
+    "gpu_hours": 3.0443003872999945,
+    "result": "closed_loop_bench/ordinary_memory_transfer_v7/RESULT.json",
+    "metric_and_log_recomputed": true
+  },
+  "cold_start_repair_v8": {
+    "running": true,
+    "status": "TRAINING",
+    "protocol": "research/continuation_memory_v1/cold_start_repair_v8/PROTOCOL.json",
+    "closed_loop_protocol": "closed_loop_bench/ordinary_memory_transfer_v8/PROTOCOL.json",
+    "implementation_commit": "2af314206fd15d107caba63e3bbd849905624ca4",
+    "basis": "FIT has no supervised action before zero-based index156; add same early-prefix native-policy KL to B1/B2/Ours. Runtime interface and STOP unchanged.",
+    "gpu_hours": 0,
+    "cpu_tests": 3,
+    "closed_loop_cpu_tests": 6,
+    "benefit": "UNTESTED",
+    "automatic_deployment": false,
+    "progress": "research/continuation_memory_v1/cold_start_repair_v8/run_001/PROGRESS.json"
   }
 }

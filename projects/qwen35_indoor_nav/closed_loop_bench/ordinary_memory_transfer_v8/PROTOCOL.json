@@ -87,7 +87,7 @@
     "closed_loop_bench/ordinary_cycle_pair_recovery_v5/SOURCE_LOCK.json": "162ed70ac5373581a7bd8e1b99e8e6f501e9a4fcefc83139166add78459a1606",
     "closed_loop_bench/ordinary_cycle_pair_recovery_v5/PROTOCOL.json": "bb2ceb69ea84638e3555daa336ab312ca6f71a565ebb751eceeeacea5a306e00",
     "closed_loop_bench/ordinary_cycle_pair_recovery_v5/launch.py": "0816d2af1b5b4103fde9059aeb3665093285ef6af88c2c483bb73766287c0f84",
-    "closed_loop_bench/ordinary_memory_transfer_v8/diagnose.py": "779dae7d6f632f68196e03b93e76429e8894301678ff6ebfd244f2c9c6eb0e5e",
+    "closed_loop_bench/ordinary_memory_transfer_v8/diagnose.py": "a0f836741f6dc522ebfd0eb612d16af934dbcde92fd1d39b5aac5ac6c2b4fcca",
     "research/continuation_memory_v1/cold_start_repair_v8/train.py": "d11d36691922f45e418fc9ccee98b00eddfbdf69475ebdced234486f0e319fc9",
     "research/continuation_memory_v1/cold_start_repair_v8/run.py": "95d7ef907fb541491a7640d63e51f35b27782ebb768099019be73cacabe547d3"
   },
@@ -106,5 +106,6 @@
   },
   "inherited_source_lock_verified_before_launch": true,
   "data_source": "research/continuation_memory_v1/multifamily_v7/DATA.json",
-  "repair_scope": "All learned heads use the same added native-policy KL on training prefix indices0..155; runtime update/action code, STOP rule, base, input and metrics unchanged."
+  "repair_scope": "All learned heads use the same added native-policy KL on training prefix indices0..155; runtime update/action code, STOP rule, base, input and metrics unchanged.",
+  "repeat_metric_scope": "Report both original short-window repeats and repeats including learned memory. Neither replaces SR or action cost."
 }

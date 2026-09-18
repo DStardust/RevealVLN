@@ -18,16 +18,26 @@ def interval(values):
 
 
 def main():
-    rows=list(review.committed().values())
+    found=review.committed()
+    rows=[found[k] for k in sorted(found)]
     assert len(rows)==100,'FULL_DENOMINATOR_REQUIRED'
+    for row in rows:
+        session=Path(row['path']).parents[2]
+        assert row['protocol_sha256']==c.sha(session/'source/PROTOCOL.json'),'PROTOCOL_IDENTITY_MISMATCH'
+        assert row['method_identity_sha256']==c.sha(session/'METHOD_IDENTITY.json'),'METHOD_IDENTITY_MISMATCH'
     coverage=c.read(MEMORY/'MECHANISM_DIAGNOSIS.json')['action_supervision_ages']['fit']
     first_index=coverage['zero_based_min']
     arms={}
-    for arm in ('B','C','D'):
+    for arm in ('A','B','C','D'):
         early=late=early_stop=late_stop=0
-        first=[];early_stop_loss_ids=[]
+        first=[];early_stop_loss_ids=[];full_repeats=0
         for row in rows:
             steps=c.records(Path(row['path']).parent/arm/'POLICY_STEPS.jsonl')
+            seen=set()
+            for decision in steps:
+                memory=decision['memory_fingerprint']
+                key=(decision['raw']['input_key'],memory['sha256'] if memory is not None else None)
+                full_repeats+=int(key in seen);seen.add(key)
             overrides=[d for d in steps if d['override']]
             if overrides:first.append(overrides[0]['step'])
             for decision in overrides:
@@ -40,7 +50,7 @@ def main():
                 if (before_support and extra_stop and row['episodes']['A']['success']
                         and not row['episodes'][arm]['success']):
                     early_stop_loss_ids.append(row['episode_id'])
-        arms[arm]=dict(overrides_before_first_training_action=early,overrides_in_later_steps=late,
+        arms[arm]=dict(full_raw_window_and_memory_input_repeats=full_repeats,overrides_before_first_training_action=early,overrides_in_later_steps=late,
             extra_stop_before_first_training_action=early_stop,extra_stop_in_later_steps=late_stop,
             first_override_step_median=statistics.median(first) if first else None,
             native_success_losses_with_early_extra_stop=early_stop_loss_ids)
@@ -71,6 +81,7 @@ def main():
         arms=arms,descriptive_delta_sr_intervals=uncertainty,bootstrap_draws=5000,bootstrap_seed=1209,
         uncertainty_limit='Episode resampling ignores house dependence; five-house cluster resampling is also descriptive and cannot establish broad generalization. No interval selects a policy.',
         causality_limit='Early-override/STOP co-occurrence is diagnostic, not a counterfactual ablation of that mechanism.',
+        repeat_metric_scope='RESULT repeated_decisions counts original instruction/RGB/action-window repeats, excluding memory. Full-input repeats include the logged post-update memory fingerprint. Merely changing memory values does not establish less navigation waste.',
         sessions=sessions),True)
     print('Completed full-denominator coverage, resource and descriptive uncertainty report.')
 
