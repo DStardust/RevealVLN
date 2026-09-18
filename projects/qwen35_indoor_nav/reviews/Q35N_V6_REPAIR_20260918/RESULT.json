@@ -1,0 +1,128 @@
+{
+  "status": "V6_READER_REPAIR_AND_STOP_DATA_COMPLETE",
+  "source_commit": "fb8473aa019958952efe99753889a908c8b07e55",
+  "branch": "codex/q35n-v6-query-repair-20260918",
+  "execution_complete": true,
+  "reader_repair_validated": true,
+  "new_navigation_evaluation": false,
+  "navigation_benefit": null,
+  "adopted_navigation_policy": false,
+  "scientific_superiority": "UNTESTED",
+  "original_training_admission": false,
+  "new_qwen_forwards": 0,
+  "new_environment_decisions": 0,
+  "optimizer_updates": 300,
+  "arms": {
+    "B2": {
+      "correct": 18,
+      "denominator": 18,
+      "updates": 100,
+      "equal_to_prior_checkpoint": true,
+      "final_state_sha256": "a12f8f57499fa40498601d81b94afe2717eef99143a56bb8d9eee39b52c6a314"
+    },
+    "Ours_last": {
+      "correct": 15,
+      "denominator": 18,
+      "updates": 100,
+      "equal_to_prior_checkpoint": true,
+      "final_state_sha256": "6e68e718f134096cf59ac14f11a26958a84811d8c66ff7639bc213217029bea7"
+    },
+    "Ours_mean": {
+      "correct": 16,
+      "denominator": 18,
+      "updates": 100,
+      "equal_to_prior_checkpoint": false,
+      "final_state_sha256": "925a0e8ace762ec3247c4a43e9d304af5d4cc0e148639584631987bff92852d0"
+    }
+  },
+  "stop_diagnosis": {
+    "status": "OFFLINE_DIAGNOSIS_COMPLETE",
+    "source": "V5 native A only",
+    "episodes": 100,
+    "sr": 0.2,
+    "near_at_decision": 48,
+    "missed_stop": 28,
+    "far_stop": 55,
+    "never_entered_at_decision": 52,
+    "near_decisions": 1981,
+    "far_decisions": 17324,
+    "near_margin_median": -3.6553497314453125,
+    "far_margin_median": -3.7967324256896973,
+    "stop_margin_auc": 0.5087347639098799,
+    "episode_balanced_auc": 0.6172571110187992,
+    "within_episode_unique_input_auc": 0.5695617408920499,
+    "by_house_auc": {
+      "82sE5b5pLXE": 0.5425949360496605,
+      "B6ByNegPMKs": 0.6209494494569678,
+      "PuKPg4mmafe": 0.40074416564520393,
+      "XcA2TqTSSAj": 0.5733732499779871,
+      "aayBHfsNo7d": 0.6725233884403434
+    },
+    "raw_keys_with_conflicting_range_labels": 0,
+    "existing_trace_oracle_stop_ceiling": 0.48,
+    "ceiling_scope": "Privileged earlier truncation of recorded native trajectories only; not a deployable SR or an upper bound after changing motion/suppressing old STOP",
+    "thresholds_searched": 0,
+    "model_updates": 0,
+    "new_environment_decisions": 0,
+    "gpu_hours": 0,
+    "exposure": "Already exposed INTERNAL_DEV; these labels are diagnostic, not new independent training/test data"
+  },
+  "fit_data": {
+    "status": "REAL_FIT_STOP_LABEL_INTERFACE_COMPLETE",
+    "routes": 6,
+    "houses": [
+      "17DRP5sb8fy",
+      "1LXtFkjw3qL",
+      "1pXnuDYAj8r"
+    ],
+    "counts": {
+      "decisions": 334,
+      "positive": 94,
+      "negative": 240,
+      "unknown": 0,
+      "positive_with_motion_teacher": 88
+    },
+    "source_index_sha256": "cde540543491579d644ffeca8f42127511c45876a3a34830f15f27f35758d7ec",
+    "official_dataset_sha256": "b6d356deff70d54050d45bc5ace0071e3d404b3ff8f68f528c625906f6b24662",
+    "decisions_sha256": "5f18e6e1bfe5e6337e75c1fe99bffd84f5305d34280c33c8126d57f8c0a2f02d",
+    "selection": "First three lexicographic FIT houses; first two unique physical routes by record ID per house; chosen without model outcomes",
+    "partition": "First two houses head_fit; third head_check. All houses were in backbone FIT, not blind scenes.",
+    "old_action_labels_modified": false,
+    "model_updates": 0,
+    "new_environment_decisions": 0,
+    "renderer_created": false,
+    "gpu_hours": 0,
+    "policy_fields": [
+      "instruction",
+      "rgb_paths",
+      "executed_actions"
+    ],
+    "label_scope": "can_stop is the existing geodesic<3m criterion at the decision input state, not proof of arbitrary language/program satisfaction",
+    "training_admission": "DATA_INTERFACE_ONLY; no STOP model trained or deployed"
+  },
+  "cpu_tests": {
+    "reader": 3,
+    "stop_data_current": 4,
+    "prior_stop_two_tests_included_in_four": true,
+    "saved_parameters_verified": true,
+    "real_rgb_alignment_verified": true
+  },
+  "resources": {
+    "gpu_hours": 0.04479609969608848,
+    "prior_pilot_gpu_hours": 0.07592740745160781,
+    "cumulative_research_gpu_hours": 0.12072350714769628,
+    "research_budget_gpu_hours": 4,
+    "automatic_retries": 0,
+    "peak_observed_own_gpu_mib": 854,
+    "peak_observed_rss_bytes": 1620414464,
+    "foreign_processes_signaled": [],
+    "remaining_owned_processes": []
+  },
+  "next_step": {
+    "engineering": "Frozen best4k causal features -> separate can_stop linear head; fit177/check157 decisions are interface-scale only; original action targets unchanged; no INTERNAL_DEV threshold search",
+    "research": "Audit additional real families and canonical cross-family query semantics; keep B2 strong control and whole-family/house split",
+    "stop_model_trained": false,
+    "closed_loop_memory_gain_tested": false
+  },
+  "report": "reviews/Q35N_V6_REPAIR_20260918/REPORT_ZH.md"
+}

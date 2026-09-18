@@ -1,0 +1,51 @@
+{
+  "id": "Q35N_QUERY_READER_REPAIR_V2",
+  "parent_commit": "fb8473aa019958952efe99753889a908c8b07e55",
+  "authorization": "User: directly proceed with next repair and design; retain V5 bounded-resource rules",
+  "gpu": 1,
+  "max_session_seconds": 600,
+  "research_cumulative_gpu_hours_limit": 4,
+  "arms": [
+    {
+      "id": "B2",
+      "loss": "B2",
+      "reader": "mean"
+    },
+    {
+      "id": "Ours_last",
+      "loss": "Ours",
+      "reader": "last"
+    },
+    {
+      "id": "Ours_mean",
+      "loss": "Ours",
+      "reader": "mean"
+    }
+  ],
+  "updates_per_arm": 100,
+  "seed": 1209,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "optimizer": "AdamW",
+  "sole_repair": "Training-only query GRU time mean instead of final hidden state; same parameter shapes",
+  "memory_and_action_path_changed": false,
+  "data_labels_and_features_changed": false,
+  "new_qwen_forwards": 0,
+  "new_environment_decisions": 0,
+  "hyperparameter_search_trials": 0,
+  "training_admission": false,
+  "scope": "Previously exposed SEE2 debug family, implementation repair and mechanism diagnostic only",
+  "source_hashes": {
+    "research/continuation_memory_v1/query_reader_repair_v2/launch.py": "f52292c1d504a81c1041121fe974abe626c691e67ef028004cedd1f1ec9431ae",
+    "research/continuation_memory_v1/query_reader_repair_v2/model.py": "83f11060fe551f0866747eb213c45925afd0346e200433e0a1e3241863555222",
+    "research/continuation_memory_v1/query_reader_repair_v2/run.py": "9ec9374e0d89396204d42ec6b65d2b71352fe9a550edc6157c8e93bde3993080",
+    "research/continuation_memory_v1/query_reader_repair_v2/test_cpu.py": "99daa10357d6428ddd83f373178d710bc542c7ab39e2806e220131edaa61b6e2",
+    "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19",
+    "research/continuation_memory_v1/pilot/run.py": "5e05d9718b67ceaa8e799757883b065568dce3a2c3cd6751a6606142c4e871ef",
+    "research/continuation_memory_v1/pilot/DATA.json": "e65aca3fa088c1992d770b3118aed2253224dba402926cfcf4c611446e7ab380",
+    "research/continuation_memory_v1/pilot/run_002/FEATURES.pt": "ea68821c8dad700a7da9d88261fea32c87c51e7f8985d82e45f7891729d1f299",
+    "research/continuation_memory_v1/pilot/run_002/INITIAL_MEMORY.pt": "2fbfdf68db078112bc462605a87ca8aa369d690a8f0d0ba523831ef34e76e97f",
+    "research/continuation_memory_v1/pilot/run_002/Ours_MEMORY.pt": "f05d0610f1405ce3f95abb57a6ea56308139f3a0ad49bb14a7fe9682ae9a875e",
+    "research/continuation_memory_v1/pilot/run_002/B2_MEMORY.pt": "2b0822c497abc0f00c5f06c8f8787adf7d79b1d1029e9bd223f016cb6ab96acb"
+  }
+}
