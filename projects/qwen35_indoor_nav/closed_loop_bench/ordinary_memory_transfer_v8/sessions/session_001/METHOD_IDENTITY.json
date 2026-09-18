@@ -1,0 +1,27 @@
+{
+  "base_state_sha256": "a87292acedfbf3fc8159259c23017fa1eec47a2ebfd39782c46e088bcbacef6b",
+  "head_states": {
+    "B": "d94d67f66eb7685bd404ce3062122e73a1d05d5c43376e479ecfef89e12f53e2",
+    "C": "afb4dafad74e884875b2c6c46f089cc9d12547cdfdb19edd92f8f7b328b6a234",
+    "D": "73bb025e61996c46473ef796e7d7f29c7e3d2329734ba4d702c7571a61eba8fe"
+  },
+  "memory_checkpoints": {
+    "B2": "a0ad9ca954e2aff4f3d7a07904e683cd8b8abb9fffbb7ec16c1508b426545d36",
+    "Ours": "27ea5fffa9b75a5bb06200963561b068dbb08a54d2e3869005bab781c49b7358",
+    "B1": "546303a58545854ce1097157243f6df9ca3d858e622b84a735baaea2ce0906f3"
+  },
+  "seed": 1209,
+  "seed_selected_by_score": false,
+  "arms": {
+    "A": "native best4k",
+    "B": "best4k plus exact-state B2 memory",
+    "C": "best4k plus crossed-outcome Ours memory",
+    "D": "best4k plus action-BC-only B1 memory"
+  },
+  "protocol_sha256": "fe49a79730083ec1d2ac45493c9ac546254d7c689eed2430d274842ac653fb79",
+  "base_runtime_identity_is_reused_V5_loader": true,
+  "torch_cuda_matmul_allow_tf32": false,
+  "future_query_used_at_runtime": false,
+  "raw_truth_used_at_runtime": false,
+  "native_stop_preserved": true
+}

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T15:37:31.286065+08:00",
+  "updated": "2026-09-18T16:15:28.290969+08:00",
   "phase": "V8_MEMORY_TRANSFER_CLOSED_LOOP_RUNNING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
@@ -223,6 +223,16 @@
     "progress": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/PROGRESS.json",
     "process": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/PROCESS.json",
     "full_effect_conclusion_pending": true,
-    "automatic_deployment": false
+    "automatic_deployment": false,
+    "latest_confirmed_milestone": 20,
+    "milestone_report": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/MILESTONE_020.json",
+    "partial_success_counts": {
+      "A": 4,
+      "B": 5,
+      "C": 4,
+      "D": 5
+    },
+    "partial_denominator_per_arm": 20,
+    "partial_interpretation": "B1/B2 development positive signal; Ours no SR gain; full100 pending"
   }
 }
