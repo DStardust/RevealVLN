@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-18T10:51:28.804039+08:00",
-  "phase": "V7_MULTIFAMILY_REAL_COMPARISON_RUNNING",
+  "updated": "2026-09-18T11:59:57.677831+08:00",
+  "phase": "V7_REAL_MEMORY_COMPARISON_COMPLETE_CLOSED_LOOP_STARTING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V6_REPAIR_20260918/REPORT_ZH.md",
   "learnability": {
@@ -127,7 +127,7 @@
     "branch": "codex/q35n-v6-query-repair-20260918"
   },
   "continuation_memory_v7": {
-    "running": true,
+    "running": false,
     "protocol": "research/continuation_memory_v1/multifamily_v7/PROTOCOL.json",
     "progress": "research/continuation_memory_v1/multifamily_v7/run_001/PROGRESS.json",
     "families": 25,
@@ -144,8 +144,27 @@
       "B1"
     ],
     "updates_per_arm": 600,
-    "benefit": null,
+    "benefit": "NO_CLEAR_INCREMENT_OVER_MATCHED_CONTROLS",
     "closed_loop_gain_tested": false,
-    "authorization": "User removed GPU-hour bound on2026-09-18; shared-resource protections retained"
+    "authorization": "User removed GPU-hour bound on2026-09-18; shared-resource protections retained",
+    "result": "research/continuation_memory_v1/multifamily_v7/run_001/RESULT.json",
+    "review": "research/continuation_memory_v1/multifamily_v7/REVIEW.json",
+    "optimizer_updates": 5400,
+    "real_qwen_forwards": 24598,
+    "gpu_hours": 1.1488805877913384
+  },
+  "memory_transfer_v7": {
+    "running": true,
+    "protocol": "closed_loop_bench/ordinary_memory_transfer_v7/PROTOCOL.json",
+    "arms": {
+      "A": "native",
+      "B": "B2",
+      "C": "Ours",
+      "D": "B1"
+    },
+    "expected_quartets": 100,
+    "expected_episode_executions": 400,
+    "seed": 1209,
+    "seed_selected_by_score": false
   }
 }
