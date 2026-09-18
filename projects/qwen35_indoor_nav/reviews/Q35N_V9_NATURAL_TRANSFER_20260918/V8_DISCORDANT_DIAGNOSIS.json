@@ -1,0 +1,447 @@
+{
+  "scope": "Read-only all11 discordant V8 B2/native episodes, no score-selected training examples",
+  "rows": [
+    {
+      "episode_id": 8981,
+      "outcome": "loss",
+      "first_difference": 20,
+      "initial_native_action": "turn_right",
+      "B2_executed": "move_forward",
+      "native_margin": 0.20477187633514404,
+      "native_logits": [
+        1.0483876466751099,
+        -0.6055635213851929,
+        1.253159523010254,
+        -4.116696357727051
+      ],
+      "method_logits": [
+        1.2092537879943848,
+        -0.5584214925765991,
+        1.1394755840301514,
+        -4.012773513793945
+      ],
+      "arms": {
+        "A": {
+          "success": 1.0,
+          "steps": 63,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.30916935205459595,
+          "final_distance": 1.8964403867721558,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 0.0,
+          "steps": 500,
+          "collisions": 6,
+          "stopped": false,
+          "min_distance": 2.085967779159546,
+          "final_distance": 43.547752380371094,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 3863,
+      "outcome": "win",
+      "first_difference": 8,
+      "initial_native_action": "move_forward",
+      "B2_executed": "turn_left",
+      "native_margin": 0.01352602243423462,
+      "native_logits": [
+        0.8466776609420776,
+        0.833151638507843,
+        0.10202978551387787,
+        -2.330071449279785
+      ],
+      "method_logits": [
+        0.8872274160385132,
+        0.9130575656890869,
+        0.06937012821435928,
+        -2.3432700634002686
+      ],
+      "arms": {
+        "A": {
+          "success": 0.0,
+          "steps": 10,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 7.205747604370117,
+          "final_distance": 7.205747604370117,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 1.0,
+          "steps": 51,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 1.1007559299468994,
+          "final_distance": 1.1007559299468994,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 1550,
+      "outcome": "win",
+      "first_difference": 66,
+      "initial_native_action": "turn_left",
+      "B2_executed": "move_forward",
+      "native_margin": 0.020214200019836426,
+      "native_logits": [
+        0.2956760823726654,
+        0.31589028239250183,
+        -0.1388063281774521,
+        -2.1592700481414795
+      ],
+      "method_logits": [
+        0.4240892827510834,
+        0.18910446763038635,
+        -0.0513504296541214,
+        -1.9636852741241455
+      ],
+      "arms": {
+        "A": {
+          "success": 0.0,
+          "steps": 500,
+          "collisions": 163,
+          "stopped": false,
+          "min_distance": 1.9635536670684814,
+          "final_distance": 11.426555633544922,
+          "short_window_repeats": 281
+        },
+        "B": {
+          "success": 1.0,
+          "steps": 132,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.44177523255348206,
+          "final_distance": 0.7212167978286743,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 311,
+      "outcome": "loss",
+      "first_difference": 44,
+      "initial_native_action": "move_forward",
+      "B2_executed": "turn_right",
+      "native_margin": 0.026015475392341614,
+      "native_logits": [
+        0.21497121453285217,
+        -0.0027894433587789536,
+        0.18895573914051056,
+        -1.3851318359375
+      ],
+      "method_logits": [
+        0.2781343460083008,
+        -0.06299840658903122,
+        0.30382364988327026,
+        -1.45980703830719
+      ],
+      "arms": {
+        "A": {
+          "success": 1.0,
+          "steps": 82,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.09592532366514206,
+          "final_distance": 1.3624221086502075,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 0.0,
+          "steps": 79,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.09592532366514206,
+          "final_distance": 7.683620452880859,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 704,
+      "outcome": "win",
+      "first_difference": 11,
+      "initial_native_action": "turn_left",
+      "B2_executed": "move_forward",
+      "native_margin": 0.0519927442073822,
+      "native_logits": [
+        0.4977790415287018,
+        0.549771785736084,
+        -0.16204889118671417,
+        -3.6164913177490234
+      ],
+      "method_logits": [
+        0.6690776348114014,
+        0.31861159205436707,
+        -0.1768815815448761,
+        -3.5529563426971436
+      ],
+      "arms": {
+        "A": {
+          "success": 0.0,
+          "steps": 500,
+          "collisions": 425,
+          "stopped": false,
+          "min_distance": 4.252417087554932,
+          "final_distance": 9.442893028259277,
+          "short_window_repeats": 410
+        },
+        "B": {
+          "success": 1.0,
+          "steps": 285,
+          "collisions": 158,
+          "stopped": true,
+          "min_distance": 1.4216656684875488,
+          "final_distance": 1.4216656684875488,
+          "short_window_repeats": 137
+        }
+      }
+    },
+    {
+      "episode_id": 2156,
+      "outcome": "loss",
+      "first_difference": 12,
+      "initial_native_action": "turn_left",
+      "B2_executed": "move_forward",
+      "native_margin": 0.17887777090072632,
+      "native_logits": [
+        0.8670807480812073,
+        1.0459585189819336,
+        -0.8737295269966125,
+        -2.4298171997070312
+      ],
+      "method_logits": [
+        0.9895588755607605,
+        0.9560506939888,
+        -0.9351007342338562,
+        -2.4012932777404785
+      ],
+      "arms": {
+        "A": {
+          "success": 1.0,
+          "steps": 62,
+          "collisions": 2,
+          "stopped": true,
+          "min_distance": 0.8643380999565125,
+          "final_distance": 0.8643380999565125,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 0.0,
+          "steps": 76,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.09849976748228073,
+          "final_distance": 4.712910175323486,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 921,
+      "outcome": "win",
+      "first_difference": 16,
+      "initial_native_action": "move_forward",
+      "B2_executed": "turn_right",
+      "native_margin": 0.09389829635620117,
+      "native_logits": [
+        2.4524803161621094,
+        -1.4090418815612793,
+        2.358582019805908,
+        -6.6457366943359375
+      ],
+      "method_logits": [
+        2.348529815673828,
+        -1.241929531097412,
+        2.473113536834717,
+        -6.286707878112793
+      ],
+      "arms": {
+        "A": {
+          "success": 0.0,
+          "steps": 500,
+          "collisions": 203,
+          "stopped": false,
+          "min_distance": 0.7090507745742798,
+          "final_distance": 3.333235740661621,
+          "short_window_repeats": 390
+        },
+        "B": {
+          "success": 1.0,
+          "steps": 78,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 1.5342085361480713,
+          "final_distance": 1.7482106685638428,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 7781,
+      "outcome": "loss",
+      "first_difference": 26,
+      "initial_native_action": "move_forward",
+      "B2_executed": "turn_left",
+      "native_margin": 0.12126192450523376,
+      "native_logits": [
+        0.5394074320793152,
+        0.4181455075740814,
+        -0.3447875678539276,
+        -2.7809860706329346
+      ],
+      "method_logits": [
+        0.5167210698127747,
+        0.5243454575538635,
+        -0.29243919253349304,
+        -2.7347021102905273
+      ],
+      "arms": {
+        "A": {
+          "success": 1.0,
+          "steps": 46,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.11931318044662476,
+          "final_distance": 1.1148991584777832,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 0.0,
+          "steps": 500,
+          "collisions": 430,
+          "stopped": false,
+          "min_distance": 0.13492023944854736,
+          "final_distance": 1.4864202737808228,
+          "short_window_repeats": 372
+        }
+      }
+    },
+    {
+      "episode_id": 10634,
+      "outcome": "loss",
+      "first_difference": 23,
+      "initial_native_action": "turn_left",
+      "B2_executed": "move_forward",
+      "native_margin": 0.025091469287872314,
+      "native_logits": [
+        0.6375996470451355,
+        0.6626911163330078,
+        -0.11111801862716675,
+        -2.639009475708008
+      ],
+      "method_logits": [
+        0.7252092957496643,
+        0.7093862295150757,
+        -0.10927320271730423,
+        -2.5973665714263916
+      ],
+      "arms": {
+        "A": {
+          "success": 1.0,
+          "steps": 59,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.37872564792633057,
+          "final_distance": 0.37872564792633057,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 0.0,
+          "steps": 100,
+          "collisions": 1,
+          "stopped": true,
+          "min_distance": 0.12277469038963318,
+          "final_distance": 6.767142295837402,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 3965,
+      "outcome": "win",
+      "first_difference": 12,
+      "initial_native_action": "turn_right",
+      "B2_executed": "move_forward",
+      "native_margin": 0.021842360496520996,
+      "native_logits": [
+        0.9084606170654297,
+        -0.5819118022918701,
+        0.9303029775619507,
+        -3.7755684852600098
+      ],
+      "method_logits": [
+        1.022531509399414,
+        -0.7340695858001709,
+        0.9175455570220947,
+        -3.693135976791382
+      ],
+      "arms": {
+        "A": {
+          "success": 0.0,
+          "steps": 500,
+          "collisions": 140,
+          "stopped": false,
+          "min_distance": 1.4695863723754883,
+          "final_distance": 11.858223915100098,
+          "short_window_repeats": 63
+        },
+        "B": {
+          "success": 1.0,
+          "steps": 54,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 0.7598110437393188,
+          "final_distance": 0.7598110437393188,
+          "short_window_repeats": 0
+        }
+      }
+    },
+    {
+      "episode_id": 1059,
+      "outcome": "win",
+      "first_difference": 35,
+      "initial_native_action": "turn_right",
+      "B2_executed": "STOP",
+      "native_margin": 0.020356714725494385,
+      "native_logits": [
+        -0.1945582777261734,
+        -0.8664627075195312,
+        1.015791654586792,
+        0.9954349398612976
+      ],
+      "method_logits": [
+        -0.19046317040920258,
+        -0.8377968072891235,
+        1.0706257820129395,
+        1.097107172012329
+      ],
+      "arms": {
+        "A": {
+          "success": 0.0,
+          "steps": 291,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 1.970557451248169,
+          "final_distance": 38.29175567626953,
+          "short_window_repeats": 0
+        },
+        "B": {
+          "success": 1.0,
+          "steps": 35,
+          "collisions": 0,
+          "stopped": true,
+          "min_distance": 1.970557451248169,
+          "final_distance": 1.990601897239685,
+          "short_window_repeats": 0
+        }
+      }
+    }
+  ],
+  "causality": "Post-divergence co-occurrences do not identify counterfactual cause",
+  "training_examples_from_this_file": 0
+}
