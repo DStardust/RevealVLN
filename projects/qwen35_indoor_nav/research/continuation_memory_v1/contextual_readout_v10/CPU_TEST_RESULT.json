@@ -1,23 +1,13 @@
 {
-  "status": "CPU_INTERFACE_ONLY_GPU_UNRUN",
-  "updated": "2026-09-18T14:17:01.744008+00:00",
-  "tests": 4,
+  "status": "CPU_INTERFACE_AND_MATCHED_LOSSES_PASSED_GPU_UNRUN",
   "passed": true,
-  "gpu_used": false,
-  "real_feature_source": "research/continuation_memory_v1/natural_transfer_v9/run_001/FEATURES.pt",
-  "checks": [
-    "Exact native logits at zero-residual initialization",
-    "Two real-FIT-feature CPU updates reach writer/recurrent/current-feature readout",
-    "Short-window control is independent of memory",
-    "Future reader cannot mutate causal memory or actions"
-  ],
-  "evidence_limit": "CPU interface/gradient feasibility only; no GPU training, navigation benefit, checkpoint adoption or innovation claim",
-  "candidate_change": "Current observation feature plus memory into128-wide nonlinear residual head; recurrence and memory budget unchanged",
-  "mandatory_control": "Same input/data/initialization/budget short-window head with memory removed from action readout",
-  "diagnosis_basis": "natural_transfer_v9/ACTION_DIAGNOSIS.json: most teacher-action gain reproduced by mean FIT residual; turn recalls degraded",
-  "current_v9_execution_unchanged": true,
-  "source_sha256": {
-    "model.py": "5c4d533a58d42285a85c1f960b064c5cd59bc25134c39df528b754c39008672a",
-    "test_cpu.py": "f576989a035208a16fd5f7c026f83fd5d3af0115227ce6e6a7a14c6d956fd0de"
-  }
+  "tests": 5,
+  "seconds": 6.284,
+  "command": "env CUDA_VISIBLE_DEVICES='' projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3 -I -B projects/qwen35_indoor_nav/research/continuation_memory_v1/contextual_readout_v10/test_cpu.py -v",
+  "actual_cpu_updates": 10,
+  "updates_scope": "Two ordinary-only readout checks plus two matched-loss updates in each of N0/B1/B2/Ours; fresh disposable CPU models; no checkpoints trained for evaluation",
+  "gpu_forwards": 0,
+  "gpu_training_started": false,
+  "scientific_effect_tested": false,
+  "at": "2026-09-18T14:45:34.304792+00:00"
 }

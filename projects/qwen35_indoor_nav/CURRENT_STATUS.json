@@ -295,15 +295,28 @@
     "adopted": false,
     "latest_sealed_milestone": {
       "seed": 1209,
-      "quartets": 5,
-      "episodes": 20,
+      "quartets": 20,
+      "episodes": 80,
       "successes": {
-        "A": 2,
-        "B": 0,
-        "C": 0,
-        "D": 0
-      }
+        "A": 4,
+        "B": 2,
+        "C": 2,
+        "D": 2
+      },
+      "prefix_logits_bitwise_equal": true,
+      "partial_development_only": true
     },
     "full_effect_conclusion_pending": true
+  },
+  "updated_at": "2026-09-18T14:47:01.633564+00:00",
+  "contextual_readout_v10": {
+    "status": "CPU_IMPLEMENTED_GPU_NOT_STARTED",
+    "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
+    "cpu_tests": 5,
+    "gpu_updates": 0,
+    "planned_lightweight_updates": 7200,
+    "base_updates": 0,
+    "benefit": "UNTESTED",
+    "adopted": false
   }
 }

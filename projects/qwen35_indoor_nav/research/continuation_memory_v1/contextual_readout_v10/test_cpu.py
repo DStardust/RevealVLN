@@ -9,6 +9,7 @@ from torch.nn import functional as F
 HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(HERE))
 from model import MemoryPolicy
+import train
 
 
 class Tests(unittest.TestCase):
@@ -73,6 +74,32 @@ class Tests(unittest.TestCase):
         b=net.action_logits(memory,base[-1:],features[-1:])
         self.assertTrue(torch.equal(memory,before))
         self.assertTrue(torch.equal(a,b))
+
+    def test_actual_training_losses_gradients_and_no_memory_control(self):
+        source=HERE.parent/'multifamily_v7'
+        data=json.loads((source/'DATA.json').read_text())
+        cache={k:v.float() for k,v in torch.load(source/'run_001/FEATURES.pt',map_location='cpu',weights_only=True).items()}
+        family=next(f for f in data['families'] if f['split']=='fit')
+        batch=train.special.tensors(family,'cpu')
+        natural=train.ordinary_batch([self.row],'cpu')
+        torch.manual_seed(1209)
+        net=MemoryPolicy(2048,len(data['query_vocabulary']))
+        initial={k:v.clone() for k,v in net.state_dict().items()}
+        for arm in ('N0','B1','B2','Ours'):
+            net.load_state_dict(initial);net.no_memory=arm=='N0'
+            optimizer=torch.optim.AdamW(net.parameters(),lr=.001,weight_decay=.01)
+            for _ in range(2):
+                optimizer.zero_grad(set_to_none=True)
+                special_loss,_,_=train.special.losses(net,cache,batch,arm)
+                ordinary_loss,_=train.ordinary_loss(net,self.cache,natural)
+                loss=special_loss+ordinary_loss
+                self.assertTrue(bool(torch.isfinite(loss)))
+                loss.backward();optimizer.step()
+            audit=train.gradient_audit(net,cache,batch,arm)
+            self.assertEqual(audit['no_memory_control'],arm=='N0')
+            self.assertEqual(torch.equal(initial['writer.weight'],net.writer.weight),arm=='N0')
+            self.assertEqual(torch.equal(initial['recurrent.weight'],net.recurrent.weight),arm=='N0')
+            self.assertFalse(torch.equal(initial['action.2.weight'],net.action[2].weight))
 
 
 if __name__=='__main__':unittest.main()
