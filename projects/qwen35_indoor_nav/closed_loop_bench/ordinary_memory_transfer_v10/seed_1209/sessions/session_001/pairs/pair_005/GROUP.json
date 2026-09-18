@@ -1,0 +1,702 @@
+{
+  "rank": 5,
+  "method_seed": 1209,
+  "index": 13,
+  "episode_id": 37,
+  "inference_order": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "audits": {
+    "AB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "AC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "AD": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "AE": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "BC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "DC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "EC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "DB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "EB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    },
+    "ED": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 12,
+      "first_action_difference": null
+    }
+  },
+  "episodes": {
+    "A": {
+      "index": 13,
+      "episode_id": 37,
+      "trajectory_id": 24,
+      "house": "82sE5b5pLXE",
+      "instruction": "Exit the bathroom. Walk into the hallway, then turn right. Walk to the end of the hallway. Walk up the stairs. ",
+      "started_unix": 1789768417.9387984,
+      "event": "complete",
+      "steps": 12,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 3.5019638538360596,
+      "oracle_success": 0.0,
+      "min_distance_m": 3.5019638538360596,
+      "start_distance_m": 5.1899285316467285,
+      "path_length_m": 2.0000021574075806,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 8,
+        "turn_left": 3,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 16.35429859161377,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.7070748510572819,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.372036933898926,
+          -0.4622059762477875,
+          -8.03747272491455
+        ],
+        [
+          -8.548813819885254,
+          -0.4622059762477875,
+          -7.860695838928223
+        ],
+        [
+          -8.725590705871582,
+          -0.4622059762477875,
+          -7.6839189529418945
+        ],
+        [
+          -8.90236759185791,
+          -0.4622059762477875,
+          -7.507142066955566
+        ],
+        [
+          -9.079144477844238,
+          -0.4622059762477875,
+          -7.330365180969238
+        ],
+        [
+          -9.255921363830566,
+          -0.4622059762477875,
+          -7.15358829498291
+        ],
+        [
+          -9.432698249816895,
+          -0.4622059762477875,
+          -6.976811408996582
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ]
+      ],
+      "distances": [
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        4.943051338195801,
+        4.697343349456787,
+        4.45359992980957,
+        4.213523864746094,
+        3.981447219848633,
+        3.7708423137664795,
+        3.599508047103882,
+        3.5019638538360596,
+        3.5019638538360596
+      ]
+    },
+    "B": {
+      "index": 13,
+      "episode_id": 37,
+      "trajectory_id": 24,
+      "house": "82sE5b5pLXE",
+      "instruction": "Exit the bathroom. Walk into the hallway, then turn right. Walk to the end of the hallway. Walk up the stairs. ",
+      "started_unix": 1789768420.2229066,
+      "event": "complete",
+      "steps": 12,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 3.5019638538360596,
+      "oracle_success": 0.0,
+      "min_distance_m": 3.5019638538360596,
+      "start_distance_m": 5.1899285316467285,
+      "path_length_m": 2.0000021574075806,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 8,
+        "turn_left": 3,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 14.094669580459595,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.7070748510572819,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.372036933898926,
+          -0.4622059762477875,
+          -8.03747272491455
+        ],
+        [
+          -8.548813819885254,
+          -0.4622059762477875,
+          -7.860695838928223
+        ],
+        [
+          -8.725590705871582,
+          -0.4622059762477875,
+          -7.6839189529418945
+        ],
+        [
+          -8.90236759185791,
+          -0.4622059762477875,
+          -7.507142066955566
+        ],
+        [
+          -9.079144477844238,
+          -0.4622059762477875,
+          -7.330365180969238
+        ],
+        [
+          -9.255921363830566,
+          -0.4622059762477875,
+          -7.15358829498291
+        ],
+        [
+          -9.432698249816895,
+          -0.4622059762477875,
+          -6.976811408996582
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ]
+      ],
+      "distances": [
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        4.943051338195801,
+        4.697343349456787,
+        4.45359992980957,
+        4.213523864746094,
+        3.981447219848633,
+        3.7708423137664795,
+        3.599508047103882,
+        3.5019638538360596,
+        3.5019638538360596
+      ]
+    },
+    "C": {
+      "index": 13,
+      "episode_id": 37,
+      "trajectory_id": 24,
+      "house": "82sE5b5pLXE",
+      "instruction": "Exit the bathroom. Walk into the hallway, then turn right. Walk to the end of the hallway. Walk up the stairs. ",
+      "started_unix": 1789768422.4140723,
+      "event": "complete",
+      "steps": 12,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 3.5019638538360596,
+      "oracle_success": 0.0,
+      "min_distance_m": 3.5019638538360596,
+      "start_distance_m": 5.1899285316467285,
+      "path_length_m": 2.0000021574075806,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 8,
+        "turn_left": 3,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 11.927581071853638,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.7070748510572819,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.372036933898926,
+          -0.4622059762477875,
+          -8.03747272491455
+        ],
+        [
+          -8.548813819885254,
+          -0.4622059762477875,
+          -7.860695838928223
+        ],
+        [
+          -8.725590705871582,
+          -0.4622059762477875,
+          -7.6839189529418945
+        ],
+        [
+          -8.90236759185791,
+          -0.4622059762477875,
+          -7.507142066955566
+        ],
+        [
+          -9.079144477844238,
+          -0.4622059762477875,
+          -7.330365180969238
+        ],
+        [
+          -9.255921363830566,
+          -0.4622059762477875,
+          -7.15358829498291
+        ],
+        [
+          -9.432698249816895,
+          -0.4622059762477875,
+          -6.976811408996582
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ]
+      ],
+      "distances": [
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        4.943051338195801,
+        4.697343349456787,
+        4.45359992980957,
+        4.213523864746094,
+        3.981447219848633,
+        3.7708423137664795,
+        3.599508047103882,
+        3.5019638538360596,
+        3.5019638538360596
+      ]
+    },
+    "D": {
+      "index": 13,
+      "episode_id": 37,
+      "trajectory_id": 24,
+      "house": "82sE5b5pLXE",
+      "instruction": "Exit the bathroom. Walk into the hallway, then turn right. Walk to the end of the hallway. Walk up the stairs. ",
+      "started_unix": 1789768424.6617496,
+      "event": "complete",
+      "steps": 12,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 3.5019638538360596,
+      "oracle_success": 0.0,
+      "min_distance_m": 3.5019638538360596,
+      "start_distance_m": 5.1899285316467285,
+      "path_length_m": 2.0000021574075806,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 8,
+        "turn_left": 3,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 9.707087993621826,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.7070748510572819,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.372036933898926,
+          -0.4622059762477875,
+          -8.03747272491455
+        ],
+        [
+          -8.548813819885254,
+          -0.4622059762477875,
+          -7.860695838928223
+        ],
+        [
+          -8.725590705871582,
+          -0.4622059762477875,
+          -7.6839189529418945
+        ],
+        [
+          -8.90236759185791,
+          -0.4622059762477875,
+          -7.507142066955566
+        ],
+        [
+          -9.079144477844238,
+          -0.4622059762477875,
+          -7.330365180969238
+        ],
+        [
+          -9.255921363830566,
+          -0.4622059762477875,
+          -7.15358829498291
+        ],
+        [
+          -9.432698249816895,
+          -0.4622059762477875,
+          -6.976811408996582
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ]
+      ],
+      "distances": [
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        4.943051338195801,
+        4.697343349456787,
+        4.45359992980957,
+        4.213523864746094,
+        3.981447219848633,
+        3.7708423137664795,
+        3.599508047103882,
+        3.5019638538360596,
+        3.5019638538360596
+      ]
+    },
+    "E": {
+      "index": 13,
+      "episode_id": 37,
+      "trajectory_id": 24,
+      "house": "82sE5b5pLXE",
+      "instruction": "Exit the bathroom. Walk into the hallway, then turn right. Walk to the end of the hallway. Walk up the stairs. ",
+      "started_unix": 1789768426.8392904,
+      "event": "complete",
+      "steps": 12,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 3.5019638538360596,
+      "oracle_success": 0.0,
+      "min_distance_m": 3.5019638538360596,
+      "start_distance_m": 5.1899285316467285,
+      "path_length_m": 2.0000021574075806,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 8,
+        "turn_left": 3,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 7.555184602737427,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.7070748510572819,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.195260047912598,
+          -0.4622059762477875,
+          -8.214249610900879
+        ],
+        [
+          -8.372036933898926,
+          -0.4622059762477875,
+          -8.03747272491455
+        ],
+        [
+          -8.548813819885254,
+          -0.4622059762477875,
+          -7.860695838928223
+        ],
+        [
+          -8.725590705871582,
+          -0.4622059762477875,
+          -7.6839189529418945
+        ],
+        [
+          -8.90236759185791,
+          -0.4622059762477875,
+          -7.507142066955566
+        ],
+        [
+          -9.079144477844238,
+          -0.4622059762477875,
+          -7.330365180969238
+        ],
+        [
+          -9.255921363830566,
+          -0.4622059762477875,
+          -7.15358829498291
+        ],
+        [
+          -9.432698249816895,
+          -0.4622059762477875,
+          -6.976811408996582
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ],
+        [
+          -9.609475135803223,
+          -0.4622059762477875,
+          -6.800034523010254
+        ]
+      ],
+      "distances": [
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        5.1899285316467285,
+        4.943051338195801,
+        4.697343349456787,
+        4.45359992980957,
+        4.213523864746094,
+        3.981447219848633,
+        3.7708423137664795,
+        3.599508047103882,
+        3.5019638538360596,
+        3.5019638538360596
+      ]
+    }
+  },
+  "valid_behavioral_group": true,
+  "protocol_sha256": "ef1ce51066aae611e4287fc3e9889b3b5ed376465b79d92398d9e4a36be7a127",
+  "method_identity_sha256": "74376a0e15d06c15e3e0388c8c134698a5e0fff6b803a4e4cf0f40b993d0edb5",
+  "logs": {
+    "A": {
+      "POLICY_STEPS.jsonl": "4fbfbbd4b6a55eaf6944bfc69d58a792059174af5017b2e95aa325f56137bdfb",
+      "STEPS_PRIVILEGED.jsonl": "e9cfa8b332e03bb4c2d18ee4b1859bf50b32677475a1ddb53fc0e96e392cbba1"
+    },
+    "B": {
+      "POLICY_STEPS.jsonl": "8938777c1339bc5e17bbbfb2e361c6c57be250fcb759e82997631aea8a3784d7",
+      "STEPS_PRIVILEGED.jsonl": "e9cfa8b332e03bb4c2d18ee4b1859bf50b32677475a1ddb53fc0e96e392cbba1"
+    },
+    "C": {
+      "POLICY_STEPS.jsonl": "f95122edc6951c6362dca5b8bb5177cebedfc504497d17c81db10c72fc4013bb",
+      "STEPS_PRIVILEGED.jsonl": "e9cfa8b332e03bb4c2d18ee4b1859bf50b32677475a1ddb53fc0e96e392cbba1"
+    },
+    "D": {
+      "POLICY_STEPS.jsonl": "3b6550952337a4a80a72ad794d644ca8cd65d982934edf46bc544e33f757e134",
+      "STEPS_PRIVILEGED.jsonl": "e9cfa8b332e03bb4c2d18ee4b1859bf50b32677475a1ddb53fc0e96e392cbba1"
+    },
+    "E": {
+      "POLICY_STEPS.jsonl": "42a6b9d1302011abddad4dac7bebfb3c805ec71a3f9a29926a1a8424cb4dc48d",
+      "STEPS_PRIVILEGED.jsonl": "e9cfa8b332e03bb4c2d18ee4b1859bf50b32677475a1ddb53fc0e96e392cbba1"
+    }
+  }
+}
