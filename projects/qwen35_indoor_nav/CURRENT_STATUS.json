@@ -272,7 +272,7 @@
     "planned_new_qwen_forwards": 33844,
     "planned_lightweight_updates": 5400,
     "base_updates": 0,
-    "benefit": "ALL_ARMS_TEACHER_ACTION_ACCURACY_IMPROVED_NAVIGATION_PENDING",
+    "benefit": "TEACHER_ACCURACY_IMPROVED_BUT_COMPLETED_NAVIGATION_BELOW_NATIVE",
     "adopted": false,
     "real_qwen_forwards": 33844,
     "optimizer_updates": 5400,
@@ -314,7 +314,7 @@
     "result": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
     "report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md"
   },
-  "updated_at": "2026-09-18T22:20:44.885844+00:00",
+  "updated_at": "2026-09-18T22:40:15.605709+00:00",
   "contextual_readout_v10": {
     "status": "TRAINING_AND_CHECKPOINT_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
@@ -328,11 +328,12 @@
     "run": "research/continuation_memory_v1/contextual_readout_v10/run_001",
     "checkpoints": 12,
     "gpu_hours": 0.5574896551052936,
-    "new_encoder_forwards": 0
+    "new_encoder_forwards": 0,
+    "memory_sensitivity": "research/continuation_memory_v1/contextual_readout_v10/MEMORY_DIAGNOSIS.json"
   },
   "memory_transfer_v10": {
     "running": true,
-    "status": "RUNNING",
+    "status": "RESUMED_AFTER_REPAIRED_IDLE_CHANNEL_TIMEOUT",
     "seeds": [
       1209,
       1210,
@@ -345,16 +346,18 @@
     "adopted": false,
     "latest_sealed_milestone": {
       "seed": 1209,
-      "groups": 20,
-      "episodes": 100,
+      "groups": 27,
+      "episodes": 135,
       "successes": {
-        "A": 4,
-        "B": 3,
+        "A": 5,
+        "B": 4,
         "C": 4,
-        "D": 4,
-        "E": 1
+        "D": 5,
+        "E": 2
       },
       "full_effect_conclusion_pending": true
-    }
+    },
+    "infrastructure_repair": "closed_loop_bench/ordinary_memory_transfer_v10/INFRA_REPAIR_001.json",
+    "infrastructure_failures": 1
   }
 }
