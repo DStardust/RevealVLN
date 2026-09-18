@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-18T11:59:57.677831+08:00",
-  "phase": "V7_REAL_MEMORY_COMPARISON_COMPLETE_CLOSED_LOOP_STARTING",
+  "updated": "2026-09-18T12:50:10.668582+08:00",
+  "phase": "V7_MEMORY_TRANSFER_CLOSED_LOOP_RUNNING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V6_REPAIR_20260918/REPORT_ZH.md",
   "learnability": {
@@ -165,6 +165,11 @@
     "expected_quartets": 100,
     "expected_episode_executions": 400,
     "seed": 1209,
-    "seed_selected_by_score": false
+    "seed_selected_by_score": false,
+    "progress": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/PROGRESS.json",
+    "process": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/PROCESS.json",
+    "latest_confirmed_milestone": 20,
+    "milestone_report": "closed_loop_bench/ordinary_memory_transfer_v7/sessions/session_001/MILESTONE_020.json",
+    "full_effect_conclusion_pending": true
   }
 }
