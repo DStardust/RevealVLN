@@ -1,0 +1,1737 @@
+{
+  "status": "READ_ONLY_TEACHER_MEMORY_SENSITIVITY",
+  "runs": {
+    "N0_1209": {
+      "probes": {
+        "full": {
+          "correct": 2868,
+          "decisions": 3769,
+          "accuracy": 0.7609445452690125,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2041,
+              99,
+              132,
+              14
+            ],
+            [
+              273,
+              350,
+              24,
+              8
+            ],
+            [
+              303,
+              12,
+              451,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2871,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2868,
+          "decisions": 3769,
+          "accuracy": 0.7609445452690125,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2041,
+              99,
+              132,
+              14
+            ],
+            [
+              273,
+              350,
+              24,
+              8
+            ],
+            [
+              303,
+              12,
+              451,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2871,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "fit_constant": {
+          "correct": 2868,
+          "decisions": 3769,
+          "accuracy": 0.7609445452690125,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2041,
+              99,
+              132,
+              14
+            ],
+            [
+              273,
+              350,
+              24,
+              8
+            ],
+            [
+              303,
+              12,
+              451,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2871,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2871,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "d9bb8696c6214e5d99c9bd76e3abd0298b45670c9ac423bcc06bb9131511e6df",
+      "state_sha256": "dbd15fe33cbfa52e63ffd0b8e09d0421ae74510247c3c01ad0ab1b97a0b812c3",
+      "parameters_unchanged": true
+    },
+    "B1_1209": {
+      "probes": {
+        "full": {
+          "correct": 2856,
+          "decisions": 3769,
+          "accuracy": 0.7577607035636902,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2032,
+              101,
+              138,
+              15
+            ],
+            [
+              281,
+              338,
+              29,
+              7
+            ],
+            [
+              292,
+              13,
+              459,
+              4
+            ],
+            [
+              28,
+              1,
+              4,
+              27
+            ]
+          ],
+          "raw_head_correct": 2861,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2856,
+          "decisions": 3769,
+          "accuracy": 0.7577607035636902,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2046,
+              102,
+              125,
+              13
+            ],
+            [
+              289,
+              339,
+              21,
+              6
+            ],
+            [
+              309,
+              12,
+              445,
+              2
+            ],
+            [
+              28,
+              3,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2848,
+          "max_logit_delta_from_full": 3.4435205459594727,
+          "protected_action_changes_from_full": 140
+        },
+        "fit_constant": {
+          "correct": 2866,
+          "decisions": 3769,
+          "accuracy": 0.7604138851165771,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2042,
+              99,
+              132,
+              13
+            ],
+            [
+              286,
+              336,
+              27,
+              6
+            ],
+            [
+              297,
+              7,
+              462,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2865,
+          "max_logit_delta_from_full": 2.0706615447998047,
+          "protected_action_changes_from_full": 78
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2861,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "50eb37ab883dec7398759ac4e30c6209abe4b3b96b330adf40a8b0bb56c4f647",
+      "state_sha256": "cbf2d59decff73381a194d3e87901d51a009b3f1b57242c29dc1e64a813ed411",
+      "parameters_unchanged": true
+    },
+    "B2_1209": {
+      "probes": {
+        "full": {
+          "correct": 2861,
+          "decisions": 3769,
+          "accuracy": 0.7590872645378113,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2044,
+              93,
+              132,
+              17
+            ],
+            [
+              284,
+              339,
+              23,
+              9
+            ],
+            [
+              302,
+              11,
+              451,
+              4
+            ],
+            [
+              27,
+              3,
+              3,
+              27
+            ]
+          ],
+          "raw_head_correct": 2864,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2857,
+          "decisions": 3769,
+          "accuracy": 0.7580260038375854,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2052,
+              103,
+              118,
+              13
+            ],
+            [
+              285,
+              342,
+              22,
+              6
+            ],
+            [
+              319,
+              10,
+              437,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2849,
+          "max_logit_delta_from_full": 2.5400521755218506,
+          "protected_action_changes_from_full": 106
+        },
+        "fit_constant": {
+          "correct": 2860,
+          "decisions": 3769,
+          "accuracy": 0.758821964263916,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2042,
+              95,
+              135,
+              14
+            ],
+            [
+              286,
+              338,
+              25,
+              6
+            ],
+            [
+              302,
+              10,
+              454,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2857,
+          "max_logit_delta_from_full": 1.9413151741027832,
+          "protected_action_changes_from_full": 62
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2864,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "2eba245aaa9d2d3e5b962439c0e0014a8aa10aac3b17169a2ff16eb53e64cd61",
+      "state_sha256": "903875130554e3da00853fb3bdb2e6428e9f9f6c804a14c04840c14d06ea3eca",
+      "parameters_unchanged": true
+    },
+    "Ours_1209": {
+      "probes": {
+        "full": {
+          "correct": 2864,
+          "decisions": 3769,
+          "accuracy": 0.7598832845687866,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2066,
+              87,
+              119,
+              14
+            ],
+            [
+              294,
+              333,
+              21,
+              7
+            ],
+            [
+              317,
+              10,
+              438,
+              3
+            ],
+            [
+              28,
+              2,
+              3,
+              27
+            ]
+          ],
+          "raw_head_correct": 2864,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2866,
+          "decisions": 3769,
+          "accuracy": 0.7604138851165771,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2092,
+              77,
+              104,
+              13
+            ],
+            [
+              308,
+              322,
+              19,
+              6
+            ],
+            [
+              332,
+              8,
+              426,
+              2
+            ],
+            [
+              31,
+              2,
+              1,
+              26
+            ]
+          ],
+          "raw_head_correct": 2858,
+          "max_logit_delta_from_full": 2.2805159091949463,
+          "protected_action_changes_from_full": 104
+        },
+        "fit_constant": {
+          "correct": 2877,
+          "decisions": 3769,
+          "accuracy": 0.7633324265480042,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2075,
+              85,
+              113,
+              13
+            ],
+            [
+              297,
+              332,
+              20,
+              6
+            ],
+            [
+              314,
+              8,
+              444,
+              2
+            ],
+            [
+              30,
+              2,
+              2,
+              26
+            ]
+          ],
+          "raw_head_correct": 2872,
+          "max_logit_delta_from_full": 1.3796768188476562,
+          "protected_action_changes_from_full": 54
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2864,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "940cef3778634fc4439eda43e8b4b5898e9e861518e1a6d213276a41f8f3d42a",
+      "state_sha256": "20ed4e40574428c41ba8c92adfb3bd0627722d9742a8cd3a89135dff2f60286d",
+      "parameters_unchanged": true
+    },
+    "N0_1210": {
+      "probes": {
+        "full": {
+          "correct": 2853,
+          "decisions": 3769,
+          "accuracy": 0.7569646835327148,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1992,
+              126,
+              152,
+              16
+            ],
+            [
+              253,
+              378,
+              16,
+              8
+            ],
+            [
+              286,
+              23,
+              457,
+              2
+            ],
+            [
+              27,
+              3,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2855,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2853,
+          "decisions": 3769,
+          "accuracy": 0.7569646835327148,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1992,
+              126,
+              152,
+              16
+            ],
+            [
+              253,
+              378,
+              16,
+              8
+            ],
+            [
+              286,
+              23,
+              457,
+              2
+            ],
+            [
+              27,
+              3,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2855,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "fit_constant": {
+          "correct": 2853,
+          "decisions": 3769,
+          "accuracy": 0.7569646835327148,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1992,
+              126,
+              152,
+              16
+            ],
+            [
+              253,
+              378,
+              16,
+              8
+            ],
+            [
+              286,
+              23,
+              457,
+              2
+            ],
+            [
+              27,
+              3,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2855,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2855,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "48d9ff01b9a3692a1d26c40a13eeb8daa5673220a4877c92f501d98208a51992",
+      "state_sha256": "6c8143b15f72ff6dc562081ee5c52869626068ea212c3f97d5cd47878522f4c8",
+      "parameters_unchanged": true
+    },
+    "B1_1210": {
+      "probes": {
+        "full": {
+          "correct": 2864,
+          "decisions": 3769,
+          "accuracy": 0.7598832845687866,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2008,
+              108,
+              156,
+              14
+            ],
+            [
+              266,
+              357,
+              25,
+              7
+            ],
+            [
+              273,
+              20,
+              473,
+              2
+            ],
+            [
+              26,
+              4,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2869,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2869,
+          "decisions": 3769,
+          "accuracy": 0.7612098455429077,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2051,
+              83,
+              139,
+              13
+            ],
+            [
+              288,
+              339,
+              22,
+              6
+            ],
+            [
+              296,
+              17,
+              453,
+              2
+            ],
+            [
+              30,
+              2,
+              2,
+              26
+            ]
+          ],
+          "raw_head_correct": 2863,
+          "max_logit_delta_from_full": 2.1359286308288574,
+          "protected_action_changes_from_full": 143
+        },
+        "fit_constant": {
+          "correct": 2853,
+          "decisions": 3769,
+          "accuracy": 0.7569646835327148,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2006,
+              114,
+              152,
+              14
+            ],
+            [
+              266,
+              360,
+              23,
+              6
+            ],
+            [
+              283,
+              22,
+              461,
+              2
+            ],
+            [
+              28,
+              2,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2851,
+          "max_logit_delta_from_full": 1.474266529083252,
+          "protected_action_changes_from_full": 84
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2869,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "3940a649266a520c92ee1e6f244a11f46b3522aa686a5a75d3a10f50afccae22",
+      "state_sha256": "b81a5d7dab4a9bfbba77231eda48b1d7e0e28464dfe68d13cb5a2b7ad0e2386a",
+      "parameters_unchanged": true
+    },
+    "B2_1210": {
+      "probes": {
+        "full": {
+          "correct": 2857,
+          "decisions": 3769,
+          "accuracy": 0.7580260038375854,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2023,
+              102,
+              146,
+              15
+            ],
+            [
+              277,
+              351,
+              20,
+              7
+            ],
+            [
+              287,
+              24,
+              455,
+              2
+            ],
+            [
+              27,
+              2,
+              3,
+              28
+            ]
+          ],
+          "raw_head_correct": 2860,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2858,
+          "decisions": 3769,
+          "accuracy": 0.7582913041114807,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2047,
+              90,
+              136,
+              13
+            ],
+            [
+              289,
+              340,
+              20,
+              6
+            ],
+            [
+              300,
+              21,
+              445,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2852,
+          "max_logit_delta_from_full": 2.3203182220458984,
+          "protected_action_changes_from_full": 133
+        },
+        "fit_constant": {
+          "correct": 2860,
+          "decisions": 3769,
+          "accuracy": 0.758821964263916,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2024,
+              102,
+              147,
+              13
+            ],
+            [
+              276,
+              355,
+              18,
+              6
+            ],
+            [
+              287,
+              24,
+              455,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2859,
+          "max_logit_delta_from_full": 1.2802890539169312,
+          "protected_action_changes_from_full": 60
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2860,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "02637dfde6d4bb45a6a13befac5b13b784fad5f1368f68da45b8b1cbbd4c580f",
+      "state_sha256": "22ddb26f6740c1619fedaefb38e4a932fbc2cbb55235ec4ebe2ecbeaccc4fba7",
+      "parameters_unchanged": true
+    },
+    "Ours_1210": {
+      "probes": {
+        "full": {
+          "correct": 2854,
+          "decisions": 3769,
+          "accuracy": 0.7572300434112549,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1994,
+              116,
+              162,
+              14
+            ],
+            [
+              263,
+              361,
+              24,
+              7
+            ],
+            [
+              269,
+              24,
+              473,
+              2
+            ],
+            [
+              27,
+              3,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2859,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2862,
+          "decisions": 3769,
+          "accuracy": 0.7593526244163513,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2032,
+              104,
+              137,
+              13
+            ],
+            [
+              281,
+              349,
+              19,
+              6
+            ],
+            [
+              288,
+              23,
+              455,
+              2
+            ],
+            [
+              28,
+              3,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2854,
+          "max_logit_delta_from_full": 2.140270709991455,
+          "protected_action_changes_from_full": 150
+        },
+        "fit_constant": {
+          "correct": 2864,
+          "decisions": 3769,
+          "accuracy": 0.7598832845687866,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2005,
+              111,
+              157,
+              13
+            ],
+            [
+              257,
+              367,
+              25,
+              6
+            ],
+            [
+              278,
+              22,
+              466,
+              2
+            ],
+            [
+              27,
+              3,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2865,
+          "max_logit_delta_from_full": 1.7023582458496094,
+          "protected_action_changes_from_full": 82
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2859,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "4b2debc937d042aeacc398ec082faef1489aa33755c593ba1eb6d03e6eb16853",
+      "state_sha256": "bc690e088fc0a197fb245aa8ce9552d51275f56c840f315fca17fa93f202ed66",
+      "parameters_unchanged": true
+    },
+    "N0_1211": {
+      "probes": {
+        "full": {
+          "correct": 2878,
+          "decisions": 3769,
+          "accuracy": 0.7635977864265442,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2069,
+              94,
+              110,
+              13
+            ],
+            [
+              274,
+              349,
+              26,
+              6
+            ],
+            [
+              322,
+              10,
+              434,
+              2
+            ],
+            [
+              30,
+              2,
+              2,
+              26
+            ]
+          ],
+          "raw_head_correct": 2878,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2878,
+          "decisions": 3769,
+          "accuracy": 0.7635977864265442,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2069,
+              94,
+              110,
+              13
+            ],
+            [
+              274,
+              349,
+              26,
+              6
+            ],
+            [
+              322,
+              10,
+              434,
+              2
+            ],
+            [
+              30,
+              2,
+              2,
+              26
+            ]
+          ],
+          "raw_head_correct": 2878,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "fit_constant": {
+          "correct": 2878,
+          "decisions": 3769,
+          "accuracy": 0.7635977864265442,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2069,
+              94,
+              110,
+              13
+            ],
+            [
+              274,
+              349,
+              26,
+              6
+            ],
+            [
+              322,
+              10,
+              434,
+              2
+            ],
+            [
+              30,
+              2,
+              2,
+              26
+            ]
+          ],
+          "raw_head_correct": 2878,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2878,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "cdc2445d71158e27a4eaba7ffc7c6fd330fed23b0c4b1bf829428ebc5732c6d7",
+      "state_sha256": "f8b52de4a0e48be58030b3447de95e15579007e3cd2265b9e759d8db856b0142",
+      "parameters_unchanged": true
+    },
+    "B1_1211": {
+      "probes": {
+        "full": {
+          "correct": 2864,
+          "decisions": 3769,
+          "accuracy": 0.7598832845687866,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1989,
+              117,
+              165,
+              15
+            ],
+            [
+              252,
+              371,
+              25,
+              7
+            ],
+            [
+              268,
+              18,
+              478,
+              4
+            ],
+            [
+              27,
+              3,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2871,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2876,
+          "decisions": 3769,
+          "accuracy": 0.7630671262741089,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2032,
+              110,
+              131,
+              13
+            ],
+            [
+              256,
+              371,
+              22,
+              6
+            ],
+            [
+              303,
+              16,
+              447,
+              2
+            ],
+            [
+              28,
+              3,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2866,
+          "max_logit_delta_from_full": 2.6692051887512207,
+          "protected_action_changes_from_full": 150
+        },
+        "fit_constant": {
+          "correct": 2865,
+          "decisions": 3769,
+          "accuracy": 0.7601485848426819,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1998,
+              118,
+              157,
+              13
+            ],
+            [
+              256,
+              366,
+              27,
+              6
+            ],
+            [
+              274,
+              17,
+              475,
+              2
+            ],
+            [
+              28,
+              3,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2866,
+          "max_logit_delta_from_full": 1.4786638021469116,
+          "protected_action_changes_from_full": 76
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2871,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "f8284ab0c41f6f0b4dd69ffba332943d74e64e559b779a3ba895a24b0016b31d",
+      "state_sha256": "83d7e3dd43aae5f4d51b065660ab61bddc59f8819bf965be6d3bc04515ae2742",
+      "parameters_unchanged": true
+    },
+    "B2_1211": {
+      "probes": {
+        "full": {
+          "correct": 2855,
+          "decisions": 3769,
+          "accuracy": 0.7574953436851501,
+          "matrix_true_rows_predicted_columns": [
+            [
+              1982,
+              128,
+              161,
+              15
+            ],
+            [
+              246,
+              374,
+              27,
+              8
+            ],
+            [
+              275,
+              16,
+              473,
+              4
+            ],
+            [
+              27,
+              4,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2862,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2862,
+          "decisions": 3769,
+          "accuracy": 0.7593526244163513,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2022,
+              125,
+              126,
+              13
+            ],
+            [
+              263,
+              361,
+              25,
+              6
+            ],
+            [
+              301,
+              12,
+              453,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2857,
+          "max_logit_delta_from_full": 1.8148472309112549,
+          "protected_action_changes_from_full": 177
+        },
+        "fit_constant": {
+          "correct": 2859,
+          "decisions": 3769,
+          "accuracy": 0.7585566639900208,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2003,
+              119,
+              151,
+              13
+            ],
+            [
+              257,
+              364,
+              28,
+              6
+            ],
+            [
+              285,
+              15,
+              466,
+              2
+            ],
+            [
+              29,
+              2,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2858,
+          "max_logit_delta_from_full": 1.471426010131836,
+          "protected_action_changes_from_full": 97
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2862,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "24930459389e806b03fc0bd44cb53697f6967b8ae7fca3e6e30e810dd7144652",
+      "state_sha256": "ba2910fb269da56097d1c987803e0f6788ee475ccbe02d13991490979671abc6",
+      "parameters_unchanged": true
+    },
+    "Ours_1211": {
+      "probes": {
+        "full": {
+          "correct": 2875,
+          "decisions": 3769,
+          "accuracy": 0.7628018260002136,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2021,
+              110,
+              141,
+              14
+            ],
+            [
+              266,
+              355,
+              27,
+              7
+            ],
+            [
+              279,
+              14,
+              473,
+              2
+            ],
+            [
+              26,
+              4,
+              4,
+              26
+            ]
+          ],
+          "raw_head_correct": 2878,
+          "max_logit_delta_from_full": 0.0,
+          "protected_action_changes_from_full": 0
+        },
+        "zero": {
+          "correct": 2879,
+          "decisions": 3769,
+          "accuracy": 0.7638630867004395,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2056,
+              105,
+              112,
+              13
+            ],
+            [
+              275,
+              352,
+              22,
+              6
+            ],
+            [
+              310,
+              11,
+              445,
+              2
+            ],
+            [
+              28,
+              3,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2870,
+          "max_logit_delta_from_full": 1.7829638719558716,
+          "protected_action_changes_from_full": 144
+        },
+        "fit_constant": {
+          "correct": 2877,
+          "decisions": 3769,
+          "accuracy": 0.7633324265480042,
+          "matrix_true_rows_predicted_columns": [
+            [
+              2027,
+              109,
+              137,
+              13
+            ],
+            [
+              264,
+              358,
+              27,
+              6
+            ],
+            [
+              285,
+              15,
+              466,
+              2
+            ],
+            [
+              28,
+              3,
+              3,
+              26
+            ]
+          ],
+          "raw_head_correct": 2877,
+          "max_logit_delta_from_full": 1.1820039749145508,
+          "protected_action_changes_from_full": 70
+        }
+      },
+      "native": {
+        "correct": 2721,
+        "decisions": 3769,
+        "accuracy": 0.7219421863555908,
+        "matrix_true_rows_predicted_columns": [
+          [
+            1765,
+            213,
+            295,
+            13
+          ],
+          [
+            209,
+            392,
+            48,
+            6
+          ],
+          [
+            202,
+            26,
+            538,
+            2
+          ],
+          [
+            15,
+            9,
+            10,
+            26
+          ]
+        ],
+        "raw_head_correct": 2721
+      },
+      "recorded_gpu_raw_head_correct": 2878,
+      "cpu_minus_recorded_gpu_correct": 0,
+      "checkpoint_sha256": "8ecbb64d6d41d6329b0b16f023506b20ceeca03714b410b25d32052cd1eed140",
+      "state_sha256": "7ed3a4e3503e076e58e696277eabc8a0d432cb69c987f4cb94b1778f8d020a77",
+      "parameters_unchanged": true
+    }
+  },
+  "source_sha256": "de74286773f46bbd9d23313caaf773f5f80e6bfd497661cacc1a0c9c527e1336",
+  "feature_sha256": "9c5db0b795167e68ac474b82942c5f572e996d47048c681f7e804ed272b4003f",
+  "data_sha256": "dd9ec6918fecd8810dd0b2ccfdced7eeaa578baf4b89c0d69da8de3d5a63d01b",
+  "gpu_used": false,
+  "optimizer_updates": 0,
+  "new_navigation_episodes": 0,
+  "seconds": 22.99808552581817,
+  "constant_definition": "Equal mean over508 FIT trajectory mean memories; no labels used to compute constant",
+  "scope": "60 exposed CHECK teacher routes,3769 decisions; native STOP preserved. No closed-loop claim.",
+  "limitation": "Zero and constant states may be out of distribution; neither is a certified task-state-matched sham. Sensitivity cannot identify a unique semantic history variable.",
+  "actions": [
+    "move_forward",
+    "turn_left",
+    "turn_right",
+    "STOP"
+  ]
+}
