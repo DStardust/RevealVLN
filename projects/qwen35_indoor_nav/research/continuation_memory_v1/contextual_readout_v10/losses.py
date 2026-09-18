@@ -137,4 +137,3 @@ def evaluate(net, cache, batches, mode):
             base_macro_action_ce=sum(r['base_action_ce'] for r in selected)/len(selected),
             base_macro_action_accuracy=sum(r['base_action_correct']/r['action_owners'] for r in selected)/len(selected))
     return dict(summaries=summaries,families=rows)
-
