@@ -10,6 +10,8 @@ import time
 import traceback
 
 HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(HERE))
+from transport import close_stream
 LINE=HERE.parents[1]
 V5=HERE.parent/'ordinary_cycle_pair_recovery_v5'
 MEMORY=LINE/'research/continuation_memory_v1/contextual_readout_v10'
@@ -94,6 +96,7 @@ def main(session):
             memory_checkpoints=p['memory_checkpoint_sha256'],seed=seed,seed_selected_by_score=False,
             arms=protocol['arms'],no_memory_control={arm:net.no_memory for arm,net in heads.items()},
             protocol_sha256=c.sha(HERE/'PROTOCOL.json'),base_runtime_identity_is_reused_V5_loader=True,
+            runtime_config_sha256=c.sha(session/'CONFIG.json'),infrastructure_revision=p['infrastructure_revision'],
             torch_cuda_matmul_allow_tf32=torch.backends.cuda.matmul.allow_tf32,
             future_query_used_at_runtime=False,raw_truth_used_at_runtime=False,native_stop_preserved=True),True)
         collate=model.make_collate(policy.processor.tokenizer.pad_token_id,policy.exec_sid,policy.query_sid,policy.base.config.image_token_id)
@@ -107,7 +110,7 @@ def main(session):
         for arm in ARMS:
             parent,child=socket.socketpair();parent.settimeout(180)
             log=(session/f'simulator_{arm}.log').open('x')
-            proc=subprocess.Popen([str(LINE/'.envs/q35n_habitat_v017_g0r/bin/python3'),'-I','-B',str(V5/'executor.py'),
+            proc=subprocess.Popen([str(LINE/'.envs/q35n_habitat_v017_g0r/bin/python3'),'-I','-B',str(HERE/'executor.py'),
                 str(child.fileno()),str(session),arm],pass_fds=(child.fileno(),),env=simenv,cwd=c.ROOT,stdout=log,stderr=subprocess.STDOUT)
             child.close();processes.append(proc);sockets.append(parent);logs.append(log)
             streams[arm]=parent.makefile('rw')
@@ -208,7 +211,7 @@ def main(session):
             for proc in processes:
                 try:proc.wait(timeout=10)
                 except subprocess.TimeoutExpired:proc.kill();proc.wait(timeout=10)
-            for stream in streams.values():stream.close()
+            for stream in streams.values():close_stream(stream)
             for sock in sockets:sock.close()
             for log in logs:log.close()
             metadata={}

@@ -18,12 +18,18 @@ review=c.load('v10_navigation_review',HERE/'review.py')
 
 def main(seed):
     protocol=c.read(HERE/'PROTOCOL.json')
+    repair=c.read(HERE/'INFRA_REPAIR_001.json')
+    assert c.sha(HERE/'PROTOCOL.json')==repair['original_protocol_sha256']
+    source_hashes=dict(protocol['source_hashes'],**repair['source_overrides'])
     assert c.read(HERE/'CPU_TEST_RESULT.json')['passed']
+    assert c.read(HERE/'CPU_TEST_RESULT_INFRA_001.json')['passed']
     result=c.read(MEMORY/'run_001/RESULT.json')
     assert result['status']=='MATCHED_CONTEXTUAL_READOUT_COMPLETE'
-    for relative,digest in protocol['source_hashes'].items():assert c.sha(LINE/relative)==digest,'SOURCE_CHANGED:'+relative
+    for relative,digest in source_hashes.items():assert c.sha(LINE/relative)==digest,'SOURCE_CHANGED:'+relative
     pending=sorted(set(range(100))-set(review.committed(seed)))
     if not pending:return
+    interrupted=sum(c.read(path)['status']!='COMPLETE' for path in HERE.glob('seed_*/sessions/session_*/LAUNCH_RESULT.json'))
+    assert interrupted<=3,'INFRASTRUCTURE_RETRY_LIMIT'
     lock=(V5/'gpu_inference.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     gpu=resource.snapshot()[protocol['gpu']]
     if gpu['free_mib']<12288:
@@ -33,10 +39,12 @@ def main(seed):
     session=sessions/f'session_{len(list(sessions.glob("session_*")))+1:03d}'
     session.mkdir();(session/'source').mkdir();(session/'frames').mkdir();(session/'pairs').mkdir()
     for path in [*HERE.glob('*.py'),HERE/'PROTOCOL.json']:shutil.copy2(path,session/'source'/path.name)
+    shutil.copy2(HERE/'INFRA_REPAIR_001.json',session/'source/INFRA_REPAIR_001.json')
     p=c.read(V5/'PROTOCOL.json')
     memory_hashes={name:c.sha(MEMORY/'run_001'/f'{name}_{seed}_MEMORY.pt') for name in protocol['memory_arms'].values()}
     c.write(session/'CONFIG.json',dict(p,method_seed=seed,gpu=protocol['gpu'],gpu_uuid=gpu['uuid'],scheduled_ranks=pending,
-        memory_checkpoint_sha256=memory_hashes,source_hashes=protocol['source_hashes']),True)
+        memory_checkpoint_sha256=memory_hashes,source_hashes=source_hashes,
+        infrastructure_revision='INFRA_REPAIR_001',infrastructure_revision_sha256=c.sha(HERE/'INFRA_REPAIR_001.json')),True)
     c.write(session/'PREFLIGHT.json',dict(selected=gpu,scheduled_groups=len(pending),shared_allowed=True,
         gpu_hour_limit=None,method_seed=seed,seed_selected_by_score=False),True)
     began=time.monotonic();proc=None;identity=None;reason=None
