@@ -1,14 +1,16 @@
 {
   "passed": true,
-  "tests": 4,
+  "tests": 6,
   "exit_code": 0,
   "gpu_used": false,
-  "test_file_sha256": "4f7c0202fac56143597ac3889ccfd4f0726d696992092058d5e663c3d881605e",
-  "actual_output": "Ran 4 tests in 0.017s; OK",
+  "test_file_sha256": "590d034eecf01fb401117841b10b07319a40008c196f6aea9095abade6441b49",
+  "actual_output": "Ran 6 tests in 0.020s; OK",
   "checks": [
     "Native STOP and learned motion/STOP choices",
     "Intended intervention versus input/numeric error",
     "Channel memory isolation/reset and500 decision budget",
-    "Paired win/loss denominator"
+    "Paired win/loss denominator",
+    "All four runtime controls and six pair contrasts declared",
+    "Identical pair termination while other arms remain active"
   ]
 }

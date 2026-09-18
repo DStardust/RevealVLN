@@ -16,10 +16,21 @@ def decision(action='move_forward',executed='move_forward'):
 
 
 class Tests(unittest.TestCase):
+    def test_all_declared_runtime_controls(self):
+        self.assertEqual(evaluate.ARMS,('A','B','C','D'))
+        self.assertEqual(review.ARMS,evaluate.ARMS)
+        self.assertIn(('D','C'),evaluate.CONTRASTS)
+        self.assertEqual(len(evaluate.CONTRASTS),6)
+
     def test_native_stop_and_four_class_choice(self):
         self.assertEqual(evaluate.selected_action([0,0,0,1],[9,8,7,0]),('STOP','STOP'))
         self.assertEqual(evaluate.selected_action([1,0,0,0],[0,2,1,0]),('move_forward','turn_left'))
         self.assertEqual(evaluate.selected_action([1,0,0,0],[0,0,0,2]),('move_forward','STOP'))
+
+    def test_joint_termination_while_other_arms_continue(self):
+        self.assertFalse(evaluate.active_contrast({'C':decision()},'A','B'))
+        self.assertTrue(evaluate.active_contrast({'A':decision(),'B':decision()},'A','B'))
+        with self.assertRaises(evaluate.c.PairError):evaluate.active_contrast({'A':decision()},'A','B')
 
     def test_intentional_difference_and_numeric_invalidity_are_separate(self):
         a,b=decision(executed='turn_left'),decision()

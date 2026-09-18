@@ -1,4 +1,4 @@
-"""Whole-triplet denominators and paired SR effects; partial progress is explicit."""
+"""Whole-quartet denominators and paired SR effects; partial progress is explicit."""
 import json
 import math
 from pathlib import Path
@@ -9,7 +9,7 @@ HERE=Path(__file__).resolve().parent
 V5=HERE.parent/'ordinary_cycle_pair_recovery_v5'
 sys.path.insert(0,str(V5))
 import common as c
-ARMS=('A','B','C')
+ARMS=('A','B','C','D')
 
 
 def committed():
@@ -18,12 +18,12 @@ def committed():
         covered=set()
         for path in session.glob('STATE_SEAL_*.json'):
             seal=c.read(path)
-            if seal['unchanged']:covered.update(seal['triplet_ranks'])
-        for path in session.glob('pairs/pair_*/TRIPLET.json'):
+            if seal['unchanged']:covered.update(seal['quartet_ranks'])
+        for path in session.glob('pairs/pair_*/QUARTET.json'):
             row=c.read(path)
             if row['rank'] not in covered:continue
-            assert row['valid_behavioral_triplet']
-            assert row['rank'] not in found,'DUPLICATE_COMPLETE_TRIPLET'
+            assert row['valid_behavioral_quartet']
+            assert row['rank'] not in found,'DUPLICATE_COMPLETE_QUARTET'
             found[row['rank']]=dict(row,path=str(path))
     return found
 
@@ -48,7 +48,7 @@ def contrast(rows,left,right):
 
 def summarize(verify=False):
     found=committed();rows=[found[k] for k in sorted(found)]
-    if not rows:return dict(status='NO_COMPLETE_TRIPLET',complete_triplets=0,expected_triplets=100)
+    if not rows:return dict(status='NO_COMPLETE_QUARTET',complete_quartets=0,expected_quartets=100)
     arms={}
     for arm in ARMS:
         episodes=[row['episodes'][arm] for row in rows]
@@ -71,9 +71,9 @@ def summarize(verify=False):
             inference_p50=statistics.median(latency),inference_p95=latency[math.ceil(.95*len(latency))-1],
             memory_p50=statistics.median(memory),memory_p95=memory[math.ceil(.95*len(memory))-1])
     return dict(status='VALID_COMPLETE' if len(rows)==100 else 'VALID_PARTIAL_DEVELOPMENT',
-        complete_triplets=len(rows),expected_triplets=100,episode_executions=len(rows)*3,
+        complete_quartets=len(rows),expected_quartets=100,episode_executions=len(rows)*len(ARMS),
         missing_ranks=sorted(set(range(100))-set(found)),arms=arms,
-        comparisons={a+b:contrast(rows,a,b) for a,b in (('A','B'),('A','C'),('B','C'))},
+        comparisons={a+b:contrast(rows,a,b) for a,b in (('A','B'),('A','C'),('A','D'),('B','C'),('D','C'),('D','B'))},
         native_stop_preserved=True,adopted=False,seed=1209,seed_selected_by_score=False,
         data_exposure='Previously exposed INTERNAL_DEV100; not full val_unseen or blind generalization',
         base_prefix_logits_bitwise_equal=all(a['logits_bitwise_equal'] for row in rows for a in row['audits'].values()),

@@ -1,35 +1,39 @@
 {
-  "id": "Q35N_ORDINARY_MEMORY_TRANSFER_V7",
+  "id": "Q35N_ORDINARY_MEMORY_TRANSFER_V7_1",
   "parent_commit": "530591a073e41ff5a479d49a2843a960004fb17f",
   "authorization": "Continue to next method-benefit node; no inherited GPU-hour cutoff",
   "gpu": 1,
   "arms": {
     "A": "native best4k",
     "B": "best4k plus exact-state B2 memory",
-    "C": "best4k plus crossed-outcome Ours memory"
+    "C": "best4k plus crossed-outcome Ours memory",
+    "D": "best4k plus action-BC-only B1 memory"
   },
   "method_training": "research/continuation_memory_v1/multifamily_v7/PROTOCOL.json",
   "method_seed": 1209,
   "method_seed_frozen_before_training_results": true,
   "method_updates": 600,
   "checkpoint_selection": "Fixed final600 update, seed1209; never select best validation score",
-  "primary_comparison": "C minus B paired SR",
+  "primary_comparison": [
+    "C minus B paired SR",
+    "C minus D paired SR"
+  ],
   "engineering_references": [
     "B minus A",
-    "C minus A"
+    "C minus A",
+    "D minus A"
   ],
-  "expected_triplets": 100,
-  "expected_episode_executions": 300,
+  "expected_episode_executions": 400,
   "milestones": [
     5,
     20,
     100
   ],
   "dataset": "Exactly the existing V5 INTERNAL_DEV100 and its house-stratified order",
-  "inference_order": "Three-arm cyclic rotation by frozen rank modulo3",
+  "inference_order": "Four-arm cyclic rotation by frozen rank modulo4",
   "shared_model_process": true,
   "batch_size": 1,
-  "isolated_environment_channels": 3,
+  "isolated_environment_channels": 4,
   "base_checkpoint": "sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
   "base_dtype_and_kernel": "Original V5 loader, unchanged",
   "memory_dtype": "float32",
@@ -46,7 +50,7 @@
   "success": "Active STOP and official geodesic distance strictly below3m",
   "source_executor": "Read-only V5 executor.py; frozen metrics unchanged",
   "prefix_rule": "Until first actual chosen-action difference for each contrast: raw/processed inputs and base native argmax match. Log base logits equality separately.",
-  "partial_denominators": "Only whole three-arm units covered by parameter seals; half units retained as failed attempts, never spliced",
+  "partial_denominators": "Only whole four-arm units covered by parameter seals; incomplete units retained as failed attempts, never spliced",
   "gpu_hour_limit": null,
   "continuous_hour_limit": null,
   "max_output_gib": 20,
@@ -54,10 +58,10 @@
   "automatic_adoption": false,
   "interpretation": "Development transfer signal only; one prespecified method seed and exposed five-house100. Not blind test, method novelty, SR40, or deployment.",
   "source_hashes": {
-    "closed_loop_bench/ordinary_memory_transfer_v7/evaluate.py": "929a2195b0086aae4fd0fde76d1633c9423b157f428cd69f01f8e9b36ff38ba6",
-    "closed_loop_bench/ordinary_memory_transfer_v7/launch.py": "b3bb900a4ce827152f4200a06499d541eb1a55e5f38ca8909be7645ce4ef5c49",
-    "closed_loop_bench/ordinary_memory_transfer_v7/review.py": "4a4ca60f7a8b12c7d7993d78f897c9659b6333c4cc014f3ce9c8d6156de23c4a",
-    "closed_loop_bench/ordinary_memory_transfer_v7/test_cpu.py": "4f7c0202fac56143597ac3889ccfd4f0726d696992092058d5e663c3d881605e",
+    "closed_loop_bench/ordinary_memory_transfer_v7/evaluate.py": "d25a62cb42d7e8c447ee759430074fcc1df320490c218ac39962fbff79b70f7b",
+    "closed_loop_bench/ordinary_memory_transfer_v7/launch.py": "4001d328efd589a3dc8379021711f9fe173e133b35907830aeb0b34b8a402f10",
+    "closed_loop_bench/ordinary_memory_transfer_v7/review.py": "18664fa16e63bb2acb9baeccb028e8ebef4bbccb16bc1cfc25271e2788db5135",
+    "closed_loop_bench/ordinary_memory_transfer_v7/test_cpu.py": "590d034eecf01fb401117841b10b07319a40008c196f6aea9095abade6441b49",
     "closed_loop_bench/ordinary_cycle_pair_recovery_v5/evaluate.py": "85a07506b170927c29bc05aedcf43c92d88a6454025e74558654409406e8924e",
     "closed_loop_bench/ordinary_cycle_pair_recovery_v5/executor.py": "446ccf1033eeff5120c873f5ee6010a5647d22cf85098685bb2dd575a30c3517",
     "closed_loop_bench/ordinary_cycle_pair_recovery_v5/common.py": "03fff9230f233c694ffd1892d67a698e486c93da300a6da23ce9f49d52305d64",
@@ -68,5 +72,17 @@
     "research/continuation_memory_v1/query_reader_repair_v2/model.py": "83f11060fe551f0866747eb213c45925afd0346e200433e0a1e3241863555222",
     "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19"
   },
-  "prelaunch_audit_addition": "Verify full deployed base identity against actual feature encoder; record TF32 and final Triton metadata. No policy/split/checkpoint selection changed."
+  "prelaunch_audit_addition": "Verify full deployed base identity against actual feature encoder; record TF32 and final Triton metadata. No policy/split/checkpoint selection changed. Jointly ended contrasts wait for final terminal equality checks while other arms continue.",
+  "memory_arms": {
+    "B": "B2",
+    "C": "Ours",
+    "D": "B1"
+  },
+  "expected_quartets": 100,
+  "prelaunch_control_amendment": {
+    "time_utc": "2026-09-18T03:26:20.865013+00:00",
+    "training_results_available": false,
+    "closed_loop_started": false,
+    "reason": "Add B1 to distinguish crossed supervision from memory architecture/trajectory-pool effects; no training or seed selection changed."
+  }
 }

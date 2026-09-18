@@ -1,4 +1,4 @@
-"""Native/B2/Ours, one best4k process and three isolated simulator channels."""
+"""Native/B2/Ours/B1, one best4k process and four isolated simulator channels."""
 import json
 import os
 from pathlib import Path
@@ -16,8 +16,8 @@ MEMORY=LINE/'research/continuation_memory_v1/multifamily_v7'
 sys.path.insert(0,str(V5))
 import common as c
 base_evaluate=c.load('v7_base_evaluate',V5/'evaluate.py')
-ARMS=('A','B','C')
-CONTRASTS=(('A','B'),('A','C'),('B','C'))
+ARMS=('A','B','C','D')
+CONTRASTS=(('A','B'),('A','C'),('A','D'),('B','C'),('D','C'),('D','B'))
 
 
 def selected_action(base_values,method_values):
@@ -35,6 +35,12 @@ def compare_prefix(left,right):
     return comparison,left['executed_action']!=right['executed_action']
 
 
+def active_contrast(decisions,left,right):
+    if (left in decisions)!=(right in decisions):
+        raise c.PairError('PREFIX_TERMINATION_MISMATCH')
+    return left in decisions
+
+
 def main(session):
     p=c.read(session/'CONFIG.json')
     protocol=c.read(HERE/'PROTOCOL.json')
@@ -47,7 +53,7 @@ def main(session):
         stop=True
     signal.signal(signal.SIGTERM,interrupted);signal.signal(signal.SIGINT,interrupted)
     def progress(**extra):
-        c.write(session/'PROGRESS.json',dict(unix=time.time(),triplet_rank=active_rank,completed=len(completed),total_actions=actions,**extra))
+        c.write(session/'PROGRESS.json',dict(unix=time.time(),quartet_rank=active_rank,completed=len(completed),total_actions=actions,**extra))
     def call(arm,value):
         streams[arm].write(json.dumps(value)+'\n');streams[arm].flush()
         line=streams[arm].readline()
@@ -61,7 +67,7 @@ def main(session):
         unchanged=final['sha256']==initial['sha256'] and head_final==head_initial
         c.write(session/f'STATE_SEAL_{len(completed):03d}.json',dict(unchanged=unchanged,
             initial_sha256=initial['sha256'],final_sha256=final['sha256'],head_initial=head_initial,
-            head_final=head_final,triplet_ranks=list(completed)),True)
+            head_final=head_final,quartet_ranks=list(completed)),True)
         if not unchanged:raise c.PairError('PARAMETERS_CHANGED')
         sealed.update(completed)
     try:
@@ -71,7 +77,7 @@ def main(session):
         import torch
         mem_model=c.load('v7_navigation_memory',MEMORY.parent/'query_reader_repair_v2/model.py')
         data=c.read(MEMORY/'DATA.json')
-        for arm,name in [('B','B2'),('C','Ours')]:
+        for arm,name in protocol['memory_arms'].items():
             checkpoint=MEMORY/'run_001'/f'{name}_1209_MEMORY.pt'
             assert c.sha(checkpoint)==p['memory_checkpoint_sha256'][name]
             net=mem_model.MemoryPolicy(2048,len(data['query_vocabulary']),8,64,.99)
@@ -80,11 +86,11 @@ def main(session):
             for parameter in net.parameters():parameter.requires_grad_(False)
             heads[arm]=net;head_initial[arm]=c.model_identity(net)['sha256']
         expected=c.read(MEMORY/'run_001/RESULT.json')
-        for arm,name in [('B','B2'),('C','Ours')]:
+        for arm,name in protocol['memory_arms'].items():
             assert head_initial[arm]==expected['runs'][name+'_1209']['final_state_sha256']
         c.write(session/'METHOD_IDENTITY.json',dict(base_state_sha256=initial['sha256'],head_states=head_initial,
             memory_checkpoints=p['memory_checkpoint_sha256'],seed=1209,seed_selected_by_score=False,
-            arms={'A':'native best4k','B':'best4k + B2 memory','C':'best4k + Ours memory'},
+            arms=protocol['arms'],
             protocol_sha256=c.sha(HERE/'PROTOCOL.json'),base_runtime_identity_is_reused_V5_loader=True,
             torch_cuda_matmul_allow_tf32=torch.backends.cuda.matmul.allow_tf32,
             future_query_used_at_runtime=False,raw_truth_used_at_runtime=False,native_stop_preserved=True),True)
@@ -92,7 +98,7 @@ def main(session):
         windows={arm:c.Window() for arm in ARMS}
         class Store:
             def get(self,index,t):return windows[ARMS[index]].item()
-        dataset=model.DecisionDataset([dict(record_idx=i,t=0,target=0,weight=1.) for i in range(3)],Store(),policy.processor)
+        dataset=model.DecisionDataset([dict(record_idx=i,t=0,target=0,weight=1.) for i in range(len(ARMS))],Store(),policy.processor)
         capture=[]
         handle=policy.action_head.register_forward_pre_hook(lambda module,args:capture.append(args[0]))
         simenv=os.environ.copy();simenv.pop('CUDA_VISIBLE_DEVICES',None)
@@ -109,7 +115,7 @@ def main(session):
             for rank in p['scheduled_ranks']:
                 if stop:break
                 active_rank=rank;row=order[rank]
-                inference_order=ARMS[rank%3:]+ARMS[:rank%3]
+                inference_order=ARMS[rank%len(ARMS):]+ARMS[:rank%len(ARMS)]
                 folder=session/'pairs'/f'pair_{rank:03d}';folder.mkdir()
                 for arm in ARMS:(folder/arm).mkdir()
                 memories={arm:net.reset(1,'cuda:0') for arm,net in heads.items()}
@@ -155,7 +161,7 @@ def main(session):
                     for left,right in CONTRASTS:
                         audit=audits[left+right]
                         if audit['first_action_difference'] is not None:continue
-                        if left not in decisions or right not in decisions:raise c.PairError('PREFIX_TERMINATION_MISMATCH')
+                        if not active_contrast(decisions,left,right):continue
                         try:comparison,different=compare_prefix(decisions[left],decisions[right])
                         except c.PairError:
                             c.write(folder/'FIRST_DIVERGENCE.json',dict(step=step,contrast=left+right,decisions=decisions),True)
@@ -176,8 +182,8 @@ def main(session):
                     if audits[left+right]['first_action_difference'] is None:
                         keys=['positions','distances','steps','stopped','success','spl','ndtw','action_counts','collisions']
                         assert all(episodes[left][key]==episodes[right][key] for key in keys),'NO_DIFFERENCE_TERMINAL_MISMATCH'
-                c.write(folder/'TRIPLET.json',dict(rank=rank,index=row['index'],episode_id=episodes['A']['episode_id'],
-                    inference_order=inference_order,audits=audits,episodes=episodes,valid_behavioral_triplet=True,
+                c.write(folder/'QUARTET.json',dict(rank=rank,index=row['index'],episode_id=episodes['A']['episode_id'],
+                    inference_order=inference_order,audits=audits,episodes=episodes,valid_behavioral_quartet=True,
                     protocol_sha256=c.sha(HERE/'PROTOCOL.json'),method_identity_sha256=c.sha(session/'METHOD_IDENTITY.json'),
                     logs={arm:{name:c.sha(folder/arm/name) for name in ('POLICY_STEPS.jsonl','STEPS_PRIVILEGED.jsonl')} for arm in ARMS}),True)
                 completed.append(rank)

@@ -1,4 +1,4 @@
-"""Resume only whole native/B2/Ours triplets; no score-dependent retry or GPU-hour cap."""
+"""Resume only whole native/B1/B2/Ours quartets; no score-dependent retry or GPU-hour cap."""
 import fcntl
 from pathlib import Path
 import shutil
@@ -34,10 +34,10 @@ def main():
     session.mkdir();(session/'source').mkdir();(session/'frames').mkdir();(session/'pairs').mkdir()
     for path in [*HERE.glob('*.py'),HERE/'PROTOCOL.json']:shutil.copy2(path,session/'source'/path.name)
     p=c.read(V5/'PROTOCOL.json')
-    memory_hashes={name:c.sha(MEMORY/'run_001'/f'{name}_1209_MEMORY.pt') for name in ('B2','Ours')}
+    memory_hashes={name:c.sha(MEMORY/'run_001'/f'{name}_1209_MEMORY.pt') for name in protocol['memory_arms'].values()}
     c.write(session/'CONFIG.json',dict(p,gpu=protocol['gpu'],gpu_uuid=gpu['uuid'],scheduled_ranks=pending,
         memory_checkpoint_sha256=memory_hashes,source_hashes=protocol['source_hashes']),True)
-    c.write(session/'PREFLIGHT.json',dict(selected=gpu,scheduled_triplets=len(pending),shared_allowed=True,
+    c.write(session/'PREFLIGHT.json',dict(selected=gpu,scheduled_quartets=len(pending),shared_allowed=True,
         gpu_hour_limit=None,method_seed=1209,seed_selected_by_score=False),True)
     began=time.monotonic();proc=None;identity=None;reason=None
     with (session/'worker.log').open('x') as log:
