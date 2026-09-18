@@ -1,0 +1,57 @@
+import importlib.util
+from pathlib import Path
+import sys
+import unittest
+import torch
+
+HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(HERE))
+import evaluate
+import review
+
+
+def decision(action='move_forward',executed='move_forward'):
+    return dict(raw=dict(key='same'),processed=dict(ids='same'),logits=[2.,1.,0.,-1.],
+                native_action=action,executed_action=executed,override=executed!=action)
+
+
+class Tests(unittest.TestCase):
+    def test_native_stop_and_four_class_choice(self):
+        self.assertEqual(evaluate.selected_action([0,0,0,1],[9,8,7,0]),('STOP','STOP'))
+        self.assertEqual(evaluate.selected_action([1,0,0,0],[0,2,1,0]),('move_forward','turn_left'))
+        self.assertEqual(evaluate.selected_action([1,0,0,0],[0,0,0,2]),('move_forward','STOP'))
+
+    def test_intentional_difference_and_numeric_invalidity_are_separate(self):
+        a,b=decision(executed='turn_left'),decision()
+        _,different=evaluate.compare_prefix(a,b)
+        self.assertTrue(different)
+        b['raw']['key']='changed'
+        with self.assertRaises(evaluate.c.PairError):evaluate.compare_prefix(a,b)
+        b=decision(action='turn_right')
+        with self.assertRaises(evaluate.c.PairError):evaluate.compare_prefix(a,b)
+        b=decision();b['logits'][0]=float('nan')
+        with self.assertRaises(evaluate.c.PairError):evaluate.compare_prefix(a,b)
+
+    def test_channel_memory_reset_and_budget(self):
+        module=evaluate.c.load('v7_test_mem',evaluate.MEMORY.parent/'query_reader_repair_v2/model.py')
+        net=module.MemoryPolicy(6,10,slots=2,width=4)
+        a,b=net.reset(1,'cpu'),net.reset(1,'cpu')
+        changed,_=net.update(torch.ones(1,6),a)
+        self.assertTrue(torch.equal(b,torch.zeros_like(b)))
+        self.assertTrue(torch.equal(a,torch.zeros_like(a)))
+        self.assertFalse(torch.equal(changed,b))
+        self.assertTrue(torch.equal(net.reset(1,'cpu'),b))
+        self.assertEqual(evaluate.c.advance('STOP',499,False,500),(500,True))
+        self.assertEqual(evaluate.c.advance('turn_left',499,False,500),(500,True))
+
+    def test_paired_win_loss_denominator(self):
+        def episode(i,s):return dict(episode_id=str(i),house='house',success=s,spl=.5*s,ndtw=.2)
+        rows=[dict(episodes={'A':episode(i,a),'B':episode(i,b)}) for i,(a,b) in enumerate([(0,1),(1,1),(0,0)])]
+        result=review.contrast(rows,'A','B')
+        self.assertAlmostEqual(result['delta_sr'],1/3)
+        self.assertEqual(result['wins'],['0'])
+        self.assertEqual(result['retained_successes'],['1'])
+        self.assertEqual(result['losses'],[])
+
+
+if __name__=='__main__':unittest.main()
