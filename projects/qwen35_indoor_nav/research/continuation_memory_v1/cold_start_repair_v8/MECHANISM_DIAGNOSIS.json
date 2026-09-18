@@ -1,0 +1,138 @@
+{
+  "status": "READ_ONLY_DIAGNOSTIC",
+  "source_sha256": "e38fa513e53ac72ae2d923baba0d88aa5c50ca49b8b9e0388acdbf25656e9a2a",
+  "data_sha256": "a798003a9b319d2ee62a39f38ab22b35f461bf562ee5d2cfa24edd881daf4432",
+  "action_supervision_ages": {
+    "fit": {
+      "action_owners": 12912,
+      "zero_based_min": 156,
+      "zero_based_median": 301.5,
+      "zero_based_max": 579
+    },
+    "check": {
+      "action_owners": 10698,
+      "zero_based_min": 134,
+      "zero_based_median": 233.0,
+      "zero_based_max": 382
+    }
+  },
+  "check_only_query_tokens": [
+    "CATEGORY:tv_monitor",
+    "REPEAT:14",
+    "REPEAT:16",
+    "REPEAT:18",
+    "ROOM:lounge"
+  ],
+  "results": {
+    "B2_1209": {
+      "fit": {
+        "opposing_pairs": 52,
+        "both_correct": 26,
+        "query_seen_correct": 200,
+        "query_seen_cells": 234,
+        "query_novel_correct": 0,
+        "query_novel_cells": 0
+      },
+      "check": {
+        "opposing_pairs": 48,
+        "both_correct": 4,
+        "query_seen_correct": 53,
+        "query_seen_cells": 90,
+        "query_novel_correct": 89,
+        "query_novel_cells": 126
+      }
+    },
+    "Ours_1209": {
+      "fit": {
+        "opposing_pairs": 52,
+        "both_correct": 8,
+        "query_seen_correct": 166,
+        "query_seen_cells": 234,
+        "query_novel_correct": 0,
+        "query_novel_cells": 0
+      },
+      "check": {
+        "opposing_pairs": 48,
+        "both_correct": 6,
+        "query_seen_correct": 52,
+        "query_seen_cells": 90,
+        "query_novel_correct": 90,
+        "query_novel_cells": 126
+      }
+    },
+    "B2_1210": {
+      "fit": {
+        "opposing_pairs": 52,
+        "both_correct": 30,
+        "query_seen_correct": 206,
+        "query_seen_cells": 234,
+        "query_novel_correct": 0,
+        "query_novel_cells": 0
+      },
+      "check": {
+        "opposing_pairs": 48,
+        "both_correct": 6,
+        "query_seen_correct": 55,
+        "query_seen_cells": 90,
+        "query_novel_correct": 93,
+        "query_novel_cells": 126
+      }
+    },
+    "Ours_1210": {
+      "fit": {
+        "opposing_pairs": 52,
+        "both_correct": 8,
+        "query_seen_correct": 165,
+        "query_seen_cells": 234,
+        "query_novel_correct": 0,
+        "query_novel_cells": 0
+      },
+      "check": {
+        "opposing_pairs": 48,
+        "both_correct": 4,
+        "query_seen_correct": 55,
+        "query_seen_cells": 90,
+        "query_novel_correct": 89,
+        "query_novel_cells": 126
+      }
+    },
+    "B2_1211": {
+      "fit": {
+        "opposing_pairs": 52,
+        "both_correct": 24,
+        "query_seen_correct": 198,
+        "query_seen_cells": 234,
+        "query_novel_correct": 0,
+        "query_novel_cells": 0
+      },
+      "check": {
+        "opposing_pairs": 48,
+        "both_correct": 8,
+        "query_seen_correct": 55,
+        "query_seen_cells": 90,
+        "query_novel_correct": 91,
+        "query_novel_cells": 126
+      }
+    },
+    "Ours_1211": {
+      "fit": {
+        "opposing_pairs": 52,
+        "both_correct": 8,
+        "query_seen_correct": 167,
+        "query_seen_cells": 234,
+        "query_novel_correct": 0,
+        "query_novel_cells": 0
+      },
+      "check": {
+        "opposing_pairs": 48,
+        "both_correct": 3,
+        "query_seen_correct": 56,
+        "query_seen_cells": 90,
+        "query_novel_correct": 90,
+        "query_novel_cells": 126
+      }
+    }
+  },
+  "interpretation": "Observed coverage and paired prediction evidence; neither causal attribution of failures nor permission for score-selected retraining",
+  "gpu_used": false
+}

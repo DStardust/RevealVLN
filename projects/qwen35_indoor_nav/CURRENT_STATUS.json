@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-18T15:10:50.643116+08:00",
-  "phase": "V8_COLD_START_REPAIR_TRAINING",
+  "updated": "2026-09-18T15:37:31.286065+08:00",
+  "phase": "V8_MEMORY_TRANSFER_CLOSED_LOOP_RUNNING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
   "learnability": {
@@ -188,17 +188,41 @@
     "metric_and_log_recomputed": true
   },
   "cold_start_repair_v8": {
-    "running": true,
-    "status": "TRAINING",
+    "running": false,
+    "status": "TRAINING_AND_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/cold_start_repair_v8/PROTOCOL.json",
     "closed_loop_protocol": "closed_loop_bench/ordinary_memory_transfer_v8/PROTOCOL.json",
     "implementation_commit": "2af314206fd15d107caba63e3bbd849905624ca4",
     "basis": "FIT has no supervised action before zero-based index156; add same early-prefix native-policy KL to B1/B2/Ours. Runtime interface and STOP unchanged.",
-    "gpu_hours": 0,
+    "gpu_hours": 0.4111954180261172,
     "cpu_tests": 3,
     "closed_loop_cpu_tests": 6,
-    "benefit": "UNTESTED",
+    "benefit": "EARLY_POLICY_KL_REDUCED_NAVIGATION_PENDING",
     "automatic_deployment": false,
-    "progress": "research/continuation_memory_v1/cold_start_repair_v8/run_001/PROGRESS.json"
+    "progress": "research/continuation_memory_v1/cold_start_repair_v8/run_001/PROGRESS.json",
+    "optimizer_updates": 5400,
+    "real_qwen_forwards": 0,
+    "result": "research/continuation_memory_v1/cold_start_repair_v8/run_001/RESULT.json",
+    "review": "research/continuation_memory_v1/cold_start_repair_v8/REVIEW.json",
+    "checkpoint_audit": "research/continuation_memory_v1/cold_start_repair_v8/CHECKPOINT_AUDIT.json",
+    "readback": "research/continuation_memory_v1/cold_start_repair_v8/READBACK_REVIEW.json"
+  },
+  "memory_transfer_v8": {
+    "running": true,
+    "protocol": "closed_loop_bench/ordinary_memory_transfer_v8/PROTOCOL.json",
+    "arms": {
+      "A": "native",
+      "B": "B2",
+      "C": "Ours",
+      "D": "B1"
+    },
+    "expected_quartets": 100,
+    "expected_episode_executions": 400,
+    "seed": 1209,
+    "seed_selected_by_score": false,
+    "progress": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/PROGRESS.json",
+    "process": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/PROCESS.json",
+    "full_effect_conclusion_pending": true,
+    "automatic_deployment": false
   }
 }

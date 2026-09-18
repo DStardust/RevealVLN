@@ -1,0 +1,68 @@
+{
+  "arms": {
+    "B1": {
+      "check_action_ce_mean": 1.2676185369491577,
+      "check_action_accuracy_mean": 0.5852124187780225,
+      "check_query_correct": [
+        86,
+        122,
+        72
+      ],
+      "check_query_denominator": 216,
+      "early_kl": {
+        "fit": {
+          "original": 0.17116398268785232,
+          "repair": 0.011424557759593695
+        },
+        "check": {
+          "original": 0.16289913054141733,
+          "repair": 0.016538225217825837
+        }
+      }
+    },
+    "B2": {
+      "check_action_ce_mean": 1.2762431237432692,
+      "check_action_accuracy_mean": 0.5774221599718161,
+      "check_query_correct": [
+        142,
+        148,
+        146
+      ],
+      "check_query_denominator": 216,
+      "early_kl": {
+        "fit": {
+          "original": 0.06721750627725552,
+          "repair": 0.012205013432181798
+        },
+        "check": {
+          "original": 0.07263644298331605,
+          "repair": 0.014807755864846209
+        }
+      }
+    },
+    "Ours": {
+      "check_action_ce_mean": 1.2565283874670665,
+      "check_action_accuracy_mean": 0.5803752434084106,
+      "check_query_correct": [
+        142,
+        144,
+        146
+      ],
+      "check_query_denominator": 216,
+      "early_kl": {
+        "fit": {
+          "original": 0.09758819821171272,
+          "repair": 0.011173430400399061
+        },
+        "check": {
+          "original": 0.10156718724303776,
+          "repair": 0.014938053312814899
+        }
+      }
+    }
+  },
+  "status": "ACTUAL_SAVED_HEAD_READBACK",
+  "source_sha256": "6ac82cf7e4821aa084bd321b323da97138a8d64f7afe028faa98dc5eaa0c52c6",
+  "closed_loop_benefit": null,
+  "interpretation": "Descriptive matched cached-input measurement over all three fixed seeds; reduced KL is not task success."
+}
