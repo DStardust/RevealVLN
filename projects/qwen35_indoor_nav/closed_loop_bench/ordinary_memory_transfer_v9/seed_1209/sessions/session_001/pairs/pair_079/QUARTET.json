@@ -1,0 +1,523 @@
+{
+  "rank": 79,
+  "method_seed": 1209,
+  "index": 39,
+  "episode_id": 7331,
+  "inference_order": [
+    "D",
+    "A",
+    "B",
+    "C"
+  ],
+  "audits": {
+    "AB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 11,
+      "first_action_difference": null
+    },
+    "AC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 11,
+      "first_action_difference": null
+    },
+    "AD": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 11,
+      "first_action_difference": null
+    },
+    "BC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 11,
+      "first_action_difference": null
+    },
+    "DC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 11,
+      "first_action_difference": null
+    },
+    "DB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 11,
+      "first_action_difference": null
+    }
+  },
+  "episodes": {
+    "A": {
+      "index": 39,
+      "episode_id": 7331,
+      "trajectory_id": 4874,
+      "house": "B6ByNegPMKs",
+      "instruction": "Exit the office then turn left. Go down the hallway then turn left and go into room 343. Wait there. ",
+      "started_unix": 1789745150.6815698,
+      "event": "complete",
+      "steps": 11,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.404968738555908,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.239676475524902,
+      "start_distance_m": 7.239676475524902,
+      "path_length_m": 0.2855013608479699,
+      "collisions": 3,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 1,
+        "turn_right": 6,
+        "STOP": 1
+      },
+      "wall_seconds": 36.472092151641846,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.34534573745565716,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ]
+      ],
+      "distances": [
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.335921287536621,
+        7.335921287536621,
+        7.398455619812012,
+        7.398455619812012,
+        7.404968738555908,
+        7.404968738555908
+      ]
+    },
+    "B": {
+      "index": 39,
+      "episode_id": 7331,
+      "trajectory_id": 4874,
+      "house": "B6ByNegPMKs",
+      "instruction": "Exit the office then turn left. Go down the hallway then turn left and go into room 343. Wait there. ",
+      "started_unix": 1789745160.726977,
+      "event": "complete",
+      "steps": 11,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.404968738555908,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.239676475524902,
+      "start_distance_m": 7.239676475524902,
+      "path_length_m": 0.2855013608479699,
+      "collisions": 3,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 1,
+        "turn_right": 6,
+        "STOP": 1
+      },
+      "wall_seconds": 26.45612406730652,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.34534573745565716,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ]
+      ],
+      "distances": [
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.335921287536621,
+        7.335921287536621,
+        7.398455619812012,
+        7.398455619812012,
+        7.404968738555908,
+        7.404968738555908
+      ]
+    },
+    "C": {
+      "index": 39,
+      "episode_id": 7331,
+      "trajectory_id": 4874,
+      "house": "B6ByNegPMKs",
+      "instruction": "Exit the office then turn left. Go down the hallway then turn left and go into room 343. Wait there. ",
+      "started_unix": 1789745170.9169776,
+      "event": "complete",
+      "steps": 11,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.404968738555908,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.239676475524902,
+      "start_distance_m": 7.239676475524902,
+      "path_length_m": 0.2855013608479699,
+      "collisions": 3,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 1,
+        "turn_right": 6,
+        "STOP": 1
+      },
+      "wall_seconds": 16.29670238494873,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.34534573745565716,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ]
+      ],
+      "distances": [
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.335921287536621,
+        7.335921287536621,
+        7.398455619812012,
+        7.398455619812012,
+        7.404968738555908,
+        7.404968738555908
+      ]
+    },
+    "D": {
+      "index": 39,
+      "episode_id": 7331,
+      "trajectory_id": 4874,
+      "house": "B6ByNegPMKs",
+      "instruction": "Exit the office then turn left. Go down the hallway then turn left and go into room 343. Wait there. ",
+      "started_unix": 1789745140.3102832,
+      "event": "complete",
+      "steps": 11,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.404968738555908,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.239676475524902,
+      "start_distance_m": 7.239676475524902,
+      "path_length_m": 0.2855013608479699,
+      "collisions": 3,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 1,
+        "turn_right": 6,
+        "STOP": 1
+      },
+      "wall_seconds": 46.81497836112976,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.34534573745565716,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.516998291015625,
+          0.08020400255918503,
+          19.746999740600586
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.31744384765625,
+          0.08020400255918503,
+          19.79912567138672
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29680252075195,
+          0.08020400255918503,
+          19.730318069458008
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ],
+        [
+          62.29467010498047,
+          0.08020400255918503,
+          19.723217010498047
+        ]
+      ],
+      "distances": [
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.239676475524902,
+        7.335921287536621,
+        7.335921287536621,
+        7.398455619812012,
+        7.398455619812012,
+        7.404968738555908,
+        7.404968738555908
+      ]
+    }
+  },
+  "valid_behavioral_quartet": true,
+  "protocol_sha256": "6c3f3c95f160b997887f7dc5528fce089f3bf68a6418621a047c6743acd6b0f9",
+  "method_identity_sha256": "9d00a85a41d4667cb578d28e37ca604ede9769bc0da0c304a84346d216f31c9c",
+  "logs": {
+    "A": {
+      "POLICY_STEPS.jsonl": "cfb4b355557579274be6cbd0665c2c5794539be482fd78af34d8ae16adbb5841",
+      "STEPS_PRIVILEGED.jsonl": "363355fb9648242b449f5152a52b2214876bfaff7b545d73a07af1534008b2e2"
+    },
+    "B": {
+      "POLICY_STEPS.jsonl": "9848ab4681e7f888c44bbcfa94e068c6b6f0c1b1f292c2e11cb7a83690978397",
+      "STEPS_PRIVILEGED.jsonl": "363355fb9648242b449f5152a52b2214876bfaff7b545d73a07af1534008b2e2"
+    },
+    "C": {
+      "POLICY_STEPS.jsonl": "ae7ff364ee0684a470df5fa4828fa0a0067a5d84da1a71d44820876aa3737154",
+      "STEPS_PRIVILEGED.jsonl": "363355fb9648242b449f5152a52b2214876bfaff7b545d73a07af1534008b2e2"
+    },
+    "D": {
+      "POLICY_STEPS.jsonl": "237a0496eccfd8bfabfaa307e6d46f85008782dd2c77176f7808efdacb10377b",
+      "STEPS_PRIVILEGED.jsonl": "363355fb9648242b449f5152a52b2214876bfaff7b545d73a07af1534008b2e2"
+    }
+  }
+}

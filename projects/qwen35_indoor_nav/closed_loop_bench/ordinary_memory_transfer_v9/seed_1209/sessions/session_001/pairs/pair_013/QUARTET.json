@@ -1,0 +1,499 @@
+{
+  "rank": 13,
+  "method_seed": 1209,
+  "index": 69,
+  "episode_id": 3863,
+  "inference_order": [
+    "B",
+    "C",
+    "D",
+    "A"
+  ],
+  "audits": {
+    "AB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 10,
+      "first_action_difference": null
+    },
+    "AC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 10,
+      "first_action_difference": null
+    },
+    "AD": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 10,
+      "first_action_difference": null
+    },
+    "BC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 10,
+      "first_action_difference": null
+    },
+    "DC": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 10,
+      "first_action_difference": null
+    },
+    "DB": {
+      "input_prefix_matched": true,
+      "action_prefix_matched": true,
+      "logits_bitwise_equal": true,
+      "max_logit_delta": 0.0,
+      "argmax_flip_count": 0,
+      "prefix_decisions": 10,
+      "first_action_difference": null
+    }
+  },
+  "episodes": {
+    "A": {
+      "index": 69,
+      "episode_id": 3863,
+      "trajectory_id": 2552,
+      "house": "XcA2TqTSSAj",
+      "instruction": "Walk past the dining table and go up the stairs.  Stop at the top of the stairs near the end table with a potted plant on it. ",
+      "started_unix": 1789738571.8459983,
+      "event": "complete",
+      "steps": 10,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.205747604370117,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.205747604370117,
+      "start_distance_m": 7.647102355957031,
+      "path_length_m": 0.75,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 6,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 6.18998122215271,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.3728918058026445,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.4384719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.1884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ]
+      ],
+      "distances": [
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.465463638305664,
+        7.313349723815918,
+        7.205747604370117,
+        7.205747604370117
+      ]
+    },
+    "B": {
+      "index": 69,
+      "episode_id": 3863,
+      "trajectory_id": 2552,
+      "house": "XcA2TqTSSAj",
+      "instruction": "Walk past the dining table and go up the stairs.  Stop at the top of the stairs near the end table with a potted plant on it. ",
+      "started_unix": 1789738565.17825,
+      "event": "complete",
+      "steps": 10,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.205747604370117,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.205747604370117,
+      "start_distance_m": 7.647102355957031,
+      "path_length_m": 0.75,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 6,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 12.739389181137085,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.3728918058026445,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.4384719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.1884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ]
+      ],
+      "distances": [
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.465463638305664,
+        7.313349723815918,
+        7.205747604370117,
+        7.205747604370117
+      ]
+    },
+    "C": {
+      "index": 69,
+      "episode_id": 3863,
+      "trajectory_id": 2552,
+      "house": "XcA2TqTSSAj",
+      "instruction": "Walk past the dining table and go up the stairs.  Stop at the top of the stairs near the end table with a potted plant on it. ",
+      "started_unix": 1789738567.4260159,
+      "event": "complete",
+      "steps": 10,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.205747604370117,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.205747604370117,
+      "start_distance_m": 7.647102355957031,
+      "path_length_m": 0.75,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 6,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 10.558971643447876,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.3728918058026445,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.4384719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.1884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ]
+      ],
+      "distances": [
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.465463638305664,
+        7.313349723815918,
+        7.205747604370117,
+        7.205747604370117
+      ]
+    },
+    "D": {
+      "index": 69,
+      "episode_id": 3863,
+      "trajectory_id": 2552,
+      "house": "XcA2TqTSSAj",
+      "instruction": "Walk past the dining table and go up the stairs.  Stop at the top of the stairs near the end table with a potted plant on it. ",
+      "started_unix": 1789738569.6361203,
+      "event": "complete",
+      "steps": 10,
+      "stopped": true,
+      "termination": "STOP",
+      "success": 0.0,
+      "spl": 0.0,
+      "navigation_error_m": 7.205747604370117,
+      "oracle_success": 0.0,
+      "min_distance_m": 7.205747604370117,
+      "start_distance_m": 7.647102355957031,
+      "path_length_m": 0.75,
+      "collisions": 0,
+      "action_counts": {
+        "move_forward": 3,
+        "turn_left": 6,
+        "turn_right": 0,
+        "STOP": 1
+      },
+      "wall_seconds": 8.373639583587646,
+      "failure_category": "stopped_without_reaching_goal",
+      "service_failure": false,
+      "ndtw": 0.3728918058026445,
+      "sdtw": 0.0,
+      "ndtw_backend": "exact_Euclidean_DTW_FDTW_false",
+      "positions": [
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.6884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.4384719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          0.1884719729423523
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ],
+        [
+          5.553730010986328,
+          2.254446029663086,
+          -0.061528027057647705
+        ]
+      ],
+      "distances": [
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.647102355957031,
+        7.465463638305664,
+        7.313349723815918,
+        7.205747604370117,
+        7.205747604370117
+      ]
+    }
+  },
+  "valid_behavioral_quartet": true,
+  "protocol_sha256": "6c3f3c95f160b997887f7dc5528fce089f3bf68a6418621a047c6743acd6b0f9",
+  "method_identity_sha256": "9d00a85a41d4667cb578d28e37ca604ede9769bc0da0c304a84346d216f31c9c",
+  "logs": {
+    "A": {
+      "POLICY_STEPS.jsonl": "d1b9bd3d605a7333ce0fae9108e85d8362bf12b79b86bc128be9d97fc2e03fb1",
+      "STEPS_PRIVILEGED.jsonl": "2a884bdf684b154105307c53fc9e0c66ab0b264d6aa1d39b96ea05aa185db34a"
+    },
+    "B": {
+      "POLICY_STEPS.jsonl": "e86d6d4a9d03272b9322c5fd0b5498889bf223188b32873d1485f6966e11247c",
+      "STEPS_PRIVILEGED.jsonl": "2a884bdf684b154105307c53fc9e0c66ab0b264d6aa1d39b96ea05aa185db34a"
+    },
+    "C": {
+      "POLICY_STEPS.jsonl": "f8da760eecee1f5652e1fb67f2dd158907134ee119e3e1ec68de4de7a1f5acbc",
+      "STEPS_PRIVILEGED.jsonl": "2a884bdf684b154105307c53fc9e0c66ab0b264d6aa1d39b96ea05aa185db34a"
+    },
+    "D": {
+      "POLICY_STEPS.jsonl": "3cde724b5a0e9c525e2753fdc68164931663b820ff66546f99cb4c2f541c88f1",
+      "STEPS_PRIVILEGED.jsonl": "2a884bdf684b154105307c53fc9e0c66ab0b264d6aa1d39b96ea05aa185db34a"
+    }
+  }
+}
