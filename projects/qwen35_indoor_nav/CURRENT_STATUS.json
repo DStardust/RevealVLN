@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-18T18:50:07.724324+08:00",
-  "phase": "V8_MEMORY_TRANSFER_VALID_COMPLETE_WEAK_B2_SIGNAL_NO_OURS_GAIN",
+  "updated": "2026-09-18T11:49:05.851610+00:00",
+  "phase": "V9_NATURAL_TRANSFER_FEATURES_AND_MATCHED_TRAINING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
   "learnability": {
@@ -260,5 +260,19 @@
     "running": false,
     "gpu_hours": 7.632997265130527,
     "stop_reason": "Completed the next full-denominator method-benefit measurement and targeted repair. B2 signal is weak; Ours superiority is not supported. No further variant/seed selection, full1839, or deployment started."
+  },
+  "natural_transfer_v9": {
+    "running": true,
+    "status": "FROZEN_READY_TO_LAUNCH",
+    "protocol": "research/continuation_memory_v1/natural_transfer_v9/PROTOCOL.json",
+    "progress": "research/continuation_memory_v1/natural_transfer_v9/run_001/PROGRESS.json",
+    "source_commit": "19c41c0f7b1526174aba9fa74eb029f126a93de0",
+    "ordinary_fit_routes": 508,
+    "ordinary_check_routes": 60,
+    "planned_new_qwen_forwards": 33844,
+    "planned_lightweight_updates": 5400,
+    "base_updates": 0,
+    "benefit": "UNMEASURED",
+    "adopted": false
   }
 }
