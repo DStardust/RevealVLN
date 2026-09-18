@@ -1,0 +1,449 @@
+{
+  "status": "VALID_COMPLETE",
+  "complete_quartets": 100,
+  "expected_quartets": 100,
+  "episode_executions": 400,
+  "missing_ranks": [],
+  "arms": {
+    "A": {
+      "episodes": 100,
+      "sr": 0.21,
+      "spl": 0.18016983923442287,
+      "ndtw": 0.36587970073530285,
+      "osr": 0.47,
+      "decisions": 19122,
+      "collisions": 8178,
+      "repeated_decisions": 8556,
+      "overrides": 0,
+      "entered_range_without_success": 26.0,
+      "far_stop": 55,
+      "inference_p50": 0.06743461254518479,
+      "inference_p95": 0.08778612897731364,
+      "memory_p50": 0.00013872585259377956,
+      "memory_p95": 0.00018400815315544605
+    },
+    "B": {
+      "episodes": 100,
+      "sr": 0.22,
+      "spl": 0.185286112105491,
+      "ndtw": 0.4099823416768855,
+      "osr": 0.44,
+      "decisions": 18565,
+      "collisions": 9423,
+      "repeated_decisions": 9766,
+      "overrides": 1229,
+      "entered_range_without_success": 22.0,
+      "far_stop": 53,
+      "inference_p50": 0.06709191994741559,
+      "inference_p95": 0.08699923404492438,
+      "memory_p50": 0.00046613416634500027,
+      "memory_p95": 0.0006176459137350321
+    },
+    "C": {
+      "episodes": 100,
+      "sr": 0.2,
+      "spl": 0.17302740972315803,
+      "ndtw": 0.3944470566207018,
+      "osr": 0.44,
+      "decisions": 18530,
+      "collisions": 8424,
+      "repeated_decisions": 8404,
+      "overrides": 1911,
+      "entered_range_without_success": 24.0,
+      "far_stop": 57,
+      "inference_p50": 0.06738189957104623,
+      "inference_p95": 0.08798796799965203,
+      "memory_p50": 0.0004625909496098757,
+      "memory_p95": 0.0006181499920785427
+    },
+    "D": {
+      "episodes": 100,
+      "sr": 0.21,
+      "spl": 0.18391466893941089,
+      "ndtw": 0.38424315291558947,
+      "osr": 0.43,
+      "decisions": 19952,
+      "collisions": 9940,
+      "repeated_decisions": 10433,
+      "overrides": 1439,
+      "entered_range_without_success": 22.0,
+      "far_stop": 51,
+      "inference_p50": 0.06723709648940712,
+      "inference_p95": 0.087351055117324,
+      "memory_p50": 0.00046220747753977776,
+      "memory_p95": 0.0006210270803421736
+    }
+  },
+  "comparisons": {
+    "AB": {
+      "delta_sr": 0.01,
+      "wins": [
+        3863,
+        1550,
+        704,
+        921,
+        3965,
+        1059
+      ],
+      "losses": [
+        8981,
+        311,
+        2156,
+        7781,
+        10634
+      ],
+      "retained_successes": [
+        9437,
+        8108,
+        7706,
+        4451,
+        6287,
+        2531,
+        942,
+        8657,
+        4766,
+        1640,
+        3377,
+        1838,
+        656,
+        9941,
+        333,
+        10322
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 19,
+          "delta_sr": 0.05263157894736842
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 6,
+          "delta_sr": 0.16666666666666666
+        },
+        "aayBHfsNo7d": {
+          "episodes": 25,
+          "delta_sr": -0.04
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": 0.00511627287106817,
+      "delta_ndtw": 0.044102640941582644
+    },
+    "AC": {
+      "delta_sr": -0.01,
+      "wins": [
+        2213,
+        7994,
+        921,
+        7580,
+        3965
+      ],
+      "losses": [
+        8981,
+        311,
+        1640,
+        2156,
+        7781,
+        10634
+      ],
+      "retained_successes": [
+        9437,
+        8108,
+        7706,
+        4451,
+        6287,
+        2531,
+        942,
+        8657,
+        4766,
+        3377,
+        1838,
+        656,
+        9941,
+        333,
+        10322
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 25,
+          "delta_sr": -0.08
+        },
+        "PuKPg4mmafe": {
+          "episodes": 19,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 6,
+          "delta_sr": 0.16666666666666666
+        },
+        "aayBHfsNo7d": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.00714242951126483,
+      "delta_ndtw": 0.028567355885398795
+    },
+    "AD": {
+      "delta_sr": 0.0,
+      "wins": [
+        3863,
+        1550,
+        7994,
+        6638,
+        921,
+        3965
+      ],
+      "losses": [
+        8981,
+        311,
+        1640,
+        2156,
+        7781,
+        10634
+      ],
+      "retained_successes": [
+        9437,
+        8108,
+        7706,
+        4451,
+        6287,
+        2531,
+        942,
+        8657,
+        4766,
+        3377,
+        1838,
+        656,
+        9941,
+        333,
+        10322
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 25,
+          "delta_sr": 0.04
+        },
+        "B6ByNegPMKs": {
+          "episodes": 25,
+          "delta_sr": -0.08
+        },
+        "PuKPg4mmafe": {
+          "episodes": 19,
+          "delta_sr": 0.05263157894736842
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 6,
+          "delta_sr": 0.16666666666666666
+        },
+        "aayBHfsNo7d": {
+          "episodes": 25,
+          "delta_sr": -0.04
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": 0.003744829704988043,
+      "delta_ndtw": 0.018363452180286576
+    },
+    "BC": {
+      "delta_sr": -0.02,
+      "wins": [
+        2213,
+        7994,
+        7580
+      ],
+      "losses": [
+        3863,
+        1550,
+        1640,
+        704,
+        1059
+      ],
+      "retained_successes": [
+        9437,
+        8108,
+        7706,
+        4451,
+        6287,
+        2531,
+        942,
+        8657,
+        4766,
+        3377,
+        1838,
+        921,
+        656,
+        9941,
+        3965,
+        333,
+        10322
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 25,
+          "delta_sr": -0.08
+        },
+        "PuKPg4mmafe": {
+          "episodes": 19,
+          "delta_sr": -0.05263157894736842
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 6,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 25,
+          "delta_sr": 0.04
+        }
+      },
+      "paired_discordance_exact_p": 0.7265625,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.012258702382332998,
+      "delta_ndtw": -0.015535285056183852
+    },
+    "DC": {
+      "delta_sr": -0.01,
+      "wins": [
+        2213,
+        7580
+      ],
+      "losses": [
+        3863,
+        1550,
+        6638
+      ],
+      "retained_successes": [
+        9437,
+        8108,
+        7706,
+        4451,
+        6287,
+        2531,
+        942,
+        7994,
+        8657,
+        4766,
+        3377,
+        1838,
+        921,
+        656,
+        9941,
+        3965,
+        333,
+        10322
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 25,
+          "delta_sr": -0.04
+        },
+        "B6ByNegPMKs": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 19,
+          "delta_sr": -0.05263157894736842
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 6,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 25,
+          "delta_sr": 0.04
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.010887259216252873,
+      "delta_ndtw": 0.010203903705112215
+    },
+    "DB": {
+      "delta_sr": 0.01,
+      "wins": [
+        1640,
+        704,
+        1059
+      ],
+      "losses": [
+        7994,
+        6638
+      ],
+      "retained_successes": [
+        9437,
+        8108,
+        3863,
+        7706,
+        1550,
+        4451,
+        6287,
+        2531,
+        942,
+        8657,
+        4766,
+        3377,
+        1838,
+        921,
+        656,
+        9941,
+        3965,
+        333,
+        10322
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 25,
+          "delta_sr": -0.04
+        },
+        "B6ByNegPMKs": {
+          "episodes": 25,
+          "delta_sr": 0.08
+        },
+        "PuKPg4mmafe": {
+          "episodes": 19,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 6,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 25,
+          "delta_sr": 0.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": 0.0013714431660801262,
+      "delta_ndtw": 0.02573918876129606
+    }
+  },
+  "native_stop_preserved": true,
+  "adopted": false,
+  "seed": 1209,
+  "seed_selected_by_score": false,
+  "data_exposure": "Previously exposed INTERNAL_DEV100; not full val_unseen or blind generalization",
+  "base_prefix_logits_bitwise_equal": true,
+  "base_prefix_max_logit_delta": 0.0,
+  "metric_and_log_recomputed": true
+}

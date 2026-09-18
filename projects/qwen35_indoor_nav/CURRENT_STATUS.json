@@ -1,6 +1,6 @@
 {
-  "updated": "2026-09-18T16:15:28.290969+08:00",
-  "phase": "V8_MEMORY_TRANSFER_CLOSED_LOOP_RUNNING",
+  "updated": "2026-09-18T18:50:07.724324+08:00",
+  "phase": "V8_MEMORY_TRANSFER_VALID_COMPLETE_WEAK_B2_SIGNAL_NO_OURS_GAIN",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
   "learnability": {
@@ -197,7 +197,7 @@
     "gpu_hours": 0.4111954180261172,
     "cpu_tests": 3,
     "closed_loop_cpu_tests": 6,
-    "benefit": "EARLY_POLICY_KL_REDUCED_NAVIGATION_PENDING",
+    "benefit": "EARLY_POLICY_KL_REDUCED_B2_WEAK_NAVIGATION_SIGNAL_OURS_NO_SR_GAIN",
     "automatic_deployment": false,
     "progress": "research/continuation_memory_v1/cold_start_repair_v8/run_001/PROGRESS.json",
     "optimizer_updates": 5400,
@@ -205,10 +205,11 @@
     "result": "research/continuation_memory_v1/cold_start_repair_v8/run_001/RESULT.json",
     "review": "research/continuation_memory_v1/cold_start_repair_v8/REVIEW.json",
     "checkpoint_audit": "research/continuation_memory_v1/cold_start_repair_v8/CHECKPOINT_AUDIT.json",
-    "readback": "research/continuation_memory_v1/cold_start_repair_v8/READBACK_REVIEW.json"
+    "readback": "research/continuation_memory_v1/cold_start_repair_v8/READBACK_REVIEW.json",
+    "closed_loop_gain_tested": true
   },
   "memory_transfer_v8": {
-    "running": true,
+    "running": false,
     "protocol": "closed_loop_bench/ordinary_memory_transfer_v8/PROTOCOL.json",
     "arms": {
       "A": "native",
@@ -222,17 +223,42 @@
     "seed_selected_by_score": false,
     "progress": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/PROGRESS.json",
     "process": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/PROCESS.json",
-    "full_effect_conclusion_pending": true,
+    "full_effect_conclusion_pending": false,
     "automatic_deployment": false,
-    "latest_confirmed_milestone": 20,
-    "milestone_report": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/MILESTONE_020.json",
-    "partial_success_counts": {
-      "A": 4,
-      "B": 5,
-      "C": 4,
-      "D": 5
+    "latest_confirmed_milestone": 100,
+    "milestone_report": "closed_loop_bench/ordinary_memory_transfer_v8/sessions/session_001/MILESTONE_100.json",
+    "status": "VALID_COMPLETE",
+    "complete_quartets": 100,
+    "episode_executions": 400,
+    "pending_quartets": 0,
+    "decisions": 76169,
+    "sr": {
+      "A": 0.21,
+      "B": 0.22,
+      "C": 0.2,
+      "D": 0.21
     },
-    "partial_denominator_per_arm": 20,
-    "partial_interpretation": "B1/B2 development positive signal; Ours no SR gain; full100 pending"
+    "benefit": {
+      "B2": "WEAK_INTERNAL_DEV_POSITIVE_SIGNAL_NOT_ROBUST",
+      "Ours": "NO_SR_GAIN_OVER_NATIVE_B2_OR_B1"
+    },
+    "adopted": false,
+    "gpu_hours": 3.028620872013077,
+    "result": "closed_loop_bench/ordinary_memory_transfer_v8/RESULT.json",
+    "metric_and_log_recomputed": true,
+    "input_prefix_matched": true,
+    "action_prefix_matched": true,
+    "logits_bitwise_equal": true,
+    "max_logit_delta": 0.0,
+    "argmax_flip_count": 0,
+    "scientific_superiority": "NOT_ESTABLISHED"
+  },
+  "v7_v8_handoff": {
+    "branch": "codex/q35n-v7-method-gain-20260918",
+    "report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
+    "result": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/RESULT.json",
+    "running": false,
+    "gpu_hours": 7.632997265130527,
+    "stop_reason": "Completed the next full-denominator method-benefit measurement and targeted repair. B2 signal is weak; Ours superiority is not supported. No further variant/seed selection, full1839, or deployment started."
   }
 }

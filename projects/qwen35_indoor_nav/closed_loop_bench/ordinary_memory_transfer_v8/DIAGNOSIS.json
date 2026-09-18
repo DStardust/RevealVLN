@@ -1,0 +1,144 @@
+{
+  "status": "FULL_RUN_READ_ONLY_DIAGNOSIS",
+  "source_sha256": "a0f836741f6dc522ebfd0eb612d16af934dbcde92fd1d39b5aac5ac6c2b4fcca",
+  "complete_quartets": 100,
+  "training_action_coverage": {
+    "action_owners": 12912,
+    "zero_based_min": 156,
+    "zero_based_median": 301.5,
+    "zero_based_max": 579
+  },
+  "first_training_action_one_based": 157,
+  "arms": {
+    "A": {
+      "full_raw_window_and_memory_input_repeats": 8556,
+      "overrides_before_first_training_action": 0,
+      "overrides_in_later_steps": 0,
+      "extra_stop_before_first_training_action": 0,
+      "extra_stop_in_later_steps": 0,
+      "first_override_step_median": null,
+      "native_success_losses_with_early_extra_stop": []
+    },
+    "B": {
+      "full_raw_window_and_memory_input_repeats": 0,
+      "overrides_before_first_training_action": 491,
+      "overrides_in_later_steps": 738,
+      "extra_stop_before_first_training_action": 14,
+      "extra_stop_in_later_steps": 1,
+      "first_override_step_median": 25,
+      "native_success_losses_with_early_extra_stop": [
+        10634
+      ]
+    },
+    "C": {
+      "full_raw_window_and_memory_input_repeats": 0,
+      "overrides_before_first_training_action": 661,
+      "overrides_in_later_steps": 1250,
+      "extra_stop_before_first_training_action": 11,
+      "extra_stop_in_later_steps": 0,
+      "first_override_step_median": 23,
+      "native_success_losses_with_early_extra_stop": []
+    },
+    "D": {
+      "full_raw_window_and_memory_input_repeats": 0,
+      "overrides_before_first_training_action": 612,
+      "overrides_in_later_steps": 827,
+      "extra_stop_before_first_training_action": 10,
+      "extra_stop_in_later_steps": 0,
+      "first_override_step_median": 25,
+      "native_success_losses_with_early_extra_stop": []
+    }
+  },
+  "descriptive_delta_sr_intervals": {
+    "AB": {
+      "episode_resample_95pct": [
+        -0.06,
+        0.08
+      ],
+      "house_cluster_resample_95pct": [
+        -0.018867924528301886,
+        0.05333333333333334
+      ],
+      "houses": 5
+    },
+    "AC": {
+      "episode_resample_95pct": [
+        -0.08,
+        0.05
+      ],
+      "house_cluster_resample_95pct": [
+        -0.05042016806722689,
+        0.04411764705882353
+      ],
+      "houses": 5
+    },
+    "AD": {
+      "episode_resample_95pct": [
+        -0.07,
+        0.07
+      ],
+      "house_cluster_resample_95pct": [
+        -0.05042016806722689,
+        0.06666666666666667
+      ],
+      "houses": 5
+    },
+    "BC": {
+      "episode_resample_95pct": [
+        -0.08,
+        0.03
+      ],
+      "house_cluster_resample_95pct": [
+        -0.06382978723404255,
+        0.022988505747126436
+      ],
+      "houses": 5
+    },
+    "DC": {
+      "episode_resample_95pct": [
+        -0.05,
+        0.03
+      ],
+      "house_cluster_resample_95pct": [
+        -0.0425531914893617,
+        0.022988505747126436
+      ],
+      "houses": 5
+    },
+    "DB": {
+      "episode_resample_95pct": [
+        -0.03,
+        0.05
+      ],
+      "house_cluster_resample_95pct": [
+        -0.02830188679245283,
+        0.05309734513274336
+      ],
+      "houses": 5
+    }
+  },
+  "bootstrap_draws": 5000,
+  "bootstrap_seed": 1209,
+  "uncertainty_limit": "Episode resampling ignores house dependence; five-house cluster resampling is also descriptive and cannot establish broad generalization. No interval selects a policy.",
+  "causality_limit": "Early-override/STOP co-occurrence is diagnostic, not a counterfactual ablation of that mechanism.",
+  "repeat_metric_scope": "RESULT repeated_decisions counts original instruction/RGB/action-window repeats, excluding memory. Full-input repeats include the logged post-update memory fingerprint. Merely changing memory values does not establish less navigation waste.",
+  "sessions": {
+    "session_001": {
+      "launch": {
+        "status": "COMPLETE",
+        "reason": null,
+        "returncode": 0,
+        "gpu_seconds": 10903.035139247077,
+        "cleanup": {
+          "signaled": false,
+          "remaining": []
+        },
+        "foreign_processes_signaled": []
+      },
+      "peak_own_gpu_mib": 14274,
+      "peak_rss_bytes": 28364816384,
+      "peak_output_bytes": 1556510490,
+      "resource_competition_samples": 0
+    }
+  }
+}
