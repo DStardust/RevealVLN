@@ -70,7 +70,23 @@
     "research/continuation_memory_v1/multifamily_v7/PROTOCOL.json": "8543e2244fb308dc4572add331bd25cf9e0fd7fa936cf2aec1291e877346ab2a",
     "research/continuation_memory_v1/multifamily_v7/DATA.json": "a798003a9b319d2ee62a39f38ab22b35f461bf562ee5d2cfa24edd881daf4432",
     "research/continuation_memory_v1/query_reader_repair_v2/model.py": "83f11060fe551f0866747eb213c45925afd0346e200433e0a1e3241863555222",
-    "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19"
+    "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/evaluate.py": "813706d7e4b315c86c0f7f453db4c1f35c85f7b3845793f036089abf44945f8e",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/executor.py": "7ee215621690272c0d41983208d6eaaaf1dbe61ff4d4e82459ff8cf870b1eeb8",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/launch.py": "87b38e2cf9841b23611f673898a0c4feb25783a0bb2356363014b7780fcfa266",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/common.py": "b3c80bd56eb2b5b6d6c9553170d2731044696f8dbfa14f55df902f2b7139fe9a",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/cycle_policy.py": "75eb778a4a8b93f1ef00de1704330a83fdd23b4a5cac294982cde4e59cafb430",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/aggregate.py": "74d2484dbd8cc6864a0e4d3589fe0d97f8d6b835fc549c44e1ffe32aa416b7c3",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/path_metrics.py": "d9c1fa801eb7fe293ab937b7b74af861f7803344c2581029c15caec34a9e01d6",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/official_distance.py": "8c591164596a0914ee8eefa5f65dfead01c7d09e126b60e31bf92f290022fa2b",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/PROTOCOL.json": "dea67d3b7d5dbd8402770ced37483d2fbae091643e13e3f81436894805155cd6",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/GEOMETRY_PREFLIGHT.json": "fcf92ecea9b3502506ea648d72fa0505e12822d54d0f0c0803fa6244fdf526e8",
+    "sft_acceptance/ordinary_sync_recovery_v1/model.py": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+    "closed_loop_bench/r2r_ce_tiny_v1/metrics.py": "2433cdaec622daed5b3aad921378e99ef55342dee6c4325e5e2bd5d181c04dc7",
+    "closed_loop_bench/r2r_ce_tiny_v1/common.py": "cf7b33eabc18bfc6ff8c36488053e63ce8ddb10e39ac53bebeb38e2fbafd70e1",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/SOURCE_LOCK.json": "162ed70ac5373581a7bd8e1b99e8e6f501e9a4fcefc83139166add78459a1606",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/PROTOCOL.json": "bb2ceb69ea84638e3555daa336ab312ca6f71a565ebb751eceeeacea5a306e00",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/launch.py": "0816d2af1b5b4103fde9059aeb3665093285ef6af88c2c483bb73766287c0f84"
   },
   "prelaunch_audit_addition": "Verify full deployed base identity against actual feature encoder; record TF32 and final Triton metadata. No policy/split/checkpoint selection changed. Jointly ended contrasts wait for final terminal equality checks while other arms continue.",
   "memory_arms": {
@@ -84,5 +100,6 @@
     "training_results_available": false,
     "closed_loop_started": false,
     "reason": "Add B1 to distinguish crossed supervision from memory architecture/trajectory-pool effects; no training or seed selection changed."
-  }
+  },
+  "inherited_source_lock_verified_before_launch": true
 }
