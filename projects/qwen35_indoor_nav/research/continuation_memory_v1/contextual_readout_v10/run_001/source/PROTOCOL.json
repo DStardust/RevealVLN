@@ -1,0 +1,73 @@
+{
+  "id": "Q35N_CONTEXTUAL_READOUT_V10",
+  "frozen_at": "2026-09-18T14:45:34.304792+00:00",
+  "base_commit": "1f39d1fe45db2bd06cc122240560bc7c80d981c6",
+  "authorization": "2026-09-18 user: continue implementation and measurement toward sufficiently supported benefit; GPU-hour cap waived; preserve honest negative evidence and other users processes",
+  "gpu": 1,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "N0",
+    "B1",
+    "B2",
+    "Ours"
+  ],
+  "steps_per_arm": 600,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "repair": "Current causal2048 feature + existing512 memory enter a shared128-tanh action residual readout; zero initial last layer. No change to recurrent update, query reader, labels, best4k, short-window inputs, native STOP protection or metrics.",
+  "evidence": "natural_transfer_v9/ACTION_DIAGNOSIS.json: most teacher accuracy improvement reproduced by FIT-derived constant residual; forward recall gain accompanied by turn recall loss. V9 fixed-seed navigation remains running and will complete unchanged.",
+  "controls": {
+    "N0": "Same readout, initialization, features, physical trajectory pool, schedule and BC/KL; memory inputs zero. Memory parameters unused by action and must remain unchanged. No auxiliary supervision.",
+    "B1": "Memory+BC+existing prefix KL",
+    "B2": "B1 plus exact compositional SEE2 task-state supervision",
+    "Ours": "B1 plus crossed SEE2 continuation outcome supervision"
+  },
+  "matched_data": "Reuse immutable V7 special and V9 natural causal caches and all original partitions; no new encoder forwards, simulator data or modified labels.",
+  "matched_loss": "Unchanged V9 losses and600 family/eight-natural-route schedules for each seed, with explicit current feature passed to readout. N0 uses B1 objectives.",
+  "initialization": "One new saved state_dict per seed from manual_seed(seed); identical across all four arms. V7 action-head shape incompatible, so no assertion of cross-version identical initialization.",
+  "gradient_check": "After exactly two real optimizer updates, measure action-to-memory derivative and, for B2/Ours, auxiliary gradient to old critical write. Zero initialization makes action-to-memory derivative at initialization zero by construction.",
+  "selection": "Fixed final600 updates, all three seeds. No best checkpoint, seed or CHECK-based hyperparameter selection.",
+  "interpretation": "Current-feature readout is an engineering repair, not a new scientific claim. N0 improvement is not memory evidence. Ours must beat matched B1/B2 and N0 in subsequent closed-loop testing for incremental method support.",
+  "navigation": "A separate frozen navigation protocol must bind all four final heads and a fresh native control before its first rollout. V9 navigation completes first. No automatic adoption.",
+  "resource": {
+    "max_simultaneous_gpus": 1,
+    "hour_limit": null,
+    "own_gpu_gib": 25,
+    "rss_gib": 64,
+    "artifact_gib": 20,
+    "shared_allowed": true,
+    "foreign_processes_signaled": false
+  },
+  "special_training_admission": false,
+  "research_status": "EXPLORATORY_FROZEN_FEATURE_PROTOTYPE",
+  "independent_blind_test": false,
+  "base_optimizer_updates": 0,
+  "source_hashes": {
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/common.py": "03fff9230f233c694ffd1892d67a698e486c93da300a6da23ce9f49d52305d64",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/launch.py": "0816d2af1b5b4103fde9059aeb3665093285ef6af88c2c483bb73766287c0f84",
+    "research/continuation_memory_v1/contextual_readout_v10/launch.py": "9103cb92d8e2cf988a6525116bfd78ca94f0cb5de311d6796f45eaf2ef38c6cd",
+    "research/continuation_memory_v1/contextual_readout_v10/losses.py": "e5d4160a275098905ce4f3f6167ff830a27c13ffc89b7f4cf8976f6dfeba7efb",
+    "research/continuation_memory_v1/contextual_readout_v10/model.py": "5c4d533a58d42285a85c1f960b064c5cd59bc25134c39df528b754c39008672a",
+    "research/continuation_memory_v1/contextual_readout_v10/run.py": "d2fd6dcdcaf236026d77c2bdf9add8d188acba9c74ceb349b0b726954a7b475d",
+    "research/continuation_memory_v1/contextual_readout_v10/test_cpu.py": "0bea1f4c37fd4035fb6ac4303fe4ce460fcd6de117852142e0492a8e74681bce",
+    "research/continuation_memory_v1/contextual_readout_v10/train.py": "e46d70ef52e123a924dedebe825009bad544d905aab6bcaeac92a9d317f52545",
+    "research/continuation_memory_v1/multifamily_v7/DATA.json": "a798003a9b319d2ee62a39f38ab22b35f461bf562ee5d2cfa24edd881daf4432",
+    "research/continuation_memory_v1/multifamily_v7/run_001/FEATURES.pt": "09ea1cbe374de30a547fc8b47271417633232f66568f9c4720d7e6aac6ad0578",
+    "research/continuation_memory_v1/multifamily_v7/run_001/FEATURE_RESULT.json": "b26748867186f4c0b56fb75f57eb5a3cbc79ae63f0b7a70f68872b1919454663",
+    "research/continuation_memory_v1/natural_transfer_v9/DATA.json": "dd9ec6918fecd8810dd0b2ccfdced7eeaa578baf4b89c0d69da8de3d5a63d01b",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/FEATURES.pt": "9c5db0b795167e68ac474b82942c5f572e996d47048c681f7e804ed272b4003f",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/FEATURE_RESULT.json": "f822f6c59d92af1b65c278f85d3015ea34179e11929d10ea1b2fee0142137800",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1209.json": "bd7ead162f716a197f5f88f636e95aa61904c260ccbf9892807e3422aa4bc483",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1210.json": "a35c952fcdb3fa7fcba0ffe3871cb4f7c79cbbc9b8748c552f1ab66d3e5031b5",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1211.json": "b6ae2c03065b2c9f2868617812434a9f9908ab4ef6f454e66ebac139d508ae65",
+    "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19",
+    "research/continuation_memory_v1/query_reader_repair_v2/model.py": "83f11060fe551f0866747eb213c45925afd0346e200433e0a1e3241863555222",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/launch.py": "87b38e2cf9841b23611f673898a0c4feb25783a0bb2356363014b7780fcfa266",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/common.py": "b3c80bd56eb2b5b6d6c9553170d2731044696f8dbfa14f55df902f2b7139fe9a",
+    "closed_loop_bench/ordinary_stop_calibration_fit_v2/tree_size.py": "a23c716d11983cd3786c753f15dc94369a19654432bcf4354b92acdfa018392c"
+  }
+}
