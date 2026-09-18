@@ -22,3 +22,7 @@
 V8的6胜5负证据完整保留在V8_DISCORDANT_DIAGNOSIS.json。低margin处分歧既有收益也有损失，不据此挑阈值。V9是显式训练分布修复，旧结果不改写。
 
 代码与训练入口：research/continuation_memory_v1/natural_transfer_v9/{data,run,train,launch,test_cpu,review,audit_checkpoints,readback_policy}.py。闭环入口：closed_loop_bench/ordinary_memory_transfer_v9/launch.py；固定顺序执行三个种子并以完整四臂单元保存。所有权重、缓存及原始帧仍在本机，GitHub上传代码、协议、数值日志、身份和检查结果。
+
+首5组闭环已封存：原生2/5，B2/Ours/B1均0/5；前缀输入、原生动作和logits逐位一致，模型/记忆参数未变。小批偏负，继续完整预注册清单，不据分数删样本或重试。
+
+CPU只读动作探针：原生STOP保护后的自然CHECK准确率均值，原生72.1942%，B1 75.0332%、B2 74.8740%、Ours 74.9270%；仅使用FIT输入上平均记忆残差、移除输入依赖后，仍为74.5467%、74.5644%、74.6440%。不需要拟合任何新标签，就能解释大部分总体准确率增量。前进召回升至约90%，左右转下降，不能当成执行记忆已学会。探针没有运行导航、修改权重或选择部署策略，完整证据在ACTION_DIAGNOSIS.json。

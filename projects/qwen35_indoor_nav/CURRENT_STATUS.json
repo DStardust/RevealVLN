@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T11:49:05.851610+00:00",
+  "updated": "2026-09-18T13:36:21.409624+00:00",
   "phase": "V9_THREE_SEED_CLOSED_LOOP_RUNNING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md",
@@ -282,7 +282,7 @@
   },
   "memory_transfer_v9": {
     "running": true,
-    "status": "FROZEN_READY_TO_LAUNCH",
+    "status": "RUNNING",
     "seeds": [
       1209,
       1210,
@@ -292,6 +292,18 @@
     "expected_episode_executions": 1200,
     "protocol": "closed_loop_bench/ordinary_memory_transfer_v9/PROTOCOL.json",
     "benefit": "UNKNOWN",
-    "adopted": false
+    "adopted": false,
+    "latest_sealed_milestone": {
+      "seed": 1209,
+      "quartets": 5,
+      "episodes": 20,
+      "successes": {
+        "A": 2,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    },
+    "full_effect_conclusion_pending": true
   }
 }
