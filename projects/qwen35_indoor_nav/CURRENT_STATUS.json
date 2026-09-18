@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-18T13:36:21.409624+00:00",
-  "phase": "V9_THREE_SEED_CLOSED_LOOP_RUNNING",
+  "phase": "V10_CONTEXTUAL_READOUT_TRAINING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
-  "current_report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md",
+  "current_report": "reviews/Q35N_V10_CONTEXTUAL_READOUT_20260919/REPORT_ZH.md",
   "learnability": {
     "status": "COMPLETE_PASS",
     "updates": 400,
@@ -281,8 +281,8 @@
     "result": "research/continuation_memory_v1/natural_transfer_v9/run_001/RESULT.json"
   },
   "memory_transfer_v9": {
-    "running": true,
-    "status": "RUNNING",
+    "running": false,
+    "status": "VALID_COMPLETE_NOT_ADOPTED",
     "seeds": [
       1209,
       1210,
@@ -291,37 +291,40 @@
     "expected_quartets": 300,
     "expected_episode_executions": 1200,
     "protocol": "closed_loop_bench/ordinary_memory_transfer_v9/PROTOCOL.json",
-    "benefit": "UNKNOWN",
+    "benefit": "NO_GAIN_VERSUS_NATIVE",
     "adopted": false,
-    "latest_sealed_milestone": {
-      "seed": 1210,
-      "quartets": 100,
-      "episodes": 400,
-      "successes": {
-        "A": 21,
-        "B": 15,
-        "C": 16,
-        "D": 16
-      },
-      "prefix_logits_bitwise_equal": true,
-      "full_three_seed_conclusion_pending": true
-    },
-    "full_effect_conclusion_pending": true,
+    "full_effect_conclusion_pending": false,
     "completed_seeds": [
       1209,
-      1210
+      1210,
+      1211
     ],
-    "sealed_gpu_hours": 5.052935492509019
+    "sealed_gpu_hours": 5.052935492509019,
+    "complete_quartets": 300,
+    "episode_executions": 1200,
+    "decisions": 208932,
+    "gpu_hours": 7.659760101047318,
+    "mean_sr": {
+      "A": 0.21,
+      "B": 0.14,
+      "C": 0.16,
+      "D": 0.15
+    },
+    "method_increment_supported": false,
+    "result": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
+    "report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md"
   },
-  "updated_at": "2026-09-18T18:24:46.527078+00:00",
+  "updated_at": "2026-09-18T21:10:13.932037+00:00",
   "contextual_readout_v10": {
-    "status": "CPU_IMPLEMENTED_GPU_NOT_STARTED",
+    "status": "GPU_TRAINING_RUNNING",
     "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
     "cpu_tests": 5,
-    "gpu_updates": 0,
+    "gpu_updates": null,
     "planned_lightweight_updates": 7200,
     "base_updates": 0,
-    "benefit": "UNTESTED",
-    "adopted": false
+    "benefit": "UNKNOWN",
+    "adopted": false,
+    "running": true,
+    "run": "research/continuation_memory_v1/contextual_readout_v10/run_001"
   }
 }
