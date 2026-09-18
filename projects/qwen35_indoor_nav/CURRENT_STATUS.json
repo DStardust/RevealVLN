@@ -1,8 +1,8 @@
 {
   "updated": "2026-09-18T11:49:05.851610+00:00",
-  "phase": "V9_NATURAL_TRANSFER_FEATURES_AND_MATCHED_TRAINING",
+  "phase": "V9_THREE_SEED_CLOSED_LOOP_RUNNING",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
-  "current_report": "reviews/Q35N_V7_V8_METHOD_GAIN_20260918/REPORT_ZH.md",
+  "current_report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md",
   "learnability": {
     "status": "COMPLETE_PASS",
     "updates": 400,
@@ -262,8 +262,8 @@
     "stop_reason": "Completed the next full-denominator method-benefit measurement and targeted repair. B2 signal is weak; Ours superiority is not supported. No further variant/seed selection, full1839, or deployment started."
   },
   "natural_transfer_v9": {
-    "running": true,
-    "status": "FROZEN_READY_TO_LAUNCH",
+    "running": false,
+    "status": "TRAINING_AND_CHECKPOINT_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/natural_transfer_v9/PROTOCOL.json",
     "progress": "research/continuation_memory_v1/natural_transfer_v9/run_001/PROGRESS.json",
     "source_commit": "19c41c0f7b1526174aba9fa74eb029f126a93de0",
@@ -272,7 +272,26 @@
     "planned_new_qwen_forwards": 33844,
     "planned_lightweight_updates": 5400,
     "base_updates": 0,
-    "benefit": "UNMEASURED",
+    "benefit": "ALL_ARMS_TEACHER_ACTION_ACCURACY_IMPROVED_NAVIGATION_PENDING",
+    "adopted": false,
+    "real_qwen_forwards": 33844,
+    "optimizer_updates": 5400,
+    "gpu_hours": 1.4754874420994504,
+    "review": "research/continuation_memory_v1/natural_transfer_v9/REVIEW.json",
+    "result": "research/continuation_memory_v1/natural_transfer_v9/run_001/RESULT.json"
+  },
+  "memory_transfer_v9": {
+    "running": true,
+    "status": "FROZEN_READY_TO_LAUNCH",
+    "seeds": [
+      1209,
+      1210,
+      1211
+    ],
+    "expected_quartets": 300,
+    "expected_episode_executions": 1200,
+    "protocol": "closed_loop_bench/ordinary_memory_transfer_v9/PROTOCOL.json",
+    "benefit": "UNKNOWN",
     "adopted": false
   }
 }
