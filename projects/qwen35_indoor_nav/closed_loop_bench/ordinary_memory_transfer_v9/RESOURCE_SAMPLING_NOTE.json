@@ -1,0 +1,25 @@
+{
+  "applies_to": "DIAGNOSIS.json",
+  "reason": "Monitor sleeps10s after collection, but directory scans add variable overhead; intervals are not fixed10s.",
+  "correct_scope": "Latest resource snapshot classifies latency. Peaks are sampled, not a proof of continuous exclusive use or allocator maximum.",
+  "per_seed": {
+    "1209": {
+      "samples": 582,
+      "minimum_gap_seconds": 11.22242546081543,
+      "maximum_gap_seconds": 30.536115407943726,
+      "mean_gap_seconds": 15.9705014967467
+    },
+    "1210": {
+      "samples": 363,
+      "minimum_gap_seconds": 11.96131706237793,
+      "maximum_gap_seconds": 54.575669288635254,
+      "mean_gap_seconds": 24.55283151081254
+    },
+    "1211": {
+      "samples": 182,
+      "minimum_gap_seconds": 26.610511302947998,
+      "maximum_gap_seconds": 84.99822688102722,
+      "mean_gap_seconds": 51.658978817871265
+    }
+  }
+}

@@ -86,6 +86,6 @@ if __name__=='__main__':
     seeds=c.read(HERE/'PROTOCOL.json')['method_seeds']
     result=dict(status='ALL_FIXED_SEEDS_READ_ONLY_DIAGNOSIS',per_seed={str(seed):summarize(seed) for seed in seeds},
         source_sha256=c.sha(Path(__file__)),gpu_used=False,optimizer_updates=0,
-        limits='STOP margins and co-occurrences are descriptive, not causal ablations. Changing floating memory values can remove exact repeats without reducing wasted actions. Resource categories use the most recent10s monitor sample; absence of an observed foreign process is not an exclusive GPU reservation.')
+        limits='STOP margins and co-occurrences are descriptive, not causal ablations. Changing floating memory values can remove exact repeats without reducing wasted actions. Resource categories use the latest monitor sample; collection intervals are irregular and peaks are sampled. Absence of an observed foreign process is not an exclusive GPU reservation.')
     c.write(HERE/'DIAGNOSIS.json',result,True)
     print('Completed all fixed seeds: STOP types, repeats, interventions and resource accounting.')

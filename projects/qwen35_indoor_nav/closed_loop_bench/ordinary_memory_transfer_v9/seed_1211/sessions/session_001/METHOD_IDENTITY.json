@@ -1,0 +1,27 @@
+{
+  "base_state_sha256": "a87292acedfbf3fc8159259c23017fa1eec47a2ebfd39782c46e088bcbacef6b",
+  "head_states": {
+    "B": "de757ecb5b2ef69031ea029ffcb5c2b2ad38133ec635ffa3c5776050b5756e0a",
+    "C": "c1a64055950e2a16d0d25c2f1d1d4a9d5e17aa0adea22368c811481606e84b97",
+    "D": "0696c5b9b2990154f5ccfe05b302e2ae55b9cce1b8b62a32deded5fcb48ac3ee"
+  },
+  "memory_checkpoints": {
+    "B2": "90e4abfc75d39523405ce7e4c99ae58f07b167438ff2ecf55f839a32088b837c",
+    "Ours": "da0ded082f485aff82704aba62fe4a12ab983f9cbb9b95e0bf4398e3e151d93a",
+    "B1": "789aceb1d97835a8746b85f8537ae91f58873a30be9ea80e5f3f06cd655bd8ef"
+  },
+  "seed": 1211,
+  "seed_selected_by_score": false,
+  "arms": {
+    "A": "native best4k",
+    "B": "exact-state B2 memory with shared natural BC",
+    "C": "crossed-outcome Ours memory with shared natural BC",
+    "D": "B1 shared BC/preservation, no task-state auxiliary"
+  },
+  "protocol_sha256": "6c3f3c95f160b997887f7dc5528fce089f3bf68a6418621a047c6743acd6b0f9",
+  "base_runtime_identity_is_reused_V5_loader": true,
+  "torch_cuda_matmul_allow_tf32": false,
+  "future_query_used_at_runtime": false,
+  "raw_truth_used_at_runtime": false,
+  "native_stop_preserved": true
+}
