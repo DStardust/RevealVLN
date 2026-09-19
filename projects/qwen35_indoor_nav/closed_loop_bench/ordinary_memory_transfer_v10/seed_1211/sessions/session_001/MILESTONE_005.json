@@ -1,0 +1,547 @@
+{
+  "status": "VALID_PARTIAL_DEVELOPMENT",
+  "complete_groups": 5,
+  "expected_groups": 100,
+  "episode_executions": 25,
+  "missing_ranks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "arms": {
+    "A": {
+      "episodes": 5,
+      "sr": 0.4,
+      "spl": 0.3341716422570506,
+      "ndtw": 0.6102474801880939,
+      "osr": 0.8,
+      "decisions": 746,
+      "collisions": 240,
+      "repeated_decisions": 442,
+      "overrides": 0,
+      "entered_range_without_success": 2.0,
+      "far_stop": 2,
+      "inference_p50": 0.06333929998800159,
+      "inference_p95": 0.0710856900550425,
+      "memory_p50": 0.00012602726928889751,
+      "memory_p95": 0.00015130266547203064
+    },
+    "B": {
+      "episodes": 5,
+      "sr": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.35515835192290657,
+      "osr": 0.6,
+      "decisions": 836,
+      "collisions": 440,
+      "repeated_decisions": 389,
+      "overrides": 96,
+      "entered_range_without_success": 3.0,
+      "far_stop": 4,
+      "inference_p50": 0.06296732393093407,
+      "inference_p95": 0.07075595483183861,
+      "memory_p50": 0.0005851814057677984,
+      "memory_p95": 0.0007107011042535305
+    },
+    "C": {
+      "episodes": 5,
+      "sr": 0.0,
+      "spl": 0.0,
+      "ndtw": 0.3719978639441293,
+      "osr": 0.6,
+      "decisions": 823,
+      "collisions": 478,
+      "repeated_decisions": 467,
+      "overrides": 49,
+      "entered_range_without_success": 3.0,
+      "far_stop": 4,
+      "inference_p50": 0.06279897969216108,
+      "inference_p95": 0.07029801793396473,
+      "memory_p50": 0.0005759461782872677,
+      "memory_p95": 0.0006727380678057671
+    },
+    "D": {
+      "episodes": 5,
+      "sr": 0.2,
+      "spl": 0.2,
+      "ndtw": 0.27881023937066257,
+      "osr": 0.6,
+      "decisions": 431,
+      "collisions": 9,
+      "repeated_decisions": 0,
+      "overrides": 61,
+      "entered_range_without_success": 2.0,
+      "far_stop": 4,
+      "inference_p50": 0.06287170900031924,
+      "inference_p95": 0.06954316282644868,
+      "memory_p50": 0.0005737580358982086,
+      "memory_p95": 0.0006569190882146358
+    },
+    "E": {
+      "episodes": 5,
+      "sr": 0.2,
+      "spl": 0.055194968905554906,
+      "ndtw": 0.13978816311617903,
+      "osr": 0.6,
+      "decisions": 820,
+      "collisions": 26,
+      "repeated_decisions": 0,
+      "overrides": 139,
+      "entered_range_without_success": 2.0,
+      "far_stop": 3,
+      "inference_p50": 0.06335078435949981,
+      "inference_p95": 0.0683283437974751,
+      "memory_p50": 0.000591509509831667,
+      "memory_p95": 0.0006792363710701466
+    }
+  },
+  "comparisons": {
+    "AB": {
+      "delta_sr": -0.4,
+      "wins": [],
+      "losses": [
+        8981,
+        9437
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        }
+      },
+      "paired_discordance_exact_p": 0.5,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.3341716422570506,
+      "delta_ndtw": -0.25508912826518737
+    },
+    "AC": {
+      "delta_sr": -0.4,
+      "wins": [],
+      "losses": [
+        8981,
+        9437
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        }
+      },
+      "paired_discordance_exact_p": 0.5,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.3341716422570506,
+      "delta_ndtw": -0.23824961624396454
+    },
+    "AD": {
+      "delta_sr": -0.2,
+      "wins": [],
+      "losses": [
+        8981
+      ],
+      "retained_successes": [
+        9437
+      ],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.1341716422570506,
+      "delta_ndtw": -0.33143724081743137
+    },
+    "AE": {
+      "delta_sr": -0.2,
+      "wins": [
+        1763
+      ],
+      "losses": [
+        8981,
+        9437
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 1.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.2789766733514957,
+      "delta_ndtw": -0.470459317071915
+    },
+    "BC": {
+      "delta_sr": 0.0,
+      "wins": [],
+      "losses": [],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": 0.0,
+      "delta_ndtw": 0.016839512021222754
+    },
+    "DC": {
+      "delta_sr": -0.2,
+      "wins": [],
+      "losses": [
+        9437
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.2,
+      "delta_ndtw": 0.09318762457346677
+    },
+    "EC": {
+      "delta_sr": -0.2,
+      "wins": [],
+      "losses": [
+        1763
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.055194968905554906,
+      "delta_ndtw": 0.2322097008279503
+    },
+    "DB": {
+      "delta_sr": -0.2,
+      "wins": [],
+      "losses": [
+        9437
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.2,
+      "delta_ndtw": 0.07634811255224401
+    },
+    "EB": {
+      "delta_sr": -0.2,
+      "wins": [],
+      "losses": [
+        1763
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": -0.055194968905554906,
+      "delta_ndtw": 0.21537018880672756
+    },
+    "ED": {
+      "delta_sr": 0.0,
+      "wins": [
+        9437
+      ],
+      "losses": [
+        1763
+      ],
+      "retained_successes": [],
+      "by_house": {
+        "82sE5b5pLXE": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "B6ByNegPMKs": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "PuKPg4mmafe": {
+          "episodes": 1,
+          "delta_sr": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "episodes": 1,
+          "delta_sr": -1.0
+        },
+        "aayBHfsNo7d": {
+          "episodes": 1,
+          "delta_sr": 1.0
+        }
+      },
+      "paired_discordance_exact_p": 1.0,
+      "p_scope": "Descriptive paired episode test; house correlation and only five houses limit generalization",
+      "delta_spl": 0.1448050310944451,
+      "delta_ndtw": 0.13902207625448354
+    }
+  },
+  "native_stop_preserved": true,
+  "adopted": false,
+  "seed": 1211,
+  "seed_selected_by_score": false,
+  "data_exposure": "Previously exposed INTERNAL_DEV100; not full val_unseen or blind generalization",
+  "base_prefix_logits_bitwise_equal": true,
+  "base_prefix_max_logit_delta": 0.0,
+  "metric_and_log_recomputed": false
+}

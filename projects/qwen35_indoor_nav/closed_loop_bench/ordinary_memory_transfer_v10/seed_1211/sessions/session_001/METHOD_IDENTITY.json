@@ -1,0 +1,38 @@
+{
+  "base_state_sha256": "a87292acedfbf3fc8159259c23017fa1eec47a2ebfd39782c46e088bcbacef6b",
+  "head_states": {
+    "B": "ba2910fb269da56097d1c987803e0f6788ee475ccbe02d13991490979671abc6",
+    "C": "7ed3a4e3503e076e58e696277eabc8a0d432cb69c987f4cb94b1778f8d020a77",
+    "D": "83d7e3dd43aae5f4d51b065660ab61bddc59f8819bf965be6d3bc04515ae2742",
+    "E": "f8b52de4a0e48be58030b3447de95e15579007e3cd2265b9e759d8db856b0142"
+  },
+  "memory_checkpoints": {
+    "B2": "24930459389e806b03fc0bd44cb53697f6967b8ae7fca3e6e30e810dd7144652",
+    "Ours": "8ecbb64d6d41d6329b0b16f023506b20ceeca03714b410b25d32052cd1eed140",
+    "B1": "f8284ab0c41f6f0b4dd69ffba332943d74e64e559b779a3ba895a24b0016b31d",
+    "N0": "cdc2445d71158e27a4eaba7ffc7c6fd330fed23b0c4b1bf829428ebc5732c6d7"
+  },
+  "seed": 1211,
+  "seed_selected_by_score": false,
+  "arms": {
+    "A": "native best4k",
+    "B": "B2 contextual exact-state memory",
+    "C": "Ours contextual crossed-result memory",
+    "D": "B1 contextual BC memory",
+    "E": "N0 contextual short-window-only BC control"
+  },
+  "no_memory_control": {
+    "B": false,
+    "C": false,
+    "D": false,
+    "E": true
+  },
+  "protocol_sha256": "ef1ce51066aae611e4287fc3e9889b3b5ed376465b79d92398d9e4a36be7a127",
+  "base_runtime_identity_is_reused_V5_loader": true,
+  "runtime_config_sha256": "84172a2cff40c152b8418db4b5067f13457b5cc77c9392022b689ca08b50471f",
+  "infrastructure_revision": "INFRA_REPAIR_001",
+  "torch_cuda_matmul_allow_tf32": false,
+  "future_query_used_at_runtime": false,
+  "raw_truth_used_at_runtime": false,
+  "native_stop_preserved": true
+}
