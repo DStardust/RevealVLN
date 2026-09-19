@@ -1,0 +1,418 @@
+{
+  "status": "ALL_FIXED_CHECKPOINTS_READ_BACK",
+  "checkpoints": 6,
+  "optimizer_updates": 3600,
+  "gpu_used": false,
+  "runtime_parameters_updated_as_declared": true,
+  "no_memory_writer_recurrent_unchanged": true,
+  "runs": {
+    "B2_1209": {
+      "no_memory_control": false,
+      "file_sha256": "fc20bc4d6ef8f3a86bcf186d592e1dbc9d5c57fa4348db4333d4e033b19350bc",
+      "bytes": 6836285,
+      "saved_state_matches_measured": true,
+      "parameter_deltas": {
+        "writer.weight": {
+          "changed_elements": 1048576,
+          "l2": 16.508398056030273,
+          "max_abs": 0.25930365920066833
+        },
+        "writer.bias": {
+          "changed_elements": 512,
+          "l2": 0.15291188657283783,
+          "max_abs": 0.023095741868019104
+        },
+        "recurrent.weight": {
+          "changed_elements": 262144,
+          "l2": 9.475974082946777,
+          "max_abs": 0.3651815354824066
+        },
+        "action.0.weight": {
+          "changed_elements": 327680,
+          "l2": 17.124910354614258,
+          "max_abs": 0.22521203756332397
+        },
+        "action.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.14374564588069916,
+          "max_abs": 0.022132927551865578
+        },
+        "action.2.weight": {
+          "changed_elements": 512,
+          "l2": 2.4132018089294434,
+          "max_abs": 0.32401594519615173
+        },
+        "state_head.weight": {
+          "changed_elements": 2048,
+          "l2": 1.8787996768951416,
+          "max_abs": 0.26351499557495117
+        },
+        "state_head.bias": {
+          "changed_elements": 4,
+          "l2": 0.42177873849868774,
+          "max_abs": 0.25634437799453735
+        },
+        "result_head.0.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.0.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.2.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.2.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    "Ours_1209": {
+      "no_memory_control": false,
+      "file_sha256": "12ae14cd18f7fc9a3000b1ee6d5c21f350a535c6ee5ce30464ab9bcc7ffd7a9a",
+      "bytes": 6836321,
+      "saved_state_matches_measured": true,
+      "parameter_deltas": {
+        "writer.weight": {
+          "changed_elements": 1048576,
+          "l2": 14.471054077148438,
+          "max_abs": 0.26027432084083557
+        },
+        "writer.bias": {
+          "changed_elements": 512,
+          "l2": 0.1696372926235199,
+          "max_abs": 0.02691454067826271
+        },
+        "recurrent.weight": {
+          "changed_elements": 262144,
+          "l2": 7.060448169708252,
+          "max_abs": 0.31042811274528503
+        },
+        "action.0.weight": {
+          "changed_elements": 327680,
+          "l2": 17.3032169342041,
+          "max_abs": 0.21614588797092438
+        },
+        "action.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.12623068690299988,
+          "max_abs": 0.021211771294474602
+        },
+        "action.2.weight": {
+          "changed_elements": 512,
+          "l2": 2.359611749649048,
+          "max_abs": 0.3232297897338867
+        },
+        "state_head.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "state_head.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.0.weight": {
+          "changed_elements": 66048,
+          "l2": 5.009267330169678,
+          "max_abs": 0.6165028810501099
+        },
+        "result_head.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.03056582622230053,
+          "max_abs": 0.007106228731572628
+        },
+        "result_head.2.weight": {
+          "changed_elements": 128,
+          "l2": 0.7832537889480591,
+          "max_abs": 0.17209893465042114
+        },
+        "result_head.2.bias": {
+          "changed_elements": 1,
+          "l2": 0.0072336345911026,
+          "max_abs": 0.0072336345911026
+        }
+      }
+    },
+    "B2_1210": {
+      "no_memory_control": false,
+      "file_sha256": "29ee4682ccc429a954842f4a5c0079dadcb88a6e26d005151856015387101c1a",
+      "bytes": 6836285,
+      "saved_state_matches_measured": true,
+      "parameter_deltas": {
+        "writer.weight": {
+          "changed_elements": 1048576,
+          "l2": 16.520336151123047,
+          "max_abs": 0.2489778846502304
+        },
+        "writer.bias": {
+          "changed_elements": 512,
+          "l2": 0.14878255128860474,
+          "max_abs": 0.019433844834566116
+        },
+        "recurrent.weight": {
+          "changed_elements": 262144,
+          "l2": 9.674817085266113,
+          "max_abs": 0.3945368826389313
+        },
+        "action.0.weight": {
+          "changed_elements": 327680,
+          "l2": 17.081302642822266,
+          "max_abs": 0.2275022715330124
+        },
+        "action.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.14900319278240204,
+          "max_abs": 0.026455489918589592
+        },
+        "action.2.weight": {
+          "changed_elements": 512,
+          "l2": 2.34136962890625,
+          "max_abs": 0.3390509784221649
+        },
+        "state_head.weight": {
+          "changed_elements": 2048,
+          "l2": 1.9107880592346191,
+          "max_abs": 0.29192739725112915
+        },
+        "state_head.bias": {
+          "changed_elements": 4,
+          "l2": 0.4179067015647888,
+          "max_abs": 0.23234879970550537
+        },
+        "result_head.0.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.0.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.2.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.2.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    "Ours_1210": {
+      "no_memory_control": false,
+      "file_sha256": "d08cf6e9c73f28037a11e1373189c79949e4234980d76ba9f59cd650f6c783f7",
+      "bytes": 6836321,
+      "saved_state_matches_measured": true,
+      "parameter_deltas": {
+        "writer.weight": {
+          "changed_elements": 1048576,
+          "l2": 14.01540756225586,
+          "max_abs": 0.24798603355884552
+        },
+        "writer.bias": {
+          "changed_elements": 512,
+          "l2": 0.15572400391101837,
+          "max_abs": 0.017308063805103302
+        },
+        "recurrent.weight": {
+          "changed_elements": 262144,
+          "l2": 6.539523601531982,
+          "max_abs": 0.25451725721359253
+        },
+        "action.0.weight": {
+          "changed_elements": 327680,
+          "l2": 16.817550659179688,
+          "max_abs": 0.2394392192363739
+        },
+        "action.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.14215286076068878,
+          "max_abs": 0.021473050117492676
+        },
+        "action.2.weight": {
+          "changed_elements": 512,
+          "l2": 2.325042724609375,
+          "max_abs": 0.2783218026161194
+        },
+        "state_head.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "state_head.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.0.weight": {
+          "changed_elements": 66048,
+          "l2": 4.918329238891602,
+          "max_abs": 0.600407063961029
+        },
+        "result_head.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.03455914184451103,
+          "max_abs": 0.008502475917339325
+        },
+        "result_head.2.weight": {
+          "changed_elements": 128,
+          "l2": 0.6847838759422302,
+          "max_abs": 0.1787528097629547
+        },
+        "result_head.2.bias": {
+          "changed_elements": 1,
+          "l2": 0.0049841441214084625,
+          "max_abs": 0.0049841441214084625
+        }
+      }
+    },
+    "B2_1211": {
+      "no_memory_control": false,
+      "file_sha256": "df3ca9ea639e1626218c102f0f51d2c95a7bba7b41ce8599a7264fe216421e69",
+      "bytes": 6836285,
+      "saved_state_matches_measured": true,
+      "parameter_deltas": {
+        "writer.weight": {
+          "changed_elements": 1048576,
+          "l2": 14.642683982849121,
+          "max_abs": 0.2927613854408264
+        },
+        "writer.bias": {
+          "changed_elements": 512,
+          "l2": 0.15844610333442688,
+          "max_abs": 0.039487577974796295
+        },
+        "recurrent.weight": {
+          "changed_elements": 262144,
+          "l2": 9.234274864196777,
+          "max_abs": 0.47897979617118835
+        },
+        "action.0.weight": {
+          "changed_elements": 327680,
+          "l2": 16.943927764892578,
+          "max_abs": 0.27527689933776855
+        },
+        "action.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.15034039318561554,
+          "max_abs": 0.021717257797718048
+        },
+        "action.2.weight": {
+          "changed_elements": 512,
+          "l2": 2.3729019165039062,
+          "max_abs": 0.3224075734615326
+        },
+        "state_head.weight": {
+          "changed_elements": 2048,
+          "l2": 1.9932292699813843,
+          "max_abs": 0.35025545954704285
+        },
+        "state_head.bias": {
+          "changed_elements": 4,
+          "l2": 0.4433830678462982,
+          "max_abs": 0.2572927176952362
+        },
+        "result_head.0.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.0.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.2.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.2.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    "Ours_1211": {
+      "no_memory_control": false,
+      "file_sha256": "e761cb1fad6c7b6fe08acdf2f7469cf87df99228175470372a85f5474dc3fc6b",
+      "bytes": 6836321,
+      "saved_state_matches_measured": true,
+      "parameter_deltas": {
+        "writer.weight": {
+          "changed_elements": 1048576,
+          "l2": 14.41514778137207,
+          "max_abs": 0.2410469502210617
+        },
+        "writer.bias": {
+          "changed_elements": 512,
+          "l2": 0.15823552012443542,
+          "max_abs": 0.020992550998926163
+        },
+        "recurrent.weight": {
+          "changed_elements": 262144,
+          "l2": 7.3035688400268555,
+          "max_abs": 0.26210662722587585
+        },
+        "action.0.weight": {
+          "changed_elements": 327680,
+          "l2": 17.175159454345703,
+          "max_abs": 0.19533690810203552
+        },
+        "action.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.12819664180278778,
+          "max_abs": 0.019135816022753716
+        },
+        "action.2.weight": {
+          "changed_elements": 512,
+          "l2": 2.3598883152008057,
+          "max_abs": 0.28837937116622925
+        },
+        "state_head.weight": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "state_head.bias": {
+          "changed_elements": 0,
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "result_head.0.weight": {
+          "changed_elements": 66048,
+          "l2": 5.017558574676514,
+          "max_abs": 0.6067546010017395
+        },
+        "result_head.0.bias": {
+          "changed_elements": 128,
+          "l2": 0.026911672204732895,
+          "max_abs": 0.007997319102287292
+        },
+        "result_head.2.weight": {
+          "changed_elements": 128,
+          "l2": 0.6606394648551941,
+          "max_abs": 0.15819333493709564
+        },
+        "result_head.2.bias": {
+          "changed_elements": 1,
+          "l2": 0.007991749793291092,
+          "max_abs": 0.007991749793291092
+        }
+      }
+    }
+  }
+}
