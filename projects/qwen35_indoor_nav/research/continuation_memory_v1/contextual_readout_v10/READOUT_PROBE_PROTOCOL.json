@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_BEFORE_PROBE_OUTCOMES",
+  "purpose": "Distinguish retained-history readability from outcome-reader bottleneck; no policy repair is assumed.",
+  "frozen_at": "2026-09-19T00:31:26.675856+00:00",
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "N0",
+    "B1",
+    "B2",
+    "Ours"
+  ],
+  "steps": 600,
+  "learning_rate": 0.01,
+  "weight_decay": 0.01,
+  "source_sha256": "23a1d160539454073cb78be8a8949b32afbef69603e99c9043ca6a0b845778b8",
+  "feature_sha256": "09ea1cbe374de30a547fc8b47271417633232f66568f9c4720d7e6aac6ad0578",
+  "normalization": "FIT-only per-coordinate mean and population standard deviation, floor1e-4; no CHECK fitting or label-dependent feature transforms.",
+  "probes": {
+    "state": "New matched linear512-to4 exact-state probe on frozen final memory for all12 saved policies; initial probe weights shared acrossarms for a seed.",
+    "outcome": "Ours only: new128-tanh outcome head on frozen final memory plus frozen existing query summaries; same600 full-batch steps."
+  },
+  "data": "Original13 FIT families/6houses and12 CHECK families/2houses; previously exposed. Whole-family split unchanged, UNKNOWN masks retained, no new simulator data.",
+  "selection": "All three seeds, fixed600 final updates; no checkpoint or hyperparameter search.",
+  "interpretation": "Diagnostic CPU head updates only. Probe cannot feed actions, change saved policies, prove trained memory writing, or count as navigation/method benefit.",
+  "decision": "If exact state is readable but original crossed reader fails, investigate reader/optimization. If neither probe decodes old state, investigate frozen features and causal memory writing; a negative probe does not prove information absence.",
+  "original_training_admission": false
+}
