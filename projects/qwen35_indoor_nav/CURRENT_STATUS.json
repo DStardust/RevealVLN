@@ -314,7 +314,7 @@
     "result": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
     "report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md"
   },
-  "updated_at": "2026-09-19T02:38:01.218220+00:00",
+  "updated_at": "2026-09-19T02:58:56.140404+00:00",
   "contextual_readout_v10": {
     "status": "TRAINING_AND_CHECKPOINT_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
@@ -363,12 +363,12 @@
       1209
     ],
     "first_seed_gpu_hours": 3.0957402183742833,
-    "complete_groups": 143,
-    "episode_executions": 715,
+    "complete_groups": 152,
+    "episode_executions": 760,
     "pause_receipt": "closed_loop_bench/ordinary_memory_transfer_v10/EXECUTION_PAUSE_RESULT_001.json",
     "remaining_groups_by_seed": {
       "1209": 0,
-      "1210": 57,
+      "1210": 48,
       "1211": 100
     },
     "resume_after": "Finite V12 screen completed; resumed same frozen launcher/checkpoints in seed1210 session002. Snapshot counts, see live progress."
@@ -524,6 +524,20 @@
     "check_fork_pairs": 24,
     "original_training_admission": false,
     "benefit": "UNKNOWN",
-    "publication_ready": false
+    "publication_ready": false,
+    "strong_state_control": {
+      "status": "RUNNING",
+      "planned_updates": 1800,
+      "seeds": [
+        1209,
+        1210,
+        1211
+      ],
+      "exact_state_head_parameters": 66180,
+      "outcome_head_parameters": 66305,
+      "source": "research/continuation_memory_v1/fork_balanced_v14/strong_state.py",
+      "gpu_hours": 0,
+      "base_updates": 0
+    }
   }
 }
