@@ -1,0 +1,99 @@
+{
+  "reason": "PLANNED_RESEARCH_PRIORITY_PAUSE",
+  "authorization": "Latest user requests immediate substantive research progress; retain and resume the entire original fixed navigation list.",
+  "unix": 1789782484.8236644,
+  "session": "closed_loop_bench/ordinary_memory_transfer_v10/seed_1210/sessions/session_001",
+  "worker_identity": {
+    "pid": 1920026,
+    "state": "R",
+    "ppid": 1856211,
+    "pgid": 1920026,
+    "sid": 1920026,
+    "start_ticks": 213155957,
+    "rss_bytes": 2898964480
+  },
+  "launcher_identity": {
+    "pid": 1856211,
+    "state": "S",
+    "ppid": 134198,
+    "pgid": 1856211,
+    "sid": 1856211,
+    "start_ticks": 212339625,
+    "rss_bytes": 48906240
+  },
+  "progress": {
+    "unix": 1789782484.5920758,
+    "group_rank": 26,
+    "completed": 26,
+    "total_actions": 23778,
+    "phase": "EVALUATING",
+    "step": 142
+  },
+  "gpu_snapshot": {
+    "index": 1,
+    "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+    "name": "NVIDIA GeForce RTX 5090",
+    "driver": "580.126.09",
+    "used_mib": 11390,
+    "free_mib": 20720,
+    "processes": [
+      {
+        "pid": 1920026,
+        "kind": "C",
+        "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+        "memory_mib": 5190
+      },
+      {
+        "pid": 1920521,
+        "kind": "G",
+        "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+        "memory_mib": 1209
+      },
+      {
+        "pid": 1920522,
+        "kind": "G",
+        "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+        "memory_mib": 1233
+      },
+      {
+        "pid": 1920523,
+        "kind": "G",
+        "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+        "memory_mib": 1233
+      },
+      {
+        "pid": 1920524,
+        "kind": "G",
+        "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+        "memory_mib": 1233
+      },
+      {
+        "pid": 1920525,
+        "kind": "G",
+        "name": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+        "memory_mib": 1233
+      }
+    ]
+  },
+  "score_based_selection": false,
+  "pending_groups_retained": true,
+  "half_group_reuse": false,
+  "requested_signals": [
+    {
+      "pid": 1856211,
+      "signal": "SIGSTOP"
+    },
+    {
+      "pid": 1920026,
+      "signal": "SIGTERM"
+    },
+    {
+      "pid": 1856211,
+      "signal": "SIGINT"
+    },
+    {
+      "pid": 1856211,
+      "signal": "SIGCONT"
+    }
+  ]
+}

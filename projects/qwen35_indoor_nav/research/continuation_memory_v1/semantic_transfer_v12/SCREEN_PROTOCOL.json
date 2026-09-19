@@ -1,0 +1,41 @@
+{
+  "status": "FROZEN_BEFORE_SCREEN_ENCODER_OR_PREDICTOR_RUN",
+  "data_sha256": "1227e30e5dd88db60d3265668b4338ff40390ce3c70f35ac725a7f6df2386556",
+  "pool_protocol_sha256": "0a864a74eb50e006cac8280475a4b3f6892e88ad7e000d861de7299467f9ad68",
+  "source_sha256": "e2171a893358a22f9a1fa763470bd14504a89496cd4a5f8630e4848b13b451d7",
+  "witness_label_source_sha256": "51cade0d4c7554b59a371758b6072d7ce8410bc46f49b778ed1cfd2edc24dcc4",
+  "selection": "Union of up to8 positive and8 negative unique causal inputs for each of two targets in every family, stable input-key hash order. All families and splits retained; no score selection.",
+  "target": "Original current two-frame anchor/terminal SEE2 witnesses, not cumulative state or room visit.",
+  "heads": [
+    "linear",
+    "mlp128"
+  ],
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "steps": 600,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "threshold": 0.5,
+  "partitions": {
+    "17DRP5sb8fy": "fit",
+    "1LXtFkjw3qL": "check_additional_house",
+    "1pXnuDYAj8r": "check_additional_house",
+    "29hnd4uzFmX": "fit",
+    "2n8kARJN3HM": "fit",
+    "5LpN3gDmAk7": "fit",
+    "5q7pvUzZiYa": "fit",
+    "759xd9YjKW5": "fit",
+    "7y3sRwLe3Va": "check_additional_house",
+    "8WUmhLawc2A": "check_exposed",
+    "D7N2EKCX4Sj": "check_exposed"
+  },
+  "policy_inputs": "Original instruction, at most2 RGB and8 executed actions, frozen best4k.",
+  "representation": "Unchanged action-head input, no semantic truth, future query or task state in encoder.",
+  "interpretation": "Balanced diagnostic screen, not population prevalence or closed-loop method benefit.",
+  "original_training_admission": false,
+  "gpu_optimizer_updates": 0
+}
