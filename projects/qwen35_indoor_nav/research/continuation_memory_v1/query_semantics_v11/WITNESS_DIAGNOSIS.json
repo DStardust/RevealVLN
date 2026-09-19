@@ -1,0 +1,1065 @@
+{
+  "status": "CPU_PROBE_VERIFIED_NO_METHOD_BENEFIT_CLAIM",
+  "result_sha256": "62cf8e2400272dade7be499955329b51daa646561a5a872a927afc02b9a232e7",
+  "examples_sha256": "f07bc1357341e1ab479decf7876e6d7bcc6e8bfb2b841f49b7d715f9e9a1a4b6",
+  "all_six_prediction_files_recomputed": true,
+  "heads": {
+    "linear": {
+      "anchor_now": 0.5865412417719691,
+      "terminal_now": 0.7325076722090795
+    },
+    "mlp128": {
+      "anchor_now": 0.5197907004329224,
+      "terminal_now": 0.5618692612887064
+    }
+  },
+  "results": {
+    "linear_1209": {
+      "check": {
+        "anchor_now": {
+          "tp": 195,
+          "tn": 5977,
+          "fp": 2568,
+          "fn": 198,
+          "positives": 393,
+          "negatives": 8545,
+          "recall": 0.4961832061068702,
+          "specificity": 0.6994733762434172,
+          "accuracy": 0.6905347952562094,
+          "balanced_accuracy": 0.5978282911751437
+        },
+        "terminal_now": {
+          "tp": 197,
+          "tn": 6463,
+          "fp": 2201,
+          "fn": 77,
+          "positives": 274,
+          "negatives": 8664,
+          "recall": 0.718978102189781,
+          "specificity": 0.7459602954755309,
+          "accuracy": 0.7451331394047885,
+          "balanced_accuracy": 0.7324691988326559
+        }
+      },
+      "posthoc_coverage": {
+        "anchor_now": {
+          "seen_target_role": {
+            "tp": 69,
+            "tn": 1642,
+            "fp": 737,
+            "fn": 35,
+            "roles": [
+              [
+                "table",
+                "dining room"
+              ],
+              [
+                "table",
+                "living room"
+              ],
+              [
+                "toilet",
+                "bathroom"
+              ]
+            ],
+            "positives": 104,
+            "negatives": 2379,
+            "balanced_accuracy": 0.676833753678016
+          },
+          "unseen_target_role": {
+            "tp": 126,
+            "tn": 4335,
+            "fp": 1831,
+            "fn": 163,
+            "roles": [
+              [
+                "plant",
+                "dining room"
+              ],
+              [
+                "plant",
+                "familyroom/lounge"
+              ],
+              [
+                "sofa",
+                "living room"
+              ],
+              [
+                "table",
+                "bedroom"
+              ],
+              [
+                "table",
+                "familyroom/lounge"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ],
+              [
+                "tv_monitor",
+                "office"
+              ]
+            ],
+            "positives": 289,
+            "negatives": 6166,
+            "balanced_accuracy": 0.5695175687187355
+          }
+        },
+        "terminal_now": {
+          "seen_target_role": {
+            "tp": 133,
+            "tn": 2279,
+            "fp": 617,
+            "fn": 69,
+            "roles": [
+              [
+                "bed",
+                "bedroom"
+              ],
+              [
+                "chair",
+                "bedroom"
+              ],
+              [
+                "table",
+                "living room"
+              ]
+            ],
+            "positives": 202,
+            "negatives": 2896,
+            "balanced_accuracy": 0.7226816776981566
+          },
+          "unseen_target_role": {
+            "tp": 64,
+            "tn": 4184,
+            "fp": 1584,
+            "fn": 8,
+            "roles": [
+              [
+                "chair",
+                "dining room"
+              ],
+              [
+                "chair",
+                "lounge"
+              ],
+              [
+                "chair",
+                "office"
+              ],
+              [
+                "sink",
+                "bathroom"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ]
+            ],
+            "positives": 72,
+            "negatives": 5768,
+            "balanced_accuracy": 0.807135151795346
+          }
+        }
+      }
+    },
+    "mlp128_1209": {
+      "check": {
+        "anchor_now": {
+          "tp": 32,
+          "tn": 8270,
+          "fp": 275,
+          "fn": 361,
+          "positives": 393,
+          "negatives": 8545,
+          "recall": 0.08142493638676845,
+          "specificity": 0.967817437097718,
+          "accuracy": 0.9288431416424257,
+          "balanced_accuracy": 0.5246211867422432
+        },
+        "terminal_now": {
+          "tp": 48,
+          "tn": 8485,
+          "fp": 179,
+          "fn": 226,
+          "positives": 274,
+          "negatives": 8664,
+          "recall": 0.17518248175182483,
+          "specificity": 0.9793397968605725,
+          "accuracy": 0.9546878496307899,
+          "balanced_accuracy": 0.5772611393061986
+        }
+      },
+      "posthoc_coverage": {
+        "anchor_now": {
+          "seen_target_role": {
+            "tp": 6,
+            "tn": 2277,
+            "fp": 102,
+            "fn": 98,
+            "roles": [
+              [
+                "table",
+                "dining room"
+              ],
+              [
+                "table",
+                "living room"
+              ],
+              [
+                "toilet",
+                "bathroom"
+              ]
+            ],
+            "positives": 104,
+            "negatives": 2379,
+            "balanced_accuracy": 0.5074085750315258
+          },
+          "unseen_target_role": {
+            "tp": 26,
+            "tn": 5993,
+            "fp": 173,
+            "fn": 263,
+            "roles": [
+              [
+                "plant",
+                "dining room"
+              ],
+              [
+                "plant",
+                "familyroom/lounge"
+              ],
+              [
+                "sofa",
+                "living room"
+              ],
+              [
+                "table",
+                "bedroom"
+              ],
+              [
+                "table",
+                "familyroom/lounge"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ],
+              [
+                "tv_monitor",
+                "office"
+              ]
+            ],
+            "positives": 289,
+            "negatives": 6166,
+            "balanced_accuracy": 0.5309541553355998
+          }
+        },
+        "terminal_now": {
+          "seen_target_role": {
+            "tp": 23,
+            "tn": 2830,
+            "fp": 66,
+            "fn": 179,
+            "roles": [
+              [
+                "bed",
+                "bedroom"
+              ],
+              [
+                "chair",
+                "bedroom"
+              ],
+              [
+                "table",
+                "living room"
+              ]
+            ],
+            "positives": 202,
+            "negatives": 2896,
+            "balanced_accuracy": 0.5455356654449975
+          },
+          "unseen_target_role": {
+            "tp": 25,
+            "tn": 5655,
+            "fp": 113,
+            "fn": 47,
+            "roles": [
+              [
+                "chair",
+                "dining room"
+              ],
+              [
+                "chair",
+                "lounge"
+              ],
+              [
+                "chair",
+                "office"
+              ],
+              [
+                "sink",
+                "bathroom"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ]
+            ],
+            "positives": 72,
+            "negatives": 5768,
+            "balanced_accuracy": 0.6638156880875328
+          }
+        }
+      }
+    },
+    "linear_1210": {
+      "check": {
+        "anchor_now": {
+          "tp": 191,
+          "tn": 5721,
+          "fp": 2824,
+          "fn": 202,
+          "positives": 393,
+          "negatives": 8545,
+          "recall": 0.4860050890585242,
+          "specificity": 0.6695143358689292,
+          "accuracy": 0.6614455135377042,
+          "balanced_accuracy": 0.5777597124637267
+        },
+        "terminal_now": {
+          "tp": 190,
+          "tn": 6586,
+          "fp": 2078,
+          "fn": 84,
+          "positives": 274,
+          "negatives": 8664,
+          "recall": 0.6934306569343066,
+          "specificity": 0.760156971375808,
+          "accuracy": 0.7581114343253524,
+          "balanced_accuracy": 0.7267938141550573
+        }
+      },
+      "posthoc_coverage": {
+        "anchor_now": {
+          "seen_target_role": {
+            "tp": 54,
+            "tn": 1580,
+            "fp": 799,
+            "fn": 50,
+            "roles": [
+              [
+                "table",
+                "dining room"
+              ],
+              [
+                "table",
+                "living room"
+              ],
+              [
+                "toilet",
+                "bathroom"
+              ]
+            ],
+            "positives": 104,
+            "negatives": 2379,
+            "balanced_accuracy": 0.5916876839007987
+          },
+          "unseen_target_role": {
+            "tp": 137,
+            "tn": 4141,
+            "fp": 2025,
+            "fn": 152,
+            "roles": [
+              [
+                "plant",
+                "dining room"
+              ],
+              [
+                "plant",
+                "familyroom/lounge"
+              ],
+              [
+                "sofa",
+                "living room"
+              ],
+              [
+                "table",
+                "bedroom"
+              ],
+              [
+                "table",
+                "familyroom/lounge"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ],
+              [
+                "tv_monitor",
+                "office"
+              ]
+            ],
+            "positives": 289,
+            "negatives": 6166,
+            "balanced_accuracy": 0.5728172801623368
+          }
+        },
+        "terminal_now": {
+          "seen_target_role": {
+            "tp": 128,
+            "tn": 2290,
+            "fp": 606,
+            "fn": 74,
+            "roles": [
+              [
+                "bed",
+                "bedroom"
+              ],
+              [
+                "chair",
+                "bedroom"
+              ],
+              [
+                "table",
+                "living room"
+              ]
+            ],
+            "positives": 202,
+            "negatives": 2896,
+            "balanced_accuracy": 0.7122046113451124
+          },
+          "unseen_target_role": {
+            "tp": 62,
+            "tn": 4296,
+            "fp": 1472,
+            "fn": 10,
+            "roles": [
+              [
+                "chair",
+                "dining room"
+              ],
+              [
+                "chair",
+                "lounge"
+              ],
+              [
+                "chair",
+                "office"
+              ],
+              [
+                "sink",
+                "bathroom"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ]
+            ],
+            "positives": 72,
+            "negatives": 5768,
+            "balanced_accuracy": 0.8029550007705348
+          }
+        }
+      }
+    },
+    "mlp128_1210": {
+      "check": {
+        "anchor_now": {
+          "tp": 33,
+          "tn": 8230,
+          "fp": 315,
+          "fn": 360,
+          "positives": 393,
+          "negatives": 8545,
+          "recall": 0.08396946564885496,
+          "specificity": 0.9631363370392042,
+          "accuracy": 0.9244797493846498,
+          "balanced_accuracy": 0.5235529013440295
+        },
+        "terminal_now": {
+          "tp": 40,
+          "tn": 8493,
+          "fp": 171,
+          "fn": 234,
+          "positives": 274,
+          "negatives": 8664,
+          "recall": 0.145985401459854,
+          "specificity": 0.9802631578947368,
+          "accuracy": 0.9546878496307899,
+          "balanced_accuracy": 0.5631242796772954
+        }
+      },
+      "posthoc_coverage": {
+        "anchor_now": {
+          "seen_target_role": {
+            "tp": 7,
+            "tn": 2263,
+            "fp": 116,
+            "fn": 97,
+            "roles": [
+              [
+                "table",
+                "dining room"
+              ],
+              [
+                "table",
+                "living room"
+              ],
+              [
+                "toilet",
+                "bathroom"
+              ]
+            ],
+            "positives": 104,
+            "negatives": 2379,
+            "balanced_accuracy": 0.5092738545607398
+          },
+          "unseen_target_role": {
+            "tp": 26,
+            "tn": 5967,
+            "fp": 199,
+            "fn": 263,
+            "roles": [
+              [
+                "plant",
+                "dining room"
+              ],
+              [
+                "plant",
+                "familyroom/lounge"
+              ],
+              [
+                "sofa",
+                "living room"
+              ],
+              [
+                "table",
+                "bedroom"
+              ],
+              [
+                "table",
+                "familyroom/lounge"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ],
+              [
+                "tv_monitor",
+                "office"
+              ]
+            ],
+            "positives": 289,
+            "negatives": 6166,
+            "balanced_accuracy": 0.5288458192992714
+          }
+        },
+        "terminal_now": {
+          "seen_target_role": {
+            "tp": 14,
+            "tn": 2833,
+            "fp": 63,
+            "fn": 188,
+            "roles": [
+              [
+                "bed",
+                "bedroom"
+              ],
+              [
+                "chair",
+                "bedroom"
+              ],
+              [
+                "table",
+                "living room"
+              ]
+            ],
+            "positives": 202,
+            "negatives": 2896,
+            "balanced_accuracy": 0.5237763935233303
+          },
+          "unseen_target_role": {
+            "tp": 26,
+            "tn": 5660,
+            "fp": 108,
+            "fn": 46,
+            "roles": [
+              [
+                "chair",
+                "dining room"
+              ],
+              [
+                "chair",
+                "lounge"
+              ],
+              [
+                "chair",
+                "office"
+              ],
+              [
+                "sink",
+                "bathroom"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ]
+            ],
+            "positives": 72,
+            "negatives": 5768,
+            "balanced_accuracy": 0.6711935583294807
+          }
+        }
+      }
+    },
+    "linear_1211": {
+      "check": {
+        "anchor_now": {
+          "tp": 190,
+          "tn": 5850,
+          "fp": 2695,
+          "fn": 203,
+          "positives": 393,
+          "negatives": 8545,
+          "recall": 0.48346055979643765,
+          "specificity": 0.684610883557636,
+          "accuracy": 0.6757663906914299,
+          "balanced_accuracy": 0.5840357216770369
+        },
+        "terminal_now": {
+          "tp": 204,
+          "tn": 6342,
+          "fp": 2322,
+          "fn": 70,
+          "positives": 274,
+          "negatives": 8664,
+          "recall": 0.7445255474452555,
+          "specificity": 0.731994459833795,
+          "accuracy": 0.7323786081897516,
+          "balanced_accuracy": 0.7382600036395253
+        }
+      },
+      "posthoc_coverage": {
+        "anchor_now": {
+          "seen_target_role": {
+            "tp": 68,
+            "tn": 1572,
+            "fp": 807,
+            "fn": 36,
+            "roles": [
+              [
+                "table",
+                "dining room"
+              ],
+              [
+                "table",
+                "living room"
+              ],
+              [
+                "toilet",
+                "bathroom"
+              ]
+            ],
+            "positives": 104,
+            "negatives": 2379,
+            "balanced_accuracy": 0.6573139974779318
+          },
+          "unseen_target_role": {
+            "tp": 122,
+            "tn": 4278,
+            "fp": 1888,
+            "fn": 167,
+            "roles": [
+              [
+                "plant",
+                "dining room"
+              ],
+              [
+                "plant",
+                "familyroom/lounge"
+              ],
+              [
+                "sofa",
+                "living room"
+              ],
+              [
+                "table",
+                "bedroom"
+              ],
+              [
+                "table",
+                "familyroom/lounge"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ],
+              [
+                "tv_monitor",
+                "office"
+              ]
+            ],
+            "positives": 289,
+            "negatives": 6166,
+            "balanced_accuracy": 0.55797503218341
+          }
+        },
+        "terminal_now": {
+          "seen_target_role": {
+            "tp": 140,
+            "tn": 2201,
+            "fp": 695,
+            "fn": 62,
+            "roles": [
+              [
+                "bed",
+                "bedroom"
+              ],
+              [
+                "chair",
+                "bedroom"
+              ],
+              [
+                "table",
+                "living room"
+              ]
+            ],
+            "positives": 202,
+            "negatives": 2896,
+            "balanced_accuracy": 0.7265415595426945
+          },
+          "unseen_target_role": {
+            "tp": 64,
+            "tn": 4141,
+            "fp": 1627,
+            "fn": 8,
+            "roles": [
+              [
+                "chair",
+                "dining room"
+              ],
+              [
+                "chair",
+                "lounge"
+              ],
+              [
+                "chair",
+                "office"
+              ],
+              [
+                "sink",
+                "bathroom"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ]
+            ],
+            "positives": 72,
+            "negatives": 5768,
+            "balanced_accuracy": 0.8034076899368161
+          }
+        }
+      }
+    },
+    "mlp128_1211": {
+      "check": {
+        "anchor_now": {
+          "tp": 18,
+          "tn": 8345,
+          "fp": 200,
+          "fn": 375,
+          "positives": 393,
+          "negatives": 8545,
+          "recall": 0.04580152671755725,
+          "specificity": 0.9765944997074313,
+          "accuracy": 0.935667934660998,
+          "balanced_accuracy": 0.5111980132124943
+        },
+        "terminal_now": {
+          "tp": 30,
+          "tn": 8499,
+          "fp": 165,
+          "fn": 244,
+          "positives": 274,
+          "negatives": 8664,
+          "recall": 0.10948905109489052,
+          "specificity": 0.9809556786703602,
+          "accuracy": 0.954240322219736,
+          "balanced_accuracy": 0.5452223648826253
+        }
+      },
+      "posthoc_coverage": {
+        "anchor_now": {
+          "seen_target_role": {
+            "tp": 2,
+            "tn": 2307,
+            "fp": 72,
+            "fn": 102,
+            "roles": [
+              [
+                "table",
+                "dining room"
+              ],
+              [
+                "table",
+                "living room"
+              ],
+              [
+                "toilet",
+                "bathroom"
+              ]
+            ],
+            "positives": 104,
+            "negatives": 2379,
+            "balanced_accuracy": 0.49448297604035313
+          },
+          "unseen_target_role": {
+            "tp": 16,
+            "tn": 6038,
+            "fp": 128,
+            "fn": 273,
+            "roles": [
+              [
+                "plant",
+                "dining room"
+              ],
+              [
+                "plant",
+                "familyroom/lounge"
+              ],
+              [
+                "sofa",
+                "living room"
+              ],
+              [
+                "table",
+                "bedroom"
+              ],
+              [
+                "table",
+                "familyroom/lounge"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ],
+              [
+                "tv_monitor",
+                "office"
+              ]
+            ],
+            "positives": 289,
+            "negatives": 6166,
+            "balanced_accuracy": 0.5173021604131149
+          }
+        },
+        "terminal_now": {
+          "seen_target_role": {
+            "tp": 17,
+            "tn": 2843,
+            "fp": 53,
+            "fn": 185,
+            "roles": [
+              [
+                "bed",
+                "bedroom"
+              ],
+              [
+                "chair",
+                "bedroom"
+              ],
+              [
+                "table",
+                "living room"
+              ]
+            ],
+            "positives": 202,
+            "negatives": 2896,
+            "balanced_accuracy": 0.5329286554346042
+          },
+          "unseen_target_role": {
+            "tp": 13,
+            "tn": 5656,
+            "fp": 112,
+            "fn": 59,
+            "roles": [
+              [
+                "chair",
+                "dining room"
+              ],
+              [
+                "chair",
+                "lounge"
+              ],
+              [
+                "chair",
+                "office"
+              ],
+              [
+                "sink",
+                "bathroom"
+              ],
+              [
+                "table",
+                "lounge"
+              ],
+              [
+                "tv_monitor",
+                "bedroom"
+              ]
+            ],
+            "positives": 72,
+            "negatives": 5768,
+            "balanced_accuracy": 0.5805690399137001
+          }
+        }
+      }
+    }
+  },
+  "fit_target_roles": {
+    "anchor_now": [
+      [
+        "bed",
+        "bedroom"
+      ],
+      [
+        "chair",
+        "familyroom/lounge"
+      ],
+      [
+        "chair",
+        "kitchen"
+      ],
+      [
+        "chair",
+        "office"
+      ],
+      [
+        "plant",
+        "hallway"
+      ],
+      [
+        "plant",
+        "kitchen"
+      ],
+      [
+        "plant",
+        "living room"
+      ],
+      [
+        "sink",
+        "bathroom"
+      ],
+      [
+        "sink",
+        "kitchen"
+      ],
+      [
+        "sofa",
+        "tv"
+      ],
+      [
+        "table",
+        "dining room"
+      ],
+      [
+        "table",
+        "living room"
+      ],
+      [
+        "toilet",
+        "bathroom"
+      ]
+    ],
+    "terminal_now": [
+      [
+        "bed",
+        "bedroom"
+      ],
+      [
+        "chair",
+        "bedroom"
+      ],
+      [
+        "chair",
+        "familyroom/lounge"
+      ],
+      [
+        "chair",
+        "kitchen"
+      ],
+      [
+        "plant",
+        "living room"
+      ],
+      [
+        "sink",
+        "kitchen"
+      ],
+      [
+        "sofa",
+        "familyroom/lounge"
+      ],
+      [
+        "table",
+        "hallway"
+      ],
+      [
+        "table",
+        "living room"
+      ]
+    ]
+  },
+  "role_coverage_analysis": "Post-hoc explanatory grouping of the full unchanged CHECK denominator; not a new selected score or hypothesis test.",
+  "observations": "Partial current-witness information is decodable; MLP nearly fits FIT but fails to transfer. Existing evidence does not isolate memory loss from semantic transfer difficulty.",
+  "next_decision": "Do not expand memory or tune losses from these CHECK scores. A meaningful next method comparison needs a separately specified witness/semantic transfer control and independent physically certified families; retain all existing failures.",
+  "original_training_admission": false,
+  "research_claim_supported": false
+}

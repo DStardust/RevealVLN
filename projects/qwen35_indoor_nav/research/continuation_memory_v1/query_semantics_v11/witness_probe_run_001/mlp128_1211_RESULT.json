@@ -1,0 +1,922 @@
+{
+  "initial_state_sha256": "fe94ae8a000ff5f9d1ea311604216d425a5626d57a0e8b7ef459950c31ac84d3",
+  "final_state_sha256": "ec3c5008038e471aa95c84e0d0b19df2ac1f199f0d3751c792fdc60389cb66af",
+  "optimizer_updates": 600,
+  "parameters_updated": true,
+  "splits": {
+    "fit": {
+      "anchor_now": {
+        "tp": 409,
+        "tn": 11372,
+        "fp": 139,
+        "fn": 6,
+        "positives": 415,
+        "negatives": 11511,
+        "recall": 0.9855421686746988,
+        "specificity": 0.9879245938667361,
+        "accuracy": 0.987841690424283,
+        "balanced_accuracy": 0.9867333812707175
+      },
+      "terminal_now": {
+        "tp": 800,
+        "tn": 11121,
+        "fp": 3,
+        "fn": 2,
+        "positives": 802,
+        "negatives": 11124,
+        "recall": 0.9975062344139651,
+        "specificity": 0.999730312837109,
+        "accuracy": 0.999580747945665,
+        "balanced_accuracy": 0.9986182736255371
+      }
+    },
+    "check": {
+      "anchor_now": {
+        "tp": 18,
+        "tn": 8345,
+        "fp": 200,
+        "fn": 375,
+        "positives": 393,
+        "negatives": 8545,
+        "recall": 0.04580152671755725,
+        "specificity": 0.9765944997074313,
+        "accuracy": 0.935667934660998,
+        "balanced_accuracy": 0.5111980132124943
+      },
+      "terminal_now": {
+        "tp": 30,
+        "tn": 8499,
+        "fp": 165,
+        "fn": 244,
+        "positives": 274,
+        "negatives": 8664,
+        "recall": 0.10948905109489052,
+        "specificity": 0.9809556786703602,
+        "accuracy": 0.954240322219736,
+        "balanced_accuracy": 0.5452223648826253
+      }
+    }
+  },
+  "houses": {
+    "17DRP5sb8fy": {
+      "anchor_now": {
+        "tp": 41,
+        "tn": 1162,
+        "fp": 19,
+        "fn": 0,
+        "positives": 41,
+        "negatives": 1181,
+        "recall": 1.0,
+        "specificity": 0.9839119390347163,
+        "accuracy": 0.9844517184942717,
+        "balanced_accuracy": 0.9919559695173581
+      },
+      "terminal_now": {
+        "tp": 270,
+        "tn": 952,
+        "fp": 0,
+        "fn": 0,
+        "positives": 270,
+        "negatives": 952,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "29hnd4uzFmX": {
+      "anchor_now": {
+        "tp": 128,
+        "tn": 2465,
+        "fp": 23,
+        "fn": 0,
+        "positives": 128,
+        "negatives": 2488,
+        "recall": 1.0,
+        "specificity": 0.9907556270096463,
+        "accuracy": 0.9912079510703364,
+        "balanced_accuracy": 0.9953778135048231
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 2616,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 2616,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "2n8kARJN3HM": {
+      "anchor_now": {
+        "tp": 48,
+        "tn": 3338,
+        "fp": 12,
+        "fn": 0,
+        "positives": 48,
+        "negatives": 3350,
+        "recall": 1.0,
+        "specificity": 0.9964179104477612,
+        "accuracy": 0.9964685108887581,
+        "balanced_accuracy": 0.9982089552238806
+      },
+      "terminal_now": {
+        "tp": 210,
+        "tn": 3183,
+        "fp": 3,
+        "fn": 2,
+        "positives": 212,
+        "negatives": 3186,
+        "recall": 0.9905660377358491,
+        "specificity": 0.9990583804143126,
+        "accuracy": 0.9985285462036492,
+        "balanced_accuracy": 0.9948122090750808
+      }
+    },
+    "5LpN3gDmAk7": {
+      "anchor_now": {
+        "tp": 46,
+        "tn": 745,
+        "fp": 23,
+        "fn": 0,
+        "positives": 46,
+        "negatives": 768,
+        "recall": 1.0,
+        "specificity": 0.9700520833333334,
+        "accuracy": 0.9717444717444718,
+        "balanced_accuracy": 0.9850260416666667
+      },
+      "terminal_now": {
+        "tp": 166,
+        "tn": 648,
+        "fp": 0,
+        "fn": 0,
+        "positives": 166,
+        "negatives": 648,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "5q7pvUzZiYa": {
+      "anchor_now": {
+        "tp": 111,
+        "tn": 3155,
+        "fp": 44,
+        "fn": 4,
+        "positives": 115,
+        "negatives": 3199,
+        "recall": 0.9652173913043478,
+        "specificity": 0.9862457017818068,
+        "accuracy": 0.9855159927579964,
+        "balanced_accuracy": 0.9757315465430774
+      },
+      "terminal_now": {
+        "tp": 114,
+        "tn": 3200,
+        "fp": 0,
+        "fn": 0,
+        "positives": 114,
+        "negatives": 3200,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "759xd9YjKW5": {
+      "anchor_now": {
+        "tp": 35,
+        "tn": 507,
+        "fp": 18,
+        "fn": 2,
+        "positives": 37,
+        "negatives": 525,
+        "recall": 0.9459459459459459,
+        "specificity": 0.9657142857142857,
+        "accuracy": 0.9644128113879004,
+        "balanced_accuracy": 0.9558301158301159
+      },
+      "terminal_now": {
+        "tp": 40,
+        "tn": 522,
+        "fp": 0,
+        "fn": 0,
+        "positives": 40,
+        "negatives": 522,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "8WUmhLawc2A": {
+      "anchor_now": {
+        "tp": 14,
+        "tn": 6028,
+        "fp": 183,
+        "fn": 263,
+        "positives": 277,
+        "negatives": 6211,
+        "recall": 0.05054151624548736,
+        "specificity": 0.9705361455482209,
+        "accuracy": 0.9312577065351418,
+        "balanced_accuracy": 0.5105388308968541
+      },
+      "terminal_now": {
+        "tp": 28,
+        "tn": 6178,
+        "fp": 152,
+        "fn": 130,
+        "positives": 158,
+        "negatives": 6330,
+        "recall": 0.17721518987341772,
+        "specificity": 0.9759873617693523,
+        "accuracy": 0.9565351418002466,
+        "balanced_accuracy": 0.576601275821385
+      }
+    },
+    "D7N2EKCX4Sj": {
+      "anchor_now": {
+        "tp": 4,
+        "tn": 2317,
+        "fp": 17,
+        "fn": 112,
+        "positives": 116,
+        "negatives": 2334,
+        "recall": 0.034482758620689655,
+        "specificity": 0.9927163667523564,
+        "accuracy": 0.9473469387755102,
+        "balanced_accuracy": 0.5135995626865231
+      },
+      "terminal_now": {
+        "tp": 2,
+        "tn": 2321,
+        "fp": 13,
+        "fn": 114,
+        "positives": 116,
+        "negatives": 2334,
+        "recall": 0.017241379310344827,
+        "specificity": 0.9944301628106256,
+        "accuracy": 0.9481632653061225,
+        "balanced_accuracy": 0.5058357710604852
+      }
+    }
+  },
+  "families": {
+    "DV1_886829f2dbd87bf846e0edf0": {
+      "anchor_now": {
+        "tp": 41,
+        "tn": 1162,
+        "fp": 19,
+        "fn": 0,
+        "positives": 41,
+        "negatives": 1181,
+        "recall": 1.0,
+        "specificity": 0.9839119390347163,
+        "accuracy": 0.9844517184942717,
+        "balanced_accuracy": 0.9919559695173581
+      },
+      "terminal_now": {
+        "tp": 270,
+        "tn": 952,
+        "fp": 0,
+        "fn": 0,
+        "positives": 270,
+        "negatives": 952,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "DV1_ca389d2f76b686bd48756322": {
+      "anchor_now": {
+        "tp": 24,
+        "tn": 623,
+        "fp": 9,
+        "fn": 2,
+        "positives": 26,
+        "negatives": 632,
+        "recall": 0.9230769230769231,
+        "specificity": 0.9857594936708861,
+        "accuracy": 0.9832826747720365,
+        "balanced_accuracy": 0.9544182083739046
+      },
+      "terminal_now": {
+        "tp": 42,
+        "tn": 616,
+        "fp": 0,
+        "fn": 0,
+        "positives": 42,
+        "negatives": 616,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "DV1_d232d68356823b8a253abbe7": {
+      "anchor_now": {
+        "tp": 46,
+        "tn": 745,
+        "fp": 23,
+        "fn": 0,
+        "positives": 46,
+        "negatives": 768,
+        "recall": 1.0,
+        "specificity": 0.9700520833333334,
+        "accuracy": 0.9717444717444718,
+        "balanced_accuracy": 0.9850260416666667
+      },
+      "terminal_now": {
+        "tp": 166,
+        "tn": 648,
+        "fp": 0,
+        "fn": 0,
+        "positives": 166,
+        "negatives": 648,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "DV1_f48017d7a035bf5377bc16cf": {
+      "anchor_now": {
+        "tp": 4,
+        "tn": 600,
+        "fp": 4,
+        "fn": 0,
+        "positives": 4,
+        "negatives": 604,
+        "recall": 1.0,
+        "specificity": 0.9933774834437086,
+        "accuracy": 0.993421052631579,
+        "balanced_accuracy": 0.9966887417218543
+      },
+      "terminal_now": {
+        "tp": 106,
+        "tn": 502,
+        "fp": 0,
+        "fn": 0,
+        "positives": 106,
+        "negatives": 502,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "WF_MULTI_103762ad2383d6ddff83eba3": {
+      "anchor_now": {
+        "tp": 22,
+        "tn": 1532,
+        "fp": 2,
+        "fn": 0,
+        "positives": 22,
+        "negatives": 1534,
+        "recall": 1.0,
+        "specificity": 0.9986962190352021,
+        "accuracy": 0.9987146529562982,
+        "balanced_accuracy": 0.9993481095176011
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 1556,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 1556,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_1f8dd91e1429a8e19c7a8e8c": {
+      "anchor_now": {
+        "tp": 20,
+        "tn": 920,
+        "fp": 20,
+        "fn": 0,
+        "positives": 20,
+        "negatives": 940,
+        "recall": 1.0,
+        "specificity": 0.9787234042553191,
+        "accuracy": 0.9791666666666666,
+        "balanced_accuracy": 0.9893617021276595
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 960,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 960,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_3af60f6ec3d450afa99b3e89": {
+      "anchor_now": {
+        "tp": 2,
+        "tn": 1042,
+        "fp": 33,
+        "fn": 57,
+        "positives": 59,
+        "negatives": 1075,
+        "recall": 0.03389830508474576,
+        "specificity": 0.9693023255813954,
+        "accuracy": 0.9206349206349206,
+        "balanced_accuracy": 0.5016003153330706
+      },
+      "terminal_now": {
+        "tp": 15,
+        "tn": 987,
+        "fp": 53,
+        "fn": 79,
+        "positives": 94,
+        "negatives": 1040,
+        "recall": 0.1595744680851064,
+        "specificity": 0.9490384615384615,
+        "accuracy": 0.8835978835978836,
+        "balanced_accuracy": 0.5543064648117839
+      }
+    },
+    "WF_MULTI_3eb7f3e8e50ab4ecd036de1f": {
+      "anchor_now": {
+        "tp": 2,
+        "tn": 809,
+        "fp": 13,
+        "fn": 8,
+        "positives": 10,
+        "negatives": 822,
+        "recall": 0.2,
+        "specificity": 0.9841849148418491,
+        "accuracy": 0.9747596153846154,
+        "balanced_accuracy": 0.5920924574209245
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 806,
+        "fp": 26,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 832,
+        "recall": null,
+        "specificity": 0.96875,
+        "accuracy": 0.96875,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_506d8a8b504efc01ef8e1ded": {
+      "anchor_now": {
+        "tp": 6,
+        "tn": 1020,
+        "fp": 55,
+        "fn": 53,
+        "positives": 59,
+        "negatives": 1075,
+        "recall": 0.1016949152542373,
+        "specificity": 0.9488372093023256,
+        "accuracy": 0.9047619047619048,
+        "balanced_accuracy": 0.5252660622782814
+      },
+      "terminal_now": {
+        "tp": 13,
+        "tn": 1000,
+        "fp": 70,
+        "fn": 51,
+        "positives": 64,
+        "negatives": 1070,
+        "recall": 0.203125,
+        "specificity": 0.9345794392523364,
+        "accuracy": 0.8932980599647267,
+        "balanced_accuracy": 0.5688522196261683
+      }
+    },
+    "WF_MULTI_5c38f79778ef9adb07002c6f": {
+      "anchor_now": {
+        "tp": 0,
+        "tn": 599,
+        "fp": 7,
+        "fn": 52,
+        "positives": 52,
+        "negatives": 606,
+        "recall": 0.0,
+        "specificity": 0.9884488448844885,
+        "accuracy": 0.9103343465045592,
+        "balanced_accuracy": 0.49422442244224424
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 658,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 658,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_6bb0d1b2c2ec4af169829f3e": {
+      "anchor_now": {
+        "tp": 18,
+        "tn": 618,
+        "fp": 2,
+        "fn": 0,
+        "positives": 18,
+        "negatives": 620,
+        "recall": 1.0,
+        "specificity": 0.9967741935483871,
+        "accuracy": 0.9968652037617555,
+        "balanced_accuracy": 0.9983870967741936
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 635,
+        "fp": 3,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 638,
+        "recall": null,
+        "specificity": 0.9952978056426333,
+        "accuracy": 0.9952978056426333,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_6f292440143550199dc2ed0d": {
+      "anchor_now": {
+        "tp": 0,
+        "tn": 376,
+        "fp": 2,
+        "fn": 14,
+        "positives": 14,
+        "negatives": 378,
+        "recall": 0.0,
+        "specificity": 0.9947089947089947,
+        "accuracy": 0.9591836734693877,
+        "balanced_accuracy": 0.4973544973544973
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 385,
+        "fp": 7,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 392,
+        "recall": null,
+        "specificity": 0.9821428571428571,
+        "accuracy": 0.9821428571428571,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_6f4b753021ae7aab2b6ce837": {
+      "anchor_now": {
+        "tp": 64,
+        "tn": 1236,
+        "fp": 8,
+        "fn": 0,
+        "positives": 64,
+        "negatives": 1244,
+        "recall": 1.0,
+        "specificity": 0.9935691318327974,
+        "accuracy": 0.9938837920489296,
+        "balanced_accuracy": 0.9967845659163987
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 1308,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 1308,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_9db3f64418a4dfd74e2bbd91": {
+      "anchor_now": {
+        "tp": 35,
+        "tn": 507,
+        "fp": 18,
+        "fn": 2,
+        "positives": 37,
+        "negatives": 525,
+        "recall": 0.9459459459459459,
+        "specificity": 0.9657142857142857,
+        "accuracy": 0.9644128113879004,
+        "balanced_accuracy": 0.9558301158301159
+      },
+      "terminal_now": {
+        "tp": 40,
+        "tn": 522,
+        "fp": 0,
+        "fn": 0,
+        "positives": 40,
+        "negatives": 522,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "WF_MULTI_a0302a0a1577dbc6eeed1720": {
+      "anchor_now": {
+        "tp": 0,
+        "tn": 573,
+        "fp": 4,
+        "fn": 23,
+        "positives": 23,
+        "negatives": 577,
+        "recall": 0.0,
+        "specificity": 0.9930675909878682,
+        "accuracy": 0.955,
+        "balanced_accuracy": 0.4965337954939341
+      },
+      "terminal_now": {
+        "tp": 2,
+        "tn": 554,
+        "fp": 0,
+        "fn": 44,
+        "positives": 46,
+        "negatives": 554,
+        "recall": 0.043478260869565216,
+        "specificity": 1.0,
+        "accuracy": 0.9266666666666666,
+        "balanced_accuracy": 0.5217391304347826
+      }
+    },
+    "WF_MULTI_a3460384f085c1977305b2fd": {
+      "anchor_now": {
+        "tp": 46,
+        "tn": 563,
+        "fp": 11,
+        "fn": 2,
+        "positives": 48,
+        "negatives": 574,
+        "recall": 0.9583333333333334,
+        "specificity": 0.980836236933798,
+        "accuracy": 0.9790996784565916,
+        "balanced_accuracy": 0.9695847851335657
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 622,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 622,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_a71e844c22922f67b5a83fbf": {
+      "anchor_now": {
+        "tp": 1,
+        "tn": 591,
+        "fp": 3,
+        "fn": 15,
+        "positives": 16,
+        "negatives": 594,
+        "recall": 0.0625,
+        "specificity": 0.9949494949494949,
+        "accuracy": 0.9704918032786886,
+        "balanced_accuracy": 0.5287247474747474
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 610,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 610,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_b692cff970210db08334699f": {
+      "anchor_now": {
+        "tp": 0,
+        "tn": 598,
+        "fp": 8,
+        "fn": 52,
+        "positives": 52,
+        "negatives": 606,
+        "recall": 0.0,
+        "specificity": 0.9867986798679867,
+        "accuracy": 0.9088145896656535,
+        "balanced_accuracy": 0.4933993399339934
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 658,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 658,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_cab669fb75bced5b913c9dc6": {
+      "anchor_now": {
+        "tp": 21,
+        "tn": 1049,
+        "fp": 4,
+        "fn": 0,
+        "positives": 21,
+        "negatives": 1053,
+        "recall": 1.0,
+        "specificity": 0.9962013295346629,
+        "accuracy": 0.9962756052141527,
+        "balanced_accuracy": 0.9981006647673314
+      },
+      "terminal_now": {
+        "tp": 72,
+        "tn": 1002,
+        "fp": 0,
+        "fn": 0,
+        "positives": 72,
+        "negatives": 1002,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0
+      }
+    },
+    "WF_MULTI_d33c53f44d0119fe44eb54f6": {
+      "anchor_now": {
+        "tp": 1,
+        "tn": 779,
+        "fp": 60,
+        "fn": 12,
+        "positives": 13,
+        "negatives": 839,
+        "recall": 0.07692307692307693,
+        "specificity": 0.9284862932061978,
+        "accuracy": 0.9154929577464789,
+        "balanced_accuracy": 0.5027046850646374
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 849,
+        "fp": 3,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 852,
+        "recall": null,
+        "specificity": 0.9964788732394366,
+        "accuracy": 0.9964788732394366,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_dcd173260901c58ec8e18ffc": {
+      "anchor_now": {
+        "tp": 2,
+        "tn": 670,
+        "fp": 1,
+        "fn": 31,
+        "positives": 33,
+        "negatives": 671,
+        "recall": 0.06060606060606061,
+        "specificity": 0.9985096870342772,
+        "accuracy": 0.9545454545454546,
+        "balanced_accuracy": 0.529557873820169
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 690,
+        "fp": 6,
+        "fn": 8,
+        "positives": 8,
+        "negatives": 696,
+        "recall": 0.0,
+        "specificity": 0.9913793103448276,
+        "accuracy": 0.9801136363636364,
+        "balanced_accuracy": 0.4956896551724138
+      }
+    },
+    "WF_MULTI_e0239f96cb5b52ffde971cd1": {
+      "anchor_now": {
+        "tp": 64,
+        "tn": 1229,
+        "fp": 15,
+        "fn": 0,
+        "positives": 64,
+        "negatives": 1244,
+        "recall": 1.0,
+        "specificity": 0.9879421221864951,
+        "accuracy": 0.9885321100917431,
+        "balanced_accuracy": 0.9939710610932475
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 1308,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 1308,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_f031322d1102e6b14ca31fa4": {
+      "anchor_now": {
+        "tp": 2,
+        "tn": 590,
+        "fp": 4,
+        "fn": 14,
+        "positives": 16,
+        "negatives": 594,
+        "recall": 0.125,
+        "specificity": 0.9932659932659933,
+        "accuracy": 0.9704918032786886,
+        "balanced_accuracy": 0.5591329966329966
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 610,
+        "fp": 0,
+        "fn": 0,
+        "positives": 0,
+        "negatives": 610,
+        "recall": null,
+        "specificity": 1.0,
+        "accuracy": 1.0,
+        "balanced_accuracy": null
+      }
+    },
+    "WF_MULTI_f2d3e523d2175b0f38b4be5b": {
+      "anchor_now": {
+        "tp": 2,
+        "tn": 698,
+        "fp": 10,
+        "fn": 44,
+        "positives": 46,
+        "negatives": 708,
+        "recall": 0.043478260869565216,
+        "specificity": 0.9858757062146892,
+        "accuracy": 0.9283819628647215,
+        "balanced_accuracy": 0.5146769835421272
+      },
+      "terminal_now": {
+        "tp": 0,
+        "tn": 692,
+        "fp": 0,
+        "fn": 62,
+        "positives": 62,
+        "negatives": 692,
+        "recall": 0.0,
+        "specificity": 1.0,
+        "accuracy": 0.9177718832891246,
+        "balanced_accuracy": 0.5
+      }
+    },
+    "WF_MULTI_f48017d7a035bf5377bc16cf": {
+      "anchor_now": {
+        "tp": 4,
+        "tn": 588,
+        "fp": 4,
+        "fn": 0,
+        "positives": 4,
+        "negatives": 592,
+        "recall": 1.0,
+        "specificity": 0.9932432432432432,
+        "accuracy": 0.9932885906040269,
+        "balanced_accuracy": 0.9966216216216216
+      },
+      "terminal_now": {
+        "tp": 104,
+        "tn": 490,
+        "fp": 0,
+        "fn": 2,
+        "positives": 106,
+        "negatives": 490,
+        "recall": 0.9811320754716981,
+        "specificity": 1.0,
+        "accuracy": 0.9966442953020134,
+        "balanced_accuracy": 0.9905660377358491
+      }
+    }
+  }
+}
