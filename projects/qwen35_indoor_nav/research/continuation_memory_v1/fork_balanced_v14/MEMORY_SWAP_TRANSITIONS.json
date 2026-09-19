@@ -1,0 +1,317 @@
+{
+  "status": "DESCRIPTIVE_ALL_PAIR_MEMORY_SWAP_TRANSITIONS",
+  "definition": "harmed: both correct with real memory and not both correct after swap; accidentally_helped: reverse. Aggregate difference alone can hide offsetting transitions.",
+  "runs": {
+    "N0_1209": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 26,
+          "sham_both_incorrect": 26
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 24,
+          "sham_both_incorrect": 24
+        }
+      }
+    },
+    "B1_1209": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 17,
+          "sham_both_incorrect": 18,
+          "incompatible_harmed": 8,
+          "sham_harmed": 4,
+          "sham_retained_correct": 4,
+          "incompatible_accidentally_helped": 1
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 21,
+          "sham_both_incorrect": 22,
+          "incompatible_accidentally_helped": 1,
+          "incompatible_harmed": 2,
+          "sham_retained_correct": 2
+        }
+      }
+    },
+    "B2_1209": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 21,
+          "sham_both_incorrect": 21,
+          "incompatible_harmed": 5,
+          "sham_retained_correct": 5
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 22,
+          "sham_both_incorrect": 23,
+          "incompatible_accidentally_helped": 1,
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1
+        }
+      }
+    },
+    "Ours_1209": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_harmed": 10,
+          "sham_retained_correct": 10,
+          "incompatible_both_incorrect": 16,
+          "sham_both_incorrect": 16
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_harmed": 4,
+          "sham_retained_correct": 4,
+          "incompatible_accidentally_helped": 1,
+          "sham_both_incorrect": 20,
+          "incompatible_both_incorrect": 19
+        }
+      }
+    },
+    "N0_1210": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 26,
+          "sham_both_incorrect": 26
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 24,
+          "sham_both_incorrect": 24
+        }
+      }
+    },
+    "B1_1210": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_harmed": 15,
+          "sham_retained_correct": 15,
+          "incompatible_accidentally_helped": 1,
+          "sham_both_incorrect": 11,
+          "incompatible_both_incorrect": 10
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_harmed": 2,
+          "sham_retained_correct": 2,
+          "incompatible_accidentally_helped": 2,
+          "sham_both_incorrect": 22,
+          "incompatible_both_incorrect": 20
+        }
+      }
+    },
+    "B2_1210": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_harmed": 6,
+          "sham_retained_correct": 6,
+          "incompatible_both_incorrect": 20,
+          "sham_both_incorrect": 20
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1,
+          "incompatible_accidentally_helped": 2,
+          "sham_both_incorrect": 23,
+          "incompatible_both_incorrect": 21
+        }
+      }
+    },
+    "Ours_1210": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 17,
+          "sham_both_incorrect": 17,
+          "incompatible_harmed": 9,
+          "sham_harmed": 2,
+          "sham_retained_correct": 7
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 23,
+          "sham_both_incorrect": 23,
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1
+        }
+      }
+    },
+    "N0_1211": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 26,
+          "sham_both_incorrect": 26
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 24,
+          "sham_both_incorrect": 24
+        }
+      }
+    },
+    "B1_1211": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_harmed": 13,
+          "sham_retained_correct": 12,
+          "incompatible_both_incorrect": 13,
+          "sham_both_incorrect": 13,
+          "sham_harmed": 1
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1,
+          "incompatible_accidentally_helped": 2,
+          "sham_both_incorrect": 23,
+          "incompatible_both_incorrect": 21
+        }
+      }
+    },
+    "B2_1211": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 22,
+          "sham_both_incorrect": 23,
+          "incompatible_accidentally_helped": 1,
+          "incompatible_harmed": 3,
+          "sham_retained_correct": 3
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1,
+          "incompatible_accidentally_helped": 2,
+          "sham_both_incorrect": 23,
+          "incompatible_both_incorrect": 21
+        }
+      }
+    },
+    "Ours_1211": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_harmed": 11,
+          "sham_retained_correct": 10,
+          "sham_harmed": 1,
+          "incompatible_both_incorrect": 14,
+          "sham_both_incorrect": 15,
+          "incompatible_accidentally_helped": 1
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 23,
+          "sham_both_incorrect": 24,
+          "incompatible_accidentally_helped": 1
+        }
+      }
+    },
+    "B2_MLP_1209": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 16,
+          "sham_both_incorrect": 16,
+          "incompatible_harmed": 10,
+          "sham_retained_correct": 9,
+          "sham_harmed": 1
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 23,
+          "sham_both_incorrect": 24,
+          "incompatible_accidentally_helped": 1
+        }
+      }
+    },
+    "B2_MLP_1210": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 20,
+          "sham_both_incorrect": 20,
+          "incompatible_harmed": 6,
+          "sham_harmed": 5,
+          "sham_retained_correct": 1
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_both_incorrect": 22,
+          "sham_both_incorrect": 23,
+          "incompatible_accidentally_helped": 1,
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1
+        }
+      }
+    },
+    "B2_MLP_1211": {
+      "fit": {
+        "pairs": 26,
+        "counts": {
+          "incompatible_both_incorrect": 19,
+          "sham_both_incorrect": 19,
+          "incompatible_harmed": 7,
+          "sham_retained_correct": 5,
+          "sham_harmed": 2
+        }
+      },
+      "check": {
+        "pairs": 24,
+        "counts": {
+          "incompatible_harmed": 1,
+          "sham_retained_correct": 1,
+          "incompatible_accidentally_helped": 2,
+          "sham_both_incorrect": 23,
+          "incompatible_both_incorrect": 21
+        }
+      }
+    }
+  },
+  "sources": {
+    "run_001/RESULT.json": "d187d18f2b713696ca35929c5e1a6fec0f66ff549ad679b1dfef2cf536f2fb01",
+    "strong_state_run_001/RESULT.json": "839974c7759b01e987fc35c0a23bb2b772436dab391517f820acad8b78db73a6"
+  },
+  "interpretation": "Memory swap intervenes on all encoded history, including spatial content; this does not uniquely isolate task state or prove closed-loop benefit."
+}
