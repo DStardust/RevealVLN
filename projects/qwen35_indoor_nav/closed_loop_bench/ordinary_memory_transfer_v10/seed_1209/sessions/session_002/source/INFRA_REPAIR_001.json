@@ -1,0 +1,59 @@
+{
+  "id": "Q35N_V10_INFRA_REPAIR_001",
+  "frozen_at": "2026-09-18T22:37:29.818586+00:00",
+  "original_protocol_sha256": "ef1ce51066aae611e4287fc3e9889b3b5ed376465b79d92398d9e4a36be7a127",
+  "reason": "Completed B2 channel waited for other arms and whole-group CPU metric audit; inherited180-second idle receive timeout expired, causing BrokenPipe on next reset.",
+  "change": "Only remove simulator idle-request timeout; retain parent180-second response deadline and launcher900-second progress watchdog. Safely close broken buffered streams. Policy, metrics, model, data, ordering and episode budgets unchanged.",
+  "source_overrides": {
+    "closed_loop_bench/ordinary_memory_transfer_v10/launch.py": "bbaee8fb9f7d06e60e244cad85baf964d3302814fe7c9d6e150cf99ecab350a0",
+    "closed_loop_bench/ordinary_memory_transfer_v10/evaluate.py": "1235c650bfe95714ca1fae4101a129d92b48ed9972c805d4f3db3d1d2993d3d6",
+    "closed_loop_bench/ordinary_memory_transfer_v10/executor.py": "8da5050b461a77b27cda53b5f6114c1b066e9f951ba1eb1d6aaafa69ca4f1bd8",
+    "closed_loop_bench/ordinary_memory_transfer_v10/transport.py": "584b6edaa3321f755836180731405807bc21711d14fffa769153cd0148bf6112",
+    "closed_loop_bench/ordinary_memory_transfer_v10/test_transport_cpu.py": "baa075190e23f7fa4477dc2c66555fa071f395224dbe0fc46386e7e1828e235c"
+  },
+  "executor_original_sha256": "446ccf1033eeff5120c873f5ee6010a5647d22cf85098685bb2dd575a30c3517",
+  "executor_semantics_verification": "CPU test verifies exact V5 source except local transport import and socket creation; sensor, action, STOP, seed and metrics unchanged.",
+  "recoverable_sessions": {
+    "seed_1209/sessions/session_001": {
+      "failure_sha256": "771eb53bd4030c390653e3224e465eae8ff6342f4c3d42a784cd88355ff1c123",
+      "launch_result_sha256": "fa231fd6af3fe2dd2553258c6556274d891f14775f9d0ce80fd0014a75c2eb8c",
+      "preserved_group_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "uncompleted_rank": 27,
+      "state_seal_sha256": "aa3a38d265302de93ac1f91d26371a2c276aa502e7bc67455063e826c80ed600"
+    }
+  },
+  "retry_number": 1,
+  "max_infrastructure_retries": 3,
+  "score_based_retry": false,
+  "compatibility": "V5 permits infrastructure-only recovery across full-group boundaries. Preserve27 sealed complete groups; restart all five arms at rank27. Never combine half-groups. Original frozen protocol and failed session remain immutable.",
+  "future_run_identity": "CONFIG stores effective source hashes and amendment SHA; METHOD_IDENTITY stores CONFIG SHA. Group receipt binds METHOD_IDENTITY.",
+  "cpu_result_sha256": "d72e1c161e981b0162efcfe064e182984f0b2b3fbd8e3c9a5d630bf2c2a41898"
+}
