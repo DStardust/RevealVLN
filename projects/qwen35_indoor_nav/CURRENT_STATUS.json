@@ -314,7 +314,7 @@
     "result": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
     "report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md"
   },
-  "updated_at": "2026-09-19T01:28:25.257505+00:00",
+  "updated_at": "2026-09-19T01:52:33.258260+00:00",
   "contextual_readout_v10": {
     "status": "TRAINING_AND_CHECKPOINT_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
@@ -332,8 +332,8 @@
     "memory_sensitivity": "research/continuation_memory_v1/contextual_readout_v10/MEMORY_DIAGNOSIS.json"
   },
   "memory_transfer_v10": {
-    "running": true,
-    "status": "FIRST_SEED_COMPLETE_OTHER_FIXED_SEEDS_RUNNING",
+    "running": false,
+    "status": "PARTIAL_FIXED_SEEDS_PLANNED_PRIORITY_PAUSE",
     "seeds": [
       1209,
       1210,
@@ -362,7 +362,16 @@
     "completed_seeds": [
       1209
     ],
-    "first_seed_gpu_hours": 3.0957402183742833
+    "first_seed_gpu_hours": 3.0957402183742833,
+    "complete_groups": 126,
+    "episode_executions": 630,
+    "pause_receipt": "closed_loop_bench/ordinary_memory_transfer_v10/EXECUTION_PAUSE_RESULT_001.json",
+    "remaining_groups_by_seed": {
+      "1209": 0,
+      "1210": 74,
+      "1211": 100
+    },
+    "resume_after": "Finite V12 feature screen releasesGPU1; resume same frozen launcher and checkpoints, no score-selected retry."
   },
   "query_semantics_v11": {
     "status": "MATCHED_CPU_PILOT_COMPLETE_NO_INCREMENTAL_SIGNAL",
@@ -404,5 +413,22 @@
       },
       "method_benefit": false
     }
+  },
+  "semantic_transfer_v12": {
+    "status": "FINITE_CAUSAL_FEATURE_SCREEN_RUNNING",
+    "source": "research/continuation_memory_v1/semantic_transfer_v12",
+    "compiled_families": 209,
+    "causal_inputs": 189893,
+    "fit_families": 90,
+    "exposed_check_families": 82,
+    "additional_house_check_families": 37,
+    "screen_unique_inputs": 3569,
+    "reused_feature_rows": 493,
+    "planned_new_forwards": 3076,
+    "base_updates": 0,
+    "new_simulator_episodes": 0,
+    "original_training_admission": false,
+    "method_benefit": "NOT_MEASURED",
+    "publication_ready": false
   }
 }
