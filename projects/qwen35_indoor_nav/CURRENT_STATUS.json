@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-18T13:36:21.409624+00:00",
-  "phase": "V10_RESUMED_NAVIGATION_AND_V13_REAL_ACTION_MEMORY_PILOT",
+  "phase": "V10_FIXED_NAVIGATION_AND_V14_FORK_ACTION_REPAIR",
   "goal": "Ordinary navigation backbone; full R2R-CE val_unseen SR >= 0.40 remains unachieved",
   "current_report": "reviews/Q35N_V10_CONTEXTUAL_READOUT_20260919/REPORT_ZH.md",
   "learnability": {
@@ -314,7 +314,7 @@
     "result": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
     "report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md"
   },
-  "updated_at": "2026-09-19T02:15:35.906505+00:00",
+  "updated_at": "2026-09-19T02:38:01.218220+00:00",
   "contextual_readout_v10": {
     "status": "TRAINING_AND_CHECKPOINT_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
@@ -363,12 +363,12 @@
       1209
     ],
     "first_seed_gpu_hours": 3.0957402183742833,
-    "complete_groups": 131,
-    "episode_executions": 655,
+    "complete_groups": 143,
+    "episode_executions": 715,
     "pause_receipt": "closed_loop_bench/ordinary_memory_transfer_v10/EXECUTION_PAUSE_RESULT_001.json",
     "remaining_groups_by_seed": {
       "1209": 0,
-      "1210": 69,
+      "1210": 57,
       "1211": 100
     },
     "resume_after": "Finite V12 screen completed; resumed same frozen launcher/checkpoints in seed1210 session002. Snapshot counts, see live progress."
@@ -468,8 +468,8 @@
     }
   },
   "cost_teacher_v13": {
-    "status": "MATCHED_CPU_POLICY_TRAINING_RUNNING",
-    "running": true,
+    "status": "MATCHED_ACTOR_PILOT_COMPLETE",
+    "running": false,
     "source": "research/continuation_memory_v1/cost_teacher_v13",
     "seeds": [
       1209,
@@ -486,6 +486,40 @@
     "new_qwen_forwards": 0,
     "gpu_hours": 0,
     "cpu_tests": 3,
+    "fit_fork_pairs": 26,
+    "check_fork_pairs": 24,
+    "original_training_admission": false,
+    "benefit": "NO_CONSISTENT_INCREMENTAL_FORK_ACTION_SIGNAL",
+    "publication_ready": false,
+    "actual_optimizer_updates": 5400,
+    "cpu_wall_seconds": 1393.5803609159775,
+    "ours_minus_b2_check_both_correct": [
+      2,
+      -2,
+      1
+    ],
+    "all_nine_checkpoints_read_back": true,
+    "report": "research/continuation_memory_v1/cost_teacher_v13/REPORT_ZH.md"
+  },
+  "fork_balanced_v14": {
+    "status": "MATCHED_CPU_POLICY_TRAINING_RUNNING",
+    "running": true,
+    "source": "research/continuation_memory_v1/fork_balanced_v14",
+    "arms": [
+      "N0",
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "seeds": [
+      1209,
+      1210,
+      1211
+    ],
+    "planned_updates": 7200,
+    "base_updates": 0,
+    "new_qwen_forwards": 0,
+    "gpu_hours": 0,
     "fit_fork_pairs": 26,
     "check_fork_pairs": 24,
     "original_training_admission": false,
