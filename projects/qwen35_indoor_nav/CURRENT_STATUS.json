@@ -314,7 +314,7 @@
     "result": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
     "report": "reviews/Q35N_V9_NATURAL_TRANSFER_20260918/REPORT_ZH.md"
   },
-  "updated_at": "2026-09-19T04:27:55.344079+00:00",
+  "updated_at": "2026-09-19T04:36:24.756698+00:00",
   "contextual_readout_v10": {
     "status": "TRAINING_AND_CHECKPOINT_READBACK_COMPLETE",
     "protocol": "research/continuation_memory_v1/contextual_readout_v10/PROTOCOL.json",
@@ -374,7 +374,23 @@
     },
     "resume_after": "Finite V12 screen completed; resumed same frozen launcher/checkpoints in seed1210 session002. Snapshot counts, see live progress.",
     "second_seed_gpu_hours": 3.3649900440953204,
-    "second_seed_readback": "RUNNING"
+    "second_seed_readback": "COMPLETE_METRICS_AND_LOGS_VERIFIED",
+    "verified_seed_sr": {
+      "1209": {
+        "A": 0.21,
+        "B": 0.14,
+        "C": 0.1,
+        "D": 0.18,
+        "E": 0.1
+      },
+      "1210": {
+        "A": 0.21,
+        "B": 0.12,
+        "C": 0.11,
+        "D": 0.12,
+        "E": 0.14
+      }
+    }
   },
   "query_semantics_v11": {
     "status": "MATCHED_CPU_PILOT_COMPLETE_NO_INCREMENTAL_SIGNAL",
