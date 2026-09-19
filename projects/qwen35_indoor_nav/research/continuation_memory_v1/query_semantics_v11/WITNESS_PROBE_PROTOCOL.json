@@ -1,0 +1,39 @@
+{
+  "status": "FROZEN_BEFORE_CURRENT_WITNESS_PROBE",
+  "frozen_at": "2026-09-19T01:17:33.187851+00:00",
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "heads": [
+    "linear",
+    "mlp128"
+  ],
+  "steps": 600,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "threshold": 0.5,
+  "sources": {
+    "research/continuation_memory_v1/query_semantics_v11/probe_witness.py": "51cade0d4c7554b59a371758b6072d7ce8410bc46f49b778ed1cfd2edc24dcc4",
+    "research/continuation_memory_v1/multifamily_v7/DATA.json": "a798003a9b319d2ee62a39f38ab22b35f461bf562ee5d2cfa24edd881daf4432",
+    "research/continuation_memory_v1/multifamily_v7/run_001/FEATURES.pt": "09ea1cbe374de30a547fc8b47271417633232f66568f9c4720d7e6aac6ad0578",
+    "data_pipeline/mechanism_runtime_v1/loader.py": "60ba891efb850fe8f92e840b381df3f1a4379234b197fd2cd02c288be866ca5c",
+    "data_pipeline/mechanism_factory_v2/compiler.py": "54d35e0d45d8985ee13caa50d895b345638af2b3c4e023cf5182ae144a12f3c5"
+  },
+  "inputs": "Existing frozen causal instruction/two RGB/eight executed action features; no history, future query, state, pose, IDs or labels as probe input",
+  "targets": "Current anchor/terminal SEE2 witnesses from original compiler, current and previous frame only; not first-seen or cumulative state",
+  "split": "Original whole-house split:13 FIT families/6 houses,12 CHECK families/2 houses; exposed exploratory debug assets",
+  "deduplication": "One row per causal input within family; assert same-input target consistency and no cross-split overlap",
+  "unknown": "Mask each unknown target; exclude t=0 single-frame cases",
+  "normalization": "FIT-only coordinate mean/population std floor1e-4",
+  "loss": "Minibatch weighted BCE, equal FIT family and available label class per target, identical sampled row schedules for both heads",
+  "report": "All seeds and heads, TP/TN/FP/FN, recall/specificity/balanced accuracy by split, house and family; no best checkpoint/threshold selection",
+  "decision": "Good current-witness decoding with poor late memory supports examining memory updates; poor decoding motivates feature/semantic inspection but cannot prove information absence",
+  "original_training_admission": false,
+  "policy_updates": 0,
+  "new_qwen_forwards": 0,
+  "new_simulator_episodes": 0,
+  "gpu_hours": 0
+}
