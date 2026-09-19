@@ -1,0 +1,145 @@
+{
+  "session": "features_run_001",
+  "pid": 1948496,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "physical_gpu": 1,
+  "software": {
+    "torch": "2.8.0",
+    "transformers": "5.15.0",
+    "peft": "0.18.0",
+    "triton": "3.4.0",
+    "flash-linear-attention": "unavailable",
+    "numpy": "2.2.6"
+  },
+  "cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 5090",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "base_files": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+    "model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+  },
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "loaded_state_sha256": "a87292acedfbf3fc8159259c23017fa1eec47a2ebfd39782c46e088bcbacef6b",
+  "tokenizer_sha256": "385eaa7d7142ade9dcfc7666990e055074307491f9b637636e06c73b9259daa5",
+  "processor": {
+    "image_processor": {
+      "size": {
+        "longest_edge": 16777216,
+        "shortest_edge": 65536
+      },
+      "patch_size": 16,
+      "temporal_patch_size": 2,
+      "merge_size": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "Qwen2VLImageProcessor",
+      "do_convert_rgb": true,
+      "do_resize": true,
+      "resample": 3,
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true
+    },
+    "video_processor": {
+      "size": {
+        "longest_edge": 25165824,
+        "shortest_edge": 4096
+      },
+      "patch_size": 16,
+      "temporal_patch_size": 2,
+      "merge_size": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "video_processor_type": "Qwen3VLVideoProcessor",
+      "do_convert_rgb": true,
+      "do_resize": true,
+      "resample": 3,
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true,
+      "do_sample_frames": true,
+      "fps": 2,
+      "return_metadata": false,
+      "min_frames": 4,
+      "max_frames": 768
+    },
+    "processor_class": "Qwen3VLProcessor"
+  },
+  "image_processor": {
+    "size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "patch_size": 16,
+    "temporal_patch_size": 2,
+    "merge_size": 2,
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_processor_type": "Qwen2VLImageProcessor",
+    "do_convert_rgb": true,
+    "do_resize": true,
+    "resample": 3,
+    "do_rescale": true,
+    "rescale_factor": 0.00392156862745098,
+    "do_normalize": true
+  },
+  "attention": "sdpa",
+  "fla_dispatch": "fla.ops.gated_delta_rule.chunk",
+  "triton_selected_config": "unavailable before compilation; cache metadata saved at session end",
+  "dtype": "unchanged BF16 base and FP32 action head",
+  "source_hashes": {
+    "research/continuation_memory_v1/semantic_transfer_v12/extract_screen.py": "a19621b70f411b6e9f149b61af0c8c4a065338327e43961347db8b058800c28c",
+    "research/continuation_memory_v1/semantic_transfer_v12/launch_screen.py": "85d12e953af4c278c7b2b6b91bc72b882be491e20d1843efb997d55819f76446",
+    "research/continuation_memory_v1/semantic_transfer_v12/prepare.py": "19bd13ceecbf30830ef8f171ecc39361be8b53773232c1295890420a835d4f2a",
+    "research/continuation_memory_v1/semantic_transfer_v12/prepare_screen.py": "e2171a893358a22f9a1fa763470bd14504a89496cd4a5f8630e4848b13b451d7",
+    "research/continuation_memory_v1/semantic_transfer_v12/test_screen.py": "0e1de18f29c2d09bc8e094b1920e41c364bc5ff50c0d1f260c5c1eeced5073ed",
+    "research/continuation_memory_v1/semantic_transfer_v12/train_screen.py": "720d2879b71993422eb74511c052b6080f1a14eb5da3de6df3f5d1d85130f014",
+    "research/continuation_memory_v1/semantic_transfer_v12/SCREEN.json": "ffb0cd907c97948676bd1e6473a8a614b5e9aa9457193d44bef520a19e3e753c",
+    "research/continuation_memory_v1/semantic_transfer_v12/SCREEN_PROTOCOL.json": "6d1c4ad9fad1d77b50b12cf05bdf4055c6aa8b51dcfc98a7c8ca1ca8e1252ffb",
+    "research/continuation_memory_v1/semantic_transfer_v12/CPU_TEST_RESULT.json": "a107416acfb3967db5c1e56dfd42e834fdf7a87a5d4c23b38968485e4078ce7e",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/evaluate.py": "85a07506b170927c29bc05aedcf43c92d88a6454025e74558654409406e8924e",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/common.py": "03fff9230f233c694ffd1892d67a698e486c93da300a6da23ce9f49d52305d64",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/launch.py": "0816d2af1b5b4103fde9059aeb3665093285ef6af88c2c483bb73766287c0f84",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/cycle_policy.py": "75eb778a4a8b93f1ef00de1704330a83fdd23b4a5cac294982cde4e59cafb430",
+    "closed_loop_bench/ordinary_cycle_pair_gpu1_v3/launch.py": "87b38e2cf9841b23611f673898a0c4feb25783a0bb2356363014b7780fcfa266",
+    "sft_acceptance/ordinary_sync_recovery_v1/model.py": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+    "sft_acceptance/ordinary_sync_recovery_v1/data.py": "b54f149d16c13a37a535cf118464b83c398ec21145fe90bb6c7396c990715c70",
+    "sft_acceptance/ordinary_baseline_v2/data.py": "7631d0f57384d2979c8d5b1d7e35748c9f428377c805ea3292e7b0260e43b788",
+    "data_pipeline/mechanism_runtime_v1/loader.py": "60ba891efb850fe8f92e840b381df3f1a4379234b197fd2cd02c288be866ca5c",
+    "research/continuation_memory_v1/multifamily_v7/run_001/FEATURE_RESULT.json": "b26748867186f4c0b56fb75f57eb5a3cbc79ae63f0b7a70f68872b1919454663"
+  },
+  "protocol_sha256": "bb2ceb69ea84638e3555daa336ab312ca6f71a565ebb751eceeeacea5a306e00",
+  "model_loads": 1,
+  "optimizer_updates": 0
+}

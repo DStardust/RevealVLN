@@ -1,0 +1,527 @@
+{
+  "status": "SCREEN_COMPLETE_NO_POLICY_BENEFIT_MEASURED",
+  "means": {
+    "linear": {
+      "check_additional_house": {
+        "anchor_now": 0.5205096964158797,
+        "terminal_now": 0.6851646151660359
+      },
+      "check_exposed": {
+        "anchor_now": 0.6002967790366917,
+        "terminal_now": 0.7068272506082725
+      },
+      "fit": {
+        "anchor_now": 0.9730698418447422,
+        "terminal_now": 0.9582065927456633
+      }
+    },
+    "mlp128": {
+      "check_additional_house": {
+        "anchor_now": 0.5205096964158797,
+        "terminal_now": 0.6289689971541618
+      },
+      "check_exposed": {
+        "anchor_now": 0.6340390651736332,
+        "terminal_now": 0.6522070829954042
+      },
+      "fit": {
+        "anchor_now": 0.9908509899794761,
+        "terminal_now": 0.994913782535164
+      }
+    }
+  },
+  "all_prediction_partition_house_family_counts_recomputed": true,
+  "runs": {
+    "linear_1209": {
+      "check_additional_house": {
+        "anchor_now": {
+          "tp": 63,
+          "tn": 330,
+          "fp": 72,
+          "fn": 231,
+          "positives": 294,
+          "negatives": 402,
+          "recall": 0.21428571428571427,
+          "specificity": 0.8208955223880597,
+          "accuracy": 0.5646551724137931,
+          "balanced_accuracy": 0.517590618336887
+        },
+        "terminal_now": {
+          "tp": 82,
+          "tn": 419,
+          "fp": 138,
+          "fn": 57,
+          "positives": 139,
+          "negatives": 557,
+          "recall": 0.5899280575539568,
+          "specificity": 0.7522441651705566,
+          "accuracy": 0.7198275862068966,
+          "balanced_accuracy": 0.6710861113622567
+        }
+      },
+      "check_exposed": {
+        "anchor_now": {
+          "tp": 251,
+          "tn": 666,
+          "fp": 155,
+          "fn": 411,
+          "positives": 662,
+          "negatives": 821,
+          "recall": 0.37915407854984895,
+          "specificity": 0.8112058465286236,
+          "accuracy": 0.6183412002697235,
+          "balanced_accuracy": 0.5951799625392362
+        },
+        "terminal_now": {
+          "tp": 152,
+          "tn": 969,
+          "fp": 264,
+          "fn": 98,
+          "positives": 250,
+          "negatives": 1233,
+          "recall": 0.608,
+          "specificity": 0.7858880778588808,
+          "accuracy": 0.75590020229265,
+          "balanced_accuracy": 0.6969440389294403
+        }
+      },
+      "fit": {
+        "anchor_now": {
+          "tp": 695,
+          "tn": 961,
+          "fp": 43,
+          "fn": 9,
+          "positives": 704,
+          "negatives": 1004,
+          "recall": 0.9872159090909091,
+          "specificity": 0.9571713147410359,
+          "accuracy": 0.9695550351288056,
+          "balanced_accuracy": 0.9721936119159724
+        },
+        "terminal_now": {
+          "tp": 365,
+          "tn": 1235,
+          "fp": 106,
+          "fn": 2,
+          "positives": 367,
+          "negatives": 1341,
+          "recall": 0.9945504087193461,
+          "specificity": 0.9209545115585384,
+          "accuracy": 0.936768149882904,
+          "balanced_accuracy": 0.9577524601389422
+        }
+      }
+    },
+    "mlp128_1209": {
+      "check_additional_house": {
+        "anchor_now": {
+          "tp": 62,
+          "tn": 329,
+          "fp": 73,
+          "fn": 232,
+          "positives": 294,
+          "negatives": 402,
+          "recall": 0.2108843537414966,
+          "specificity": 0.818407960199005,
+          "accuracy": 0.5617816091954023,
+          "balanced_accuracy": 0.5146461569702507
+        },
+        "terminal_now": {
+          "tp": 50,
+          "tn": 515,
+          "fp": 42,
+          "fn": 89,
+          "positives": 139,
+          "negatives": 557,
+          "recall": 0.3597122302158273,
+          "specificity": 0.9245960502692998,
+          "accuracy": 0.8117816091954023,
+          "balanced_accuracy": 0.6421541402425636
+        }
+      },
+      "check_exposed": {
+        "anchor_now": {
+          "tp": 279,
+          "tn": 684,
+          "fp": 137,
+          "fn": 383,
+          "positives": 662,
+          "negatives": 821,
+          "recall": 0.4214501510574018,
+          "specificity": 0.833130328867235,
+          "accuracy": 0.6493594066082266,
+          "balanced_accuracy": 0.6272902399623184
+        },
+        "terminal_now": {
+          "tp": 84,
+          "tn": 1153,
+          "fp": 80,
+          "fn": 166,
+          "positives": 250,
+          "negatives": 1233,
+          "recall": 0.336,
+          "specificity": 0.935117599351176,
+          "accuracy": 0.8341200269723533,
+          "balanced_accuracy": 0.635558799675588
+        }
+      },
+      "fit": {
+        "anchor_now": {
+          "tp": 704,
+          "tn": 992,
+          "fp": 12,
+          "fn": 0,
+          "positives": 704,
+          "negatives": 1004,
+          "recall": 1.0,
+          "specificity": 0.9880478087649402,
+          "accuracy": 0.9929742388758782,
+          "balanced_accuracy": 0.9940239043824701
+        },
+        "terminal_now": {
+          "tp": 365,
+          "tn": 1338,
+          "fp": 3,
+          "fn": 2,
+          "positives": 367,
+          "negatives": 1341,
+          "recall": 0.9945504087193461,
+          "specificity": 0.9977628635346756,
+          "accuracy": 0.997072599531616,
+          "balanced_accuracy": 0.9961566361270109
+        }
+      }
+    },
+    "linear_1210": {
+      "check_additional_house": {
+        "anchor_now": {
+          "tp": 70,
+          "tn": 325,
+          "fp": 77,
+          "fn": 224,
+          "positives": 294,
+          "negatives": 402,
+          "recall": 0.23809523809523808,
+          "specificity": 0.8084577114427861,
+          "accuracy": 0.5675287356321839,
+          "balanced_accuracy": 0.5232764747690121
+        },
+        "terminal_now": {
+          "tp": 85,
+          "tn": 430,
+          "fp": 127,
+          "fn": 54,
+          "positives": 139,
+          "negatives": 557,
+          "recall": 0.6115107913669064,
+          "specificity": 0.7719928186714542,
+          "accuracy": 0.7399425287356322,
+          "balanced_accuracy": 0.6917518050191803
+        }
+      },
+      "check_exposed": {
+        "anchor_now": {
+          "tp": 262,
+          "tn": 662,
+          "fp": 159,
+          "fn": 400,
+          "positives": 662,
+          "negatives": 821,
+          "recall": 0.3957703927492447,
+          "specificity": 0.8063337393422655,
+          "accuracy": 0.6230613621038436,
+          "balanced_accuracy": 0.6010520660457551
+        },
+        "terminal_now": {
+          "tp": 162,
+          "tn": 981,
+          "fp": 252,
+          "fn": 88,
+          "positives": 250,
+          "negatives": 1233,
+          "recall": 0.648,
+          "specificity": 0.7956204379562044,
+          "accuracy": 0.7707349966284558,
+          "balanced_accuracy": 0.7218102189781022
+        }
+      },
+      "fit": {
+        "anchor_now": {
+          "tp": 697,
+          "tn": 964,
+          "fp": 40,
+          "fn": 7,
+          "positives": 704,
+          "negatives": 1004,
+          "recall": 0.9900568181818182,
+          "specificity": 0.9601593625498008,
+          "accuracy": 0.9724824355971897,
+          "balanced_accuracy": 0.9751080903658096
+        },
+        "terminal_now": {
+          "tp": 366,
+          "tn": 1237,
+          "fp": 104,
+          "fn": 1,
+          "positives": 367,
+          "negatives": 1341,
+          "recall": 0.997275204359673,
+          "specificity": 0.9224459358687547,
+          "accuracy": 0.9385245901639344,
+          "balanced_accuracy": 0.9598605701142138
+        }
+      }
+    },
+    "mlp128_1210": {
+      "check_additional_house": {
+        "anchor_now": {
+          "tp": 66,
+          "tn": 328,
+          "fp": 74,
+          "fn": 228,
+          "positives": 294,
+          "negatives": 402,
+          "recall": 0.22448979591836735,
+          "specificity": 0.8159203980099502,
+          "accuracy": 0.5660919540229885,
+          "balanced_accuracy": 0.5202050969641587
+        },
+        "terminal_now": {
+          "tp": 43,
+          "tn": 510,
+          "fp": 47,
+          "fn": 96,
+          "positives": 139,
+          "negatives": 557,
+          "recall": 0.30935251798561153,
+          "specificity": 0.9156193895870736,
+          "accuracy": 0.7945402298850575,
+          "balanced_accuracy": 0.6124859537863425
+        }
+      },
+      "check_exposed": {
+        "anchor_now": {
+          "tp": 277,
+          "tn": 688,
+          "fp": 133,
+          "fn": 385,
+          "positives": 662,
+          "negatives": 821,
+          "recall": 0.41842900302114805,
+          "specificity": 0.8380024360535931,
+          "accuracy": 0.650708024275118,
+          "balanced_accuracy": 0.6282157195373705
+        },
+        "terminal_now": {
+          "tp": 94,
+          "tn": 1145,
+          "fp": 88,
+          "fn": 156,
+          "positives": 250,
+          "negatives": 1233,
+          "recall": 0.376,
+          "specificity": 0.9286293592862936,
+          "accuracy": 0.8354686446392448,
+          "balanced_accuracy": 0.6523146796431468
+        }
+      },
+      "fit": {
+        "anchor_now": {
+          "tp": 702,
+          "tn": 992,
+          "fp": 12,
+          "fn": 2,
+          "positives": 704,
+          "negatives": 1004,
+          "recall": 0.9971590909090909,
+          "specificity": 0.9880478087649402,
+          "accuracy": 0.9918032786885246,
+          "balanced_accuracy": 0.9926034498370155
+        },
+        "terminal_now": {
+          "tp": 365,
+          "tn": 1332,
+          "fp": 9,
+          "fn": 2,
+          "positives": 367,
+          "negatives": 1341,
+          "recall": 0.9945504087193461,
+          "specificity": 0.9932885906040269,
+          "accuracy": 0.9935597189695551,
+          "balanced_accuracy": 0.9939194996616865
+        }
+      }
+    },
+    "linear_1211": {
+      "check_additional_house": {
+        "anchor_now": {
+          "tp": 67,
+          "tn": 327,
+          "fp": 75,
+          "fn": 227,
+          "positives": 294,
+          "negatives": 402,
+          "recall": 0.22789115646258504,
+          "specificity": 0.8134328358208955,
+          "accuracy": 0.5660919540229885,
+          "balanced_accuracy": 0.5206619961417402
+        },
+        "terminal_now": {
+          "tp": 86,
+          "tn": 427,
+          "fp": 130,
+          "fn": 53,
+          "positives": 139,
+          "negatives": 557,
+          "recall": 0.6187050359712231,
+          "specificity": 0.7666068222621185,
+          "accuracy": 0.7370689655172413,
+          "balanced_accuracy": 0.6926559291166707
+        }
+      },
+      "check_exposed": {
+        "anchor_now": {
+          "tp": 270,
+          "tn": 658,
+          "fp": 163,
+          "fn": 392,
+          "positives": 662,
+          "negatives": 821,
+          "recall": 0.4078549848942598,
+          "specificity": 0.8014616321559074,
+          "accuracy": 0.6257585974376264,
+          "balanced_accuracy": 0.6046583085250836
+        },
+        "terminal_now": {
+          "tp": 155,
+          "tn": 966,
+          "fp": 267,
+          "fn": 95,
+          "positives": 250,
+          "negatives": 1233,
+          "recall": 0.62,
+          "specificity": 0.7834549878345499,
+          "accuracy": 0.75590020229265,
+          "balanced_accuracy": 0.701727493917275
+        }
+      },
+      "fit": {
+        "anchor_now": {
+          "tp": 696,
+          "tn": 959,
+          "fp": 45,
+          "fn": 8,
+          "positives": 704,
+          "negatives": 1004,
+          "recall": 0.9886363636363636,
+          "specificity": 0.9551792828685259,
+          "accuracy": 0.9689695550351288,
+          "balanced_accuracy": 0.9719078232524447
+        },
+        "terminal_now": {
+          "tp": 365,
+          "tn": 1233,
+          "fp": 108,
+          "fn": 2,
+          "positives": 367,
+          "negatives": 1341,
+          "recall": 0.9945504087193461,
+          "specificity": 0.9194630872483222,
+          "accuracy": 0.9355971896955504,
+          "balanced_accuracy": 0.9570067479838341
+        }
+      }
+    },
+    "mlp128_1211": {
+      "check_additional_house": {
+        "anchor_now": {
+          "tp": 72,
+          "tn": 325,
+          "fp": 77,
+          "fn": 222,
+          "positives": 294,
+          "negatives": 402,
+          "recall": 0.24489795918367346,
+          "specificity": 0.8084577114427861,
+          "accuracy": 0.5704022988505747,
+          "balanced_accuracy": 0.5266778353132298
+        },
+        "terminal_now": {
+          "tp": 48,
+          "tn": 512,
+          "fp": 45,
+          "fn": 91,
+          "positives": 139,
+          "negatives": 557,
+          "recall": 0.34532374100719426,
+          "specificity": 0.9192100538599641,
+          "accuracy": 0.8045977011494253,
+          "balanced_accuracy": 0.6322668974335792
+        }
+      },
+      "check_exposed": {
+        "anchor_now": {
+          "tp": 307,
+          "tn": 681,
+          "fp": 140,
+          "fn": 355,
+          "positives": 662,
+          "negatives": 821,
+          "recall": 0.4637462235649547,
+          "specificity": 0.8294762484774665,
+          "accuracy": 0.6662171274443696,
+          "balanced_accuracy": 0.6466112360212106
+        },
+        "terminal_now": {
+          "tp": 101,
+          "tn": 1151,
+          "fp": 82,
+          "fn": 149,
+          "positives": 250,
+          "negatives": 1233,
+          "recall": 0.404,
+          "specificity": 0.9334955393349554,
+          "accuracy": 0.8442346594740391,
+          "balanced_accuracy": 0.6687477696674777
+        }
+      },
+      "fit": {
+        "anchor_now": {
+          "tp": 694,
+          "tn": 990,
+          "fp": 14,
+          "fn": 10,
+          "positives": 704,
+          "negatives": 1004,
+          "recall": 0.9857954545454546,
+          "specificity": 0.9860557768924303,
+          "accuracy": 0.9859484777517564,
+          "balanced_accuracy": 0.9859256157189424
+        },
+        "terminal_now": {
+          "tp": 365,
+          "tn": 1334,
+          "fp": 7,
+          "fn": 2,
+          "positives": 367,
+          "negatives": 1341,
+          "recall": 0.9945504087193461,
+          "specificity": 0.9947800149142431,
+          "accuracy": 0.9947306791569087,
+          "balanced_accuracy": 0.9946652118167946
+        }
+      }
+    }
+  },
+  "result_sha256": "6075a031140826cbced74dcc71cd744e0172d5ce73b54d63ed6dfc883030eeef",
+  "real_qwen_forwards": 3076,
+  "reused_features": 493,
+  "gpu_hours": 0.11000170190223596,
+  "cpu_wall_seconds": 9.686588496435434,
+  "diagnostic_optimizer_updates": 3600,
+  "runtime_policy_updates": 0,
+  "original_training_admission": false,
+  "publication_ready": false,
+  "interpretation": "Expanded FIT pool does not yield a stable transferable anchor witness probe in this finite screen. This does not prove the representation lacks the information. Terminal signal is stronger. No full-pool training or method-benefit claim follows.",
+  "uncertainty": "Only three additional houses, correlated histories/frames and fixed sampled diagnostic rows. Not blind base-model testing or independent per-frame trials."
+}
