@@ -1,0 +1,60 @@
+{
+  "id": "Q35N_STRUCTURED_QUERY_V11",
+  "frozen_at": "2026-09-19T00:41:10.158699+00:00",
+  "device": "cpu",
+  "threads": 4,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "B2",
+    "Ours"
+  ],
+  "steps_per_arm": 600,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "user_authorization": "Immediately implement a paper-oriented candidate backed by real measurements; GPU-hour limit waived. CPU work alongside existing fixed V10 navigation, no second GPU.",
+  "single_repair": "Replace learned random typed-token/GRU future-query encoding with four verified suffix-semantic fields already used by B2 evaluation. Runtime memory/action architecture, base features, full-prefix BPTT, objectives, data and schedules unchanged.",
+  "evidence": [
+    "contextual_readout_v10/MECHANISM_DIAGNOSIS.json: CHECK-only query vocabulary remains untrained.",
+    "contextual_readout_v10/READOUT_PROBE_RESULT.json: refitted outcome head improves FIT but decreases CHECK overall accuracy; stronger head fitting is insufficient."
+  ],
+  "query_features": [
+    "stop_at_cutoff",
+    "stops",
+    "suffix_anchor_before_final",
+    "terminal_at_final"
+  ],
+  "query_firewall": "Existing compiler-certified future event descriptions relative to task; equal for same task/query across histories,450 cells audited. No prefix checker state,Y,pose,house,ID or distance enters query features. Query only enters training readout, never memory/action.",
+  "initialization": "Runtime writer/recurrent/action/state-head tensors exactly equal to V10 INITIAL perseed, checked before each train; identical new full state_dict across B2/Ours. New result head, no query vocabulary embeddings or GRU.",
+  "matched_scope": "B2 exact compositional state supervision versus crossed outcome supervision; same full special/natural pools, family normalization,600 fixed schedules, lr and optimizer. CPU FP32 for both arms. Cross-version CPU/GPU training differences are not presented as a controlled effect.",
+  "trained_parameters": "Shared runtime writer/recurrent/action in both arms; B2 state_head and Ours result_head are arm-specific auxiliary heads. Active auxiliary parameter counts differ as in prior design; report rather than claim exact active-parameter equality.",
+  "selection": "All three final600 checkpoints, no best-seed/checkpoint/hyperparameter selection. Existing exposed CHECK never called blind.",
+  "primary_mechanism": "Opposing-history pairs both correctly classified on all12 CHECK families, alongside all216-cell accuracy, each seed and each of2houses. Compare Ours to concurrently trained B2.",
+  "pilot_positive_signal": "All three Ours-minus-B2 differences in CHECK opposing-pair both-correct counts nonnegative, positive mean, and no mean all-cell accuracy decrease. Even a pass is exploratory and does not establish action benefit or paper readiness.",
+  "policy_requirements": "Preserve native STOP,500 budget and base input contracts. No V11 navigation starts while V10 owns GPU; no claim of navigation benefit from auxiliary readout.",
+  "research_limit": "Original SEE2 normalization/missing-negative-control certificates and training_admission=false remain. These data support debug only. Formal study needs legally replayable family controls and independent frozen test.",
+  "training_admission": false,
+  "publication_ready": false,
+  "source_hashes": {
+    "research/continuation_memory_v1/query_semantics_v11/losses.py": "c469dc103855e00045336dba54656d39fc616653ddae829bea4897474a835466",
+    "research/continuation_memory_v1/query_semantics_v11/model.py": "625585a090fceb53912803e15a5fcd97a5533de3b5fec4be6aafbd18686a7d45",
+    "research/continuation_memory_v1/query_semantics_v11/run_cpu.py": "09b6037efe419b92d40a2dcd3882496e3ecb35b2037e42dcbd60d57a8833b8cb",
+    "research/continuation_memory_v1/query_semantics_v11/test_cpu.py": "811de2a474a424c179decdd7df8489f31410348d8d15db617e17dd00e6cc04bf",
+    "research/continuation_memory_v1/query_semantics_v11/train.py": "538dc114a8a1ace5891d3d4b83b51ed628322fc7236a08cd94598be3772d626e",
+    "research/continuation_memory_v1/contextual_readout_v10/model.py": "5c4d533a58d42285a85c1f960b064c5cd59bc25134c39df528b754c39008672a",
+    "research/continuation_memory_v1/query_reader_repair_v2/model.py": "83f11060fe551f0866747eb213c45925afd0346e200433e0a1e3241863555222",
+    "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19",
+    "research/continuation_memory_v1/multifamily_v7/DATA.json": "a798003a9b319d2ee62a39f38ab22b35f461bf562ee5d2cfa24edd881daf4432",
+    "research/continuation_memory_v1/natural_transfer_v9/DATA.json": "dd9ec6918fecd8810dd0b2ccfdced7eeaa578baf4b89c0d69da8de3d5a63d01b",
+    "closed_loop_bench/ordinary_cycle_pair_recovery_v5/common.py": "03fff9230f233c694ffd1892d67a698e486c93da300a6da23ce9f49d52305d64",
+    "research/continuation_memory_v1/contextual_readout_v10/run_001/INITIAL_1209.pt": "3f57f9f99f61e6f04fb66bc784cfcb2236bb4353295a2ef023c70f5ecda7620e",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1209.json": "bd7ead162f716a197f5f88f636e95aa61904c260ccbf9892807e3422aa4bc483",
+    "research/continuation_memory_v1/contextual_readout_v10/run_001/INITIAL_1210.pt": "587fff05963fcab781bbf43b6df847ca159aa7756bda781ee93aa3fe9066634f",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1210.json": "a35c952fcdb3fa7fcba0ffe3871cb4f7c79cbbc9b8748c552f1ab66d3e5031b5",
+    "research/continuation_memory_v1/contextual_readout_v10/run_001/INITIAL_1211.pt": "152349f4f2cd1a8abb5ded732b7e2390b317986af3af21a1cd6be88e9d4130ce",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1211.json": "b6ae2c03065b2c9f2868617812434a9f9908ab4ef6f454e66ebac139d508ae65"
+  }
+}
