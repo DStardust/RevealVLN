@@ -1,13 +1,13 @@
 {
   "status": "RUNNING",
-  "snapshot_unix": 1789887365.0729272,
+  "snapshot_unix": 1789888195.8443108,
   "formal_runs": [],
   "baseline_commit": "754d574bc98fd49fe30b2be76e30cbc53f0f25c3",
-  "unique_certified_families": 18,
+  "unique_certified_families": 24,
   "families_by_split": {
     "FIT": 16,
     "DEV": 2,
-    "TEST": 0
+    "TEST": 6
   },
   "houses": {
     "FIT": [
@@ -19,7 +19,11 @@
     "DEV": [
       "2azQ1b91cZZ"
     ],
-    "TEST": []
+    "TEST": [
+      "PX4nDJXEHrG",
+      "fzynW3qQPVF",
+      "yqstnuAEVhm"
+    ]
   },
   "planned_families": 26,
   "planned_models": 9,
@@ -28,7 +32,7 @@
   "physical_rollout_files": 0,
   "method_effect": "UNKNOWN",
   "adopted": false,
-  "gpu_session_hours": 0.8777663187846904,
+  "gpu_session_hours": 1.1262174547093713,
   "active_jobs": [
     "v16-formal-20260920-01"
   ],
@@ -121,6 +125,15 @@
       "wall_seconds": 0.3712829709984362,
       "returncode": 0,
       "error": null,
+      "gpu_session": true
+    },
+    {
+      "run": "v16_formal_001",
+      "phase": "collect_test",
+      "attempt": 1,
+      "wall_seconds": 894.4240893288516,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_test:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001')",
       "gpu_session": true
     }
   ],
@@ -439,27 +452,22 @@
     },
     {
       "run": "v16_formal_001",
-      "STATUS.json": {
-        "status": "RUNNING",
-        "phase": "collect_test",
-        "attempt": 1,
-        "elapsed_seconds": 62.148734498769045,
-        "unix": 1789887355.3768902,
-        "owned_pids": [
-          3286950
+      "DATA_SHORTFALL.json": {
+        "houses": [
+          {
+            "house": "rqfALeAoiTq",
+            "actual": 0,
+            "target": 2
+          }
         ],
-        "rss_bytes": 1174163456,
-        "gpu": {
-          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
-          "name": "NVIDIA GeForce RTX 5090",
-          "total_mib": 32607,
-          "used_mib": 629,
-          "free_mib": 31482,
-          "driver": "580.126.09"
-        },
-        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24126 MiB\n",
-        "v16_artifact_bytes_last_measured": null,
-        "artifact_scan_running": true
+        "accepted_families": 6
+      },
+      "STATUS.json": {
+        "status": "STOPPED",
+        "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_test:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001')",
+        "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/pipeline.py\", line 168, in main\n    execute(run,config,'collect_test',[HERE/'collect.py',run,'TEST'],simpy)\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/pipeline.py\", line 118, in execute\n    if code:raise RuntimeError(f'STAGE_PROCESS_FAILED:{phase}:{code}:{folder}')\nRuntimeError: STAGE_PROCESS_FAILED:collect_test:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001\n",
+        "gpu_session_hours": 1.1262174547093713,
+        "unix": 1789888187.695724
       }
     }
   ],

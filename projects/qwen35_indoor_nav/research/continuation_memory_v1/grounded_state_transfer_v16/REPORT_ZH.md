@@ -2,11 +2,11 @@
 
 V16 训练模型 0/9，自主续接 0/720；主任务计划每臂 N=192，尚无完整效应比较。干预获益 UNKNOWN，未采用。
 
-实际已认证族 18/26：FIT=16，DEV=2，TEST=0。去重后统计，跨 run 复用不重复计数。屋清单：`{"FIT": ["5ZKStnWn8Zo", "QUCTc6BB5sX", "jtcxE69GiFV", "pa4otMbVnkk"], "DEV": ["2azQ1b91cZZ"], "TEST": []}`。
+实际已认证族 24/26：FIT=16，DEV=2，TEST=6。去重后统计，跨 run 复用不重复计数。屋清单：`{"FIT": ["5ZKStnWn8Zo", "QUCTc6BB5sX", "jtcxE69GiFV", "pa4otMbVnkk"], "DEV": ["2azQ1b91cZZ"], "TEST": ["PX4nDJXEHrG", "fzynW3qQPVF", "yqstnuAEVhm"]}`。
 
 冻结 best4k 已加载；FIT 黄金输入 16 条，真实前向 48 次，原生 logits 最大差 0.0，argmax 翻转 0；基座首尾未变。这是数值/运行证据，不是方法收益。
 
-已结束 GPU 会话累计 0.8778 小时，包含失败。运行中的服务：`['v16-formal-20260920-01']`；活跃会话消耗未加入已结束账本，见对应 RESOURCES.jsonl。
+已结束 GPU 会话累计 1.1262 小时，包含失败。运行中的服务：`['v16-formal-20260920-01']`；活跃会话消耗未加入已结束账本，见对应 RESOURCES.jsonl。
 
 共同修复包括统一 method argmax、前瞻碰撞安全终点、稠密因果监督、可恢复 optimizer/RNG 与完整组封存；不能将这些公共变化归于 Ours。现有 V15 18 模型、216 条续接、87 个 UNKNOWN 及旧 DATA 准入标记均未修改。
 
