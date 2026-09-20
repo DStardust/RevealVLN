@@ -1,0 +1,37 @@
+{
+  "deterministic_candidate_order_for_future_authorized_validation": {
+    "budget": "not authorized or executed in this run; propose a small CPU-rechecked diagnostic sample before any physical execution",
+    "candidate_denominator": "only explicitly enumerated candidates in the sealed future validation manifest",
+    "order": "hub ascending, proposal id lexicographic, yaw in [0,3,...,21], then declared target order",
+    "selection_by_model_score": false
+  },
+  "findings": [
+    {
+      "change": "assemble content_root and all certificate fields before a single exclusive FAMILY.json publication; recovery validates content_root and certificates; never overwrite",
+      "id": "F1",
+      "interface": "collect_repair_v1._attempt_yaw / collect_family_repair",
+      "verification": "one-time publish and partial recovery CPU tests"
+    },
+    {
+      "change": "catch explicit Rejected as physical rejection; unexpected Exception becomes ERROR with traceback; evidence absence is EVIDENCE_MISSING and unchecked checks are NOT_REACHED",
+      "id": "F2",
+      "interface": "collector exception boundary",
+      "verification": "classification CPU tests and funnel category separation"
+    },
+    {
+      "change": "use a diagnosis-only entrypoint; do not call repair_resume_v1, promote_pilot, or pipeline --phase all",
+      "id": "F3",
+      "interface": "runtime entrypoint",
+      "verification": "static guard and receipt"
+    }
+  ],
+  "status": "PLAN_ONLY_NO_PHYSICAL_SEARCH",
+  "unchanged_rules": [
+    "SEE2 same instance and 256 pixels in both adjacent actual frames",
+    "collision rejection",
+    "active STOP and terminal witness",
+    "500 full decisions / 240 history decisions",
+    "information isolation"
+  ],
+  "version": "v16_rqf_isolation_diagnosis_v2"
+}

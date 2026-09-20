@@ -1,0 +1,89 @@
+{
+  "actual_dependencies": [
+    "data_pipeline/mechanism_factory_v2/compiler.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/DATA_MANIFEST.json",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/PROTOCOL.json",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/collect.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/collect_repair_v1.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/evaluator_v16.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/isolation_diagnosis_v2.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/repair_resume_v1.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/PROTOCOL.json",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/SOURCE_LOCK.json",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001/PROTOCOL.json",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001/SOURCE_LOCK.json",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/test_isolation_diagnosis_v2.py",
+    "research/continuation_memory_v1/grounded_state_transfer_v16/v16_common.py"
+  ],
+  "baseline_commit_reviewed": "e4a8b2745cd077c690be33081733b5a82ee04f3c",
+  "entrypoint": "research/continuation_memory_v1/grounded_state_transfer_v16/isolation_diagnosis_v2.py",
+  "files": {
+    "data_pipeline/mechanism_factory_v2/compiler.py": {
+      "bytes": 16749,
+      "sha256": "54d35e0d45d8985ee13caa50d895b345638af2b3c4e023cf5182ae144a12f3c5"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/DATA_MANIFEST.json": {
+      "bytes": 163466,
+      "sha256": "8dba04f4a1f2564ff85119fdb5c844c115f57e90833d4382eb6925f01a847af1"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/PROTOCOL.json": {
+      "bytes": 3822,
+      "sha256": "86bd262f6c9c710a5f2683909afa039d00c9a9af2affd17656f30cb0dab4d9db"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/collect.py": {
+      "bytes": 18073,
+      "sha256": "a2b803e647d9ac275e8289378c370c803d472183b636addea4eca4220072d1e1"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/collect_repair_v1.py": {
+      "bytes": 19393,
+      "sha256": "d88987b3f50267efb23b09846b96b51b0871840bfeee9b88d15e9eef58863e8c"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/evaluator_v16.py": {
+      "bytes": 3537,
+      "sha256": "892a852a7bde663b194f129da53065ca18ff12eac86adf084ab674f263b3cb53"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/isolation_diagnosis_v2.py": {
+      "bytes": 44967,
+      "sha256": "d8152263936d56612ce5a5f8305a983613d7ab431f4b68ee477264cf64af0dc5"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/repair_resume_v1.py": {
+      "bytes": 14912,
+      "sha256": "6360d73ae74e1d905a605df47eb65910253e779540129a4361680910bea12e29"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/PROTOCOL.json": {
+      "bytes": 3822,
+      "sha256": "86bd262f6c9c710a5f2683909afa039d00c9a9af2affd17656f30cb0dab4d9db"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/SOURCE_LOCK.json": {
+      "bytes": 24662,
+      "sha256": "eda5b592fecf6a724d84f8c3fa81ccc1c41fab584c009cfa120356c2bb6460a9"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001/PROTOCOL.json": {
+      "bytes": 3822,
+      "sha256": "86bd262f6c9c710a5f2683909afa039d00c9a9af2affd17656f30cb0dab4d9db"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001/SOURCE_LOCK.json": {
+      "bytes": 24973,
+      "sha256": "a70b8c0df3509c85ae4c92c1a8b227a097bb9a9c3d2db85b8614e154c03309aa"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/test_isolation_diagnosis_v2.py": {
+      "bytes": 4340,
+      "sha256": "a5ae032f27c418e2027213d01e894c0d39df5d57ec4cfb4291b9aa23d30a45db"
+    },
+    "research/continuation_memory_v1/grounded_state_transfer_v16/v16_common.py": {
+      "bytes": 2562,
+      "sha256": "026d57077d9e5786d954f28ef26ba79392d718fc7eaa9ae80fbe6a3fe92b6856"
+    }
+  },
+  "run_id": "v16_repair_rqf_002",
+  "runtime": {
+    "gpu": false,
+    "pipeline_all": false,
+    "python_stdlib": true,
+    "qwen": false,
+    "simulator": false,
+    "training": false
+  },
+  "source_isolation": "independent v2 entrypoint; v1 common modules are read-only inputs; no v1 worktree switch",
+  "version": "v16_rqf_isolation_diagnosis_v2"
+}

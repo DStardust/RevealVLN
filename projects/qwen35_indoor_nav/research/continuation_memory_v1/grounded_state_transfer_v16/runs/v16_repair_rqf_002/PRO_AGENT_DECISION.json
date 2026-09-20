@@ -1,0 +1,42 @@
+{
+  "approved_run_id": "v16_repair_rqf_002",
+  "approved_version": "v16_rqf_isolation_diagnosis_v2",
+  "authorization": {
+    "automatic_promotion": false,
+    "enter_G1": false,
+    "evaluate_navigation": false,
+    "load_qwen": false,
+    "modify_v1": false,
+    "new_physical_candidate_executions": 0,
+    "pipeline_all": false,
+    "reuse_certified_families_by_value": 24,
+    "stop_or_pause_v1": false,
+    "train": false
+  },
+  "decision": "B",
+  "decision_date": "2026-09-20",
+  "entrypoint": "research/continuation_memory_v1/grounded_state_transfer_v16/isolation_diagnosis_v2.py",
+  "immutable_requirements": {
+    "SEE2_pixels_each_adjacent_frame": 256,
+    "active_STOP": true,
+    "collision": "any collision rejects",
+    "full_decision_cap": 500,
+    "history_decision_cap": 240,
+    "house": "rqfALeAoiTq",
+    "missing_families": 2,
+    "split": "TEST"
+  },
+  "new_physical_candidate_executions": 0,
+  "run_path": "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_002",
+  "scope": "offline diagnosis + CPU acceptance only",
+  "snapshot_cutoff_unix": 1789899166.654907,
+  "source_certified_run": "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001",
+  "source_failure_run": "research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001",
+  "suggested_service": "q35n-v16-repair-rqf-v2-diag-20260920-01.service",
+  "terminal_statuses": [
+    "DIAGNOSIS_ONLY_COMPLETE",
+    "BLOCKED_EVIDENCE_MISSING",
+    "BLOCKED_CPU_TEST",
+    "BLOCKED_RESOURCE"
+  ]
+}
