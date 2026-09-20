@@ -1,0 +1,20 @@
+{
+  "snapshot_utc": "2026-09-20T08:46:08Z",
+  "source": "nvidia-smi read-only check on execution server",
+  "placeholder_processes": "none observed on GPU2-GPU7",
+  "available_new_cards": [2, 3, 4, 5, 6, 7],
+  "available_memory_mib": {
+    "GPU2": 32106,
+    "GPU3": 32106,
+    "GPU4": 32105,
+    "GPU5": 32106,
+    "GPU6": 32106,
+    "GPU7": 32106
+  },
+  "remaining_external_work": {
+    "GPU0": "NavDP",
+    "GPU1": "NavDP plus current V16 physical collector",
+    "GPU2_GPU7": "no compute processes; only approximately 5 MiB driver usage"
+  },
+  "recommendation": "A future v2 repair or the model stage may use one of GPU2-GPU7. Do not migrate or stop the current v1 collector without an explicit decision; no external process was stopped by this check."
+}

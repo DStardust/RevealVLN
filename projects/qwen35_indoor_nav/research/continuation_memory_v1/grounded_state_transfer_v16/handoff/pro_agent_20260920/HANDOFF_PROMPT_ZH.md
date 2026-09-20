@@ -34,6 +34,8 @@
 
 为便于异机审核，本次 GitHub 提交还上传了旧 run 的 shortfall/失败候选证据，以及修复 run 的 `REPAIR_SPEC`、`SOURCE_LOCK`、proposal 列表、当前失败 JSON 和服务 submission/status 快照。它们位于与服务器相同的 `runs/...` 相对路径，是上传时的只读快照；服务之后新增的尝试不会自动出现在这批文件中。
 
+资源更新（`GPU_AVAILABILITY_UPDATE_20260920T084608Z.json`）：占位进程已清空，GPU2–GPU7 当前无 compute 进程、每卡约 32 GiB 可用；GPU0/1 仍有外部 NavDP，GPU1 还运行当前物理采集。后续新 v2 或模型阶段可直接选 GPU2–GPU7。不要为了迁移当前 v1 而停止任何外部进程。
+
 ## 历史事实（只读保留）
 
 - 原 run：`runs/v16_formal_001`。
