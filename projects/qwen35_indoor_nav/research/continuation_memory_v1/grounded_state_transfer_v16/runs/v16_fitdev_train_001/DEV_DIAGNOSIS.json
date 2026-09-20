@@ -1,0 +1,46 @@
+{
+  "scope": "DEV_DIAGNOSTIC",
+  "families": 2,
+  "conditions": 20,
+  "planned_slots": 180,
+  "completed_slots": 180,
+  "main_planned": 144,
+  "control_planned": 36,
+  "status_counts": [
+    {
+      "endpoint": "control",
+      "status": "FAIL",
+      "count": 35
+    },
+    {
+      "endpoint": "control",
+      "status": "PASS",
+      "count": 1
+    },
+    {
+      "endpoint": "main",
+      "status": "FAIL",
+      "count": 142
+    },
+    {
+      "endpoint": "main",
+      "status": "PASS",
+      "count": 2
+    }
+  ],
+  "by_arm": {
+    "B1": {
+      "FAIL": 57,
+      "PASS": 3
+    },
+    "B2": {
+      "FAIL": 60
+    },
+    "Ours": {
+      "FAIL": 60
+    }
+  },
+  "unknown_error_not_run": [],
+  "independent_house_count": 1,
+  "interpretation": "DEV development evidence; 180 rollouts are not 180 independent houses and are not formal TEST."
+}

@@ -1,0 +1,130 @@
+{
+  "status": "POST_RUN_READ_ONLY_VERIFICATION_COMPLETE",
+  "run_status": "FITDEV_TRAIN_AND_DEV_DIAGNOSTICS_COMPLETE",
+  "scope": "FIT16_TRAIN_DEV2_DIAGNOSTIC",
+  "inventory": {
+    "project": {
+      "FIT": 16,
+      "DEV": 2,
+      "TEST": 6,
+      "missing_TEST_slots": 2
+    },
+    "consumed": {
+      "FIT": 16,
+      "DEV": 2,
+      "TEST": 0
+    },
+    "new_collection": 0
+  },
+  "training": {
+    "models": 9,
+    "updates_per_model": 1200,
+    "total_updates": 10800,
+    "base_optimizer_updates": 0,
+    "all_losses_finite": true,
+    "all_updates_have_positive_gradient": true,
+    "test_scores_read": false
+  },
+  "closed_loop": {
+    "families": 2,
+    "independent_houses": 1,
+    "conditions": 20,
+    "planned_slots": 180,
+    "completed_slots": 180,
+    "main_planned": 144,
+    "control_planned": 36,
+    "status_counts": [
+      {
+        "endpoint": "control",
+        "status": "FAIL",
+        "count": 35
+      },
+      {
+        "endpoint": "control",
+        "status": "PASS",
+        "count": 1
+      },
+      {
+        "endpoint": "main",
+        "status": "FAIL",
+        "count": 142
+      },
+      {
+        "endpoint": "main",
+        "status": "PASS",
+        "count": 2
+      }
+    ],
+    "by_arm": {
+      "B1": {
+        "FAIL": 57,
+        "PASS": 3
+      },
+      "B2": {
+        "FAIL": 60
+      },
+      "Ours": {
+        "FAIL": 60
+      }
+    },
+    "unknown_error_not_run": 0
+  },
+  "event_state": {
+    "model_scope": "B2 trained state head only",
+    "correlated_teacher_route_decisions": 34434,
+    "state_exact": 15805,
+    "state_exact_rate": 0.4589940175408027,
+    "error_counts": {
+      "visible_witness_missed": 56,
+      "truly_absent_false_positive": 6899,
+      "retention_lost_after_detected_witness": 3,
+      "wrong_terminal_readiness": 10033,
+      "wrong_action_given_exact_state": 909
+    }
+  },
+  "action_given_state": {
+    "action_eligible_decisions": 5124,
+    "exact_state_action_eligible_decisions": 2182,
+    "wrong_actions_given_exact_state": 909,
+    "correct_actions_given_exact_state": 1273,
+    "error_rate_given_exact_state": 0.4165902841429881
+  },
+  "query_auxiliary": {
+    "B2": {
+      "valid": 34434,
+      "correct": 29023,
+      "accuracy": 0.842858802346518,
+      "scope": "read-only auxiliary teacher-route diagnosis"
+    },
+    "Ours": {
+      "valid": 34434,
+      "correct": 28539,
+      "accuracy": 0.8288029273392578,
+      "scope": "read-only auxiliary teacher-route diagnosis"
+    }
+  },
+  "memory_intervention": {
+    "status": "UNIDENTIFIABLE",
+    "diagnostic_mechanism_N": 0,
+    "matched_control_N": 0,
+    "supports_history_specific_effect": false
+  },
+  "resources": {
+    "gpu_sessions": 3,
+    "gpu_session_hours": 3.7420404208870606,
+    "all_returncode_zero": true,
+    "all_not_timed_out": true
+  },
+  "boundaries": {
+    "official_TEST_evaluations_started_by_this_run": 0,
+    "new_candidate_collections_started_by_this_run": 0,
+    "new_family_admissions": 0
+  },
+  "limitations": [
+    "The two DEV families come from one house; 180 rollouts are not 180 independent cross-house samples.",
+    "DEV was used for development diagnosis and is not blind TEST evidence.",
+    "Event-state rows are correlated teacher-route decisions, not independent rollouts.",
+    "The matched memory intervention is UNIDENTIFIABLE because no registered geometry/sham matched subset exists.",
+    "No formal TEST score, navigation generalization claim, or architecture-selection claim is supported here."
+  ]
+}

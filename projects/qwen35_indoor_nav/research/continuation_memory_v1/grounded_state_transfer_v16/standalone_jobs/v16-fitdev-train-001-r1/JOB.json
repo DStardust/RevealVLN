@@ -1,0 +1,34 @@
+{
+  "name": "v16-fitdev-train-001-r1",
+  "unit": "q35n-v16-fitdev-train-001-r1.service",
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/fitdev_fastpath.py",
+    "--config",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/FITDEV_CONFIG.json",
+    "--run-id",
+    "v16_fitdev_train_001",
+    "--resume"
+  ],
+  "cwd": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1",
+  "uid": 0,
+  "gid": 0,
+  "environment": {
+    "PATH": "/mnt/zrh/miniconda3/bin:/mnt/zrh/miniconda3/condabin:/usr/local/cuda/bin:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/mnt/data_nas/deeprobotics/daiyang/.codex/tmp/arg0/codex-arg0q7q3bc:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/ehpc/bin:/root/bin:/usr/local/ehpc/bin:/root/bin",
+    "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:",
+    "CUDA_VISIBLE_DEVICES": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "created_unix": 1789924076.985566,
+  "launcher_pid": 3899012,
+  "launcher_cgroup": "0::/user.slice/user-0.slice/session-569.scope/init.scope\n",
+  "retries": 0,
+  "ownership": "Same UID/GID as caller, no sudo or privilege change."
+}

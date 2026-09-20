@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "fitdev_scope_tests": {
+    "environment": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+    "executed": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "legacy_v16_tests": {
+    "environment": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+    "executed": 18,
+    "passed": 18,
+    "failed": 0
+  },
+  "syntax_checked_modules": 11,
+  "syntax_status": "PASS",
+  "non_acceptance_attempt": {
+    "environment": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "result": "14 passed before 4 dependency import errors",
+    "reason": "launcher environment has no torch; the same 18 tests were then executed in the authorized training environment",
+    "counted_as_acceptance": false
+  }
+}

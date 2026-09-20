@@ -1,0 +1,1609 @@
+{
+  "scope": "DEV_DIAGNOSTIC",
+  "split": "DEV",
+  "conditions": [
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A_R",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A_R",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B_R",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B_R",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A",
+      "task_id": "task_T",
+      "endpoint": "control"
+    },
+    {
+      "family_id": "V16_8167aaa8e93039e1297f",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B",
+      "task_id": "task_T",
+      "endpoint": "control"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A_R",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A_R",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B_R",
+      "task_id": "task_A",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B_R",
+      "task_id": "task_B",
+      "endpoint": "main"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_A",
+      "task_id": "task_T",
+      "endpoint": "control"
+    },
+    {
+      "family_id": "V16_d8a66898ba3caf72cd03",
+      "house": "2azQ1b91cZZ",
+      "history_id": "H_B",
+      "task_id": "task_T",
+      "endpoint": "control"
+    }
+  ],
+  "models": [
+    "B1_1209",
+    "B2_1209",
+    "Ours_1209",
+    "B1_1210",
+    "B2_1210",
+    "Ours_1210",
+    "B1_1211",
+    "B2_1211",
+    "Ours_1211"
+  ],
+  "slots": [
+    {
+      "rank": 0,
+      "condition": 0,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 1,
+      "condition": 0,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 2,
+      "condition": 0,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 3,
+      "condition": 0,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 4,
+      "condition": 0,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 5,
+      "condition": 0,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 6,
+      "condition": 0,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 7,
+      "condition": 0,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 8,
+      "condition": 0,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 9,
+      "condition": 1,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 10,
+      "condition": 1,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 11,
+      "condition": 1,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 12,
+      "condition": 1,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 13,
+      "condition": 1,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 14,
+      "condition": 1,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 15,
+      "condition": 1,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 16,
+      "condition": 1,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 17,
+      "condition": 1,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 18,
+      "condition": 2,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 19,
+      "condition": 2,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 20,
+      "condition": 2,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 21,
+      "condition": 2,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 22,
+      "condition": 2,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 23,
+      "condition": 2,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 24,
+      "condition": 2,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 25,
+      "condition": 2,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 26,
+      "condition": 2,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 27,
+      "condition": 3,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 28,
+      "condition": 3,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 29,
+      "condition": 3,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 30,
+      "condition": 3,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 31,
+      "condition": 3,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 32,
+      "condition": 3,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 33,
+      "condition": 3,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 34,
+      "condition": 3,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 35,
+      "condition": 3,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 36,
+      "condition": 4,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 37,
+      "condition": 4,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 38,
+      "condition": 4,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 39,
+      "condition": 4,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 40,
+      "condition": 4,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 41,
+      "condition": 4,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 42,
+      "condition": 4,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 43,
+      "condition": 4,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 44,
+      "condition": 4,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 45,
+      "condition": 5,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 46,
+      "condition": 5,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 47,
+      "condition": 5,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 48,
+      "condition": 5,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 49,
+      "condition": 5,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 50,
+      "condition": 5,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 51,
+      "condition": 5,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 52,
+      "condition": 5,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 53,
+      "condition": 5,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 54,
+      "condition": 6,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 55,
+      "condition": 6,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 56,
+      "condition": 6,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 57,
+      "condition": 6,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 58,
+      "condition": 6,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 59,
+      "condition": 6,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 60,
+      "condition": 6,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 61,
+      "condition": 6,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 62,
+      "condition": 6,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 63,
+      "condition": 7,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 64,
+      "condition": 7,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 65,
+      "condition": 7,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 66,
+      "condition": 7,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 67,
+      "condition": 7,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 68,
+      "condition": 7,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 69,
+      "condition": 7,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 70,
+      "condition": 7,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 71,
+      "condition": 7,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 72,
+      "condition": 8,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 73,
+      "condition": 8,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 74,
+      "condition": 8,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 75,
+      "condition": 8,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 76,
+      "condition": 8,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 77,
+      "condition": 8,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 78,
+      "condition": 8,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 79,
+      "condition": 8,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 80,
+      "condition": 8,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 81,
+      "condition": 9,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 82,
+      "condition": 9,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 83,
+      "condition": 9,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 84,
+      "condition": 9,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 85,
+      "condition": 9,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 86,
+      "condition": 9,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 87,
+      "condition": 9,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 88,
+      "condition": 9,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 89,
+      "condition": 9,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 90,
+      "condition": 10,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 91,
+      "condition": 10,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 92,
+      "condition": 10,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 93,
+      "condition": 10,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 94,
+      "condition": 10,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 95,
+      "condition": 10,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 96,
+      "condition": 10,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 97,
+      "condition": 10,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 98,
+      "condition": 10,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 99,
+      "condition": 11,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 100,
+      "condition": 11,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 101,
+      "condition": 11,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 102,
+      "condition": 11,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 103,
+      "condition": 11,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 104,
+      "condition": 11,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 105,
+      "condition": 11,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 106,
+      "condition": 11,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 107,
+      "condition": 11,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 108,
+      "condition": 12,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 109,
+      "condition": 12,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 110,
+      "condition": 12,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 111,
+      "condition": 12,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 112,
+      "condition": 12,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 113,
+      "condition": 12,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 114,
+      "condition": 12,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 115,
+      "condition": 12,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 116,
+      "condition": 12,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 117,
+      "condition": 13,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 118,
+      "condition": 13,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 119,
+      "condition": 13,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 120,
+      "condition": 13,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 121,
+      "condition": 13,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 122,
+      "condition": 13,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 123,
+      "condition": 13,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 124,
+      "condition": 13,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 125,
+      "condition": 13,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 126,
+      "condition": 14,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 127,
+      "condition": 14,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 128,
+      "condition": 14,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 129,
+      "condition": 14,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 130,
+      "condition": 14,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 131,
+      "condition": 14,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 132,
+      "condition": 14,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 133,
+      "condition": 14,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 134,
+      "condition": 14,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 135,
+      "condition": 15,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 136,
+      "condition": 15,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 137,
+      "condition": 15,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 138,
+      "condition": 15,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 139,
+      "condition": 15,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 140,
+      "condition": 15,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 141,
+      "condition": 15,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 142,
+      "condition": 15,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 143,
+      "condition": 15,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 144,
+      "condition": 16,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 145,
+      "condition": 16,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 146,
+      "condition": 16,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 147,
+      "condition": 16,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 148,
+      "condition": 16,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 149,
+      "condition": 16,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 150,
+      "condition": 16,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 151,
+      "condition": 16,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 152,
+      "condition": 16,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 153,
+      "condition": 17,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 154,
+      "condition": 17,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 155,
+      "condition": 17,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 156,
+      "condition": 17,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 157,
+      "condition": 17,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 158,
+      "condition": 17,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 159,
+      "condition": 17,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 160,
+      "condition": 17,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 161,
+      "condition": 17,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 162,
+      "condition": 18,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 163,
+      "condition": 18,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 164,
+      "condition": 18,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 165,
+      "condition": 18,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 166,
+      "condition": 18,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 167,
+      "condition": 18,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 168,
+      "condition": 18,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 169,
+      "condition": 18,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 170,
+      "condition": 18,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 171,
+      "condition": 19,
+      "model": "B2_1209",
+      "arm": "B2",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 172,
+      "condition": 19,
+      "model": "Ours_1209",
+      "arm": "Ours",
+      "seed": 1209,
+      "planned": true
+    },
+    {
+      "rank": 173,
+      "condition": 19,
+      "model": "B1_1210",
+      "arm": "B1",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 174,
+      "condition": 19,
+      "model": "B2_1210",
+      "arm": "B2",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 175,
+      "condition": 19,
+      "model": "Ours_1210",
+      "arm": "Ours",
+      "seed": 1210,
+      "planned": true
+    },
+    {
+      "rank": 176,
+      "condition": 19,
+      "model": "B1_1211",
+      "arm": "B1",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 177,
+      "condition": 19,
+      "model": "B2_1211",
+      "arm": "B2",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 178,
+      "condition": 19,
+      "model": "Ours_1211",
+      "arm": "Ours",
+      "seed": 1211,
+      "planned": true
+    },
+    {
+      "rank": 179,
+      "condition": 19,
+      "model": "B1_1209",
+      "arm": "B1",
+      "seed": 1209,
+      "planned": true
+    }
+  ],
+  "expected_prefix_comparisons": 120,
+  "models_per_condition": 9,
+  "main_conditions": 16,
+  "control_conditions": 4,
+  "main_rollout_slots": 144,
+  "control_rollout_slots": 36,
+  "main_denominator_per_arm": 48,
+  "control_denominator_per_arm": 12,
+  "task_T_separate": true,
+  "ordering": "fixed seed/arm order rotated by condition index"
+}
