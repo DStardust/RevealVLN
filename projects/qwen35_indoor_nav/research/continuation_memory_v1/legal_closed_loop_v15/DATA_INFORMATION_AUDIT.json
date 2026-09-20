@@ -1,0 +1,239 @@
+{
+  "counts": {
+    "fit": {
+      "families": 3,
+      "houses": 1,
+      "cells": 108,
+      "label_counts": {
+        "1": 84,
+        "0": 24
+      },
+      "identical_current_input_and_query_groups": 15,
+      "conflicting_groups": 6,
+      "short_window_query_only_empirical_upper_bound_correct": 84,
+      "majority_label_correct": 84,
+      "caveat": "In-sample information ceiling from registered identical inputs, not a trained baseline or a generalization result."
+    },
+    "check": {
+      "families": 3,
+      "houses": 1,
+      "cells": 108,
+      "label_counts": {
+        "1": 84,
+        "0": 24
+      },
+      "identical_current_input_and_query_groups": 15,
+      "conflicting_groups": 6,
+      "short_window_query_only_empirical_upper_bound_correct": 84,
+      "majority_label_correct": 84,
+      "caveat": "In-sample information ceiling from registered identical inputs, not a trained baseline or a generalization result."
+    }
+  },
+  "complete_execution_records": 72,
+  "unique_physical_full_action_sequences": 72,
+  "unique_physical_histories": 20,
+  "distinct_actual_start_states": 12,
+  "coarse_hub_proposals": 3,
+  "initial_state_counting": "Use actual recorded initial agent/sensor poses, not coarse candidate position/yaw; starts may differ by small calibrated offsets between histories. Every history is executed in full and joins exactly at the registered cutoff.",
+  "ordered_task_instructions": 10,
+  "terminal_only_instruction_count": 4,
+  "independence": "Families, crossed labels, and repeated seeds are not independent houses or independent trajectories.",
+  "next_data_axis": "Additional valid houses and event/route/wording families, not relabelling or multiplying the same crossed cells.",
+  "finite_suffix_costs": [
+    {
+      "family_id": "V15_NEW_0757bea729cfcf291401",
+      "task": "task_A",
+      "universal_tested_PASS_suffixes": [
+        "C_A"
+      ],
+      "best_universal_tested_suffix_actions": 99,
+      "mean_history_conditioned_best_tested_suffix_actions": 56.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0757bea729cfcf291401",
+      "task": "task_B",
+      "universal_tested_PASS_suffixes": [
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 109,
+      "mean_history_conditioned_best_tested_suffix_actions": 61.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0757bea729cfcf291401",
+      "task": "task_T",
+      "universal_tested_PASS_suffixes": [
+        "C_A",
+        "C0",
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 13,
+      "mean_history_conditioned_best_tested_suffix_actions": 13.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0933cbe9733f701c4933",
+      "task": "task_A",
+      "universal_tested_PASS_suffixes": [
+        "C_A"
+      ],
+      "best_universal_tested_suffix_actions": 102,
+      "mean_history_conditioned_best_tested_suffix_actions": 59.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0933cbe9733f701c4933",
+      "task": "task_B",
+      "universal_tested_PASS_suffixes": [
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 112,
+      "mean_history_conditioned_best_tested_suffix_actions": 64.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0933cbe9733f701c4933",
+      "task": "task_T",
+      "universal_tested_PASS_suffixes": [
+        "C_A",
+        "C0",
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 16,
+      "mean_history_conditioned_best_tested_suffix_actions": 16.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+      "task": "task_A",
+      "universal_tested_PASS_suffixes": [
+        "C_A"
+      ],
+      "best_universal_tested_suffix_actions": 80,
+      "mean_history_conditioned_best_tested_suffix_actions": 56.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+      "task": "task_B",
+      "universal_tested_PASS_suffixes": [
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 152,
+      "mean_history_conditioned_best_tested_suffix_actions": 92.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+      "task": "task_T",
+      "universal_tested_PASS_suffixes": [
+        "C_A",
+        "C0",
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 32,
+      "mean_history_conditioned_best_tested_suffix_actions": 32.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_006197dc83ec323cae10",
+      "task": "task_A",
+      "universal_tested_PASS_suffixes": [
+        "C_A"
+      ],
+      "best_universal_tested_suffix_actions": 106,
+      "mean_history_conditioned_best_tested_suffix_actions": 64.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_006197dc83ec323cae10",
+      "task": "task_B",
+      "universal_tested_PASS_suffixes": [
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 104,
+      "mean_history_conditioned_best_tested_suffix_actions": 63.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_006197dc83ec323cae10",
+      "task": "task_T",
+      "universal_tested_PASS_suffixes": [
+        "C_A",
+        "C0",
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 22,
+      "mean_history_conditioned_best_tested_suffix_actions": 22.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_068de151fa7683275c29",
+      "task": "task_A",
+      "universal_tested_PASS_suffixes": [
+        "C_A"
+      ],
+      "best_universal_tested_suffix_actions": 93,
+      "mean_history_conditioned_best_tested_suffix_actions": 51.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_068de151fa7683275c29",
+      "task": "task_B",
+      "universal_tested_PASS_suffixes": [
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 91,
+      "mean_history_conditioned_best_tested_suffix_actions": 50.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_068de151fa7683275c29",
+      "task": "task_T",
+      "universal_tested_PASS_suffixes": [
+        "C_A",
+        "C0",
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 9,
+      "mean_history_conditioned_best_tested_suffix_actions": 9.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0705ac616e1f9e215208",
+      "task": "task_A",
+      "universal_tested_PASS_suffixes": [
+        "C_A"
+      ],
+      "best_universal_tested_suffix_actions": 73,
+      "mean_history_conditioned_best_tested_suffix_actions": 41.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0705ac616e1f9e215208",
+      "task": "task_B",
+      "universal_tested_PASS_suffixes": [
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 91,
+      "mean_history_conditioned_best_tested_suffix_actions": 50.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    },
+    {
+      "family_id": "V15_NEW_0705ac616e1f9e215208",
+      "task": "task_T",
+      "universal_tested_PASS_suffixes": [
+        "C_A",
+        "C0",
+        "C_B"
+      ],
+      "best_universal_tested_suffix_actions": 9,
+      "mean_history_conditioned_best_tested_suffix_actions": 9.0,
+      "scope": "Only the three actually executed suffixes; no global optimality or learned policy claim."
+    }
+  ],
+  "success_identifiability_limit": "Every registered task has a tested continuation that passes after every history. Conditional teacher forks demonstrate a finite-set efficiency opportunity; they do not prove that immediate opposite actions or memory are necessary for any eventual success.",
+  "model_results_used": false,
+  "data_sha256": "636d1a653263b586efb250ed32584497cba0857265fb8d814753e2dad854af10"
+}

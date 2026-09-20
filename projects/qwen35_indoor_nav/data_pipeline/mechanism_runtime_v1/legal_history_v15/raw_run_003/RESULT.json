@@ -1,0 +1,601 @@
+{
+  "status": "RAW_INTERFACE_MEASURED",
+  "families": [
+    {
+      "family_id": "WF_MULTI_e0239f96cb5b52ffde971cd1",
+      "house": "29hnd4uzFmX",
+      "comparison": {
+        "H_A": {
+          "raw_window_equal": true,
+          "pose_equal": true,
+          "max_pose_delta": 0.0
+        },
+        "H_B": {
+          "raw_window_equal": false,
+          "pose_equal": false,
+          "max_pose_delta": 1.9073486328125e-06
+        },
+        "H_A_I": {
+          "raw_window_equal": false,
+          "pose_equal": false,
+          "max_pose_delta": 2.9802322387695312e-08
+        }
+      },
+      "prefixes": {
+        "H_A": {
+          "raw": {
+            "rgb": [
+              "3b852ac08976dadff0d89408aa3e6efcc111aec5a6137d18b0fb56199164cd96",
+              "67a4e8f974e9d18badbab83f38a6571265422bd1401fc80fcb47983784cc5d0f"
+            ],
+            "executed": [
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R"
+            ]
+          },
+          "pose": {
+            "position": [
+              -4.4631805419921875,
+              -0.2089579850435257,
+              0.19466567039489746
+            ],
+            "rotation": [
+              -1.0,
+              0.0,
+              8.940696716308594e-08,
+              0.0
+            ],
+            "sensors": {
+              "rgb": {
+                "position": [
+                  -4.4631805419921875,
+                  1.0410419702529907,
+                  0.19466567039489746
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  8.940696716308594e-08,
+                  0.0
+                ]
+              },
+              "semantic": {
+                "position": [
+                  -4.4631805419921875,
+                  1.0410419702529907,
+                  0.19466567039489746
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  8.940696716308594e-08,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "H_B": {
+          "raw": {
+            "rgb": [
+              "9c5fdbac811549bf84f55838be66e60e1f3ff24aeb49cab7bc00b90a3badb0d1",
+              "708c54ef05d1b8f8866948a5a0a26115918d2b6f012115068231e70b9bf3fe53"
+            ],
+            "executed": [
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R"
+            ]
+          },
+          "pose": {
+            "position": [
+              -4.463178634643555,
+              -0.2089579850435257,
+              0.19466528296470642
+            ],
+            "rotation": [
+              -1.0,
+              0.0,
+              -8.940696005765858e-08,
+              0.0
+            ],
+            "sensors": {
+              "rgb": {
+                "position": [
+                  -4.463178634643555,
+                  1.0410419702529907,
+                  0.19466528296470642
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  -8.940696005765858e-08,
+                  0.0
+                ]
+              },
+              "semantic": {
+                "position": [
+                  -4.463178634643555,
+                  1.0410419702529907,
+                  0.19466528296470642
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  -8.940696005765858e-08,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "H_A_I": {
+          "raw": {
+            "rgb": [
+              "0479051bfcb75bcf655eea0f9468dd859b90e3882018495a56c371adaeb57656",
+              "8dd40d0980fc3c430cd7e355fb72ef825747acba30c056fb8ccdbc4b6b18e93d"
+            ],
+            "executed": [
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R"
+            ]
+          },
+          "pose": {
+            "position": [
+              -4.4631805419921875,
+              -0.2089579850435257,
+              0.19466564059257507
+            ],
+            "rotation": [
+              -1.0,
+              0.0,
+              8.940696716308594e-08,
+              0.0
+            ],
+            "sensors": {
+              "rgb": {
+                "position": [
+                  -4.4631805419921875,
+                  1.0410419702529907,
+                  0.19466564059257507
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  8.940696716308594e-08,
+                  0.0
+                ]
+              },
+              "semantic": {
+                "position": [
+                  -4.4631805419921875,
+                  1.0410419702529907,
+                  0.19466564059257507
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  8.940696716308594e-08,
+                  0.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 268
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 318
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 364
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 268
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 318
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 364
+        },
+        "H_A_I__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 268
+        },
+        "H_A_I__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 318
+        },
+        "H_A_I__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 364
+        }
+      },
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 2841,
+        "trace_initializations": 9,
+        "explicit_resets": 9,
+        "observation_records": 2850,
+        "explicit_reconstructions": 0
+      },
+      "no_interior_state_assignment": true,
+      "original_training_admission": false,
+      "training_admission": false,
+      "reason": "Interface measurement only; independent controls/data still required."
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf",
+      "house": "2n8kARJN3HM",
+      "comparison": {
+        "H_A": {
+          "raw_window_equal": true,
+          "pose_equal": true,
+          "max_pose_delta": 0.0
+        },
+        "H_B": {
+          "raw_window_equal": false,
+          "pose_equal": false,
+          "max_pose_delta": 4.76837158203125e-07
+        },
+        "H_A_I": {
+          "raw_window_equal": true,
+          "pose_equal": true,
+          "max_pose_delta": 0.0
+        }
+      },
+      "prefixes": {
+        "H_A": {
+          "raw": {
+            "rgb": [
+              "f2413ca22166a02b4876d706cc8b84a21f50cc1e9678a82c81ec9653e155aba2",
+              "63222f20548c415455d0fc0f29110fff805e899cbcf151bb7a7e737d275b3ab3"
+            ],
+            "executed": [
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R"
+            ]
+          },
+          "pose": {
+            "position": [
+              6.060579299926758,
+              0.13123798370361328,
+              10.951499938964844
+            ],
+            "rotation": [
+              -1.0,
+              0.0,
+              -1.4901161193847656e-08,
+              0.0
+            ],
+            "sensors": {
+              "rgb": {
+                "position": [
+                  6.060579299926758,
+                  1.3812379837036133,
+                  10.951499938964844
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  -1.4901161193847656e-08,
+                  0.0
+                ]
+              },
+              "semantic": {
+                "position": [
+                  6.060579299926758,
+                  1.3812379837036133,
+                  10.951499938964844
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  -1.4901161193847656e-08,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "H_B": {
+          "raw": {
+            "rgb": [
+              "7a745675fb75748d96d81089ced046020d413879058314381fee5db30b904d92",
+              "8aa884b74a218d26100e8c5674b533ce26981142632ff434c1118317a9001c29"
+            ],
+            "executed": [
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R"
+            ]
+          },
+          "pose": {
+            "position": [
+              6.060579776763916,
+              0.13123798370361328,
+              10.951499938964844
+            ],
+            "rotation": [
+              -1.0,
+              0.0,
+              1.4901161193847656e-08,
+              0.0
+            ],
+            "sensors": {
+              "rgb": {
+                "position": [
+                  6.060579776763916,
+                  1.3812379837036133,
+                  10.951499938964844
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  1.4901161193847656e-08,
+                  0.0
+                ]
+              },
+              "semantic": {
+                "position": [
+                  6.060579776763916,
+                  1.3812379837036133,
+                  10.951499938964844
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  1.4901161193847656e-08,
+                  0.0
+                ]
+              }
+            }
+          }
+        },
+        "H_A_I": {
+          "raw": {
+            "rgb": [
+              "f2413ca22166a02b4876d706cc8b84a21f50cc1e9678a82c81ec9653e155aba2",
+              "63222f20548c415455d0fc0f29110fff805e899cbcf151bb7a7e737d275b3ab3"
+            ],
+            "executed": [
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R",
+              "L",
+              "R"
+            ]
+          },
+          "pose": {
+            "position": [
+              6.060579299926758,
+              0.13123798370361328,
+              10.951499938964844
+            ],
+            "rotation": [
+              -1.0,
+              0.0,
+              -1.4901161193847656e-08,
+              0.0
+            ],
+            "sensors": {
+              "rgb": {
+                "position": [
+                  6.060579299926758,
+                  1.3812379837036133,
+                  10.951499938964844
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  -1.4901161193847656e-08,
+                  0.0
+                ]
+              },
+              "semantic": {
+                "position": [
+                  6.060579299926758,
+                  1.3812379837036133,
+                  10.951499938964844
+                ],
+                "rotation": [
+                  -1.0,
+                  0.0,
+                  -1.4901161193847656e-08,
+                  0.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 335
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 407
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 387
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 335
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 407
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 387
+        },
+        "H_A_I__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 335
+        },
+        "H_A_I__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 407
+        },
+        "H_A_I__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 387
+        }
+      },
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 3378,
+        "trace_initializations": 9,
+        "explicit_resets": 9,
+        "observation_records": 3387,
+        "explicit_reconstructions": 0
+      },
+      "no_interior_state_assignment": true,
+      "original_training_admission": false,
+      "training_admission": false,
+      "reason": "Interface measurement only; independent controls/data still required."
+    }
+  ],
+  "actual_decisions": 6237,
+  "complete_traces": 18,
+  "optimizer_updates": 0,
+  "model_loads": 0,
+  "scientific_pass": false,
+  "training_admission": false
+}

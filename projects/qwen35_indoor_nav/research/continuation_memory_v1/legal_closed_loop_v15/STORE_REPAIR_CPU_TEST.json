@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "case": "timestamp_only",
+      "passed": true,
+      "rejected": false
+    },
+    {
+      "case": "foreign_entry",
+      "passed": true,
+      "rejected": true
+    },
+    {
+      "case": "corrupt_payload",
+      "passed": true,
+      "rejected": true
+    }
+  ],
+  "scope": "CPU integrity regression, no simulator or model"
+}

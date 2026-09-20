@@ -1,0 +1,185 @@
+{
+  "status": "CPU_RAW_EVIDENCE_RECOMPUTED",
+  "run": "data_pipeline/mechanism_runtime_v1/legal_history_v15/raw_run_005",
+  "families": [
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf",
+      "house": "2n8kARJN3HM",
+      "complete_traces": 9,
+      "complete_decisions": 3387,
+      "raw_join_rechecked": true,
+      "suffix_queries_history_independent": true,
+      "labels": [
+        {
+          "history": "H_A",
+          "continuation": "C0",
+          "decisions": 335,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "990fb449e60d0654b0e2df459da42d2f5ba44c4f57aabf5e13921ab90aea999b"
+        },
+        {
+          "history": "H_A",
+          "continuation": "C_A",
+          "decisions": 407,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "2604f2ad6cde9a28df3290c3839042ace5bec5a37fc370d56e579d7c165f1795"
+        },
+        {
+          "history": "H_A",
+          "continuation": "C_B",
+          "decisions": 387,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "57cc379a84075aa5d5b0f0a768752456d429f4180bc1544624ef0ec28fc28e51"
+        },
+        {
+          "history": "H_B",
+          "continuation": "C0",
+          "decisions": 335,
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "77d862b83fe2516a0ed54ba0c25d1306e2bd9d57506af9d5fc13431985f7f607"
+        },
+        {
+          "history": "H_B",
+          "continuation": "C_A",
+          "decisions": 407,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "cfee8bf4f2bd96eedc6a41a1fefa55af8639c71ac54b630e86cb0f0ba64d2b00"
+        },
+        {
+          "history": "H_B",
+          "continuation": "C_B",
+          "decisions": 387,
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "c204cc406f85808ee99c3182ab1b817e5baa785bb0a7ae70f185acd092ac161d"
+        },
+        {
+          "history": "H_A_I",
+          "continuation": "C0",
+          "decisions": 335,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "69daa465617ba4e54b36cd42e701cb1c9ee05e35b02b905ac48c09d362062694"
+        },
+        {
+          "history": "H_A_I",
+          "continuation": "C_A",
+          "decisions": 407,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "896421f71e744268a990d7e8a7884f86694bfd00f28c1192bafbd87fb72aa0c3"
+        },
+        {
+          "history": "H_A_I",
+          "continuation": "C_B",
+          "decisions": 387,
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "trace_sha256": "defed1aee641ecaf4465c0a6b3f2a176e1f3a9dbac798080593168a13e080c0c"
+        }
+      ],
+      "visible_witnesses": [
+        {
+          "history": "H_A",
+          "role": "anchor_A",
+          "first_step": 21,
+          "last_step": 195,
+          "distance_from_last_witness_to_join": 131,
+          "instances": [
+            642
+          ],
+          "rgb_sha256": [
+            "a4d03371cda81999d8f78d7cb4b6936650a4477ce9b67109ee1473d3d0fe7c49",
+            "69563d98fed25b45f957a90f3790626392c7e83c443259db98973e1185debea7"
+          ]
+        },
+        {
+          "history": "H_B",
+          "role": "anchor_B",
+          "first_step": 16,
+          "last_step": 224,
+          "distance_from_last_witness_to_join": 102,
+          "instances": [
+            2
+          ],
+          "rgb_sha256": [
+            "bfe32275bdba778481a3bdb5bf7c5808fb38ba582e0ea23b5dfdabef18ec7eb4",
+            "c5f5d07740b3e95ecb8044e575ca5afe8f5e8277611855f0f2d2db2e69ff3f7e"
+          ]
+        },
+        {
+          "history": "H_A_I",
+          "role": "anchor_A",
+          "first_step": 21,
+          "last_step": 165,
+          "distance_from_last_witness_to_join": 161,
+          "instances": [
+            642
+          ],
+          "rgb_sha256": [
+            "a4d03371cda81999d8f78d7cb4b6936650a4477ce9b67109ee1473d3d0fe7c49",
+            "69563d98fed25b45f957a90f3790626392c7e83c443259db98973e1185debea7"
+          ]
+        }
+      ],
+      "motion_counts": {
+        "H_A": {
+          "R": 134,
+          "F": 130,
+          "L": 62
+        },
+        "H_B": {
+          "R": 134,
+          "F": 130,
+          "L": 62
+        },
+        "H_A_I": {
+          "R": 134,
+          "F": 130,
+          "L": 62
+        }
+      },
+      "neutral_controls": {},
+      "relations_pass": null,
+      "training_admission": false
+    }
+  ],
+  "unique_arrays_rehashed": 869,
+  "source_sha256": "237612e34f6e36baa87c3daf7841096d1caf6395d618a9782feeae257d3e9126",
+  "new_model_evidence": false,
+  "source_protocol_sha256": "383a11ae4a35af3f06f47346c35653a8590f2a7af3f948bafb1d0be31ab5e215",
+  "independent_test": false,
+  "training_admission": false
+}

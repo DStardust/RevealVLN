@@ -1,0 +1,2581 @@
+{
+  "rows": [
+    {
+      "tag": "S1_B1_1209",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "S1_B2_1209",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1370,
+              "tn": 872,
+              "balanced_accuracy": 0.999271137026239
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1374,
+              "tn": 868,
+              "balanced_accuracy": 0.9992732558139534
+            },
+            {
+              "name": "terminal_now",
+              "positive": 78,
+              "negative": 2166,
+              "tp": 68,
+              "tn": 2160,
+              "balanced_accuracy": 0.9345123943461894
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 38,
+              "negative": 2206,
+              "tp": 32,
+              "tn": 2206,
+              "balanced_accuracy": 0.9210526315789473
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1370,
+              "tn": 870,
+              "balanced_accuracy": 0.9981243480354134
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1376,
+              "tn": 868,
+              "balanced_accuracy": 1.0
+            },
+            {
+              "name": "terminal_now",
+              "positive": 72,
+              "negative": 2172,
+              "tp": 34,
+              "tn": 2132,
+              "balanced_accuracy": 0.726903007980356
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 34,
+              "negative": 2210,
+              "tp": 20,
+              "tn": 2198,
+              "balanced_accuracy": 0.7914027149321268
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1336,
+              "negative": 896,
+              "tp": 1336,
+              "tn": 143,
+              "balanced_accuracy": 0.5797991071428571
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1340,
+              "negative": 892,
+              "tp": 1340,
+              "tn": 136,
+              "balanced_accuracy": 0.5762331838565022
+            },
+            {
+              "name": "terminal_now",
+              "positive": 60,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 20,
+              "negative": 2212,
+              "tp": 0,
+              "tn": 2212,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1070,
+              "negative": 742,
+              "tp": 1044,
+              "tn": 305,
+              "balanced_accuracy": 0.6933760737587223
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1074,
+              "negative": 738,
+              "tp": 1050,
+              "tn": 279,
+              "balanced_accuracy": 0.6778512058863606
+            },
+            {
+              "name": "terminal_now",
+              "positive": 198,
+              "negative": 1614,
+              "tp": 62,
+              "tn": 1480,
+              "balanced_accuracy": 0.6150538845706133
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 110,
+              "negative": 1702,
+              "tp": 36,
+              "tn": 1560,
+              "balanced_accuracy": 0.6219207349642133
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1010,
+              "negative": 682,
+              "tp": 1010,
+              "tn": 154,
+              "balanced_accuracy": 0.6129032258064516
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1014,
+              "negative": 678,
+              "tp": 1014,
+              "tn": 144,
+              "balanced_accuracy": 0.6061946902654867
+            },
+            {
+              "name": "terminal_now",
+              "positive": 156,
+              "negative": 1536,
+              "tp": 58,
+              "tn": 1388,
+              "balanced_accuracy": 0.6377203525641026
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 72,
+              "negative": 1620,
+              "tp": 36,
+              "tn": 1472,
+              "balanced_accuracy": 0.704320987654321
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 920,
+              "negative": 628,
+              "tp": 835,
+              "tn": 139,
+              "balanced_accuracy": 0.5644731376350042
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 924,
+              "negative": 624,
+              "tp": 883,
+              "tn": 106,
+              "balanced_accuracy": 0.5627497502497503
+            },
+            {
+              "name": "terminal_now",
+              "positive": 126,
+              "negative": 1422,
+              "tp": 56,
+              "tn": 1252,
+              "balanced_accuracy": 0.6624472573839663
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 60,
+              "negative": 1488,
+              "tp": 36,
+              "tn": 1348,
+              "balanced_accuracy": 0.7529569892473118
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "S1_Ours_1209",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "S1_B1_1210",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "S1_B2_1210",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1372,
+              "tn": 870,
+              "balanced_accuracy": 0.9988532110091743
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1376,
+              "tn": 868,
+              "balanced_accuracy": 1.0
+            },
+            {
+              "name": "terminal_now",
+              "positive": 78,
+              "negative": 2166,
+              "tp": 70,
+              "tn": 2160,
+              "balanced_accuracy": 0.9473329071667023
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 38,
+              "negative": 2206,
+              "tp": 34,
+              "tn": 2206,
+              "balanced_accuracy": 0.9473684210526316
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1372,
+              "tn": 808,
+              "balanced_accuracy": 0.963302752293578
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1376,
+              "tn": 794,
+              "balanced_accuracy": 0.9573732718894009
+            },
+            {
+              "name": "terminal_now",
+              "positive": 72,
+              "negative": 2172,
+              "tp": 34,
+              "tn": 2132,
+              "balanced_accuracy": 0.726903007980356
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 34,
+              "negative": 2210,
+              "tp": 20,
+              "tn": 2196,
+              "balanced_accuracy": 0.790950226244344
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1336,
+              "negative": 896,
+              "tp": 1336,
+              "tn": 203,
+              "balanced_accuracy": 0.61328125
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1340,
+              "negative": 892,
+              "tp": 1340,
+              "tn": 171,
+              "balanced_accuracy": 0.5958520179372198
+            },
+            {
+              "name": "terminal_now",
+              "positive": 60,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 20,
+              "negative": 2212,
+              "tp": 0,
+              "tn": 2212,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1070,
+              "negative": 742,
+              "tp": 1032,
+              "tn": 378,
+              "balanced_accuracy": 0.7369599717862811
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1074,
+              "negative": 738,
+              "tp": 1036,
+              "tn": 354,
+              "balanced_accuracy": 0.7221465231412091
+            },
+            {
+              "name": "terminal_now",
+              "positive": 198,
+              "negative": 1614,
+              "tp": 0,
+              "tn": 1614,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 110,
+              "negative": 1702,
+              "tp": 0,
+              "tn": 1702,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1010,
+              "negative": 682,
+              "tp": 1010,
+              "tn": 162,
+              "balanced_accuracy": 0.6187683284457478
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1014,
+              "negative": 678,
+              "tp": 1014,
+              "tn": 144,
+              "balanced_accuracy": 0.6061946902654867
+            },
+            {
+              "name": "terminal_now",
+              "positive": 156,
+              "negative": 1536,
+              "tp": 0,
+              "tn": 1536,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 72,
+              "negative": 1620,
+              "tp": 0,
+              "tn": 1620,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 920,
+              "negative": 628,
+              "tp": 898,
+              "tn": 124,
+              "balanced_accuracy": 0.5867695929105511
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 924,
+              "negative": 624,
+              "tp": 910,
+              "tn": 106,
+              "balanced_accuracy": 0.5773601398601399
+            },
+            {
+              "name": "terminal_now",
+              "positive": 126,
+              "negative": 1422,
+              "tp": 0,
+              "tn": 1422,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 60,
+              "negative": 1488,
+              "tp": 0,
+              "tn": 1488,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "S1_Ours_1210",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "S1_B1_1211",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "S1_B2_1211",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1372,
+              "tn": 872,
+              "balanced_accuracy": 1.0
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1372,
+              "tn": 868,
+              "balanced_accuracy": 0.998546511627907
+            },
+            {
+              "name": "terminal_now",
+              "positive": 78,
+              "negative": 2166,
+              "tp": 72,
+              "tn": 2160,
+              "balanced_accuracy": 0.960153419987215
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 38,
+              "negative": 2206,
+              "tp": 34,
+              "tn": 2204,
+              "balanced_accuracy": 0.9469151118957866
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1370,
+              "tn": 870,
+              "balanced_accuracy": 0.9981243480354134
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1374,
+              "tn": 868,
+              "balanced_accuracy": 0.9992732558139534
+            },
+            {
+              "name": "terminal_now",
+              "positive": 72,
+              "negative": 2172,
+              "tp": 34,
+              "tn": 2132,
+              "balanced_accuracy": 0.726903007980356
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 34,
+              "negative": 2210,
+              "tp": 20,
+              "tn": 2196,
+              "balanced_accuracy": 0.790950226244344
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1336,
+              "negative": 896,
+              "tp": 1336,
+              "tn": 159,
+              "balanced_accuracy": 0.5887276785714286
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1340,
+              "negative": 892,
+              "tp": 1340,
+              "tn": 156,
+              "balanced_accuracy": 0.5874439461883408
+            },
+            {
+              "name": "terminal_now",
+              "positive": 60,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 20,
+              "negative": 2212,
+              "tp": 0,
+              "tn": 2212,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1070,
+              "negative": 742,
+              "tp": 952,
+              "tn": 390,
+              "balanced_accuracy": 0.7076630475854598
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1074,
+              "negative": 738,
+              "tp": 981,
+              "tn": 382,
+              "balanced_accuracy": 0.7155114986904059
+            },
+            {
+              "name": "terminal_now",
+              "positive": 198,
+              "negative": 1614,
+              "tp": 18,
+              "tn": 1556,
+              "balanced_accuracy": 0.5274867635462431
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 110,
+              "negative": 1702,
+              "tp": 8,
+              "tn": 1642,
+              "balanced_accuracy": 0.5187373143894883
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1010,
+              "negative": 682,
+              "tp": 1010,
+              "tn": 310,
+              "balanced_accuracy": 0.7272727272727273
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1014,
+              "negative": 678,
+              "tp": 1014,
+              "tn": 281,
+              "balanced_accuracy": 0.7072271386430679
+            },
+            {
+              "name": "terminal_now",
+              "positive": 156,
+              "negative": 1536,
+              "tp": 36,
+              "tn": 1500,
+              "balanced_accuracy": 0.6036658653846154
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 72,
+              "negative": 1620,
+              "tp": 22,
+              "tn": 1570,
+              "balanced_accuracy": 0.6373456790123457
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 920,
+              "negative": 628,
+              "tp": 849,
+              "tn": 144,
+              "balanced_accuracy": 0.5760627250069232
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 924,
+              "negative": 624,
+              "tp": 871,
+              "tn": 122,
+              "balanced_accuracy": 0.5690767565767566
+            },
+            {
+              "name": "terminal_now",
+              "positive": 126,
+              "negative": 1422,
+              "tp": 36,
+              "tn": 1388,
+              "balanced_accuracy": 0.6309021498894917
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 60,
+              "negative": 1488,
+              "tp": 18,
+              "tn": 1440,
+              "balanced_accuracy": 0.6338709677419355
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "S1_Ours_1211",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "L3_B1_1209",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "L3_B2_1209",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1314,
+              "tn": 870,
+              "balanced_accuracy": 0.9777161847701072
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1204,
+              "tn": 866,
+              "balanced_accuracy": 0.9363479262672811
+            },
+            {
+              "name": "terminal_now",
+              "positive": 78,
+              "negative": 2166,
+              "tp": 16,
+              "tn": 2148,
+              "balanced_accuracy": 0.598408977910363
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 38,
+              "negative": 2206,
+              "tp": 0,
+              "tn": 2206,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1259,
+              "tn": 872,
+              "balanced_accuracy": 0.9588192419825072
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1132,
+              "tn": 868,
+              "balanced_accuracy": 0.9113372093023255
+            },
+            {
+              "name": "terminal_now",
+              "positive": 72,
+              "negative": 2172,
+              "tp": 14,
+              "tn": 2150,
+              "balanced_accuracy": 0.592157765500307
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 34,
+              "negative": 2210,
+              "tp": 0,
+              "tn": 2210,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1336,
+              "negative": 896,
+              "tp": 914,
+              "tn": 896,
+              "balanced_accuracy": 0.8420658682634731
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1340,
+              "negative": 892,
+              "tp": 875,
+              "tn": 892,
+              "balanced_accuracy": 0.8264925373134329
+            },
+            {
+              "name": "terminal_now",
+              "positive": 60,
+              "negative": 2172,
+              "tp": 53,
+              "tn": 2160,
+              "balanced_accuracy": 0.9389042357274402
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 20,
+              "negative": 2212,
+              "tp": 0,
+              "tn": 2212,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1070,
+              "negative": 742,
+              "tp": 616,
+              "tn": 677,
+              "balanced_accuracy": 0.7440499282061617
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1074,
+              "negative": 738,
+              "tp": 630,
+              "tn": 671,
+              "balanced_accuracy": 0.7479031354559356
+            },
+            {
+              "name": "terminal_now",
+              "positive": 198,
+              "negative": 1614,
+              "tp": 0,
+              "tn": 1614,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 110,
+              "negative": 1702,
+              "tp": 0,
+              "tn": 1702,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1010,
+              "negative": 682,
+              "tp": 793,
+              "tn": 378,
+              "balanced_accuracy": 0.6697003571324874
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1014,
+              "negative": 678,
+              "tp": 793,
+              "tn": 376,
+              "balanced_accuracy": 0.6683117767188564
+            },
+            {
+              "name": "terminal_now",
+              "positive": 156,
+              "negative": 1536,
+              "tp": 0,
+              "tn": 1536,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 72,
+              "negative": 1620,
+              "tp": 0,
+              "tn": 1620,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 920,
+              "negative": 628,
+              "tp": 567,
+              "tn": 538,
+              "balanced_accuracy": 0.7364961229576295
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 924,
+              "negative": 624,
+              "tp": 567,
+              "tn": 532,
+              "balanced_accuracy": 0.7331002331002331
+            },
+            {
+              "name": "terminal_now",
+              "positive": 126,
+              "negative": 1422,
+              "tp": 0,
+              "tn": 1422,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 60,
+              "negative": 1488,
+              "tp": 0,
+              "tn": 1488,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "L3_Ours_1209",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "L3_B1_1210",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "L3_B2_1210",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1364,
+              "tn": 868,
+              "balanced_accuracy": 0.9947909701233049
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1366,
+              "tn": 866,
+              "balanced_accuracy": 0.9952142053370485
+            },
+            {
+              "name": "terminal_now",
+              "positive": 78,
+              "negative": 2166,
+              "tp": 0,
+              "tn": 2166,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 38,
+              "negative": 2206,
+              "tp": 0,
+              "tn": 2206,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1364,
+              "tn": 870,
+              "balanced_accuracy": 0.9959377591141305
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1368,
+              "tn": 868,
+              "balanced_accuracy": 0.997093023255814
+            },
+            {
+              "name": "terminal_now",
+              "positive": 72,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 34,
+              "negative": 2210,
+              "tp": 0,
+              "tn": 2210,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1336,
+              "negative": 896,
+              "tp": 1322,
+              "tn": 896,
+              "balanced_accuracy": 0.9947604790419162
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1340,
+              "negative": 892,
+              "tp": 1323,
+              "tn": 892,
+              "balanced_accuracy": 0.9936567164179104
+            },
+            {
+              "name": "terminal_now",
+              "positive": 60,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 20,
+              "negative": 2212,
+              "tp": 0,
+              "tn": 2212,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1070,
+              "negative": 742,
+              "tp": 1048,
+              "tn": 281,
+              "balanced_accuracy": 0.6790727258986825
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1074,
+              "negative": 738,
+              "tp": 1056,
+              "tn": 275,
+              "balanced_accuracy": 0.677934474875475
+            },
+            {
+              "name": "terminal_now",
+              "positive": 198,
+              "negative": 1614,
+              "tp": 0,
+              "tn": 1614,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 110,
+              "negative": 1702,
+              "tp": 0,
+              "tn": 1702,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1010,
+              "negative": 682,
+              "tp": 1006,
+              "tn": 172,
+              "balanced_accuracy": 0.624119508725066
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1014,
+              "negative": 678,
+              "tp": 1010,
+              "tn": 168,
+              "balanced_accuracy": 0.6219214187219633
+            },
+            {
+              "name": "terminal_now",
+              "positive": 156,
+              "negative": 1536,
+              "tp": 0,
+              "tn": 1536,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 72,
+              "negative": 1620,
+              "tp": 0,
+              "tn": 1620,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 920,
+              "negative": 628,
+              "tp": 892,
+              "tn": 285,
+              "balanced_accuracy": 0.7116934367211298
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 924,
+              "negative": 624,
+              "tp": 902,
+              "tn": 270,
+              "balanced_accuracy": 0.7044413919413919
+            },
+            {
+              "name": "terminal_now",
+              "positive": 126,
+              "negative": 1422,
+              "tp": 0,
+              "tn": 1422,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 60,
+              "negative": 1488,
+              "tp": 0,
+              "tn": 1488,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "L3_Ours_1210",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "L3_B1_1211",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    },
+    {
+      "tag": "L3_B2_1211",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1326,
+              "tn": 870,
+              "balanced_accuracy": 0.9820893626126728
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1356,
+              "tn": 862,
+              "balanced_accuracy": 0.9892763369413782
+            },
+            {
+              "name": "terminal_now",
+              "positive": 78,
+              "negative": 2166,
+              "tp": 0,
+              "tn": 2166,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 38,
+              "negative": 2206,
+              "tp": 0,
+              "tn": 2206,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1372,
+              "negative": 872,
+              "tp": 1300,
+              "tn": 868,
+              "balanced_accuracy": 0.9714673549629551
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1376,
+              "negative": 868,
+              "tp": 1358,
+              "tn": 854,
+              "balanced_accuracy": 0.9853947861965491
+            },
+            {
+              "name": "terminal_now",
+              "positive": 72,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 34,
+              "negative": 2210,
+              "tp": 0,
+              "tn": 2210,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1336,
+              "negative": 896,
+              "tp": 1318,
+              "tn": 851,
+              "balanced_accuracy": 0.9681518659110351
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1340,
+              "negative": 892,
+              "tp": 1323,
+              "tn": 848,
+              "balanced_accuracy": 0.9689930392878656
+            },
+            {
+              "name": "terminal_now",
+              "positive": 60,
+              "negative": 2172,
+              "tp": 0,
+              "tn": 2172,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 20,
+              "negative": 2212,
+              "tp": 0,
+              "tn": 2212,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1070,
+              "negative": 742,
+              "tp": 1056,
+              "tn": 319,
+              "balanced_accuracy": 0.7084175126583873
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1074,
+              "negative": 738,
+              "tp": 1062,
+              "tn": 309,
+              "balanced_accuracy": 0.7037630013171641
+            },
+            {
+              "name": "terminal_now",
+              "positive": 198,
+              "negative": 1614,
+              "tp": 0,
+              "tn": 1614,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 110,
+              "negative": 1702,
+              "tp": 0,
+              "tn": 1702,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 1010,
+              "negative": 682,
+              "tp": 1006,
+              "tn": 168,
+              "balanced_accuracy": 0.621186957405418
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 1014,
+              "negative": 678,
+              "tp": 1010,
+              "tn": 166,
+              "balanced_accuracy": 0.620446492468276
+            },
+            {
+              "name": "terminal_now",
+              "positive": 156,
+              "negative": 1536,
+              "tp": 0,
+              "tn": 1536,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 72,
+              "negative": 1620,
+              "tp": 0,
+              "tn": 1620,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": [
+            {
+              "name": "anchor_before",
+              "positive": 920,
+              "negative": 628,
+              "tp": 742,
+              "tn": 314,
+              "balanced_accuracy": 0.6532608695652173
+            },
+            {
+              "name": "anchor_including_now",
+              "positive": 924,
+              "negative": 624,
+              "tp": 748,
+              "tn": 294,
+              "balanced_accuracy": 0.6403388278388278
+            },
+            {
+              "name": "terminal_now",
+              "positive": 126,
+              "negative": 1422,
+              "tp": 0,
+              "tn": 1422,
+              "balanced_accuracy": 0.5
+            },
+            {
+              "name": "ready_to_stop",
+              "positive": 60,
+              "negative": 1488,
+              "tp": 0,
+              "tn": 1488,
+              "balanced_accuracy": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "L3_Ours_1211",
+      "families": [
+        {
+          "family_id": "V15_NEW_0757bea729cfcf291401",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0933cbe9733f701c4933",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+          "split": "fit",
+          "guarded_fork_both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_006197dc83ec323cae10",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_068de151fa7683275c29",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        },
+        {
+          "family_id": "V15_NEW_0705ac616e1f9e215208",
+          "split": "check",
+          "guarded_fork_both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "fork_pairs": 4,
+          "native_stop_forks": 0,
+          "learned_exact_state": []
+        }
+      ]
+    }
+  ],
+  "optimizer_updates": 0,
+  "GPU_used": false,
+  "diagnostic_scope": "Frozen cached-feature checkpoint readout, not online task success; exact state head is trained only for B2."
+}

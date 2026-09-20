@@ -1,0 +1,1692 @@
+{
+  "status": "INITIAL_STATE_CALIBRATION_MEASURED",
+  "families": [
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_1L",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1722,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1727,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_1R",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [
+            {
+              "step": 336,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 337,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 338,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [
+            {
+              "step": 336,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 337,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 338,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1722,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1727,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_2L",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 28,
+          "forward_steps": 4,
+          "witnesses": [
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 28,
+          "forward_steps": 4,
+          "witnesses": [
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1726,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1731,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_2R",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 28,
+          "forward_steps": 4,
+          "witnesses": [
+            {
+              "step": 337,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 338,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 28,
+          "forward_steps": 4,
+          "witnesses": [
+            {
+              "step": 337,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 338,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1726,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1731,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_3L",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 30,
+          "forward_steps": 6,
+          "witnesses": [
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 30,
+          "forward_steps": 6,
+          "witnesses": [
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1730,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1735,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_3R",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 30,
+          "forward_steps": 6,
+          "witnesses": [
+            {
+              "step": 338,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 348,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 349,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 30,
+          "forward_steps": 6,
+          "witnesses": [
+            {
+              "step": 338,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 348,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 349,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1730,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1735,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_4L",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579776763916,
+            0.13123798370361328,
+            10.951504707336426
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951495170593262
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            -0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 32,
+          "forward_steps": 8,
+          "witnesses": [
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 32,
+          "forward_steps": 8,
+          "witnesses": [
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1734,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1739,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    },
+    {
+      "family_id": "WF_MULTI_f48017d7a035bf5377bc16cf_NEUTRAL_4R",
+      "house": "2n8kARJN3HM",
+      "starts": {
+        "H_A": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            6.060579299926758,
+            0.13123798370361328,
+            10.951499938964844
+          ],
+          "rotation": [
+            0.9999999993875,
+            0,
+            3.499999999285417e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {},
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 32,
+          "forward_steps": 8,
+          "witnesses": [
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 348,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 349,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 350,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 351,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 32,
+          "forward_steps": 8,
+          "witnesses": [
+            {
+              "step": 339,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 340,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 341,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 342,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 343,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 344,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 345,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 346,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 347,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 348,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 349,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 350,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            },
+            {
+              "step": 351,
+              "role": "terminal",
+              "instances": [
+                519
+              ]
+            }
+          ],
+          "pass_control": false
+        }
+      },
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 1734,
+        "trace_initializations": 5,
+        "explicit_resets": 5,
+        "observation_records": 1739,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": false
+    }
+  ],
+  "unattempted_families": [],
+  "actual_decisions": 13824,
+  "model_loads": 0,
+  "optimizer_updates": 0,
+  "training_admission": false
+}

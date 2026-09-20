@@ -1,0 +1,149 @@
+{
+  "result": {
+    "status": "FIXED_V15_MEASUREMENTS_COMPLETE",
+    "complete_models": 18,
+    "complete_continuations": 216,
+    "expected_continuations": 216,
+    "remaining": 0,
+    "conditions": 12,
+    "check_houses": 1,
+    "counts": {
+      "fail": 128,
+      "unknown": 87,
+      "pass": 1
+    },
+    "input_prefix_matched": true,
+    "action_prefix_matched": true,
+    "logits_bitwise_equal": true,
+    "max_logit_delta": 0.0,
+    "argmax_flip_count": 0,
+    "strict_complete_known_label_comparisons": 0,
+    "positive_complete_known_label_comparisons": [],
+    "positive_scope": "History-dependent teacher action learning on trained debug families; shared by B1, B2 and Ours.",
+    "new_house_teacher_fork_success": "0/12 for every size, seed and arm",
+    "crossed_supervision_advantage": "NOT_ESTABLISHED",
+    "adopted": false,
+    "publication_ready": false,
+    "research_status": "EXPLORATORY_PILOT_MEASURED_CLAIM_NOT_ESTABLISHED",
+    "gpu_session_hours": 3.2033758605917035,
+    "memory_updates": 10800,
+    "base_updates": 0,
+    "raw_data_training_admission": false,
+    "run_sessions": {
+      "0": "continuation_run_003",
+      "1": "continuation_run_004",
+      "2": "continuation_run_004",
+      "3": "continuation_run_004",
+      "4": "continuation_run_004",
+      "5": "continuation_run_004",
+      "6": "continuation_run_004",
+      "7": "continuation_run_004",
+      "8": "continuation_run_004",
+      "9": "continuation_run_004",
+      "10": "continuation_run_004",
+      "11": "continuation_run_004"
+    },
+    "stop_reason": "All fixed models and continuations measured. No additional tuning on this exposed CHECK set or architecture/task switch."
+  },
+  "cpu_acceptance": {
+    "RAW_CPU_TEST_RESULT.json": {
+      "passed": true,
+      "tests": 3,
+      "scope": "Raw causal window, complete sensor pose, frozen SEE2 stop/unknown contracts. No simulator or learned model validation."
+    },
+    "CPU_TEST_RESULT.json": {
+      "passed": true,
+      "actual_new_qwen_feature_rows": 2048,
+      "feature_part_sha256": "8b4a1dbece9c955d46230ba1b977001df386ca9df259a790c50beb2acb050fbf",
+      "ragged_final_state_check": true,
+      "future_query_cannot_change_memory_or_action": true,
+      "critical_step": 29,
+      "supervision_step": 164,
+      "event_gap": 135,
+      "actual_disposable_optimizer_updates": 6,
+      "runs": [
+        {
+          "arm": "B1",
+          "disposable_updates": 2,
+          "late_loss_writer_gradient_norm": 4.0653532778378576e-05,
+          "writer_changed": true,
+          "recurrent_changed": true,
+          "action_changed": true
+        },
+        {
+          "arm": "B2",
+          "disposable_updates": 2,
+          "late_loss_writer_gradient_norm": 1.988921212614514e-05,
+          "writer_changed": true,
+          "recurrent_changed": true,
+          "action_changed": true
+        },
+        {
+          "arm": "Ours",
+          "disposable_updates": 2,
+          "late_loss_writer_gradient_norm": 1.3296951692609582e-05,
+          "writer_changed": true,
+          "recurrent_changed": true,
+          "action_changed": true
+        }
+      ],
+      "gpu_hours": 0,
+      "formal_method_comparison": false,
+      "encoder_final_fingerprint_required_before_formal_training": true
+    },
+    "CONTINUATION_CPU_TEST_RESULT.json": {
+      "passed": true,
+      "checks": [
+        "finite_float_difference_logged",
+        "argmax_flip_rejected",
+        "processed_mismatch_rejected",
+        "intentional_method_difference_ends_prefix",
+        "native_STOP_preserved",
+        "STOP_and_motion_use_500_budget"
+      ],
+      "simulator_loaded": false,
+      "base_model_loaded": false,
+      "method_benefit_measured": false
+    },
+    "CONTINUATION_STORE_TEST_RESULT.json": {
+      "passed": true,
+      "actual_store_created_and_rehashed": true,
+      "outside_v15_rejected_before_creation": true,
+      "simulator_loaded": false,
+      "GPU_used": false
+    },
+    "REVIEW_CPU_TEST_RESULT.json": {
+      "passed": true,
+      "checks": [
+        "complete_groups_resume",
+        "partial_group_excluded_without_losing_complete_groups",
+        "duplicate_group_rejected",
+        "unsealed_group_rejected",
+        "mutated_parameters_not_admitted",
+        "seal_matches_initial_identity",
+        "different_bases_not_merged"
+      ],
+      "model_loaded": false,
+      "simulator_loaded": false
+    },
+    "runtime_r2/CPU_TEST_RESULT.json": {
+      "passed": true,
+      "checks": [
+        "exact_remaining_ranks_18_through_215",
+        "all_18_models_per_remaining_condition",
+        "prior_complete_group_sealed",
+        "Qwen_forward_AST_identical",
+        "prefix_audit_AST_identical",
+        "initialization_AST_identical"
+      ],
+      "prior_retained_rollouts": 18,
+      "next_scheduled_rollouts": 198,
+      "policy_updates": 0,
+      "GPU_used": false
+    }
+  },
+  "recomputed_training": "TRAINING_REVIEW.json",
+  "recomputed_continuations": "CONTINUATION_REVIEW.json",
+  "resource_accounting": "RESOURCE_REVIEW.json",
+  "source_lock": "SOURCE_LOCK.json"
+}

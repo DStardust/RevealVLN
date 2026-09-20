@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "actual_new_qwen_feature_rows": 2048,
+  "feature_part_sha256": "8b4a1dbece9c955d46230ba1b977001df386ca9df259a790c50beb2acb050fbf",
+  "ragged_final_state_check": true,
+  "future_query_cannot_change_memory_or_action": true,
+  "critical_step": 29,
+  "supervision_step": 164,
+  "event_gap": 135,
+  "actual_disposable_optimizer_updates": 6,
+  "runs": [
+    {
+      "arm": "B1",
+      "disposable_updates": 2,
+      "late_loss_writer_gradient_norm": 4.0653532778378576e-05,
+      "writer_changed": true,
+      "recurrent_changed": true,
+      "action_changed": true
+    },
+    {
+      "arm": "B2",
+      "disposable_updates": 2,
+      "late_loss_writer_gradient_norm": 1.988921212614514e-05,
+      "writer_changed": true,
+      "recurrent_changed": true,
+      "action_changed": true
+    },
+    {
+      "arm": "Ours",
+      "disposable_updates": 2,
+      "late_loss_writer_gradient_norm": 1.3296951692609582e-05,
+      "writer_changed": true,
+      "recurrent_changed": true,
+      "action_changed": true
+    }
+  ],
+  "gpu_hours": 0,
+  "formal_method_comparison": false,
+  "encoder_final_fingerprint_required_before_formal_training": true
+}

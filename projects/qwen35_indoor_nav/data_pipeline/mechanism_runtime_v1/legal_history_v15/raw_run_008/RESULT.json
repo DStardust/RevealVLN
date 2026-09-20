@@ -1,0 +1,1300 @@
+{
+  "status": "INITIAL_STATE_CALIBRATION_MEASURED",
+  "families": [
+    {
+      "family_id": "V15_NEW_0757bea729cfcf291401",
+      "house": "EU6Fwq7SyZv",
+      "starts": {
+        "H_A": {
+          "position": [
+            -0.16391506791114807,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            -0.16391506791114807,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            -0.16391701996326447,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            -0.16391701996326447,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 177
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 263
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 273
+        },
+        "H_A_N__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 221
+        },
+        "H_A_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 307
+        },
+        "H_A_N__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 317
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 177
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 263
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 273
+        },
+        "H_B_N__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 221
+        },
+        "H_B_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 307
+        },
+        "H_B_N__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 317
+        }
+      },
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A:filler": {
+          "complete": true,
+          "motion_steps": 70,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 12,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N:filler": {
+          "complete": true,
+          "motion_steps": 70,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 12,
+          "witnesses": [],
+          "pass_control": true
+        }
+      },
+      "pose_comparison": "Exact positions and rotation coefficients up to quaternion sign only; no tolerance, state changes, or RGB transformations.",
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 4012,
+        "trace_initializations": 17,
+        "explicit_resets": 17,
+        "observation_records": 4029,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": true
+    },
+    {
+      "family_id": "V15_NEW_0933cbe9733f701c4933",
+      "house": "EU6Fwq7SyZv",
+      "starts": {
+        "H_A": {
+          "position": [
+            -0.16391506791114807,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            -0.16391506791114807,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            -0.16391701996326447,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            -0.16391701996326447,
+            3.6180613040924072,
+            7.732137680053711
+          ],
+          "rotation": [
+            0.9999999996875,
+            0,
+            2.4999999997395836e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 180
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 266
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 276
+        },
+        "H_A_N__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 224
+        },
+        "H_A_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 310
+        },
+        "H_A_N__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 320
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 180
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 266
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 276
+        },
+        "H_B_N__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 224
+        },
+        "H_B_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 310
+        },
+        "H_B_N__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 320
+        }
+      },
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A:filler": {
+          "complete": true,
+          "motion_steps": 70,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 12,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N:filler": {
+          "complete": true,
+          "motion_steps": 70,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 12,
+          "witnesses": [],
+          "pass_control": true
+        }
+      },
+      "pose_comparison": "Exact positions and rotation coefficients up to quaternion sign only; no tolerance, state changes, or RGB transformations.",
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 4048,
+        "trace_initializations": 17,
+        "explicit_resets": 17,
+        "observation_records": 4065,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": true
+    },
+    {
+      "family_id": "V15_NEW_0973fff77b5b7f1dcb59",
+      "house": "EU6Fwq7SyZv",
+      "starts": {
+        "H_A": {
+          "position": [
+            0.771670937538147,
+            3.6301159858703613,
+            5.8914313316345215
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            0.771670937538147,
+            3.6301159858703613,
+            5.891430377960205
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            0.7716708779335022,
+            3.6301159858703613,
+            5.8914337158203125
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            0.7716708779335022,
+            3.6301159858703613,
+            5.891432762145996
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 188
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 236
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 308
+        },
+        "H_A_N__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 246
+        },
+        "H_A_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 294
+        },
+        "H_A_N__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 366
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 188
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 236
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 308
+        },
+        "H_B_N__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 246
+        },
+        "H_B_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 294
+        },
+        "H_B_N__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 366
+        }
+      },
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A:filler": {
+          "complete": true,
+          "motion_steps": 100,
+          "forward_steps": 38,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 58,
+          "forward_steps": 24,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N:filler": {
+          "complete": true,
+          "motion_steps": 100,
+          "forward_steps": 38,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 58,
+          "forward_steps": 24,
+          "witnesses": [],
+          "pass_control": true
+        }
+      },
+      "pose_comparison": "Exact positions and rotation coefficients up to quaternion sign only; no tolerance, state changes, or RGB transformations.",
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 4160,
+        "trace_initializations": 17,
+        "explicit_resets": 17,
+        "observation_records": 4177,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": true
+    },
+    {
+      "family_id": "V15_NEW_006197dc83ec323cae10",
+      "house": "wc2JMjhGNzB",
+      "starts": {
+        "H_A": {
+          "position": [
+            -6.60502290725708,
+            -0.001953125,
+            -6.086345195770264
+          ],
+          "rotation": [
+            0.9999999550000004,
+            0,
+            0.00029999999550000005,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            -6.60502290725708,
+            -0.001953125,
+            -6.086345195770264
+          ],
+          "rotation": [
+            0.9999999550000004,
+            0,
+            0.00029999999550000005,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            -6.605024814605713,
+            -0.001953125,
+            -6.086345195770264
+          ],
+          "rotation": [
+            0.9999999550000004,
+            0,
+            0.00029999999550000005,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            -6.605024814605713,
+            -0.001953125,
+            -6.086345195770264
+          ],
+          "rotation": [
+            0.9999999550000004,
+            0,
+            0.00029999999550000005,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 140
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 224
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 222
+        },
+        "H_A_N__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 204
+        },
+        "H_A_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 288
+        },
+        "H_A_N__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 286
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 140
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 224
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 222
+        },
+        "H_B_N__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 204
+        },
+        "H_B_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 288
+        },
+        "H_B_N__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 286
+        }
+      },
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A:filler": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 64,
+          "forward_steps": 34,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N:filler": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 64,
+          "forward_steps": 34,
+          "witnesses": [],
+          "pass_control": true
+        }
+      },
+      "pose_comparison": "Exact positions and rotation coefficients up to quaternion sign only; no tolerance, state changes, or RGB transformations.",
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 3434,
+        "trace_initializations": 17,
+        "explicit_resets": 17,
+        "observation_records": 3451,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": true
+    },
+    {
+      "family_id": "V15_NEW_068de151fa7683275c29",
+      "house": "wc2JMjhGNzB",
+      "starts": {
+        "H_A": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.08634614944458
+          ],
+          "rotation": [
+            0.999999995,
+            0,
+            -9.999999983333334e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.08634614944458
+          ],
+          "rotation": [
+            0.999999995,
+            0,
+            -9.999999983333334e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.086345195770264
+          ],
+          "rotation": [
+            0.999999995,
+            0,
+            -9.999999983333334e-05,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.086345195770264
+          ],
+          "rotation": [
+            0.999999995,
+            0,
+            -9.999999983333334e-05,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 127
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 211
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 209
+        },
+        "H_A_N__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 171
+        },
+        "H_A_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 255
+        },
+        "H_A_N__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 253
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 127
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 211
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 209
+        },
+        "H_B_N__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 171
+        },
+        "H_B_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 255
+        },
+        "H_B_N__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 253
+        }
+      },
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A:filler": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N:filler": {
+          "complete": true,
+          "motion_steps": 26,
+          "forward_steps": 2,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        }
+      },
+      "pose_comparison": "Exact positions and rotation coefficients up to quaternion sign only; no tolerance, state changes, or RGB transformations.",
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 3118,
+        "trace_initializations": 17,
+        "explicit_resets": 17,
+        "observation_records": 3135,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": true
+    },
+    {
+      "family_id": "V15_NEW_0705ac616e1f9e215208",
+      "house": "wc2JMjhGNzB",
+      "starts": {
+        "H_A": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.086342811584473
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_A_N": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.086342811584473
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.086347579956055
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        },
+        "H_B_N": {
+          "position": [
+            -6.6050238609313965,
+            -0.001953125,
+            -6.086347579956055
+          ],
+          "rotation": [
+            0.9999999846875001,
+            0,
+            0.00017499999910677085,
+            0
+          ],
+          "attempt": 0
+        }
+      },
+      "grid": {
+        "H_A__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 115
+        },
+        "H_A__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 179
+        },
+        "H_A__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 197
+        },
+        "H_A_N__C0": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 159
+        },
+        "H_A_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "fail"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 223
+        },
+        "H_A_N__C_B": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 241
+        },
+        "H_B__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 115
+        },
+        "H_B__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 179
+        },
+        "H_B__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 197
+        },
+        "H_B_N__C0": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 159
+        },
+        "H_B_N__C_A": {
+          "labels": {
+            "task_A": "pass",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 223
+        },
+        "H_B_N__C_B": {
+          "labels": {
+            "task_A": "fail",
+            "task_B": "pass"
+          },
+          "terminal_only": "pass",
+          "collisions": 0,
+          "decisions": 241
+        }
+      },
+      "exact_raw_join": true,
+      "training_admission": false,
+      "neutral_controls": {
+        "H_A:filler": {
+          "complete": true,
+          "motion_steps": 34,
+          "forward_steps": 8,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_A_N:filler": {
+          "complete": true,
+          "motion_steps": 34,
+          "forward_steps": 8,
+          "witnesses": [],
+          "pass_control": true
+        },
+        "H_B_N": {
+          "complete": true,
+          "motion_steps": 44,
+          "forward_steps": 14,
+          "witnesses": [],
+          "pass_control": true
+        }
+      },
+      "pose_comparison": "Exact positions and rotation coefficients up to quaternion sign only; no tolerance, state changes, or RGB transformations.",
+      "reason": "Initial-state interface only; true neutral detour and independent data remain required.",
+      "backend_counts": {
+        "simulator_constructions": 1,
+        "primitive_actions": 2834,
+        "trace_initializations": 17,
+        "explicit_resets": 17,
+        "observation_records": 2851,
+        "explicit_reconstructions": 0
+      },
+      "relations_pass": true
+    }
+  ],
+  "unattempted_families": [],
+  "actual_decisions": 21678,
+  "model_loads": 0,
+  "optimizer_updates": 0,
+  "training_admission": false
+}

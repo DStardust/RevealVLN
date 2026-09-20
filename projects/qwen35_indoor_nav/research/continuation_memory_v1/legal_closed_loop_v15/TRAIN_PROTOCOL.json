@@ -1,0 +1,67 @@
+{
+  "id": "Q35N_V15_FIXED_TWO_SIZE_MEMORY_PILOT",
+  "gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "B1",
+    "B2",
+    "Ours"
+  ],
+  "data_sizes": {
+    "S1": [
+      "V15_NEW_0757bea729cfcf291401"
+    ],
+    "L3": [
+      "V15_NEW_0757bea729cfcf291401",
+      "V15_NEW_0933cbe9733f701c4933",
+      "V15_NEW_0973fff77b5b7f1dcb59"
+    ]
+  },
+  "check_families": [
+    "V15_NEW_006197dc83ec323cae10",
+    "V15_NEW_068de151fa7683275c29",
+    "V15_NEW_0705ac616e1f9e215208"
+  ],
+  "steps_per_arm": 600,
+  "optimizer_updates": 10800,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "data_sha256": "636d1a653263b586efb250ed32584497cba0857265fb8d814753e2dad854af10",
+  "source_hashes": {
+    "research/continuation_memory_v1/legal_closed_loop_v15/objective.py": "6e6a15af378ec5fb4fcf6339928b6a328c3e269a189b9c3c400e8fe66119c197",
+    "research/continuation_memory_v1/legal_closed_loop_v15/train.py": "736a8471dfed2fcf713effcfe1a311a87deca986803215ddffb87905344c1392",
+    "research/continuation_memory_v1/legal_closed_loop_v15/launch_training.py": "43b98162f04203660c33b386ad20ca4995f5a28f4abd640304175e5ab89b704d",
+    "research/continuation_memory_v1/legal_closed_loop_v15/CPU_TEST_RESULT.json": "93c24b117c6801176f8cc22abde65a39c87806908a77eebdf9f02c0b4525062a",
+    "research/continuation_memory_v1/legal_closed_loop_v15/DATA.json": "636d1a653263b586efb250ed32584497cba0857265fb8d814753e2dad854af10",
+    "research/continuation_memory_v1/legal_closed_loop_v15/FEATURE_PROTOCOL.json": "f1f690645f274719587bc4fb28467e8484325c359e008ed84f42fd21ab10fa72",
+    "research/continuation_memory_v1/query_semantics_v11/model.py": "625585a090fceb53912803e15a5fcd97a5533de3b5fec4be6aafbd18686a7d45",
+    "research/continuation_memory_v1/contextual_readout_v10/model.py": "5c4d533a58d42285a85c1f960b064c5cd59bc25134c39df528b754c39008672a",
+    "research/continuation_memory_v1/pilot/model.py": "a372e04a36bf333d6f940a2a96056768890edc52ea840936593ea26337e60a19",
+    "research/continuation_memory_v1/cost_teacher_v13/teacher.py": "b579520e7c9e967d4fe51a02c3af908f39664aaecab4a320e09e4bd7b54aa20b",
+    "research/continuation_memory_v1/natural_transfer_v9/DATA.json": "dd9ec6918fecd8810dd0b2ccfdced7eeaa578baf4b89c0d69da8de3d5a63d01b",
+    "research/continuation_memory_v1/fork_balanced_v14/strong_state_run_001/INITIAL_1209.pt": "28bfdc5aa411b6cac80c847e254d0fca4f99472fc6f8e7d5e2c79abfa8994a0e",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1209.json": "bd7ead162f716a197f5f88f636e95aa61904c260ccbf9892807e3422aa4bc483",
+    "research/continuation_memory_v1/fork_balanced_v14/strong_state_run_001/INITIAL_1210.pt": "8bf1b2f1c8090ffeea6cb889dacee465e389d201385e86c55bcee635139e31a5",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1210.json": "a35c952fcdb3fa7fcba0ffe3871cb4f7c79cbbc9b8748c552f1ab66d3e5031b5",
+    "research/continuation_memory_v1/fork_balanced_v14/strong_state_run_001/INITIAL_1211.pt": "48ef1b069354f8ee92760aedf93cbe4789ff7115c7f473c638ed312d6facbad0",
+    "research/continuation_memory_v1/natural_transfer_v9/run_001/SCHEDULE_1211.json": "b6ae2c03065b2c9f2868617812434a9f9908ab4ef6f454e66ebac139d508ae65",
+    "research/continuation_memory_v1/legal_closed_loop_v15/QUERY_STATE_SUFFICIENCY.json": "7c7156dd99f215240e12237275278ea4ff4aefaf6182eb3a021fd35901b245bf",
+    "research/continuation_memory_v1/query_reader_repair_v2/model.py": "83f11060fe551f0866747eb213c45925afd0346e200433e0a1e3241863555222"
+  },
+  "architecture": "Identical V14 runtime memory8x64 and current-feature actor; strong V14 B2 state MLP present in every arm, same saved initial full state per seed. BF16 Qwen encoder unchanged and cached once.",
+  "objective": "Same V14 action CE on minimum-tested-PASS owners + equal family mean real-fork CE + first156 causal-step native KL + ordinary BC. B1 no auxiliary; B2 exact4bit BCE; Ours crossed-outcome BCE. Ragged padding is loss-masked and final memory is selected before padding. Task_T is an explicit history-independent negative control.",
+  "data_exposure": "600 family calls per model; same ordinary schedule and same number of optimizer steps; S1 versus L3 changes unique training families only. New geometry/semantic evidence is allowed to reject invalid data; no model scores used to select families.",
+  "primary_diagnostic": "CHECK genuine teacher-fork both-correct and wrong-memory versus state-matched sham; all three seeds and both data sizes. These are teacher-route decisions, not autonomous task success.",
+  "scope": "One FIT house and one CHECK house; correlated families and task variants. No broad generalization or publication readiness. All18 models complete regardless of scores, no hyperparameter or checkpoint selection.",
+  "next_measurement": "Autonomous legal continuation from the frozen CHECK histories, plus separate ordinary navigation regression before any adoption. Do not label cached teacher metrics as closed-loop SR.",
+  "base_updates": 0,
+  "training_future_query_only_reader": true,
+  "elapsed_gpu_hour_cap": null,
+  "max_concurrent_gpus": 1,
+  "source_coverage_note": "Completed before the first formal training launch; no model scores available and frozen losses/budgets/data split unchanged."
+}

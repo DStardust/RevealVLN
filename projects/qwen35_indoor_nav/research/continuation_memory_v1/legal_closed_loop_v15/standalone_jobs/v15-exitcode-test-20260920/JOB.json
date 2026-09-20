@@ -1,0 +1,24 @@
+{
+  "name": "v15-exitcode-test-20260920",
+  "unit": "q35n-v15-exitcode-test-20260920.service",
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-S",
+    "-B",
+    "-c",
+    "raise SystemExit(7)"
+  ],
+  "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+  "uid": 0,
+  "gid": 0,
+  "environment": {
+    "PATH": "/usr/local/cuda/bin:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/mnt/data_nas/deeprobotics/daiyang/.codex/tmp/arg0/codex-arg0CiovLE:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/ehpc/bin:/root/bin:/usr/local/ehpc/bin:/root/bin",
+    "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:"
+  },
+  "created_unix": 1789864414.9448056,
+  "launcher_pid": 2890287,
+  "launcher_cgroup": "0::/user.slice/user-0.slice/session-569.scope\n",
+  "retries": 0,
+  "ownership": "Same UID/GID as caller, no sudo or privilege change."
+}

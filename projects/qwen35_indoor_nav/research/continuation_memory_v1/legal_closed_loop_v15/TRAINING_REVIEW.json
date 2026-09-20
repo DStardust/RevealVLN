@@ -1,0 +1,1045 @@
+{
+  "completed_models": 18,
+  "expected_models": 18,
+  "rows": [
+    {
+      "tag": "S1_B1_1209",
+      "size": "S1",
+      "seed": 1209,
+      "arm": "B1",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.0062264129519462585,
+          "query_correct": null,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 984,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8208590224385262,
+          "query_correct": null,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 905,
+          "action_owners": 1436,
+          "mean_action_ce": 1.5877324342727661,
+          "query_correct": null,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2850,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5731332580248515,
+        "premature_stops": 12
+      },
+      "initial_state_sha256": "01f3b18c07f75789133089aee332ebcf567df72eec2faacbb3139549befd47bd",
+      "seconds": 168.49778920412064
+    },
+    {
+      "tag": "S1_B2_1209",
+      "size": "S1",
+      "seed": 1209,
+      "arm": "B2",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.005394123960286379,
+          "query_correct": 36,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 972,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8385500758886337,
+          "query_correct": 64,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 841,
+          "action_owners": 1436,
+          "mean_action_ce": 1.6057960589726765,
+          "query_correct": 86,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2855,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5724734365940094,
+        "premature_stops": 15
+      },
+      "initial_state_sha256": "01f3b18c07f75789133089aee332ebcf567df72eec2faacbb3139549befd47bd",
+      "seconds": 168.47249561036006
+    },
+    {
+      "tag": "S1_Ours_1209",
+      "size": "S1",
+      "seed": 1209,
+      "arm": "Ours",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.004744633100926876,
+          "query_correct": 36,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 950,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8533771187067032,
+          "query_correct": 64,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 830,
+          "action_owners": 1436,
+          "mean_action_ce": 1.6641310453414917,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2864,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5750324805577596,
+        "premature_stops": 14
+      },
+      "initial_state_sha256": "01f3b18c07f75789133089aee332ebcf567df72eec2faacbb3139549befd47bd",
+      "seconds": 169.01392000960186
+    },
+    {
+      "tag": "S1_B1_1210",
+      "size": "S1",
+      "seed": 1210,
+      "arm": "B1",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.01048220694065094,
+          "query_correct": null,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 938,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8333355560898781,
+          "query_correct": null,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 876,
+          "action_owners": 1436,
+          "mean_action_ce": 1.4891599416732788,
+          "query_correct": null,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2854,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5774293517072996,
+        "premature_stops": 11
+      },
+      "initial_state_sha256": "6c6a401a41813993156b47e026b91b21aa06faee444dc38fb5f82598ce5f1b17",
+      "seconds": 168.0021418821998
+    },
+    {
+      "tag": "S1_B2_1210",
+      "size": "S1",
+      "seed": 1210,
+      "arm": "B2",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.00587264122441411,
+          "query_correct": 36,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 959,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8082480952143669,
+          "query_correct": 60,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 834,
+          "action_owners": 1436,
+          "mean_action_ce": 1.6165851751963298,
+          "query_correct": 88,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2850,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5715064972639083,
+        "premature_stops": 19
+      },
+      "initial_state_sha256": "6c6a401a41813993156b47e026b91b21aa06faee444dc38fb5f82598ce5f1b17",
+      "seconds": 168.55901527125388
+    },
+    {
+      "tag": "S1_Ours_1210",
+      "size": "S1",
+      "seed": 1210,
+      "arm": "Ours",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.005181695334613323,
+          "query_correct": 36,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 959,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8185691386461258,
+          "query_correct": 64,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 837,
+          "action_owners": 1436,
+          "mean_action_ce": 1.6649816036224365,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2860,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5699490343530973,
+        "premature_stops": 16
+      },
+      "initial_state_sha256": "6c6a401a41813993156b47e026b91b21aa06faee444dc38fb5f82598ce5f1b17",
+      "seconds": 168.42815161170438
+    },
+    {
+      "tag": "S1_B1_1211",
+      "size": "S1",
+      "seed": 1211,
+      "arm": "B1",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.005805187858641148,
+          "query_correct": null,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 972,
+          "action_owners": 1276,
+          "mean_action_ce": 0.7913576886057854,
+          "query_correct": null,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 904,
+          "action_owners": 1436,
+          "mean_action_ce": 1.4600566228230794,
+          "query_correct": null,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2845,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5731216698884964,
+        "premature_stops": 14
+      },
+      "initial_state_sha256": "ee2e585b25bef6ad1bb508943c4038bd01800720a0c47622ea5b95dd1fbf73f9",
+      "seconds": 170.08096175501123
+    },
+    {
+      "tag": "S1_B2_1211",
+      "size": "S1",
+      "seed": 1211,
+      "arm": "B2",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.005640710238367319,
+          "query_correct": 36,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 956,
+          "action_owners": 1276,
+          "mean_action_ce": 0.7835628688335419,
+          "query_correct": 64,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 823,
+          "action_owners": 1436,
+          "mean_action_ce": 1.5822887818018596,
+          "query_correct": 88,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2837,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5728466580311458,
+        "premature_stops": 16
+      },
+      "initial_state_sha256": "ee2e585b25bef6ad1bb508943c4038bd01800720a0c47622ea5b95dd1fbf73f9",
+      "seconds": 170.87883783038706
+    },
+    {
+      "tag": "S1_Ours_1211",
+      "size": "S1",
+      "seed": 1211,
+      "arm": "Ours",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 1,
+          "houses": 1,
+          "fork_pairs": 4,
+          "both_correct": {
+            "correct": 4,
+            "wrong": 0,
+            "sham": 4
+          },
+          "action_correct": 520,
+          "action_owners": 520,
+          "mean_action_ce": 0.005022841971367598,
+          "query_correct": 36,
+          "query_cells": 36
+        },
+        "untrained_fit": {
+          "families": 2,
+          "houses": 1,
+          "fork_pairs": 8,
+          "both_correct": {
+            "correct": 2,
+            "wrong": 0,
+            "sham": 2
+          },
+          "action_correct": 974,
+          "action_owners": 1276,
+          "mean_action_ce": 0.8179813548922539,
+          "query_correct": 64,
+          "query_cells": 72
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 848,
+          "action_owners": 1436,
+          "mean_action_ce": 1.6599227587382,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2847,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5711221034328143,
+        "premature_stops": 12
+      },
+      "initial_state_sha256": "ee2e585b25bef6ad1bb508943c4038bd01800720a0c47622ea5b95dd1fbf73f9",
+      "seconds": 171.1031465320848
+    },
+    {
+      "tag": "L3_B1_1209",
+      "size": "L3",
+      "seed": 1209,
+      "arm": "B1",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1765,
+          "action_owners": 1796,
+          "mean_action_ce": 0.05603315681219101,
+          "query_correct": null,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 832,
+          "action_owners": 1436,
+          "mean_action_ce": 1.4827684164047241,
+          "query_correct": null,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2871,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5624621167778969,
+        "premature_stops": 16
+      },
+      "initial_state_sha256": "01f3b18c07f75789133089aee332ebcf567df72eec2faacbb3139549befd47bd",
+      "seconds": 183.41797743085772
+    },
+    {
+      "tag": "L3_B2_1209",
+      "size": "L3",
+      "seed": 1209,
+      "arm": "B2",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1660,
+          "action_owners": 1796,
+          "mean_action_ce": 0.27206992109616596,
+          "query_correct": 92,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 750,
+          "action_owners": 1436,
+          "mean_action_ce": 1.213094671567281,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2854,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5782090649008751,
+        "premature_stops": 14
+      },
+      "initial_state_sha256": "01f3b18c07f75789133089aee332ebcf567df72eec2faacbb3139549befd47bd",
+      "seconds": 182.65116481902078
+    },
+    {
+      "tag": "L3_Ours_1209",
+      "size": "L3",
+      "seed": 1209,
+      "arm": "Ours",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1781,
+          "action_owners": 1796,
+          "mean_action_ce": 0.038008060306310654,
+          "query_correct": 108,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 830,
+          "action_owners": 1436,
+          "mean_action_ce": 1.486564040184021,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2883,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5641294156511625,
+        "premature_stops": 8
+      },
+      "initial_state_sha256": "01f3b18c07f75789133089aee332ebcf567df72eec2faacbb3139549befd47bd",
+      "seconds": 184.84184691496193
+    },
+    {
+      "tag": "L3_B1_1210",
+      "size": "L3",
+      "seed": 1210,
+      "arm": "B1",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1769,
+          "action_owners": 1796,
+          "mean_action_ce": 0.05063061291972796,
+          "query_correct": null,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 840,
+          "action_owners": 1436,
+          "mean_action_ce": 1.4172500371932983,
+          "query_correct": null,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2832,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5746632099151612,
+        "premature_stops": 14
+      },
+      "initial_state_sha256": "6c6a401a41813993156b47e026b91b21aa06faee444dc38fb5f82598ce5f1b17",
+      "seconds": 182.91174472123384
+    },
+    {
+      "tag": "L3_B2_1210",
+      "size": "L3",
+      "seed": 1210,
+      "arm": "B2",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1781,
+          "action_owners": 1796,
+          "mean_action_ce": 0.03785016015172005,
+          "query_correct": 108,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 858,
+          "action_owners": 1436,
+          "mean_action_ce": 1.3818918466567993,
+          "query_correct": 86,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2865,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5701621597011884,
+        "premature_stops": 15
+      },
+      "initial_state_sha256": "6c6a401a41813993156b47e026b91b21aa06faee444dc38fb5f82598ce5f1b17",
+      "seconds": 185.12079453421757
+    },
+    {
+      "tag": "L3_Ours_1210",
+      "size": "L3",
+      "seed": 1210,
+      "arm": "Ours",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1786,
+          "action_owners": 1796,
+          "mean_action_ce": 0.033398947988947235,
+          "query_correct": 108,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 836,
+          "action_owners": 1436,
+          "mean_action_ce": 1.4332470893859863,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2867,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5657832692066829,
+        "premature_stops": 11
+      },
+      "initial_state_sha256": "6c6a401a41813993156b47e026b91b21aa06faee444dc38fb5f82598ce5f1b17",
+      "seconds": 184.38204919127747
+    },
+    {
+      "tag": "L3_B1_1211",
+      "size": "L3",
+      "seed": 1211,
+      "arm": "B1",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1754,
+          "action_owners": 1796,
+          "mean_action_ce": 0.0904365802804629,
+          "query_correct": null,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 821,
+          "action_owners": 1436,
+          "mean_action_ce": 1.389753262201945,
+          "query_correct": null,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2880,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5644679988423983,
+        "premature_stops": 14
+      },
+      "initial_state_sha256": "ee2e585b25bef6ad1bb508943c4038bd01800720a0c47622ea5b95dd1fbf73f9",
+      "seconds": 185.3596124588512
+    },
+    {
+      "tag": "L3_B2_1211",
+      "size": "L3",
+      "seed": 1211,
+      "arm": "B2",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1750,
+          "action_owners": 1796,
+          "mean_action_ce": 0.10273148367802303,
+          "query_correct": 100,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 843,
+          "action_owners": 1436,
+          "mean_action_ce": 1.3629177808761597,
+          "query_correct": 86,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2864,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5658431882659595,
+        "premature_stops": 20
+      },
+      "initial_state_sha256": "ee2e585b25bef6ad1bb508943c4038bd01800720a0c47622ea5b95dd1fbf73f9",
+      "seconds": 185.24047907907516
+    },
+    {
+      "tag": "L3_Ours_1211",
+      "size": "L3",
+      "seed": 1211,
+      "arm": "Ours",
+      "updates": 600,
+      "scopes": {
+        "trained_fit": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 12,
+            "wrong": 0,
+            "sham": 12
+          },
+          "action_correct": 1761,
+          "action_owners": 1796,
+          "mean_action_ce": 0.06734026099244754,
+          "query_correct": 108,
+          "query_cells": 108
+        },
+        "check": {
+          "families": 3,
+          "houses": 1,
+          "fork_pairs": 12,
+          "both_correct": {
+            "correct": 0,
+            "wrong": 0,
+            "sham": 0
+          },
+          "action_correct": 845,
+          "action_owners": 1436,
+          "mean_action_ce": 1.4110545714696248,
+          "query_correct": 84,
+          "query_cells": 108
+        }
+      },
+      "ordinary_teacher": {
+        "routes": 60,
+        "correct": 2870,
+        "decisions": 3769,
+        "base_correct": 2721,
+        "base_mean_route_ce": 0.6366505290071169,
+        "ce": 0.5643480891982714,
+        "premature_stops": 16
+      },
+      "initial_state_sha256": "ee2e585b25bef6ad1bb508943c4038bd01800720a0c47622ea5b95dd1fbf73f9",
+      "seconds": 185.47386027500033
+    }
+  ],
+  "actual_updates": 10800,
+  "base_updates": 0,
+  "metric_scope": "Teacher-conditioned action/fork diagnostics, without native STOP guard; not autonomous task success or SR.",
+  "uncertainty": "Three seeds reuse the same three CHECK families in one house. Cases and seeds are correlated; no independent-house confidence claim."
+}

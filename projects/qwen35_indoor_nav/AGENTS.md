@@ -1,5 +1,7 @@
 # Q35N 独立路线工作约定
 
+- 2026-09-20 用户要求：后续长任务必须独立于 Codex/终端运行。已验收入口 `research/continuation_memory_v1/legal_closed_loop_v15/standalone.py` 以相同 UID/GID 提交独立 systemd 服务；完整流水线、资源监控、日志和退出记录由程序负责，不以 Codex 轮询或额度为继续条件。断点沿用各协议的完整配对组/模型边界；同名任务拒绝重复、失败不按分数自动重跑。不要因旧任务路径存在而重启已完成的 V15 实验。
+
 - 2026-09-17 当前用户要求针对性修复、推进基础导航及后续方向，必要时上传GitHub新分支交Pro指导。最新入口为 `CURRENT_STATUS.json` 与 `reviews/Q35N_RECOVERY_20260917/REPORT_ZH.md`；下列旧运行/禁止条目按各自历史节点理解，不据此重复借卡或重启已关闭实验。
 - 本轮400步 `ordinary_learnability_v1` 已完成PASS；条件LoRA扩覆盖跳过，小集checkpoint不部署。`deployment/ordinary_v1` 独立接口通过。`ordinary_cycle_recovery_v1` 因干预前数值/动作差异已主动终止，不采纳部分分数；`ordinary_cycle_pair_v2` 因外部任务进入GPU4资源中断；`ordinary_cycle_pair_gpu1_v3` 迁移GPU1后同样因外部任务进入资源中断（19/200）。本节点已关闭，不重试或复用旧run，全部自有进程已清理；按用户兜底方案准备新分支与Pro交接，旧源码及结果保持只读。
 - 用户新增“小物体语言导航”为未来备选1，见 `FUTURE_OPTION_1_SMALL_OBJECT_NAV_ZH.md`，尚无方法新颖性或新数据/训练验收。

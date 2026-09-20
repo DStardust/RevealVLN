@@ -1,0 +1,4 @@
+{
+  "error": "KeyError('source_hashes')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/legal_closed_loop_v15/evaluate_continuations.py\", line 205, in <module>\n    try:main(run)\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/legal_closed_loop_v15/evaluate_continuations.py\", line 52, in main\n    model,policy,initial=base.load_policy(run,c.read(run/'CONFIG.json'))\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_recovery_v5/evaluate.py\", line 67, in load_policy\n    dtype='unchanged BF16 base and FP32 action head', source_hashes=p['source_hashes'],\nKeyError: 'source_hashes'\n"
+}

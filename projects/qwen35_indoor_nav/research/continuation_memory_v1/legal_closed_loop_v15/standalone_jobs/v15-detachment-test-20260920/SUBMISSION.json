@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "systemd-run",
+    "--unit=q35n-v15-detachment-test-20260920.service",
+    "--uid=0",
+    "--gid=0",
+    "--property=WorkingDirectory=/mnt/data_nas/deeprobotics/daiyang/vla",
+    "--property=KillMode=control-group",
+    "--property=TimeoutStopSec=90",
+    "--property=RemainAfterExit=yes",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-S",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/legal_closed_loop_v15/standalone.py",
+    "_worker",
+    "v15-detachment-test-20260920"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "Running as unit: q35n-v15-detachment-test-20260920.service\n"
+}
