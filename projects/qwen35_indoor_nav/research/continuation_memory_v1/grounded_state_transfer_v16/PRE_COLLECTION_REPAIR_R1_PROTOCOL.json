@@ -1,0 +1,93 @@
+{
+  "version": "V16.1",
+  "baseline_commit": "754d574bc98fd49fe30b2be76e30cbc53f0f25c3",
+  "gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "seed": 1209,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "B1",
+    "B2",
+    "Ours"
+  ],
+  "steps_per_arm": 1200,
+  "checkpoint_every": 200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "memory_slots": 8,
+  "memory_width": 64,
+  "feature_width": 2048,
+  "model_memory_gib": 25,
+  "process_rss_gib": 64,
+  "artifact_gib": 40,
+  "min_free_gpu_gib": 2,
+  "shared_gpu": true,
+  "gpu_session_hours": 16,
+  "max_session_hours": 3,
+  "infra_retries": 3,
+  "warmup_indices": 8,
+  "warmup_repeats": 2,
+  "golden_inputs": 16,
+  "collection": {
+    "hubs_per_house": 12,
+    "roles_per_hub": 8,
+    "max_proposals_per_house": 64,
+    "history_cap": 240,
+    "suffix_cap": 240,
+    "full_budget": 500,
+    "environment_seed": 0,
+    "perturbation": [
+      "R",
+      "R",
+      "R",
+      "R",
+      "R",
+      "R",
+      "F"
+    ],
+    "perturb_at": "after anchor witness before return to registered hub",
+    "teacher": "fixed greedy geodesic follower, no learned model",
+    "suffix_programs": [
+      "terminal",
+      "anchor_A then terminal",
+      "anchor_B then terminal"
+    ],
+    "targets_per_role": 4,
+    "neutral_takeover_required": false
+  },
+  "auxiliary_weights": "FIT inverse class frequency normalized by actual weighted valid examples; fixed before training",
+  "loss_weights": {
+    "action": 1.0,
+    "fork": 1.0,
+    "ordinary": 1.0,
+    "preservation_kl": 1.0,
+    "auxiliary": 1.0
+  },
+  "preservation_steps": 156,
+  "selector": "argmax(method_logits), index tie break; no native STOP guard",
+  "primary": "safe_v16 PASS / all planned main conditions, equal house and seed; Ours minus B2",
+  "planned": {
+    "families": 26,
+    "physical_executions": 312,
+    "cross_labels": 936,
+    "models": 9,
+    "conditions": 80,
+    "rollouts": 720,
+    "main_per_arm": 192,
+    "prefix_comparisons": 480
+  },
+  "delta_threshold": 0.1,
+  "test_selection_from_scores": false,
+  "base_updates": 0,
+  "resource_note": "16h planning upper bound including failures, revised only using FIT/DEV actual throughput before TEST freeze. Shared-device timing is not exclusive deployment performance.",
+  "data_manifest_sha256": "8dba04f4a1f2564ff85119fdb5c844c115f57e90833d4382eb6925f01a847af1",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82"
+}

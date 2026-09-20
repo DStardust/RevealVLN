@@ -1,0 +1,468 @@
+{
+  "status": "RUNNING",
+  "snapshot_unix": 1789887365.0729272,
+  "formal_runs": [],
+  "baseline_commit": "754d574bc98fd49fe30b2be76e30cbc53f0f25c3",
+  "unique_certified_families": 18,
+  "families_by_split": {
+    "FIT": 16,
+    "DEV": 2,
+    "TEST": 0
+  },
+  "houses": {
+    "FIT": [
+      "5ZKStnWn8Zo",
+      "QUCTc6BB5sX",
+      "jtcxE69GiFV",
+      "pa4otMbVnkk"
+    ],
+    "DEV": [
+      "2azQ1b91cZZ"
+    ],
+    "TEST": []
+  },
+  "planned_families": 26,
+  "planned_models": 9,
+  "completed_models": 0,
+  "planned_continuations": 720,
+  "physical_rollout_files": 0,
+  "method_effect": "UNKNOWN",
+  "adopted": false,
+  "gpu_session_hours": 0.8777663187846904,
+  "active_jobs": [
+    "v16-formal-20260920-01"
+  ],
+  "resources": [
+    {
+      "run": "v16_001",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 113.49995076702908,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_001/attempts/collect_fit_dev_001')",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_002",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 226.62568331928924,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_002/attempts/collect_fit_dev_001')",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_003",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 624.4571004002355,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_003/attempts/collect_fit_dev_001')",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_004",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 542.2720694821328,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_004/attempts/collect_fit_dev_001')",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_005",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 1195.40414512204,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_005/attempts/collect_fit_dev_001')",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_006",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 45.755652104038745,
+      "returncode": null,
+      "error": "TimeoutExpired(['du', '-sb', '/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16'], 45)",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_007",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 240.7639158880338,
+      "returncode": 0,
+      "error": null,
+      "gpu_session": true
+    },
+    {
+      "run": "v16_fit_golden_002",
+      "phase": "golden_pilot",
+      "attempt": 1,
+      "wall_seconds": 66.52472611702979,
+      "returncode": 1,
+      "error": "RuntimeError('STAGE_PROCESS_FAILED:golden_pilot:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_fit_golden_002/attempts/golden_pilot_001')",
+      "gpu_session": true
+    },
+    {
+      "run": "v16_fit_golden_003",
+      "phase": "golden_pilot",
+      "attempt": 1,
+      "wall_seconds": 104.28422145405784,
+      "returncode": 0,
+      "error": null,
+      "gpu_session": true
+    },
+    {
+      "run": "v16_formal_001",
+      "phase": "collect_fit_dev",
+      "attempt": 1,
+      "wall_seconds": 0.3712829709984362,
+      "returncode": 0,
+      "error": null,
+      "gpu_session": true
+    }
+  ],
+  "golden_pilots": [
+    {
+      "run": "v16_fit_golden_003",
+      "status": "FIT_DEV_GOLDEN_FORWARD_COMPLETE",
+      "golden_inputs": 16,
+      "real_qwen_forwards": 48,
+      "base_loaded": true,
+      "base_parameters_unchanged": true,
+      "base_state_sha256": "a87292acedfbf3fc8159259c23017fa1eec47a2ebfd39782c46e088bcbacef6b",
+      "optimizer_updates": 0,
+      "all_processed_inputs_equal": true,
+      "native_argmax_flips": 0,
+      "max_feature_delta": 0.0,
+      "max_logit_delta": 0.0,
+      "seconds": 88.50642703799531,
+      "scope": "Generator/numerical pilot, no trained method comparison, no TEST inputs"
+    }
+  ],
+  "runs": [
+    {
+      "run": "v16_001",
+      "PILOT_RESULT.json": {
+        "status": "STOPPED",
+        "reason": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_001/attempts/collect_fit_dev_001')",
+        "test_started": false
+      },
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_fit_dev",
+        "attempt": 1,
+        "elapsed_seconds": 103.19921105634421,
+        "unix": 1789872244.914575,
+        "owned_pids": [
+          2997645
+        ],
+        "rss_bytes": 2408431616,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1586,
+          "free_mib": 30524,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23610 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24310 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24928 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24012 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24122 MiB\n"
+      }
+    },
+    {
+      "run": "v16_002",
+      "PILOT_RESULT.json": {
+        "status": "STOPPED",
+        "reason": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_002/attempts/collect_fit_dev_001')",
+        "test_started": false
+      },
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_fit_dev",
+        "attempt": 1,
+        "elapsed_seconds": 216.9828819152899,
+        "unix": 1789872591.6648657,
+        "owned_pids": [
+          3000988
+        ],
+        "rss_bytes": 2414784512,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1586,
+          "free_mib": 30524,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23612 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24310 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24928 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24012 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24122 MiB\n"
+      }
+    },
+    {
+      "run": "v16_003",
+      "PILOT_RESULT.json": {
+        "status": "STOPPED",
+        "reason": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_003/attempts/collect_fit_dev_001')",
+        "test_started": false
+      },
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_fit_dev",
+        "attempt": 1,
+        "elapsed_seconds": 619.2176484311931,
+        "unix": 1789873455.350661,
+        "owned_pids": [
+          3007557
+        ],
+        "rss_bytes": 2298769408,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 263,
+          "free_mib": 31847,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23612 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24310 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24928 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24122 MiB\n"
+      }
+    },
+    {
+      "run": "v16_004",
+      "PILOT_RESULT.json": {
+        "status": "STOPPED",
+        "reason": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_004/attempts/collect_fit_dev_001')",
+        "test_started": false
+      },
+      "DATA_SHORTFALL.json": {
+        "houses": [
+          {
+            "house": "pa4otMbVnkk",
+            "actual": 0,
+            "target": 4
+          },
+          {
+            "house": "QUCTc6BB5sX",
+            "actual": 2,
+            "target": 4
+          },
+          {
+            "house": "5ZKStnWn8Zo",
+            "actual": 0,
+            "target": 4
+          },
+          {
+            "house": "2azQ1b91cZZ",
+            "actual": 0,
+            "target": 2
+          }
+        ],
+        "accepted_families": 6
+      },
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_fit_dev",
+        "attempt": 1,
+        "elapsed_seconds": 536.8001308511011,
+        "unix": 1789884039.3415098,
+        "owned_pids": [
+          3193254
+        ],
+        "rss_bytes": 1770303488,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1042,
+          "free_mib": 31068,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24124 MiB\n"
+      }
+    },
+    {
+      "run": "v16_005",
+      "PILOT_RESULT.json": {
+        "status": "STOPPED",
+        "reason": "RuntimeError('STAGE_PROCESS_FAILED:collect_fit_dev:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_005/attempts/collect_fit_dev_001')",
+        "test_started": false
+      },
+      "DATA_SHORTFALL.json": {
+        "houses": [
+          {
+            "house": "2azQ1b91cZZ",
+            "actual": 1,
+            "target": 2
+          }
+        ],
+        "accepted_families": 17
+      },
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_fit_dev",
+        "attempt": 1,
+        "elapsed_seconds": 1187.4599718418904,
+        "unix": 1789885902.6643543,
+        "owned_pids": [
+          3219217
+        ],
+        "rss_bytes": 2398158848,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1042,
+          "free_mib": 31068,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24126 MiB\n"
+      }
+    },
+    {
+      "run": "v16_006",
+      "PILOT_RESULT.json": {
+        "status": "STOPPED",
+        "reason": "TimeoutExpired(['du', '-sb', '/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16'], 45)",
+        "test_started": false
+      }
+    },
+    {
+      "run": "v16_007",
+      "PILOT_RESULT.json": {
+        "status": "FIT_DEV_PHYSICAL_COLLECTION_COMPLETE",
+        "test_started": false
+      },
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_fit_dev",
+        "attempt": 1,
+        "elapsed_seconds": 237.5136624518782,
+        "unix": 1789887144.7758932,
+        "owned_pids": [
+          3280819
+        ],
+        "rss_bytes": 1731485696,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1042,
+          "free_mib": 31068,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24126 MiB\n",
+        "v16_artifact_bytes_last_measured": 11851565767,
+        "artifact_scan_running": false
+      }
+    },
+    {
+      "run": "v16_fit_golden_001"
+    },
+    {
+      "run": "v16_fit_golden_002",
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "golden_pilot",
+        "attempt": 1,
+        "elapsed_seconds": 61.885694119147956,
+        "unix": 1789884230.9947581,
+        "owned_pids": [
+          3206131,
+          3206520,
+          3206751,
+          3206753,
+          3206755,
+          3206757,
+          3206759,
+          3206761,
+          3206763,
+          3206765,
+          3206767,
+          3206769,
+          3206771,
+          3206773,
+          3206775,
+          3206777,
+          3206779,
+          3206781,
+          3206783,
+          3206785,
+          3206791,
+          3206796,
+          3206798,
+          3206800,
+          3206802,
+          3206804,
+          3206806,
+          3206808,
+          3206810,
+          3206812,
+          3206814,
+          3206816,
+          3206818,
+          3206820
+        ],
+        "rss_bytes": 15481724928,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 4958,
+          "free_mib": 27152,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8, 3206131, 4948 MiB\nGPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24124 MiB\n"
+      }
+    },
+    {
+      "run": "v16_fit_golden_003",
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "golden_pilot",
+        "attempt": 1,
+        "elapsed_seconds": 103.04067480703816,
+        "unix": 1789884591.907826,
+        "owned_pids": [
+          3213294
+        ],
+        "rss_bytes": 2685480960,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 5198,
+          "free_mib": 26912,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8, 3213294, 5188 MiB\nGPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24126 MiB\n"
+      }
+    },
+    {
+      "run": "v16_formal_001",
+      "STATUS.json": {
+        "status": "RUNNING",
+        "phase": "collect_test",
+        "attempt": 1,
+        "elapsed_seconds": 62.148734498769045,
+        "unix": 1789887355.3768902,
+        "owned_pids": [
+          3286950
+        ],
+        "rss_bytes": 1174163456,
+        "gpu": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 629,
+          "free_mib": 31482,
+          "driver": "580.126.09"
+        },
+        "device_process_snapshot": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2, 2980502, 23614 MiB\nGPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a, 2980503, 24312 MiB\nGPU-e458147b-4739-d22a-e764-50743cff4a11, 2980498, 23932 MiB\nGPU-2b3b2c3a-7398-a845-293a-d2844dd7524b, 2980499, 24932 MiB\nGPU-a7120b0e-d348-23d4-ffe4-3072745b8490, 2980500, 24016 MiB\nGPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3, 2980501, 24126 MiB\n",
+        "v16_artifact_bytes_last_measured": null,
+        "artifact_scan_running": true
+      }
+    }
+  ],
+  "old_v15_modified": false,
+  "scientific_claim": "No Ours increment has been established by generator/numerical pilots."
+}

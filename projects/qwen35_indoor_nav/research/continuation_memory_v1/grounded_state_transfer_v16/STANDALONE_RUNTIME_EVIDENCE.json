@@ -1,0 +1,89 @@
+{
+  "jobs": [
+    {
+      "job": "v16-fitdev-pilot-20260920-01",
+      "status": "FAILED",
+      "ppid": 1,
+      "uid": 0,
+      "gid": 0,
+      "cgroup": "0::/system.slice/q35n-v16-fitdev-pilot-20260920-01.service\n",
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect_pilot.py",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_001"
+      ]
+    },
+    {
+      "job": "v16-fitdev-pilot-20260920-02",
+      "status": "FAILED",
+      "ppid": 1,
+      "uid": 0,
+      "gid": 0,
+      "cgroup": "0::/system.slice/q35n-v16-fitdev-pilot-20260920-02.service\n",
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect_pilot.py",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_002"
+      ]
+    },
+    {
+      "job": "v16-fitdev-pilot-20260920-03",
+      "status": "FAILED",
+      "ppid": 1,
+      "uid": 0,
+      "gid": 0,
+      "cgroup": "0::/system.slice/q35n-v16-fitdev-pilot-20260920-03.service\n",
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect_pilot.py",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_003"
+      ]
+    },
+    {
+      "job": "v16-fitdev-pilot-20260920-04",
+      "status": "FAILED",
+      "ppid": 1,
+      "uid": 0,
+      "gid": 0,
+      "cgroup": "0::/system.slice/q35n-v16-fitdev-pilot-20260920-04.service\n",
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect_pilot.py",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_004",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_003"
+      ]
+    },
+    {
+      "job": "v16-golden-pilot-20260920-01",
+      "status": "RUNNING",
+      "ppid": 1,
+      "uid": 0,
+      "gid": 0,
+      "cgroup": "0::/system.slice/q35n-v16-golden-pilot-20260920-01.service\n",
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/finish_pilot.py",
+        "--run",
+        "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_fit_golden_002",
+        "--wait-job",
+        "v16-fitdev-pilot-20260920-04"
+      ]
+    }
+  ],
+  "claim": "Actual V16 workers run as same caller UID/GID under system.slice, PPID1; collector jobs survived submission terminal exit. No promise against power loss/OOM/admin stop."
+}
