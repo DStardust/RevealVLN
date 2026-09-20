@@ -16,6 +16,10 @@ import traceback
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[4]
 FITDEV_SCOPE='FIT16_TRAIN_DEV2_DIAGNOSTIC'
+RESUME_MUTABLE_SOURCES={
+    'research/continuation_memory_v1/grounded_state_transfer_v16/fitdev_fastpath.py',
+    'research/continuation_memory_v1/grounded_state_transfer_v16/test_fitdev_scope.py',
+}
 
 
 def load_json(path):
@@ -41,6 +45,22 @@ def gpu_snapshot(index):
 def local_gpu_hours(run,c):
     path=run/'RESOURCE_SESSIONS.jsonl'
     return sum(row['wall_seconds'] for row in c.c.records(path))/3600 if path.exists() else 0.0
+
+
+def activate_source_lock(run,source,c,resume):
+    path=run/'SOURCE_LOCK.json'
+    if not path.exists():c.immutable(path,source);return
+    previous=c.read(path)
+    if previous==source:return
+    changed={name for name in set(previous['files'])|set(source['files']) if previous['files'].get(name)!=source['files'].get(name)}
+    if not resume or not changed or not changed<=RESUME_MUTABLE_SOURCES:raise ValueError('UNAUTHORIZED_SOURCE_CHANGE:'+str(sorted(changed)))
+    c.immutable(run/'SOURCE_LOCK_ATTEMPT_001.json',previous)
+    number=len(list(run.glob('SOURCE_LOCK_ATTEMPT_*.json')))+1
+    current=run/f'SOURCE_LOCK_ATTEMPT_{number:03d}.json';c.immutable(current,source)
+    c.write(path,source)
+    c.append(run/'SOURCE_LOCK_REVISIONS.jsonl',dict(attempt=number,changed_paths=sorted(changed),
+        reason='RECOVER_RESOURCE_ACCOUNTING_ATTRIBUTE_ERROR',previous_sha256=c.sha(run/'SOURCE_LOCK_ATTEMPT_001.json'),
+        active_sha256=c.sha(path),unix=time.time()))
 
 
 def execute(run,name,argv,config,c,gpu):
@@ -119,7 +139,8 @@ def preflight(run,config,c,lock):
     if gpu['uuid']!=config['gpu_uuid']:raise ValueError('GPU_INDEX_UUID_MISMATCH')
     if gpu['memory_free_mib']<config['min_free_gpu_gib']*1024:raise RuntimeError('GPU_MEMORY_BUDGET')
     head=subprocess.run(['git','-C',str(ROOT),'rev-parse','HEAD'],text=True,capture_output=True,check=True).stdout.strip()
-    c.immutable(run/'PREFLIGHT.json',dict(status='FITDEV_INPUTS_AND_RUNTIME_VERIFIED',worktree=str(ROOT),execution_head=head,
+    target=run/'PREFLIGHT.json' if not (run/'PREFLIGHT.json').exists() else run/f'PREFLIGHT_RESUME_{len(list(run.glob("PREFLIGHT_RESUME_*.json")))+1:03d}.json'
+    c.immutable(target,dict(status='FITDEV_INPUTS_AND_RUNTIME_VERIFIED',worktree=str(ROOT),execution_head=head,
         reviewed_commit=config['reviewed_commit'],asset_line_root=config['asset_line_root'],paths=list(map(str,paths)),gpu=gpu,
         source_lock_sha256=c.sha(run/'SOURCE_LOCK.json'),qwen_loaded=False,navigation_started=False,new_collection_started=False))
 
@@ -211,7 +232,7 @@ def main():
         try:
             common.immutable(run/'PROTOCOL.json',config)
             source=common.source_lock();source.update(reviewed_commit=config['reviewed_commit'],asset_line_root=config['asset_line_root'])
-            common.immutable(run/'SOURCE_LOCK.json',source);common.verify_lock(source)
+            activate_source_lock(run,source,common,args.resume);common.verify_lock(source)
             common.immutable(run/'REVIEW_RECEIPT.json',dict(reviewed_commit=config['reviewed_commit'],
                 offline_errata_review='ACCEPTED_FOR_ENGINEERING_PROGRESSION',cpu_fixes_review='ACCEPTED_WITHIN_REPORTED_AND_INSPECTED_COVERAGE',
                 authorized_new_run=args.run_id,authorized_scope=FITDEV_SCOPE,qwen_feature_loading_allowed=True,lightweight_training_allowed=True,

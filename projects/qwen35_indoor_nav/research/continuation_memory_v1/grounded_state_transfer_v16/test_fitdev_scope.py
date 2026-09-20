@@ -8,7 +8,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from build_data import FITDEV_SCOPE,FORMAL_SCOPE,scope_admission
 from evaluate_continuations import registry_value
 import objective
-from fitdev_fastpath import local_gpu_hours
+from fitdev_fastpath import RESUME_MUTABLE_SOURCES,activate_source_lock,local_gpu_hours
 from train import schedule_for_seed,training_families
 import v16_common
 from v16_common import c
@@ -57,6 +57,16 @@ class FitDevScopeTest(unittest.TestCase):
             path=Path(folder)/'RESOURCE_SESSIONS.jsonl'
             path.write_text('{"wall_seconds":1800}\n{"wall_seconds":900}\n')
             self.assertEqual(local_gpu_hours(Path(folder),v16_common),0.75)
+
+    def test_resume_preserves_and_revises_only_driver_source_lock(self):
+        driver=next(iter(RESUME_MUTABLE_SOURCES))
+        with tempfile.TemporaryDirectory() as folder:
+            run=Path(folder);old=dict(files={driver:'old'},reviewed_commit='base');new=dict(files={driver:'new'},reviewed_commit='base')
+            v16_common.write(run/'SOURCE_LOCK.json',old,True);activate_source_lock(run,new,v16_common,True)
+            self.assertEqual(v16_common.read(run/'SOURCE_LOCK_ATTEMPT_001.json'),old)
+            self.assertEqual(v16_common.read(run/'SOURCE_LOCK.json'),new)
+            with self.assertRaisesRegex(ValueError,'UNAUTHORIZED_SOURCE_CHANGE'):
+                activate_source_lock(run,dict(files={'unexpected.py':'hash'},reviewed_commit='base'),v16_common,True)
 
 
 if __name__=='__main__':unittest.main(verbosity=2)
