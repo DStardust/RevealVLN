@@ -9,6 +9,29 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 import objective as o
 from v16_common import *
 
+FITDEV_SCOPE='FIT16_TRAIN_DEV2_DIAGNOSTIC'
+
+def training_families(data,config):
+    fit=[f for f in data['families'] if f['split']=='FIT']
+    if len(fit)!=16:raise ValueError('FIT_FAMILY_COUNT')
+    if config.get('scope')==FITDEV_SCOPE:
+        if data.get('training_admission')!='FIT16_DEV2_TRAINING_AUTHORIZED':raise ValueError('FITDEV_TRAINING_NOT_ADMITTED')
+        if any(f['split'] not in ('FIT','DEV') for f in data['families']):raise ValueError('TEST_OR_UNKNOWN_SPLIT_IN_FITDEV_DATA')
+        if sorted(f['family_id'] for f in fit)!=sorted(config['authorized_training_families']):raise ValueError('FITDEV_TRAINING_FAMILY_IDENTITY')
+        dev=sorted(f['family_id'] for f in data['families'] if f['split']=='DEV')
+        if dev!=sorted(config['authorized_diagnostic_families']):raise ValueError('FITDEV_DIAGNOSTIC_FAMILY_IDENTITY')
+    elif data.get('training_admission')!='V16_REGISTERED_SCOPE_ONLY':raise ValueError('FORMAL_TRAINING_NOT_ADMITTED')
+    return fit
+
+def schedule_for_seed(family_ids,old_schedule,fit_ordinary,seed):
+    ids=sorted(family_ids);schedule=ids*75
+    if len(schedule)!=1200:raise ValueError('TRAINING_SCHEDULE_LENGTH')
+    random.Random(seed).shuffle(schedule)
+    natural=[old_schedule[i%len(old_schedule)] for i in range(1200)]
+    allowed=set(fit_ordinary)
+    if any(i not in allowed for selected in natural for i in selected):raise ValueError('NONFIT_ORDINARY_SCHEDULE')
+    return [dict(family=f,ordinary=o) for f,o in zip(schedule,natural)]
+
 def rng_state():
     return dict(python=random.getstate(),numpy=np.random.get_state(),torch=torch.get_rng_state(),
                 cuda=torch.cuda.get_rng_state_all() if torch.cuda.is_available() else [])
@@ -35,8 +58,7 @@ def restore_checkpoint(path,net,optimizer,schedule,binding):
 def main(run):
     session_began=time.monotonic()
     config=read(run/'PROTOCOL.json');verify_lock(read(run/'SOURCE_LOCK.json'))
-    data=read(run/'DATA.json');fit=[f for f in data['families'] if f['split']=='FIT']
-    if len(fit)!=16:raise ValueError('FIT_FAMILY_COUNT')
+    data=read(run/'DATA.json');fit=training_families(data,config)
     # No TEST or DEV batch, loss, diagnostic or model selection is instantiated here.
     weights=o.class_weights(fit);immutable(run/'FIT_AUXILIARY_WEIGHTS.json',weights)
     feature_result=read(run/'features/FEATURE_RESULT.json');feature_path=run/'features/FEATURES.pt'
@@ -55,11 +77,8 @@ def main(run):
         features=sha(feature_path),ordinary_data=sha(ordinary_folder/'DATA.json'),ordinary_features=sha(oldpath))
     results=[]
     for seed in config['seeds']:
-        rng=random.Random(seed);ids=sorted(batches);schedule=ids*75;rng.shuffle(schedule)
         old_schedule=read(ordinary_folder/'run_001'/f'SCHEDULE_{seed}.json')['ordinary_indices']
-        natural_schedule=[old_schedule[i%len(old_schedule)] for i in range(1200)]
-        if any(i not in fit_ordinary for selected in natural_schedule for i in selected):raise ValueError('NONFIT_ORDINARY_SCHEDULE')
-        schedule=[dict(family=f,ordinary=o) for f,o in zip(schedule,natural_schedule)]
+        schedule=schedule_for_seed(batches,old_schedule,fit_ordinary,seed)
         immutable(folder/f'SCHEDULE_{seed}.json',schedule)
         for arm in config['arms']:
             tag=f'{arm}_{seed}';target=folder/tag;target.mkdir(exist_ok=True)

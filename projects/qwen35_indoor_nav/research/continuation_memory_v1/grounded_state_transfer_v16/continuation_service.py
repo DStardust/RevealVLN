@@ -45,7 +45,7 @@ def main(fd,session):
                 condition=registry['conditions'][slot['condition']];family=families[condition['family_id']]
                 folder=session/'rollouts'/f'{rank:04d}';folder.mkdir(parents=True,exist_ok=True)
                 compiler=legacy.Compiler(**family['compiler']);history=family['histories'][condition['history_id']]
-                reference=read(LINE/family['traces'][condition['history_id']+'__C0']['path'])
+                reference=read(DATA_LINE/family['traces'][condition['history_id']+'__C0']['path'])
                 if backend_family!=family['family_id']:
                     if backend:backend.close()
                     backend=NoInteriorJoin(family['scene'],config['gpu'],family['roles'],store,dict(runtime_allowed=True,scene_glb=family['scene'],gpu_device=config['gpu']))

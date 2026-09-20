@@ -15,13 +15,14 @@ def visible_scale(trace,eligible,t):
         scale='clear' if count>=1024 else 'near_threshold' if count>=256 else 'below_threshold' if count else 'absent')
 
 def main(run):
-    data=read(run/'DATA.json');cache=torch.load(run/'features/FEATURES.pt',map_location='cpu',weights_only=True)
+    data=read(run/'DATA.json');config=read(run/'PROTOCOL.json');diagnostic_split=config.get('diagnostic_split','TEST')
+    cache=torch.load(run/'features/FEATURES.pt',map_location='cpu',weights_only=True)
     torch.set_num_threads(4);events=[];interventions=[];excluded=[];error_counts=defaultdict(Counter);queries=[]
     raw_families={f['family_id']:f for f in data['raw_families']}
     ordinary=read(HERE.parent/'natural_transfer_v9/DATA.json')
     ordinary_cache=torch.load(run/'features/ORDINARY_FEATURES.pt',map_location='cpu',weights_only=True)
     ordinary_rows=[]
-    for seed in read(run/'PROTOCOL.json')['seeds']:
+    for seed in config['seeds']:
         for arm in ('B1','B2','Ours'):
             net=o.initialize(seed);net.load_state_dict(torch.load(run/'train'/f'{arm}_{seed}'/'FINAL.pt',weights_only=True));net.eval()
             with torch.no_grad():
@@ -51,7 +52,7 @@ def main(run):
                         p=net.state_head(states.flatten(2)).sigmoid()
                         actions=tensor_indices(net.action_logits(states.flatten(0,1),cache['logits'][b['indices']].flatten(0,1),x.flatten(0,1))).view_as(b['indices'])
                         for i,row in enumerate(family['sequences']):
-                            raw=raw_families[family['family_id']];trace=read(LINE/row['trace_path'])
+                            raw=raw_families[family['family_id']];trace=read(DATA_LINE/row['trace_path'])
                             anchor=None if row['task_id']=='task_T' else raw['compiler']['tasks'][row['task_id']]['anchor']
                             first=None;first_detected=None
                             for t,z in enumerate(row['state_targets']):
@@ -88,13 +89,14 @@ def main(run):
         scope='Previously exposed ordinary CHECK action accuracy; no new R2R closed-loop SR, no checkpoint selection.'))
     write(run/'QUERY_DIAGNOSIS.json',dict(rows=queries,B1_query_head_not_evaluated=True,
         scope='Auxiliary diagnostics only; cannot establish closed-loop increment. B2 always uses compositional program state, never an untrained result head.'))
-    test=[r for r in interventions if r['split']=='TEST' and r['arm']=='Ours']
-    mechanism=[r for r in test if r['case']['endpoint']=='mechanism'];control=[r for r in test if r['case']['endpoint']=='control']
+    target=[r for r in interventions if r['split']==diagnostic_split and r['arm']=='Ours']
+    mechanism=[r for r in target if r['case']['endpoint']=='mechanism'];control=[r for r in target if r['case']['endpoint']=='control']
     accurate=lambda mode:sum(r['predictions'][mode]==r['case']['target'] for r in mechanism)
     supports=bool(mechanism and control and accurate('correct')>accurate('wrong') and accurate('sham')>=accurate('correct') and all(r['predictions']['correct']==r['predictions']['wrong']==r['predictions']['sham'] for r in control))
-    write(run/'MEMORY_INTERVENTIONS.json',dict(status='UNIDENTIFIABLE' if not interventions else 'READ_ONLY_ACTION_INTERVENTIONS_COMPLETE',
+    identifiable=bool(mechanism and control)
+    write(run/'MEMORY_INTERVENTIONS.json',dict(status='READ_ONLY_ACTION_INTERVENTIONS_COMPLETE' if identifiable else 'UNIDENTIFIABLE',diagnostic_split=diagnostic_split,
         rows=interventions,excluded=excluded,supports_history_specific_effect=supports,
-        mechanism_counts={mode:accurate(mode) for mode in ('correct','wrong','sham','zero')},test_mechanism_N=len(mechanism),matched_control_N=len(control),
+        mechanism_counts={mode:accurate(mode) for mode in ('correct','wrong','sham','zero')},diagnostic_mechanism_N=len(mechanism),matched_control_N=len(control),
         reason='A positive continuation decision requires identifiable matched task_T controls and registered correct/wrong/sham evidence; absent matching is not a negative model result.'))
     write(run/'FAILURE_LOCALIZATION.json',dict(state_diagnosis='EVENT_STATE_DIAGNOSIS.json',
         by_house_seed_scale_gap=[dict(house=k[0],split=k[1],seed=k[2],scale=k[3],gap=k[4],task=k[5],counts=dict(v)) for k,v in error_counts.items()],

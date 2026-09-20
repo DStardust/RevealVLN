@@ -11,10 +11,10 @@ from evaluator_v16 import legacy,state_sequence
 def main(run):
     data=read(run/'DATA.json');verified={};counts=collections.Counter();witnesses=[];initial_states=[];roles=collections.defaultdict(set)
     for family in data['raw_families']:
-        compiler=legacy.Compiler(**family['compiler']);root=LINE/family['content_root']
+        compiler=legacy.Compiler(**family['compiler']);root=DATA_LINE/family['content_root']
         for role,signature in compiler.roles.items():roles[family['split']].add(tuple(signature))
         for cell,source in family['traces'].items():
-            path=LINE/source['path']
+            path=DATA_LINE/source['path']
             if sha(path)!=source['sha256']:raise ValueError('TRACE_FILE_CHANGED')
             trace=read(path);events=compiler.atoms(trace['observations']);history=cell.split('__')[0];cut=len(family['histories'][history])
             for t,observation in enumerate(trace['observations']):
@@ -26,7 +26,7 @@ def main(run):
                         expected=(224,224,3) if kind=='rgb' else (224,224)
                         dtype=np.uint8 if kind=='rgb' else np.uint32
                         if a.shape!=expected or a.dtype!=dtype or hashlib.sha256(a.tobytes()).hexdigest()!=key[1]:raise ValueError('RAW_CONTENT_ARRAY_MISMATCH')
-                        verified[key]=dict(path=str(p.relative_to(LINE)),sha256=sha(p),kind=kind)
+                        verified[key]=dict(path=str(p.relative_to(DATA_LINE)),sha256=sha(p),kind=kind)
                     if kind=='semantic':arrays[kind]=np.load(p,allow_pickle=False)
                 ids,num=np.unique(arrays['semantic'],return_counts=True);pixels={str(int(k)):int(v) for k,v in zip(ids,num)}
                 if pixels!=observation['pixels']:raise ValueError('SEMANTIC_PIXEL_COUNT_MISMATCH')
@@ -44,12 +44,12 @@ def main(run):
                 initial_states.append(dict(family=family['family_id'],history=history,initial_rgb=trace['observations'][0]['rgb_hash'],
                     state_A=state_sequence(compiler,trace['observations'],'task_A')[cut],state_B=state_sequence(compiler,trace['observations'],'task_B')[cut]))
             counts['complete_crossed_executions']+=1
-    snap=LINE/'data_pipeline/ordinary_expansion_v1/training_snapshot_20260912_v1/run_001'
-    index=snap/'TRAINING_INDEX.jsonl';protocol=read(LINE/'sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json')
+    snap=DATA_LINE/'data_pipeline/ordinary_expansion_v1/training_snapshot_20260912_v1/run_001'
+    index=snap/'TRAINING_INDEX.jsonl';protocol=read(DATA_LINE/'sft_acceptance/ordinary_expanded_v1/PROTOCOL_FILESTORE.json')
     if sha(index)!=protocol['snapshot']['training_index_sha256']:raise ValueError('KNOWN_BASE_TRAINING_INDEX_CHANGED')
     base_houses={json.loads(row)['scene_group'] for row in index.read_text().splitlines()}
-    all_houses={f['house'] for f in data['raw_families']}
-    base_audit=dict(index_path=str(index.relative_to(LINE)),index_sha256=sha(index),known_training_houses=sorted(base_houses),
+    all_houses=set(read(run/'PROTOCOL.json').get('frozen_inventory_houses',[f['house'] for f in data['raw_families']]))
+    base_audit=dict(index_path=str(index.relative_to(DATA_LINE)),index_sha256=sha(index),known_training_houses=sorted(base_houses),
         memory_house_overlap=sorted(all_houses&base_houses),claim='Only this registered navigation training pool is audited; no assertion about general vision-language pretraining exposure.')
     write(run/'BASE_TRAINING_SCENE_AUDIT.json',base_audit)
     by_initial=collections.defaultdict(set)
@@ -57,7 +57,7 @@ def main(run):
     audit=dict(status='RAW_CONTENT_AND_LABEL_INPUTS_RECHECKED',counts=dict(counts),unique_arrays=len(verified),
         content_entries=list(verified.values()),initial_input_to_state=[dict(family=k[0],initial_rgb=k[1],states=sorted(v)) for k,v in by_initial.items()],
         semantic_vocabulary={k:[list(x) for x in sorted(v)] for k,v in roles.items()},
-        TEST_roles_absent_from_FIT=[list(x) for x in sorted(roles['TEST']-roles['FIT'])],witness_strata=dict(collections.Counter(r['scale'] for r in witnesses)),
+        TEST_roles_absent_from_FIT=[list(x) for x in sorted(roles['TEST']-roles['FIT'])] if roles['TEST'] else 'NOT_EVALUATED_IN_FITDEV_SCOPE',witness_strata=dict(collections.Counter(r['scale'] for r in witnesses)),
         no_method_scores_read=True,old_training_admission_modified=False)
     write(run/'RAW_DATA_AUDIT.json',audit)
     write(run/'VISIBLE_EVENT_COVERAGE.json',dict(rows=witnesses))

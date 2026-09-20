@@ -8,7 +8,7 @@ import torch
 from v16_common import *
 
 def load_policy(session, p):
-    speed = c.LINE/'sft_acceptance/ordinary_speedup_10x_v1'
+    speed = DATA_LINE/'sft_acceptance/ordinary_speedup_10x_v1'
     sys.path.insert(0, str(speed/'official_einops_0_8_1/deps'))
     sys.path.insert(0, str(speed/'official_fla_0_5_2/deps'))
     import fla.ops.gated_delta_rule
@@ -25,6 +25,8 @@ def load_policy(session, p):
     dispatch = getattr(cells.get('implementation'), '__module__', '')
     assert dispatch.startswith('fla.'), 'FLA_DISPATCH_CHANGED'
     model = c.load('v5_frozen_model', c.TRAIN/'model.py')
+    model.LINE = DATA_LINE
+    model.MODEL = DATA_LINE/'runtime/models/Qwen3.5-2B_15852e8'
     assert c.sha(Path(p['checkpoint'])) == p['checkpoint_sha256'], 'CHECKPOINT_HASH'
     state = torch.load(p['checkpoint'], map_location='cpu', weights_only=True)
     assert state['binding']['protocol_sha256'] == p['training_protocol_sha256']
@@ -87,7 +89,7 @@ class RawStore:
         loader=load('v16_raw_array_reader',LINE/'data_pipeline/mechanism_runtime_v1/loader.py')
         @lru_cache(maxsize=128)
         def pixels(ref):
-            info=data['contents'][ref];path=loader.safe_path(LINE,info['line_relative_path']);blob=path.read_bytes()
+            info=data['contents'][ref];path=loader.safe_path(DATA_LINE,info['line_relative_path']);blob=path.read_bytes()
             if loader.sha(blob)!=info['file_sha256']:raise ValueError('RAW_ARRAY_FILE_HASH')
             return loader.npy_pixels(blob,ref[7:],'rgb')
         self.pixels=pixels

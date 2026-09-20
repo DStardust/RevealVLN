@@ -50,6 +50,7 @@ def main(run):
             natural=read(HERE.parent/'natural_transfer_v9/DATA.json')
             adapter=load('v16_ordinary_input_adapter',LINE/'sft_acceptance/ordinary_sync_recovery_v1/data.py')
             store=adapter.SampleStore([r['row'] for r in natural['records']])
+            store._data.LINE=DATA_LINE;store._data.ROOT=DATA_LINE.parents[1]
             ordinary_samples=[dict(record_idx=i,t=t,target=y,weight=1.) for i,r in enumerate(natural['records']) for t,y in enumerate(r['targets'])]
             forward.close();forward=encoder.Forward(model,policy,store,ordinary_samples)
             ordinary_completed=extract(out,session,'ORDINARY_FEATURES',forward,len(ordinary_samples),None,deadline)

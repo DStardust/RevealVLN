@@ -11,7 +11,7 @@ import time
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[4]
-PYTHON=ROOT/'.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3'
+PYTHON=Path(os.environ.get('V16_STANDALONE_PYTHON',ROOT/'.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3')).resolve()
 JOBS=HERE/'standalone_jobs'
 
 
@@ -31,7 +31,7 @@ def start(name,command):
     if command[:1]==['--']:command=command[1:]
     if not command or not Path(command[0]).is_absolute():raise ValueError('ABSOLUTE_EXECUTABLE_REQUIRED')
     executable=Path(command[0]).resolve()
-    if not executable.is_file() or not executable.is_relative_to(ROOT):raise ValueError('PROJECT_EXECUTABLE_REQUIRED')
+    if not executable.is_file() or not (executable.is_relative_to(ROOT) or executable==PYTHON):raise ValueError('PROJECT_EXECUTABLE_REQUIRED')
     job=folder(name);job.mkdir(parents=True,exist_ok=False)
     unit='q35n-'+name+'.service'
     # Explicit numerical/runtime settings only; no API tokens or shell text.

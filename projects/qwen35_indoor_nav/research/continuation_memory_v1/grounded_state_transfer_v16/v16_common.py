@@ -9,6 +9,7 @@ import sys
 HERE = Path(__file__).resolve().parent
 LINE = HERE.parents[2]
 ROOT = LINE.parents[1]
+DATA_LINE = Path(os.environ.get('V16_ASSET_LINE_ROOT', LINE)).resolve()
 BASELINE = '754d574bc98fd49fe30b2be76e30cbc53f0f25c3'
 V15 = HERE.parent / 'legal_closed_loop_v15'
 

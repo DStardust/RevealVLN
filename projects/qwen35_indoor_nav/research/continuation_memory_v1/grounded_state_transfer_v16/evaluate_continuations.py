@@ -21,9 +21,15 @@ def prefix_audit(left,right):
     if len(left)!=len(right):return dict(result,action_prefix_matched=False,first_divergence='UNMATCHED_TERMINATION')
     return result
 
-def registry(run):
-    data=read(run/'DATA.json');config=read(run/'PROTOCOL.json');conditions=[]
-    for f in sorted((f for f in data['raw_families'] if f['split']=='TEST'),key=lambda f:(f['house'],f['family_id'])):
+def registry_value(raw_families,config):
+    scope=config.get('evaluation_scope','FORMAL_TEST')
+    if scope=='DEV_DIAGNOSTIC':split,expected_families,expected_conditions,expected_slots='DEV',2,20,180
+    elif scope=='FORMAL_TEST':split,expected_families,expected_conditions,expected_slots='TEST',8,80,720
+    else:raise ValueError('UNKNOWN_EVALUATION_SCOPE:'+str(scope))
+    selected=sorted((f for f in raw_families if f['split']==split),key=lambda f:(f['house'],f['family_id']))
+    if len(selected)!=expected_families:raise ValueError('EVALUATION_FAMILY_COUNT')
+    conditions=[]
+    for f in selected:
         for h in ('H_A','H_B','H_A_R','H_B_R'):
             for task in ('task_A','task_B'):
                 conditions.append(dict(family_id=f['family_id'],house=f['house'],history_id=h,task_id=task,endpoint='main'))
@@ -34,9 +40,19 @@ def registry(run):
     for i,condition in enumerate(conditions):
         order=models[i%9:]+models[:i%9]
         for model in order:slots.append(dict(rank=len(slots),condition=i,model=model,arm=model.split('_')[0],seed=int(model.split('_')[1]),planned=True))
-    value=dict(conditions=conditions,models=models,slots=slots,expected_prefix_comparisons=len(conditions)*6,models_per_condition=9,
-               main_denominator_per_arm=192,task_T_separate=True,ordering='fixed seed/arm order rotated by condition index')
-    if len(conditions)!=80 or len(slots)!=720:raise ValueError('EVALUATION_DENOMINATOR')
+    main_conditions=sum(r['endpoint']=='main' for r in conditions);control_conditions=len(conditions)-main_conditions
+    value=dict(scope=scope,split=split,conditions=conditions,models=models,slots=slots,
+        expected_prefix_comparisons=len(conditions)*6,models_per_condition=9,
+        main_conditions=main_conditions,control_conditions=control_conditions,
+        main_rollout_slots=main_conditions*9,control_rollout_slots=control_conditions*9,
+        main_denominator_per_arm=main_conditions*len(config['seeds']),control_denominator_per_arm=control_conditions*len(config['seeds']),
+        task_T_separate=True,ordering='fixed seed/arm order rotated by condition index')
+    if len(conditions)!=expected_conditions or len(slots)!=expected_slots:raise ValueError('EVALUATION_DENOMINATOR')
+    return value
+
+def registry(run):
+    data=read(run/'DATA.json');config=read(run/'PROTOCOL.json')
+    value=registry_value(data['raw_families'],config)
     immutable(run/'EVALUATION_REGISTRY.json',value);return value
 
 def admitted(run,reg):
@@ -95,7 +111,8 @@ def main(run):
             for row in c.records(f):old_inputs[row['index']]=row['processed']
         sock,child=socket.socketpair();sock.settimeout(240);env=os.environ.copy();env.pop('CUDA_VISIBLE_DEVICES',None)
         log=(session/'simulator.log').open('x')
-        proc=subprocess.Popen([str(LINE/'.envs/q35n_habitat_v017_g0r/bin/python3'),'-I','-B',str(HERE/'continuation_service.py'),str(child.fileno()),str(session)],
+        sim_python=Path(config.get('sim_python',DATA_LINE/'.envs/q35n_habitat_v017_g0r/bin/python3'))
+        proc=subprocess.Popen([str(sim_python),'-I','-B',str(HERE/'continuation_service.py'),str(child.fileno()),str(session)],
             pass_fds=(child.fileno(),),cwd=ROOT,env=env,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT)
         child.close();stream=sock.makefile('rw')
         def call(message):

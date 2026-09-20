@@ -6,12 +6,29 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from v16_common import *
 from evaluator_v16 import legacy, state_sequence, query_contexts, compose, evaluate
 
+FORMAL_SCOPE='V16_FORMAL'
+FITDEV_SCOPE='FIT16_TRAIN_DEV2_DIAGNOSTIC'
+
+def scope_admission(families,scope,require_complete=True):
+    count=Counter(f['split'] for f in families)
+    if scope==FITDEV_SCOPE:
+        if dict(count)!=dict(FIT=16,DEV=2):raise ValueError('FITDEV_FAMILY_COUNT_OR_SPLIT: '+str(count))
+        admission='FIT16_DEV2_TRAINING_AUTHORIZED';official=False
+    elif scope==FORMAL_SCOPE:
+        official=dict(count)==dict(FIT=16,DEV=2,TEST=8)
+        if require_complete and not official:raise ValueError('REGISTERED_FAMILY_COUNT_SHORTFALL: '+str(count))
+        admission='V16_REGISTERED_SCOPE_ONLY' if official else 'FIT_DEV_GENERATOR_NUMERICAL_PILOT_ONLY'
+    else:raise ValueError('UNKNOWN_DATA_SCOPE:'+str(scope))
+    return dict(scope=scope,count=dict(count),training_admission=admission,official_test_scale_complete=official,
+        authorized_training_families=sorted(f['family_id'] for f in families if f['split']=='FIT'),
+        authorized_diagnostic_families=sorted(f['family_id'] for f in families if f['split']=='DEV'))
+
 def mechanism_cases(family):
     from continuation_service import exact_pose
     rows=family['sequences'];cells=family['cells'];prefixes=family['prefixes'];admission=family['teacher_admission']
     lookup={(p['history_id'],p['task_id']):i for i,p in enumerate(prefixes)}
     seq_lookup={(r['history_id'],r['task_id'],r['continuation']):i for i,r in enumerate(rows)}
-    traces={r['trace_path']:read(LINE/r['trace_path']) for r in rows};cases=[];excluded=[]
+    traces={r['trace_path']:read(DATA_LINE/r['trace_path']) for r in rows};cases=[];excluded=[]
     def same(i,t,j,u):
         return rows[i]['features'][t]==rows[j]['features'][u] and exact_pose(traces[rows[i]['trace_path']]['observations'][t]['pose'],traces[rows[j]['trace_path']]['observations'][u]['pose'])
     for task in ('task_A','task_B'):
@@ -35,7 +52,7 @@ def mechanism_cases(family):
             break
     return cases,excluded
 
-def build(run, require_complete=True):
+def build(run, require_complete=True, scope=FORMAL_SCOPE):
     families=[f for p in sorted(run.glob('HOUSE_*.json')) for f in read(p)['families']]
     features=[];lookup={};contents={};built=[];sufficient=[];history_owners={};split_windows={}
     def feature(trace,instruction,t,root,split):
@@ -46,14 +63,14 @@ def build(run, require_complete=True):
             lookup[key]=len(features);features.append(dict(key=key,split=split,**row))
             for ref in row['rgb_refs']:
                 if ref not in contents:
-                    p=LINE/root/(ref[7:]+'.rgb.npy');contents[ref]=dict(line_relative_path=str(p.relative_to(LINE)),file_sha256=sha(p))
+                    p=DATA_LINE/root/(ref[7:]+'.rgb.npy');contents[ref]=dict(line_relative_path=str(p.relative_to(DATA_LINE)),file_sha256=sha(p))
         elif split_windows[key]!=split:raise ValueError('CROSS_SPLIT_DERIVED_INPUT')
         split_windows[key]=split
         return lookup[key]
     for family in families:
         compiler=legacy.Compiler(**family['compiler']);prefixes=[];cells=[];sequences=[]
         for h,actions in family['histories'].items():
-            cut=len(actions);ref=read(LINE/family['traces'][h+'__C0']['path'])
+            cut=len(actions);ref=read(DATA_LINE/family['traces'][h+'__C0']['path'])
             physical=digest(dict(actions=actions,rgb=[o['rgb_hash'] for o in ref['observations'][:cut+1]]))
             if physical in history_owners and history_owners[physical]!=family['split']:raise ValueError('CROSS_SPLIT_PHYSICAL_HISTORY')
             history_owners[physical]=family['split']
@@ -65,7 +82,7 @@ def build(run, require_complete=True):
                     features=[feature(ref,instruction,t,family['content_root'],family['split']) for t in range(cut+1)],
                     state_targets=state[:cut+1],state_masks=[1]*(cut+1)))
                 for q in ('C0','C_A','C_B'):
-                    source=family['traces'][h+'__'+q];path=LINE/source['path']
+                    source=family['traces'][h+'__'+q];path=DATA_LINE/source['path']
                     if sha(path)!=source['sha256']:raise ValueError('RAW_TRACE_CHANGED')
                     trace=read(path);result=evaluate(compiler,trace,task,cut)
                     valid=legacy.complete(trace) and len(trace['actions'])<=500
@@ -101,14 +118,16 @@ def build(run, require_complete=True):
         f['mechanism_cases'],f['mechanism_excluded']=mechanism_cases(f)
         built.append(f)
         write(run/'DATA_BUILD_PROGRESS.json',dict(completed_families=len(built),total_families=len(families),features=len(features)))
-    count=Counter(f['split'] for f in built)
-    complete=dict(count)==dict(FIT=16,DEV=2,TEST=8)
-    if require_complete and not complete:raise ValueError('REGISTERED_FAMILY_COUNT_SHORTFALL: '+str(count))
+    admission=scope_admission(built,scope,require_complete)
+    count=Counter(f['split'] for f in built);complete=admission['official_test_scale_complete']
     ordinary=read(HERE.parent/'natural_transfer_v9/DATA.json');ordinary_houses={r['row']['scene_group'] for r in ordinary['records'] if r['partition']=='fit'}
     memory_houses={f['house'] for f in built}
     if ordinary_houses & memory_houses:raise ValueError('ORDINARY_MEMORY_HOUSE_LEAK')
     data=dict(families=built,features=features,contents=contents,raw_families=families,
-        training_admission='V16_REGISTERED_SCOPE_ONLY' if complete else 'FIT_DEV_GENERATOR_NUMERICAL_PILOT_ONLY',old_admission_flags_modified=False,
+        training_admission=admission['training_admission'],data_scope=scope,
+        official_test_scale_complete=admission['official_test_scale_complete'],
+        authorized_training_families=admission['authorized_training_families'],
+        authorized_diagnostic_families=admission['authorized_diagnostic_families'],old_admission_flags_modified=False,
         policy_fields=['instruction','last2_RGB','last8_actual_motion_actions'],future_queries_only_reader=True)
     immutable(run/'DATA.json',data)
     immutable(run/'SPLIT_AUDIT.json',dict(houses={s:sorted({f['house'] for f in built if f['split']==s}) for s in count},
@@ -134,4 +153,8 @@ def build(run, require_complete=True):
         model_scores_read=False,matching='exact current window and physical pose, actual teacher conflict, state-matched recovery donor'))
     return data
 
-if __name__=='__main__':build(Path(sys.argv[1]))
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('run',type=Path)
+    parser.add_argument('--scope',choices=(FORMAL_SCOPE,FITDEV_SCOPE),default=FORMAL_SCOPE)
+    args=parser.parse_args();build(args.run,scope=args.scope)
