@@ -88,14 +88,58 @@ def _gpu_processes(config):
     return rows
 
 
-def wait_for_approved_gpu(run, config):
-    """Wait without touching external work; proceed only on an idle approved GPU."""
-    marker = run / 'GPU_WAIT.jsonl'
+def _gpu_inventory(config):
+    query = subprocess.run(
+        ['nvidia-smi', '--query-gpu=index,uuid,memory.total,memory.used,memory.free',
+         '--format=csv,noheader,nounits'],
+        capture_output=True, text=True, check=True,
+    )
+    inventory = []
+    for line in query.stdout.splitlines():
+        fields = [field.strip() for field in line.split(',')]
+        if len(fields) != 5:
+            continue
+        uuid = fields[1]
+        local = dict(index=int(fields[0]), uuid=uuid, total_mib=int(fields[2]),
+                     used_mib=int(fields[3]), free_mib=int(fields[4]))
+        local['processes'] = _gpu_processes(dict(config, gpu_uuid=uuid))
+        local['idle'] = not local['processes']
+        inventory.append(local)
+    return inventory
+
+
+def wait_for_idle_gpu(run, baseline):
+    """Select an actually idle card; never stop or contend with another process."""
+    marker = run / 'GPU_WAIT_ALL.jsonl'
+    required_mib = int(baseline['model_memory_gib'] * 1024)
+    while True:
+        inventory = _gpu_inventory(baseline)
+        candidates = [row for row in inventory if row['idle'] and row['free_mib'] >= required_mib]
+        snapshot = dict(unix=time.time(), required_free_mib=required_mib, inventory=inventory,
+                        candidates=[dict(index=row['index'], uuid=row['uuid'], free_mib=row['free_mib'])
+                                    for row in candidates],
+                        decision='PROCEED' if candidates else 'WAIT_EXTERNAL_PROCESS')
+        append(marker, snapshot)
+        if candidates:
+            selected = sorted(candidates, key=lambda row: (row['index'], row['uuid']))[0]
+            config = dict(baseline, gpu=selected['index'], gpu_uuid=selected['uuid'])
+            immutable(run / 'BASE_PROTOCOL.json', baseline)
+            write(run / 'PROTOCOL.json', config)
+            immutable(run / 'GPU_ASSIGNMENT.json', dict(
+                source_protocol_sha256=sha(run / 'BASE_PROTOCOL.json'), selected=selected,
+                no_external_process_at_selection=True, selection_unix=time.time(),
+            ))
+            return config
+        time.sleep(30)
+
+
+def wait_for_selected_gpu(run, config):
+    """After binding, wait if an external process appears; do not rebind mid-run."""
+    marker = run / 'GPU_WAIT_SELECTED.jsonl'
     while True:
         rows = _gpu_processes(config)
-        snapshot = dict(unix=time.time(), gpu_uuid=config['gpu_uuid'], processes=rows,
-                        decision='PROCEED' if not rows else 'WAIT_EXTERNAL_PROCESS')
-        append(marker, snapshot)
+        append(marker, dict(unix=time.time(), gpu_uuid=config['gpu_uuid'], processes=rows,
+                            decision='PROCEED' if not rows else 'WAIT_EXTERNAL_PROCESS'))
         if not rows:
             return
         time.sleep(30)
@@ -103,9 +147,19 @@ def wait_for_approved_gpu(run, config):
 
 def bootstrap(run, source):
     _assert_old_run(source)
-    config = read(source / 'PROTOCOL.json')
+    baseline = read(source / 'PROTOCOL.json')
     run.mkdir(parents=True, exist_ok=True)
-    immutable(run / 'PROTOCOL.json', config)
+    if not (run / 'BASE_PROTOCOL.json').exists():
+        immutable(run / 'BASE_PROTOCOL.json', baseline)
+    if (run / 'GPU_ASSIGNMENT.json').exists():
+        config = read(run / 'PROTOCOL.json')
+        assignment = read(run / 'GPU_ASSIGNMENT.json')['selected']
+        if config['gpu_uuid'] != assignment['uuid'] or config['gpu'] != assignment['index']:
+            raise ValueError('GPU_ASSIGNMENT_PROTOCOL_MISMATCH')
+    else:
+        if (run / 'PROTOCOL.json').exists() and read(run / 'PROTOCOL.json') != baseline:
+            raise ValueError('BASE_PROTOCOL_CHANGED_BEFORE_GPU_SELECTION')
+        config = wait_for_idle_gpu(run, baseline)
     for record_path in sorted(source.glob('HOUSE_*.json')):
         record = read(record_path)
         if record['house'] == HOUSE:
@@ -143,12 +197,15 @@ def bootstrap(run, source):
         proposal_order='old failed proposals in source order, then deterministic pathfinder continuation; no score ordering',
         completed_reuse_policy='all eight complete HOUSE records copied by value; no completed family recollection',
     ))
-    immutable(run / 'BUDGET_FREEZE.json', dict(
+    write(run / 'BUDGET_FREEZE.json', dict(
         old_run_gpu_session_hours=read(source / 'STATUS.json').get('gpu_session_hours'),
         repair_protocol_gpu_session_hours=config['gpu_session_hours'],
         max_continuous_hours=config['max_session_hours'], gpu_uuid=config['gpu_uuid'],
-        model_stage_not_started=True,
+        gpu_ordinal=config['gpu'], model_stage_not_started=True,
     ))
+    pipeline.preflight(run, config)
+    write(run / 'PREFLIGHT_COMPLETE.json', dict(phase='preflight', runtime_gpu=config['gpu_uuid'],
+                                                completed_unix=time.time()), True)
     report = run / 'REPAIR_REPORT_ZH.md'
     if not report.exists():
         report.write_text(
@@ -165,7 +222,7 @@ def bootstrap(run, source):
 
 def run_repair(run, config):
     if not (run / 'REPAIR_COLLECTION_COMPLETE.json').exists():
-        wait_for_approved_gpu(run, config)
+        wait_for_selected_gpu(run, config)
         pipeline.execute(
             run, config, 'collect_repair_test',
             [HERE / 'collect_repair_v1.py', run, 'TEST'], SIMPY, gpu=True,
@@ -209,7 +266,7 @@ def main():
         fcntl.flock(lockfile, fcntl.LOCK_EX)
         config = bootstrap(run, source)
         run_repair(run, config)
-        wait_for_approved_gpu(run, config)
+        wait_for_selected_gpu(run, config)
         run_full_pipeline(run, args.run_id)
         publish(run)
         status = read(run / 'STATUS.json') if (run / 'STATUS.json').exists() else {}
