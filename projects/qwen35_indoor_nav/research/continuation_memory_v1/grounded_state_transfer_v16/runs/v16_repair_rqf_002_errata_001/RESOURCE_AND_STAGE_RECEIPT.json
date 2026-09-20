@@ -1,0 +1,119 @@
+{
+  "backend_factory_calls": 0,
+  "controlled_subprocesses": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1",
+        "rev-parse",
+        "HEAD"
+      ],
+      "purpose": "read_only_identity",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1",
+        "branch",
+        "--show-current"
+      ],
+      "purpose": "read_only_identity",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3.10",
+        "-I",
+        "-B",
+        "-c",
+        "import sys; print(sys.version); print(sys.executable)"
+      ],
+      "purpose": "python_identity",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "systemctl",
+        "show",
+        "q35n-v16-repair-rqf-20260920-04.service",
+        "-p",
+        "ActiveState",
+        "-p",
+        "SubState",
+        "-p",
+        "Result"
+      ],
+      "purpose": "read_only_legacy_service_status",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3.10",
+        "-I",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/rqf_offline_errata_v2_1/tests/pref_fix_regressions.py",
+        "--real-source-root",
+        "/mnt/data_nas/deeprobotics/daiyang/vla",
+        "--result",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_002_errata_001/PRE_FIX_TEST_RESULT.json"
+      ],
+      "purpose": "pre_fix_regressions",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"cases\": [{\"failure\": \"old anchor gate rejects terminal-only evidence: INVALID_YAW\", \"status\": \"EXPECTED_FAIL_REPRODUCED\", \"test_id\": \"N12\"}, {\"failure\": \"old rollup maps eight missing probes to ALL_EIGHT_INVALID\", \"status\": \"EXPECTED_FAIL_REPRODUCED\", \"test_id\": \"N09\"}, {\"failure\": \"old validator accepted one-history/one-trace shell\", \"status\": \"EXPECTED_FAIL_REPRODUCED\", \"test_id\": \"F01\"}, {\"failure\": \"old publisher exposed a partial final FAMILY.json\", \"status\": \"EXPECTED_FAIL_REPRODUCED\", \"test_id\": \"F11\"}, {\"failure\": \"old classifier lacks boundary context and returned EVIDENCE_MISSING\", \"status\": \"EXPECTED_FAIL_REPRODUCED\", \"test_id\": \"E01\"}], \"errors\": 0, \"executed\": 5, \"expected_failures_reproduced\": 5, \"old_module\": \"/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/isolation_diagnosis_v2.py\", \"old_module_sha256\": \"d8152263936d56612ce5a5f8305a983613d7ab431f4b68ee477264cf64af0dc5\", \"real_regression_evidence\": \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001/proposals/V16R1_18fe6790548a53d278cf/yaw_00/INITIAL_VIEW_PROBE.json\", \"real_regression_evidence_sha256\": \"05cb829e2c1b383b2478a6859686618f85a9b98bb31098ed83cad9219ff80772\", \"status\": \"EXPECTED_FAILURES_REPRODUCED\", \"unexpected_passes\": 0}\n"
+    },
+    {
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3.10",
+        "-I",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/rqf_offline_errata_v2_1/tests/run_tests.py",
+        "--result",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_002_errata_001/CPU_TEST_RESULT.json"
+      ],
+      "purpose": "cpu_acceptance",
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "{\"executed\": 56, \"failed\": 0, \"not_executed\": 0, \"passed\": 56, \"status\": \"PASS\"}\n"
+    }
+  ],
+  "cpu_time_seconds": {
+    "children_system": 0.173758,
+    "children_user": 1.089607,
+    "self_system": 1.2507519999999999,
+    "self_user": 19.436239
+  },
+  "exit_code": 0,
+  "factory_measurement_method": "offline driver exposes no such factory and G03 validates the CLI/import surface",
+  "finished_at_unix": 1789912571.2245224,
+  "g1_calls": 0,
+  "legacy_service_action": "none; read-only status inspection only",
+  "model_factory_calls": 0,
+  "new_family_admissions": 0,
+  "new_physical_candidate_executions": 0,
+  "old_run_actions": "none",
+  "peak_rss": {
+    "method": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+    "units": "KiB on Linux",
+    "value": 1542612
+  },
+  "process": {
+    "argv": [
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/rqf_offline_errata_v2_1/driver.py",
+      "run-offline",
+      "--config",
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/rqf_offline_errata_v2_1/ERRATA_CONFIG.json"
+    ],
+    "cwd": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1",
+    "pid": 3770628,
+    "ppid": 3245890
+  },
+  "run_id": "v16_repair_rqf_002_errata_001",
+  "started_at_unix": 1789912511.323794,
+  "terminal_status": "OFFLINE_ERRATA_COMPLETE_PENDING_REVIEW",
+  "version": "v16_rqf_offline_errata_v2_1",
+  "write_scope": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_002_errata_001"
+}

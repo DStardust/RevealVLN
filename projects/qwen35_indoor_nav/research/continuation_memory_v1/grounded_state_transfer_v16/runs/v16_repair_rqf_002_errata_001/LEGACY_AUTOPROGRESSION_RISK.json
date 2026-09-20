@@ -1,0 +1,38 @@
+{
+  "action_taken": "NONE_READ_ONLY_INSPECTION",
+  "entrypoint_contains_full_pipeline_call": true,
+  "registered_job": {
+    "command": [
+      "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+      "-I",
+      "-S",
+      "-B",
+      "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/repair_resume_v1.py",
+      "--source-run",
+      "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001",
+      "--run-id",
+      "v16_repair_rqf_001"
+    ],
+    "created_unix": 1789891620.2850153,
+    "cwd": "/mnt/data_nas/deeprobotics/daiyang/vla",
+    "environment": {
+      "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:",
+      "PATH": "/usr/local/cuda/bin:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/root/.codex/tmp/arg0/codex-arg0u90WVl:/usr/local/cuda/bin:/mnt/zrh/miniconda3/bin:/mnt/zrh/miniconda3/condabin:/usr/local/cuda/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/ehpc/bin:/root/bin"
+    },
+    "gid": 0,
+    "launcher_cgroup": "0::/user.slice/user-0.slice/session-14565.scope\n",
+    "launcher_pid": 3423066,
+    "name": "v16-repair-rqf-20260920-04",
+    "ownership": "Same UID/GID as caller, no sudo or privilege change.",
+    "retries": 0,
+    "uid": 0,
+    "unit": "q35n-v16-repair-rqf-20260920-04.service"
+  },
+  "risk": "LEGACY_ENTRYPOINT_CAN_AUTO_PROGRESS_AFTER_COLLECTION",
+  "scope_note": "this finding does not assert that the failed legacy service will execute again",
+  "service_observed_read_only": [
+    "Result=exit-code",
+    "ActiveState=failed",
+    "SubState=failed"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "failure": "old anchor gate rejects terminal-only evidence: INVALID_YAW",
+      "status": "EXPECTED_FAIL_REPRODUCED",
+      "test_id": "N12"
+    },
+    {
+      "failure": "old rollup maps eight missing probes to ALL_EIGHT_INVALID",
+      "status": "EXPECTED_FAIL_REPRODUCED",
+      "test_id": "N09"
+    },
+    {
+      "failure": "old validator accepted one-history/one-trace shell",
+      "status": "EXPECTED_FAIL_REPRODUCED",
+      "test_id": "F01"
+    },
+    {
+      "failure": "old publisher exposed a partial final FAMILY.json",
+      "status": "EXPECTED_FAIL_REPRODUCED",
+      "test_id": "F11"
+    },
+    {
+      "failure": "old classifier lacks boundary context and returned EVIDENCE_MISSING",
+      "status": "EXPECTED_FAIL_REPRODUCED",
+      "test_id": "E01"
+    }
+  ],
+  "errors": 0,
+  "executed": 5,
+  "expected_failures_reproduced": 5,
+  "old_module": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/isolation_diagnosis_v2.py",
+  "old_module_sha256": "d8152263936d56612ce5a5f8305a983613d7ab431f4b68ee477264cf64af0dc5",
+  "real_regression_evidence": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001/proposals/V16R1_18fe6790548a53d278cf/yaw_00/INITIAL_VIEW_PROBE.json",
+  "real_regression_evidence_sha256": "05cb829e2c1b383b2478a6859686618f85a9b98bb31098ed83cad9219ff80772",
+  "status": "EXPECTED_FAILURES_REPRODUCED",
+  "unexpected_passes": 0
+}

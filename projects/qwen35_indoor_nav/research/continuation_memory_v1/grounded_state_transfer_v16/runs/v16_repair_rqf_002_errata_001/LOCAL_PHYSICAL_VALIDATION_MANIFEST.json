@@ -1,0 +1,138 @@
+{
+  "authorization_status": "PENDING_EXPLICIT_APPROVAL",
+  "proposed_run_id": "v16_repair_rqf_003_diagnostic_001",
+  "proposed_version": "v16_rqf_stage_trace_probe_v2_1",
+  "selection_denominators": {
+    "stratum_A_distinct_proposals_selected": 2,
+    "stratum_A_eligible_rows": 225,
+    "stratum_B_distinct_proposals_selected": 2,
+    "stratum_B_eligible_history_rows": 678
+  },
+  "selection_order": "hub ascending, proposal_id lexicographic, yaw ascending; distinct proposals; no model scores",
+  "status": "READY_FOR_REVIEW",
+  "trial_count": 4,
+  "trials": [
+    {
+      "base_proposal_id": "V16_0289a293903bde933095",
+      "expected_stage_checks": [
+        "initial_probe",
+        "first_anchor_trigger"
+      ],
+      "hub": 2,
+      "planned_attempts": 1,
+      "proposal_id": "V16R1_129af9dfe348fa2b2cd6",
+      "role_indices": [
+        17,
+        0,
+        26
+      ],
+      "roles_and_eligible_sha256": "e8d7ec7848131311e9f4422c64df915bad3d64dc14f80cc8839887ca662b16d3",
+      "selection_reason": "complete frozen probe fails the corrected anchor-only neutral gate",
+      "source_history_object_sha256": null,
+      "source_probe_object_sha256": "05cb829e2c1b383b2478a6859686618f85a9b98bb31098ed83cad9219ff80772",
+      "source_proposal_object_sha256": "2a9e71ba73600c5a30c1965ac84ccaa8e388b129c9d93abc14172b504180816b",
+      "source_run": "v16_repair_rqf_001",
+      "start_position": [
+        8.808422088623047,
+        2.9519495964050293,
+        0.27831122279167175
+      ],
+      "stratum": "A_INITIAL_NEUTRAL_REJECTION",
+      "targets_and_order_sha256": "7ed3957f65d41b70189a4d72cf143cb5bc7c932fb3af889d65d9a04dfee4b162",
+      "trial_id": "rqf_stage_trace_A1",
+      "yaw": 0
+    },
+    {
+      "base_proposal_id": "V16_69fad10c16923418a281",
+      "expected_stage_checks": [
+        "initial_probe",
+        "first_anchor_trigger"
+      ],
+      "hub": 2,
+      "planned_attempts": 1,
+      "proposal_id": "V16R1_18fe6790548a53d278cf",
+      "role_indices": [
+        12,
+        0,
+        24
+      ],
+      "roles_and_eligible_sha256": "95d2b27fc5bc6d908d92de52a10e95434d9257cc52c876bf25046030445fbe65",
+      "selection_reason": "complete frozen probe fails the corrected anchor-only neutral gate",
+      "source_history_object_sha256": null,
+      "source_probe_object_sha256": "00aa3e3b39c03e83c3ef55c5e678ab7925d6fea495cfd52e79eb97a7d009f43c",
+      "source_proposal_object_sha256": "2a9e71ba73600c5a30c1965ac84ccaa8e388b129c9d93abc14172b504180816b",
+      "source_run": "v16_repair_rqf_001",
+      "start_position": [
+        8.808422088623047,
+        2.9519495964050293,
+        0.27831122279167175
+      ],
+      "stratum": "A_INITIAL_NEUTRAL_REJECTION",
+      "targets_and_order_sha256": "0f1bad7f1da29b296cc73fcabe786f92a4569dd60c95a254aef5f815777b5033",
+      "trial_id": "rqf_stage_trace_A2",
+      "yaw": 18
+    },
+    {
+      "base_proposal_id": "V16_bc61e276868dc03964cd",
+      "expected_stage_checks": [
+        "initial_probe",
+        "discovery_history",
+        "first_other_anchor_trigger"
+      ],
+      "hub": 2,
+      "planned_attempts": 1,
+      "proposal_id": "V16R1_1d8ea76fd11bfa1ed069",
+      "role_indices": [
+        12,
+        17,
+        0
+      ],
+      "roles_and_eligible_sha256": "592f0402d2154a6b098238a4c635ff682e6d6ea940a1e22a1b88ad4f6d95d0e1",
+      "selection_reason": "complete frozen probe is neutral and saved history has another-anchor SEE2 evidence",
+      "source_history_object_sha256": "86a4c83833d9865b5f82c8e3410f9f2997da178df15d3574e709c15f61c9444b",
+      "source_probe_object_sha256": "bd1dc95d3d861ca2a49edf3ce914cc30818110fce27166e4d30f0f4c66bae419",
+      "source_proposal_object_sha256": "2a9e71ba73600c5a30c1965ac84ccaa8e388b129c9d93abc14172b504180816b",
+      "source_run": "v16_repair_rqf_001",
+      "start_position": [
+        8.808422088623047,
+        2.9519495964050293,
+        0.27831122279167175
+      ],
+      "stratum": "B_HISTORY_ISOLATION_CONTAMINATION",
+      "targets_and_order_sha256": "63d2b7e4cf58a824301cde8806dbe4c996cdffa001af6789deef83d180afec00",
+      "trial_id": "rqf_stage_trace_B1",
+      "yaw": 6
+    },
+    {
+      "base_proposal_id": "V16_0f589ce5c225cbe051db",
+      "expected_stage_checks": [
+        "initial_probe",
+        "discovery_history",
+        "first_other_anchor_trigger"
+      ],
+      "hub": 2,
+      "planned_attempts": 1,
+      "proposal_id": "V16R1_4bce41b9939968d278b7",
+      "role_indices": [
+        12,
+        0,
+        17
+      ],
+      "roles_and_eligible_sha256": "cc745fd922519df227678ad86615d794911d9c774b150c20c72940abc8f96220",
+      "selection_reason": "complete frozen probe is neutral and saved history has another-anchor SEE2 evidence",
+      "source_history_object_sha256": "68d4f24f882f6c263aeb08fd2a05296a098ae51c5c224e75e068bace3d8d43ed",
+      "source_probe_object_sha256": "05cb829e2c1b383b2478a6859686618f85a9b98bb31098ed83cad9219ff80772",
+      "source_proposal_object_sha256": "2a9e71ba73600c5a30c1965ac84ccaa8e388b129c9d93abc14172b504180816b",
+      "source_run": "v16_repair_rqf_001",
+      "start_position": [
+        8.808422088623047,
+        2.9519495964050293,
+        0.27831122279167175
+      ],
+      "stratum": "B_HISTORY_ISOLATION_CONTAMINATION",
+      "targets_and_order_sha256": "7e0ec405e54402d1faeb9bdc583cc47e459027699fd0d8d529c57d61928d6423",
+      "trial_id": "rqf_stage_trace_B2",
+      "yaw": 0
+    }
+  ]
+}

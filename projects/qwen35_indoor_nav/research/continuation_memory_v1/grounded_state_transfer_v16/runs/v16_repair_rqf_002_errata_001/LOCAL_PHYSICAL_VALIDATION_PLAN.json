@@ -1,0 +1,60 @@
+{
+  "attempts_per_trial": 1,
+  "automatic_promotion_allowed": false,
+  "automatic_retries": 0,
+  "execute_continuation_suffixes": false,
+  "g1_allowed": false,
+  "max_action_calls_upper_bound": 3848,
+  "max_decisions_per_discovery_history": 240,
+  "max_discovery_histories_per_trial": 4,
+  "max_episode_resets_upper_bound": 20,
+  "max_initial_probe_actions_per_trial": 2,
+  "max_trial_starts": 4,
+  "max_unique_proposals": 4,
+  "navigation_evaluation_allowed": false,
+  "new_family_admissions": 0,
+  "only_change": "side-channel phase boundary logging without extra observe/reset/step calls",
+  "per_trial_wall_time_limit_seconds": 900,
+  "publish_formal_family": false,
+  "qwen_allowed": false,
+  "stage_logger_contract": {
+    "cross_phase_see2": "record both supporting frame phases, cross_phase_event=true, and assign first_completion_stage to the second frame",
+    "locked_phases": [
+      "initial_probe",
+      "outbound_navigation",
+      "outbound_heading_adjustment",
+      "witness_scan",
+      "perturbation",
+      "return_navigation",
+      "return_heading_adjustment",
+      "public_tail"
+    ],
+    "required_per_action_fields": [
+      "trial_id",
+      "episode_id",
+      "history_id",
+      "action_index",
+      "action",
+      "phase_before_action",
+      "observation_index_after_action",
+      "phase_of_observation",
+      "source_function",
+      "role_being_sought",
+      "witness_target_index",
+      "collision_result",
+      "trace_prefix_hash"
+    ],
+    "side_effect_rule": "logger must not call observe, reset, step, follower, renderer, or alter random state"
+  },
+  "status": "PENDING_EXPLICIT_APPROVAL",
+  "stop_conditions": [
+    "any registered limit is reached",
+    "program error, evidence corruption, or identity mismatch stops the whole job",
+    "physical rejection ends only its registered trial",
+    "no fifth trial, yaw substitution, house expansion, retry, suffix, or promotion"
+  ],
+  "training_allowed": false,
+  "trial_execution_contract": "run the original initial L,R probe; if it passes, run H_A,H_B,H_A_R,H_B_R in that order and stop the trial at the first physical rejection; do not run C0/C_A/C_B",
+  "whole_job_wall_time_limit_seconds": 3600,
+  "yaws_per_proposal": 1
+}

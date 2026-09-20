@@ -1,0 +1,97 @@
+{
+  "actual_filesystem_test_root": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_rqf_offline_errata_v2_1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_002_errata_001",
+  "cases": [
+    {
+      "seconds": 0.0005700299516320229,
+      "status": "PASS",
+      "test_id": "F01",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F01_weak_shell_rejected"
+    },
+    {
+      "seconds": 0.00029950495809316635,
+      "status": "PASS",
+      "test_id": "F02",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F02_missing_history_rejected"
+    },
+    {
+      "seconds": 0.0003372631035745144,
+      "status": "PASS",
+      "test_id": "F03",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F03_missing_trace_rejected"
+    },
+    {
+      "seconds": 0.0007518501952290535,
+      "status": "PASS",
+      "test_id": "F04",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F04_missing_or_bad_reference_rejected"
+    },
+    {
+      "seconds": 4.6039000153541565e-05,
+      "status": "PASS",
+      "test_id": "F04b",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F04b_existing_certification_survives_unavailable_raw_reference"
+    },
+    {
+      "seconds": 0.00043931882828474045,
+      "status": "PASS",
+      "test_id": "F05",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F05_cutoff_and_prefix_length_are_exact"
+    },
+    {
+      "seconds": 0.021450959611684084,
+      "status": "PASS",
+      "test_id": "F06",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F06_normal_cross_task_fail_is_valid"
+    },
+    {
+      "seconds": 0.000522242859005928,
+      "status": "PASS",
+      "test_id": "F07",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F07_unknown_or_unsatisfied_labels_rejected"
+    },
+    {
+      "seconds": 0.04007255099713802,
+      "status": "PASS",
+      "test_id": "F08",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F08_real_finalize_path_publishes_once"
+    },
+    {
+      "seconds": 0.040726362727582455,
+      "status": "PASS",
+      "test_id": "F09",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F09_second_publish_does_not_change_old_content"
+    },
+    {
+      "seconds": 0.043083427008241415,
+      "status": "PASS",
+      "test_id": "F10",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F10_competing_publishers_yield_one_complete_payload"
+    },
+    {
+      "seconds": 0.010511482134461403,
+      "status": "PASS",
+      "test_id": "F11",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F11_serialization_failure_has_no_final_name"
+    },
+    {
+      "seconds": 0.015494824852794409,
+      "status": "PASS",
+      "test_id": "F12",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F12_temp_fsync_failure_has_no_final_name"
+    },
+    {
+      "seconds": 0.02315249014645815,
+      "status": "PASS",
+      "test_id": "F13",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F13_directory_fsync_failure_preserves_final_and_reports_uncertain"
+    },
+    {
+      "seconds": 0.037585336714982986,
+      "status": "PASS",
+      "test_id": "F14",
+      "test_name": "test_family_publish.FamilyPublishTests.test_F14_recovery_verified_partial_and_conflict"
+    }
+  ],
+  "formal_family_files_created": 0,
+  "status": "PASS"
+}

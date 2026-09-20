@@ -1,0 +1,50 @@
+{
+  "backend_factory_calls": 0,
+  "cases": [
+    {
+      "assertion": "offline completion with zero physical/model factory surface",
+      "status": "PASS",
+      "test_id": "G01"
+    },
+    {
+      "assertion": "missing families never authorize progression",
+      "status": "PASS",
+      "test_id": "G02"
+    },
+    {
+      "assertion": "CLI has no model, physical, training, or promotion command",
+      "status": "PASS",
+      "test_id": "G03"
+    },
+    {
+      "assertion": "only new run root is writable",
+      "status": "PASS",
+      "test_id": "G04"
+    },
+    {
+      "assertion": "a second full in-memory recomputation over the same object store has identical semantic hashes",
+      "status": "PASS",
+      "test_id": "G05"
+    },
+    {
+      "assertion": "end-to-end denominators agree",
+      "status": "PASS",
+      "test_id": "G06"
+    }
+  ],
+  "g1_calls": 0,
+  "model_factory_calls": 0,
+  "physical_plan_execution_calls": 0,
+  "planned_trial_count": 4,
+  "repeated_recompute_sha256": {
+    "FAILURE_FUNNEL.json": "4d94ed587c1593458377e71df6c0fb9cc5e5783ef194329c1a69a5d68cdf17c9",
+    "ISOLATION_AUDIT.json": "cbd8333bbba5cf76fe367d938569cc4f09e6a10e7b44277fe8a37363ac78d464",
+    "NEUTRAL_START_AUDIT.json": "7c8b5b5596c8ff793793aa529bb79191ec137534bfddc8873644ad6ab12ead2d"
+  },
+  "semantic_artifact_sha256": {
+    "FAILURE_FUNNEL.json": "4d94ed587c1593458377e71df6c0fb9cc5e5783ef194329c1a69a5d68cdf17c9",
+    "ISOLATION_AUDIT.json": "cbd8333bbba5cf76fe367d938569cc4f09e6a10e7b44277fe8a37363ac78d464",
+    "NEUTRAL_START_AUDIT.json": "7c8b5b5596c8ff793793aa529bb79191ec137534bfddc8873644ad6ab12ead2d"
+  },
+  "status": "PASS"
+}
