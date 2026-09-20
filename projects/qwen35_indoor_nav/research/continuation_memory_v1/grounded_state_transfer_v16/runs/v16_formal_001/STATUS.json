@@ -1,0 +1,7 @@
+{
+  "status": "STOPPED",
+  "error": "RuntimeError('STAGE_PROCESS_FAILED:collect_test:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/pipeline.py\", line 168, in main\n    execute(run,config,'collect_test',[HERE/'collect.py',run,'TEST'],simpy)\n  File \"/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/pipeline.py\", line 118, in execute\n    if code:raise RuntimeError(f'STAGE_PROCESS_FAILED:{phase}:{code}:{folder}')\nRuntimeError: STAGE_PROCESS_FAILED:collect_test:1:/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001\n",
+  "gpu_session_hours": 1.1262174547093713,
+  "unix": 1789888187.695724
+}

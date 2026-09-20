@@ -1,0 +1,55 @@
+{
+  "status": "DATA_COLLECTION_INCOMPLETE",
+  "planned_main_per_arm": 192,
+  "planned_rollouts": 720,
+  "completed_models": 0,
+  "completed_rollouts": 0,
+  "paired_effect": null,
+  "adopted": false,
+  "collection": {
+    "accepted": [
+      {
+        "family_id": "V16_9930d7e00d3daacd805e",
+        "house": "PX4nDJXEHrG",
+        "split": "TEST"
+      },
+      {
+        "family_id": "V16_9d503969d01709b5200a",
+        "house": "yqstnuAEVhm",
+        "split": "TEST"
+      },
+      {
+        "family_id": "V16_bf062a2b80b7657f6227",
+        "house": "fzynW3qQPVF",
+        "split": "TEST"
+      },
+      {
+        "family_id": "V16_c0c4e400a25f4e25228c",
+        "house": "yqstnuAEVhm",
+        "split": "TEST"
+      },
+      {
+        "family_id": "V16_ea2f23d7908d38f3b320",
+        "house": "PX4nDJXEHrG",
+        "split": "TEST"
+      },
+      {
+        "family_id": "V16_ecf4e1e5ce05a4f2a087",
+        "house": "fzynW3qQPVF",
+        "split": "TEST"
+      }
+    ],
+    "rejection_counts": {
+      "Rejected('HISTORY_EVENT_STATE_NOT_ISOLATED')": 116,
+      "Rejected('NO_VISIBLE_SEE2_WITNESS')": 27,
+      "Rejected('COLLISION')": 31
+    },
+    "recorded_physical_traces": 686,
+    "actual_environment_decisions": 51389,
+    "raw_arrays": 23187,
+    "attempted_proposals": 180
+  },
+  "gpu_session_hours": 1.1262174547093713,
+  "method_effect": "UNKNOWN; no V16 arm has been trained or evaluated",
+  "test_started": false
+}

@@ -32,6 +32,8 @@
 
 若能访问原执行服务器，再读取 live run 中同名文件；本交接 JSON 是固定时间点快照，不能替代 live 状态。
 
+为便于异机审核，本次 GitHub 提交还上传了旧 run 的 shortfall/失败候选证据，以及修复 run 的 `REPAIR_SPEC`、`SOURCE_LOCK`、proposal 列表、当前失败 JSON 和服务 submission/status 快照。它们位于与服务器相同的 `runs/...` 相对路径，是上传时的只读快照；服务之后新增的尝试不会自动出现在这批文件中。
+
 ## 历史事实（只读保留）
 
 - 原 run：`runs/v16_formal_001`。

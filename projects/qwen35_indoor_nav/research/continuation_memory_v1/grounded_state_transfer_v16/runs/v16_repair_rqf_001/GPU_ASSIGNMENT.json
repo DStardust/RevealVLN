@@ -1,0 +1,29 @@
+{
+  "source_protocol_sha256": "86bd262f6c9c710a5f2683909afa039d00c9a9af2affd17656f30cb0dab4d9db",
+  "selected": {
+    "index": 1,
+    "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+    "total_mib": 32607,
+    "used_mib": 16055,
+    "free_mib": 16055,
+    "processes": [
+      {
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "pid": 3301262,
+        "used_memory_mib": 14307,
+        "command": "/mnt/zrh/miniconda3/envs/navrl/bin/python -m eval.scripts.evaluate_pointgoal --config_file eval/config/eval_pointgoal/wheeled_internscene_commercial.yaml --server_port 20308 --device cuda:0 --active_gpu 1 --scene_index 8 --num_episodes 100 --no_video"
+      },
+      {
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "pid": 3301071,
+        "used_memory_mib": 1694,
+        "command": "python -m eval.src.policy_server --port 20308 --embodiment wheeled --checkpoint /mnt/zrh/projects/icra_ex/NavDP/x-navdp_posttrain (1).ckpt --device cuda:0 --no-visualization --inference-seed 42 --response-delay-s 0 --online-refinement --eval-config_file eval/config/eval_pointgoal/wheeled_internscene_commercial.yaml --candidate-count 8 --refinement-attempts 1 --refinement-action-lr 0.001"
+      }
+    ],
+    "idle": false
+  },
+  "no_external_process_at_selection": false,
+  "occupied_fallback": true,
+  "fallback_scope": "physical_collection_only",
+  "selection_unix": 1789891532.6302025
+}

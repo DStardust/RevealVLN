@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+    "-I",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect.py",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001",
+    "TEST"
+  ],
+  "gpu": {
+    "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+    "name": "NVIDIA GeForce RTX 5090",
+    "total_mib": 32607,
+    "used_mib": 1,
+    "free_mib": 32109,
+    "driver": "580.126.09"
+  },
+  "unix": 1789887293.2123454,
+  "phase": "collect_test",
+  "numerical_environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+    "TRITON_CACHE_DIR": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001/cache/triton",
+    "CUDA_CACHE_PATH": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001/attempts/collect_test_001/cache/cuda"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": "v16_rqf_full_neutral_yaw_search_v1",
+  "source_run": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001",
+  "source_candidate_count": 117,
+  "target_families": 2,
+  "accepted_before_repair": 0,
+  "changed_path": "try every frozen neutral_start_yaw_candidates value before rejecting a proposal",
+  "extra_hubs": 24,
+  "repair_max_proposals": 256,
+  "unchanged_requirements": {
+    "SEE2": "unchanged evaluator threshold and two consecutive observations",
+    "collision": "any collision rejects the physical attempt",
+    "active_stop": "unchanged actual S action and terminal witness requirement",
+    "decision_budget": 500,
+    "history_cap": 240,
+    "information_isolation": "other anchor event rejects the history",
+    "model_scores_read": false
+  },
+  "proposal_order": "old failed proposals in source order, then deterministic pathfinder continuation; no score ordering",
+  "completed_reuse_policy": "all eight complete HOUSE records copied by value; no completed family recollection"
+}

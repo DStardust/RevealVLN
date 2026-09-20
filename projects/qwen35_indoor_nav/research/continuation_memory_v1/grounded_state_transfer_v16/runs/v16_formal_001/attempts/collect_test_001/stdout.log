@@ -1,0 +1,1460 @@
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0920 14:54:56.078375 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0920 14:54:56.078435 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0920 14:54:56.078517 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0920 14:54:56.078545 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0920 14:54:56.078569 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0920 14:54:56.078585 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0920 14:54:56.078593 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0920 14:54:56.078599 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0920 14:54:56.078620 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0920 14:54:56.078637 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0920 14:54:56.078647 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0920 14:54:56.078655 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0920 14:54:56.078668 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0920 14:54:56.078680 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0920 14:54:56.078685 3286950 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0920 14:54:56.079087 3286950 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0920 14:54:56.079088 3286950 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0920 14:54:56.083443 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0920 14:54:56.083461 3286950 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0920 14:54:56.083465 3286950 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb
+I0920 14:54:56.083469 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.stage_config.json
+I0920 14:54:56.084604 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb | This file  does not exist.
+I0920 14:54:56.084659 3286950 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb
+I0920 14:54:56.084661 3286950 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0920 14:54:56.084672 3286950 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.navmesh
+I0920 14:54:56.086941 3286950 Simulator.cpp:158] Loaded.
+I0920 14:54:56.086959 3286950 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0920 14:54:56.751888 3286950 ResourceManager.cpp:193] ResourceManager::loadStage : Loading Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq_semantic.ply
+I0920 14:54:56.751904 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:54:56.751907 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq_semantic.ply 
+I0920 14:55:02.433576 3286950 ResourceManager.cpp:224] ResourceManager::loadStage : Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq_semantic.ply loaded.
+I0920 14:55:02.433627 3286950 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb.
+I0920 14:55:02.433631 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.glb 
+I0920 14:55:02.434830 3286950 ResourceManager.cpp:1119] Importing Basis files as BC7 for rqfALeAoiTq.glb
+I0920 14:55:04.819278 3286950 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/rqfALeAoiTq/rqfALeAoiTq.navmesh
+I0920 14:55:05.769955 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:08.316027 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 1 0
+I0920 14:55:11.346529 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:13.031849 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:14.066970 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 2 0
+I0920 14:55:15.246505 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:17.691183 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:18.113777 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 3 0
+I0920 14:55:20.107564 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:21.470299 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:22.833261 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:25.163113 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:27.696552 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:28.144127 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:29.729230 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 4 0
+I0920 14:55:30.347193 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:31.367715 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:32.450430 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:34.071130 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:36.046746 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:36.488703 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:37.618995 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 5 0
+I0920 14:55:38.164153 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:38.781873 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 6 0
+I0920 14:55:40.248350 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:40.449360 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:40.600802 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 7 0
+I0920 14:55:40.830138 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:41.295987 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 8 0
+I0920 14:55:42.982811 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:43.416565 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:44.700646 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:45.088201 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 9 0
+I0920 14:55:45.522850 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:45.989372 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:47.344753 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:47.733384 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 10 0
+I0920 14:55:48.181854 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:48.549256 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 11 0
+I0920 14:55:49.037498 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:49.236857 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:49.386188 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 12 0
+I0920 14:55:49.615586 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:49.944995 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:50.007324 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:50.311640 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:53.059659 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:55.898180 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:56.070781 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:58.433122 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:58.832602 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:55:59.063465 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:00.971091 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:01.444341 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:02.062690 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 13 0
+I0920 14:56:02.271487 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:02.542990 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:02.815688 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:03.194005 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:03.594043 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:03.814030 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:04.045197 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 14 0
+I0920 14:56:04.400844 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:04.562031 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:04.747547 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:05.002457 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:05.295955 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:05.484400 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:05.665671 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 15 0
+I0920 14:56:06.073236 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:06.382861 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 16 0
+I0920 14:56:06.819245 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:06.988390 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:07.118975 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 17 0
+I0920 14:56:07.346694 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:07.483480 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:07.741616 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:08.084364 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:08.578354 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:08.610172 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 18 0
+I0920 14:56:09.013696 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:09.204803 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:09.410379 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:09.664650 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 19 0
+I0920 14:56:10.025449 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:10.206903 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:10.484479 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:10.760164 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 20 0
+I0920 14:56:11.099434 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:11.507386 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:12.695117 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:13.714500 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 21 0
+I0920 14:56:16.739051 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:16.981123 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 22 0
+I0920 14:56:17.244079 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:17.965265 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:20.134383 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:20.586859 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:21.180709 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:21.254987 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 23 0
+I0920 14:56:21.757598 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:21.988880 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:22.228636 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:22.580807 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:22.951463 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:23.159888 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:23.435364 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 24 0
+I0920 14:56:23.836197 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:24.030611 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:24.244577 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:24.566653 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:24.916910 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:25.116089 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:25.338133 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 25 0
+I0920 14:56:25.720052 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:26.206560 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:27.415290 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:27.840497 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:28.377354 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:28.747807 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:29.845145 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 26 0
+I0920 14:56:30.563081 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:31.895499 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:33.284981 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:34.531996 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 27 0
+I0920 14:56:35.899544 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:36.286984 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:36.354895 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 28 0
+I0920 14:56:36.791215 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:37.099817 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:37.343446 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:37.687759 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 29 0
+I0920 14:56:38.132490 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:38.334184 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:38.574366 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:38.927266 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 30 0
+I0920 14:56:39.366415 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:39.506470 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:39.747720 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:40.149276 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 31 0
+I0920 14:56:40.924985 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:41.417689 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 32 0
+I0920 14:56:42.453795 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:42.648335 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 33 0
+I0920 14:56:43.277621 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:43.833603 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:44.371841 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:46.248579 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 34 0
+I0920 14:56:48.417658 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:48.708122 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:49.351647 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:51.316264 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 35 0
+I0920 14:56:52.858174 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:52.965384 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:53.189374 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:53.580454 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:54.104729 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:54.242046 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:54.451013 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 36 0
+I0920 14:56:54.874814 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:56.165349 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:57.908545 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:56:59.351752 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 37 0
+I0920 14:57:00.912818 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:01.321327 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:01.386601 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:01.714053 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:02.196144 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:02.781352 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:02.820279 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:03.232395 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:03.507310 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:03.585304 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:03.955025 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:04.301198 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:04.787444 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 38 0
+I0920 14:57:04.922627 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:05.403934 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:06.404670 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:06.808127 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 39 0
+I0920 14:57:07.260782 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:07.780062 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:09.397751 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:09.690033 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 40 0
+I0920 14:57:10.182916 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:10.348575 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 41 0
+I0920 14:57:10.741102 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:11.659641 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 42 0
+I0920 14:57:13.133467 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:13.329475 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:13.699224 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:14.205611 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:14.778213 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:14.814884 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 43 0
+I0920 14:57:15.363297 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:16.186594 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:17.669685 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:18.140120 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 44 0
+I0920 14:57:18.639453 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:19.387496 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:21.010766 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:21.333437 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 45 0
+I0920 14:57:21.780977 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:21.951376 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 46 0
+I0920 14:57:22.255452 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:22.685491 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 47 0
+I0920 14:57:24.109059 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:24.364274 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:24.836436 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:25.259135 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:25.861316 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:25.898191 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 48 0
+I0920 14:57:26.447252 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:26.574308 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:26.688345 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:27.086361 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 49 0
+I0920 14:57:27.628712 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:27.699816 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:27.789247 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:28.143784 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 50 0
+I0920 14:57:28.597574 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:28.736805 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 51 0
+I0920 14:57:29.203137 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:29.444031 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:29.605430 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 52 0
+I0920 14:57:29.863709 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:30.207172 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:30.271827 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 53 0
+I0920 14:57:30.639995 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:30.726787 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:30.982499 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:31.305410 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 54 0
+I0920 14:57:31.732889 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:31.826253 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:32.042138 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:32.368347 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 55 0
+I0920 14:57:32.833336 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:32.983045 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 56 0
+I0920 14:57:33.247516 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:33.415562 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:33.545822 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 57 0
+I0920 14:57:33.775792 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:33.921258 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 58 0
+I0920 14:57:34.352517 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:34.469270 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:34.741299 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:35.189980 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 59 0
+I0920 14:57:35.643828 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:35.757453 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:36.033936 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:36.333662 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 60 0
+I0920 14:57:36.709357 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:36.738229 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:36.806375 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:36.964658 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:37.089246 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 61 0
+I0920 14:57:37.303066 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:37.580703 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:37.633945 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:37.908380 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:38.335868 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:38.911109 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:38.948458 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:39.372947 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:39.650760 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:39.728370 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:40.071035 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:40.436209 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:40.920327 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 62 0
+I0920 14:57:41.122103 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:41.240437 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:41.352483 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:41.595654 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 63 0
+I0920 14:57:41.995323 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:42.065672 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:42.156031 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:42.389539 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 64 0
+I0920 14:57:42.797086 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:43.057292 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:43.292091 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:43.556432 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 65 0
+I0920 14:57:43.970484 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:44.146097 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:44.510772 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:45.001943 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:45.666831 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:45.710742 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 66 0
+I0920 14:57:46.248808 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:46.379719 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 67 0
+I0920 14:57:46.622236 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:46.694518 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 68 0
+I0920 14:57:46.923537 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:47.013856 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:47.221252 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:47.988371 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:48.685586 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 69 0
+I0920 14:57:49.489107 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:49.727501 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:50.142293 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:50.615286 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:51.187057 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:51.225586 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 70 0
+I0920 14:57:51.693001 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:51.777336 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:51.993363 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:52.217093 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 71 0
+I0920 14:57:52.518265 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:52.612432 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:52.830116 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:53.025219 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 72 0
+I0920 14:57:53.309267 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:53.502038 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:53.813499 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:54.089473 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 73 0
+I0920 14:57:54.536408 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:55.338148 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:56.363282 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:56.799340 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 74 0
+I0920 14:57:57.536881 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:57.622527 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 75 0
+I0920 14:57:57.927721 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:58.029925 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 76 0
+I0920 14:57:58.318312 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:58.514771 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:58.674748 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 77 0
+I0920 14:57:59.112337 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:57:59.423831 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 78 0
+I0920 14:58:00.198544 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:00.317970 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:00.593242 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:00.881532 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 79 0
+I0920 14:58:01.207808 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:01.322456 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:01.602962 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:01.798285 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 80 0
+I0920 14:58:02.087991 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:02.267999 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:02.421274 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 81 0
+I0920 14:58:02.674546 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:02.803223 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:02.950601 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:03.022712 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:03.165131 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:03.604036 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:04.200548 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:04.237475 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 82 0
+I0920 14:58:04.755445 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:04.850756 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:05.069233 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:05.298975 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 83 0
+I0920 14:58:05.889497 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:06.011071 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 84 0
+I0920 14:58:06.452863 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:06.808683 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 85 0
+I0920 14:58:07.794329 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:07.855537 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:08.033187 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:09.456930 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:10.771104 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:10.846942 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 86 0
+I0920 14:58:12.446130 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:12.518606 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:12.743287 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:13.204432 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:13.781935 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:13.819265 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 87 0
+I0920 14:58:14.316195 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:14.534350 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:14.930192 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:15.291857 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:15.809629 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:15.842567 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 88 0
+I0920 14:58:16.284180 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:16.420504 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:16.577831 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:16.670953 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 89 0
+I0920 14:58:16.925081 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:16.981321 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 90 0
+I0920 14:58:17.204260 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:17.320379 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:17.501830 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:17.572781 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:17.709025 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:18.052290 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:18.544942 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:18.576690 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 91 0
+I0920 14:58:19.014686 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:19.097447 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 92 0
+I0920 14:58:19.422696 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:19.470880 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:19.616715 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:20.026212 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:20.558486 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:20.592308 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 93 0
+I0920 14:58:21.088670 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:21.142737 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:21.306674 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:21.673367 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:22.174059 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:22.206354 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 94 0
+I0920 14:58:22.626283 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:22.806370 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:23.141502 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:23.503410 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:24.004997 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:24.036518 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 95 0
+I0920 14:58:24.437019 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:24.553380 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:24.683333 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:24.757078 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:24.919493 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:25.215831 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:25.269196 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 96 0
+I0920 14:58:25.589885 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:25.705420 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:25.834434 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:25.905548 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:26.036011 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:26.169831 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 97 0
+I0920 14:58:26.539058 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:26.587930 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:26.737977 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:28.459347 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:28.728012 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 98 0
+I0920 14:58:30.262687 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:30.326946 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:30.517593 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:30.934329 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 99 0
+I0920 14:58:31.797299 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:31.864903 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:32.042243 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:32.391903 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:32.454209 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 100 0
+I0920 14:58:32.875219 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:32.935424 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:33.099326 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:33.247628 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 101 0
+I0920 14:58:33.628607 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:33.765864 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:33.923601 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:34.005750 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:34.155867 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:34.666028 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:35.354909 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:35.392700 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 102 0
+I0920 14:58:35.916481 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:35.966697 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:36.137030 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:36.612138 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:37.128237 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:37.161674 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 103 0
+I0920 14:58:37.667547 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:37.738556 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:37.903910 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:38.270088 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:38.821583 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:38.853716 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 104 0
+I0920 14:58:39.271381 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:39.598071 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:39.657536 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:39.966065 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:40.321668 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:40.786051 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:40.819090 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:41.157392 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:41.431143 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:41.507582 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:41.838606 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:42.180388 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:42.660440 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 105 0
+I0920 14:58:42.805588 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:42.944260 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:43.214469 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:43.552424 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:44.034904 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:44.066890 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 106 0
+I0920 14:58:44.467543 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:44.585402 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:44.714128 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:44.781746 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:44.914855 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:45.191679 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:45.245725 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 107 0
+I0920 14:58:45.589325 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:45.709554 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:45.838182 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:45.905658 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:46.034958 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:46.165980 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 108 0
+I0920 14:58:46.510730 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:46.628041 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:46.756700 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:46.826802 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 109 0
+I0920 14:58:47.052546 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:47.100615 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:47.249765 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:47.586984 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:47.645684 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 110 0
+I0920 14:58:48.034116 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:48.080885 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:48.226898 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:48.374953 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 111 0
+I0920 14:58:48.740401 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:48.794199 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:48.954226 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:49.240330 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:49.291123 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 112 0
+I0920 14:58:49.655093 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:49.731212 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:49.941422 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:50.096299 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 113 0
+I0920 14:58:50.453017 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:50.516436 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 114 0
+I0920 14:58:50.784061 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:50.854643 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 115 0
+I0920 14:58:51.106094 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:51.386482 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:51.440508 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 116 0
+I0920 14:58:51.790138 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:51.932068 3286950 SceneGraph.h:93] Created DrawableGroup: 
+rqfALeAoiTq 117 0
+I0920 14:58:52.235116 3286950 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0920 14:58:52.235152 3286950 SemanticScene.h:41] Deconstructing SemanticScene
+I0920 14:58:52.236857 3286950 SceneManager.h:25] Deconstructing SceneManager
+I0920 14:58:52.236865 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 14:58:52.237748 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 14:58:52.237815 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 14:58:52.237828 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 14:58:52.247781 3286950 Renderer.cpp:34] Deconstructing Renderer
+I0920 14:58:52.247807 3286950 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0920 14:58:52.358731 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0920 14:58:52.358760 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0920 14:58:52.358835 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0920 14:58:52.358865 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0920 14:58:52.358891 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0920 14:58:52.358908 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0920 14:58:52.358919 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0920 14:58:52.358927 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0920 14:58:52.358949 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0920 14:58:52.358971 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0920 14:58:52.358983 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0920 14:58:52.358994 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0920 14:58:52.359009 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0920 14:58:52.359021 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0920 14:58:52.359027 3286950 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0920 14:58:52.359457 3286950 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0920 14:58:52.359459 3286950 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0920 14:58:52.360500 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0920 14:58:52.360515 3286950 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0920 14:58:52.360519 3286950 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb
+I0920 14:58:52.360523 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.stage_config.json
+I0920 14:58:52.361428 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb | This file  does not exist.
+I0920 14:58:52.361481 3286950 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb
+I0920 14:58:52.361483 3286950 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0920 14:58:52.361488 3286950 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.navmesh
+I0920 14:58:52.363732 3286950 Simulator.cpp:158] Loaded.
+I0920 14:58:52.363742 3286950 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0920 14:58:52.369566 3286950 ResourceManager.cpp:193] ResourceManager::loadStage : Loading Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm_semantic.ply
+I0920 14:58:52.369577 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:58:52.369581 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm_semantic.ply 
+I0920 14:59:00.940876 3286950 ResourceManager.cpp:224] ResourceManager::loadStage : Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm_semantic.ply loaded.
+I0920 14:59:00.940932 3286950 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb.
+I0920 14:59:00.940936 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.glb 
+I0920 14:59:00.942888 3286950 ResourceManager.cpp:1119] Importing Basis files as BC7 for yqstnuAEVhm.glb
+I0920 14:59:03.607428 3286950 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/yqstnuAEVhm/yqstnuAEVhm.navmesh
+I0920 14:59:04.268281 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:06.195053 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:08.192414 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 1 0
+I0920 14:59:09.669775 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:12.170521 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:13.523396 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:15.335776 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 2 0
+I0920 14:59:17.246784 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:18.966876 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:20.294395 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:21.990197 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 3 0
+I0920 14:59:23.740409 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:25.838872 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 4 0
+I0920 14:59:29.089394 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:31.094036 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 5 0
+I0920 14:59:32.194561 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:34.006340 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:35.609133 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:38.124480 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:39.214051 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:40.162434 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:42.854526 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:43.382004 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:45.025612 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:45.545786 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:45.794077 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 6 0
+I0920 14:59:46.168467 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:46.518072 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:46.945941 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 7 0
+I0920 14:59:47.379053 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:47.797912 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:48.088534 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:48.447940 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 8 0
+I0920 14:59:48.913427 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:49.366946 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:50.232998 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:51.019865 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:52.582033 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:52.798285 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:53.364125 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:53.808599 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:55.835065 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:56.563361 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:57.002144 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:57.987877 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 14:59:58.914901 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:00.675340 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:01.744957 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:02.454545 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:03.760454 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:04.308261 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:05.893539 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:06.558022 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:07.234398 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:08.168656 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:09.041261 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:10.951763 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:12.059926 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:12.723089 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:13.900225 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:14.757386 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 9 1
+I0920 15:00:16.426235 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:16.804051 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 10 1
+I0920 15:00:17.450564 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 11 1
+I0920 15:00:19.404317 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:20.138093 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:21.513924 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:21.994933 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:22.243897 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:22.468087 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:23.060928 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:23.434089 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:24.974059 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:25.520370 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:25.766409 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 12 1
+I0920 15:00:26.115134 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:26.501853 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:26.912467 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:27.185631 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:30.497079 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:31.667344 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:34.101572 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 13 1
+I0920 15:00:35.840975 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:37.244885 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 14 1
+I0920 15:00:39.264390 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:39.557907 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:39.807825 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:40.138118 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 15 1
+I0920 15:00:40.569716 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:40.919204 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 16 1
+I0920 15:00:41.569492 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:41.944676 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 17 1
+I0920 15:00:42.205364 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:42.538552 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:42.890069 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:43.348889 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:43.602762 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:43.840473 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:44.423463 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:44.713377 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:45.051445 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:45.437388 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:45.663902 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 18 1
+I0920 15:00:45.971146 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:46.319643 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:46.709472 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 19 1
+I0920 15:00:47.058410 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:47.325839 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:47.718446 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:49.697027 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:50.776490 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:51.029553 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 20 1
+I0920 15:00:52.357076 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:52.498534 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:52.730870 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:53.553365 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:55.069623 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:55.219900 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:55.379971 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:55.793819 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:58.186141 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:58.515597 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:58.612984 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:58.978070 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:00:59.856184 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:02.337877 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:03.396492 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:03.596541 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:04.314033 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:05.406649 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:07.212659 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:07.548808 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:07.661478 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:08.024027 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:08.868670 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:11.659659 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:12.682940 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:13.060998 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:14.016569 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:15.282459 3286950 SceneGraph.h:93] Created DrawableGroup: 
+yqstnuAEVhm 21 2
+I0920 15:01:17.171291 3286950 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0920 15:01:17.171347 3286950 SemanticScene.h:41] Deconstructing SemanticScene
+I0920 15:01:17.174945 3286950 SceneManager.h:25] Deconstructing SceneManager
+I0920 15:01:17.174957 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 15:01:17.176026 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 15:01:17.176113 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 15:01:17.176128 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 15:01:17.200277 3286950 Renderer.cpp:34] Deconstructing Renderer
+I0920 15:01:17.200310 3286950 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0920 15:01:17.316777 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0920 15:01:17.316805 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0920 15:01:17.316880 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0920 15:01:17.316910 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0920 15:01:17.316934 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0920 15:01:17.316951 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0920 15:01:17.316960 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0920 15:01:17.316967 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0920 15:01:17.316989 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0920 15:01:17.317008 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0920 15:01:17.317020 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0920 15:01:17.317030 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0920 15:01:17.317046 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0920 15:01:17.317058 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0920 15:01:17.317065 3286950 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0920 15:01:17.317498 3286950 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0920 15:01:17.317502 3286950 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0920 15:01:17.318866 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0920 15:01:17.318881 3286950 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0920 15:01:17.318890 3286950 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb
+I0920 15:01:17.318894 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.stage_config.json
+I0920 15:01:17.319846 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb | This file  does not exist.
+I0920 15:01:17.319897 3286950 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb
+I0920 15:01:17.319900 3286950 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0920 15:01:17.319904 3286950 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.navmesh
+I0920 15:01:17.321653 3286950 Simulator.cpp:158] Loaded.
+I0920 15:01:17.321679 3286950 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0920 15:01:17.330596 3286950 ResourceManager.cpp:193] ResourceManager::loadStage : Loading Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF_semantic.ply
+I0920 15:01:17.330607 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:17.330610 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF_semantic.ply 
+I0920 15:01:27.123431 3286950 ResourceManager.cpp:224] ResourceManager::loadStage : Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF_semantic.ply loaded.
+I0920 15:01:27.123484 3286950 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb.
+I0920 15:01:27.123489 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.glb 
+I0920 15:01:27.123534 3286950 ResourceManager.cpp:1119] Importing Basis files as BC7 for fzynW3qQPVF.glb
+I0920 15:01:30.957369 3286950 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/fzynW3qQPVF/fzynW3qQPVF.navmesh
+I0920 15:01:31.541265 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:33.035676 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:34.775027 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:37.326051 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:38.730324 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:40.498693 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 1 0
+I0920 15:01:41.949904 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:43.945232 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:45.754366 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:48.711874 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:50.249800 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:51.688380 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:53.654955 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 2 0
+I0920 15:01:54.498193 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:56.466184 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:01:58.474682 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:01.763620 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:03.585855 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:05.242329 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:05.542198 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:05.921540 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:09.235903 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 3 0
+I0920 15:02:09.711412 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:09.900110 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:10.150537 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:12.080478 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 4 0
+I0920 15:02:15.189821 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:15.915432 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:17.391893 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:17.726052 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:17.934723 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:18.096778 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:18.372846 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:18.757941 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:20.134290 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:20.450510 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:20.658146 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 5 0
+I0920 15:02:20.992681 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:21.264987 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:21.557041 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:22.094666 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:24.567073 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:27.656296 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:31.852994 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:32.158313 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:32.488933 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:32.964828 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:33.362211 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:33.926662 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:37.216391 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:38.671857 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:40.750759 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:42.787803 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:46.606232 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:49.053438 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:51.997735 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:54.976936 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:56.425879 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:02:58.677232 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:00.521131 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:04.251736 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:07.144908 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:10.119202 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:13.498260 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:14.748582 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:16.777915 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:19.074934 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:23.164664 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:26.315325 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:29.484508 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:32.798170 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:34.238997 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:36.888352 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:39.192072 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:42.967255 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:45.682056 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:48.460217 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 6 1
+I0920 15:03:50.764004 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:51.175098 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:51.350348 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:51.591413 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 7 1
+I0920 15:03:51.882359 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:52.117641 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:52.383646 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:54.192965 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:55.957901 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 8 1
+I0920 15:03:56.306110 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:56.571353 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:56.836776 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:57.323499 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:57.605139 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:57.857471 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:58.056002 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:58.292333 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:58.721146 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 9 1
+I0920 15:03:59.140790 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:03:59.894105 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:01.738569 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:02.990590 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:03.181734 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:03.415117 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 10 1
+I0920 15:04:03.692905 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:03.950963 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:04.221066 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:04.497342 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:04.804541 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:05.037333 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:05.261710 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:05.531867 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:07.453997 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:08.723068 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:10.342126 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:12.972215 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:14.843375 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:17.222535 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:18.776135 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:20.351910 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:23.244565 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:25.225189 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:27.713805 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:28.934850 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:30.567348 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:33.548017 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:35.405794 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:37.764823 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:39.220103 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:40.959497 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:43.819857 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:45.779663 3286950 SceneGraph.h:93] Created DrawableGroup: 
+fzynW3qQPVF 11 2
+I0920 15:04:48.113287 3286950 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0920 15:04:48.113337 3286950 SemanticScene.h:41] Deconstructing SemanticScene
+I0920 15:04:48.116086 3286950 SceneManager.h:25] Deconstructing SceneManager
+I0920 15:04:48.116096 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 15:04:48.121306 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 15:04:48.123551 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 15:04:48.123564 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 15:04:48.161492 3286950 Renderer.cpp:34] Deconstructing Renderer
+I0920 15:04:48.161530 3286950 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0920 15:04:48.313616 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0920 15:04:48.315131 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0920 15:04:48.315202 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0920 15:04:48.315237 3286950 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0920 15:04:48.315268 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0920 15:04:48.315290 3286950 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0920 15:04:48.315299 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0920 15:04:48.315307 3286950 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0920 15:04:48.315332 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0920 15:04:48.315352 3286950 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0920 15:04:48.315363 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0920 15:04:48.315378 3286950 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0920 15:04:48.315397 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0920 15:04:48.315410 3286950 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0920 15:04:48.315416 3286950 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0920 15:04:48.320289 3286950 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0920 15:04:48.320292 3286950 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0920 15:04:48.322618 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0920 15:04:48.322635 3286950 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0920 15:04:48.322639 3286950 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb
+I0920 15:04:48.322644 3286950 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.stage_config.json
+I0920 15:04:48.323906 3286950 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb | This file  does not exist.
+I0920 15:04:48.325124 3286950 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb
+I0920 15:04:48.325125 3286950 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0920 15:04:48.325130 3286950 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.navmesh
+I0920 15:04:48.326766 3286950 Simulator.cpp:158] Loaded.
+I0920 15:04:48.326774 3286950 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0920 15:04:48.350152 3286950 ResourceManager.cpp:193] ResourceManager::loadStage : Loading Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG_semantic.ply
+I0920 15:04:48.350169 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:04:48.350173 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG_semantic.ply 
+I0920 15:05:03.539721 3286950 ResourceManager.cpp:224] ResourceManager::loadStage : Semantic Stage mesh : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG_semantic.ply loaded.
+I0920 15:05:03.539779 3286950 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb.
+I0920 15:05:03.539783 3286950 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.glb 
+I0920 15:05:03.539831 3286950 ResourceManager.cpp:1119] Importing Basis files as BC7 for PX4nDJXEHrG.glb
+I0920 15:05:08.570958 3286950 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/PX4nDJXEHrG/PX4nDJXEHrG.navmesh
+I0920 15:05:09.454502 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:12.166755 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:12.988366 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 1 0
+I0920 15:05:15.219866 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:17.478696 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:18.433643 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:20.631592 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:23.093444 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:25.354938 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:28.632378 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:29.059051 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 2 0
+I0920 15:05:29.548003 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:32.786803 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:34.251230 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:36.284991 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 3 0
+I0920 15:05:38.504622 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:40.551194 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:43.213238 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:44.972630 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 4 0
+I0920 15:05:46.580132 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 5 0
+I0920 15:05:47.546555 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:49.527587 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:52.037204 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:53.410569 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:55.904983 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:56.817255 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:59.148504 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:05:59.641507 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 6 0
+I0920 15:06:01.918531 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:02.378893 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:02.593833 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:03.041711 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:05.205132 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:08.591470 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:09.086475 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 7 0
+I0920 15:06:09.467394 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:12.864540 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:13.302594 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:14.889673 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 8 0
+I0920 15:06:16.544216 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 9 0
+I0920 15:06:18.514463 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 10 0
+I0920 15:06:18.812649 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:19.489902 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:19.713935 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 11 0
+I0920 15:06:20.338601 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:20.847728 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:21.094460 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:21.560397 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:22.062589 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:22.489503 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:23.149909 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:23.493185 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 12 0
+I0920 15:06:23.822904 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:24.567298 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:24.955392 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:25.462769 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 13 0
+I0920 15:06:26.135620 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 14 0
+I0920 15:06:26.565274 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 15 0
+I0920 15:06:26.831296 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:27.295567 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:27.776741 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:28.118191 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:28.596695 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:29.004842 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:29.479847 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:29.809790 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 16 0
+I0920 15:06:30.352932 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:30.734674 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:30.909365 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:31.267735 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:31.684357 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:32.314242 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:32.646559 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 17 0
+I0920 15:06:32.983196 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:33.511157 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:33.744062 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:34.100811 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 18 0
+I0920 15:06:34.552713 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 19 0
+I0920 15:06:34.759953 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:35.228382 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:35.434320 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 20 0
+I0920 15:06:36.041990 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:36.535900 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:36.961017 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:37.597556 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:38.061035 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 21 0
+I0920 15:06:38.833712 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:39.680905 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:41.014197 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:43.806794 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:47.457719 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:48.059424 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:49.589003 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:50.228196 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:54.058135 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:06:58.198485 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:00.071557 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:02.409942 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 22 0
+I0920 15:07:04.633014 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 23 0
+I0920 15:07:04.951102 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:05.528569 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:06.052320 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:06.479383 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:06.950718 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:07.349378 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:07.845434 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:08.238042 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 24 0
+I0920 15:07:09.053139 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:09.364427 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:10.632283 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:11.320576 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:11.777976 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 25 0
+I0920 15:07:13.023784 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:14.489738 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:17.091460 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:17.690471 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:18.365056 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:18.936736 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:21.824606 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:22.481631 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:23.940828 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:27.365204 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:28.902544 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:30.660058 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 26 0
+I0920 15:07:32.946365 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:34.425601 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:37.205266 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:40.326939 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:41.160564 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:43.505537 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:44.117306 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:46.908841 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:47.483446 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:47.864408 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:50.806053 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:52.024456 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:53.543321 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:07:56.965420 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:00.000722 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:00.605242 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:04.243038 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:06.033444 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:07.515834 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:11.082624 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:13.720611 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:14.368197 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:17.873401 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:19.211696 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:20.710179 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:23.776361 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:26.607831 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:27.497941 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:30.937734 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:32.456732 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:33.997777 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:37.349262 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:40.438771 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:41.090895 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 27 1
+I0920 15:08:43.602701 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:44.318686 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:44.710860 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:45.121924 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 28 1
+I0920 15:08:45.672751 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:45.774359 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:45.968174 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:46.369202 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 29 1
+I0920 15:08:47.135404 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:47.323326 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:47.621075 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:48.097600 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:48.711439 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:48.919338 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:49.200582 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:49.658639 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:50.474893 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:52.097005 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:52.383275 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:52.805902 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 30 1
+I0920 15:08:53.336987 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:54.271764 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:56.608582 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:57.211488 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:57.368151 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:57.874634 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:08:58.403074 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:00.680653 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:01.247505 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:01.416501 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:02.444787 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:03.620941 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:04.538762 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:07.164584 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:09.823530 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:10.518850 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:13.615180 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:14.483608 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:15.520371 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:18.441876 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:19.197926 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:19.307447 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:20.736189 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:21.958225 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:23.425951 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:26.602065 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:35.395648 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:36.053568 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:40.069602 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:41.069027 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:42.103189 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:45.331457 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:46.103231 3286950 SceneGraph.h:93] Created DrawableGroup: 
+I0920 15:09:46.222494 3286950 SceneGraph.h:93] Created DrawableGroup: 
+PX4nDJXEHrG 31 2
+I0920 15:09:46.857406 3286950 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0920 15:09:46.857481 3286950 SemanticScene.h:41] Deconstructing SemanticScene
+I0920 15:09:46.864159 3286950 SceneManager.h:25] Deconstructing SceneManager
+I0920 15:09:46.864172 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 15:09:46.870263 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 15:09:46.870339 3286950 Sensor.h:87] Deconstructing Sensor
+I0920 15:09:46.870350 3286950 SceneGraph.h:26] Deconstructing SceneGraph
+I0920 15:09:46.898762 3286950 Renderer.cpp:34] Deconstructing Renderer
+I0920 15:09:46.898797 3286950 WindowlessContext.h:17] Deconstructing WindowlessContext
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect.py", line 263, in <module>
+    run=Path(sys.argv[1]);main(run,tuple(sys.argv[2:]) or ('FIT','DEV'))
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/collect.py", line 259, in main
+    raise RuntimeError('REGISTERED_HOUSE_FAMILY_SHORTFALL: '+str(shortfalls))
+RuntimeError: REGISTERED_HOUSE_FAMILY_SHORTFALL: [{'house': 'rqfALeAoiTq', 'actual': 0, 'target': 2}]
