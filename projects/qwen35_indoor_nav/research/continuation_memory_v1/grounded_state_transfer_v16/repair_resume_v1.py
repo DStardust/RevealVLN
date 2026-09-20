@@ -109,7 +109,13 @@ def _gpu_inventory(config):
 
 
 def wait_for_idle_gpu(run, baseline):
-    """Select an actually idle card; never stop or contend with another process."""
+    """Select an idle card, or use the frozen card for collection if it has headroom.
+
+    The fallback is deliberately limited to physical collection.  It never
+    stops the external process and records its exact identity in the binding.
+    The model stage calls ``wait_for_selected_gpu`` with ``allow_occupied``
+    false and therefore still requires a truly idle card.
+    """
     marker = run / 'GPU_WAIT_ALL.jsonl'
     required_mib = int(baseline['model_memory_gib'] * 1024)
     while True:
@@ -127,20 +133,42 @@ def wait_for_idle_gpu(run, baseline):
             write(run / 'PROTOCOL.json', config)
             immutable(run / 'GPU_ASSIGNMENT.json', dict(
                 source_protocol_sha256=sha(run / 'BASE_PROTOCOL.json'), selected=selected,
-                no_external_process_at_selection=True, selection_unix=time.time(),
+                no_external_process_at_selection=True, occupied_fallback=False,
+                selection_unix=time.time(),
             ))
+            return config
+        frozen = next((row for row in inventory if row['uuid'] == baseline['gpu_uuid']), None)
+        collection_headroom = int(baseline['min_free_gpu_gib'] * 1024)
+        if frozen is not None and frozen['free_mib'] >= collection_headroom:
+            config = dict(baseline)
+            immutable(run / 'BASE_PROTOCOL.json', baseline)
+            write(run / 'PROTOCOL.json', config)
+            immutable(run / 'GPU_ASSIGNMENT.json', dict(
+                source_protocol_sha256=sha(run / 'BASE_PROTOCOL.json'), selected=frozen,
+                no_external_process_at_selection=False, occupied_fallback=True,
+                fallback_scope='physical_collection_only', selection_unix=time.time(),
+            ))
+            append(marker, dict(unix=time.time(), decision='PROCEED_OCCUPIED_COLLECTION',
+                                selected=frozen, required_free_mib=collection_headroom))
             return config
         time.sleep(30)
 
 
-def wait_for_selected_gpu(run, config):
-    """After binding, wait if an external process appears; do not rebind mid-run."""
+def wait_for_selected_gpu(run, config, allow_occupied=False):
+    """Gate a stage without stopping another process or rebinding hardware."""
     marker = run / 'GPU_WAIT_SELECTED.jsonl'
+    required_mib = int((config['min_free_gpu_gib'] if allow_occupied else config['model_memory_gib']) * 1024)
     while True:
         rows = _gpu_processes(config)
+        inventory = next((row for row in _gpu_inventory(config) if row['uuid'] == config['gpu_uuid']), None)
+        enough = inventory is not None and inventory['free_mib'] >= required_mib
+        proceed = enough and (allow_occupied or not rows)
         append(marker, dict(unix=time.time(), gpu_uuid=config['gpu_uuid'], processes=rows,
-                            decision='PROCEED' if not rows else 'WAIT_EXTERNAL_PROCESS'))
-        if not rows:
+                            free_mib=None if inventory is None else inventory['free_mib'],
+                            required_free_mib=required_mib,
+                            decision='PROCEED_OCCUPIED_COLLECTION' if proceed and rows else
+                                     'PROCEED' if proceed else 'WAIT_EXTERNAL_PROCESS'))
+        if proceed:
             return
         time.sleep(30)
 
@@ -222,7 +250,7 @@ def bootstrap(run, source):
 
 def run_repair(run, config):
     if not (run / 'REPAIR_COLLECTION_COMPLETE.json').exists():
-        wait_for_selected_gpu(run, config)
+        wait_for_selected_gpu(run, config, allow_occupied=True)
         pipeline.execute(
             run, config, 'collect_repair_test',
             [HERE / 'collect_repair_v1.py', run, 'TEST'], SIMPY, gpu=True,
@@ -266,7 +294,7 @@ def main():
         fcntl.flock(lockfile, fcntl.LOCK_EX)
         config = bootstrap(run, source)
         run_repair(run, config)
-        wait_for_selected_gpu(run, config)
+        wait_for_selected_gpu(run, config, allow_occupied=False)
         run_full_pipeline(run, args.run_id)
         publish(run)
         status = read(run / 'STATUS.json') if (run / 'STATUS.json').exists() else {}
