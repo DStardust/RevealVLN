@@ -1,0 +1,26 @@
+{
+  "snapshot_utc": "2026-09-20T08:32:32Z",
+  "run": "v16_repair_rqf_001",
+  "house": "rqfALeAoiTq",
+  "repair_version": "v16_rqf_full_neutral_yaw_search_v1",
+  "proposal_level": {
+    "completed_rejections": 103,
+    "accepted": 0,
+    "top_error": "Rejected('REPAIR_NEUTRAL_YAW_EXHAUSTED')"
+  },
+  "per_yaw_rejection_counts": {
+    "Rejected('HISTORY_EVENT_STATE_NOT_ISOLATED')": 481,
+    "Rejected('NO_ANCHOR_NEUTRAL_START_VIEW')": 188,
+    "Rejected('COLLISION')": 129,
+    "Rejected('NO_VISIBLE_SEE2_WITNESS')": 26
+  },
+  "interpretation": {
+    "physical_legality_only": true,
+    "model_scores_read": false,
+    "thresholds_relaxed": false,
+    "navigation_or_training_result": false,
+    "dominant_diagnostic_signal": "candidate discovery has not produced a legal anchor/history pair"
+  },
+  "representative_live_evidence": "runs/v16_repair_rqf_001/proposals/*/FAILURE.json",
+  "preservation": "all live failures remain on the server; this file is an aggregate handoff snapshot"
+}

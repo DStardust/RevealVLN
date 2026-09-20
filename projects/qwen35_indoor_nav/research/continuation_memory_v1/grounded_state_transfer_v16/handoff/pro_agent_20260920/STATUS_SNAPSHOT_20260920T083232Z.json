@@ -1,0 +1,76 @@
+{
+  "snapshot_utc": "2026-09-20T08:32:32Z",
+  "repository": "DStardust/RevealVLN",
+  "branch": "codex/q35n-grounded-state-v16-20260920",
+  "head_commit": "d1349b99fc659f4461737bd9698e8471ea075571",
+  "old_run": {
+    "run_id": "v16_formal_001",
+    "completed_families": 24,
+    "planned_families": 26,
+    "test_house": "rqfALeAoiTq",
+    "missing_families": 2,
+    "old_candidate_attempts": 117,
+    "old_candidate_accepts": 0,
+    "read_only": true
+  },
+  "repair_run": {
+    "run_id": "v16_repair_rqf_001",
+    "source_run": "v16_formal_001",
+    "repair_version": "v16_rqf_full_neutral_yaw_search_v1",
+    "house": "rqfALeAoiTq",
+    "split": "TEST",
+    "target": 2,
+    "completed_attempts": 103,
+    "accepted": 0,
+    "journal_start": 104,
+    "journal_rejected": 103,
+    "family_files": 0,
+    "repair_house_file": false,
+    "phase": "collect_repair_test",
+    "status": "RUNNING",
+    "service": "q35n-v16-repair-rqf-20260920-04.service",
+    "outer_pid": 3423082,
+    "worker_pid": 3423084,
+    "collector_pid": 3423182
+  },
+  "failure_summary": {
+    "top_error": "Rejected('REPAIR_NEUTRAL_YAW_EXHAUSTED')",
+    "failure_files": 103,
+    "yaw_error_counts": {
+      "Rejected('HISTORY_EVENT_STATE_NOT_ISOLATED')": 481,
+      "Rejected('NO_ANCHOR_NEUTRAL_START_VIEW')": 188,
+      "Rejected('COLLISION')": 129,
+      "Rejected('NO_VISIBLE_SEE2_WITNESS')": 26
+    }
+  },
+  "gpu": {
+    "selected_index": 1,
+    "selected_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+    "total_mib": 32607,
+    "used_mib": 16679,
+    "free_mib": 15431,
+    "occupied_fallback": true,
+    "external_processes_untouched": true,
+    "external_roles": {
+      "gpu0_gpu1": "NavDP",
+      "gpu2_gpu7": "SparseDrive"
+    }
+  },
+  "not_started": [
+    "Qwen loading",
+    "formal data-family completion",
+    "nine-model training",
+    "720 real continuation evaluations",
+    "G1"
+  ],
+  "live_paths_not_in_git": [
+    "projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_formal_001",
+    "projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/runs/v16_repair_rqf_001",
+    "projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/standalone_jobs/v16-repair-rqf-20260920-04"
+  ],
+  "decision_requested": [
+    "allow v1 to continue to an explicit predeclared attempt/time cap",
+    "or authorize a new v2 physical-generation diagnosis and run"
+  ],
+  "scientific_claim": "none; this is a data-coverage and physical-legality status only"
+}
