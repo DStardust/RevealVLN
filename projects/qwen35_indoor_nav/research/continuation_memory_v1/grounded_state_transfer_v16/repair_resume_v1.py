@@ -233,7 +233,7 @@ def bootstrap(run, source):
     ))
     pipeline.preflight(run, config)
     write(run / 'PREFLIGHT_COMPLETE.json', dict(phase='preflight', runtime_gpu=config['gpu_uuid'],
-                                                completed_unix=time.time()), True)
+                                                completed_unix=time.time()))
     report = run / 'REPAIR_REPORT_ZH.md'
     if not report.exists():
         report.write_text(
