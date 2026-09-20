@@ -40,7 +40,7 @@ def gpu_snapshot(index):
 
 def local_gpu_hours(run,c):
     path=run/'RESOURCE_SESSIONS.jsonl'
-    return sum(row['wall_seconds'] for row in c.records(path))/3600 if path.exists() else 0.0
+    return sum(row['wall_seconds'] for row in c.c.records(path))/3600 if path.exists() else 0.0
 
 
 def execute(run,name,argv,config,c,gpu):
@@ -128,7 +128,7 @@ def train_summary(run,c):
     rows=[]
     for path in sorted((run/'train').glob('*_*/RESULT.json')):
         result=c.read(path);logs=[]
-        for log in sorted(path.parent.glob('attempt_*/STEPS.jsonl')):logs.extend(c.records(log))
+        for log in sorted(path.parent.glob('attempt_*/STEPS.jsonl')):logs.extend(c.c.records(log))
         result=dict(result,logged_updates=len(logs),first_loss=logs[0]['loss'] if logs else None,last_loss=logs[-1]['loss'] if logs else None,
             finite_losses=all(__import__('math').isfinite(row['loss']) for row in logs),positive_gradient_steps=sum(row['gradient_norm']>0 for row in logs))
         rows.append(result)

@@ -2,12 +2,15 @@
 import unittest
 from pathlib import Path
 import sys
+import tempfile
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 
 from build_data import FITDEV_SCOPE,FORMAL_SCOPE,scope_admission
 from evaluate_continuations import registry_value
 import objective
+from fitdev_fastpath import local_gpu_hours
 from train import schedule_for_seed,training_families
+import v16_common
 from v16_common import c
 
 
@@ -48,6 +51,12 @@ class FitDevScopeTest(unittest.TestCase):
         self.assertEqual((dev['main_denominator_per_arm'],dev['control_denominator_per_arm']),(48,12))
         formal=registry_value(families('TEST',8),dict(self.config,evaluation_scope='FORMAL_TEST'))
         self.assertEqual((len(formal['conditions']),len(formal['slots'])),(80,720))
+
+    def test_local_resource_accounting_uses_common_record_reader(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path=Path(folder)/'RESOURCE_SESSIONS.jsonl'
+            path.write_text('{"wall_seconds":1800}\n{"wall_seconds":900}\n')
+            self.assertEqual(local_gpu_hours(Path(folder),v16_common),0.75)
 
 
 if __name__=='__main__':unittest.main(verbosity=2)
