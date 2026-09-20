@@ -1,0 +1,31 @@
+{
+  "snapshot_utc": "2026-09-20T08:40:17Z",
+  "supersedes": "STATUS_SNAPSHOT_20260920T083232Z.json for live progress only",
+  "repository": "DStardust/RevealVLN",
+  "branch": "codex/q35n-grounded-state-v16-20260920",
+  "head_at_previous_upload": "e4009d18e21425028bff77fa446fccca0e8376db",
+  "repair_run": "v16_repair_rqf_001",
+  "service": "q35n-v16-repair-rqf-20260920-04.service",
+  "status": "RUNNING",
+  "phase": "collect_repair_test",
+  "house": "rqfALeAoiTq",
+  "split": "TEST",
+  "target": 2,
+  "completed_attempts": 135,
+  "accepted": 0,
+  "journal": {
+    "START": 136,
+    "REJECTED": 135
+  },
+  "family_files": 0,
+  "repair_house_file": false,
+  "failure_files": 135,
+  "per_yaw_rejection_counts": {
+    "Rejected('HISTORY_EVENT_STATE_NOT_ISOLATED')": 583,
+    "Rejected('NO_ANCHOR_NEUTRAL_START_VIEW')": 225,
+    "Rejected('COLLISION')": 149,
+    "Rejected('NO_VISIBLE_SEE2_WITNESS')": 123
+  },
+  "interpretation": "The v1 repair search still has no physically accepted family; this is not a training, model-score, or navigation result.",
+  "action_requested": "Main pro agent should choose an explicit v1 cap or authorize a new v2 physical-generator diagnosis. Do not modify or stop the live run from this handoff."
+}

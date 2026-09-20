@@ -25,9 +25,10 @@
 
 1. 本文件；
 2. `STATUS_SNAPSHOT_20260920T083232Z.json`；
-3. `FAILURE_EVIDENCE_20260920T083232Z.json`；
-4. 上级目录的 `HANDOFF_ZH.md`、`PROTOCOL.json`、`README.md`、`REPORT_ZH.md`、`RESULT.json`、`GITHUB_HANDOFF.json`；
-5. `collect.py`、`collect_repair_v1.py`、`repair_resume_v1.py`、`pipeline.py`、`promote_pilot.py`。
+3. `LATEST_UPLOAD_STATUS_20260920T084017Z.json`（若存在，以它覆盖前一快照的 live 进度字段）；
+4. `FAILURE_EVIDENCE_20260920T083232Z.json`；
+5. 上级目录的 `HANDOFF_ZH.md`、`PROTOCOL.json`、`README.md`、`REPORT_ZH.md`、`RESULT.json`、`GITHUB_HANDOFF.json`；
+6. `collect.py`、`collect_repair_v1.py`、`repair_resume_v1.py`、`pipeline.py`、`promote_pilot.py`。
 
 若能访问原执行服务器，再读取 live run 中同名文件；本交接 JSON 是固定时间点快照，不能替代 live 状态。
 
