@@ -1,3 +1,5 @@
+> 指标更正：请先读 [CORRECTION_ZH.md](CORRECTION_ZH.md)。初版 false_stop 统计的是教师动作不一致，不能直接解释成任务错停；原拒绝记录保留。六份权重已冻结用于同级 state_stop_readout_eval_v2 的真实闭环。
+
 # 状态到 STOP 的局部读出修复 V1
 
 针对真实诊断中的“预测状态正确、动作仍漏停”，只训练113参数的STOP残差。原MONOTONIC三个种子的记忆、事件预测器、动作分支与best4k全部冻结。三个运动动作分数逐值保持不变；无oracle STOP、无动作禁用、无新标签。

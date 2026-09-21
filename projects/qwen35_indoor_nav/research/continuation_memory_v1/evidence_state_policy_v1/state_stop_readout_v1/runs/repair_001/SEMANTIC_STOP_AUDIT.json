@@ -1,0 +1,383 @@
+{
+  "status": "READ_ONLY_SEMANTIC_STOP_AUDIT",
+  "source_evaluator": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/evaluator_v16.py",
+  "source_evaluator_sha256": "892a852a7bde663b194f129da53065ca18ff12eac86adf084ab674f263b3cb53",
+  "rule": "ready is exact registered state_sequence bit 4. safe endpoint also needs structure, collision-free trajectory and actual STOP within 500. No synthetic STOP is recorded as a physical rollout.",
+  "new_updates": 0,
+  "new_gpu_hours": 0,
+  "records": [
+    {
+      "seed": 1209,
+      "split": "FIT",
+      "task": "task_A",
+      "original": {
+        "n": 3148,
+        "ready_n": 1744,
+        "not_ready_n": 1404,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 2912,
+        "teacher_missed_stop": 130,
+        "teacher_stop_disagreement": 83,
+        "premature_stop": 6,
+        "ready_defer": 1561,
+        "ready_stop": 183,
+        "ready_teacher_continue": 1508
+      },
+      "repair": {
+        "n": 3148,
+        "ready_n": 1744,
+        "not_ready_n": 1404,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 2912,
+        "teacher_missed_stop": 119,
+        "teacher_stop_disagreement": 84,
+        "premature_stop": 0,
+        "ready_defer": 1543,
+        "ready_stop": 201,
+        "ready_teacher_continue": 1508
+      }
+    },
+    {
+      "seed": 1209,
+      "split": "FIT",
+      "task": "task_T",
+      "original": {
+        "n": 788,
+        "ready_n": 544,
+        "not_ready_n": 244,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 552,
+        "teacher_missed_stop": 104,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 412,
+        "ready_stop": 132,
+        "ready_teacher_continue": 308
+      },
+      "repair": {
+        "n": 788,
+        "ready_n": 544,
+        "not_ready_n": 244,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 552,
+        "teacher_missed_stop": 104,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 412,
+        "ready_stop": 132,
+        "ready_teacher_continue": 308
+      }
+    },
+    {
+      "seed": 1209,
+      "split": "DEV",
+      "task": "task_A",
+      "original": {
+        "n": 848,
+        "ready_n": 436,
+        "not_ready_n": 412,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 784,
+        "teacher_missed_stop": 38,
+        "teacher_stop_disagreement": 56,
+        "premature_stop": 22,
+        "ready_defer": 376,
+        "ready_stop": 60,
+        "ready_teacher_continue": 372
+      },
+      "repair": {
+        "n": 848,
+        "ready_n": 436,
+        "not_ready_n": 412,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 784,
+        "teacher_missed_stop": 40,
+        "teacher_stop_disagreement": 58,
+        "premature_stop": 20,
+        "ready_defer": 374,
+        "ready_stop": 62,
+        "ready_teacher_continue": 372
+      }
+    },
+    {
+      "seed": 1209,
+      "split": "DEV",
+      "task": "task_T",
+      "original": {
+        "n": 208,
+        "ready_n": 136,
+        "not_ready_n": 72,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 144,
+        "teacher_missed_stop": 38,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 110,
+        "ready_stop": 26,
+        "ready_teacher_continue": 72
+      },
+      "repair": {
+        "n": 208,
+        "ready_n": 136,
+        "not_ready_n": 72,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 144,
+        "teacher_missed_stop": 38,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 110,
+        "ready_stop": 26,
+        "ready_teacher_continue": 72
+      }
+    },
+    {
+      "seed": 1210,
+      "split": "FIT",
+      "task": "task_A",
+      "original": {
+        "n": 3148,
+        "ready_n": 1744,
+        "not_ready_n": 1404,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 2912,
+        "teacher_missed_stop": 140,
+        "teacher_stop_disagreement": 53,
+        "premature_stop": 2,
+        "ready_defer": 1597,
+        "ready_stop": 147,
+        "ready_teacher_continue": 1508
+      },
+      "repair": {
+        "n": 3148,
+        "ready_n": 1744,
+        "not_ready_n": 1404,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 2912,
+        "teacher_missed_stop": 100,
+        "teacher_stop_disagreement": 164,
+        "premature_stop": 0,
+        "ready_defer": 1444,
+        "ready_stop": 300,
+        "ready_teacher_continue": 1508
+      }
+    },
+    {
+      "seed": 1210,
+      "split": "FIT",
+      "task": "task_T",
+      "original": {
+        "n": 788,
+        "ready_n": 544,
+        "not_ready_n": 244,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 552,
+        "teacher_missed_stop": 119,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 427,
+        "ready_stop": 117,
+        "ready_teacher_continue": 308
+      },
+      "repair": {
+        "n": 788,
+        "ready_n": 544,
+        "not_ready_n": 244,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 552,
+        "teacher_missed_stop": 103,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 411,
+        "ready_stop": 133,
+        "ready_teacher_continue": 308
+      }
+    },
+    {
+      "seed": 1210,
+      "split": "DEV",
+      "task": "task_A",
+      "original": {
+        "n": 848,
+        "ready_n": 436,
+        "not_ready_n": 412,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 784,
+        "teacher_missed_stop": 49,
+        "teacher_stop_disagreement": 38,
+        "premature_stop": 10,
+        "ready_defer": 393,
+        "ready_stop": 43,
+        "ready_teacher_continue": 372
+      },
+      "repair": {
+        "n": 848,
+        "ready_n": 436,
+        "not_ready_n": 412,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 784,
+        "teacher_missed_stop": 40,
+        "teacher_stop_disagreement": 71,
+        "premature_stop": 19,
+        "ready_defer": 360,
+        "ready_stop": 76,
+        "ready_teacher_continue": 372
+      }
+    },
+    {
+      "seed": 1210,
+      "split": "DEV",
+      "task": "task_T",
+      "original": {
+        "n": 208,
+        "ready_n": 136,
+        "not_ready_n": 72,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 144,
+        "teacher_missed_stop": 48,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 120,
+        "ready_stop": 16,
+        "ready_teacher_continue": 72
+      },
+      "repair": {
+        "n": 208,
+        "ready_n": 136,
+        "not_ready_n": 72,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 144,
+        "teacher_missed_stop": 48,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 120,
+        "ready_stop": 16,
+        "ready_teacher_continue": 72
+      }
+    },
+    {
+      "seed": 1211,
+      "split": "FIT",
+      "task": "task_A",
+      "original": {
+        "n": 3148,
+        "ready_n": 1744,
+        "not_ready_n": 1404,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 2912,
+        "teacher_missed_stop": 107,
+        "teacher_stop_disagreement": 85,
+        "premature_stop": 7,
+        "ready_defer": 1537,
+        "ready_stop": 207,
+        "ready_teacher_continue": 1508
+      },
+      "repair": {
+        "n": 3148,
+        "ready_n": 1744,
+        "not_ready_n": 1404,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 2912,
+        "teacher_missed_stop": 110,
+        "teacher_stop_disagreement": 77,
+        "premature_stop": 0,
+        "ready_defer": 1541,
+        "ready_stop": 203,
+        "ready_teacher_continue": 1508
+      }
+    },
+    {
+      "seed": 1211,
+      "split": "FIT",
+      "task": "task_T",
+      "original": {
+        "n": 788,
+        "ready_n": 544,
+        "not_ready_n": 244,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 552,
+        "teacher_missed_stop": 105,
+        "teacher_stop_disagreement": 4,
+        "premature_stop": 4,
+        "ready_defer": 413,
+        "ready_stop": 131,
+        "ready_teacher_continue": 308
+      },
+      "repair": {
+        "n": 788,
+        "ready_n": 544,
+        "not_ready_n": 244,
+        "teacher_stop_n": 236,
+        "teacher_continue_n": 552,
+        "teacher_missed_stop": 105,
+        "teacher_stop_disagreement": 4,
+        "premature_stop": 4,
+        "ready_defer": 413,
+        "ready_stop": 131,
+        "ready_teacher_continue": 308
+      }
+    },
+    {
+      "seed": 1211,
+      "split": "DEV",
+      "task": "task_A",
+      "original": {
+        "n": 848,
+        "ready_n": 436,
+        "not_ready_n": 412,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 784,
+        "teacher_missed_stop": 28,
+        "teacher_stop_disagreement": 60,
+        "premature_stop": 14,
+        "ready_defer": 354,
+        "ready_stop": 82,
+        "ready_teacher_continue": 372
+      },
+      "repair": {
+        "n": 848,
+        "ready_n": 436,
+        "not_ready_n": 412,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 784,
+        "teacher_missed_stop": 31,
+        "teacher_stop_disagreement": 60,
+        "premature_stop": 14,
+        "ready_defer": 357,
+        "ready_stop": 79,
+        "ready_teacher_continue": 372
+      }
+    },
+    {
+      "seed": 1211,
+      "split": "DEV",
+      "task": "task_T",
+      "original": {
+        "n": 208,
+        "ready_n": 136,
+        "not_ready_n": 72,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 144,
+        "teacher_missed_stop": 44,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 116,
+        "ready_stop": 20,
+        "ready_teacher_continue": 72
+      },
+      "repair": {
+        "n": 208,
+        "ready_n": 136,
+        "not_ready_n": 72,
+        "teacher_stop_n": 64,
+        "teacher_continue_n": 144,
+        "teacher_missed_stop": 44,
+        "teacher_stop_disagreement": 0,
+        "premature_stop": 0,
+        "ready_defer": 116,
+        "ready_stop": 20,
+        "ready_teacher_continue": 72
+      }
+    }
+  ],
+  "correction": "Earlier false_stop was teacher STOP disagreement, not task-semantic premature STOP. Earlier local gate can reject legal early stops. Original result preserved; no method gain or replacement labels inferred."
+}
