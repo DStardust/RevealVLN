@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 6.373522975947708,
+  "device": "cpu",
+  "cuda_initialized": false,
+  "new_base_forwards": 0,
+  "navigation_episodes": 0,
+  "evidence": {
+    "initial_parameter_count": 2003416,
+    "real_cached_feature_gradients": [
+      {
+        "mode": "DIRECT",
+        "cpu_updates": 3,
+        "sequence_length": 65,
+        "early_step": 0,
+        "loss_step": 64,
+        "early_action_gradient_norm": 2.9283754088282876e-07,
+        "state_action_contribution_norm": 0.004035547375679016,
+        "active_gradient_parameters": 1968278
+      },
+      {
+        "mode": "MONOTONIC",
+        "cpu_updates": 3,
+        "sequence_length": 65,
+        "early_step": 0,
+        "loss_step": 64,
+        "early_action_gradient_norm": 4.7055171307874843e-05,
+        "state_action_contribution_norm": 0.007799337152391672,
+        "active_gradient_parameters": 1904147
+      },
+      {
+        "mode": "REVISE",
+        "cpu_updates": 3,
+        "sequence_length": 65,
+        "early_step": 0,
+        "loss_step": 64,
+        "early_action_gradient_norm": 3.3997957871179096e-07,
+        "state_action_contribution_norm": 0.004158375784754753,
+        "active_gradient_parameters": 1937236
+      }
+    ],
+    "retraction_test": "Synthetic gate wiring only, not learned correction accuracy."
+  },
+  "output": "test_future_prefix_and_label_firewall (__main__.Contracts) ... ok\ntest_initialization_and_native_start (__main__.Contracts) ... ok\ntest_online_batch_padding_and_reset (__main__.Contracts) ... ok\ntest_optimizer_rng_resume_exact (__main__.Contracts) ... ok\ntest_real_backward_update_and_long_gradient (__main__.Contracts) ... ok\ntest_revise_can_retract_but_no_same_step_order_shortcut (__main__.Contracts) ... ok\ntest_runtime_budget_history_stop (__main__.Contracts) ... ok\ntest_unknown_is_masked (__main__.Contracts) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 6.373s\n\nOK\n"
+}

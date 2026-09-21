@@ -1,0 +1,5 @@
+{
+  "status": "STOPPED",
+  "reason": "InterruptedError('SIGNAL_15')",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/b2_kl_repair_v1/pipeline.py\", line 106, in main\n    execute(run,cfg,'evaluate_continuations',assignments)\n  File \"/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/b2_kl_repair_v1/pipeline.py\", line 62, in execute\n    time.sleep(5)\n  File \"/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/b2_kl_repair_v1/pipeline.py\", line 83, in signal_stop\n    def signal_stop(signum,frame):raise InterruptedError(f'SIGNAL_{signum}')\nInterruptedError: SIGNAL_15\n"
+}

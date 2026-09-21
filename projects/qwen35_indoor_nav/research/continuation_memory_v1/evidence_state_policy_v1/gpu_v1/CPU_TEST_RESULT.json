@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "tests": 2,
+  "command": "CUDA_VISIBLE_DEVICES='' TORCH_PYTHON -B test_runtime.py",
+  "cuda_context": false,
+  "covers": [
+    "128 registered conditions and 1152 slots match frozen source",
+    "causal streaming prefill plus cutoff matches batch forward for all modes",
+    "all recurrent state components fingerprinted",
+    "cleanup rejects foreign owner"
+  ],
+  "prior_attempt": {
+    "status": "FAILED",
+    "reason": "strided singleton belief cannot be viewed as bytes by inherited helper",
+    "repair": "read-only contiguous clone in GPU state fingerprint; no model or policy change"
+  }
+}

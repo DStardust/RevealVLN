@@ -1,0 +1,43 @@
+{
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "version": "evidence_state_policy_v1",
+  "source_commit": "b430092a012c0312378878d23256c052752e1a70",
+  "status": "CPU_PREPARATION_ONLY",
+  "modes": [
+    "DIRECT",
+    "MONOTONIC",
+    "REVISE"
+  ],
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "steps": 1200,
+  "checkpoint_every": 200,
+  "cpu_smoke_updates": 3,
+  "feature_width": 2048,
+  "memory_slots": 8,
+  "memory_width": 64,
+  "loss": "action CE + cutoff CE + original full preservation KL + ordinary CE + exact state BCE + current event BCE; all coefficients 1 for every mode",
+  "runtime": "argmax final method logits; no native STOP guard; executed motion history <=8; original max500 including STOP",
+  "gpu_launched_this_turn": false,
+  "base_updates": 0,
+  "primary_future_comparison": "REVISE minus DIRECT; MONOTONIC tests event accumulation. Current old B2 is descriptive only because the common path changed.",
+  "primary_future_endpoint": "Complete paired safe task satisfaction, report task_T regression separately; no effect threshold selected from this exposed DEV",
+  "gpu_training_session_hours_cap": 4,
+  "gpu_evaluation_session_hours_cap": null,
+  "navigation_execution_registered": false,
+  "independent_test_available": false,
+  "adoption": "No automatic adoption or paper novelty approval",
+  "test_scope": "Existing exposed FIT4 houses/32 parents; DEV1 house/8 parents. New independent test must be registered separately.",
+  "capacity": "Same registered parameters and initialization across three modes; active gradients/parameters differ by route and will be reported.",
+  "new_contribution_candidate": "Evidence-conditioned revision of uncertain execution history evaluated against direct learned state conditioning; hypothesis, not a new belief-state theory."
+}

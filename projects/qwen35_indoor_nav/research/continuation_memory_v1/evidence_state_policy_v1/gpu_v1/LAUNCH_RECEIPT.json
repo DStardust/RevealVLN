@@ -1,0 +1,81 @@
+{
+  "status": "REAL_GPU_UPDATES_OBSERVED",
+  "unix": 1789983605.7050617,
+  "run_id": "gpu_001",
+  "service": "q35n-evidence-state-gpu-20260921-02.service",
+  "independent": true,
+  "devices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "progress": [
+    {
+      "tag": "DIRECT_1209",
+      "step": 482,
+      "target": 1200,
+      "mode": "DIRECT",
+      "seed": 1209,
+      "device": "cuda:0"
+    },
+    {
+      "tag": "DIRECT_1210",
+      "step": 459,
+      "target": 1200,
+      "mode": "DIRECT",
+      "seed": 1210,
+      "device": "cuda:0"
+    },
+    {
+      "tag": "DIRECT_1211",
+      "step": 487,
+      "target": 1200,
+      "mode": "DIRECT",
+      "seed": 1211,
+      "device": "cuda:0"
+    },
+    {
+      "tag": "MONOTONIC_1209",
+      "step": 395,
+      "target": 1200,
+      "mode": "MONOTONIC",
+      "seed": 1209,
+      "device": "cuda:0"
+    },
+    {
+      "tag": "MONOTONIC_1210",
+      "step": 402,
+      "target": 1200,
+      "mode": "MONOTONIC",
+      "seed": 1210,
+      "device": "cuda:0"
+    },
+    {
+      "tag": "REVISE_1209",
+      "step": 362,
+      "target": 1200,
+      "mode": "REVISE",
+      "seed": 1209,
+      "device": "cuda:0"
+    },
+    {
+      "tag": "REVISE_1210",
+      "step": 370,
+      "target": 1200,
+      "mode": "REVISE",
+      "seed": 1210,
+      "device": "cuda:0"
+    }
+  ],
+  "total_observed_updates": 2957,
+  "gpu_hours": 0.3333779912692909,
+  "base_loaded_for_training": false,
+  "base_feature_cache": true,
+  "method_gain": null,
+  "navigation_not_started_at_receipt": true,
+  "dashboard": "http://127.0.0.1:18770/"
+}

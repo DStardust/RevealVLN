@@ -1,0 +1,582 @@
+{
+  "now": 1789983535.6107092,
+  "run": "gpu_001",
+  "status": {
+    "status": "RUNNING",
+    "stage": "train",
+    "workers": [
+      {
+        "gpu": 1,
+        "returncode": null,
+        "seconds": 104.59140094928443,
+        "resource": {
+          "owned_pids": [
+            533786,
+            533792
+          ],
+          "rss_bytes": 1707675648
+        },
+        "device": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1202,
+          "free_mib": 30908,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "gpu": 2,
+        "returncode": null,
+        "seconds": 104.48289319640025,
+        "resource": {
+          "owned_pids": [
+            533789,
+            533795
+          ],
+          "rss_bytes": 1714737152
+        },
+        "device": {
+          "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1196,
+          "free_mib": 30914,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "gpu": 3,
+        "returncode": null,
+        "seconds": 104.37200784822926,
+        "resource": {
+          "owned_pids": [
+            533793,
+            533798
+          ],
+          "rss_bytes": 1729662976
+        },
+        "device": {
+          "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1196,
+          "free_mib": 30914,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "gpu": 4,
+        "returncode": null,
+        "seconds": 104.25933331809938,
+        "resource": {
+          "owned_pids": [
+            533797,
+            533804
+          ],
+          "rss_bytes": 1712672768
+        },
+        "device": {
+          "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1200,
+          "free_mib": 30910,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "gpu": 5,
+        "returncode": null,
+        "seconds": 104.14151002001017,
+        "resource": {
+          "owned_pids": [
+            533803,
+            533808
+          ],
+          "rss_bytes": 1719308288
+        },
+        "device": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1194,
+          "free_mib": 30916,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "gpu": 6,
+        "returncode": null,
+        "seconds": 104.03040219610557,
+        "resource": {
+          "owned_pids": [
+            533807,
+            533812
+          ],
+          "rss_bytes": 1741123584
+        },
+        "device": {
+          "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1194,
+          "free_mib": 30916,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "gpu": 7,
+        "returncode": null,
+        "seconds": 103.91958677815273,
+        "resource": {
+          "owned_pids": [
+            533811,
+            533815
+          ],
+          "rss_bytes": 1715073024
+        },
+        "device": {
+          "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 1200,
+          "free_mib": 30910,
+          "driver": "580.126.09"
+        }
+      }
+    ],
+    "gpu_hours": 0.20272142619618938,
+    "unix": 1789983534.9814117
+  },
+  "service_status": "RUNNING",
+  "heartbeat_age_seconds": 0.6238043308258057,
+  "groups": 0,
+  "planned_groups": 128,
+  "complete": 0,
+  "planned": 1152,
+  "unsealed_attempt_results": 0,
+  "models_complete": 0,
+  "planned_models": 9,
+  "training_rows": [
+    {
+      "tag": "DIRECT_1209",
+      "gpu": 1,
+      "step": 277,
+      "planned": 1200,
+      "complete": false,
+      "loss": 3.448521137237549,
+      "auxiliary": 0.335856556892395,
+      "gradient_norm": 4.330967621501827
+    },
+    {
+      "tag": "MONOTONIC_1209",
+      "gpu": 2,
+      "step": 227,
+      "planned": 1200,
+      "complete": false,
+      "loss": 4.677671909332275,
+      "auxiliary": 0.29007476568222046,
+      "gradient_norm": 10.325933596263322
+    },
+    {
+      "tag": "REVISE_1209",
+      "gpu": 3,
+      "step": 207,
+      "planned": 1200,
+      "complete": false,
+      "loss": 5.36501407623291,
+      "auxiliary": 0.5330734252929688,
+      "gradient_norm": 16.035175903939592
+    },
+    {
+      "tag": "DIRECT_1210",
+      "gpu": 4,
+      "step": 264,
+      "planned": 1200,
+      "complete": false,
+      "loss": 4.457674026489258,
+      "auxiliary": 0.4254715144634247,
+      "gradient_norm": 9.93916856392898
+    },
+    {
+      "tag": "MONOTONIC_1210",
+      "gpu": 5,
+      "step": 230,
+      "planned": 1200,
+      "complete": false,
+      "loss": 7.1097540855407715,
+      "auxiliary": 0.3051549196243286,
+      "gradient_norm": 16.011638936467612
+    },
+    {
+      "tag": "REVISE_1210",
+      "gpu": 6,
+      "step": 213,
+      "planned": 1200,
+      "complete": false,
+      "loss": 5.681610107421875,
+      "auxiliary": 0.6580920815467834,
+      "gradient_norm": 16.126593801773502
+    },
+    {
+      "tag": "DIRECT_1211",
+      "gpu": 7,
+      "step": 279,
+      "planned": 1200,
+      "complete": false,
+      "loss": 3.8500914573669434,
+      "auxiliary": 0.41328364610671997,
+      "gradient_norm": 7.920618081339164
+    },
+    {
+      "tag": "MONOTONIC_1211",
+      "gpu": 1,
+      "step": 0,
+      "planned": 1200,
+      "complete": false,
+      "loss": null,
+      "auxiliary": null,
+      "gradient_norm": null
+    },
+    {
+      "tag": "REVISE_1211",
+      "gpu": 2,
+      "step": 0,
+      "planned": 1200,
+      "complete": false,
+      "loss": null,
+      "auxiliary": null,
+      "gradient_norm": null
+    }
+  ],
+  "training_steps": 1697,
+  "training_planned_steps": 10800,
+  "training": {
+    "step": 213,
+    "target": 1200,
+    "mode": "REVISE",
+    "seed": 1210,
+    "device": "cuda:0",
+    "tag": "REVISE_1210",
+    "seconds": 1789983535.4941053
+  },
+  "feature": {},
+  "progress": {},
+  "metrics": [
+    {
+      "endpoint": "main",
+      "arm": "DIRECT",
+      "complete": 0,
+      "planned": 192,
+      "passed": 0,
+      "failed": 0,
+      "unknown": 0,
+      "not_run": 192,
+      "partial_rate": null,
+      "identification_lower": 0.0,
+      "identification_upper": 1.0,
+      "collisions": 0,
+      "exhausted": 0
+    },
+    {
+      "endpoint": "main",
+      "arm": "MONOTONIC",
+      "complete": 0,
+      "planned": 192,
+      "passed": 0,
+      "failed": 0,
+      "unknown": 0,
+      "not_run": 192,
+      "partial_rate": null,
+      "identification_lower": 0.0,
+      "identification_upper": 1.0,
+      "collisions": 0,
+      "exhausted": 0
+    },
+    {
+      "endpoint": "main",
+      "arm": "REVISE",
+      "complete": 0,
+      "planned": 192,
+      "passed": 0,
+      "failed": 0,
+      "unknown": 0,
+      "not_run": 192,
+      "partial_rate": null,
+      "identification_lower": 0.0,
+      "identification_upper": 1.0,
+      "collisions": 0,
+      "exhausted": 0
+    },
+    {
+      "endpoint": "control",
+      "arm": "DIRECT",
+      "complete": 0,
+      "planned": 192,
+      "passed": 0,
+      "failed": 0,
+      "unknown": 0,
+      "not_run": 192,
+      "partial_rate": null,
+      "identification_lower": 0.0,
+      "identification_upper": 1.0,
+      "collisions": 0,
+      "exhausted": 0
+    },
+    {
+      "endpoint": "control",
+      "arm": "MONOTONIC",
+      "complete": 0,
+      "planned": 192,
+      "passed": 0,
+      "failed": 0,
+      "unknown": 0,
+      "not_run": 192,
+      "partial_rate": null,
+      "identification_lower": 0.0,
+      "identification_upper": 1.0,
+      "collisions": 0,
+      "exhausted": 0
+    },
+    {
+      "endpoint": "control",
+      "arm": "REVISE",
+      "complete": 0,
+      "planned": 192,
+      "passed": 0,
+      "failed": 0,
+      "unknown": 0,
+      "not_run": 192,
+      "partial_rate": null,
+      "identification_lower": 0.0,
+      "identification_upper": 1.0,
+      "collisions": 0,
+      "exhausted": 0
+    }
+  ],
+  "paired": [
+    {
+      "endpoint": "main",
+      "baseline": "DIRECT",
+      "win": 0,
+      "loss": 0,
+      "tie": 0,
+      "unknown": 0
+    },
+    {
+      "endpoint": "main",
+      "baseline": "MONOTONIC",
+      "win": 0,
+      "loss": 0,
+      "tie": 0,
+      "unknown": 0
+    },
+    {
+      "endpoint": "control",
+      "baseline": "DIRECT",
+      "win": 0,
+      "loss": 0,
+      "tie": 0,
+      "unknown": 0
+    },
+    {
+      "endpoint": "control",
+      "baseline": "MONOTONIC",
+      "win": 0,
+      "loss": 0,
+      "tie": 0,
+      "unknown": 0
+    }
+  ],
+  "workers": [
+    {
+      "gpu_index": 1,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1202,
+        "free_mib": 30908,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 277,
+        "target": 1200,
+        "mode": "DIRECT",
+        "seed": 1209,
+        "device": "cuda:0",
+        "tag": "DIRECT_1209",
+        "seconds": 1789983535.3884635,
+        "model": "DIRECT_1209"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1707675648
+    },
+    {
+      "gpu_index": 2,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1196,
+        "free_mib": 30914,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 227,
+        "target": 1200,
+        "mode": "MONOTONIC",
+        "seed": 1209,
+        "device": "cuda:0",
+        "tag": "MONOTONIC_1209",
+        "seconds": 1789983535.232112,
+        "model": "MONOTONIC_1209"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1714737152
+    },
+    {
+      "gpu_index": 3,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1196,
+        "free_mib": 30914,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 207,
+        "target": 1200,
+        "mode": "REVISE",
+        "seed": 1209,
+        "device": "cuda:0",
+        "tag": "REVISE_1209",
+        "seconds": 1789983534.9830036,
+        "model": "REVISE_1209"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1729662976
+    },
+    {
+      "gpu_index": 4,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1200,
+        "free_mib": 30910,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 264,
+        "target": 1200,
+        "mode": "DIRECT",
+        "seed": 1210,
+        "device": "cuda:0",
+        "tag": "DIRECT_1210",
+        "seconds": 1789983535.367375,
+        "model": "DIRECT_1210"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1712672768
+    },
+    {
+      "gpu_index": 5,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1194,
+        "free_mib": 30916,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 230,
+        "target": 1200,
+        "mode": "MONOTONIC",
+        "seed": 1210,
+        "device": "cuda:0",
+        "tag": "MONOTONIC_1210",
+        "seconds": 1789983535.2464023,
+        "model": "MONOTONIC_1210"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1719308288
+    },
+    {
+      "gpu_index": 6,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1194,
+        "free_mib": 30916,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 213,
+        "target": 1200,
+        "mode": "REVISE",
+        "seed": 1210,
+        "device": "cuda:0",
+        "tag": "REVISE_1210",
+        "seconds": 1789983535.4941053,
+        "model": "REVISE_1210"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1741123584
+    },
+    {
+      "gpu_index": 7,
+      "state": "RUNNING",
+      "gpu": {
+        "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 1200,
+        "free_mib": 30910,
+        "driver": "580.126.09"
+      },
+      "progress": {
+        "step": 279,
+        "target": 1200,
+        "mode": "DIRECT",
+        "seed": 1211,
+        "device": "cuda:0",
+        "tag": "DIRECT_1211",
+        "seconds": 1789983535.2558985,
+        "model": "DIRECT_1211"
+      },
+      "completed_slots": 0,
+      "log": "",
+      "rss_bytes": 1715073024
+    }
+  ],
+  "gpu_hours": 0.20272142619618938,
+  "gpu_budget_hours": 24,
+  "audit": {
+    "comparisons": 0,
+    "bitwise_equal": 0,
+    "argmax_flips": 0,
+    "max_logit_delta": null
+  },
+  "recent": [],
+  "errors": [],
+  "log": "",
+  "log_name": "attempts/train_gpu7_001/stdout.log",
+  "final_result": null
+}
