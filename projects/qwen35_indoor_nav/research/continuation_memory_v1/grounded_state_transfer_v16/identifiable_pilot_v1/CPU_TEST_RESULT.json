@@ -1,0 +1,26 @@
+{
+  "status": "PASSED",
+  "unittest": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 0.555
+  },
+  "actual_data_binding": {
+    "families": 40,
+    "features": 5850,
+    "registered_rollouts": 576
+  },
+  "real_mask_synthetic_feature_smoke": {
+    "arms": [
+      "B1",
+      "B2",
+      "Ours"
+    ],
+    "finite_backward": true,
+    "action_count": 48,
+    "cutoff_count": 8
+  },
+  "scope": "CPU code contracts only; synthetic smoke is not GPU training or method evidence",
+  "infrastructure_fix": "Restored local module import precedence after loading resource helpers; real manifest/registry check passed after repair"
+}

@@ -1,0 +1,32 @@
+{
+  "version": "identifiable_physical_data_v1_infrastructure_r2",
+  "source_commit": "85264fda68f5c3384865833e81d71313cc9ff304",
+  "gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "min_free_mib": 2048,
+  "rss_gib": 32,
+  "artifact_gib": 20,
+  "max_seconds": 10800,
+  "seed": 1209,
+  "families_per_house": 8,
+  "positions_per_house": 96,
+  "plans_per_position": 8,
+  "delay_actions": [
+    8,
+    16,
+    32
+  ],
+  "scope": "FIT_DEV_controlled_SEE2_mechanism_only",
+  "no_training": true,
+  "no_TEST": true,
+  "planned_houses": 5,
+  "planned_families": 40,
+  "planned_physical_cross_executions": 480,
+  "planned_labels": 960,
+  "prior_probes": "probe_001 and balanced_probe_001; not counted as certified families",
+  "stop_when": "target achieved or registered positions/time/resource exhausted; no score-based search",
+  "shared_all_training_arms": true,
+  "reuse_manifest": "REUSE_001.json",
+  "reuse_manifest_sha256": "f7e41acf5fcb3fed36384959aac336308b192a209075b8d494566c45919acbfc",
+  "revision_reason": "Exclude semantic signatures containing reserved masks before backend inventory; preserve 16 completed families"
+}

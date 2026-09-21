@@ -1,0 +1,160 @@
+{
+  "state": {
+    "state": "occupying",
+    "device_count": 6,
+    "worker_pids": {
+      "0": 3527078,
+      "1": 3527079,
+      "2": 3527080,
+      "3": 3527081,
+      "4": 3527082,
+      "5": 3527083
+    },
+    "external_pids": [],
+    "leases": [],
+    "manual_paused": false,
+    "idle_remaining_seconds": 0.0,
+    "monitor_error": null
+  },
+  "workers": [
+    {
+      "pid": 3527078,
+      "uid": 0,
+      "pgid": 3527078,
+      "starttime": "224769314",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/etpr1/bin/python",
+        "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder/gpu_placeholder.py",
+        "worker",
+        "--reserve-mib",
+        "256",
+        "--block-mib",
+        "256",
+        "--matmul-dim",
+        "4096",
+        "--log-level",
+        "INFO",
+        "--device",
+        "0"
+      ],
+      "cgroup": "0::/system.slice/gpu-placeholder.service\n",
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder"
+    },
+    {
+      "pid": 3527079,
+      "uid": 0,
+      "pgid": 3527079,
+      "starttime": "224769314",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/etpr1/bin/python",
+        "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder/gpu_placeholder.py",
+        "worker",
+        "--reserve-mib",
+        "256",
+        "--block-mib",
+        "256",
+        "--matmul-dim",
+        "4096",
+        "--log-level",
+        "INFO",
+        "--device",
+        "1"
+      ],
+      "cgroup": "0::/system.slice/gpu-placeholder.service\n",
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder"
+    },
+    {
+      "pid": 3527080,
+      "uid": 0,
+      "pgid": 3527080,
+      "starttime": "224769315",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/etpr1/bin/python",
+        "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder/gpu_placeholder.py",
+        "worker",
+        "--reserve-mib",
+        "256",
+        "--block-mib",
+        "256",
+        "--matmul-dim",
+        "4096",
+        "--log-level",
+        "INFO",
+        "--device",
+        "2"
+      ],
+      "cgroup": "0::/system.slice/gpu-placeholder.service\n",
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder"
+    },
+    {
+      "pid": 3527081,
+      "uid": 0,
+      "pgid": 3527081,
+      "starttime": "224769315",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/etpr1/bin/python",
+        "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder/gpu_placeholder.py",
+        "worker",
+        "--reserve-mib",
+        "256",
+        "--block-mib",
+        "256",
+        "--matmul-dim",
+        "4096",
+        "--log-level",
+        "INFO",
+        "--device",
+        "3"
+      ],
+      "cgroup": "0::/system.slice/gpu-placeholder.service\n",
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder"
+    },
+    {
+      "pid": 3527082,
+      "uid": 0,
+      "pgid": 3527082,
+      "starttime": "224769315",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/etpr1/bin/python",
+        "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder/gpu_placeholder.py",
+        "worker",
+        "--reserve-mib",
+        "256",
+        "--block-mib",
+        "256",
+        "--matmul-dim",
+        "4096",
+        "--log-level",
+        "INFO",
+        "--device",
+        "4"
+      ],
+      "cgroup": "0::/system.slice/gpu-placeholder.service\n",
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder"
+    },
+    {
+      "pid": 3527083,
+      "uid": 0,
+      "pgid": 3527083,
+      "starttime": "224769315",
+      "argv": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/etpr1/bin/python",
+        "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder/gpu_placeholder.py",
+        "worker",
+        "--reserve-mib",
+        "256",
+        "--block-mib",
+        "256",
+        "--matmul-dim",
+        "4096",
+        "--log-level",
+        "INFO",
+        "--device",
+        "5"
+      ],
+      "cgroup": "0::/system.slice/gpu-placeholder.service\n",
+      "cwd": "/mnt/data_nas/deeprobotics/daiyang/gpu_placeholder"
+    }
+  ],
+  "script_sha256": "212d6d4124fd3bf2b677952098382093e55987fd1944ab897b74295834a443e6"
+}

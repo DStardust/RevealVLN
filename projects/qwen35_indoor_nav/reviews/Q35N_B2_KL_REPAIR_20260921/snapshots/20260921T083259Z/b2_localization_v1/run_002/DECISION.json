@@ -1,0 +1,62 @@
+{
+  "status": "COMPLETE_LOCALIZATION",
+  "old_experiment": {
+    "rollouts": 1152,
+    "main": {
+      "B1": 59,
+      "B2": 61,
+      "Terminal": 41
+    },
+    "control": {
+      "B1": 114,
+      "B2": 74,
+      "Terminal": 80
+    },
+    "denominator_per_arm_endpoint": 192
+  },
+  "event_linear_DEV": {
+    "current_anchor_SEE2": [
+      0.6794871794871795,
+      0.6623076923076923,
+      0.6212820512820513
+    ],
+    "current_terminal_SEE2": [
+      0.6781476997578693,
+      0.70625,
+      0.68840799031477
+    ]
+  },
+  "memory_linear": {
+    "B1": {
+      "FIT": [
+        0.7287651444319971,
+        0.6869836727579339,
+        0.6947504223929961
+      ],
+      "DEV": [
+        0.5998816972501183,
+        0.5486743519638256,
+        0.5629784688995215
+      ]
+    },
+    "B2": {
+      "FIT": [
+        0.8853412883100281,
+        0.8920603447010328,
+        0.9024323643900389
+      ],
+      "DEV": [
+        0.5601858667648141,
+        0.5567991219307009,
+        0.5662041905462958
+      ]
+    }
+  },
+  "interpretation": "FIT diagnostic readout benefit without DEV transfer; current-event and history-state failures both present. Not evidence of an isolated memory capacity limit.",
+  "next_single_candidate": "Test teacher-conflict-aware preservation loss as a separate versioned matched intervention; retain ordinary preservation, keep data/architecture/labels fixed. No automatic launch and no efficacy guarantee.",
+  "why": "Action/preservation gradients oppose on 24/24 registered FIT checkpoints; this local observation justifies a controlled test, not adoption.",
+  "open_gap": "Current-event DEV discrimination remains limited; no evidence this loss change will fix visual/semantic generalization.",
+  "GPU_hours": 0,
+  "new_navigation_episodes": 0,
+  "policy_updates": 0
+}

@@ -1,0 +1,32 @@
+{
+  "unique_event_inputs": 3403,
+  "unique_causal_states": 14540,
+  "teacher_sequences": 600,
+  "teacher_causal_states": 4980,
+  "teacher_multiaction_states": 12,
+  "parents": {
+    "FIT": 32,
+    "DEV": 8
+  },
+  "houses": {
+    "FIT": 4,
+    "DEV": 1
+  },
+  "events_by_split": {
+    "FIT": {
+      "n": 2725,
+      "positive": [
+        465,
+        2265
+      ]
+    },
+    "DEV": {
+      "n": 678,
+      "positive": [
+        78,
+        560
+      ]
+    }
+  },
+  "scope": "Original exposed FIT/DEV houses; variants and repeated windows are not independent families. Full teacher suffixes used only at their causal time."
+}

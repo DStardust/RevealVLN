@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/b2_state_coverage_v1/test_coverage.py",
+    "-v"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_500_budget_includes_stop (__main__.Coverage) ... ok\ntest_collision_rejected (__main__.Coverage) ... ok\ntest_exact_cross_pattern (__main__.Coverage) ... ok\ntest_interior_teleport_rejected (__main__.Coverage) ... ok\ntest_missing_cell (__main__.Coverage) ... ok\ntest_no_forged_absent_anchor (__main__.Coverage) ... ok\ntest_pose_mismatch_rejected (__main__.Coverage) ... ok\ntest_stop_cannot_add_frame (__main__.Coverage) ... ok\ntest_terminal_present_rejected (__main__.Coverage) ... ok\ntest_unknown_not_negative (__main__.Coverage) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.041s\n\nOK\n",
+  "seconds": 0.2627094448544085,
+  "scope": "Synthetic boundary tests only; no physical-data PASS or model gain"
+}

@@ -1,0 +1,100 @@
+{
+  "version": "b2_matched_control_v1",
+  "run_id": "matched_001",
+  "scope": "CONTROLLED_PARENT_FIT32_DEV8_WITH_35_TERMINAL_ABSENT_COUNTERPARTS",
+  "evaluation_scope": "CONTROLLED_DEV_MECHANISM",
+  "diagnostic_split": "DEV",
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "sim_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "gpu": 0,
+  "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "seed": 1209,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "B1",
+    "B2",
+    "Terminal"
+  ],
+  "steps_per_arm": 1200,
+  "checkpoint_every": 200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "memory_slots": 8,
+  "memory_width": 64,
+  "feature_width": 2048,
+  "model_memory_gib": 25,
+  "process_rss_gib": 64,
+  "artifact_gib": 40,
+  "min_free_gpu_gib": 2,
+  "shared_gpu": true,
+  "gpu_session_hours": 24,
+  "max_session_hours": 3,
+  "infra_retries": 0,
+  "warmup_indices": 8,
+  "warmup_repeats": 2,
+  "golden_inputs": 16,
+  "new_candidate_collection_allowed": false,
+  "official_test_evaluation_allowed": false,
+  "modify_legacy_runs_allowed": false,
+  "per_stage_reapproval_required": false,
+  "base_updates": 0,
+  "training_objective": "shared action CE + cutoff CE + preservation KL + ordinary CE + auxiliary(0 / four-bit state / terminal bit); all coefficients 1; no future query auxiliary in any arm",
+  "schedule": "1200 shuffled parent occurrences, 32 FIT parents 37 or 38 times each; alternate available present/absent variants per parent, identical across arms",
+  "main_denominator_per_arm": 192,
+  "control_denominator_per_arm": 192,
+  "planned_rollouts": 1152,
+  "adoption": "No automatic adoption; complete DEV delta, seed consistency and memory/shortcut diagnostics reported. No ordinary benchmark claim.",
+  "shortcuts": "FIT-only action-pattern lookup; low lookup score does not rule out stronger action-only predictors",
+  "inherited_runtime_config_reviewed_commit": "0cb426bcf1b2945724b8ac70373a719e9b2fedcb",
+  "worktree_commit": "85264fda68f5c3384865833e81d71313cc9ff304",
+  "devices": [
+    {
+      "gpu": 0,
+      "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+    },
+    {
+      "gpu": 1,
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+    },
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+    }
+  ],
+  "min_start_gpu_gib": 12,
+  "primary": "B2 minus Terminal on task_A, report present/absent takeover and seen/missing history separately; B1 shared-data reference",
+  "parallelism": "8 GPUs, 9 independent heads; evaluation 16 complete nine-model groups per device, no model-group cross-device split",
+  "resource_authorization": "Latest user: all cards available; restore verified GPU2-7 placeholders after use; 24 GPU-session-hour development cap, no score-based retry",
+  "efficacy_claim": "Exposed DEV development signal only; no paper novelty or ordinary VLN gain assumed"
+}

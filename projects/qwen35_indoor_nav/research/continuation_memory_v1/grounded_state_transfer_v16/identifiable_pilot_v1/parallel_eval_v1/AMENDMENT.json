@@ -1,0 +1,50 @@
+{
+  "user_authorization": "2026-09-21: 可以多几张卡跑测试，2-7卡都只是占位，解除跑完再占上就可以",
+  "original_protocol_sha256": "e22db871bf8a29bf2f19e2da90d9a21194aab9de62ec7b47d3684ecb4434f9dc",
+  "original_runtime_sha256": "67b3e2710536cfe826e85ad784e776b5a35da97bf335b285ef8ad543f4b258c7",
+  "runtime_sha256": "44e99a3ce30aa58b91e005e16233a411c72affded917ef9850165135af837670",
+  "devices": [
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "model": "NVIDIA GeForce RTX 5090"
+    }
+  ],
+  "change": "Execution sharding and per-session device identity only; no model, action, labels, selection or metric change",
+  "assignment": "Sorted remaining whole conditions round-robin across GPUs 2..7 after handoff; each condition retains all nine models in fixed order",
+  "keep_completed_groups": true,
+  "partial_attempts": "Preserved; only whole groups can be resumed",
+  "handoff": "Observe next sealed group, stop only the verified original systemd unit; preserve possible newly begun partial group",
+  "maximum_handoff_wait_seconds": 600,
+  "gpu_hours_cap": 8,
+  "max_session_hours": 3,
+  "retries": 0,
+  "placeholder_socket": "/run/gpu-placeholder/control.sock",
+  "placeholder_service": "gpu-placeholder.service",
+  "restoration": "Original daemon acquire/release by coordinator PID; daemon prunes dead PID leases and resumes after all visible tasks exit plus existing idle delay"
+}

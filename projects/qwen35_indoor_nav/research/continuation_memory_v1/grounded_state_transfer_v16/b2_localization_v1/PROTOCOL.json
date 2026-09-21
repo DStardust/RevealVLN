@@ -1,0 +1,39 @@
+{
+  "version": "b2_localization_v1",
+  "source_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/grounded_state_transfer_v16/b2_matched_control_v1/runs/matched_001",
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "device": "cpu",
+  "threads_per_worker": 2,
+  "workers": 3,
+  "wall_seconds": 3600,
+  "probe_steps": 400,
+  "batch_size": 512,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "probe_kinds": [
+    "linear",
+    "mlp128"
+  ],
+  "selection": "Fixed final400; FIT only; no DEV threshold/model/hyperparameter selection",
+  "binary_threshold": 0.5,
+  "normalization": "Parameter-free per-input LayerNorm; parent and class-balanced FIT loss",
+  "memory_probes": [
+    "B1",
+    "B2"
+  ],
+  "gradient_families_per_house": 2,
+  "new_navigation_episodes": 0,
+  "base_forwards": 0,
+  "base_updates": 0,
+  "policy_updates": 0,
+  "limits": "No novelty/generalization/architecture capacity claim; negative probe is not proof of absent information; teacher agreement is not uniqueness of valid action",
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "run": "run_002",
+  "revision": "1.1 diagnostic aggregation preserves multiple real teacher actions; old data and policy unchanged",
+  "prior_attempt": "run_001: pre-processing stopped, zero probes trained"
+}
