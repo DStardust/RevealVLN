@@ -1,0 +1,70 @@
+{
+  "status": "LOCAL_REPAIR_NOT_ADMITTED",
+  "new_updates": 3600,
+  "closed_loop_complete": 0,
+  "closed_loop_planned": 768,
+  "base_updates": 0,
+  "original_model_updates": 0,
+  "all_decision_diagnostics": [
+    {
+      "split": "FIT",
+      "old": {
+        "n": 11808,
+        "correct": 9799,
+        "stop_n": 1416,
+        "continue_n": 10392,
+        "missed_stop": 705,
+        "false_stop": 225
+      },
+      "repair": {
+        "n": 11808,
+        "correct": 9768,
+        "stop_n": 1416,
+        "continue_n": 10392,
+        "missed_stop": 641,
+        "false_stop": 329
+      }
+    },
+    {
+      "split": "DEV",
+      "old": {
+        "n": 3168,
+        "correct": 1899,
+        "stop_n": 384,
+        "continue_n": 2784,
+        "missed_stop": 245,
+        "false_stop": 154
+      },
+      "repair": {
+        "n": 3168,
+        "correct": 1879,
+        "stop_n": 384,
+        "continue_n": 2784,
+        "missed_stop": 241,
+        "false_stop": 189
+      }
+    },
+    {
+      "split": "ORDINARY_CHECK",
+      "old": {
+        "n": 11307,
+        "correct": 8624,
+        "stop_n": 180,
+        "continue_n": 11127,
+        "missed_stop": 138,
+        "false_stop": 21
+      },
+      "repair": {
+        "n": 11307,
+        "correct": 8622,
+        "stop_n": 180,
+        "continue_n": 11127,
+        "missed_stop": 134,
+        "false_stop": 31
+      }
+    }
+  ],
+  "gpu_session_hours": 0.027702522161416707,
+  "scope": "Pooled repeated-seed action-labeled causal decision positions, not independent episodes or success rates",
+  "gate_source": "LOCAL_GATE.json"
+}
