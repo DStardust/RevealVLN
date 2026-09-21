@@ -1,0 +1,141 @@
+{
+  "rows": [
+    {
+      "split": "FIT",
+      "task": "task_A",
+      "old": {
+        "n": 3148,
+        "correct": 2599,
+        "stop_n": 236,
+        "continue_n": 2912,
+        "missed_stop": 130,
+        "false_stop": 83,
+        "correct_state_stop_n": 234,
+        "correct_state_missed_stop": 128
+      },
+      "repair": {
+        "n": 3148,
+        "correct": 2609,
+        "stop_n": 236,
+        "continue_n": 2912,
+        "missed_stop": 119,
+        "false_stop": 84,
+        "correct_state_stop_n": 234,
+        "correct_state_missed_stop": 117
+      }
+    },
+    {
+      "split": "FIT",
+      "task": "task_T",
+      "old": {
+        "n": 788,
+        "correct": 682,
+        "stop_n": 236,
+        "continue_n": 552,
+        "missed_stop": 104,
+        "false_stop": 0,
+        "correct_state_stop_n": 236,
+        "correct_state_missed_stop": 104
+      },
+      "repair": {
+        "n": 788,
+        "correct": 682,
+        "stop_n": 236,
+        "continue_n": 552,
+        "missed_stop": 104,
+        "false_stop": 0,
+        "correct_state_stop_n": 236,
+        "correct_state_missed_stop": 104
+      }
+    },
+    {
+      "split": "DEV",
+      "task": "task_A",
+      "old": {
+        "n": 848,
+        "correct": 512,
+        "stop_n": 64,
+        "continue_n": 784,
+        "missed_stop": 38,
+        "false_stop": 56,
+        "correct_state_stop_n": 55,
+        "correct_state_missed_stop": 31
+      },
+      "repair": {
+        "n": 848,
+        "correct": 508,
+        "stop_n": 64,
+        "continue_n": 784,
+        "missed_stop": 40,
+        "false_stop": 58,
+        "correct_state_stop_n": 55,
+        "correct_state_missed_stop": 32
+      }
+    },
+    {
+      "split": "DEV",
+      "task": "task_T",
+      "old": {
+        "n": 208,
+        "correct": 139,
+        "stop_n": 64,
+        "continue_n": 144,
+        "missed_stop": 38,
+        "false_stop": 0,
+        "correct_state_stop_n": 56,
+        "correct_state_missed_stop": 30
+      },
+      "repair": {
+        "n": 208,
+        "correct": 139,
+        "stop_n": 64,
+        "continue_n": 144,
+        "missed_stop": 38,
+        "false_stop": 0,
+        "correct_state_stop_n": 56,
+        "correct_state_missed_stop": 30
+      }
+    },
+    {
+      "split": "ORDINARY_FIT",
+      "task": "ordinary",
+      "old": {
+        "n": 30075,
+        "correct": 23403,
+        "continue_n": 29567,
+        "stop_n": 508,
+        "missed_stop": 388,
+        "false_stop": 80
+      },
+      "repair": {
+        "n": 30075,
+        "correct": 23407,
+        "continue_n": 29567,
+        "stop_n": 508,
+        "missed_stop": 381,
+        "false_stop": 85
+      }
+    },
+    {
+      "split": "ORDINARY_CHECK",
+      "task": "ordinary",
+      "old": {
+        "n": 3769,
+        "correct": 2882,
+        "continue_n": 3709,
+        "stop_n": 60,
+        "missed_stop": 48,
+        "false_stop": 5
+      },
+      "repair": {
+        "n": 3769,
+        "correct": 2880,
+        "continue_n": 3709,
+        "stop_n": 60,
+        "missed_stop": 48,
+        "false_stop": 8
+      }
+    }
+  ],
+  "checkpoint_selection": "fixed final, no DEV-selected step"
+}
