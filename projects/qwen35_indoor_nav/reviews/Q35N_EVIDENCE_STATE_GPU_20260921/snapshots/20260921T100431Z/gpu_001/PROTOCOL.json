@@ -1,0 +1,125 @@
+{
+  "version": "evidence_state_gpu_v1",
+  "run_id": "gpu_001",
+  "scope": "CONTROLLED_PARENT_FIT32_DEV8_WITH_35_TERMINAL_ABSENT_COUNTERPARTS",
+  "evaluation_scope": "CONTROLLED_DEV_MECHANISM",
+  "diagnostic_split": "DEV",
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "sim_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "gpu": 1,
+  "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "seed": 1209,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "arms": [
+    "DIRECT",
+    "MONOTONIC",
+    "REVISE"
+  ],
+  "steps_per_arm": 1200,
+  "checkpoint_every": 200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "memory_slots": 8,
+  "memory_width": 64,
+  "feature_width": 2048,
+  "model_memory_gib": 25,
+  "process_rss_gib": 64,
+  "artifact_gib": 40,
+  "min_free_gpu_gib": 2,
+  "shared_gpu": true,
+  "gpu_session_hours": 24,
+  "max_session_hours": 3,
+  "infra_retries": 0,
+  "warmup_indices": 8,
+  "warmup_repeats": 2,
+  "golden_inputs": 16,
+  "new_candidate_collection_allowed": false,
+  "official_test_evaluation_allowed": false,
+  "modify_legacy_runs_allowed": false,
+  "per_stage_reapproval_required": false,
+  "base_updates": 0,
+  "training_objective": "action CE + cutoff CE + original full preservation KL + ordinary CE + exact state BCE + current event BCE; all coefficients 1 for every mode",
+  "schedule": "1200 shuffled parent occurrences, 32 FIT parents 37 or 38 times each; alternate available present/absent variants per parent, identical across arms",
+  "main_denominator_per_arm": 192,
+  "control_denominator_per_arm": 192,
+  "planned_rollouts": 1152,
+  "adoption": "No automatic adoption or paper novelty approval",
+  "shortcuts": "FIT-only action-pattern lookup; low lookup score does not rule out stronger action-only predictors",
+  "inherited_runtime_config_reviewed_commit": "0cb426bcf1b2945724b8ac70373a719e9b2fedcb",
+  "worktree_commit": "b430092a012c0312378878d23256c052752e1a70",
+  "devices": [
+    {
+      "gpu": 1,
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+    },
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+    }
+  ],
+  "min_start_gpu_gib": 12,
+  "primary": "REVISE minus DIRECT, MONOTONIC as accumulation control; three seeds, one exposed DEV house",
+  "parallelism": "7 GPUs (1-7), nine fresh heads and whole nine-head condition groups; GPU0 external task is left alone",
+  "resource_authorization": "Latest user authorizes stopping old test and GPU execution of CPU-ready scheme. Own verified placeholder lease, no exclusive-GPU assertion.",
+  "efficacy_claim": "Exposed DEV development signal only; no paper novelty or ordinary VLN gain assumed",
+  "new_model_count": 9,
+  "reused_control_models": 0,
+  "updates_this_run": 10800,
+  "old_trajectories_reused": false,
+  "publication_branch": "codex/q35n-b2-kl-repair-20260921",
+  "source_commit": "b430092a012c0312378878d23256c052752e1a70",
+  "status": "GPU_EXECUTION_AUTHORIZED",
+  "modes": [
+    "DIRECT",
+    "MONOTONIC",
+    "REVISE"
+  ],
+  "steps": 1200,
+  "cpu_smoke_updates": 3,
+  "loss": "action CE + cutoff CE + original full preservation KL + ordinary CE + exact state BCE + current event BCE; all coefficients 1 for every mode",
+  "runtime": "argmax final method logits; no native STOP guard; executed motion history <=8; original max500 including STOP",
+  "primary_future_comparison": "REVISE minus DIRECT",
+  "primary_future_endpoint": "Complete paired safe task satisfaction, report task_T regression separately; no effect threshold selected from this exposed DEV",
+  "gpu_training_session_hours_cap": 4,
+  "gpu_evaluation_session_hours_cap": 20,
+  "navigation_execution_registered": true,
+  "independent_test_available": false,
+  "test_scope": "Existing exposed FIT4 houses/32 parents; DEV1 house/8 parents. New independent test must be registered separately.",
+  "capacity": "Same registered parameters and initialization across three modes; active gradients/parameters differ by route and will be reported.",
+  "new_contribution_candidate": "Evidence-conditioned revision of uncertain execution history evaluated against direct learned state conditioning; hypothesis, not a new belief-state theory.",
+  "gpu_execution_authorized": true,
+  "runtime_revision": "CONTENT_PATH_R1",
+  "training_reused_from": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/gpu_v1/runs/gpu_001",
+  "runtime_new_training_updates": 0
+}
