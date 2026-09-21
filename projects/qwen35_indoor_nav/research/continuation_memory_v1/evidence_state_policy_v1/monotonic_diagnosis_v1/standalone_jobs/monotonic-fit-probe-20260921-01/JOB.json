@@ -1,0 +1,25 @@
+{
+  "name": "monotonic-fit-probe-20260921-01",
+  "unit": "q35n-monotonic-fit-probe-20260921-01.service",
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+    "-I",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/monotonic_diagnosis_v1/fit_probe.py",
+    "--output",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/monotonic_diagnosis_v1/runs/diagnosis_001/FIT_PROBE.json"
+  ],
+  "cwd": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1",
+  "uid": 0,
+  "gid": 0,
+  "environment": {
+    "PATH": "/root/.local/bin:/root/.local/bin:/mnt/zrh/miniconda3/bin:/mnt/zrh/miniconda3/condabin:/usr/local/cuda/bin:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/mnt/data_nas/deeprobotics/daiyang/.codex/tmp/arg0/codex-arg0oYr0hS:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/ehpc/bin:/root/bin:/usr/local/ehpc/bin:/root/bin",
+    "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:",
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "created_unix": 1789993491.2751405,
+  "launcher_pid": 799025,
+  "launcher_cgroup": "0::/user.slice/user-0.slice/session-569.scope/init.scope\n",
+  "retries": 0,
+  "ownership": "Same UID/GID as caller, no sudo or privilege change."
+}

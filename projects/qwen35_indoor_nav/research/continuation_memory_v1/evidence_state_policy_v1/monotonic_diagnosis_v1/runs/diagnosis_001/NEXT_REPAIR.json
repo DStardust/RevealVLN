@@ -1,0 +1,19 @@
+{
+  "status": "LOCALIZED_REPAIR_CANDIDATE_NOT_IMPLEMENTED_OR_TESTED",
+  "priority": "STATE_TO_STOP_ACTION_READOUT",
+  "keep": [
+    "best4k encoder",
+    "8x64 recurrent memory",
+    "MONOTONIC historical update",
+    "task SEE2/STOP/collision/500-step success definition",
+    "all three seeds"
+  ],
+  "change_candidate": "A separately versioned learned task-completion-to-STOP readout; actual causal predicted state and existing legal teacher actions only. First isolate the readout with the encoder and recurrent representation frozen. No oracle STOP, globally banning F, blanket native STOP guard or threshold selection from holdout.",
+  "first_falsifier": "On fixed FIT/DEV, correct-state missed STOP must decline without increasing false STOP or ordinary-action regression; inspect both, not accuracy alone. This is a repair diagnostic, not a research contribution by itself.",
+  "source_of_supervision": "Existing recorded teacher actions and deterministic causal state labels only; no fabricated recovery suffixes.",
+  "exclusion": "Do not simply repeat the already failed blanket preservation-KL removal. Native-logit competition is correlated evidence here, not an isolated causal proof.",
+  "data_need": "Controlled FIT trajectories have no forward motion. Closed-loop displacement/collision recovery remains outside their physical support. If forward recovery is evaluated, collect matched real FIT recovery examples for both arms; no selective MONOTONIC failure mining or existing TEST training.",
+  "heldout_status": "Four evaluated houses are now exposed for diagnosis; any next run there is development/repair evidence, not fresh held-out confirmation.",
+  "gpu_execution_this_step": false,
+  "automatic_new_training": false
+}

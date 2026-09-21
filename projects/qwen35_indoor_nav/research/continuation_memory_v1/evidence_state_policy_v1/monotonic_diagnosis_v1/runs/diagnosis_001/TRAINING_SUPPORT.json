@@ -1,0 +1,63 @@
+{
+  "controlled": [
+    {
+      "split": "FIT",
+      "families": 59,
+      "houses": 4,
+      "sequence_rows": 1416,
+      "unique_physical_traces": 708,
+      "action_supervised_rows": {
+        "S": 472,
+        "L": 1676,
+        "R": 1788
+      },
+      "all_trace_actions_including_masked": {
+        "L": 30744,
+        "R": 29184,
+        "S": 1416
+      },
+      "unique_supervised_feature_action_pairs": 1392,
+      "max_sequence": 89,
+      "min_sequence": 21,
+      "event_supervision": {
+        "anchor_0": 27848,
+        "terminal_0": 8212,
+        "terminal_1": 53132,
+        "anchor_1": 2824
+      }
+    },
+    {
+      "split": "DEV",
+      "families": 16,
+      "houses": 1,
+      "sequence_rows": 384,
+      "unique_physical_traces": 192,
+      "action_supervised_rows": {
+        "S": 128,
+        "L": 432,
+        "R": 496
+      },
+      "all_trace_actions_including_masked": {
+        "L": 7944,
+        "R": 7536,
+        "S": 384
+      },
+      "unique_supervised_feature_action_pairs": 354,
+      "max_sequence": 69,
+      "min_sequence": 21,
+      "event_supervision": {
+        "anchor_0": 7464,
+        "terminal_0": 2176,
+        "terminal_1": 13688,
+        "anchor_1": 468
+      }
+    }
+  ],
+  "ordinary_fit_action_rows": {
+    "1": 5605,
+    "0": 18679,
+    "2": 5283,
+    "3": 508
+  },
+  "note": "Counts from source data, not multiplied optimizer exposure. Ordinary CE remains active; controlled trace actions are not the whole training distribution."
+}
