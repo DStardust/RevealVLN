@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>MONOTONIC 新屋验证</title>
+<style>body{font:16px system-ui;background:#101725;color:#dde7f5;max-width:1100px;margin:32px auto;padding:0 20px}h1{font-size:26px}section{background:#1b2638;padding:18px;margin:16px 0;border-radius:10px}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:9px;border-bottom:1px solid #39485d}progress{width:100%;height:24px}pre{white-space:pre-wrap;max-height:300px;overflow:auto}small{color:#a5b5c9}.bad{color:#ffa994}</style>
+<h1>MONOTONIC · 冻结权重的新屋验证</h1><small>自动刷新 10 秒 · 原模板与 SEE2 定义 · 4 新屋 · DIRECT / MONOTONIC × 3 种子 · 本轮不训练</small>
+<section><strong id="state">读取中</strong><p id="counts"></p><progress id="bar" max="1536" value="0"></progress><p id="cost"></p></section>
+<section><h2>真实样本采集</h2><table id="collection"></table></section>
+<section><h2>完整配对组的测试进度</h2><small>仅封存完整六模型组计入；进行中的半组不计。部分结果不是完整实验结论。</small><table id="metrics"></table></section>
+<section><h2>GPU / 当前步骤</h2><pre id="workers"></pre></section><section><h2>最近日志</h2><pre id="logs"></pre></section>
+<p id="error" class="bad"></p>
+<script>
+function table(id,head,rows){const t=document.getElementById(id);t.replaceChildren();for(const [i,r] of [head,...rows].entries()){const tr=document.createElement('tr');for(const x of r){const c=document.createElement(i?'td':'th');c.textContent=x;tr.append(c)}t.append(tr)}}
+async function update(){try{const r=await fetch('/api/status');if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();document.getElementById('state').textContent=d.status.status+' / '+(d.status.stage||'');document.getElementById('counts').textContent=`续接 ${d.complete}/${d.planned} · 完整配对组 ${d.groups}/${d.planned_groups}`;document.getElementById('bar').value=d.complete;document.getElementById('cost').textContent=`累计 GPU 会话小时 ${d.gpu_hours.toFixed(2)} · 新增训练更新 0 · 更新 ${new Date().toLocaleTimeString()}`;table('collection',['房屋','阶段','父族 / 4','终点变体 / 8'],d.collection.map(r=>[r.house,r.stage,r.parents,r.variants]));table('metrics',['终点','方法','完成 / 计划','PASS','FAIL','UNKNOWN','已完成子集成功率'],d.metrics.map(r=>[r.endpoint,r.arm,r.complete+'/'+r.planned,r.passed,r.failed,r.unknown,r.complete?(100*r.passed/r.complete).toFixed(2)+'%':'—']));document.getElementById('workers').textContent=JSON.stringify(d.status.workers?.map(w=>({gpu:w.gpu,returncode:w.returncode,seconds:w.seconds,free_mib:w.device?.free_mib,rss_gib:(w.resource.rss_bytes/2**30).toFixed(2)}))||d.status,null,2);document.getElementById('logs').textContent=d.log;document.getElementById('error').textContent=d.errors.join('\n')}catch(e){document.getElementById('error').textContent='读取失败：'+e.message}}
+update();setInterval(update,10000);
+</script></html>

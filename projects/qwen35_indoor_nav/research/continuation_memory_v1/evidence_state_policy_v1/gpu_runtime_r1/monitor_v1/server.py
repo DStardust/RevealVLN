@@ -202,7 +202,7 @@ def main():
     parser.add_argument('--port',type=int,default=18770)
     parser.add_argument('--once',action='store_true')
     args = parser.parse_args()
-    reader = Reader(PILOT / 'runs/gpu_001', PILOT / 'standalone_jobs/evidence-state-gpu-20260921-03')
+    reader = Reader(PILOT / 'runs/gpu_001', PILOT / 'standalone_jobs/evidence-finish-cpu-20260921-01')
     if args.once:
         print(json.dumps(reader.snapshot(),ensure_ascii=False,indent=2))
         return

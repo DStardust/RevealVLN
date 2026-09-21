@@ -39,7 +39,7 @@ function bar(id,a,b){$(id).style.width=Math.min(100,100*a/(b||1))+'%'}
 function render(s){
  const stage={features:'提取特征',train:'训练中',diagnose:'动作诊断',evaluate_continuations:'真实续接评测',parallel_evaluate:'六卡并行评测',restore:'恢复 GPU 占位',calibration:'只读校准统计',review:'结果复核',publish:'上传GitHub'};
  const active=s.service_status==='RUNNING'&&s.status.status==='RUNNING';
- text('badge',active?(stage[s.status.stage]||'运行中'):s.service_status==='RUNNING'?s.status.status:s.service_status);
+ text('badge',active?(stage[s.status.stage]||'运行中'):s.status.status);
  $('badge').classList.toggle('offline',!active&&s.status.status!=='COMPLETE');
  text('clock','更新 '+new Date(s.now*1000).toLocaleTimeString()+' · 每 5 秒');
  text('models',`${s.models_complete} / ${s.planned_models}`);text('trainInfo',`${s.training_steps} / ${s.training_planned_steps} 次本轮已完成训练更新（本次恢复不重训）`);bar('trainBar',s.training_steps,s.training_planned_steps);table('trainingRows',s.training_rows.map(r=>[r.gpu,r.tag,r.complete?'已完成':r.step?'已运行':'等待',`${r.step}/${r.planned}`,r.loss?.toFixed(4)??'—',r.auxiliary?.toFixed(4)??'—',r.gradient_norm?.toFixed(3)??'—']));
