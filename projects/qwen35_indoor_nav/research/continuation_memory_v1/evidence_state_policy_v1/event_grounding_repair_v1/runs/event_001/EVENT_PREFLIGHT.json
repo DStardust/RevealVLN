@@ -1,0 +1,443 @@
+{
+  "advance_full_policy": true,
+  "macro": {
+    "ORIGINAL": {
+      "brier": 0.22554355851765467,
+      "recall": 0.6007193311682488,
+      "fpr": 0.38569219224208
+    },
+    "EVENT": {
+      "brier": 0.20290990153173216,
+      "recall": 0.5997036547730608,
+      "fpr": 0.3829761006493756
+    }
+  },
+  "delta": {
+    "brier": -0.022633656985922512,
+    "recall": -0.0010156763951880698,
+    "fpr": -0.002716091592704417
+  },
+  "houses": [
+    {
+      "house": "5ZKStnWn8Zo",
+      "delta": {
+        "brier": -0.027376676830585825,
+        "recall": 0.0017185146183434918,
+        "fpr": 0.02563440860215055
+      }
+    },
+    {
+      "house": "QUCTc6BB5sX",
+      "delta": {
+        "brier": -0.011397270325006911,
+        "recall": -0.00816546900084092,
+        "fpr": -0.002009966081822384
+      }
+    },
+    {
+      "house": "jtcxE69GiFV",
+      "delta": {
+        "brier": -0.019166762680709742,
+        "recall": -0.00479223761202878,
+        "fpr": -0.007823003106021957
+      }
+    },
+    {
+      "house": "pa4otMbVnkk",
+      "delta": {
+        "brier": -0.03259391810738754,
+        "recall": 0.007176486413774552,
+        "fpr": -0.026665805785124008
+      }
+    }
+  ],
+  "positive_brier_houses": 4,
+  "gate": {
+    "macro_brier_strictly_lower": true,
+    "minimum_recall_delta": -0.05,
+    "minimum_positive_house_count": 2
+  },
+  "completed_probes": 8,
+  "interpretation": "Equal house-role metrics on four held-out FIT houses; engineering screen only. Correlated folds, single seed, not independent confirmation or navigation benefit.",
+  "records": [
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "ORIGINAL",
+      "fold": 0,
+      "held_house": "5ZKStnWn8Zo",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "932cef508b798df5339c27307065a37db4519338300931bcaddb616a4872eae7",
+      "final_file_sha256": "fb4d596fdc02167a55a6b7008229dbbf95699587ce9c5e120dbc4d21e46d8a55",
+      "prediction_sha256": "f0e97395ebca3c0aaa14427aaf02cb39f811a69b97e63ae91bd72808ac02aa7a",
+      "binding_sha256": "60ff551b0f5318d30a2b5390dfda9b473ea2af8925a9f9c11805387070a23abd",
+      "metrics": {
+        "anchor": {
+          "n": 732,
+          "positive": 107,
+          "negative": 625,
+          "tp": 40,
+          "fp": 183,
+          "recall": 0.37383177570093457,
+          "fpr": 0.2928,
+          "brier": 0.29423075871656834
+        },
+        "terminal": {
+          "n": 1464,
+          "positive": 1278,
+          "negative": 186,
+          "tp": 926,
+          "fp": 104,
+          "recall": 0.7245696400625978,
+          "fpr": 0.5591397849462365,
+          "brier": 0.2614226817741814
+        }
+      },
+      "seconds": 7.905323348008096,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "peak_allocated_bytes": 223317504
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "EVENT",
+      "fold": 0,
+      "held_house": "5ZKStnWn8Zo",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "caec4fc8f296d083e9a9295074013bcd640dcae4bdc53350d018a54dad28723e",
+      "final_file_sha256": "abc69af538679f85afdec5dc8fbab4241e9279a558a8e4fd9729e5fab3070e53",
+      "prediction_sha256": "dbc934eb1319f40f8f59905fa92f1d6a28505c85d9d313e3f2aae0331aed67dd",
+      "binding_sha256": "5d8f9bff5f73f6d9bcf5817fb7bdd975c8925dba7eeca1860dcab4b6d5ca68c3",
+      "metrics": {
+        "anchor": {
+          "n": 732,
+          "positive": 107,
+          "negative": 625,
+          "tp": 33,
+          "fp": 168,
+          "recall": 0.308411214953271,
+          "fpr": 0.2688,
+          "brier": 0.28697002066873
+        },
+        "terminal": {
+          "n": 1464,
+          "positive": 1278,
+          "negative": 186,
+          "tp": 1014,
+          "fp": 118,
+          "recall": 0.7934272300469484,
+          "fpr": 0.6344086021505376,
+          "brier": 0.21393006616084806
+        }
+      },
+      "seconds": 7.6750207878649235,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "peak_allocated_bytes": 223317504
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "ORIGINAL",
+      "fold": 1,
+      "held_house": "QUCTc6BB5sX",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "3f8b37cc74095beb464120089de91a1f7d88c2ceeccb84dc6aff1c080340cc78",
+      "final_file_sha256": "624e4d9e940f0fe4a8fd892ed272e27a101a5b7f4ca2cebba2eda0939d1c1eec",
+      "prediction_sha256": "c55b832e4a610eb85709422ac648763bd243c97a113eaf8ccf652e325ccc6c45",
+      "binding_sha256": "67cb47f2322f30e7328d52001199d3e224a009f0764557adf17bdf55da4857c2",
+      "metrics": {
+        "anchor": {
+          "n": 675,
+          "positive": 103,
+          "negative": 572,
+          "tp": 43,
+          "fp": 64,
+          "recall": 0.4174757281553398,
+          "fpr": 0.11188811188811189,
+          "brier": 0.15972661789108408
+        },
+        "terminal": {
+          "n": 1350,
+          "positive": 1016,
+          "negative": 334,
+          "tp": 832,
+          "fp": 183,
+          "recall": 0.8188976377952756,
+          "fpr": 0.5479041916167665,
+          "brier": 0.23751838994235505
+        }
+      },
+      "seconds": 7.791579977143556,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "peak_allocated_bytes": 219769856
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "EVENT",
+      "fold": 1,
+      "held_house": "QUCTc6BB5sX",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "3abc6987f682ae650ef9101ed3be894c62cda77aebe8cc7d2ea0a270107dfd96",
+      "final_file_sha256": "75e2e5e3ca0b2ebdf0f97f10dd04280d375e54c285ed29559f57c90955475dbb",
+      "prediction_sha256": "99ed3a6b7630b550a67ca31b985616d599ba00fca452c798cfe1e18e871ae3e1",
+      "binding_sha256": "7026311a2d172c7f604dd77367e40b2d15d095b49dcb69304dfa18bfc3f9ab63",
+      "metrics": {
+        "anchor": {
+          "n": 675,
+          "positive": 103,
+          "negative": 572,
+          "tp": 40,
+          "fp": 48,
+          "recall": 0.3883495145631068,
+          "fpr": 0.08391608391608392,
+          "brier": 0.14537365470777577
+        },
+        "terminal": {
+          "n": 1350,
+          "positive": 1016,
+          "negative": 334,
+          "tp": 845,
+          "fp": 191,
+          "recall": 0.8316929133858267,
+          "fpr": 0.5718562874251497,
+          "brier": 0.22907681247564954
+        }
+      },
+      "seconds": 7.736650695092976,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "peak_allocated_bytes": 219769856
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "ORIGINAL",
+      "fold": 2,
+      "held_house": "jtcxE69GiFV",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "54666adbb5cd0b3299d1c84a2c833934adc15b362de4e0b151e18e76e51bf4aa",
+      "final_file_sha256": "1fead6d7dc93409f6a695b5cd90e85a61389b07241d77a2c9cc05576f0501dd5",
+      "prediction_sha256": "c6b7009bc33aceb59d625e47ec60248ec40b48bac9e460697baccc626fa2cde3",
+      "binding_sha256": "a03760a107575aca204b2cb5c1e294ef0ec0eb3ecdea623871c8c5ecd46231d5",
+      "metrics": {
+        "anchor": {
+          "n": 698,
+          "positive": 115,
+          "negative": 583,
+          "tp": 26,
+          "fp": 37,
+          "recall": 0.22608695652173913,
+          "fpr": 0.0634648370497427,
+          "brier": 0.14773744078962966
+        },
+        "terminal": {
+          "n": 1396,
+          "positive": 1174,
+          "negative": 222,
+          "tp": 880,
+          "fp": 105,
+          "recall": 0.7495741056218058,
+          "fpr": 0.47297297297297297,
+          "brier": 0.24204910956101314
+        }
+      },
+      "seconds": 7.981640045065433,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "peak_allocated_bytes": 220147712
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "EVENT",
+      "fold": 2,
+      "held_house": "jtcxE69GiFV",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "52187770deded0c9099c1a4478151696aedd9c68dfbbecbfc8254cab5965edda",
+      "final_file_sha256": "224abb6b5fe764562b9c8eacb41fa031445ce0a98db2f45b483c4e3283f750a0",
+      "prediction_sha256": "3a970074ab2f66d4f9c0bc197fc63b61efb849eb062a39f9d14c13cfc1b12eb1",
+      "binding_sha256": "3c2304c4a0ac298ee0260154ca5ef45653e8d72625eec5766b0ded4a99ebfd69",
+      "metrics": {
+        "anchor": {
+          "n": 698,
+          "positive": 115,
+          "negative": 583,
+          "tp": 20,
+          "fp": 20,
+          "recall": 0.17391304347826086,
+          "fpr": 0.03430531732418525,
+          "brier": 0.1437702697426528
+        },
+        "terminal": {
+          "n": 1396,
+          "positive": 1174,
+          "negative": 222,
+          "tp": 930,
+          "fp": 108,
+          "recall": 0.7921635434412265,
+          "fpr": 0.4864864864864865,
+          "brier": 0.2076827552465705
+        }
+      },
+      "seconds": 7.919663629960269,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "peak_allocated_bytes": 220147712
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "ORIGINAL",
+      "fold": 3,
+      "held_house": "pa4otMbVnkk",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "d4d72321d714ccc399ba09d9ae84d8c92473c00cb2833bd9b2e78e0dc2ba5f55",
+      "final_file_sha256": "8bb4f158ec3358a68c88dcea94e5e0b1ff6598b5af3649643f6f3e7bf989530a",
+      "prediction_sha256": "e1b1910c169b538f0280decc48dbf3780b313338925d9424d6eac58c817b8e9b",
+      "binding_sha256": "279999cfacbfa39ed89dcd5400b4f034207b92d36cf5bfb83473bf98e1eaac5f",
+      "metrics": {
+        "anchor": {
+          "n": 652,
+          "positive": 140,
+          "negative": 512,
+          "tp": 82,
+          "fp": 163,
+          "recall": 0.5857142857142857,
+          "fpr": 0.318359375,
+          "brier": 0.27464498606435483
+        },
+        "terminal": {
+          "n": 1304,
+          "positive": 1062,
+          "negative": 242,
+          "tp": 966,
+          "fp": 174,
+          "recall": 0.9096045197740112,
+          "fpr": 0.71900826446281,
+          "brier": 0.18701848340205088
+        }
+      },
+      "seconds": 7.936365194153041,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "peak_allocated_bytes": 220467712
+    },
+    {
+      "status": "EVENT_PROBE_COMPLETE",
+      "arm": "EVENT",
+      "fold": 3,
+      "held_house": "pa4otMbVnkk",
+      "seed": 1209,
+      "steps": 400,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "5bbad118fdebe65c9d0b5d671813181d1af62585a2217bd6a17a6b12aeaeb268",
+      "final_file_sha256": "8c4135664d088fec5635a8c2f1a93ad05bb8726fc2646d10f7876107befda41c",
+      "prediction_sha256": "56c4e6afb81c26035d71ffd015a0942aa5c6d80875b544e04e1f857a22a04f37",
+      "binding_sha256": "60c2d0f19e3bbbe65800abe036675077c80bb1c7487684f880ee14af0768a2e7",
+      "metrics": {
+        "anchor": {
+          "n": 652,
+          "positive": 140,
+          "negative": 512,
+          "tp": 79,
+          "fp": 123,
+          "recall": 0.5642857142857143,
+          "fpr": 0.240234375,
+          "brier": 0.23146329216101744
+        },
+        "terminal": {
+          "n": 1304,
+          "positive": 1062,
+          "negative": 242,
+          "tp": 1004,
+          "fp": 180,
+          "recall": 0.9453860640301318,
+          "fpr": 0.743801652892562,
+          "brier": 0.1650123410906132
+        }
+      },
+      "seconds": 7.925581856165081,
+      "base_updates": 0,
+      "base_loaded": false,
+      "full_policy_updates": 0,
+      "held_house_excluded_from_all_training": true,
+      "dev_access": false,
+      "frozen_parameters_unchanged": true,
+      "torch_version": "2.8.0+cu128",
+      "cuda_version": "12.8",
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "peak_allocated_bytes": 220467712
+    }
+  ],
+  "actual_event_probe_updates": 3200,
+  "full_policy_updates": 0,
+  "autonomous_rollouts": 0
+}

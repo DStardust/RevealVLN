@@ -1,0 +1,43 @@
+{
+  "status": "TWO_ACTUAL_CPU_INTERFACE_UPDATES",
+  "records": [
+    {
+      "status": "CPU_SMOKE_COMPLETE",
+      "mode": "ORIGINAL",
+      "seed": 1209,
+      "updates": 1,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "f0bd1f1f824e9e349df8c12a5013b086499c9eaf0d2a282e9e36cc1ae0b7d8e9",
+      "parameters_changed": true,
+      "parameters": 2003416,
+      "base_updates": 0,
+      "base_loaded": false,
+      "cuda_initialized": false,
+      "seconds": 1.3169025708921254,
+      "checkpoint_sha256": "99e4233b10c6d4d3be83ff0e5e9c79bd03c1e778eaddac68a6b96f747065e3cc",
+      "navigation_gain": null,
+      "evaluation_episodes": 0,
+      "note": "CPU updates are interface checks, excluded from full study; same MONOTONIC initialization/architecture, only event BCE supervision measure differs; all original action labels retained."
+    },
+    {
+      "status": "CPU_SMOKE_COMPLETE",
+      "mode": "EVENT",
+      "seed": 1209,
+      "updates": 1,
+      "initial": "d064ae2b533c8b15839c884aa306184d6ea6df59facdcb1ed716c6d52666f539",
+      "final": "dfc3c800803f728145bce4497e6101611a16476b626ae4f29f6696d20765d924",
+      "parameters_changed": true,
+      "parameters": 2003416,
+      "base_updates": 0,
+      "base_loaded": false,
+      "cuda_initialized": false,
+      "seconds": 1.2969875009730458,
+      "checkpoint_sha256": "8796494a1e3d906ff16436ddace609d5212b08c09670a9d0e557abb7ca617fb6",
+      "navigation_gain": null,
+      "evaluation_episodes": 0,
+      "note": "CPU updates are interface checks, excluded from full study; same MONOTONIC initialization/architecture, only event BCE supervision measure differs; all original action labels retained."
+    }
+  ],
+  "formal_updates": 0,
+  "new_navigation_results": 0
+}
