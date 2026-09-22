@@ -1,16 +1,19 @@
-# EVENT_PREFLIGHT_ADVANCED
+VALID_COMPLETE_DEV_EVENT_GROUNDING
 
-8/8 个留一 FIT 屋事件读出对照完成，3200 次真实更新；不是完整策略训练或闭环收益。
+完整续接 768/768；完整六模型组 128/128。本轮6模型各1200次更新，共7200次；底模更新0。
 
-|项（屋与角色等权）|ORIGINAL|EVENT|差值|
-|---|---:|---:|---:|
-|brier|0.225544|0.202910|-0.022634|
-|recall|0.600719|0.599704|-0.001016|
-|fpr|0.385692|0.382976|-0.002716|
+|终点|方法|PASS/N|未知|成本|碰撞轨迹|耗尽|未满足STOP|
+|---|---|---:|---:|---:|---:|---:|---:|
+|main|ORIGINAL|66/192|0|0.7115|22|26|96|
+|main|EVENT|56/192|0|0.7739|39|52|83|
+|control|ORIGINAL|98/192|0|0.5413|27|24|65|
+|control|EVENT|95/192|0|0.5826|41|44|50|
 
-Brier 改善 4/4 屋。固定检出容限 −0.05；全部门槛见 EVENT_PREFLIGHT.json。
-只训练原初始化的事件 MLP，编码器、归一化、动作策略与记忆均冻结。未访问 DEV 得分或新 TEST。
-该诊断只检验监督分布修复，不宣称新模型架构、论文贡献或普通 VLN 收益。
+EVENT−ORIGINAL 主终点差值：-5.21%；未知分配识别界 [-5.21%, -5.21%]。这不是置信区间。
+方向为正的房屋 0/1、种子 0/3；原DEV局部修复信号：False。
 
-下一阶段：自动训练六个完整策略并执行原 DEV 768 次续接。
-GPU 使用与占位恢复记录见 RESOURCES.jsonl 和 PLACEHOLDER_RESTORATION_*.json。
+两臂同一MONOTONIC架构、初始化、完整动作监督、状态/KL/普通动作loss及1200步。EVENT仅替换事件BCE的监督分布：唯一输入、屋/角色等权、实际正负比例；不是新数据或新推理规则。
+父族内历史、终点变体、同屋和多个种子有相关性，不能将768次执行当成768个独立泛化样本。
+缺失历史主任务配对差：2.08%，识别界[2.08%,2.08%]；事件留一屋诊断与完整训练事件复核另报，不将读出指标当闭环收益。
+本轮不自动采用、不追加训练；普通VLN-CE收益与算法新颖性仍需另外证据。
+Exposed DEV1 house; same MONOTONIC architecture and original trajectory pool, only unique-input house/role-uniform event BCE differs. Stationary SEE2, no independent test or natural VLN-CE claim.

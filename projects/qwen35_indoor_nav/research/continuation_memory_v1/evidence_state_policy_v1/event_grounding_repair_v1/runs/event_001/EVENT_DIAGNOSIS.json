@@ -1,0 +1,1085 @@
+{
+  "models": [
+    {
+      "model": "ORIGINAL_1209",
+      "event": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "metrics": {
+            "anchor": {
+              "n": 686,
+              "positive": 78,
+              "negative": 608,
+              "tp": 35,
+              "fp": 95,
+              "recall": 0.44871794871794873,
+              "fpr": 0.15625,
+              "brier": 0.1609803211491675
+            },
+            "terminal": {
+              "n": 1372,
+              "positive": 1120,
+              "negative": 252,
+              "tp": 903,
+              "fp": 92,
+              "recall": 0.80625,
+              "fpr": 0.36507936507936506,
+              "brier": 0.1649700027991477
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "metrics": {
+            "anchor": {
+              "n": 732,
+              "positive": 107,
+              "negative": 625,
+              "tp": 104,
+              "fp": 4,
+              "recall": 0.9719626168224299,
+              "fpr": 0.0064,
+              "brier": 0.005104588977998541
+            },
+            "terminal": {
+              "n": 1464,
+              "positive": 1278,
+              "negative": 186,
+              "tp": 1213,
+              "fp": 2,
+              "recall": 0.9491392801251957,
+              "fpr": 0.010752688172043012,
+              "brier": 0.038193229634021955
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "metrics": {
+            "anchor": {
+              "n": 675,
+              "positive": 103,
+              "negative": 572,
+              "tp": 102,
+              "fp": 15,
+              "recall": 0.9902912621359223,
+              "fpr": 0.026223776223776224,
+              "brier": 0.015023988813822173
+            },
+            "terminal": {
+              "n": 1350,
+              "positive": 1016,
+              "negative": 334,
+              "tp": 958,
+              "fp": 0,
+              "recall": 0.9429133858267716,
+              "fpr": 0.0,
+              "brier": 0.03161665017157089
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "metrics": {
+            "anchor": {
+              "n": 698,
+              "positive": 115,
+              "negative": 583,
+              "tp": 115,
+              "fp": 9,
+              "recall": 1.0,
+              "fpr": 0.015437392795883362,
+              "brier": 0.009812294765153919
+            },
+            "terminal": {
+              "n": 1396,
+              "positive": 1174,
+              "negative": 222,
+              "tp": 1122,
+              "fp": 0,
+              "recall": 0.9557069846678024,
+              "fpr": 0.0,
+              "brier": 0.027507260822404123
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "metrics": {
+            "anchor": {
+              "n": 652,
+              "positive": 140,
+              "negative": 512,
+              "tp": 138,
+              "fp": 6,
+              "recall": 0.9857142857142858,
+              "fpr": 0.01171875,
+              "brier": 0.011597972050426949
+            },
+            "terminal": {
+              "n": 1304,
+              "positive": 1062,
+              "negative": 242,
+              "tp": 987,
+              "fp": 0,
+              "recall": 0.9293785310734464,
+              "fpr": 0.0,
+              "brier": 0.0404565113017033
+            }
+          }
+        }
+      ],
+      "causal_cutoff": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "positive": 32,
+          "tp": 28,
+          "negative": 32,
+          "tn": 8,
+          "fn": 4,
+          "fp": 24
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "positive": 30,
+          "tp": 30,
+          "negative": 30,
+          "tn": 30
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "positive": 32,
+          "tp": 32,
+          "negative": 32,
+          "tn": 32
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 26,
+          "fp": 2
+        }
+      ]
+    },
+    {
+      "model": "EVENT_1209",
+      "event": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "metrics": {
+            "anchor": {
+              "n": 686,
+              "positive": 78,
+              "negative": 608,
+              "tp": 31,
+              "fp": 87,
+              "recall": 0.3974358974358974,
+              "fpr": 0.14309210526315788,
+              "brier": 0.15375773794764458
+            },
+            "terminal": {
+              "n": 1372,
+              "positive": 1120,
+              "negative": 252,
+              "tp": 1040,
+              "fp": 123,
+              "recall": 0.9285714285714286,
+              "fpr": 0.4880952380952381,
+              "brier": 0.12696031181740733
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "metrics": {
+            "anchor": {
+              "n": 732,
+              "positive": 107,
+              "negative": 625,
+              "tp": 104,
+              "fp": 0,
+              "recall": 0.9719626168224299,
+              "fpr": 0.0,
+              "brier": 0.002362420931942201
+            },
+            "terminal": {
+              "n": 1464,
+              "positive": 1278,
+              "negative": 186,
+              "tp": 1277,
+              "fp": 2,
+              "recall": 0.9992175273865415,
+              "fpr": 0.010752688172043012,
+              "brier": 0.0012083899330906157
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "metrics": {
+            "anchor": {
+              "n": 675,
+              "positive": 103,
+              "negative": 572,
+              "tp": 103,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.00105489014943019
+            },
+            "terminal": {
+              "n": 1350,
+              "positive": 1016,
+              "negative": 334,
+              "tp": 1016,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.00021460055563608425
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "metrics": {
+            "anchor": {
+              "n": 698,
+              "positive": 115,
+              "negative": 583,
+              "tp": 115,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0008187441401949318
+            },
+            "terminal": {
+              "n": 1396,
+              "positive": 1174,
+              "negative": 222,
+              "tp": 1174,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.00023158714467530817
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "metrics": {
+            "anchor": {
+              "n": 652,
+              "positive": 140,
+              "negative": 512,
+              "tp": 140,
+              "fp": 1,
+              "recall": 1.0,
+              "fpr": 0.001953125,
+              "brier": 0.0021268501759276535
+            },
+            "terminal": {
+              "n": 1304,
+              "positive": 1062,
+              "negative": 242,
+              "tp": 1062,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0007750290421689397
+            }
+          }
+        }
+      ],
+      "causal_cutoff": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "positive": 32,
+          "tp": 22,
+          "negative": 32,
+          "tn": 12,
+          "fn": 10,
+          "fp": 20
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "positive": 30,
+          "tp": 30,
+          "negative": 30,
+          "tn": 30
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "positive": 32,
+          "tp": 32,
+          "negative": 32,
+          "tn": 32
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        }
+      ]
+    },
+    {
+      "model": "ORIGINAL_1210",
+      "event": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "metrics": {
+            "anchor": {
+              "n": 686,
+              "positive": 78,
+              "negative": 608,
+              "tp": 28,
+              "fp": 88,
+              "recall": 0.358974358974359,
+              "fpr": 0.14473684210526316,
+              "brier": 0.15605371943638827
+            },
+            "terminal": {
+              "n": 1372,
+              "positive": 1120,
+              "negative": 252,
+              "tp": 1043,
+              "fp": 141,
+              "recall": 0.93125,
+              "fpr": 0.5595238095238095,
+              "brier": 0.12534754168619874
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "metrics": {
+            "anchor": {
+              "n": 732,
+              "positive": 107,
+              "negative": 625,
+              "tp": 107,
+              "fp": 1,
+              "recall": 1.0,
+              "fpr": 0.0016,
+              "brier": 0.0033670444773010806
+            },
+            "terminal": {
+              "n": 1464,
+              "positive": 1278,
+              "negative": 186,
+              "tp": 1252,
+              "fp": 2,
+              "recall": 0.9796557120500783,
+              "fpr": 0.010752688172043012,
+              "brier": 0.01628329991360822
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "metrics": {
+            "anchor": {
+              "n": 675,
+              "positive": 103,
+              "negative": 572,
+              "tp": 101,
+              "fp": 10,
+              "recall": 0.9805825242718447,
+              "fpr": 0.017482517482517484,
+              "brier": 0.011096906000057713
+            },
+            "terminal": {
+              "n": 1350,
+              "positive": 1016,
+              "negative": 334,
+              "tp": 1006,
+              "fp": 0,
+              "recall": 0.9901574803149606,
+              "fpr": 0.0,
+              "brier": 0.008821879455006544
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "metrics": {
+            "anchor": {
+              "n": 698,
+              "positive": 115,
+              "negative": 583,
+              "tp": 114,
+              "fp": 5,
+              "recall": 0.991304347826087,
+              "fpr": 0.008576329331046312,
+              "brier": 0.00636287147089765
+            },
+            "terminal": {
+              "n": 1396,
+              "positive": 1174,
+              "negative": 222,
+              "tp": 1168,
+              "fp": 0,
+              "recall": 0.9948892674616695,
+              "fpr": 0.0,
+              "brier": 0.004882118233488846
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "metrics": {
+            "anchor": {
+              "n": 652,
+              "positive": 140,
+              "negative": 512,
+              "tp": 140,
+              "fp": 3,
+              "recall": 1.0,
+              "fpr": 0.005859375,
+              "brier": 0.007691657854390176
+            },
+            "terminal": {
+              "n": 1304,
+              "positive": 1062,
+              "negative": 242,
+              "tp": 1045,
+              "fp": 0,
+              "recall": 0.9839924670433146,
+              "fpr": 0.0,
+              "brier": 0.01021775339457845
+            }
+          }
+        }
+      ],
+      "causal_cutoff": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "positive": 32,
+          "tp": 21,
+          "negative": 32,
+          "tn": 8,
+          "fn": 11,
+          "fp": 24
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "positive": 30,
+          "tp": 30,
+          "negative": 30,
+          "tn": 30
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "positive": 32,
+          "tp": 32,
+          "negative": 32,
+          "tn": 32
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        }
+      ]
+    },
+    {
+      "model": "EVENT_1210",
+      "event": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "metrics": {
+            "anchor": {
+              "n": 686,
+              "positive": 78,
+              "negative": 608,
+              "tp": 30,
+              "fp": 81,
+              "recall": 0.38461538461538464,
+              "fpr": 0.13322368421052633,
+              "brier": 0.14735199284383368
+            },
+            "terminal": {
+              "n": 1372,
+              "positive": 1120,
+              "negative": 252,
+              "tp": 1049,
+              "fp": 134,
+              "recall": 0.9366071428571429,
+              "fpr": 0.5317460317460317,
+              "brier": 0.12477545399197554
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "metrics": {
+            "anchor": {
+              "n": 732,
+              "positive": 107,
+              "negative": 625,
+              "tp": 107,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0006855131170978063
+            },
+            "terminal": {
+              "n": 1464,
+              "positive": 1278,
+              "negative": 186,
+              "tp": 1276,
+              "fp": 0,
+              "recall": 0.9984350547730829,
+              "fpr": 0.0,
+              "brier": 0.0010786986911725089
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "metrics": {
+            "anchor": {
+              "n": 675,
+              "positive": 103,
+              "negative": 572,
+              "tp": 103,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0008154233355106339
+            },
+            "terminal": {
+              "n": 1350,
+              "positive": 1016,
+              "negative": 334,
+              "tp": 1016,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.00025010939890769603
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "metrics": {
+            "anchor": {
+              "n": 698,
+              "positive": 115,
+              "negative": 583,
+              "tp": 115,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0006039673526288159
+            },
+            "terminal": {
+              "n": 1396,
+              "positive": 1174,
+              "negative": 222,
+              "tp": 1174,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.00011834306870281231
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "metrics": {
+            "anchor": {
+              "n": 652,
+              "positive": 140,
+              "negative": 512,
+              "tp": 138,
+              "fp": 0,
+              "recall": 0.9857142857142858,
+              "fpr": 0.0,
+              "brier": 0.0021005102056274438
+            },
+            "terminal": {
+              "n": 1304,
+              "positive": 1062,
+              "negative": 242,
+              "tp": 1062,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0003550829364311583
+            }
+          }
+        }
+      ],
+      "causal_cutoff": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "positive": 32,
+          "tp": 22,
+          "negative": 32,
+          "tn": 8,
+          "fn": 10,
+          "fp": 24
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "positive": 30,
+          "tp": 30,
+          "negative": 30,
+          "tn": 30
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "positive": 32,
+          "tp": 32,
+          "negative": 32,
+          "tn": 32
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        }
+      ]
+    },
+    {
+      "model": "ORIGINAL_1211",
+      "event": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "metrics": {
+            "anchor": {
+              "n": 686,
+              "positive": 78,
+              "negative": 608,
+              "tp": 26,
+              "fp": 61,
+              "recall": 0.3333333333333333,
+              "fpr": 0.10032894736842106,
+              "brier": 0.13120616562259638
+            },
+            "terminal": {
+              "n": 1372,
+              "positive": 1120,
+              "negative": 252,
+              "tp": 895,
+              "fp": 87,
+              "recall": 0.7991071428571429,
+              "fpr": 0.34523809523809523,
+              "brier": 0.1642731402511159
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "metrics": {
+            "anchor": {
+              "n": 732,
+              "positive": 107,
+              "negative": 625,
+              "tp": 107,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0030473730682718247
+            },
+            "terminal": {
+              "n": 1464,
+              "positive": 1278,
+              "negative": 186,
+              "tp": 1187,
+              "fp": 0,
+              "recall": 0.9287949921752738,
+              "fpr": 0.0,
+              "brier": 0.04365113737599637
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "metrics": {
+            "anchor": {
+              "n": 675,
+              "positive": 103,
+              "negative": 572,
+              "tp": 102,
+              "fp": 8,
+              "recall": 0.9902912621359223,
+              "fpr": 0.013986013986013986,
+              "brier": 0.010147754191830812
+            },
+            "terminal": {
+              "n": 1350,
+              "positive": 1016,
+              "negative": 334,
+              "tp": 925,
+              "fp": 0,
+              "recall": 0.9104330708661418,
+              "fpr": 0.0,
+              "brier": 0.044463441134393676
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "metrics": {
+            "anchor": {
+              "n": 698,
+              "positive": 115,
+              "negative": 583,
+              "tp": 112,
+              "fp": 6,
+              "recall": 0.9739130434782609,
+              "fpr": 0.010291595197255575,
+              "brier": 0.010487410492132268
+            },
+            "terminal": {
+              "n": 1396,
+              "positive": 1174,
+              "negative": 222,
+              "tp": 1113,
+              "fp": 0,
+              "recall": 0.9480408858603067,
+              "fpr": 0.0,
+              "brier": 0.03245565704387372
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "metrics": {
+            "anchor": {
+              "n": 652,
+              "positive": 140,
+              "negative": 512,
+              "tp": 138,
+              "fp": 4,
+              "recall": 0.9857142857142858,
+              "fpr": 0.0078125,
+              "brier": 0.01120592616892315
+            },
+            "terminal": {
+              "n": 1304,
+              "positive": 1062,
+              "negative": 242,
+              "tp": 1003,
+              "fp": 3,
+              "recall": 0.9444444444444444,
+              "fpr": 0.012396694214876033,
+              "brier": 0.03976172524394882
+            }
+          }
+        }
+      ],
+      "causal_cutoff": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "positive": 32,
+          "tp": 24,
+          "negative": 32,
+          "tn": 12,
+          "fn": 8,
+          "fp": 20
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "positive": 30,
+          "tp": 30,
+          "negative": 30,
+          "tn": 30
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "positive": 32,
+          "tp": 32,
+          "negative": 32,
+          "tn": 32
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 26,
+          "fp": 2
+        }
+      ]
+    },
+    {
+      "model": "EVENT_1211",
+      "event": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "metrics": {
+            "anchor": {
+              "n": 686,
+              "positive": 78,
+              "negative": 608,
+              "tp": 29,
+              "fp": 83,
+              "recall": 0.3717948717948718,
+              "fpr": 0.13651315789473684,
+              "brier": 0.15300048619354725
+            },
+            "terminal": {
+              "n": 1372,
+              "positive": 1120,
+              "negative": 252,
+              "tp": 1013,
+              "fp": 119,
+              "recall": 0.9044642857142857,
+              "fpr": 0.4722222222222222,
+              "brier": 0.13686115102088867
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "metrics": {
+            "anchor": {
+              "n": 732,
+              "positive": 107,
+              "negative": 625,
+              "tp": 106,
+              "fp": 0,
+              "recall": 0.9906542056074766,
+              "fpr": 0.0,
+              "brier": 0.0024216544255240362
+            },
+            "terminal": {
+              "n": 1464,
+              "positive": 1278,
+              "negative": 186,
+              "tp": 1277,
+              "fp": 0,
+              "recall": 0.9992175273865415,
+              "fpr": 0.0,
+              "brier": 0.0012564734118000968
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "metrics": {
+            "anchor": {
+              "n": 675,
+              "positive": 103,
+              "negative": 572,
+              "tp": 103,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0008806944744403908
+            },
+            "terminal": {
+              "n": 1350,
+              "positive": 1016,
+              "negative": 334,
+              "tp": 1016,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0005963626727507664
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "metrics": {
+            "anchor": {
+              "n": 698,
+              "positive": 115,
+              "negative": 583,
+              "tp": 115,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.00034517599103177767
+            },
+            "terminal": {
+              "n": 1396,
+              "positive": 1174,
+              "negative": 222,
+              "tp": 1174,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0003968389818622412
+            }
+          }
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "metrics": {
+            "anchor": {
+              "n": 652,
+              "positive": 140,
+              "negative": 512,
+              "tp": 140,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0009988559069723096
+            },
+            "terminal": {
+              "n": 1304,
+              "positive": 1062,
+              "negative": 242,
+              "tp": 1062,
+              "fp": 0,
+              "recall": 1.0,
+              "fpr": 0.0,
+              "brier": 0.0007811068771175594
+            }
+          }
+        }
+      ],
+      "causal_cutoff": [
+        {
+          "split": "DEV",
+          "house": "2azQ1b91cZZ",
+          "positive": 32,
+          "tp": 24,
+          "negative": 32,
+          "tn": 8,
+          "fn": 8,
+          "fp": 24
+        },
+        {
+          "split": "FIT",
+          "house": "5ZKStnWn8Zo",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        },
+        {
+          "split": "FIT",
+          "house": "QUCTc6BB5sX",
+          "positive": 30,
+          "tp": 30,
+          "negative": 30,
+          "tn": 30
+        },
+        {
+          "split": "FIT",
+          "house": "jtcxE69GiFV",
+          "positive": 32,
+          "tp": 32,
+          "negative": 32,
+          "tn": 32
+        },
+        {
+          "split": "FIT",
+          "house": "pa4otMbVnkk",
+          "positive": 28,
+          "tp": 28,
+          "negative": 28,
+          "tn": 28
+        }
+      ]
+    }
+  ],
+  "new_updates": 0,
+  "base_loaded": false,
+  "checkpoint_selection": false,
+  "independent_test_access": false,
+  "note": "Fixed-final-head diagnostic on existing FIT/DEV. Event and cutoff metrics do not replace sealed autonomous navigation."
+}
