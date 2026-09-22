@@ -1,0 +1,179 @@
+{
+  "status": "READ_ONLY_FIRST_DIVERGENCE_LOCALIZATION_COMPLETE",
+  "main_pairs": 192,
+  "summary": {
+    "loss": {
+      "n": 23,
+      "first_action_divergences": 23,
+      "first_at_takeover": 12,
+      "initial_state_classes_same": 21,
+      "history_classes_same": 23,
+      "original_stop_event_continue": 11,
+      "both_recognize_ready": 15,
+      "ready_truth": 15,
+      "ready_recognized_event_continues": 11,
+      "dominant_components": {
+        "core_action_path": 22,
+        "state_branch": 1
+      },
+      "state_only_restores_original": 1,
+      "state_branch_only_restores_original": 1,
+      "core_only_restores_original": 19,
+      "history_types": {
+        "seen": 10,
+        "seen_sham": 11,
+        "missing": 1,
+        "missing_sham": 1
+      },
+      "strata": {
+        "terminal_absent": 8,
+        "terminal_present": 15
+      },
+      "parent_families": 6,
+      "distinct_first_raw_inputs": 12,
+      "event_final": {
+        "STOP_WITHOUT_TERMINAL": 6,
+        "BUDGET_EXHAUSTED": 16,
+        "STOP_BEFORE_HISTORY": 1
+      },
+      "cpu_replay_status": {
+        "UNAVAILABLE_CAUSAL_FEATURES": 23
+      },
+      "actor_only_restores_original": 0,
+      "memory_only_restores_original": 0
+    },
+    "win": {
+      "n": 13,
+      "first_action_divergences": 13,
+      "first_at_takeover": 4,
+      "initial_state_classes_same": 13,
+      "history_classes_same": 13,
+      "original_stop_event_continue": 1,
+      "both_recognize_ready": 6,
+      "ready_truth": 4,
+      "ready_recognized_event_continues": 3,
+      "dominant_components": {
+        "core_action_path": 13
+      },
+      "state_only_restores_original": 0,
+      "state_branch_only_restores_original": 0,
+      "core_only_restores_original": 11,
+      "history_types": {
+        "missing": 1,
+        "missing_sham": 3,
+        "seen": 6,
+        "seen_sham": 3
+      },
+      "strata": {
+        "terminal_absent": 9,
+        "terminal_present": 4
+      },
+      "parent_families": 5,
+      "distinct_first_raw_inputs": 9,
+      "event_final": {
+        "PASS": 13
+      },
+      "cpu_replay_status": {
+        "UNAVAILABLE_CAUSAL_FEATURES": 13
+      },
+      "actor_only_restores_original": 0,
+      "memory_only_restores_original": 0
+    },
+    "both_pass": {
+      "n": 43,
+      "first_action_divergences": 31,
+      "first_at_takeover": 6,
+      "initial_state_classes_same": 26,
+      "history_classes_same": 26,
+      "original_stop_event_continue": 12,
+      "both_recognize_ready": 15,
+      "ready_truth": 19,
+      "ready_recognized_event_continues": 13,
+      "dominant_components": {
+        "core_action_path": 28,
+        "state_branch": 3
+      },
+      "state_only_restores_original": 3,
+      "state_branch_only_restores_original": 3,
+      "core_only_restores_original": 25,
+      "history_types": {
+        "seen": 18,
+        "seen_sham": 19,
+        "missing": 3,
+        "missing_sham": 3
+      },
+      "strata": {
+        "terminal_absent": 20,
+        "terminal_present": 23
+      },
+      "parent_families": 6,
+      "distinct_first_raw_inputs": 14,
+      "event_final": {
+        "PASS": 43
+      },
+      "cpu_replay_status": {
+        "NOT_REQUESTED": 31
+      },
+      "actor_only_restores_original": 0,
+      "memory_only_restores_original": 0
+    },
+    "both_fail": {
+      "n": 113,
+      "first_action_divergences": 97,
+      "first_at_takeover": 18,
+      "initial_state_classes_same": 83,
+      "history_classes_same": 84,
+      "original_stop_event_continue": 22,
+      "both_recognize_ready": 40,
+      "ready_truth": 15,
+      "ready_recognized_event_continues": 3,
+      "dominant_components": {
+        "core_action_path": 92,
+        "state_branch": 5
+      },
+      "state_only_restores_original": 11,
+      "state_branch_only_restores_original": 16,
+      "core_only_restores_original": 89,
+      "history_types": {
+        "seen": 14,
+        "seen_sham": 15,
+        "missing": 43,
+        "missing_sham": 41
+      },
+      "strata": {
+        "terminal_absent": 59,
+        "terminal_present": 54
+      },
+      "parent_families": 8,
+      "distinct_first_raw_inputs": 34,
+      "event_final": {
+        "STOP_WITHOUT_TERMINAL": 24,
+        "STOP_BEFORE_HISTORY": 52,
+        "BUDGET_EXHAUSTED": 36,
+        "COLLISION_WITH_READY_STOP": 1
+      },
+      "cpu_replay_status": {
+        "NOT_REQUESTED": 97
+      },
+      "actor_only_restores_original": 0,
+      "memory_only_restores_original": 0
+    }
+  },
+  "models_unchanged": true,
+  "model_states": {
+    "ORIGINAL_1209": "51f509be05b85aa1551d4ce7729fbd7d341fab1029cb65e4a15cbe2d809d0cc4",
+    "EVENT_1209": "5873e6277bebbf6eeaf4a60e6a6cc1ad6d3fe6f3b38a4f1098ad08728a8f87ba",
+    "ORIGINAL_1210": "1002b684294b8a116b6ec7c902b31eeccbd6f3f78a132e38d9933bbd0207045d",
+    "EVENT_1210": "8f08da6ce3ed4272666c2832ae6f7bef10a5ee5a204e981530d67411457bf1d6",
+    "ORIGINAL_1211": "4363ad6bad8b34d37a9cacaf9d99c0496729c0ee0d64024c48ef706f91b6a8a5",
+    "EVENT_1211": "309f389d8134d7a35da6b58ea6f8523c5c313b98753590abb7d19d539cfb746e"
+  },
+  "native_prefix_max_delta": 0.0,
+  "cpu_causal_step_forwards": 0,
+  "new_environment_actions": 0,
+  "new_optimizer_updates": 0,
+  "new_base_forwards": 0,
+  "gpu_hours": 0,
+  "seconds": 25.67955478699878,
+  "limitation": "All 192 main pairs reported; local score/component swaps do not execute counterfactual rollouts. Only fully cached, action/logit-verified shared histories enter actor/memory swap counts. Exposed one-house data; variants/seeds are correlated."
+}
