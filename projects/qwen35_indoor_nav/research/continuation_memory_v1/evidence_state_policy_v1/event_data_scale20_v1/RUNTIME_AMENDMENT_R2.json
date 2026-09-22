@@ -1,0 +1,33 @@
+{
+  "version": "SCALE20_RUNTIME_R2",
+  "kind": "INFRASTRUCTURE_ONLY_RESUME",
+  "original_source_lock_sha256": "374cd1e312ea4f350a583df2a21a871b617c6b258c612c1593a3599cbad8496e",
+  "files": {
+    "research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v1/pipeline_r2.py": "85aafb0f9d6394239628bdfd0947420428be53b898a02addfeff985ee2f23bb7",
+    "research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v1/disk_watch_r2.py": "b1a1fb979dcdc899e6ca964cc5fc9993c628681150cdbbc45b92f158b8aed2e9",
+    "research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v1/resume_r2.py": "6b86a38a93b5c9436cab2ff3e6da88904557c0b417ef61b887b23037970e1914",
+    "research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v1/test_runtime_r2.py": "3b9b9677c8ca9deff266b96e66d6732e30558a4a652d1519e053d0a1a460b251"
+  },
+  "original_config_sha256": "2c48405aaf4957a94ca0b5c7e484da0802fc895d766631209df68de8503417fa",
+  "source_commit": "926a9e98d25080a936ea1c99ad6fd1f533f8b62b",
+  "reason": "Synchronous NAS du timed out after 120 s; no physical/label correctness failure.",
+  "changes": [
+    "Background owned disk sampler; stale/timeout explicit, measured cap breaches still stop",
+    "Preserve own interrupted array temp bytes outside live content filenames before replay",
+    "Seal accepted FAMILY/AUDIT metadata; existing protocol and collector hashes remain unchanged"
+  ],
+  "pre_resume": {
+    "parents": 403,
+    "variants": 638,
+    "physical_executions": 7656
+  },
+  "unchanged": [
+    "family generator",
+    "positions and split",
+    "SEE2 threshold",
+    "raw-array validation",
+    "full physical replay",
+    "training disabled"
+  ],
+  "missing_target_note": "800 new parents remains the target, not achieved. Existing house proposal shortfall is kept; no quality threshold relaxed."
+}
