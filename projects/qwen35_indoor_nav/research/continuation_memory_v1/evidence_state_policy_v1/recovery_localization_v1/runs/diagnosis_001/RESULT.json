@@ -1,0 +1,369 @@
+{
+  "status": "READ_ONLY_RECOVERY_LOCALIZATION_COMPLETE",
+  "models": 3,
+  "teacher_sequence_forwards": 1800,
+  "main_rollouts": 192,
+  "gpu_hours": 0,
+  "base_forwards": 0,
+  "optimizer_updates": 0,
+  "new_environment_actions": 0,
+  "seconds": 36.68604395119473,
+  "live_summary": [
+    {
+      "history": "all",
+      "seed": null,
+      "n": 192,
+      "passed": 66,
+      "failure_types": {
+        "PASS": 66,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 23,
+        "BUDGET_EXHAUSTED": 26,
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 54,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 13,
+        "STOP_DESPITE_CORRECT_MISSING_HISTORY": 6,
+        "READY_STOP_WITH_COLLISION": 4
+      },
+      "takeover_history": {
+        "n": 192,
+        "tp": 73,
+        "fp": 68,
+        "fn": 23,
+        "tn": 28,
+        "brier": 0.39778206981157566
+      },
+      "took_forward": 36,
+      "colliding": 22,
+      "ever_ready_recognized_but_continued": 77,
+      "ever_autonomous_anchor_witness": 59,
+      "ever_autonomous_anchor_first_detected": 29,
+      "false_history_origins": {
+        "event_accumulation": 68
+      },
+      "immediate_stop": 44
+    },
+    {
+      "history": "all",
+      "seed": 1209,
+      "n": 64,
+      "passed": 22,
+      "failure_types": {
+        "PASS": 22,
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 20,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 8,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 6,
+        "BUDGET_EXHAUSTED": 6,
+        "STOP_DESPITE_CORRECT_MISSING_HISTORY": 2
+      },
+      "takeover_history": {
+        "n": 64,
+        "tp": 28,
+        "fp": 24,
+        "fn": 4,
+        "tn": 8,
+        "brier": 0.4072600709372774
+      },
+      "took_forward": 6,
+      "colliding": 6,
+      "ever_ready_recognized_but_continued": 22,
+      "ever_autonomous_anchor_witness": 18,
+      "ever_autonomous_anchor_first_detected": 12,
+      "false_history_origins": {
+        "event_accumulation": 24
+      },
+      "immediate_stop": 20
+    },
+    {
+      "history": "all",
+      "seed": 1210,
+      "n": 64,
+      "passed": 23,
+      "failure_types": {
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 10,
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 16,
+        "BUDGET_EXHAUSTED": 15,
+        "PASS": 23
+      },
+      "takeover_history": {
+        "n": 64,
+        "tp": 21,
+        "fp": 24,
+        "fn": 11,
+        "tn": 8,
+        "brier": 0.396706145140327
+      },
+      "took_forward": 22,
+      "colliding": 12,
+      "ever_ready_recognized_but_continued": 33,
+      "ever_autonomous_anchor_witness": 27,
+      "ever_autonomous_anchor_first_detected": 14,
+      "false_history_origins": {
+        "event_accumulation": 24
+      },
+      "immediate_stop": 8
+    },
+    {
+      "history": "all",
+      "seed": 1211,
+      "n": 64,
+      "passed": 21,
+      "failure_types": {
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 5,
+        "BUDGET_EXHAUSTED": 5,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 7,
+        "STOP_DESPITE_CORRECT_MISSING_HISTORY": 4,
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 18,
+        "PASS": 21,
+        "READY_STOP_WITH_COLLISION": 4
+      },
+      "takeover_history": {
+        "n": 64,
+        "tp": 24,
+        "fp": 20,
+        "fn": 8,
+        "tn": 12,
+        "brier": 0.38937999335712403
+      },
+      "took_forward": 8,
+      "colliding": 4,
+      "ever_ready_recognized_but_continued": 22,
+      "ever_autonomous_anchor_witness": 14,
+      "ever_autonomous_anchor_first_detected": 3,
+      "false_history_origins": {
+        "event_accumulation": 20
+      },
+      "immediate_stop": 16
+    },
+    {
+      "history": "seen",
+      "seed": null,
+      "n": 96,
+      "passed": 58,
+      "failure_types": {
+        "PASS": 58,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 16,
+        "BUDGET_EXHAUSTED": 13,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 7,
+        "READY_STOP_WITH_COLLISION": 2
+      },
+      "takeover_history": {
+        "n": 96,
+        "tp": 73,
+        "fp": 0,
+        "fn": 23,
+        "tn": 0,
+        "brier": 0.16206449087663236
+      },
+      "took_forward": 21,
+      "colliding": 14,
+      "ever_ready_recognized_but_continued": 49,
+      "ever_autonomous_anchor_witness": 25,
+      "ever_autonomous_anchor_first_detected": 11,
+      "false_history_origins": {},
+      "immediate_stop": 22
+    },
+    {
+      "history": "seen",
+      "seed": 1209,
+      "n": 32,
+      "passed": 22,
+      "failure_types": {
+        "PASS": 22,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 4,
+        "BUDGET_EXHAUSTED": 4,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 2
+      },
+      "takeover_history": {
+        "n": 32,
+        "tp": 28,
+        "fp": 0,
+        "fn": 4,
+        "tn": 0,
+        "brier": 0.08408305437901684
+      },
+      "took_forward": 4,
+      "colliding": 4,
+      "ever_ready_recognized_but_continued": 16,
+      "ever_autonomous_anchor_witness": 8,
+      "ever_autonomous_anchor_first_detected": 6,
+      "false_history_origins": {},
+      "immediate_stop": 10
+    },
+    {
+      "history": "seen",
+      "seed": 1210,
+      "n": 32,
+      "passed": 17,
+      "failure_types": {
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 7,
+        "BUDGET_EXHAUSTED": 8,
+        "PASS": 17
+      },
+      "takeover_history": {
+        "n": 32,
+        "tp": 21,
+        "fp": 0,
+        "fn": 11,
+        "tn": 0,
+        "brier": 0.22298634729517555
+      },
+      "took_forward": 12,
+      "colliding": 8,
+      "ever_ready_recognized_but_continued": 17,
+      "ever_autonomous_anchor_witness": 11,
+      "ever_autonomous_anchor_first_detected": 4,
+      "false_history_origins": {},
+      "immediate_stop": 4
+    },
+    {
+      "history": "seen",
+      "seed": 1211,
+      "n": 32,
+      "passed": 19,
+      "failure_types": {
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 5,
+        "BUDGET_EXHAUSTED": 1,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 5,
+        "PASS": 19,
+        "READY_STOP_WITH_COLLISION": 2
+      },
+      "takeover_history": {
+        "n": 32,
+        "tp": 24,
+        "fp": 0,
+        "fn": 8,
+        "tn": 0,
+        "brier": 0.17912407095570476
+      },
+      "took_forward": 5,
+      "colliding": 2,
+      "ever_ready_recognized_but_continued": 16,
+      "ever_autonomous_anchor_witness": 6,
+      "ever_autonomous_anchor_first_detected": 1,
+      "false_history_origins": {},
+      "immediate_stop": 8
+    },
+    {
+      "history": "missing",
+      "seed": null,
+      "n": 96,
+      "passed": 8,
+      "failure_types": {
+        "BUDGET_EXHAUSTED": 13,
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 54,
+        "STOP_DESPITE_CORRECT_MISSING_HISTORY": 6,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 6,
+        "PASS": 8,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 7,
+        "READY_STOP_WITH_COLLISION": 2
+      },
+      "takeover_history": {
+        "n": 96,
+        "tp": 0,
+        "fp": 68,
+        "fn": 0,
+        "tn": 28,
+        "brier": 0.6334996487465195
+      },
+      "took_forward": 15,
+      "colliding": 8,
+      "ever_ready_recognized_but_continued": 28,
+      "ever_autonomous_anchor_witness": 34,
+      "ever_autonomous_anchor_first_detected": 18,
+      "false_history_origins": {
+        "event_accumulation": 68
+      },
+      "immediate_stop": 22
+    },
+    {
+      "history": "missing",
+      "seed": 1209,
+      "n": 32,
+      "passed": 0,
+      "failure_types": {
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 20,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 4,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 4,
+        "STOP_DESPITE_CORRECT_MISSING_HISTORY": 2,
+        "BUDGET_EXHAUSTED": 2
+      },
+      "takeover_history": {
+        "n": 32,
+        "tp": 0,
+        "fp": 24,
+        "fn": 0,
+        "tn": 8,
+        "brier": 0.730437087495538
+      },
+      "took_forward": 2,
+      "colliding": 2,
+      "ever_ready_recognized_but_continued": 6,
+      "ever_autonomous_anchor_witness": 10,
+      "ever_autonomous_anchor_first_detected": 6,
+      "false_history_origins": {
+        "event_accumulation": 24
+      },
+      "immediate_stop": 10
+    },
+    {
+      "history": "missing",
+      "seed": 1210,
+      "n": 32,
+      "passed": 6,
+      "failure_types": {
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 16,
+        "BUDGET_EXHAUSTED": 7,
+        "PASS": 6,
+        "STOP_MISSING_TERMINAL_WITH_FALSE_DETECTION": 3
+      },
+      "takeover_history": {
+        "n": 32,
+        "tp": 0,
+        "fp": 24,
+        "fn": 0,
+        "tn": 8,
+        "brier": 0.5704259429854786
+      },
+      "took_forward": 10,
+      "colliding": 4,
+      "ever_ready_recognized_but_continued": 16,
+      "ever_autonomous_anchor_witness": 16,
+      "ever_autonomous_anchor_first_detected": 10,
+      "false_history_origins": {
+        "event_accumulation": 24
+      },
+      "immediate_stop": 4
+    },
+    {
+      "history": "missing",
+      "seed": 1211,
+      "n": 32,
+      "passed": 2,
+      "failure_types": {
+        "BUDGET_EXHAUSTED": 4,
+        "STOP_DESPITE_CORRECT_MISSING_HISTORY": 4,
+        "STOP_MISSING_HISTORY_WITH_FALSE_BELIEF": 18,
+        "PASS": 2,
+        "STOP_DESPITE_CORRECT_MISSING_TERMINAL": 2,
+        "READY_STOP_WITH_COLLISION": 2
+      },
+      "takeover_history": {
+        "n": 32,
+        "tp": 0,
+        "fp": 20,
+        "fn": 0,
+        "tn": 12,
+        "brier": 0.5996359157585432
+      },
+      "took_forward": 3,
+      "colliding": 2,
+      "ever_ready_recognized_but_continued": 6,
+      "ever_autonomous_anchor_witness": 8,
+      "ever_autonomous_anchor_first_detected": 2,
+      "false_history_origins": {
+        "event_accumulation": 20
+      },
+      "immediate_stop": 8
+    }
+  ],
+  "method_benefit_measured": false
+}

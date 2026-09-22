@@ -1,0 +1,67 @@
+[
+  {
+    "claim": "Original development MONOTONIC vs DIRECT",
+    "status": "MEASURED_DEV_POSITIVE_SIGNAL",
+    "source": "research/continuation_memory_v1/evidence_state_policy_v1/gpu_runtime_r1/runs/gpu_001/RESULT.json",
+    "main": {
+      "direct": 55,
+      "monotonic": 66,
+      "n_per_arm": 192,
+      "delta": 0.057291666666666664
+    },
+    "control": {
+      "direct": 78,
+      "monotonic": 98,
+      "n_per_arm": 192,
+      "delta": 0.10416666666666667
+    },
+    "scope": "One exposed DEV house; method comparison under matched training. Not independent ordinary VLN-CE evidence.",
+    "source_sha256": "1e38935d9a042252367efd7be0bae24459a017da10454db18ff1d449782f43b4"
+  },
+  {
+    "claim": "Four-house follow-up",
+    "status": "WEAK_INCOMPLETE_SIGNAL",
+    "source": "research/continuation_memory_v1/evidence_state_policy_v1/monotonic_holdout_v1/runs/holdout_001/RESULT.json",
+    "complete": 1488,
+    "planned": 1536,
+    "main": {
+      "direct": 125,
+      "monotonic": 131,
+      "executed_per_arm": 372,
+      "planned_per_arm": 384,
+      "unidentified_per_arm": 12,
+      "delta_bounds": [
+        -0.015625,
+        0.046875
+      ]
+    },
+    "scope": "Two houses positive, two negative. Missing conditions and dependence preclude robust claim; houses now exposed.",
+    "source_sha256": "96212ba40d63d6abdf2a9febcec6bd1a30a449006a1a2cc991323d132a45b160"
+  },
+  {
+    "claim": "Task-aligned teacher intervention",
+    "status": "VALID_NEGATIVE_RESULT_DO_NOT_ADOPT",
+    "source": "research/continuation_memory_v1/evidence_state_policy_v1/teacher_alignment_v1/runs/aligned_001/RESULT.json",
+    "complete": 768,
+    "planned": 768,
+    "main": {
+      "original": 66,
+      "aligned": 47,
+      "n_per_arm": 192,
+      "delta": -0.09895833333333333
+    },
+    "scope": "Earlier teacher STOP plus reduced movement action masks harmed performance; effects of the two changes were not separately identified.",
+    "source_sha256": "e70d7c5797424375dbfe95674215ac9e78f7b07e544e20fe1e7da380f4f98288"
+  },
+  {
+    "claim": "Current causal localization",
+    "status": "MEASURED_DIAGNOSIS_NOT_NEW_METHOD_GAIN",
+    "source": "research/continuation_memory_v1/evidence_state_policy_v1/recovery_localization_v1/runs/diagnosis_001/RESULT.json",
+    "teacher_sequence_forwards": 1800,
+    "causal_step_forwards": 73776,
+    "live_main_rollouts": 192,
+    "gpu_hours": 0,
+    "optimizer_updates": 0,
+    "source_sha256": "b953260571b2cd9818d90683ff4b7a96ef8b450c4517768ee98b112fc6b6b2b1"
+  }
+]

@@ -1,0 +1,366 @@
+{
+  "summary": [
+    {
+      "split": "FIT",
+      "role": "anchor",
+      "unique_inputs": 2757,
+      "positive": 465,
+      "negative": 2292,
+      "types": {
+        "initial_single_observation": 32,
+        "no_target_pixels": 1155,
+        "single_frame_witness": 717,
+        "positive_near": 247,
+        "positive_clear": 218,
+        "below_pixel_threshold": 375,
+        "different_instance_across_frames": 13
+      },
+      "houses": 4,
+      "target_word_room_combinations": [
+        [
+          "armchair",
+          "living room"
+        ],
+        [
+          "bed",
+          "bedroom"
+        ],
+        [
+          "chair",
+          "dining room"
+        ],
+        [
+          "chair",
+          "kitchen"
+        ],
+        [
+          "chair",
+          "lounge"
+        ],
+        [
+          "coffee table",
+          "lounge"
+        ],
+        [
+          "couch",
+          "living room"
+        ],
+        [
+          "dining table",
+          "dining room"
+        ],
+        [
+          "plant",
+          "bedroom"
+        ],
+        [
+          "plant",
+          "dining room"
+        ],
+        [
+          "plant",
+          "hallway"
+        ],
+        [
+          "plant",
+          "kitchen"
+        ],
+        [
+          "plant",
+          "living room"
+        ],
+        [
+          "plant",
+          "office"
+        ],
+        [
+          "sink",
+          "familyroom/lounge"
+        ],
+        [
+          "table",
+          "bedroom"
+        ],
+        [
+          "table",
+          "dining room"
+        ],
+        [
+          "table",
+          "living room"
+        ],
+        [
+          "table",
+          "lounge"
+        ]
+      ]
+    },
+    {
+      "split": "FIT",
+      "role": "terminal",
+      "unique_inputs": 5514,
+      "positive": 4530,
+      "negative": 984,
+      "types": {
+        "initial_single_observation": 64,
+        "positive_near": 1810,
+        "single_frame_witness": 418,
+        "positive_clear": 2720,
+        "no_target_pixels": 354,
+        "different_instance_across_frames": 4,
+        "below_pixel_threshold": 144
+      },
+      "houses": 4,
+      "target_word_room_combinations": [
+        [
+          "bed",
+          "bedroom"
+        ],
+        [
+          "chair",
+          "bedroom"
+        ],
+        [
+          "chair",
+          "dining room"
+        ],
+        [
+          "chair",
+          "hallway"
+        ],
+        [
+          "chair",
+          "living room"
+        ],
+        [
+          "chair",
+          "office"
+        ],
+        [
+          "couch",
+          "living room"
+        ],
+        [
+          "dining chair",
+          "dining room"
+        ],
+        [
+          "dining table",
+          "dining room"
+        ],
+        [
+          "plant",
+          "familyroom/lounge"
+        ],
+        [
+          "plant",
+          "kitchen"
+        ],
+        [
+          "plant",
+          "living room"
+        ],
+        [
+          "plant",
+          "lounge"
+        ],
+        [
+          "sink",
+          "kitchen"
+        ],
+        [
+          "sofa",
+          "kitchen"
+        ],
+        [
+          "table",
+          "dining room"
+        ],
+        [
+          "table",
+          "hallway"
+        ],
+        [
+          "table",
+          "living room"
+        ]
+      ]
+    },
+    {
+      "split": "DEV",
+      "role": "anchor",
+      "unique_inputs": 686,
+      "positive": 78,
+      "negative": 608,
+      "types": {
+        "initial_single_observation": 8,
+        "below_pixel_threshold": 102,
+        "single_frame_witness": 164,
+        "positive_near": 63,
+        "no_target_pixels": 334,
+        "positive_clear": 15
+      },
+      "houses": 1,
+      "target_word_room_combinations": [
+        [
+          "armchair",
+          "familyroom/lounge"
+        ],
+        [
+          "coffee table",
+          "living room"
+        ],
+        [
+          "couch",
+          "familyroom/lounge"
+        ],
+        [
+          "couch",
+          "living room"
+        ],
+        [
+          "table",
+          "dining room"
+        ],
+        [
+          "table",
+          "familyroom/lounge"
+        ]
+      ]
+    },
+    {
+      "split": "DEV",
+      "role": "terminal",
+      "unique_inputs": 1372,
+      "positive": 1120,
+      "negative": 252,
+      "types": {
+        "initial_single_observation": 16,
+        "positive_near": 426,
+        "single_frame_witness": 146,
+        "no_target_pixels": 54,
+        "positive_clear": 694,
+        "different_instance_across_frames": 2,
+        "below_pixel_threshold": 34
+      },
+      "houses": 1,
+      "target_word_room_combinations": [
+        [
+          "coffee table",
+          "living room"
+        ],
+        [
+          "couch",
+          "familyroom/lounge"
+        ],
+        [
+          "couch",
+          "living room"
+        ],
+        [
+          "plant",
+          "dining room"
+        ],
+        [
+          "plant",
+          "familyroom/lounge"
+        ],
+        [
+          "sink",
+          "bathroom"
+        ],
+        [
+          "table",
+          "dining room"
+        ]
+      ]
+    }
+  ],
+  "dev_lexical_coverage": [
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "armchair",
+      "room": "familyroom/lounge",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": false,
+      "n": 163,
+      "positive": 14
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "coffee table",
+      "room": "living room",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": false,
+      "n": 280,
+      "positive": 192
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "couch",
+      "room": "familyroom/lounge",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": false,
+      "n": 271,
+      "positive": 176
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "couch",
+      "room": "living room",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": true,
+      "n": 359,
+      "positive": 198
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "plant",
+      "room": "dining room",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": true,
+      "n": 182,
+      "positive": 140
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "plant",
+      "room": "familyroom/lounge",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": true,
+      "n": 290,
+      "positive": 196
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "sink",
+      "room": "bathroom",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": false,
+      "n": 174,
+      "positive": 116
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "table",
+      "room": "dining room",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": true,
+      "n": 267,
+      "positive": 158
+    },
+    {
+      "house": "2azQ1b91cZZ",
+      "word": "table",
+      "room": "familyroom/lounge",
+      "word_seen_in_fit": true,
+      "word_room_seen_in_fit": false,
+      "n": 72,
+      "positive": 8
+    }
+  ],
+  "source_traces": 900,
+  "distinct_feature_role_labels": 10329,
+  "new_samples_collected": 0,
+  "note": "Counts are unique model-input/role keys; histories and houses remain correlated. Initial observations cannot establish SEE2. Pixel thresholds and instance consistency unchanged."
+}

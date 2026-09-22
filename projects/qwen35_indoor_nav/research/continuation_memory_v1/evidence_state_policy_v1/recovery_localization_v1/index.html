@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Q35N 当前证据</title>
+<style>body{background:#101723;color:#dde7f1;font:16px system-ui;margin:28px;max-width:1100px}table{border-collapse:collapse;width:100%}td,th{padding:10px;text-align:left;border-bottom:1px solid #344152}a{color:#79c7ff}.card{padding:18px;background:#1b2838;margin:16px 0;border-radius:8px}small{color:#a7b8cb}</style>
+<h1>Q35N · 当前证据与 ORIGINAL 恢复定位</h1>
+<div class="card" id="status">读取状态</div>
+<h2>正向信号与负结果分列</h2>
+<table><tr><th>测量</th><th>结果</th><th>结论范围</th></tr>
+<tr><td>完整开发主任务</td><td>MONOTONIC 66/192 vs DIRECT 55/192，+5.73pp</td><td>受控开发集正向信号</td></tr>
+<tr><td>历史无关控制</td><td>98/192 vs 78/192，+10.42pp</td><td>同一开发协议，不能混入主任务</td></tr>
+<tr><td>四屋后续</td><td>131/372 vs 125/372；计划384/臂</td><td>差值识别界[-1.56,+4.69]pp；尚不稳健</td></tr>
+<tr><td>ALIGNED 教师修复</td><td>47/192 vs ORIGINAL 66/192，−9.90pp</td><td>768/768完成，不采用</td></tr></table>
+<small>三个种子、相关历史与同屋变体不是独立泛化样本。没有普通 VLN-CE 方法收益或论文录用结论。</small>
+<h2>这次实际做了什么</h2><p>三个冻结 ORIGINAL 模型；1800次完整教师序列CPU前向、73776个递归步骤；复核192条主任务。新GPU小时、优化器更新和仿真动作均为0。</p>
+<table id="probe"></table><div class="card" id="missing"></div>
+<p>下一修复目标：事件识别迁移与累计误报。保留原始完整动作教师；不继续教师截短，不据此扩记忆或换底模。</p>
+<p><a href="/report">完整诊断及正向证据边界</a> · <a href="/last-experiment">最后一轮完整负结果</a></p>
+<script>
+async function update(){try{let r=await fetch('/api/status',{cache:'no-store'});if(!r.ok)throw Error(r.status);let x=await r.json();document.querySelector('#status').textContent=`${x.status.status} · ${x.status.stage} · 当前没有新训练运行；诊断已完成。`;
+document.querySelector('#probe').innerHTML='<tr><th>区域</th><th>首次真实事件检出</th><th>缺失历史误判为已发生</th><th>检出后丢失</th></tr>'+x.probe_summary.map(r=>`<tr><td>${r.split}</td><td>${r.first_witness_detected}/${r.witnessed_n}</td><td>${r.false_history_at_cutoff}/${r.missing_history_n}</td><td>${r.detected_then_lost}</td></tr>`).join('');
+let m=x.recovery_summary.find(r=>r.history==='missing');document.querySelector('#missing').textContent=`缺失历史恢复：成功 ${m.passed}/${m.n}；错误历史判断下 STOP ${m.failure_types.STOP_MISSING_HISTORY_WITH_FALSE_BELIEF} 条；正确知道历史缺失仍 STOP ${m.failure_types.STOP_DESPITE_CORRECT_MISSING_HISTORY} 条。`;
+}catch(e){document.querySelector('#status').textContent='读取暂不可用：'+e;}setTimeout(update,15000);}update();</script>
