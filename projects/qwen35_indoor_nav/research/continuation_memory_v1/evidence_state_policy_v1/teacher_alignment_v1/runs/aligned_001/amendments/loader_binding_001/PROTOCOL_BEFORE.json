@@ -1,0 +1,94 @@
+{
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "sim_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "seed": 1209,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "model_memory_gib": 25,
+  "process_rss_gib": 64,
+  "warmup_indices": 8,
+  "warmup_repeats": 2,
+  "publication_branch": "codex/q35n-b2-kl-repair-20260921",
+  "devices": [
+    {
+      "gpu": 0,
+      "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+    },
+    {
+      "gpu": 1,
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+    },
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+    }
+  ],
+  "version": "TASK_ALIGNED_TEACHER_V1",
+  "source_commit": "3cc46a6877e32de0b0f87193438ccc4e914a9365",
+  "houses": [
+    "2azQ1b91cZZ"
+  ],
+  "arms": [
+    "ORIGINAL",
+    "ALIGNED"
+  ],
+  "base_updates": 0,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "planned_conditions": 128,
+  "planned_rollouts": 768,
+  "main_denominator_per_arm": 192,
+  "control_denominator_per_arm": 192,
+  "gpu_session_hours": 12,
+  "max_session_hours": 3,
+  "min_start_gpu_gib": 26,
+  "min_free_gpu_gib": 2,
+  "artifact_gib": 40,
+  "infra_retries": 0,
+  "loss": "Unchanged original action CE + cutoff CE + preservation KL + ordinary CE + exact-state BCE + event BCE, all weights 1. Only selected FIT teacher action targets/masks differ.",
+  "schedule": "Identical saved1200family schedule and ordinary record pairs for both arms,3seeds. Final1200only, no DEV selection.",
+  "scope": "Previously exposed FIT4houses32parents59variants; DEV1house8parents16variants. Stationary SEE2 reorientation and stopping; no translational/naturalVLN claim.",
+  "primary": "ALIGNED minus ORIGINAL safe task_A PASS over planned192 per arm; missing-event96/arm is registered recovery stratum; task_T192/arm separate.",
+  "decision": "Development repair signal requires positive main difference in at least2 seeds and improved missing-history stratum. Report retained successes, task_T and cost tradeoffs. No automatic adoption or novelty claim.",
+  "runtime": "Same final method logits argmax, two224RGB,8executedactions,500decisions and original safe_v16/legacy evaluator.",
+  "authorization": "User2026-09-22: move to next task; prior multi-GPU, independent service, monitor and automatic GitHub publication authorization persists.",
+  "steps": 1200,
+  "checkpoint_every": 200,
+  "cpu_smoke_updates": 3,
+  "new_models": 6,
+  "new_optimization_updates": 7200,
+  "architecture": "Unchanged MONOTONIC EvidencePolicy8x64,2048 causal features. Both arms start from identical per-seed saved initialization; no residual STOP module.",
+  "teacher": "First certified ready decision at or after takeover, using existing model-independent selected real PASS trajectory. Replay full prefix and actually execute STOP; never append an observation for STOP.",
+  "auxiliary_pool": "Both arms keep every original real trajectory and all causal feature/state/event/KL exposure. ALIGNED uses a certified alternative STOP target at the same observed prefix; later action imitation is masked. Later auxiliary observations belong to the original executed teacher trajectory, not a fictional post-STOP continuation.",
+  "conflicts": "Cross-variant conflicting movement teachers are measured and retained in both arms. This version does not claim to fix them.",
+  "collection_split": "FIT only; DEV and new-house holdout cannot select teacher targets. All source certificates stay read-only."
+}
