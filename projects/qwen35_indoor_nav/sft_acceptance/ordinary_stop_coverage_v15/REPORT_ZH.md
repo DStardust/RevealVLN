@@ -7,3 +7,5 @@
 启动时点详见STARTUP_EVIDENCE.json；实时进度见原监控18770端口与runs/coverage_001/STATUS.json。最终完成后pipeline会生成runs/coverage_001/RESULT.json和REPORT_ZH.md；故障则封存FAILURE与实际分母。
 
 当前保留V13旧开发25%；V14仍25%，未采用。新结果不与历史SR混算，候选不自动部署。既有100000步记忆训练继续运行。
+
+基础设施中断及恢复：首轮87条封存后du统计返回1，已保留失败与资源证据。runtime_r2修复目录扫描，不改变任何模型/标签/评测路径；续跑服务ordinary-coverage15-20260922-02已启动。最终收益仍未测得。

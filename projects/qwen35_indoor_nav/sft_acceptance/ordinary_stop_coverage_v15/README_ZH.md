@@ -15,8 +15,8 @@
 ```bash
 PY=/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3
 V=projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15
-V16_STANDALONE_PYTHON="$PY" "$PY" -I -S -B "$V/standalone.py" start ordinary-coverage15-20260922-01 -- "$PY" -I -S -B "$V/pipeline.py" --run-id coverage_001
-systemctl status q35n-ordinary-coverage15-20260922-01.service
+V16_STANDALONE_PYTHON="$PY" "$PY" -I -S -B "$V/standalone.py" start ordinary-coverage15-resume-NEWNAME -- "$PY" -I -S -B "$V/runtime_r2/pipeline.py" --run-id coverage_001 --resume
+systemctl status q35n-ordinary-coverage15-20260922-02.service
 cat "$V/runs/coverage_001/STATUS.json"
 ```
 
@@ -25,3 +25,7 @@ cat "$V/runs/coverage_001/STATUS.json"
 原监控地址端口18770显示采集、训练、DEV、unseen及既有100000步记忆任务。任务独立于终端和聊天进程，故障会写STATUS及FAILURE。共享GPU1–7，GPU0原任务保持运行；仅清理本任务拥有的进程，不因他人进程出现就作废。
 
 源码和小型证据可发布GitHub；原始RGB、场景、特征与权重的完整身份/本地路径保留于运行目录，不声称GitHub包含授权数据集。CPU验收见CPU_TEST_RESULT.json。
+
+## 基础设施修复记录
+
+首轮封存87条后，du磁盘统计返回1导致停止；原调用未保留stderr，因此不宣称已确认底层错误原因。runtime_r2仅把资源统计替换为不跟随符号链接、容忍并发ENOENT的目录扫描，其他IO错误仍报错；4项回归测试通过。原pipeline.py、SOURCE_LOCK、模型、策略、采集和评测定义不改。已有87条保留，半条不接续，第二个独立服务从剩余553条重新按完整轨迹运行。旧失败与0.556 GPU会话小时一并计入。
