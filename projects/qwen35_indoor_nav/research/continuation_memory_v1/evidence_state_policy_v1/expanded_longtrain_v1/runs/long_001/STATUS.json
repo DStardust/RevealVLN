@@ -1,0 +1,48 @@
+{
+  "status": "RUNNING",
+  "stage": "train_and_checkpoint_evaluation",
+  "training": {
+    "step": 1455,
+    "target": 100000,
+    "attempt": "attempt_001",
+    "unix": 1790071212.7230914,
+    "loss": 3.838048219680786,
+    "new_updates": 255,
+    "seconds": 111.5307007888332,
+    "seconds_per_update": 0.43737529806208375,
+    "status": "TRAINING",
+    "base_updates": 0
+  },
+  "checkpoints_saved": [],
+  "evaluations_complete": [],
+  "active_evaluation": null,
+  "workers": [
+    {
+      "role": "train",
+      "returncode": null,
+      "gpu": {
+        "gpu": 0,
+        "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+      },
+      "device": {
+        "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 7992,
+        "free_mib": 24118,
+        "driver": "580.126.09"
+      },
+      "seconds": 122.72768976958469,
+      "resource": {
+        "owned_pids": [
+          1930384
+        ],
+        "rss_bytes": 1975943168
+      },
+      "attempt": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/expanded_longtrain_v1/runs/long_001/attempts/train_1790071089954626865",
+      "target": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/expanded_longtrain_v1/runs/long_001"
+    }
+  ],
+  "gpu_hours": 0.03414186754302743,
+  "unix": 1790071212.9946873
+}
