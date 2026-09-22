@@ -1,0 +1,99 @@
+{
+  "architecture": "Same8x64MONOTONIC; initialize from trained ORIGINAL. Train only events MLP; core recurrent/action/normalization, initial_belief,state_action,revision all frozen.",
+  "arms": [
+    "ORIGINAL",
+    "REPAIR"
+  ],
+  "artifact_gib": 40,
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "authorization": "User2026-09-22 explicitly: quickly implement and validate event-only repair after action-path localization; prior multi-GPU standalone/monitor/publication authorization persists.",
+  "base_updates": 0,
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_every": 100,
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "control_denominator_per_arm": 192,
+  "cpu_smoke_updates": 3,
+  "decision": "Complete192/arm main paired delta, retained/lost/new successes, controls/collisions/exhaustion/cost. Positive development signal requires net main gain, at least2positive seeds and missing-history gain; no automatic adoption.",
+  "devices": [
+    {
+      "gpu": 0,
+      "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+    },
+    {
+      "gpu": 1,
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+    },
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+    }
+  ],
+  "gpu_session_hours": 8,
+  "houses": [
+    "2azQ1b91cZZ"
+  ],
+  "infra_retries": 0,
+  "learning_rate": 0.001,
+  "loss": "Original actionCE+cutoffCE+stateBCE+KL+ordinaryCE; replace eventBCE with previous registered unique-input house/role-uniform objective. Only eventMLP receives optimizer updates.",
+  "main_denominator_per_arm": 192,
+  "max_session_hours": 3,
+  "min_free_gpu_gib": 2,
+  "min_start_gpu_gib": 26,
+  "model_memory_gib": 25,
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "new_models": 3,
+  "new_optimization_updates": 600,
+  "planned_conditions": 128,
+  "planned_rollouts": 768,
+  "primary": "REPAIR minus frozen ORIGINAL on complete same-process paired main episodes. This compares bounded repair with no repair; not a compute-matched auxiliary-supervision claim.",
+  "process_rss_gib": 64,
+  "publication_branch": "codex/q35n-b2-kl-repair-20260921",
+  "runtime": "Same final method logits argmax, two224RGB,8executedactions,500decisions and original safe_v16/legacy evaluator.",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "schedule": "First200entries of each frozen1200stepFITschedule; no DEV selection, no extension based on score.",
+  "scope": "Original FIT4houses and same exposed DEV1house128conditions; all768rollouts rerun; zero new data, no independent TEST.",
+  "seed": 1209,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "sim_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+  "source_commit": "bfe69c62094ac45a2440f37944d0dca4c31ec926",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "steps": 200,
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "version": "EVENT_ACTION_PRESERVATION_V1",
+  "warmup_indices": 8,
+  "warmup_repeats": 2,
+  "weight_decay": 0.01,
+  "event_batch_size": 256,
+  "formal_updates": 600,
+  "source_original_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/event_grounding_repair_v1/runs/event_001",
+  "model_updates": {
+    "ORIGINAL": 0,
+    "REPAIR": 200
+  },
+  "source_training_updates_per_reference": 1200
+}
