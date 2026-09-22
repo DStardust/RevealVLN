@@ -1,0 +1,118 @@
+{
+  "status": "VALID_COMPLETE",
+  "complete_pairs": 100,
+  "planned_pairs": 100,
+  "missing_ranks": [],
+  "arms": {
+    "A": {
+      "successes": 21.0,
+      "complete": 100,
+      "planned": 100,
+      "partial_sr": 0.21,
+      "full_sr": 0.21,
+      "missing": 0,
+      "identification_bounds": [
+        0.21,
+        0.21
+      ],
+      "spl": 0.1801698392344228,
+      "ndtw": 0.36587970073530285,
+      "oracle_success": 0.47,
+      "decisions": 19122,
+      "collisions": 8178,
+      "failures": {
+        "stopped_without_reaching_goal": 37,
+        "entered_goal_but_no_successful_stop": 26,
+        "success": 21,
+        "budget_exhausted_without_reaching_goal": 16
+      }
+    },
+    "B": {
+      "successes": 25.0,
+      "complete": 100,
+      "planned": 100,
+      "partial_sr": 0.25,
+      "full_sr": 0.25,
+      "missing": 0,
+      "identification_bounds": [
+        0.25,
+        0.25
+      ],
+      "spl": 0.21546445835012112,
+      "ndtw": 0.43924607607119975,
+      "oracle_success": 0.36,
+      "decisions": 13159,
+      "collisions": 6290,
+      "failures": {
+        "stopped_without_reaching_goal": 51,
+        "entered_goal_but_no_successful_stop": 11,
+        "success": 25,
+        "budget_exhausted_without_reaching_goal": 13
+      }
+    }
+  },
+  "wins": [
+    1355,
+    2510,
+    196,
+    7697,
+    2399,
+    7979,
+    3965,
+    7994,
+    4919,
+    1059
+  ],
+  "losses": [
+    333,
+    9437,
+    656,
+    8108,
+    6287,
+    1640
+  ],
+  "retained_successes": 15,
+  "houses": [
+    {
+      "house": "82sE5b5pLXE",
+      "complete": 25,
+      "A": 5.0,
+      "B": 9.0,
+      "delta_sr": 0.16
+    },
+    {
+      "house": "B6ByNegPMKs",
+      "complete": 25,
+      "A": 7.0,
+      "B": 9.0,
+      "delta_sr": 0.08
+    },
+    {
+      "house": "PuKPg4mmafe",
+      "complete": 19,
+      "A": 0.0,
+      "B": 0.0,
+      "delta_sr": 0.0
+    },
+    {
+      "house": "XcA2TqTSSAj",
+      "complete": 6,
+      "A": 0.0,
+      "B": 0.0,
+      "delta_sr": 0.0
+    },
+    {
+      "house": "aayBHfsNo7d",
+      "complete": 25,
+      "A": 9.0,
+      "B": 7.0,
+      "delta_sr": -0.08
+    }
+  ],
+  "delta_sr": 0.04,
+  "partial_delta_sr": 0.04,
+  "max_base_logit_delta": 0.0,
+  "logits_bitwise_equal": true,
+  "adoption": "NOT_AUTOMATICALLY_ADOPTED",
+  "scope": "Repeatedly exposed INTERNAL_DEV100, five houses; no independent generalization claim"
+}
