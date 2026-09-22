@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>Q35N 补量生成</title>
+<style>body{font:17px system-ui;background:#101826;color:#ecf2f8;max-width:1100px;margin:35px auto}table{width:100%;border-collapse:collapse}td,th{padding:9px;border-bottom:1px solid #35455a;text-align:left}progress{width:100%;height:30px}small{color:#aebdce}pre{white-space:pre-wrap}</style>
+<h1>Q35N · 两批真实数据合计</h1><p id="state">读取中…</p><progress id="bar" max="800" value="0"></progress><h2 id="count"></h2><p id="sub"></p>
+<small>首批父族599，补量目标至少201，合计至少800；变体、重复窗口及标签不增加父族。已启动屋完整收尾，达到目标后不启动新的屋。仅受控SEE2训练数据，无新训练或方法收益。</small>
+<table><thead><tr><th>批次/房屋</th><th>父族</th><th>缺失终点变体</th><th>阶段</th></tr></thead><tbody id="houses"></tbody></table>
+<h3>两批资源</h3><pre id="resources"></pre><p id="stamp"></p>
+<script>const el=id=>document.getElementById(id);async function refresh(){try{
+const x=await(await fetch('/api/status',{cache:'no-store'})).json(),c=x.counts||x;
+el('state').textContent='补量：'+x.status+' · 首批：'+x.prior_status;
+el('bar').value=c.new_parents||0;el('count').textContent=(c.new_parents||0)+' / 800 父族（首批 '+(c.batch1_new_parents||0)+' + 补量 '+(c.batch2_new_parents||0)+'）';
+el('sub').textContent='完整物理执行 '+(c.certified_physical_cross_executions||0)+' · 交叉标签 '+(c.crossed_labels||0)+' · 相对旧40父族 '+((c.expansion_vs_old_total||0).toFixed(2))+'×';
+el('houses').replaceChildren();for(const [h,v] of Object.entries(c.houses||{})){const tr=document.createElement('tr');for(const s of [v.batch+' / '+h,v.parents+'/'+v.target_parents,v.counterparts,v.progress?.stage||'排队']){const td=document.createElement('td');td.textContent=s;tr.appendChild(td)}el('houses').appendChild(tr)}
+el('resources').textContent=JSON.stringify({首批正在运行:x.prior_workers,补量正在运行:x.workers,受保护GPU:x.prior_protected_gpus,补量GPU会话小时:x.gpu_hours,error:x.error},null,2);
+el('stamp').textContent='最新记录 '+new Date((x.unix||0)*1000).toLocaleString()+' · 10秒刷新';
+}catch(e){el('state').textContent='读取失败：'+e}}refresh();setInterval(refresh,10000);</script></html>
+

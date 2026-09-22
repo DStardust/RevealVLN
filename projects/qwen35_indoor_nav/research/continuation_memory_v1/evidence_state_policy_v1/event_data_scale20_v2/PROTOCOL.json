@@ -1,0 +1,109 @@
+{
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "sim_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "publication_branch": "codex/q35n-b2-kl-repair-20260921",
+  "seed": 1209,
+  "devices": [
+    {
+      "gpu": 0,
+      "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+    },
+    {
+      "gpu": 1,
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+    },
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+    }
+  ],
+  "version": "EVENT_DATA_SCALE20_V2_SUPPLEMENT",
+  "houses": [
+    "E9uDoFAP3SH",
+    "EDJbREhghzL",
+    "GdvgFV5R1Z5",
+    "HxpKQynjfin",
+    "JeFG25nYj2p",
+    "JmbYfDe2QKZ",
+    "Pm6F8kyY3z2",
+    "S9hNv5qa7GM",
+    "SN83YJsR3w2",
+    "ULsKaCPVFJR",
+    "Uxmj2M2itWa",
+    "V2XKFyX4ASd",
+    "VFuaQ6m2Qom",
+    "VLzqgDo317F",
+    "VVfe2KiqLaN",
+    "VzqfbhrpDEA"
+  ],
+  "families_per_house": 32,
+  "target_new_parents": 800,
+  "planned_parent_capacity": 512,
+  "planned_variant_capacity": 1024,
+  "baseline_FIT_parents": 32,
+  "baseline_total_parents": 40,
+  "positions_per_house": 1536,
+  "plans_per_position": 12,
+  "delay_actions": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "turn_counts": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "turn_directions": [
+    "L",
+    "R"
+  ],
+  "parent_min_distance_m": 1.0,
+  "max_session_hours": 24,
+  "max_wall_hours": 48,
+  "gpu_session_hours": 384,
+  "infra_retries": 2,
+  "min_start_gpu_gib": 4,
+  "min_free_gpu_gib": 2,
+  "process_rss_gib": 24,
+  "artifact_gib": 300,
+  "per_house_artifact_gib": 17,
+  "scope": "Stationary SEE2 event recognition/history retention/STOP/reorientation; no translational recovery or ordinary VLN gain claim.",
+  "no_training": true,
+  "no_Qwen_forward": true,
+  "base_updates": 0,
+  "completion": "At >=800 combined audited parents, launch no further houses; finish all already-started houses and prior variants. Preserve unstarted registered houses as NOT_NEEDED_AFTER_TARGET. No threshold relaxation.",
+  "source_commit": "36485c87647ce5e46e4959e7734380c642b893c6",
+  "prior_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v1/runs/scale_001",
+  "prior_unit": "q35n-scale20-data-r2-20260922-01.service",
+  "prior_pipeline": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v1/pipeline_r2.py",
+  "prior_pipeline_sha256": "85aafb0f9d6394239628bdfd0947420428be53b898a02addfeff985ee2f23bb7",
+  "target_combined_parents": 800,
+  "registered_prior_parents": 599,
+  "minimum_additional_parents": 201
+}
