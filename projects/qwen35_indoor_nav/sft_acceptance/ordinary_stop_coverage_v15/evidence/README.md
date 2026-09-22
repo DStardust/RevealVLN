@@ -1,0 +1,1 @@
+Startup snapshot only, immutable copy. Live run continues independently. No new SR result at snapshot. Full scene/RGB/feature assets remain at registered local paths; their references and SHA are recorded.
