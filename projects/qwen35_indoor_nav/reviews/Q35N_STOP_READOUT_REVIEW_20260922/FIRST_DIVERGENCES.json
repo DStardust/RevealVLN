@@ -1,0 +1,229 @@
+{
+  "source_commit": "f2f0b5ac9cb57e785565e551e60ab8b3d0e83d2f",
+  "result_sha256": "43283c385e0d784d3f85fbd5e56103e5165937bbdcd03e69252c8650acea8754",
+  "review_scope": "Read-only recomputation of all changed main outcomes; no new rollout or training",
+  "cases": [
+    {
+      "outcome": "wins",
+      "condition": 32,
+      "seed": 1210,
+      "family": "ABSENT_bb4203d7cca2a519f091",
+      "decision": 182,
+      "true_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "predicted_state": [
+        0.9692872166633606,
+        0.9693377017974854,
+        0.9215426445007324,
+        0.8932394981384277
+      ],
+      "original_action": "turn_right",
+      "repair_action": "STOP",
+      "original_method_logits": [
+        -7.827223777770996,
+        0.8051143288612366,
+        2.319032907485962,
+        2.120678663253784
+      ],
+      "repair_method_logits": [
+        -7.827223777770996,
+        0.8051143288612366,
+        2.319032907485962,
+        2.8848989009857178
+      ],
+      "original_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu0_001/rollouts/0192",
+      "repair_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu0_001/rollouts/0193",
+      "repair_collisions": 0,
+      "repair_exhausted": false
+    },
+    {
+      "outcome": "losses",
+      "condition": 64,
+      "seed": 1209,
+      "family": "IDENT_03004b31b37017519a2b",
+      "decision": 20,
+      "true_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "predicted_state": [
+        0.7723760604858398,
+        0.7723902463912964,
+        0.9767424464225769,
+        0.7544124722480774
+      ],
+      "original_action": "STOP",
+      "repair_action": "turn_right",
+      "original_method_logits": [
+        -1.534516453742981,
+        -1.7147812843322754,
+        0.7999087572097778,
+        0.8012135028839111
+      ],
+      "repair_method_logits": [
+        -1.534516453742981,
+        -1.7147812843322754,
+        0.7999087572097778,
+        0.5556572079658508
+      ],
+      "original_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu0_001/rollouts/0386",
+      "repair_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu0_001/rollouts/0387",
+      "repair_collisions": 466,
+      "repair_exhausted": true
+    },
+    {
+      "outcome": "losses",
+      "condition": 66,
+      "seed": 1209,
+      "family": "IDENT_03004b31b37017519a2b",
+      "decision": 20,
+      "true_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "predicted_state": [
+        0.7496419548988342,
+        0.7496575117111206,
+        0.9767424464225769,
+        0.7322071194648743
+      ],
+      "original_action": "STOP",
+      "repair_action": "turn_right",
+      "original_method_logits": [
+        -1.6156152486801147,
+        -1.559190034866333,
+        0.6957902908325195,
+        0.8428075313568115
+      ],
+      "repair_method_logits": [
+        -1.6156152486801147,
+        -1.559190034866333,
+        0.6957902908325195,
+        0.6290798187255859
+      ],
+      "original_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu2_001/rollouts/0396",
+      "repair_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu2_001/rollouts/0397",
+      "repair_collisions": 466,
+      "repair_exhausted": true
+    },
+    {
+      "outcome": "losses",
+      "condition": 96,
+      "seed": 1211,
+      "family": "IDENT_964dd69c3808373dfa09",
+      "decision": 28,
+      "true_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "predicted_state": [
+        0.12397699803113937,
+        0.12408343702554703,
+        0.9951695799827576,
+        0.12337813526391983
+      ],
+      "original_action": "STOP",
+      "repair_action": "turn_left",
+      "original_method_logits": [
+        -2.1606998443603516,
+        0.418303906917572,
+        -1.5359199047088623,
+        1.0287423133850098
+      ],
+      "repair_method_logits": [
+        -2.1606998443603516,
+        0.418303906917572,
+        -1.5359199047088623,
+        -0.057463765144348145
+      ],
+      "original_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu0_001/rollouts/0580",
+      "repair_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu0_001/rollouts/0581",
+      "repair_collisions": 471,
+      "repair_exhausted": true
+    },
+    {
+      "outcome": "losses",
+      "condition": 98,
+      "seed": 1209,
+      "family": "IDENT_964dd69c3808373dfa09",
+      "decision": 28,
+      "true_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "predicted_state": [
+        0.27917715907096863,
+        0.27927252650260925,
+        0.995771586894989,
+        0.277996689081192
+      ],
+      "original_action": "STOP",
+      "repair_action": "turn_left",
+      "original_method_logits": [
+        -1.80404794216156,
+        0.3064829409122467,
+        -1.3873724937438965,
+        0.9559799432754517
+      ],
+      "repair_method_logits": [
+        -1.80404794216156,
+        0.3064829409122467,
+        -1.3873724937438965,
+        0.08120125532150269
+      ],
+      "original_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu2_001/rollouts/0592",
+      "repair_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu2_001/rollouts/0593",
+      "repair_collisions": 2,
+      "repair_exhausted": false
+    },
+    {
+      "outcome": "losses",
+      "condition": 98,
+      "seed": 1211,
+      "family": "IDENT_964dd69c3808373dfa09",
+      "decision": 28,
+      "true_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "predicted_state": [
+        0.11679084599018097,
+        0.11689815670251846,
+        0.9951695799827576,
+        0.1162266954779625
+      ],
+      "original_action": "STOP",
+      "repair_action": "turn_left",
+      "original_method_logits": [
+        -2.170278310775757,
+        0.4426816403865814,
+        -1.554498553276062,
+        1.0374139547348022
+      ],
+      "repair_method_logits": [
+        -2.170278310775757,
+        0.4426816403865814,
+        -1.554498553276062,
+        -0.07054400444030762
+      ],
+      "original_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu2_001/rollouts/0590",
+      "repair_trace": "research/continuation_memory_v1/evidence_state_policy_v1/state_stop_readout_eval_v2/runs/eval_001/evaluate/session_gpu2_001/rollouts/0591",
+      "repair_collisions": 471,
+      "repair_exhausted": true
+    }
+  ]
+}
