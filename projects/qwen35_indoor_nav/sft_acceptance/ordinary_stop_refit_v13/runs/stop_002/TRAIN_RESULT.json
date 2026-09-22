@@ -1,0 +1,151 @@
+{
+  "status": "TRAINED_NOT_NAVIGATION_VALIDATED",
+  "counts": {
+    "inputs": 5487,
+    "positive": 818,
+    "houses": 16,
+    "physical_episodes": 64,
+    "source_occurrences": 7225
+  },
+  "cache_head_reconstruction_max_abs": 5.7220458984375e-06,
+  "old_v12_numeric_status": {
+    "status": "FAIL",
+    "unix": 1789308308.5690296,
+    "max_abs": 0.7621283531188965,
+    "all_original_argmax_same": false,
+    "inputs": 5487,
+    "feature_sha256": "c367a1c83f7cc214f3849c4f9d891719e9ae0340a73495e1b135be1d69436eb8",
+    "no_feature_inputs_contain_supervision": true,
+    "extra_forwards": 0
+  },
+  "fits": [
+    {
+      "mode": "house_probe",
+      "fit_houses": [
+        "759xd9YjKW5",
+        "kEZ7cmS4wCh",
+        "EDJbREhghzL",
+        "pRbA3pwrgk9",
+        "sT4fr6TAbpF",
+        "gTV8FGcVJC9",
+        "7y3sRwLe3Va",
+        "rPc6DW4iMge",
+        "cV4RVeZvu5T",
+        "ULsKaCPVFJR",
+        "SN83YJsR3w2",
+        "1pXnuDYAj8r"
+      ],
+      "diagnostic_houses": [
+        "sKLMLpTHeUy",
+        "ZMojNkEp431",
+        "r47D5H71a5s",
+        "i5noydFURQK"
+      ],
+      "before": {
+        "bce": 0.9879857910417431,
+        "precision": 0.18068024496862842,
+        "recall": 0.022882158477089423,
+        "f1": 0.0406200155732978,
+        "tp": 0.004274425287356322,
+        "fp": 0.019382977258774234,
+        "fn": 0.1825272390589533
+      },
+      "after": {
+        "bce": 0.5511403120676726,
+        "precision": 0.270519642876142,
+        "recall": 0.10015813921806456,
+        "f1": 0.14619027824831268,
+        "tp": 0.018709707103763847,
+        "fp": 0.05045239478593193,
+        "fn": 0.16809195724254578
+      },
+      "optimization": {
+        "closure_calls": 26,
+        "optimizer_iterations": 24,
+        "wall_seconds": 0.12611926579847932,
+        "scale": 40.1772651317333,
+        "residual_norm": 12.572288089307117
+      },
+      "parameters_before": "51b85edcfafa034f2df03fb5123952bd600bf86694e33344f51c940c0c1a9874",
+      "parameters_after": "276f79db81cfe90389bf569fb5cbc60fff04c2a3a54f602c7c10a3d50f469eaa",
+      "backbone_updates": 0,
+      "learned_parameters": 2049
+    },
+    {
+      "mode": "final",
+      "fit_houses": [
+        "1pXnuDYAj8r",
+        "759xd9YjKW5",
+        "7y3sRwLe3Va",
+        "EDJbREhghzL",
+        "SN83YJsR3w2",
+        "ULsKaCPVFJR",
+        "ZMojNkEp431",
+        "cV4RVeZvu5T",
+        "gTV8FGcVJC9",
+        "i5noydFURQK",
+        "kEZ7cmS4wCh",
+        "pRbA3pwrgk9",
+        "r47D5H71a5s",
+        "rPc6DW4iMge",
+        "sKLMLpTHeUy",
+        "sT4fr6TAbpF"
+      ],
+      "diagnostic_houses": [
+        "1pXnuDYAj8r",
+        "759xd9YjKW5",
+        "7y3sRwLe3Va",
+        "EDJbREhghzL",
+        "SN83YJsR3w2",
+        "ULsKaCPVFJR",
+        "ZMojNkEp431",
+        "cV4RVeZvu5T",
+        "gTV8FGcVJC9",
+        "i5noydFURQK",
+        "kEZ7cmS4wCh",
+        "pRbA3pwrgk9",
+        "r47D5H71a5s",
+        "rPc6DW4iMge",
+        "sKLMLpTHeUy",
+        "sT4fr6TAbpF"
+      ],
+      "before": {
+        "bce": 0.787892623180665,
+        "precision": 0.26288901474544074,
+        "recall": 0.03146425708985188,
+        "f1": 0.056201906603415244,
+        "tp": 0.004985898771022091,
+        "fp": 0.013979894743971336,
+        "fn": 0.15347640837273008
+      },
+      "after": {
+        "bce": 0.40752515602877315,
+        "precision": 0.4184914510890183,
+        "recall": 0.1729448575893368,
+        "f1": 0.24474636862481122,
+        "tp": 0.027405241142253966,
+        "fp": 0.03808054374281059,
+        "fn": 0.1310570660014982
+      },
+      "optimization": {
+        "closure_calls": 35,
+        "optimizer_iterations": 32,
+        "wall_seconds": 0.07673126040026546,
+        "scale": 39.90476938432423,
+        "residual_norm": 12.847917059741224
+      },
+      "parameters_before": "51b85edcfafa034f2df03fb5123952bd600bf86694e33344f51c940c0c1a9874",
+      "parameters_after": "94c0cd51860e78d1fdcc4e3d23681774de7978df452fd74e5728f42e43fbcd19",
+      "backbone_updates": 0,
+      "learned_parameters": 2049
+    }
+  ],
+  "cache_replay_forwards": 0,
+  "trained_on_cpu": true,
+  "wall_seconds": 3.0971765518188477,
+  "protocol_sha256": "7a01429de0bb28ba9defcbd6be999da861720dceb244f968e97ef93c0fc76ceb",
+  "scientific_novelty": false,
+  "navigation_benefit": null,
+  "recipe_selection": "fixed lambda=.001; diagnostic split does not tune lambda or choose checkpoints",
+  "checkpoint_sha256": "099f455f078e49f393b59d39a7318f4f7406cea9c68cc8e94ee3f92ad8b5c25f"
+}

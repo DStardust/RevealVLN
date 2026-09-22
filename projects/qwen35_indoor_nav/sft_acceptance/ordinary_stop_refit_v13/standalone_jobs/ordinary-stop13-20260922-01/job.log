@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/pipeline.py", line 98, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/pipeline.py", line 25, in main
+    u.verify();cfg=u.read(u.HERE/'PROTOCOL.json')
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/common.py", line 16, in verify
+    for path,h in read(HERE/'SOURCE_LOCK.json')['files'].items():
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_recovery_v5/common.py", line 33, in read
+    return json.loads(Path(path).read_text())
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/SOURCE_LOCK.json'

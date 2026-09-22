@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/executor.py", line 6, in <module>
+    service=u.load('stop13_frozen_executor',u.V5/'executor.py')
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/common.py", line 12, in load
+    spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);sys.modules[name]=m;spec.loader.exec_module(m);return m
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_recovery_v5/executor.py", line 23, in <module>
+    c=load('common');metric_module=c.load('official_metrics',c.TINY/'metrics.py');path_metrics=load('path_metrics');official_distance=load('official_distance')
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_recovery_v5/executor.py", line 22, in load
+    s=importlib.util.spec_from_file_location(name,source);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_gpu1_v3/official_distance.py", line 22, in <module>
+    official_geodesic_distance=extract()
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_cycle_pair_gpu1_v3/official_distance.py", line 13, in extract
+    tree=ast.parse(SOURCE.read_text())
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/third_party/habitat-lab/habitat/sims/habitat_simulator/habitat_simulator.py'

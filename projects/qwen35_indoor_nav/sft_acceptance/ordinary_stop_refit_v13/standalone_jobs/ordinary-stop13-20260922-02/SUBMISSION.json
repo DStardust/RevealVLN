@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "systemd-run",
+    "--unit=q35n-ordinary-stop13-20260922-02.service",
+    "--uid=0",
+    "--gid=0",
+    "--property=WorkingDirectory=/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1",
+    "--property=KillMode=control-group",
+    "--property=TimeoutStopSec=90",
+    "--property=RemainAfterExit=yes",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3.10",
+    "-I",
+    "-S",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/standalone.py",
+    "_worker",
+    "ordinary-stop13-20260922-02"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "Running as unit: q35n-ordinary-stop13-20260922-02.service\n"
+}

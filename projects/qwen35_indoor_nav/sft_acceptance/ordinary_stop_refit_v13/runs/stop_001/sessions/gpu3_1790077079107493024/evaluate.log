@@ -1,0 +1,14 @@
+Current Python version 3.10 is below the recommended 3.11 version. It is recommended to upgrade to Python 3.11 or higher for the best experience.
+Loading weights:   0%|          | 0/617 [00:00<?, ?it/s]Loading weights: 100%|██████████| 617/617 [00:00<00:00, 13929.84it/s]
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/evaluate.py", line 126, in <module>
+    if __name__=='__main__':main(Path(sys.argv[1]))
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/evaluate.py", line 74, in main
+    alive={a:windows[a].receive(call(a,dict(op='reset',index=row['index']))) for a in row['inference_order']}
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/evaluate.py", line 74, in <dictcomp>
+    alive={a:windows[a].receive(call(a,dict(op='reset',index=row['index']))) for a in row['inference_order']}
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_refit_v13/evaluate.py", line 34, in call
+    stream=streams[arm];stream.write(json.dumps(req)+'\n');stream.flush();raw=stream.readline()
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/lib/python3.10/socket.py", line 717, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
