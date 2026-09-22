@@ -1,0 +1,82 @@
+{
+  "status": "READ_ONLY_ASSET_AND_INTERFACE_AUDIT",
+  "source_commit": "65fede272362765a6403528b34e195ee5370c94a",
+  "utc": "2026-09-22T10:51:28.212833+00:00",
+  "files": {
+    "ordinary_model": {
+      "path": "sft_acceptance/ordinary_sync_recovery_v1/model.py",
+      "sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+      "available": true
+    },
+    "ordinary_card": {
+      "path": "deployment/ordinary_v1/MODEL_CARD.json",
+      "sha256": "d4dccaa996dfded09d2d63a166096267db1a6cbb323e08e3d58180edbb655a33",
+      "available": true
+    },
+    "memory_and_events": {
+      "path": "research/continuation_memory_v1/evidence_state_policy_v1/model.py",
+      "sha256": "ef9e83f26d630df5cca1687ba9df12f6be84350ce890f3c84a58e65ab0c8cd0d",
+      "available": true
+    },
+    "current_losses": {
+      "path": "research/continuation_memory_v1/evidence_state_policy_v1/objective.py",
+      "sha256": "fa71cae9536d1807cb4f353ab75726f8e5b8697060c294ffe602f20918fcbe49",
+      "available": true
+    },
+    "residual_actor": {
+      "path": "research/continuation_memory_v1/contextual_readout_v10/model.py",
+      "sha256": "5c4d533a58d42285a85c1f960b064c5cd59bc25134c39df528b754c39008672a",
+      "available": true
+    },
+    "feature_extractor": {
+      "path": "research/continuation_memory_v1/evidence_state_policy_v1/data_scale_validation_v1/encoder.py",
+      "sha256": "edf167f4e98c9b4715ee37eec3b34fd07300c69e3267ac82ef11a59e645e03f7",
+      "available": true
+    },
+    "frozen_encoder": {
+      "path": "research/continuation_memory_v1/grounded_state_transfer_v16/encoder.py",
+      "sha256": "e1b133318dda4424010a28b8f9be3c6afb6db520fc42cf8cb0e9fb8872ef8b4b",
+      "available": true
+    },
+    "ordinary_records": {
+      "path": "research/continuation_memory_v1/natural_transfer_v9/DATA.json",
+      "sha256": "dd9ec6918fecd8810dd0b2ccfdced7eeaa578baf4b89c0d69da8de3d5a63d01b",
+      "available": true
+    },
+    "ordinary_old_closed_loop": {
+      "path": "closed_loop_bench/ordinary_memory_transfer_v9/RESULT.json",
+      "sha256": "66a3b2f0adeff6cb8f3dfaf61a6316f8ca0468e98492a2fbd10c268f39cb5a5a",
+      "available": true
+    },
+    "expanded_train_manifest": {
+      "path": "research/continuation_memory_v1/evidence_state_policy_v1/data_scale_validation_v1/runs/scale_003/TRAIN_DATA.json",
+      "sha256": "b515b16905ec74a63cf7f7001d92f306a01e7af7aefe9e640632c875f7f4ec7c",
+      "available": true
+    },
+    "current_expansion_result": {
+      "path": "research/continuation_memory_v1/evidence_state_policy_v1/data_scale_validation_v1/runs/scale_003/RESULT.json",
+      "sha256": "5d751dfb42034e952729fbd46cfa56130fd627a0fcba9368834185714d328481",
+      "available": true
+    }
+  },
+  "offline_scope": {
+    "routes": 8,
+    "decisions": 464,
+    "houses": [
+      "8WUmhLawc2A"
+    ],
+    "independent_blind_test": false
+  },
+  "missing": [
+    "New first-stage ordinary checkpoint and its closed-loop retention reference",
+    "Features recomputed under that exact first-stage checkpoint",
+    "Physically verified native-vs-proposed first-action branch outcomes under common continuation policy",
+    "Forward-moving historical-task recovery data beyond stationary SEE2",
+    "Trained/calibrated causal intervention router",
+    "Independent natural navigation and historical task confirmation"
+  ],
+  "current_training_modified": false,
+  "new_gpu_hours": 0,
+  "new_navigation_episodes": 0,
+  "new_optimizer_updates": 0
+}

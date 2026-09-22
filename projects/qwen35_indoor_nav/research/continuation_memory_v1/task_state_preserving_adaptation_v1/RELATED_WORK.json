@@ -1,0 +1,58 @@
+{
+  "access_date": "2026-09-22",
+  "sources": [
+    {
+      "title": "Side-Tuning",
+      "url": "https://sidetuning.berkeley.edu/",
+      "actual_read": "Project abstract; additive frozen-base side networks, includes Habitat.",
+      "execution_status": "Not reproduced"
+    },
+    {
+      "title": "Learning without Forgetting",
+      "url": "https://arxiv.org/abs/1606.09282",
+      "actual_read": "Abstract; preservation while learning new tasks.",
+      "execution_status": "Not reproduced"
+    },
+    {
+      "title": "Residual Policy Learning",
+      "url": "https://arxiv.org/abs/1812.06298",
+      "actual_read": "Abstract; correcting existing controllers.",
+      "execution_status": "Not reproduced"
+    },
+    {
+      "title": "Progress-Think",
+      "url": "https://arxiv.org/html/2511.17097v2",
+      "actual_read": "Method section3 and official two wrapper files. Staged semantic progress/policy training.",
+      "execution_status": "No full official run"
+    },
+    {
+      "title": "Instruction-as-State",
+      "url": "https://arxiv.org/abs/2604.18223",
+      "actual_read": "Abstract; perception-conditioned instruction state.",
+      "execution_status": "Not reproduced"
+    },
+    {
+      "title": "VLNCL",
+      "url": "https://arxiv.org/abs/2409.02561",
+      "actual_read": "Abstract; environment continual learning and replay.",
+      "execution_status": "Not reproduced"
+    },
+    {
+      "title": "SPIBB",
+      "url": "https://proceedings.mlr.press/v97/laroche19a.html",
+      "actual_read": "Official proceedings abstract; conservative policy improvement; assumptions not transferred to this proposal.",
+      "execution_status": "Not reproduced"
+    },
+    {
+      "title": "CVPR reviewer guidelines",
+      "url": "https://cvpr.thecvf.com/Conferences/2026/ReviewerGuidelines",
+      "actual_read": "Official2026 policy; sound contribution/novelty/impact, not acceptance guarantee.",
+      "execution_status": "Target-year policy must be rechecked"
+    }
+  ],
+  "code_read": [
+    "https://raw.githubusercontent.com/HorizonRobotics/RoboOrchardLab/master/robo_orchard_lab/models/progress_think/action_model.py",
+    "https://raw.githubusercontent.com/HorizonRobotics/RoboOrchardLab/master/robo_orchard_lab/models/progress_think/progress_model.py"
+  ],
+  "novelty_status": "CANDIDATE_INCREMENT_UNTESTED; no exhaustive absence claim"
+}
