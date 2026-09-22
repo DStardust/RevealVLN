@@ -1,0 +1,121 @@
+{
+  "asset_line_root": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav",
+  "torch_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_qwen_g2_v1/bin/python3",
+  "sim_python": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/.envs/q35n_habitat_v017_g0r/bin/python3",
+  "standalone_python": "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+  "checkpoint": "/mnt/data_nas/deeprobotics/daiyang/vla/projects/qwen35_indoor_nav/sft_acceptance/ordinary_expanded_v1/formal/attempt_001/checkpoint_000004000.pt",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "training_protocol_sha256": "cd204ca9fd2039818224370139198f102c397421194d279c351eca6ed9ddfd9e",
+  "sample_index_sha256": "632e69f94bec413acbf1c8cab3b138f94769b7399a8d42990dd053ec50f22e82",
+  "seed": 1209,
+  "seeds": [
+    1209,
+    1210,
+    1211
+  ],
+  "model_memory_gib": 25,
+  "process_rss_gib": 64,
+  "warmup_indices": 8,
+  "warmup_repeats": 2,
+  "publication_branch": "codex/q35n-b2-kl-repair-20260921",
+  "version": "DATA_SCALE_VALIDATION_V1",
+  "houses": [
+    "zsNo4HB9uLZ",
+    "TbHJrupSAjP",
+    "q9vSo1VnCiC",
+    "UwV83HsGsw3"
+  ],
+  "families_per_house": 4,
+  "arms": [
+    "OLD",
+    "EXPANDED"
+  ],
+  "devices": [
+    {
+      "gpu": 0,
+      "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+    },
+    {
+      "gpu": 1,
+      "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+    },
+    {
+      "gpu": 2,
+      "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+    },
+    {
+      "gpu": 3,
+      "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+    },
+    {
+      "gpu": 4,
+      "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+    },
+    {
+      "gpu": 5,
+      "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+    },
+    {
+      "gpu": 6,
+      "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+    },
+    {
+      "gpu": 7,
+      "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+    }
+  ],
+  "gpu_session_hours": 40,
+  "max_session_hours": 6,
+  "min_start_gpu_gib": 27,
+  "min_free_gpu_gib": 2,
+  "artifact_gib": 100,
+  "positions_per_house": 96,
+  "plans_per_position": 8,
+  "delay_actions": [
+    8,
+    16,
+    32
+  ],
+  "turn_counts": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "turn_directions": [
+    "L",
+    "R"
+  ],
+  "planned_variants": 32,
+  "planned_conditions": 256,
+  "planned_rollouts": 1536,
+  "main_denominator_per_arm": 384,
+  "control_denominator_per_arm": 384,
+  "source_models": null,
+  "new_training_updates": 7200,
+  "base_updates": 0,
+  "infra_retries": 2,
+  "source_commit": "f10bb0d83281bf413cd55d0000e6fd37d543b1dc",
+  "primary": "EXPANDED minus OLD safe SEE2 task_A success; same MONOTONIC architecture, initialization, 1200 updates and ordinary schedule. Four exposed heldout houses equally weighted.",
+  "endpoints": "Report task_T, seen/missing history, terminal present/absent, collisions and full-denominator budget cost separately.",
+  "decision": "Positive worst-case missing-label difference with >=3 houses and >=2 seeds positive supports limited data-scale development signal, not adoption or natural VLN.",
+  "missing": "All 32 planned variant slots retained. Physically exhausted proposals are NOT_COLLECTED, never collision FAIL or dropped N.",
+  "selection": "No result-based checkpoint/condition selection. Both arms freshly initialized. Original labels/losses/teacher/STOP/checker unchanged.",
+  "scope": "Stationary SEE2 reorientation and legal STOP only; four exposed heldout houses. No forward-motion generalization claim.",
+  "authorization": "User: execute next step; all GPUs available, standalone continuation and restore own placeholders.",
+  "steps": 1200,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "checkpoint_every": 200,
+  "cpu_smoke_updates": 3,
+  "old_data": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/runs/cpu_003/DATA.json",
+  "expanded_data": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/event_data_scale20_v2/runs/supplement_001/DATASET.json",
+  "expanded_sha256": "fa0385281f5ac08b9ad5c84c19c445932817ba4d5402858ac04061ed187327c2",
+  "eval_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/evidence_state_policy_v1/monotonic_holdout_v1/runs/holdout_001",
+  "training_difference": "Only family sampling pool: original FIT versus original FIT plus frozen 816-parent expansion. Original FIT class weights shared. Parent-balanced 1200 schedule; report unexposed variants and causal steps, not equal sample exposure claims.",
+  "schedule": "OLD original 1200 schedule; EXPANDED shuffled round-robin 848 parent families, alternating variants per parent; ordinary indices exactly OLD. Parent ordering generated before any score.",
+  "budget_note": "40 summed GPU-session hours engineering cap (8 devices), 6h segment; includes real feature refresh, six lightweight training jobs and grouped evaluation. No score-based retry; user authorized all GPUs and requested autonomous progress."
+}

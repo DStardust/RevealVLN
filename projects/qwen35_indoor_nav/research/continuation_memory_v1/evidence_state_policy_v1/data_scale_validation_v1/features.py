@@ -4,7 +4,7 @@ from pathlib import Path
 import torch
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from shared import *
-import encoder
+encoder=local_module("encoder")
 extractor=load('scale_original_feature_parts',V16/'extract_features.py')
 def main(run):
  cfg=runtime_config(run);cfg['source_hashes']=read(run/'SOURCE_LOCK.json')['files'];cfg['v16_protocol_sha256']=sha(run/'PROTOCOL.json')
@@ -33,7 +33,7 @@ def main(run):
     for i in range(start,min(start+1024,len(samples))):
      f,l,p,t=forward(i);values.append(f.cpu());native.append(l.cpu())
      append(log,dict(index=i,raw_key=data['features'][i]['key'],processed=p,**t))
-     if i%20==0:write(out/f"PROGRESS_{cfg['gpu']}.json",dict(gpu=cfg['gpu'],last_index=i,session_forward_count=sum(len(read(x)['native_logits'])==4 for x in []) if False else len(values),chunk=start,total_chunks=len(chunks),completed_chunks=len(list(session.glob('FEATURES_PART_*.json'))),unix=time.time()))
+     if i%20==0:write(out/f"PROGRESS_{cfg['gpu']}.json",dict(gpu=cfg['gpu'],last_index=i,session_forward_count=len(values),chunk=start,total_chunks=len(chunks),completed_chunks=len(list(session.glob('FEATURES_PART_*.json'))),unix=time.time()))
     path=session/f'FEATURES_PART_{start:06d}.pt';atomic_torch(path,dict(features=torch.cat(values),logits=torch.cat(native)))
     write(path.with_suffix('.json'),dict(start=start,end=start+len(values),sha256=sha(path)),True)
     if time.monotonic()-began>cfg['max_session_hours']*3600-600:break

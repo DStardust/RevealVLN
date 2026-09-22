@@ -1,0 +1,99 @@
+{
+  "old_fit_parents": 32,
+  "old_fit_variants": 59,
+  "new_parents": 816,
+  "new_variants": 1491,
+  "expanded_parents": 848,
+  "expanded_variants": 1550,
+  "old_fit_houses": [
+    "5ZKStnWn8Zo",
+    "QUCTc6BB5sX",
+    "jtcxE69GiFV",
+    "pa4otMbVnkk"
+  ],
+  "expanded_fit_houses": [
+    "2t7WUuJeko7",
+    "5ZKStnWn8Zo",
+    "8194nk5LbLH",
+    "ARNzJeq3xxb",
+    "E9uDoFAP3SH",
+    "EDJbREhghzL",
+    "GdvgFV5R1Z5",
+    "HxpKQynjfin",
+    "JF19kD82Mey",
+    "JeFG25nYj2p",
+    "JmbYfDe2QKZ",
+    "Pm6F8kyY3z2",
+    "QUCTc6BB5sX",
+    "RPmz2sHmrrY",
+    "S9hNv5qa7GM",
+    "WYY7iVyf5p8",
+    "X7HyMhZNoso",
+    "YFuZgdQ5vWj",
+    "YVUC4YcDtcY",
+    "Z6MFQCViBuw",
+    "jtcxE69GiFV",
+    "oLBMNvg9in8",
+    "pa4otMbVnkk",
+    "ur6pFq6Qu1A",
+    "x8F5xyUWy9e"
+  ],
+  "additional_houses": [
+    "2t7WUuJeko7",
+    "8194nk5LbLH",
+    "ARNzJeq3xxb",
+    "E9uDoFAP3SH",
+    "EDJbREhghzL",
+    "GdvgFV5R1Z5",
+    "HxpKQynjfin",
+    "JF19kD82Mey",
+    "JeFG25nYj2p",
+    "JmbYfDe2QKZ",
+    "Pm6F8kyY3z2",
+    "RPmz2sHmrrY",
+    "S9hNv5qa7GM",
+    "WYY7iVyf5p8",
+    "X7HyMhZNoso",
+    "YFuZgdQ5vWj",
+    "YVUC4YcDtcY",
+    "Z6MFQCViBuw",
+    "oLBMNvg9in8",
+    "ur6pFq6Qu1A",
+    "x8F5xyUWy9e"
+  ],
+  "new_strata": {
+    "terminal_present": 816,
+    "terminal_absent": 675
+  },
+  "history_length": {
+    "min": 20,
+    "median": 44.0,
+    "max": 88
+  },
+  "anchor_age": {
+    "min": 8,
+    "median": 32.0,
+    "max": 86
+  },
+  "forced_history_action_occurrences": {
+    "R": 134664,
+    "L": 135880
+  },
+  "extra_physical_cross_executions": 17892,
+  "extra_certificate_labels": 35784,
+  "example": {
+    "family": "SCALE20_ec8aa9a84c16a7264e97",
+    "house": "WYY7iVyf5p8",
+    "instruction": "First see the couch in the living room in two consecutive observations, then see the chair in the dining room in two consecutive observations, and stop immediately.",
+    "terminal_instruction": "See the chair in the dining room in two consecutive observations and stop immediately.",
+    "labels": {
+      "seen__direct_stop__task_A": "PASS",
+      "seen__acquire_anchor__task_A": "PASS",
+      "seen__wrong_terminal__task_A": "FAIL",
+      "missing__direct_stop__task_A": "FAIL",
+      "missing__acquire_anchor__task_A": "PASS",
+      "missing__wrong_terminal__task_A": "FAIL"
+    }
+  },
+  "scope": "Real stationary reorientation SEE2 data. These are not independent VLN routes, not room-visitation labels, and not natural VLN-CE benchmark evidence."
+}

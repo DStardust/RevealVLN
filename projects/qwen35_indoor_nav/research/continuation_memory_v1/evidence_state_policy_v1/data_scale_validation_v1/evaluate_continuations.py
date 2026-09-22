@@ -75,7 +75,7 @@ def admitted(run,reg):
 
 def main(run):
     import torch
-    import encoder
+    encoder=local_module("encoder")
     config=runtime_config(run);verify_lock(read(run/'SOURCE_LOCK.json'));reg=registry(run)
     out=run/'evaluate';out.mkdir(exist_ok=True);done=admitted(run,reg)
     assigned=set(read(Path(os.environ['B2_DEVICE']))['conditions'])

@@ -7,8 +7,8 @@ from shared import *
 def main(run=None):
  import torch
  from prepare import schedule_expanded
- from evaluate_continuations import registry_value,prefix_audit
- from review import metric,paired
+ evaluator=local_module("evaluate_continuations");registry_value,prefix_audit=evaluator.registry_value,evaluator.prefix_audit
+ review_module=local_module("review");metric,paired=review_module.metric,review_module.paired
  cfg=read(HERE/'PROTOCOL.json');old=read(CPU/'DATA.json');schedules=read(CPU/'SCHEDULES.json')
  extra=read(Path(cfg['expanded_data']))['raw_families'];raw=[f for f in old['raw_families'] if f['split']=='FIT']+extra
  tests=[]
@@ -49,7 +49,7 @@ def main(run=None):
  assert select([0,0,0,100],[0,3,0,0])['executed_action']=='turn_left'
  tests+=['method_argmax_no_native_STOP_override']
  if run:
-  from evaluate_continuations import registry
+  registry=local_module("evaluate_continuations").registry
   assert registry(run)==reg
   d=read(run/'TRAIN_DATA.json')
   assert len(d['arms']['OLD'])==59 and len(d['arms']['EXPANDED'])==1550

@@ -107,7 +107,7 @@ def main(run):
  immutable(run/'WARMUP_DATA.json',old)
  heldout=read(Path(cfg['eval_run'])/'DATA.json');immutable(run/'DATA.json',heldout)
  audit=dict(old_parents=32,old_variants=59,new_parents=816,new_variants=1491,expanded_parents=len({f['parent_family_id'] for f in oldraw+extra}),expanded_variants=len(ids),new_houses=sorted({f['house'] for f in extra}),heldout=cfg['houses'],heldout_exposed=True,arrays_verified=len(arrays),features=len(data['features']),counts=counts,ordinary_FIT_overlap_expansion=sorted(ordinary_fit&{f['house'] for f in extra}),new_physical_executions=0,mechanism_diagnosis='not recomputed; this experiment measures data scale, not an architecture or memory mechanism claim')
- from evaluate_continuations import registry_value
+ registry_value=local_module("evaluate_continuations").registry_value
  immutable(run/'EVALUATION_REGISTRY.json',registry_value(heldout['raw_families'],cfg))
  audit.update(data_sha256=sha(run/'DATA.json'),registry_sha256=sha(run/'EVALUATION_REGISTRY.json'))
  immutable(run/'DATA_AUDIT.json',audit)

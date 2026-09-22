@@ -4,10 +4,12 @@
 
 四个已暴露开发留出屋保持训练隔离。计划256条件×6模型=1536续接；已有一个缺失物理变体，48槽位保持NOT_COLLECTED，实际可运行1488。主任务和task_T每组分别N=384，缺项保留识别界。正向信号须最坏未知分配差仍为正、至少3屋和2种子方向为正。统计单位有族/屋/种子相关性。无自然VLN、盲测泛化或论文贡献结论。
 
-流水线：CPU编译/数组复核 → 8卡真实Qwen特征 → 6模型训练 → 8卡完整条件组续接 → CPU重算报告 → GitHub证据上传。旧源码和结果只读；无新造数；只借经核实的用户占位，退出时恢复。状态在runs/scale_002，监控沿用18770。
+流水线：CPU编译/数组复核 → 8卡真实Qwen特征 → 6模型训练 → 8卡完整条件组续接 → CPU重算报告 → GitHub证据上传。旧源码和结果只读；无新造数；只借经核实的用户占位，退出时恢复。状态在runs/scale_003，监控沿用18770。
 
-启动：项目标准Python以 `-I -S -B standalone.py start JOB -- PY -I -B pipeline.py --config PROTOCOL.json --run-id scale_002`。恢复使用新JOB名、相同run-id并加`--resume`。不能重跑完整低分组；正确性错误停止。恢复不依赖Codex或终端。检查器、架构、旧数据源和新增源码SHA登记在SOURCE_LOCK及BINDING中。
+启动：项目标准Python以 `-I -S -B standalone.py start JOB -- PY -I -B pipeline.py --config PROTOCOL.json --run-id scale_003`。恢复使用新JOB名、相同run-id并加`--resume`。不能重跑完整低分组；正确性错误停止。恢复不依赖Codex或终端。检查器、架构、旧数据源和新增源码SHA登记在SOURCE_LOCK及BINDING中。
 
 初始CPU契约包含一条旧FIT的真实反向更新，属于隔离实现测试，绝不作为新GPU训练或收益证据。最终报告由真实完整组重算。源码及小型权重上传；场景、RGB/语义数组、特征和优化器缓存留服务器并记录SHA。
 
 首次scale_001在CPU创建分片目录前退出，GPU未启动；失败及源码快照保留于source_revisions/r1。仅修复输出目录初始化后以scale_002启动。
+
+R3恢复：scale_002已完成全部1491新变体编译，最后误导入旧V16评测器而停止；尚无GPU前向。绝对路径导入修复并复现回归测试后，scale_003复用字节一致的编译数据，重验1550分片、18600来源轨迹和30856数组文件。旧失败产物保持只读。当前独立入口 resume_r3.py --run-id scale_003；继续断点使用pipeline.py --config PROTOCOL.json --run-id scale_003 --resume。监控在发生真实训练更新后自动显示样本说明。

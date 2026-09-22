@@ -112,7 +112,7 @@ def main():
                 tags=[f'{arm}_{s}' for s in cfg['seeds'] for arm in cfg['arms']]
                 execute(run,cfg,'train',[(d,tags[i::len(cfg['devices'])]) for i,d in enumerate(cfg['devices']) if tags[i::len(cfg['devices'])]])
                 execute(run,cfg,'train_review',[(cfg['devices'][0],[])],gpu=False)
-            from evaluate_continuations import registry,admitted
+            evaluator=local_module("evaluate_continuations");registry,admitted=evaluator.registry,evaluator.admitted
             reg=registry(run);available={i for i,x in enumerate(reg['conditions']) if x['available']}
             while available-set(admitted(run,reg)):
                 done=set(admitted(run,reg))

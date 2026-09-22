@@ -46,3 +46,16 @@ def state_identity(state):
     import torch
     return {name:c.tensor_identity(value.clone(memory_format=torch.contiguous_format))
             for name,value in state._asdict().items()}
+
+
+def local_module(name):
+    """Bind runtime siblings by absolute path despite legacy sys.path mutations."""
+    path=HERE/(name+'.py')
+    before=list(sys.path)
+    try:
+        sys.path.insert(0,str(HERE))
+        module=load('scale_local_'+name,path)
+        if Path(module.__file__).resolve()!=path.resolve():raise ValueError('LOCAL_MODULE_IDENTITY')
+        return module
+    finally:
+        sys.path[:]=before

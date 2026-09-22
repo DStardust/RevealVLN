@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from shared import *
-from evaluate_continuations import registry,admitted
+evaluator=local_module("evaluate_continuations");registry,admitted=evaluator.registry,evaluator.admitted
 from evaluator_v16 import legacy,evaluate
 from select_action import select
 

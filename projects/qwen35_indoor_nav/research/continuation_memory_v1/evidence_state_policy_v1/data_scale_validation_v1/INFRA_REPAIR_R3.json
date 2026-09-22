@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "previous_run": "scale_002",
+  "root_cause": "Legacy objective imports prepend grounded_state_transfer_v16 to sys.path. Late import resolved its nine-model evaluator instead of local six-model evaluator.",
+  "repair": "Use absolute local module loading for registry, encoder and review. Preserve numerical/model/loss/teacher/metric definitions.",
+  "compiled_new_variants": 1491,
+  "feature_windows": 137020,
+  "gpu_started_in_failed_run": false,
+  "formal_updates": 0,
+  "semantics_changed": false,
+  "next_run": "scale_003",
+  "source_archive": "source_revisions/r2"
+}
