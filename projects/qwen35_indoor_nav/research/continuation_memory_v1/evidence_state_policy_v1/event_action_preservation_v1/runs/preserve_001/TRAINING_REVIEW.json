@@ -1,0 +1,74 @@
+{
+  "status": "EVENT_ONLY_REPAIR_TRAINING_VERIFIED",
+  "models": [
+    {
+      "model": "ORIGINAL_1209",
+      "updates": 0,
+      "changed_parameters": [],
+      "source_original": "51f509be05b85aa1551d4ce7729fbd7d341fab1029cb65e4a15cbe2d809d0cc4",
+      "final": "51f509be05b85aa1551d4ce7729fbd7d341fab1029cb65e4a15cbe2d809d0cc4",
+      "frozen_non_event_unchanged": true
+    },
+    {
+      "model": "REPAIR_1209",
+      "updates": 200,
+      "changed_parameters": [
+        "events.0.weight",
+        "events.0.bias",
+        "events.2.weight",
+        "events.2.bias"
+      ],
+      "source_original": "51f509be05b85aa1551d4ce7729fbd7d341fab1029cb65e4a15cbe2d809d0cc4",
+      "final": "6f6581a326b84e8b067d8b437cbc5fd86c20aa8e0c3324c105022089300d6cf2",
+      "frozen_non_event_unchanged": true
+    },
+    {
+      "model": "ORIGINAL_1210",
+      "updates": 0,
+      "changed_parameters": [],
+      "source_original": "1002b684294b8a116b6ec7c902b31eeccbd6f3f78a132e38d9933bbd0207045d",
+      "final": "1002b684294b8a116b6ec7c902b31eeccbd6f3f78a132e38d9933bbd0207045d",
+      "frozen_non_event_unchanged": true
+    },
+    {
+      "model": "REPAIR_1210",
+      "updates": 200,
+      "changed_parameters": [
+        "events.0.weight",
+        "events.0.bias",
+        "events.2.weight",
+        "events.2.bias"
+      ],
+      "source_original": "1002b684294b8a116b6ec7c902b31eeccbd6f3f78a132e38d9933bbd0207045d",
+      "final": "2776b83d5644507a7507a59eaf2da4eacbd1555439b387a5f9ea93278f500e68",
+      "frozen_non_event_unchanged": true
+    },
+    {
+      "model": "ORIGINAL_1211",
+      "updates": 0,
+      "changed_parameters": [],
+      "source_original": "4363ad6bad8b34d37a9cacaf9d99c0496729c0ee0d64024c48ef706f91b6a8a5",
+      "final": "4363ad6bad8b34d37a9cacaf9d99c0496729c0ee0d64024c48ef706f91b6a8a5",
+      "frozen_non_event_unchanged": true
+    },
+    {
+      "model": "REPAIR_1211",
+      "updates": 200,
+      "changed_parameters": [
+        "events.0.weight",
+        "events.0.bias",
+        "events.2.weight",
+        "events.2.bias"
+      ],
+      "source_original": "4363ad6bad8b34d37a9cacaf9d99c0496729c0ee0d64024c48ef706f91b6a8a5",
+      "final": "1417ef1a31ab2278c26b5f92cfd3d3cf95f13c23be47985a3068ed0dc154d407",
+      "frozen_non_event_unchanged": true
+    }
+  ],
+  "new_updates": 600,
+  "base_updates": 0,
+  "source_original_updates_per_seed": 1200,
+  "initialization_matched": true,
+  "dev_used_for_selection": false,
+  "note": "Only eventMLP weights changed. Frozen weights do not imply unchanged predicted states/actions; complete closed-loop pairing is required."
+}
