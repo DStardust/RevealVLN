@@ -1,0 +1,25 @@
+{
+  "version": "coverage15_runtime_r3",
+  "files": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/collect.py": "bec4f667503086e9fe96025082428c306e676419df78fe5544d08ea76f2981d5",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/evaluate.py": "8c02124b4cfebf8d26c5fb3295961f7de3f672d17da7338c938005891fa61c01",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/executor.py": "b5fa0ebc336aa0af88a02fb5db6776238757392c36bc0dd417e762d41bf7f8d3",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/pipeline.py": "3624b8e515a7ccca90fa00604407254dcab1f0c138c0277820be67d2849599e6",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/probe_rgb.py": "6ca1f936e6d1c69506d5b0fd1d7493c43d0d773152ee45e2f83c7b43cdc96a55",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/probe_turn.py": "2800e358fec077af1286ad47f696f00fc1614c3e2143cdb0336cbb0422f765a2",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/rgb.py": "cb32fe1d62ba42b95a3e2baa193bf3b68b14d22fcb496036acdcdf3da170e2ac",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/test_rgb.py": "470707e5d3fd39417fd984b24db52242bb1d669458022d6f0e8f74030df80f64",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r2/disk.py": "deac8c5922cadbe2346d3110efb5d4a8febeb71a8e4b4c221cc38c2398d407b9",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/SOURCE_LOCK.json": "d2fcd7db7a974e078f49891c53e4eb4c8081ea941945390228ab010b6fb0b2db",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/rgb_probe_001/RESULT.json": "9ba6219546416d3204587cc51b6f2c0dd0cf61952810c370e74ef273288b2c36",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r3/rgb_turn_probe_001/RESULT.json": "8e5e4ef88e5c9f258517be9a0bacdc03c9997336b7e2c6a5a362d633f660fc67"
+  },
+  "change": "Initial uniform RGB is diagnosed and byte-preserved, not rejected by texture variance; shape/type, exact pose, repeated same-state read and all prior metric/action checks remain",
+  "old_source_unmodified": true,
+  "prior_sealed_retained": 264,
+  "renderer_probe_actions": 6,
+  "renderer_probe_model_forwards": 0,
+  "renderer_evidence": "Failed initial view repeats byte-identically in fresh and warmed simulators; same-position two left turns reveal textured scene; registered reset pose/navmesh valid. No claim that missing scan geometry was repaired.",
+  "policy_input_changed": false,
+  "route_sensor_metric_changed": false
+}

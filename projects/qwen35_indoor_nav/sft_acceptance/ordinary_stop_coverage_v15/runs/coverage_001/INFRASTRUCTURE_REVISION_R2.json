@@ -1,0 +1,15 @@
+{
+  "version": "coverage15_infrastructure_r2",
+  "files": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r2/disk.py": "deac8c5922cadbe2346d3110efb5d4a8febeb71a8e4b4c221cc38c2398d407b9",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r2/pipeline.py": "fcc4d11df06b8897eceb673e295923095e5ede3f1717c713a65845311a43507b",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r2/tests.py": "53bd37d78842833df7abb98156b431816bd0e28f7ea881ffa76e8648d0e077f5",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/SOURCE_LOCK.json": "d2fcd7db7a974e078f49891c53e4eb4c8081ea941945390228ab010b6fb0b2db"
+  },
+  "old_source_unmodified": true,
+  "change": "Only live artifact accounting: replace du subprocess with no-follow directory scan tolerating concurrent ENOENT; keep other IO errors fatal",
+  "resume_same_registered_data_model_metrics": true,
+  "prior_valid_trajectories": 87,
+  "prior_failure": "runs/coverage_001/FAILURE_1790090344029915036.json",
+  "cause": "du exited1 during live collection; original stderr was not retained, exact low-level cause unconfirmed; transient atomic rename is covered by regression test"
+}

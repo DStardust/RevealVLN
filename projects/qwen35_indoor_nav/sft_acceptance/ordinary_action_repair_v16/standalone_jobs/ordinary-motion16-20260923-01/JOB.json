@@ -1,0 +1,25 @@
+{
+  "name": "ordinary-motion16-20260923-01",
+  "unit": "q35n-ordinary-motion16-20260923-01.service",
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-S",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_action_repair_v16/pipeline.py",
+    "--run-id",
+    "motion_001"
+  ],
+  "cwd": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1",
+  "uid": 0,
+  "gid": 0,
+  "environment": {
+    "PATH": "/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/root/.local/bin:/usr/local/cuda/bin:/root/.local/bin:/root/.local/bin:/usr/local/cuda/bin:/root/.codex/tmp/arg0/codex-arg0VEnri0:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/root/.local/bin:/usr/local/cuda/bin:/root/.local/bin:/mnt/zrh/miniconda3/bin:/mnt/zrh/miniconda3/condabin:/usr/local/cuda/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/ehpc/bin:/root/bin",
+    "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:"
+  },
+  "created_unix": 1790171792.45387,
+  "launcher_pid": 2594546,
+  "launcher_cgroup": "0::/user.slice/user-0.slice/session-14950.scope\n",
+  "retries": 0,
+  "ownership": "Same UID/GID as caller, no sudo or privilege change."
+}
