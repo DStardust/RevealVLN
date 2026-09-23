@@ -1,0 +1,99 @@
+{
+  "unix": 1790177617.4192088,
+  "snapshot_seconds": 3.9448626041412354,
+  "live": {
+    "V15": {
+      "phase": "UNSEEN",
+      "last_worker_update_seconds": 1.3,
+      "sealed_pairs": 1677,
+      "duplicate_seal_names": 0,
+      "metric_snapshot_age_seconds": 56.7,
+      "pipeline_heartbeat_age_seconds": 58.3,
+      "sessions": [
+        {
+          "session": "gpu1_1790172441031430470",
+          "age_seconds": 8.6,
+          "status": "EVALUATING",
+          "rank": 1638,
+          "step": 110,
+          "complete": 234,
+          "planned": 263,
+          "unix": 1790177607.376556
+        },
+        {
+          "session": "gpu2_1790172441282605385",
+          "age_seconds": 8.9,
+          "status": "EVALUATING",
+          "rank": 1786,
+          "step": 20,
+          "complete": 255,
+          "planned": 263,
+          "unix": 1790177607.0767627
+        },
+        {
+          "session": "gpu3_1790172441470816567",
+          "age_seconds": 2.4,
+          "status": "EVALUATING",
+          "rank": 1689,
+          "step": 50,
+          "complete": 241,
+          "planned": 263,
+          "unix": 1790177613.5602603
+        },
+        {
+          "session": "gpu4_1790172441657384022",
+          "age_seconds": 1.7,
+          "status": "EVALUATING",
+          "rank": 1564,
+          "step": 77,
+          "complete": 224,
+          "planned": 263,
+          "unix": 1790177614.2899477,
+          "wall_seconds": 5131.833944559097
+        },
+        {
+          "session": "gpu5_1790172441843510562",
+          "age_seconds": 1.5,
+          "status": "EVALUATING",
+          "rank": 1649,
+          "step": 20,
+          "complete": 235,
+          "planned": 263,
+          "unix": 1790177614.5116549
+        },
+        {
+          "session": "gpu6_1790172442032043755",
+          "age_seconds": 1.3,
+          "status": "EVALUATING",
+          "rank": 1748,
+          "step": 57,
+          "complete": 250,
+          "planned": 262,
+          "unix": 1790177614.6794314,
+          "wall_seconds": 5132.225414276123
+        },
+        {
+          "session": "gpu7_1790172442238631740",
+          "age_seconds": 10.0,
+          "status": "EVALUATING",
+          "rank": 1665,
+          "step": 40,
+          "complete": 237,
+          "planned": 262,
+          "unix": 1790177605.9718304
+        }
+      ]
+    },
+    "V16": {
+      "phase": "WAIT_V15_COMPLETE",
+      "last_worker_update_seconds": null,
+      "sealed_pairs": 0,
+      "duplicate_seal_names": 0,
+      "metric_snapshot_age_seconds": null,
+      "pipeline_heartbeat_age_seconds": 11.8,
+      "sessions": []
+    }
+  },
+  "test": "Live seals and worker heartbeats are distinct from metric denominators",
+  "passed": true
+}
