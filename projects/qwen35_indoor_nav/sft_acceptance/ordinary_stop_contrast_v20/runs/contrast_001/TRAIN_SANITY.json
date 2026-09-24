@@ -1,0 +1,26 @@
+{
+  "reference": {
+    "any_false_stop": 0.453125,
+    "verified_terminal_stop_recall": 0.5875,
+    "paired_terminal_rank": 0.818287037037037,
+    "reference_continue_to_stop_trajectories": 0,
+    "reference_terminal_preserved": 47,
+    "terminal_count": 80,
+    "negative_occurrences": 5422,
+    "matched_pairs": 206,
+    "scope": "Fixed observed histories; not a closed-loop success estimate"
+  },
+  "candidate": {
+    "any_false_stop": 0.5078125,
+    "verified_terminal_stop_recall": 0.6875,
+    "paired_terminal_rank": 0.8615740740740738,
+    "reference_continue_to_stop_trajectories": 34,
+    "reference_terminal_preserved": 43,
+    "terminal_count": 80,
+    "negative_occurrences": 5422,
+    "matched_pairs": 206,
+    "scope": "Fixed observed histories; not a closed-loop success estimate"
+  },
+  "rule": "Finite real update, frozen motion/base, nonzero actual terminal recall; diagnostic gains not required before one DEV evaluation",
+  "admitted": true
+}

@@ -1,0 +1,45 @@
+{
+  "status": "RUNNING",
+  "phase": "DEV",
+  "unix": 1790213766.4239213,
+  "gpu_hours": 0.12777807734479818,
+  "workers": [
+    {
+      "role": "evaluate",
+      "gpu": {
+        "gpu": 0,
+        "gpu_uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6"
+      },
+      "elapsed": 229.61890974687412,
+      "rss_bytes": 21224443904,
+      "device": {
+        "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 5684,
+        "free_mib": 26426,
+        "driver": "580.126.09"
+      }
+    },
+    {
+      "role": "evaluate",
+      "gpu": {
+        "gpu": 1,
+        "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+      },
+      "elapsed": 229.6102061709389,
+      "rss_bytes": 21656436736,
+      "device": {
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "name": "NVIDIA GeForce RTX 5090",
+        "total_mib": 32607,
+        "used_mib": 5816,
+        "free_mib": 26294,
+        "driver": "580.126.09"
+      }
+    }
+  ],
+  "artifact_bytes": 314489475,
+  "complete": 13,
+  "planned": 100
+}

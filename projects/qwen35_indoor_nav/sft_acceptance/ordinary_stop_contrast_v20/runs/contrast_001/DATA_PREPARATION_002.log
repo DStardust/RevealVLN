@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_contrast_v20/data.py", line 85, in <module>
+    prepare(run,u.read(run/'PROTOCOL.json'))
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_contrast_v20/data.py", line 40, in prepare
+    assert step==seal['steps'] and seal['stopped'] and seal['success']==1
+KeyError: 'stopped'
