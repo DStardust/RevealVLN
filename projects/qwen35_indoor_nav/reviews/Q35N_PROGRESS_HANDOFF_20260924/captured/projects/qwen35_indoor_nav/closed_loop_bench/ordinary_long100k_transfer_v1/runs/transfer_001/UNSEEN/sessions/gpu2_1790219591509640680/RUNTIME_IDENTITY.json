@@ -1,0 +1,125 @@
+{
+  "session": "gpu2_1790219591509640680",
+  "pid": 2943754,
+  "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+  "physical_gpu": 2,
+  "software": {
+    "torch": "2.8.0",
+    "transformers": "5.15.0",
+    "peft": "0.18.0",
+    "triton": "3.4.0",
+    "flash-linear-attention": "unavailable",
+    "numpy": "2.2.6"
+  },
+  "cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 5090",
+  "checkpoint_sha256": "c30a0936ce85723ebca8fa95d52e67453200af708e0c237c6654b583ff7f9775",
+  "base_files": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+    "model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+  },
+  "model_source_sha256": "89c2aac37d0d0519c01f51acf8f19b42087434f42e4cf56fc76fd01cf5297389",
+  "loaded_state_sha256": "a87292acedfbf3fc8159259c23017fa1eec47a2ebfd39782c46e088bcbacef6b",
+  "tokenizer_sha256": "385eaa7d7142ade9dcfc7666990e055074307491f9b637636e06c73b9259daa5",
+  "processor": {
+    "image_processor": {
+      "size": {
+        "longest_edge": 16777216,
+        "shortest_edge": 65536
+      },
+      "patch_size": 16,
+      "temporal_patch_size": 2,
+      "merge_size": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_processor_type": "Qwen2VLImageProcessor",
+      "do_convert_rgb": true,
+      "do_resize": true,
+      "resample": 3,
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true
+    },
+    "video_processor": {
+      "size": {
+        "longest_edge": 25165824,
+        "shortest_edge": 4096
+      },
+      "patch_size": 16,
+      "temporal_patch_size": 2,
+      "merge_size": 2,
+      "image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "video_processor_type": "Qwen3VLVideoProcessor",
+      "do_convert_rgb": true,
+      "do_resize": true,
+      "resample": 3,
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true,
+      "do_sample_frames": true,
+      "fps": 2,
+      "return_metadata": false,
+      "min_frames": 4,
+      "max_frames": 768
+    },
+    "processor_class": "Qwen3VLProcessor"
+  },
+  "image_processor": {
+    "size": {
+      "longest_edge": 16777216,
+      "shortest_edge": 65536
+    },
+    "patch_size": 16,
+    "temporal_patch_size": 2,
+    "merge_size": 2,
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_processor_type": "Qwen2VLImageProcessor",
+    "do_convert_rgb": true,
+    "do_resize": true,
+    "resample": 3,
+    "do_rescale": true,
+    "rescale_factor": 0.00392156862745098,
+    "do_normalize": true
+  },
+  "attention": "sdpa",
+  "fla_dispatch": "fla.ops.gated_delta_rule.chunk",
+  "triton_selected_config": "unavailable before compilation; cache metadata saved at session end",
+  "dtype": "unchanged BF16 base and FP32 action head",
+  "source_hashes": {},
+  "protocol_sha256": "7a523a24f3bdb6a3f04c9d03f62ea009e2e993d5cd17f458875791c0667908ac",
+  "model_loads": 1,
+  "optimizer_updates": 0
+}

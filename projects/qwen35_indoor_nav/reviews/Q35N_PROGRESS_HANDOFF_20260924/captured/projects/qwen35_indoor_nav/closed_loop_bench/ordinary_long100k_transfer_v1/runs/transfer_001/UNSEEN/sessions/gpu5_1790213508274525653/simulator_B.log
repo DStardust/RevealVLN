@@ -1,0 +1,537 @@
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0924 09:32:28.245610 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 09:32:28.245645 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 09:32:28.245724 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 09:32:28.245749 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 09:32:28.245771 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 09:32:28.245785 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 09:32:28.245792 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 09:32:28.245798 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 09:32:28.245817 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 09:32:28.245833 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 09:32:28.245842 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 09:32:28.245849 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 09:32:28.245860 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 09:32:28.245872 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 09:32:28.245877 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 09:32:28.246284 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 09:32:28.246287 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 09:32:28.248950 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 09:32:28.248962 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 09:32:28.248965 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb
+I0924 09:32:28.248968 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.stage_config.json
+I0924 09:32:28.252381 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb | This file  does not exist.
+I0924 09:32:28.252431 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb
+I0924 09:32:28.252434 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 09:32:28.252441 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.navmesh
+I0924 09:32:28.254948 2899568 Simulator.cpp:158] Loaded.
+I0924 09:32:28.254957 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 09:32:29.170325 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 09:32:29.170336 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb.
+I0924 09:32:29.170338 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb 
+I0924 09:32:29.170354 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for 2azQ1b91cZZ.glb
+W0924 09:32:33.592664 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 09:32:33.672116 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.navmesh
+I0924 09:48:39.071593 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 09:48:39.071641 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 09:48:39.077477 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 09:48:39.077488 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 09:48:39.077744 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 09:48:39.085387 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 09:48:39.085427 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 09:48:39.101089 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 09:48:39.101109 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 09:48:39.101202 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 09:48:39.101241 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 09:48:39.101282 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 09:48:39.101303 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 09:48:39.101315 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 09:48:39.101325 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 09:48:39.101354 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 09:48:39.101380 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 09:48:39.101393 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 09:48:39.101406 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 09:48:39.101425 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 09:48:39.101445 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 09:48:39.101454 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 09:48:39.102105 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 09:48:39.102108 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 09:48:39.102351 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 09:48:39.102367 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 09:48:39.102371 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb
+I0924 09:48:39.102376 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.stage_config.json
+I0924 09:48:39.103590 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb | This file  does not exist.
+I0924 09:48:39.103681 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb
+I0924 09:48:39.103684 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 09:48:39.103693 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.navmesh
+I0924 09:48:39.104812 2899568 Simulator.cpp:158] Loaded.
+I0924 09:48:39.104820 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 09:48:39.109349 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 09:48:39.109364 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb.
+I0924 09:48:39.109370 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.glb 
+I0924 09:48:39.109400 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for 8194nk5LbLH.glb
+W0924 09:48:40.351504 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 09:48:40.369636 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/8194nk5LbLH/8194nk5LbLH.navmesh
+I0924 09:51:57.219007 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 09:51:57.219046 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 09:51:57.219851 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 09:51:57.219856 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 09:51:57.220266 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 09:51:57.221182 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 09:51:57.221199 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 09:51:57.225546 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 09:51:57.225560 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 09:51:57.225638 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 09:51:57.225664 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 09:51:57.225692 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 09:51:57.225706 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 09:51:57.225713 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 09:51:57.225719 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 09:51:57.225739 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 09:51:57.225756 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 09:51:57.225765 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 09:51:57.225775 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 09:51:57.225786 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 09:51:57.225798 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 09:51:57.225804 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 09:51:57.226195 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 09:51:57.226198 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 09:51:57.226377 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 09:51:57.226388 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 09:51:57.226392 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb
+I0924 09:51:57.226394 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.stage_config.json
+I0924 09:51:57.229749 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb | This file  does not exist.
+I0924 09:51:57.229799 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb
+I0924 09:51:57.229799 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 09:51:57.229807 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.navmesh
+I0924 09:51:57.230748 2899568 Simulator.cpp:158] Loaded.
+I0924 09:51:57.230753 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 09:51:57.233994 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 09:51:57.234002 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb.
+I0924 09:51:57.234004 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.glb 
+I0924 09:51:57.234018 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for EU6Fwq7SyZv.glb
+W0924 09:52:00.559528 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 09:52:00.600012 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/EU6Fwq7SyZv/EU6Fwq7SyZv.navmesh
+I0924 09:53:41.682277 2899568 Simulator.cpp:49] Deconstructing Simulator
+I0924 09:53:41.682461 2899568 Simulator.cpp:49] Deconstructing Simulator
+I0924 10:03:38.610286 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 10:03:38.610322 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 10:03:38.612335 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 10:03:38.612344 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 10:03:38.612867 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 10:03:38.616627 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 10:03:38.616650 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 10:03:38.625418 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 10:03:38.625435 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 10:03:38.625500 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:03:38.625527 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 10:03:38.625551 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 10:03:38.625571 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 10:03:38.625584 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 10:03:38.625590 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 10:03:38.625609 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 10:03:38.625648 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 10:03:38.625656 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 10:03:38.625665 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 10:03:38.625677 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:03:38.625689 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 10:03:38.625695 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 10:03:38.626092 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 10:03:38.626094 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 10:03:38.626283 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 10:03:38.626294 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 10:03:38.626297 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb
+I0924 10:03:38.626302 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.stage_config.json
+I0924 10:03:38.627919 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb | This file  does not exist.
+I0924 10:03:38.628005 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb
+I0924 10:03:38.628008 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 10:03:38.628019 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.navmesh
+I0924 10:03:38.629495 2899568 Simulator.cpp:158] Loaded.
+I0924 10:03:38.629500 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 10:03:38.632882 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 10:03:38.632891 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb.
+I0924 10:03:38.632893 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.glb 
+I0924 10:03:38.632908 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for QUCTc6BB5sX.glb
+W0924 10:03:43.148713 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 10:03:43.231837 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/QUCTc6BB5sX/QUCTc6BB5sX.navmesh
+I0924 10:07:47.173966 2899568 Simulator.cpp:49] Deconstructing Simulator
+I0924 10:21:27.137890 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 10:21:27.137928 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 10:21:27.143057 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 10:21:27.143067 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 10:21:27.143643 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 10:21:27.147403 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 10:21:27.147426 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 10:21:27.161037 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 10:21:27.161052 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 10:21:27.161136 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:21:27.161182 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 10:21:27.161207 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 10:21:27.161223 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 10:21:27.161233 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 10:21:27.161243 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 10:21:27.161264 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 10:21:27.161285 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 10:21:27.161298 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 10:21:27.161306 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 10:21:27.161321 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:21:27.161334 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 10:21:27.161340 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 10:21:27.161729 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 10:21:27.161731 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 10:21:27.161918 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 10:21:27.161929 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 10:21:27.161932 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb
+I0924 10:21:27.161936 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.stage_config.json
+I0924 10:21:27.169034 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb | This file  does not exist.
+I0924 10:21:27.169080 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb
+I0924 10:21:27.169082 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 10:21:27.169086 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.navmesh
+I0924 10:21:27.170472 2899568 Simulator.cpp:158] Loaded.
+I0924 10:21:27.170478 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 10:21:27.173926 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 10:21:27.173934 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb.
+I0924 10:21:27.173936 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.glb 
+I0924 10:21:27.173949 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for TbHJrupSAjP.glb
+W0924 10:21:30.075239 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 10:21:30.139472 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/TbHJrupSAjP/TbHJrupSAjP.navmesh
+I0924 10:26:38.977984 2899568 Simulator.cpp:49] Deconstructing Simulator
+I0924 10:36:18.110242 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 10:36:18.110299 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 10:36:18.115155 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 10:36:18.115173 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 10:36:18.115463 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 10:36:18.121166 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 10:36:18.121208 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 10:36:18.133936 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 10:36:18.133958 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 10:36:18.134069 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:36:18.134161 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 10:36:18.134198 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 10:36:18.134231 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 10:36:18.134245 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 10:36:18.134256 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 10:36:18.134295 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 10:36:18.134338 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 10:36:18.134354 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 10:36:18.134371 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 10:36:18.134392 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:36:18.134411 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 10:36:18.134423 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 10:36:18.135123 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 10:36:18.135131 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 10:36:18.135391 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 10:36:18.135411 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 10:36:18.135416 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb
+I0924 10:36:18.135421 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.stage_config.json
+I0924 10:36:18.140362 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb | This file  does not exist.
+I0924 10:36:18.140483 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb
+I0924 10:36:18.140489 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 10:36:18.140498 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.navmesh
+I0924 10:36:18.141966 2899568 Simulator.cpp:158] Loaded.
+I0924 10:36:18.141984 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 10:36:18.146466 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 10:36:18.146481 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb.
+I0924 10:36:18.146483 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.glb 
+I0924 10:36:18.146504 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for X7HyMhZNoso.glb
+W0924 10:36:20.136207 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 10:36:20.178364 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/X7HyMhZNoso/X7HyMhZNoso.navmesh
+I0924 10:36:39.683734 2899568 Simulator.cpp:49] Deconstructing Simulator
+I0924 10:46:29.261314 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 10:46:29.261354 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 10:46:29.263355 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 10:46:29.263361 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 10:46:29.263530 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 10:46:29.266255 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 10:46:29.266279 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 10:46:29.275494 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 10:46:29.275511 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 10:46:29.275602 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:46:29.275629 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 10:46:29.275672 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 10:46:29.275688 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 10:46:29.275698 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 10:46:29.275704 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 10:46:29.275724 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 10:46:29.275743 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 10:46:29.275754 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 10:46:29.275767 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 10:46:29.275782 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:46:29.275794 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 10:46:29.275801 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 10:46:29.276216 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 10:46:29.276218 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 10:46:29.276399 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 10:46:29.276410 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 10:46:29.276414 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb
+I0924 10:46:29.276417 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.stage_config.json
+I0924 10:46:29.283870 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb | This file  does not exist.
+I0924 10:46:29.283918 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb
+I0924 10:46:29.283921 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 10:46:29.283924 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.navmesh
+I0924 10:46:29.285809 2899568 Simulator.cpp:158] Loaded.
+I0924 10:46:29.285815 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 10:46:29.289218 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 10:46:29.289227 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb.
+I0924 10:46:29.289228 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.glb 
+I0924 10:46:29.289242 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for Z6MFQCViBuw.glb
+W0924 10:46:35.046733 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 10:46:35.091144 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/Z6MFQCViBuw/Z6MFQCViBuw.navmesh
+I0924 10:49:21.871249 2899568 Simulator.cpp:49] Deconstructing Simulator
+I0924 10:55:32.934994 2899568 PhysicsManager.cpp:33] Deconstructing PhysicsManager
+I0924 10:55:32.935035 2899568 SemanticScene.h:41] Deconstructing SemanticScene
+I0924 10:55:32.936920 2899568 SceneManager.h:25] Deconstructing SceneManager
+I0924 10:55:32.936928 2899568 SceneGraph.h:26] Deconstructing SceneGraph
+I0924 10:55:32.937144 2899568 Sensor.h:87] Deconstructing Sensor
+I0924 10:55:32.942171 2899568 Renderer.cpp:34] Deconstructing Renderer
+I0924 10:55:32.942193 2899568 WindowlessContext.h:17] Deconstructing WindowlessContext
+I0924 10:55:32.959326 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : default changed to proposed JSON configuration filename : default.scene_dataset_config.json
+I0924 10:55:32.959342 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Dataset) : Proposing JSON name : default.scene_dataset_config.json from original name : default | This file  does not exist.
+I0924 10:55:32.959417 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DSolid : capsule3DSolid_hemiRings_4_cylRings_1_segments_12_halfLen_0.75_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:55:32.959446 2899568 AssetAttributesManager.cpp:117] Asset attributes (capsule3DWireframe : capsule3DWireframe_hemiRings_8_cylRings_1_segments_16_halfLen_1) created and registered.
+I0924 10:55:32.959520 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneSolid : coneSolid_segments_12_halfLen_1.25_rings_1_useTexCoords_false_useTangents_false_capEnd_true) created and registered.
+I0924 10:55:32.959537 2899568 AssetAttributesManager.cpp:117] Asset attributes (coneWireframe : coneWireframe_segments_32_halfLen_1.25) created and registered.
+I0924 10:55:32.959547 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeSolid : cubeSolid) created and registered.
+I0924 10:55:32.959558 2899568 AssetAttributesManager.cpp:117] Asset attributes (cubeWireframe : cubeWireframe) created and registered.
+I0924 10:55:32.959594 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderSolid : cylinderSolid_rings_1_segments_12_halfLen_1_useTexCoords_false_useTangents_false_capEnds_true) created and registered.
+I0924 10:55:32.959626 2899568 AssetAttributesManager.cpp:117] Asset attributes (cylinderWireframe : cylinderWireframe_rings_1_segments_32_halfLen_1) created and registered.
+I0924 10:55:32.959641 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereSolid : icosphereSolid_subdivs_1) created and registered.
+I0924 10:55:32.959656 2899568 AssetAttributesManager.cpp:117] Asset attributes (icosphereWireframe : icosphereWireframe_subdivs_1) created and registered.
+I0924 10:55:32.959678 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereSolid : uvSphereSolid_rings_8_segments_16_useTexCoords_false_useTangents_false) created and registered.
+I0924 10:55:32.959704 2899568 AssetAttributesManager.cpp:117] Asset attributes (uvSphereWireframe : uvSphereWireframe_rings_16_segments_32) created and registered.
+I0924 10:55:32.959715 2899568 AssetAttributesManager.cpp:105] AssetAttributesManager::buildCtorFuncPtrMaps : Built default primitive asset templates : 12
+I0924 10:55:32.960395 2899568 SceneDatasetAttributesManager.cpp:23] File (default) not found, so new default dataset attributes created and registered.
+I0924 10:55:32.960403 2899568 MetadataMediator.cpp:47] MetadataMediator::createDataset : Dataset default successfully created.
+I0924 10:55:32.960726 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Physics Manager) : Proposing JSON name : ./data/default.physics_config.json from original name : ./data/default.physics_config.json | This file  does not exist.
+I0924 10:55:32.960743 2899568 PhysicsAttributesManager.cpp:27] File (./data/default.physics_config.json) not found, so new default physics manager attributes created and registered.
+I0924 10:55:32.960748 2899568 AbstractObjectAttributesManagerBase.h:175] AbstractObjectAttributesManager<T>::createObject  (Stage) : Making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb
+I0924 10:55:32.960753 2899568 ManagedContainerBase.cpp:19] ManagedContainerBase::convertFilenameToJSON : Filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb changed to proposed JSON configuration filename : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.stage_config.json
+I0924 10:55:32.961611 2899568 AttributesManagerBase.h:283] AttributesManager<T>::createFromJsonOrDefaultInternal  (Stage) : Proposing JSON name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.stage_config.json from original name : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb | This file  does not exist.
+I0924 10:55:32.961673 2899568 AbstractObjectAttributesManagerBase.h:181] AbstractObjectAttributesManager<T>::createObject  (Stage) : Done making attributes with handle : /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb
+I0924 10:55:32.961675 2899568 AbstractObjectAttributesManagerBase.h:188] File (/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb) exists but is not a recognized config filename extension, so new default Stage attributes created and registered.
+I0924 10:55:32.961683 2899568 Simulator.cpp:156] Loading navmesh from /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.navmesh
+I0924 10:55:32.962641 2899568 Simulator.cpp:158] Loaded.
+I0924 10:55:32.962646 2899568 SceneGraph.h:93] Created DrawableGroup: 
+Renderer: NVIDIA GeForce RTX 5090/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 580.126.09
+Using optional features:
+    GL_ARB_ES2_compatibility
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_invalidate_subdata
+    GL_ARB_multi_bind
+    GL_ARB_robustness
+    GL_ARB_separate_shader_objects
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage_multisample
+    GL_ARB_vertex_array_object
+    GL_KHR_debug
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+I0924 10:55:32.966310 2899568 ResourceManager.cpp:234] ResourceManager::loadStage : Not loading semantic mesh
+I0924 10:55:32.966317 2899568 ResourceManager.cpp:262] ResourceManager::loadStage : start load render asset /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb.
+I0924 10:55:32.966322 2899568 ResourceManager.cpp:569] ResourceManager::loadStageInternal : Attempting to load stage /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.glb 
+I0924 10:55:32.966336 2899568 ResourceManager.cpp:1119] Importing Basis files as BC7 for oLBMNvg9in8.glb
+W0924 10:55:36.481400 2899568 Simulator.cpp:248] :
+---
+ The active scene does not contain semantic annotations. 
+---
+I0924 10:55:36.561947 2899568 simulator.py:213] Loaded navmesh /mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/scene_datasets/mp3d/oLBMNvg9in8/oLBMNvg9in8.navmesh
+I0924 11:00:27.909593 2899568 Simulator.cpp:49] Deconstructing Simulator

@@ -1,0 +1,3065 @@
+{
+  "status": "PUBLICATION_SNAPSHOT_NOT_FINAL_EVALUATION",
+  "cutoff_utc": "2026-09-24T03:30:16.529716+00:00",
+  "cutoff_unix_ns": 1790220616529715533,
+  "metadata_capture": "Individual capture timestamps in CAPTURE_INDEX; live files may lag immutable pair seals.",
+  "source_commit": "b87637a0ab27e5b77e1bd849fa0eab2e7699771b",
+  "branch": "codex/q35n-b2-kl-repair-20260921",
+  "complete_pairs": 1998,
+  "planned_pair_slots": 3778,
+  "summaries": [
+    {
+      "experiment": "V20",
+      "phase": "DEV",
+      "planned_pairs": 100,
+      "complete_pairs": 100,
+      "pending_pairs": 0,
+      "outcome_counts": {
+        "BOTH_FAILURE": 72,
+        "RETAINED_SUCCESS": 23,
+        "WIN": 3,
+        "LOSS": 2
+      },
+      "win_episode_ids": [
+        1763,
+        4994,
+        921
+      ],
+      "loss_episode_ids": [
+        7979,
+        9941
+      ],
+      "A": {
+        "successes": 25.0,
+        "success_on_completed": 0.25,
+        "spl_on_completed": 0.21546445835012115,
+        "ndtw_on_completed": 0.43924607607119975,
+        "osr_on_completed": 0.36,
+        "steps_on_completed": 131.59,
+        "collisions_on_completed": 62.9,
+        "sr_identification_bounds": [
+          0.25,
+          0.25
+        ]
+      },
+      "B": {
+        "successes": 26.0,
+        "success_on_completed": 0.26,
+        "spl_on_completed": 0.23313557227749165,
+        "ndtw_on_completed": 0.45696695824357475,
+        "osr_on_completed": 0.33,
+        "steps_on_completed": 100.51,
+        "collisions_on_completed": 51.83,
+        "sr_identification_bounds": [
+          0.26,
+          0.26
+        ]
+      },
+      "delta_sr_on_completed": 0.01,
+      "full_denominator_delta_identification_bounds": [
+        0.01,
+        0.01
+      ],
+      "bounds_are_not_confidence_intervals": true,
+      "recorded_pair_audit": {
+        "input_prefix_matched": 100,
+        "base_action_prefix_matched": 100,
+        "logits_bitwise_equal": 100,
+        "state_unchanged": 100
+      },
+      "max_base_logit_delta": 0.0,
+      "houses": {
+        "82sE5b5pLXE": {
+          "planned_pairs": 25,
+          "complete_pairs": 25,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 16,
+            "RETAINED_SUCCESS": 8,
+            "LOSS": 1
+          },
+          "win_episode_ids": [],
+          "loss_episode_ids": [
+            7979
+          ],
+          "A": {
+            "successes": 9.0,
+            "success_on_completed": 0.36,
+            "spl_on_completed": 0.25819648519371213,
+            "ndtw_on_completed": 0.44131333932287936,
+            "osr_on_completed": 0.4,
+            "steps_on_completed": 109.84,
+            "collisions_on_completed": 39.6,
+            "sr_identification_bounds": [
+              0.36,
+              0.36
+            ]
+          },
+          "B": {
+            "successes": 8.0,
+            "success_on_completed": 0.32,
+            "spl_on_completed": 0.2583650530655131,
+            "ndtw_on_completed": 0.47562515007357964,
+            "osr_on_completed": 0.36,
+            "steps_on_completed": 81.28,
+            "collisions_on_completed": 22.36,
+            "sr_identification_bounds": [
+              0.32,
+              0.32
+            ]
+          },
+          "delta_sr_on_completed": -0.04,
+          "full_denominator_delta_identification_bounds": [
+            -0.04,
+            -0.04
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 25,
+            "base_action_prefix_matched": 25,
+            "logits_bitwise_equal": 25,
+            "state_unchanged": 25
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "B6ByNegPMKs": {
+          "planned_pairs": 25,
+          "complete_pairs": 25,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "RETAINED_SUCCESS": 8,
+            "BOTH_FAILURE": 16,
+            "LOSS": 1
+          },
+          "win_episode_ids": [],
+          "loss_episode_ids": [
+            9941
+          ],
+          "A": {
+            "successes": 9.0,
+            "success_on_completed": 0.36,
+            "spl_on_completed": 0.33844995660387156,
+            "ndtw_on_completed": 0.5233995500597294,
+            "osr_on_completed": 0.44,
+            "steps_on_completed": 81.8,
+            "collisions_on_completed": 38.4,
+            "sr_identification_bounds": [
+              0.36,
+              0.36
+            ]
+          },
+          "B": {
+            "successes": 8.0,
+            "success_on_completed": 0.32,
+            "spl_on_completed": 0.291873505711022,
+            "ndtw_on_completed": 0.511142240230446,
+            "osr_on_completed": 0.4,
+            "steps_on_completed": 79.12,
+            "collisions_on_completed": 38.36,
+            "sr_identification_bounds": [
+              0.32,
+              0.32
+            ]
+          },
+          "delta_sr_on_completed": -0.04,
+          "full_denominator_delta_identification_bounds": [
+            -0.04,
+            -0.04
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 25,
+            "base_action_prefix_matched": 25,
+            "logits_bitwise_equal": 25,
+            "state_unchanged": 25
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "PuKPg4mmafe": {
+          "planned_pairs": 19,
+          "complete_pairs": 19,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 18,
+            "WIN": 1
+          },
+          "win_episode_ids": [
+            4994
+          ],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0.0,
+            "success_on_completed": 0.0,
+            "spl_on_completed": 0.0,
+            "ndtw_on_completed": 0.17575195400013033,
+            "osr_on_completed": 0.2631578947368421,
+            "steps_on_completed": 239.0,
+            "collisions_on_completed": 119.6842105263158,
+            "sr_identification_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "B": {
+            "successes": 1.0,
+            "success_on_completed": 0.05263157894736842,
+            "spl_on_completed": 0.05263157894736842,
+            "ndtw_on_completed": 0.2301731491318262,
+            "osr_on_completed": 0.2631578947368421,
+            "steps_on_completed": 187.57894736842104,
+            "collisions_on_completed": 116.15789473684211,
+            "sr_identification_bounds": [
+              0.05263157894736842,
+              0.05263157894736842
+            ]
+          },
+          "delta_sr_on_completed": 0.05263157894736842,
+          "full_denominator_delta_identification_bounds": [
+            0.05263157894736842,
+            0.05263157894736842
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 19,
+            "base_action_prefix_matched": 19,
+            "logits_bitwise_equal": 19,
+            "state_unchanged": 19
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "XcA2TqTSSAj": {
+          "planned_pairs": 6,
+          "complete_pairs": 6,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "WIN": 1,
+            "BOTH_FAILURE": 5
+          },
+          "win_episode_ids": [
+            1763
+          ],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0.0,
+            "success_on_completed": 0.0,
+            "spl_on_completed": 0.0,
+            "ndtw_on_completed": 0.3456780419979504,
+            "osr_on_completed": 0.3333333333333333,
+            "steps_on_completed": 262.3333333333333,
+            "collisions_on_completed": 147.33333333333334,
+            "sr_identification_bounds": [
+              0.0,
+              0.0
+            ]
+          },
+          "B": {
+            "successes": 1.0,
+            "success_on_completed": 0.16666666666666666,
+            "spl_on_completed": 0.16318926039558487,
+            "ndtw_on_completed": 0.3698070888289702,
+            "osr_on_completed": 0.16666666666666666,
+            "steps_on_completed": 114.66666666666667,
+            "collisions_on_completed": 79.83333333333333,
+            "sr_identification_bounds": [
+              0.16666666666666666,
+              0.16666666666666666
+            ]
+          },
+          "delta_sr_on_completed": 0.16666666666666666,
+          "full_denominator_delta_identification_bounds": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 6,
+            "base_action_prefix_matched": 6,
+            "logits_bitwise_equal": 6,
+            "state_unchanged": 6
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "aayBHfsNo7d": {
+          "planned_pairs": 25,
+          "complete_pairs": 25,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 17,
+            "RETAINED_SUCCESS": 7,
+            "WIN": 1
+          },
+          "win_episode_ids": [
+            921
+          ],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 7.0,
+            "success_on_completed": 0.28,
+            "spl_on_completed": 0.2652113916029008,
+            "ndtw_on_completed": 0.575737199782583,
+            "osr_on_completed": 0.32,
+            "steps_on_completed": 90.12,
+            "collisions_on_completed": 47.28,
+            "sr_identification_bounds": [
+              0.28,
+              0.28
+            ]
+          },
+          "B": {
+            "successes": 8.0,
+            "success_on_completed": 0.32,
+            "spl_on_completed": 0.3031383078384911,
+            "ndtw_on_completed": 0.5774151480111327,
+            "osr_on_completed": 0.32,
+            "steps_on_completed": 71.56,
+            "collisions_on_completed": 39.16,
+            "sr_identification_bounds": [
+              0.32,
+              0.32
+            ]
+          },
+          "delta_sr_on_completed": 0.04,
+          "full_denominator_delta_identification_bounds": [
+            0.04,
+            0.04
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 25,
+            "base_action_prefix_matched": 25,
+            "logits_bitwise_equal": 25,
+            "state_unchanged": 25
+          },
+          "max_base_logit_delta": 0.0
+        }
+      },
+      "exposure_strata": {
+        "INTERNAL_DEV_TRAIN_SPLIT": {
+          "planned_pairs": 100,
+          "complete_pairs": 100,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 72,
+            "RETAINED_SUCCESS": 23,
+            "WIN": 3,
+            "LOSS": 2
+          },
+          "win_episode_ids": [
+            1763,
+            4994,
+            921
+          ],
+          "loss_episode_ids": [
+            7979,
+            9941
+          ],
+          "A": {
+            "successes": 25.0,
+            "success_on_completed": 0.25,
+            "spl_on_completed": 0.21546445835012115,
+            "ndtw_on_completed": 0.43924607607119975,
+            "osr_on_completed": 0.36,
+            "steps_on_completed": 131.59,
+            "collisions_on_completed": 62.9,
+            "sr_identification_bounds": [
+              0.25,
+              0.25
+            ]
+          },
+          "B": {
+            "successes": 26.0,
+            "success_on_completed": 0.26,
+            "spl_on_completed": 0.23313557227749165,
+            "ndtw_on_completed": 0.45696695824357475,
+            "osr_on_completed": 0.33,
+            "steps_on_completed": 100.51,
+            "collisions_on_completed": 51.83,
+            "sr_identification_bounds": [
+              0.26,
+              0.26
+            ]
+          },
+          "delta_sr_on_completed": 0.01,
+          "full_denominator_delta_identification_bounds": [
+            0.01,
+            0.01
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 100,
+            "base_action_prefix_matched": 100,
+            "logits_bitwise_equal": 100,
+            "state_unchanged": 100
+          },
+          "max_base_logit_delta": 0.0
+        }
+      },
+      "reference_sha256": "099f455f078e49f393b59d39a7318f4f7406cea9c68cc8e94ee3f92ad8b5c25f",
+      "candidate_sha256": "2fb3af9ad5f4187d43316b377906a917657307022354062d56f5dab518baf499"
+    },
+    {
+      "experiment": "V20",
+      "phase": "UNSEEN",
+      "planned_pairs": 1839,
+      "complete_pairs": 360,
+      "pending_pairs": 1479,
+      "outcome_counts": {
+        "RETAINED_SUCCESS": 58,
+        "BOTH_FAILURE": 281,
+        "WIN": 11,
+        "LOSS": 10
+      },
+      "win_episode_ids": [
+        1215,
+        166,
+        448,
+        806,
+        960,
+        1693,
+        127,
+        128,
+        1630,
+        1631,
+        443
+      ],
+      "loss_episode_ids": [
+        140,
+        1453,
+        330,
+        489,
+        497,
+        623,
+        1305,
+        1516,
+        1632,
+        1745
+      ],
+      "A": {
+        "successes": 68.0,
+        "success_on_completed": 0.18888888888888888,
+        "spl_on_completed": 0.17159596630465196,
+        "ndtw_on_completed": 0.3856150748803866,
+        "osr_on_completed": 0.2916666666666667,
+        "steps_on_completed": 106.00555555555556,
+        "collisions_on_completed": 33.78055555555556,
+        "sr_identification_bounds": [
+          0.036976617727025554,
+          0.8412180532898315
+        ]
+      },
+      "B": {
+        "successes": 69.0,
+        "success_on_completed": 0.19166666666666668,
+        "spl_on_completed": 0.18615103297916352,
+        "ndtw_on_completed": 0.4173755431281729,
+        "osr_on_completed": 0.25277777777777777,
+        "steps_on_completed": 70.68055555555556,
+        "collisions_on_completed": 18.883333333333333,
+        "sr_identification_bounds": [
+          0.037520391517128875,
+          0.8417618270799347
+        ]
+      },
+      "delta_sr_on_completed": 0.002777777777777778,
+      "full_denominator_delta_identification_bounds": [
+        -0.8036976617727025,
+        0.8047852093529092
+      ],
+      "bounds_are_not_confidence_intervals": true,
+      "recorded_pair_audit": {
+        "input_prefix_matched": 360,
+        "base_action_prefix_matched": 360,
+        "logits_bitwise_equal": 360,
+        "state_unchanged": 360
+      },
+      "max_base_logit_delta": 0.0,
+      "houses": {
+        "2azQ1b91cZZ": {
+          "planned_pairs": 252,
+          "complete_pairs": 252,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "RETAINED_SUCCESS": 44,
+            "BOTH_FAILURE": 197,
+            "WIN": 5,
+            "LOSS": 6
+          },
+          "win_episode_ids": [
+            1215,
+            166,
+            448,
+            806,
+            960
+          ],
+          "loss_episode_ids": [
+            140,
+            1453,
+            330,
+            489,
+            497,
+            623
+          ],
+          "A": {
+            "successes": 50.0,
+            "success_on_completed": 0.1984126984126984,
+            "spl_on_completed": 0.19013196989652817,
+            "ndtw_on_completed": 0.3875628528851576,
+            "osr_on_completed": 0.2896825396825397,
+            "steps_on_completed": 83.21031746031746,
+            "collisions_on_completed": 14.86111111111111,
+            "sr_identification_bounds": [
+              0.1984126984126984,
+              0.1984126984126984
+            ]
+          },
+          "B": {
+            "successes": 49.0,
+            "success_on_completed": 0.19444444444444445,
+            "spl_on_completed": 0.19130435490336187,
+            "ndtw_on_completed": 0.4127493395949369,
+            "osr_on_completed": 0.25396825396825395,
+            "steps_on_completed": 53.06349206349206,
+            "collisions_on_completed": 5.76984126984127,
+            "sr_identification_bounds": [
+              0.19444444444444445,
+              0.19444444444444445
+            ]
+          },
+          "delta_sr_on_completed": -0.003968253968253968,
+          "full_denominator_delta_identification_bounds": [
+            -0.003968253968253968,
+            -0.003968253968253968
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 252,
+            "base_action_prefix_matched": 252,
+            "logits_bitwise_equal": 252,
+            "state_unchanged": 252
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "8194nk5LbLH": {
+          "planned_pairs": 39,
+          "complete_pairs": 39,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 30,
+            "RETAINED_SUCCESS": 8,
+            "WIN": 1
+          },
+          "win_episode_ids": [
+            1693
+          ],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 8.0,
+            "success_on_completed": 0.20512820512820512,
+            "spl_on_completed": 0.1849118535344697,
+            "ndtw_on_completed": 0.45029232340689135,
+            "osr_on_completed": 0.28205128205128205,
+            "steps_on_completed": 106.94871794871794,
+            "collisions_on_completed": 46.53846153846154,
+            "sr_identification_bounds": [
+              0.20512820512820512,
+              0.20512820512820512
+            ]
+          },
+          "B": {
+            "successes": 9.0,
+            "success_on_completed": 0.23076923076923078,
+            "spl_on_completed": 0.21358613970911258,
+            "ndtw_on_completed": 0.47275717060635797,
+            "osr_on_completed": 0.28205128205128205,
+            "steps_on_completed": 94.87179487179488,
+            "collisions_on_completed": 40.69230769230769,
+            "sr_identification_bounds": [
+              0.23076923076923078,
+              0.23076923076923078
+            ]
+          },
+          "delta_sr_on_completed": 0.02564102564102564,
+          "full_denominator_delta_identification_bounds": [
+            0.02564102564102564,
+            0.02564102564102564
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 39,
+            "base_action_prefix_matched": 39,
+            "logits_bitwise_equal": 39,
+            "state_unchanged": 39
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "EU6Fwq7SyZv": {
+          "planned_pairs": 132,
+          "complete_pairs": 69,
+          "pending_pairs": 63,
+          "outcome_counts": {
+            "BOTH_FAILURE": 54,
+            "WIN": 5,
+            "LOSS": 4,
+            "RETAINED_SUCCESS": 6
+          },
+          "win_episode_ids": [
+            127,
+            128,
+            1630,
+            1631,
+            443
+          ],
+          "loss_episode_ids": [
+            1305,
+            1516,
+            1632,
+            1745
+          ],
+          "A": {
+            "successes": 10.0,
+            "success_on_completed": 0.14492753623188406,
+            "spl_on_completed": 0.09637288649138105,
+            "ndtw_on_completed": 0.3419447451740681,
+            "osr_on_completed": 0.30434782608695654,
+            "steps_on_completed": 188.7246376811594,
+            "collisions_on_completed": 95.66666666666667,
+            "sr_identification_bounds": [
+              0.07575757575757576,
+              0.553030303030303
+            ]
+          },
+          "B": {
+            "successes": 11.0,
+            "success_on_completed": 0.15942028985507245,
+            "spl_on_completed": 0.1518234056260332,
+            "ndtw_on_completed": 0.40296858397927804,
+            "osr_on_completed": 0.2318840579710145,
+            "steps_on_completed": 121.34782608695652,
+            "collisions_on_completed": 54.44927536231884,
+            "sr_identification_bounds": [
+              0.08333333333333333,
+              0.5606060606060606
+            ]
+          },
+          "delta_sr_on_completed": 0.014492753623188406,
+          "full_denominator_delta_identification_bounds": [
+            -0.4696969696969697,
+            0.48484848484848486
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 69,
+            "base_action_prefix_matched": 69,
+            "logits_bitwise_equal": 69,
+            "state_unchanged": 69
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "QUCTc6BB5sX": {
+          "planned_pairs": 255,
+          "complete_pairs": 0,
+          "pending_pairs": 255,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "TbHJrupSAjP": {
+          "planned_pairs": 264,
+          "complete_pairs": 0,
+          "pending_pairs": 264,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "X7HyMhZNoso": {
+          "planned_pairs": 141,
+          "complete_pairs": 0,
+          "pending_pairs": 141,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "Z6MFQCViBuw": {
+          "planned_pairs": 159,
+          "complete_pairs": 0,
+          "pending_pairs": 159,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "oLBMNvg9in8": {
+          "planned_pairs": 177,
+          "complete_pairs": 0,
+          "pending_pairs": 177,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "pLe4wQe7qrG": {
+          "planned_pairs": 18,
+          "complete_pairs": 0,
+          "pending_pairs": 18,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "x8F5xyUWy9e": {
+          "planned_pairs": 102,
+          "complete_pairs": 0,
+          "pending_pairs": 102,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        },
+        "zsNo4HB9uLZ": {
+          "planned_pairs": 300,
+          "complete_pairs": 0,
+          "pending_pairs": 300,
+          "outcome_counts": {},
+          "win_episode_ids": [],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "B": {
+            "successes": 0,
+            "success_on_completed": null,
+            "spl_on_completed": null,
+            "ndtw_on_completed": null,
+            "osr_on_completed": null,
+            "steps_on_completed": null,
+            "collisions_on_completed": null,
+            "sr_identification_bounds": [
+              0.0,
+              1.0
+            ]
+          },
+          "delta_sr_on_completed": null,
+          "full_denominator_delta_identification_bounds": [
+            -1.0,
+            1.0
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 0,
+            "base_action_prefix_matched": 0,
+            "logits_bitwise_equal": 0,
+            "state_unchanged": 0
+          },
+          "max_base_logit_delta": null
+        }
+      },
+      "exposure_strata": {
+        "PUBLIC_PREVIOUSLY_EXPOSED": {
+          "planned_pairs": 1839,
+          "complete_pairs": 360,
+          "pending_pairs": 1479,
+          "outcome_counts": {
+            "RETAINED_SUCCESS": 58,
+            "BOTH_FAILURE": 281,
+            "WIN": 11,
+            "LOSS": 10
+          },
+          "win_episode_ids": [
+            1215,
+            166,
+            448,
+            806,
+            960,
+            1693,
+            127,
+            128,
+            1630,
+            1631,
+            443
+          ],
+          "loss_episode_ids": [
+            140,
+            1453,
+            330,
+            489,
+            497,
+            623,
+            1305,
+            1516,
+            1632,
+            1745
+          ],
+          "A": {
+            "successes": 68.0,
+            "success_on_completed": 0.18888888888888888,
+            "spl_on_completed": 0.17159596630465196,
+            "ndtw_on_completed": 0.3856150748803866,
+            "osr_on_completed": 0.2916666666666667,
+            "steps_on_completed": 106.00555555555556,
+            "collisions_on_completed": 33.78055555555556,
+            "sr_identification_bounds": [
+              0.036976617727025554,
+              0.8412180532898315
+            ]
+          },
+          "B": {
+            "successes": 69.0,
+            "success_on_completed": 0.19166666666666668,
+            "spl_on_completed": 0.18615103297916352,
+            "ndtw_on_completed": 0.4173755431281729,
+            "osr_on_completed": 0.25277777777777777,
+            "steps_on_completed": 70.68055555555556,
+            "collisions_on_completed": 18.883333333333333,
+            "sr_identification_bounds": [
+              0.037520391517128875,
+              0.8417618270799347
+            ]
+          },
+          "delta_sr_on_completed": 0.002777777777777778,
+          "full_denominator_delta_identification_bounds": [
+            -0.8036976617727025,
+            0.8047852093529092
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 360,
+            "base_action_prefix_matched": 360,
+            "logits_bitwise_equal": 360,
+            "state_unchanged": 360
+          },
+          "max_base_logit_delta": 0.0
+        }
+      },
+      "reference_sha256": "099f455f078e49f393b59d39a7318f4f7406cea9c68cc8e94ee3f92ad8b5c25f",
+      "candidate_sha256": "2fb3af9ad5f4187d43316b377906a917657307022354062d56f5dab518baf499"
+    },
+    {
+      "experiment": "FINAL100K",
+      "phase": "UNSEEN",
+      "planned_pairs": 1839,
+      "complete_pairs": 1538,
+      "pending_pairs": 301,
+      "outcome_counts": {
+        "LOSS": 161,
+        "BOTH_FAILURE": 1059,
+        "WIN": 214,
+        "RETAINED_SUCCESS": 104
+      },
+      "win_episode_ids": [
+        1032,
+        1048,
+        115,
+        1159,
+        1339,
+        1341,
+        1372,
+        1373,
+        1374,
+        1381,
+        1459,
+        1500,
+        1580,
+        1607,
+        1608,
+        166,
+        167,
+        168,
+        193,
+        194,
+        214,
+        277,
+        314,
+        364,
+        403,
+        512,
+        542,
+        543,
+        63,
+        804,
+        810,
+        931,
+        958,
+        979,
+        980,
+        1236,
+        1591,
+        1693,
+        291,
+        1244,
+        1553,
+        1631,
+        198,
+        297,
+        442,
+        461,
+        502,
+        503,
+        504,
+        681,
+        773,
+        774,
+        781,
+        783,
+        888,
+        971,
+        1061,
+        1094,
+        1095,
+        1105,
+        1115,
+        1138,
+        1230,
+        1351,
+        1353,
+        1426,
+        1427,
+        1465,
+        151,
+        153,
+        1615,
+        1706,
+        1707,
+        190,
+        380,
+        427,
+        428,
+        429,
+        490,
+        499,
+        569,
+        578,
+        666,
+        700,
+        739,
+        753,
+        876,
+        976,
+        988,
+        1009,
+        1020,
+        1036,
+        1037,
+        106,
+        108,
+        1126,
+        1246,
+        1247,
+        1248,
+        1308,
+        1365,
+        1405,
+        1408,
+        1410,
+        1424,
+        1597,
+        1600,
+        1642,
+        1644,
+        1708,
+        1712,
+        174,
+        1762,
+        1789,
+        182,
+        1823,
+        1828,
+        24,
+        256,
+        257,
+        308,
+        359,
+        36,
+        378,
+        4,
+        406,
+        473,
+        523,
+        58,
+        589,
+        59,
+        595,
+        596,
+        597,
+        697,
+        762,
+        790,
+        791,
+        792,
+        816,
+        835,
+        91,
+        92,
+        929,
+        1179,
+        1186,
+        1760,
+        304,
+        370,
+        374,
+        47,
+        564,
+        601,
+        606,
+        903,
+        925,
+        1192,
+        1194,
+        1225,
+        1819,
+        1821,
+        322,
+        430,
+        431,
+        559,
+        560,
+        561,
+        611,
+        705,
+        916,
+        918,
+        966,
+        1067,
+        1068,
+        1402,
+        1403,
+        1413,
+        1429,
+        1458,
+        1512,
+        1540,
+        1747,
+        508,
+        510,
+        726,
+        787,
+        789,
+        813,
+        937,
+        414,
+        649,
+        651,
+        1052,
+        1054,
+        1267,
+        1350,
+        1380,
+        1604,
+        1663,
+        1664,
+        1728,
+        1781,
+        188,
+        223,
+        224,
+        225,
+        231,
+        520,
+        521,
+        642,
+        817,
+        819,
+        974,
+        1016
+      ],
+      "loss_episode_ids": [
+        10,
+        1006,
+        1007,
+        1008,
+        11,
+        1264,
+        1383,
+        139,
+        140,
+        141,
+        1453,
+        1461,
+        1606,
+        17,
+        1816,
+        215,
+        286,
+        288,
+        326,
+        330,
+        340,
+        489,
+        498,
+        623,
+        880,
+        881,
+        1210,
+        1211,
+        1507,
+        1508,
+        1509,
+        222,
+        1305,
+        1516,
+        1632,
+        1745,
+        211,
+        213,
+        318,
+        679,
+        680,
+        764,
+        765,
+        1003,
+        1004,
+        103,
+        105,
+        1116,
+        1345,
+        1467,
+        149,
+        150,
+        1545,
+        1616,
+        208,
+        21,
+        210,
+        434,
+        481,
+        608,
+        609,
+        646,
+        647,
+        648,
+        784,
+        1010,
+        1038,
+        1082,
+        1111,
+        1112,
+        1113,
+        1128,
+        1272,
+        1282,
+        1312,
+        1314,
+        1367,
+        1418,
+        1447,
+        1602,
+        1655,
+        1656,
+        1662,
+        1764,
+        1790,
+        261,
+        274,
+        298,
+        299,
+        300,
+        333,
+        35,
+        518,
+        519,
+        524,
+        530,
+        565,
+        591,
+        658,
+        659,
+        660,
+        698,
+        1091,
+        1154,
+        1177,
+        1187,
+        1188,
+        1252,
+        1253,
+        1529,
+        1530,
+        1569,
+        1759,
+        241,
+        242,
+        306,
+        464,
+        562,
+        618,
+        927,
+        1027,
+        1059,
+        1226,
+        1250,
+        1251,
+        1300,
+        1492,
+        1558,
+        1559,
+        1619,
+        1657,
+        1698,
+        206,
+        324,
+        345,
+        392,
+        626,
+        667,
+        1072,
+        1411,
+        1547,
+        268,
+        270,
+        479,
+        811,
+        997,
+        1118,
+        1268,
+        1378,
+        1379,
+        1671,
+        1782,
+        201,
+        310,
+        311,
+        555,
+        585,
+        633,
+        641,
+        9,
+        1085
+      ],
+      "A": {
+        "successes": 265.0,
+        "success_on_completed": 0.17230169050715213,
+        "spl_on_completed": 0.15560584425721088,
+        "ndtw_on_completed": 0.4310577663321417,
+        "osr_on_completed": 0.2574772431729519,
+        "steps_on_completed": 93.99089726918075,
+        "collisions_on_completed": 34.30624187256177,
+        "sr_identification_bounds": [
+          0.14410005437737902,
+          0.30777596519847744
+        ]
+      },
+      "B": {
+        "successes": 318.0,
+        "success_on_completed": 0.2067620286085826,
+        "spl_on_completed": 0.18352839149822545,
+        "ndtw_on_completed": 0.4588101804058589,
+        "osr_on_completed": 0.27503250975292587,
+        "steps_on_completed": 60.6924577373212,
+        "collisions_on_completed": 9.455136540962288,
+        "sr_identification_bounds": [
+          0.1729200652528548,
+          0.33659597607395325
+        ]
+      },
+      "delta_sr_on_completed": 0.03446033810143043,
+      "full_denominator_delta_identification_bounds": [
+        -0.1348558999456226,
+        0.19249592169657423
+      ],
+      "bounds_are_not_confidence_intervals": true,
+      "recorded_pair_audit": {
+        "input_prefix_matched": 1538,
+        "base_action_prefix_matched": 1538,
+        "logits_bitwise_equal": 1538,
+        "state_unchanged": 1538
+      },
+      "max_base_logit_delta": 0.0,
+      "houses": {
+        "2azQ1b91cZZ": {
+          "planned_pairs": 252,
+          "complete_pairs": 252,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "LOSS": 26,
+            "BOTH_FAILURE": 167,
+            "WIN": 35,
+            "RETAINED_SUCCESS": 24
+          },
+          "win_episode_ids": [
+            1032,
+            1048,
+            115,
+            1159,
+            1339,
+            1341,
+            1372,
+            1373,
+            1374,
+            1381,
+            1459,
+            1500,
+            1580,
+            1607,
+            1608,
+            166,
+            167,
+            168,
+            193,
+            194,
+            214,
+            277,
+            314,
+            364,
+            403,
+            512,
+            542,
+            543,
+            63,
+            804,
+            810,
+            931,
+            958,
+            979,
+            980
+          ],
+          "loss_episode_ids": [
+            10,
+            1006,
+            1007,
+            1008,
+            11,
+            1264,
+            1383,
+            139,
+            140,
+            141,
+            1453,
+            1461,
+            1606,
+            17,
+            1816,
+            215,
+            286,
+            288,
+            326,
+            330,
+            340,
+            489,
+            498,
+            623,
+            880,
+            881
+          ],
+          "A": {
+            "successes": 50.0,
+            "success_on_completed": 0.1984126984126984,
+            "spl_on_completed": 0.19013196989652817,
+            "ndtw_on_completed": 0.3875628528851576,
+            "osr_on_completed": 0.2896825396825397,
+            "steps_on_completed": 83.21031746031746,
+            "collisions_on_completed": 14.86111111111111,
+            "sr_identification_bounds": [
+              0.1984126984126984,
+              0.1984126984126984
+            ]
+          },
+          "B": {
+            "successes": 59.0,
+            "success_on_completed": 0.23412698412698413,
+            "spl_on_completed": 0.20897260539919374,
+            "ndtw_on_completed": 0.4258763856396186,
+            "osr_on_completed": 0.3333333333333333,
+            "steps_on_completed": 52.80555555555556,
+            "collisions_on_completed": 0.9166666666666666,
+            "sr_identification_bounds": [
+              0.23412698412698413,
+              0.23412698412698413
+            ]
+          },
+          "delta_sr_on_completed": 0.03571428571428571,
+          "full_denominator_delta_identification_bounds": [
+            0.03571428571428571,
+            0.03571428571428571
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 252,
+            "base_action_prefix_matched": 252,
+            "logits_bitwise_equal": 252,
+            "state_unchanged": 252
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "8194nk5LbLH": {
+          "planned_pairs": 39,
+          "complete_pairs": 39,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 27,
+            "LOSS": 6,
+            "WIN": 4,
+            "RETAINED_SUCCESS": 2
+          },
+          "win_episode_ids": [
+            1236,
+            1591,
+            1693,
+            291
+          ],
+          "loss_episode_ids": [
+            1210,
+            1211,
+            1507,
+            1508,
+            1509,
+            222
+          ],
+          "A": {
+            "successes": 8.0,
+            "success_on_completed": 0.20512820512820512,
+            "spl_on_completed": 0.1849118535344697,
+            "ndtw_on_completed": 0.45029232340689135,
+            "osr_on_completed": 0.28205128205128205,
+            "steps_on_completed": 106.94871794871794,
+            "collisions_on_completed": 46.53846153846154,
+            "sr_identification_bounds": [
+              0.20512820512820512,
+              0.20512820512820512
+            ]
+          },
+          "B": {
+            "successes": 6.0,
+            "success_on_completed": 0.15384615384615385,
+            "spl_on_completed": 0.14533860799888915,
+            "ndtw_on_completed": 0.35184474737213145,
+            "osr_on_completed": 0.1794871794871795,
+            "steps_on_completed": 86.51282051282051,
+            "collisions_on_completed": 46.05128205128205,
+            "sr_identification_bounds": [
+              0.15384615384615385,
+              0.15384615384615385
+            ]
+          },
+          "delta_sr_on_completed": -0.05128205128205128,
+          "full_denominator_delta_identification_bounds": [
+            -0.05128205128205128,
+            -0.05128205128205128
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 39,
+            "base_action_prefix_matched": 39,
+            "logits_bitwise_equal": 39,
+            "state_unchanged": 39
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "EU6Fwq7SyZv": {
+          "planned_pairs": 132,
+          "complete_pairs": 132,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 97,
+            "WIN": 17,
+            "LOSS": 11,
+            "RETAINED_SUCCESS": 7
+          },
+          "win_episode_ids": [
+            1244,
+            1553,
+            1631,
+            198,
+            297,
+            442,
+            461,
+            502,
+            503,
+            504,
+            681,
+            773,
+            774,
+            781,
+            783,
+            888,
+            971
+          ],
+          "loss_episode_ids": [
+            1305,
+            1516,
+            1632,
+            1745,
+            211,
+            213,
+            318,
+            679,
+            680,
+            764,
+            765
+          ],
+          "A": {
+            "successes": 18.0,
+            "success_on_completed": 0.13636363636363635,
+            "spl_on_completed": 0.10888581327018643,
+            "ndtw_on_completed": 0.37755105703975517,
+            "osr_on_completed": 0.3333333333333333,
+            "steps_on_completed": 212.37878787878788,
+            "collisions_on_completed": 119.17424242424242,
+            "sr_identification_bounds": [
+              0.13636363636363635,
+              0.13636363636363635
+            ]
+          },
+          "B": {
+            "successes": 24.0,
+            "success_on_completed": 0.18181818181818182,
+            "spl_on_completed": 0.16032578887334198,
+            "ndtw_on_completed": 0.46540049518159715,
+            "osr_on_completed": 0.2878787878787879,
+            "steps_on_completed": 63.15151515151515,
+            "collisions_on_completed": 10.681818181818182,
+            "sr_identification_bounds": [
+              0.18181818181818182,
+              0.18181818181818182
+            ]
+          },
+          "delta_sr_on_completed": 0.045454545454545456,
+          "full_denominator_delta_identification_bounds": [
+            0.045454545454545456,
+            0.045454545454545456
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 132,
+            "base_action_prefix_matched": 132,
+            "logits_bitwise_equal": 132,
+            "state_unchanged": 132
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "QUCTc6BB5sX": {
+          "planned_pairs": 255,
+          "complete_pairs": 255,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "LOSS": 22,
+            "BOTH_FAILURE": 187,
+            "RETAINED_SUCCESS": 13,
+            "WIN": 33
+          },
+          "win_episode_ids": [
+            1061,
+            1094,
+            1095,
+            1105,
+            1115,
+            1138,
+            1230,
+            1351,
+            1353,
+            1426,
+            1427,
+            1465,
+            151,
+            153,
+            1615,
+            1706,
+            1707,
+            190,
+            380,
+            427,
+            428,
+            429,
+            490,
+            499,
+            569,
+            578,
+            666,
+            700,
+            739,
+            753,
+            876,
+            976,
+            988
+          ],
+          "loss_episode_ids": [
+            1003,
+            1004,
+            103,
+            105,
+            1116,
+            1345,
+            1467,
+            149,
+            150,
+            1545,
+            1616,
+            208,
+            21,
+            210,
+            434,
+            481,
+            608,
+            609,
+            646,
+            647,
+            648,
+            784
+          ],
+          "A": {
+            "successes": 35.0,
+            "success_on_completed": 0.13725490196078433,
+            "spl_on_completed": 0.120601630339761,
+            "ndtw_on_completed": 0.34255848459227,
+            "osr_on_completed": 0.19607843137254902,
+            "steps_on_completed": 100.91372549019607,
+            "collisions_on_completed": 36.56078431372549,
+            "sr_identification_bounds": [
+              0.13725490196078433,
+              0.13725490196078433
+            ]
+          },
+          "B": {
+            "successes": 46.0,
+            "success_on_completed": 0.1803921568627451,
+            "spl_on_completed": 0.1678661936488532,
+            "ndtw_on_completed": 0.37837286857522445,
+            "osr_on_completed": 0.21568627450980393,
+            "steps_on_completed": 73.12156862745098,
+            "collisions_on_completed": 11.003921568627451,
+            "sr_identification_bounds": [
+              0.1803921568627451,
+              0.1803921568627451
+            ]
+          },
+          "delta_sr_on_completed": 0.043137254901960784,
+          "full_denominator_delta_identification_bounds": [
+            0.043137254901960784,
+            0.043137254901960784
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 255,
+            "base_action_prefix_matched": 255,
+            "logits_bitwise_equal": 255,
+            "state_unchanged": 255
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "TbHJrupSAjP": {
+          "planned_pairs": 264,
+          "complete_pairs": 264,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "WIN": 55,
+            "LOSS": 37,
+            "RETAINED_SUCCESS": 21,
+            "BOTH_FAILURE": 151
+          },
+          "win_episode_ids": [
+            1009,
+            1020,
+            1036,
+            1037,
+            106,
+            108,
+            1126,
+            1246,
+            1247,
+            1248,
+            1308,
+            1365,
+            1405,
+            1408,
+            1410,
+            1424,
+            1597,
+            1600,
+            1642,
+            1644,
+            1708,
+            1712,
+            174,
+            1762,
+            1789,
+            182,
+            1823,
+            1828,
+            24,
+            256,
+            257,
+            308,
+            359,
+            36,
+            378,
+            4,
+            406,
+            473,
+            523,
+            58,
+            589,
+            59,
+            595,
+            596,
+            597,
+            697,
+            762,
+            790,
+            791,
+            792,
+            816,
+            835,
+            91,
+            92,
+            929
+          ],
+          "loss_episode_ids": [
+            1010,
+            1038,
+            1082,
+            1111,
+            1112,
+            1113,
+            1128,
+            1272,
+            1282,
+            1312,
+            1314,
+            1367,
+            1418,
+            1447,
+            1602,
+            1655,
+            1656,
+            1662,
+            1764,
+            1790,
+            261,
+            274,
+            298,
+            299,
+            300,
+            333,
+            35,
+            518,
+            519,
+            524,
+            530,
+            565,
+            591,
+            658,
+            659,
+            660,
+            698
+          ],
+          "A": {
+            "successes": 58.0,
+            "success_on_completed": 0.2196969696969697,
+            "spl_on_completed": 0.1967668078791927,
+            "ndtw_on_completed": 0.5271187911694553,
+            "osr_on_completed": 0.29545454545454547,
+            "steps_on_completed": 67.15530303030303,
+            "collisions_on_completed": 16.71969696969697,
+            "sr_identification_bounds": [
+              0.2196969696969697,
+              0.2196969696969697
+            ]
+          },
+          "B": {
+            "successes": 76.0,
+            "success_on_completed": 0.2878787878787879,
+            "spl_on_completed": 0.2473809220312279,
+            "ndtw_on_completed": 0.5512680695926448,
+            "osr_on_completed": 0.3409090909090909,
+            "steps_on_completed": 58.928030303030305,
+            "collisions_on_completed": 4.950757575757576,
+            "sr_identification_bounds": [
+              0.2878787878787879,
+              0.2878787878787879
+            ]
+          },
+          "delta_sr_on_completed": 0.06818181818181818,
+          "full_denominator_delta_identification_bounds": [
+            0.06818181818181818,
+            0.06818181818181818
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 264,
+            "base_action_prefix_matched": 264,
+            "logits_bitwise_equal": 264,
+            "state_unchanged": 264
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "X7HyMhZNoso": {
+          "planned_pairs": 141,
+          "complete_pairs": 141,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 96,
+            "LOSS": 18,
+            "RETAINED_SUCCESS": 15,
+            "WIN": 12
+          },
+          "win_episode_ids": [
+            1179,
+            1186,
+            1760,
+            304,
+            370,
+            374,
+            47,
+            564,
+            601,
+            606,
+            903,
+            925
+          ],
+          "loss_episode_ids": [
+            1091,
+            1154,
+            1177,
+            1187,
+            1188,
+            1252,
+            1253,
+            1529,
+            1530,
+            1569,
+            1759,
+            241,
+            242,
+            306,
+            464,
+            562,
+            618,
+            927
+          ],
+          "A": {
+            "successes": 33.0,
+            "success_on_completed": 0.23404255319148937,
+            "spl_on_completed": 0.20984598929640708,
+            "ndtw_on_completed": 0.47981860895317524,
+            "osr_on_completed": 0.2978723404255319,
+            "steps_on_completed": 89.12765957446808,
+            "collisions_on_completed": 24.76595744680851,
+            "sr_identification_bounds": [
+              0.23404255319148937,
+              0.23404255319148937
+            ]
+          },
+          "B": {
+            "successes": 27.0,
+            "success_on_completed": 0.19148936170212766,
+            "spl_on_completed": 0.1579890698108445,
+            "ndtw_on_completed": 0.49685967242835444,
+            "osr_on_completed": 0.2765957446808511,
+            "steps_on_completed": 67.84397163120568,
+            "collisions_on_completed": 22.326241134751772,
+            "sr_identification_bounds": [
+              0.19148936170212766,
+              0.19148936170212766
+            ]
+          },
+          "delta_sr_on_completed": -0.0425531914893617,
+          "full_denominator_delta_identification_bounds": [
+            -0.0425531914893617,
+            -0.0425531914893617
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 141,
+            "base_action_prefix_matched": 141,
+            "logits_bitwise_equal": 141,
+            "state_unchanged": 141
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "Z6MFQCViBuw": {
+          "planned_pairs": 159,
+          "complete_pairs": 159,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 118,
+            "LOSS": 18,
+            "RETAINED_SUCCESS": 7,
+            "WIN": 16
+          },
+          "win_episode_ids": [
+            1192,
+            1194,
+            1225,
+            1819,
+            1821,
+            322,
+            430,
+            431,
+            559,
+            560,
+            561,
+            611,
+            705,
+            916,
+            918,
+            966
+          ],
+          "loss_episode_ids": [
+            1027,
+            1059,
+            1226,
+            1250,
+            1251,
+            1300,
+            1492,
+            1558,
+            1559,
+            1619,
+            1657,
+            1698,
+            206,
+            324,
+            345,
+            392,
+            626,
+            667
+          ],
+          "A": {
+            "successes": 25.0,
+            "success_on_completed": 0.15723270440251572,
+            "spl_on_completed": 0.1417355331891082,
+            "ndtw_on_completed": 0.34033234661589673,
+            "osr_on_completed": 0.23270440251572327,
+            "steps_on_completed": 55.37735849056604,
+            "collisions_on_completed": 6.90566037735849,
+            "sr_identification_bounds": [
+              0.15723270440251572,
+              0.15723270440251572
+            ]
+          },
+          "B": {
+            "successes": 23.0,
+            "success_on_completed": 0.14465408805031446,
+            "spl_on_completed": 0.12923764405651902,
+            "ndtw_on_completed": 0.34225428956950166,
+            "osr_on_completed": 0.23270440251572327,
+            "steps_on_completed": 54.698113207547166,
+            "collisions_on_completed": 4.3584905660377355,
+            "sr_identification_bounds": [
+              0.14465408805031446,
+              0.14465408805031446
+            ]
+          },
+          "delta_sr_on_completed": -0.012578616352201259,
+          "full_denominator_delta_identification_bounds": [
+            -0.012578616352201259,
+            -0.012578616352201259
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 159,
+            "base_action_prefix_matched": 159,
+            "logits_bitwise_equal": 159,
+            "state_unchanged": 159
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "oLBMNvg9in8": {
+          "planned_pairs": 177,
+          "complete_pairs": 177,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 147,
+            "WIN": 17,
+            "LOSS": 8,
+            "RETAINED_SUCCESS": 5
+          },
+          "win_episode_ids": [
+            1067,
+            1068,
+            1402,
+            1403,
+            1413,
+            1429,
+            1458,
+            1512,
+            1540,
+            1747,
+            508,
+            510,
+            726,
+            787,
+            789,
+            813,
+            937
+          ],
+          "loss_episode_ids": [
+            1072,
+            1411,
+            1547,
+            268,
+            270,
+            479,
+            811,
+            997
+          ],
+          "A": {
+            "successes": 13.0,
+            "success_on_completed": 0.07344632768361582,
+            "spl_on_completed": 0.0640166444476862,
+            "ndtw_on_completed": 0.47383844775267525,
+            "osr_on_completed": 0.14124293785310735,
+            "steps_on_completed": 104.15819209039547,
+            "collisions_on_completed": 56.59887005649718,
+            "sr_identification_bounds": [
+              0.07344632768361582,
+              0.07344632768361582
+            ]
+          },
+          "B": {
+            "successes": 22.0,
+            "success_on_completed": 0.12429378531073447,
+            "spl_on_completed": 0.10843761598834735,
+            "ndtw_on_completed": 0.4949927413733938,
+            "osr_on_completed": 0.1638418079096045,
+            "steps_on_completed": 54.0225988700565,
+            "collisions_on_completed": 10.926553672316384,
+            "sr_identification_bounds": [
+              0.12429378531073447,
+              0.12429378531073447
+            ]
+          },
+          "delta_sr_on_completed": 0.05084745762711865,
+          "full_denominator_delta_identification_bounds": [
+            0.05084745762711865,
+            0.05084745762711865
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 177,
+            "base_action_prefix_matched": 177,
+            "logits_bitwise_equal": 177,
+            "state_unchanged": 177
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "pLe4wQe7qrG": {
+          "planned_pairs": 18,
+          "complete_pairs": 18,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "BOTH_FAILURE": 14,
+            "RETAINED_SUCCESS": 1,
+            "WIN": 3
+          },
+          "win_episode_ids": [
+            414,
+            649,
+            651
+          ],
+          "loss_episode_ids": [],
+          "A": {
+            "successes": 1.0,
+            "success_on_completed": 0.05555555555555555,
+            "spl_on_completed": 0.05227766687438131,
+            "ndtw_on_completed": 0.5644261495049834,
+            "osr_on_completed": 0.2777777777777778,
+            "steps_on_completed": 110.5,
+            "collisions_on_completed": 66.22222222222223,
+            "sr_identification_bounds": [
+              0.05555555555555555,
+              0.05555555555555555
+            ]
+          },
+          "B": {
+            "successes": 4.0,
+            "success_on_completed": 0.2222222222222222,
+            "spl_on_completed": 0.2222222222222222,
+            "ndtw_on_completed": 0.6123341206619491,
+            "osr_on_completed": 0.2222222222222222,
+            "steps_on_completed": 31.666666666666668,
+            "collisions_on_completed": 11.38888888888889,
+            "sr_identification_bounds": [
+              0.2222222222222222,
+              0.2222222222222222
+            ]
+          },
+          "delta_sr_on_completed": 0.16666666666666666,
+          "full_denominator_delta_identification_bounds": [
+            0.16666666666666666,
+            0.16666666666666666
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 18,
+            "base_action_prefix_matched": 18,
+            "logits_bitwise_equal": 18,
+            "state_unchanged": 18
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "x8F5xyUWy9e": {
+          "planned_pairs": 102,
+          "complete_pairs": 89,
+          "pending_pairs": 13,
+          "outcome_counts": {
+            "BOTH_FAILURE": 45,
+            "WIN": 21,
+            "LOSS": 14,
+            "RETAINED_SUCCESS": 9
+          },
+          "win_episode_ids": [
+            1052,
+            1054,
+            1267,
+            1350,
+            1380,
+            1604,
+            1663,
+            1664,
+            1728,
+            1781,
+            188,
+            223,
+            224,
+            225,
+            231,
+            520,
+            521,
+            642,
+            817,
+            819,
+            974
+          ],
+          "loss_episode_ids": [
+            1118,
+            1268,
+            1378,
+            1379,
+            1671,
+            1782,
+            201,
+            310,
+            311,
+            555,
+            585,
+            633,
+            641,
+            9
+          ],
+          "A": {
+            "successes": 23.0,
+            "success_on_completed": 0.25842696629213485,
+            "spl_on_completed": 0.24519334597755835,
+            "ndtw_on_completed": 0.5727337491429615,
+            "osr_on_completed": 0.3258426966292135,
+            "steps_on_completed": 64.46067415730337,
+            "collisions_on_completed": 21.696629213483146,
+            "sr_identification_bounds": [
+              0.22549019607843138,
+              0.35294117647058826
+            ]
+          },
+          "B": {
+            "successes": 30.0,
+            "success_on_completed": 0.33707865168539325,
+            "spl_on_completed": 0.3105754454548455,
+            "ndtw_on_completed": 0.6119815202818332,
+            "osr_on_completed": 0.42696629213483145,
+            "steps_on_completed": 53.157303370786515,
+            "collisions_on_completed": 7.955056179775281,
+            "sr_identification_bounds": [
+              0.29411764705882354,
+              0.4215686274509804
+            ]
+          },
+          "delta_sr_on_completed": 0.07865168539325842,
+          "full_denominator_delta_identification_bounds": [
+            -0.058823529411764705,
+            0.19607843137254902
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 89,
+            "base_action_prefix_matched": 89,
+            "logits_bitwise_equal": 89,
+            "state_unchanged": 89
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "zsNo4HB9uLZ": {
+          "planned_pairs": 300,
+          "complete_pairs": 12,
+          "pending_pairs": 288,
+          "outcome_counts": {
+            "BOTH_FAILURE": 10,
+            "WIN": 1,
+            "LOSS": 1
+          },
+          "win_episode_ids": [
+            1016
+          ],
+          "loss_episode_ids": [
+            1085
+          ],
+          "A": {
+            "successes": 1.0,
+            "success_on_completed": 0.08333333333333333,
+            "spl_on_completed": 0.07548360554723059,
+            "ndtw_on_completed": 0.3851203765442311,
+            "osr_on_completed": 0.16666666666666666,
+            "steps_on_completed": 32.333333333333336,
+            "collisions_on_completed": 0.3333333333333333,
+            "sr_identification_bounds": [
+              0.0033333333333333335,
+              0.9633333333333334
+            ]
+          },
+          "B": {
+            "successes": 1.0,
+            "success_on_completed": 0.08333333333333333,
+            "spl_on_completed": 0.08333333333333333,
+            "ndtw_on_completed": 0.2980679465304258,
+            "osr_on_completed": 0.16666666666666666,
+            "steps_on_completed": 83.25,
+            "collisions_on_completed": 25.333333333333332,
+            "sr_identification_bounds": [
+              0.0033333333333333335,
+              0.9633333333333334
+            ]
+          },
+          "delta_sr_on_completed": 0.0,
+          "full_denominator_delta_identification_bounds": [
+            -0.96,
+            0.96
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 12,
+            "base_action_prefix_matched": 12,
+            "logits_bitwise_equal": 12,
+            "state_unchanged": 12
+          },
+          "max_base_logit_delta": 0.0
+        }
+      },
+      "exposure_strata": {
+        "DEVELOPMENT_EXPOSED_ONLY": {
+          "planned_pairs": 564,
+          "complete_pairs": 276,
+          "pending_pairs": 288,
+          "outcome_counts": {
+            "WIN": 56,
+            "LOSS": 38,
+            "RETAINED_SUCCESS": 21,
+            "BOTH_FAILURE": 161
+          },
+          "win_episode_ids": [
+            1009,
+            1020,
+            1036,
+            1037,
+            106,
+            108,
+            1126,
+            1246,
+            1247,
+            1248,
+            1308,
+            1365,
+            1405,
+            1408,
+            1410,
+            1424,
+            1597,
+            1600,
+            1642,
+            1644,
+            1708,
+            1712,
+            174,
+            1762,
+            1789,
+            182,
+            1823,
+            1828,
+            24,
+            256,
+            257,
+            308,
+            359,
+            36,
+            378,
+            4,
+            406,
+            473,
+            523,
+            58,
+            589,
+            59,
+            595,
+            596,
+            597,
+            697,
+            762,
+            790,
+            791,
+            792,
+            816,
+            835,
+            91,
+            92,
+            929,
+            1016
+          ],
+          "loss_episode_ids": [
+            1010,
+            1038,
+            1082,
+            1111,
+            1112,
+            1113,
+            1128,
+            1272,
+            1282,
+            1312,
+            1314,
+            1367,
+            1418,
+            1447,
+            1602,
+            1655,
+            1656,
+            1662,
+            1764,
+            1790,
+            261,
+            274,
+            298,
+            299,
+            300,
+            333,
+            35,
+            518,
+            519,
+            524,
+            530,
+            565,
+            591,
+            658,
+            659,
+            660,
+            698,
+            1085
+          ],
+          "A": {
+            "successes": 59.0,
+            "success_on_completed": 0.213768115942029,
+            "spl_on_completed": 0.1914936251691074,
+            "ndtw_on_completed": 0.5209449470553151,
+            "osr_on_completed": 0.2898550724637681,
+            "steps_on_completed": 65.6413043478261,
+            "collisions_on_completed": 16.007246376811594,
+            "sr_identification_bounds": [
+              0.10460992907801418,
+              0.6152482269503546
+            ]
+          },
+          "B": {
+            "successes": 77.0,
+            "success_on_completed": 0.27898550724637683,
+            "spl_on_completed": 0.24024841817479772,
+            "ndtw_on_completed": 0.5402593685899397,
+            "osr_on_completed": 0.3333333333333333,
+            "steps_on_completed": 59.98550724637681,
+            "collisions_on_completed": 5.836956521739131,
+            "sr_identification_bounds": [
+              0.13652482269503546,
+              0.6471631205673759
+            ]
+          },
+          "delta_sr_on_completed": 0.06521739130434782,
+          "full_denominator_delta_identification_bounds": [
+            -0.4787234042553192,
+            0.5425531914893617
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 276,
+            "base_action_prefix_matched": 276,
+            "logits_bitwise_equal": 276,
+            "state_unchanged": 276
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "NO_LISTED_HEAD_TRAIN_OR_MEMORY_DEV_OVERLAP": {
+          "planned_pairs": 402,
+          "complete_pairs": 402,
+          "pending_pairs": 0,
+          "outcome_counts": {
+            "LOSS": 37,
+            "BOTH_FAILURE": 278,
+            "WIN": 55,
+            "RETAINED_SUCCESS": 32
+          },
+          "win_episode_ids": [
+            1032,
+            1048,
+            115,
+            1159,
+            1339,
+            1341,
+            1372,
+            1373,
+            1374,
+            1381,
+            1459,
+            1500,
+            1580,
+            1607,
+            1608,
+            166,
+            167,
+            168,
+            193,
+            194,
+            214,
+            277,
+            314,
+            364,
+            403,
+            512,
+            542,
+            543,
+            63,
+            804,
+            810,
+            931,
+            958,
+            979,
+            980,
+            1244,
+            1553,
+            1631,
+            198,
+            297,
+            442,
+            461,
+            502,
+            503,
+            504,
+            681,
+            773,
+            774,
+            781,
+            783,
+            888,
+            971,
+            414,
+            649,
+            651
+          ],
+          "loss_episode_ids": [
+            10,
+            1006,
+            1007,
+            1008,
+            11,
+            1264,
+            1383,
+            139,
+            140,
+            141,
+            1453,
+            1461,
+            1606,
+            17,
+            1816,
+            215,
+            286,
+            288,
+            326,
+            330,
+            340,
+            489,
+            498,
+            623,
+            880,
+            881,
+            1305,
+            1516,
+            1632,
+            1745,
+            211,
+            213,
+            318,
+            679,
+            680,
+            764,
+            765
+          ],
+          "A": {
+            "successes": 69.0,
+            "success_on_completed": 0.17164179104477612,
+            "spl_on_completed": 0.15728154668987207,
+            "ndtw_on_completed": 0.3921946496203908,
+            "osr_on_completed": 0.3034825870646766,
+            "steps_on_completed": 126.8457711442786,
+            "collisions_on_completed": 51.41293532338308,
+            "sr_identification_bounds": [
+              0.17164179104477612,
+              0.17164179104477612
+            ]
+          },
+          "B": {
+            "successes": 87.0,
+            "success_on_completed": 0.21641791044776118,
+            "spl_on_completed": 0.1935922902783034,
+            "ndtw_on_completed": 0.4472033052663428,
+            "osr_on_completed": 0.31343283582089554,
+            "steps_on_completed": 55.256218905472636,
+            "collisions_on_completed": 4.592039800995025,
+            "sr_identification_bounds": [
+              0.21641791044776118,
+              0.21641791044776118
+            ]
+          },
+          "delta_sr_on_completed": 0.04477611940298507,
+          "full_denominator_delta_identification_bounds": [
+            0.04477611940298507,
+            0.04477611940298507
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 402,
+            "base_action_prefix_matched": 402,
+            "logits_bitwise_equal": 402,
+            "state_unchanged": 402
+          },
+          "max_base_logit_delta": 0.0
+        },
+        "TRAINING_OVERLAP": {
+          "planned_pairs": 873,
+          "complete_pairs": 860,
+          "pending_pairs": 13,
+          "outcome_counts": {
+            "BOTH_FAILURE": 620,
+            "LOSS": 86,
+            "WIN": 103,
+            "RETAINED_SUCCESS": 51
+          },
+          "win_episode_ids": [
+            1236,
+            1591,
+            1693,
+            291,
+            1061,
+            1094,
+            1095,
+            1105,
+            1115,
+            1138,
+            1230,
+            1351,
+            1353,
+            1426,
+            1427,
+            1465,
+            151,
+            153,
+            1615,
+            1706,
+            1707,
+            190,
+            380,
+            427,
+            428,
+            429,
+            490,
+            499,
+            569,
+            578,
+            666,
+            700,
+            739,
+            753,
+            876,
+            976,
+            988,
+            1179,
+            1186,
+            1760,
+            304,
+            370,
+            374,
+            47,
+            564,
+            601,
+            606,
+            903,
+            925,
+            1192,
+            1194,
+            1225,
+            1819,
+            1821,
+            322,
+            430,
+            431,
+            559,
+            560,
+            561,
+            611,
+            705,
+            916,
+            918,
+            966,
+            1067,
+            1068,
+            1402,
+            1403,
+            1413,
+            1429,
+            1458,
+            1512,
+            1540,
+            1747,
+            508,
+            510,
+            726,
+            787,
+            789,
+            813,
+            937,
+            1052,
+            1054,
+            1267,
+            1350,
+            1380,
+            1604,
+            1663,
+            1664,
+            1728,
+            1781,
+            188,
+            223,
+            224,
+            225,
+            231,
+            520,
+            521,
+            642,
+            817,
+            819,
+            974
+          ],
+          "loss_episode_ids": [
+            1210,
+            1211,
+            1507,
+            1508,
+            1509,
+            222,
+            1003,
+            1004,
+            103,
+            105,
+            1116,
+            1345,
+            1467,
+            149,
+            150,
+            1545,
+            1616,
+            208,
+            21,
+            210,
+            434,
+            481,
+            608,
+            609,
+            646,
+            647,
+            648,
+            784,
+            1091,
+            1154,
+            1177,
+            1187,
+            1188,
+            1252,
+            1253,
+            1529,
+            1530,
+            1569,
+            1759,
+            241,
+            242,
+            306,
+            464,
+            562,
+            618,
+            927,
+            1027,
+            1059,
+            1226,
+            1250,
+            1251,
+            1300,
+            1492,
+            1558,
+            1559,
+            1619,
+            1657,
+            1698,
+            206,
+            324,
+            345,
+            392,
+            626,
+            667,
+            1072,
+            1411,
+            1547,
+            268,
+            270,
+            479,
+            811,
+            997,
+            1118,
+            1268,
+            1378,
+            1379,
+            1671,
+            1782,
+            201,
+            310,
+            311,
+            555,
+            585,
+            633,
+            641,
+            9
+          ],
+          "A": {
+            "successes": 137.0,
+            "success_on_completed": 0.15930232558139534,
+            "spl_on_completed": 0.1433050769204513,
+            "ndtw_on_completed": 0.4203765000978721,
+            "osr_on_completed": 0.2255813953488372,
+            "steps_on_completed": 87.73139534883721,
+            "collisions_on_completed": 32.18255813953488,
+            "sr_identification_bounds": [
+              0.15693012600229095,
+              0.1718213058419244
+            ]
+          },
+          "B": {
+            "successes": 154.0,
+            "success_on_completed": 0.17906976744186046,
+            "spl_on_completed": 0.16062093257691695,
+            "ndtw_on_completed": 0.438096212809672,
+            "osr_on_completed": 0.23837209302325582,
+            "steps_on_completed": 63.46046511627907,
+            "collisions_on_completed": 12.88953488372093,
+            "sr_identification_bounds": [
+              0.1764032073310424,
+              0.19129438717067582
+            ]
+          },
+          "delta_sr_on_completed": 0.019767441860465116,
+          "full_denominator_delta_identification_bounds": [
+            0.004581901489117984,
+            0.03436426116838488
+          ],
+          "bounds_are_not_confidence_intervals": true,
+          "recorded_pair_audit": {
+            "input_prefix_matched": 860,
+            "base_action_prefix_matched": 860,
+            "logits_bitwise_equal": 860,
+            "state_unchanged": 860
+          },
+          "max_base_logit_delta": 0.0
+        }
+      },
+      "reference_sha256": "099f455f078e49f393b59d39a7318f4f7406cea9c68cc8e94ee3f92ad8b5c25f",
+      "candidate_sha256": "7f000bbaa79fd2e437d9f021d4ffde6c6872404b02fecc474c73a4e2c318d161"
+    }
+  ],
+  "validation": "Original sealed trace SHA256 checked during export. Recorded prefix/state flags are copied, not a new independent model/metric rerun.",
+  "scientific_scope": "Public exposed evaluation; final100k includes declared training-house overlaps. No blind-generalization or adoption claim.",
+  "omissions": [
+    "Raw RGB and scene/semantic assets",
+    "312 MB V20 FEATURES.pt",
+    "Base checkpoint/processor environment already indexed by original source locks",
+    "In-flight unsealed full traces, retained locally; partial attempt directories indexed here"
+  ],
+  "background_policy": "No service stopped, signaled, retrained, or polled continuously by this exporter. Existing autonomous pipelines and web monitor continue."
+}

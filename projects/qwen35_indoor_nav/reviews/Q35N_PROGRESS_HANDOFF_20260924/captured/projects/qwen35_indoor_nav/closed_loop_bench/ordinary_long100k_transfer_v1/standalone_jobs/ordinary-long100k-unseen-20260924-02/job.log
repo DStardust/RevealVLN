@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_long100k_transfer_v1/pipeline.py", line 109, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_long100k_transfer_v1/pipeline.py", line 91, in main
+    phase='UNSEEN';evaluate(phase);result=u.read(run/'UNSEEN/REVIEW.json')
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_long100k_transfer_v1/pipeline.py", line 80, in evaluate
+    poll(active);r=review.main(stage);assert r['complete_pairs']==cfg['eval_counts'][tag]
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/closed_loop_bench/ordinary_long100k_transfer_v1/pipeline.py", line 61, in poll
+    d=disk.measure(run);artifact=d['bytes'];u.append(run/'DISK_MEASUREMENTS.jsonl',d);last_disk=time.monotonic()
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_coverage_v15/runtime_r2/disk.py", line 7, in measure
+    if time.monotonic()-began>timeout:raise TimeoutError('DISK_SCAN_DEADLINE')
+TimeoutError: DISK_SCAN_DEADLINE

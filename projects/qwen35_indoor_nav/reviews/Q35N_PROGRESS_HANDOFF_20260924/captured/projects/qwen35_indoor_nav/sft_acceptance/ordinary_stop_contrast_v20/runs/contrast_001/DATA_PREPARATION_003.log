@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "physical_trajectories": 640,
+    "decisions": 52192,
+    "actual_successful_terminal_stops": 401,
+    "unique_negative_opportunities_within_trajectory": 31639
+  },
+  "unique_features": 37645,
+  "feature_width": 2048,
+  "fit": {
+    "feature_nearest": {
+      "n": 321,
+      "reference_terminal_rank_fraction": 0.940809968847352,
+      "mean_cosine": 0.7399997677758475,
+      "near_boundary_count": 109
+    },
+    "reference_hardest": {
+      "n": 321,
+      "reference_terminal_rank_fraction": 0.6915887850467289,
+      "mean_cosine": 0.6615858671264113,
+      "near_boundary_count": 119
+    },
+    "boundary_nearest": {
+      "n": 321,
+      "reference_terminal_rank_fraction": 0.9190031152647975,
+      "mean_cosine": 0.6265707440279726,
+      "near_boundary_count": 321
+    }
+  },
+  "diagnostic": {
+    "feature_nearest": {
+      "n": 80,
+      "reference_terminal_rank_fraction": 0.875,
+      "mean_cosine": 0.7427075304090976,
+      "near_boundary_count": 37
+    },
+    "reference_hardest": {
+      "n": 80,
+      "reference_terminal_rank_fraction": 0.6875,
+      "mean_cosine": 0.6707603249698877,
+      "near_boundary_count": 34
+    },
+    "boundary_nearest": {
+      "n": 80,
+      "reference_terminal_rank_fraction": 0.9125,
+      "mean_cosine": 0.6509297773241997,
+      "near_boundary_count": 80
+    }
+  },
+  "input_contract": "Original instruction + latest two RGB224 + latest eight executed actions. No distance, progress, route id, future feature in policy.",
+  "diagnostic_exposure": "Eight diagnostic houses were previously used in V15-V19 development. Not an independent generalization test.",
+  "teacher_and_policy_shared": true,
+  "recovery64_used": false,
+  "collision_does_not_change_original_public_stop_label": true
+}
