@@ -1,0 +1,16 @@
+{
+  "reference": {
+    "any_false_stop": 0.453125,
+    "verified_terminal_stop_recall": 0.5875,
+    "has_positive_weight": 0.625,
+    "scope": "fixed observed training trajectories; not counterfactual navigation success"
+  },
+  "candidate": {
+    "any_false_stop": 0.453125,
+    "verified_terminal_stop_recall": 0.6875,
+    "has_positive_weight": 0.625,
+    "scope": "fixed observed training trajectories; not counterfactual navigation success"
+  },
+  "rule": "terminal recall >=90% of reference and observed-trajectory false STOP rate not increased; 8 calibration houses only; no DEV/UNSEEN selection",
+  "admitted": true
+}

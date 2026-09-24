@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE_FIT_SANITY_NOT_ADMITTED",
+  "gpu_hours": 0,
+  "sanity": {
+    "reference": {
+      "any_false_stop": 0.4578125,
+      "verified_terminal_stop_recall": 0.598503740648379,
+      "has_positive_weight": 0.6265625000000001,
+      "scope": "fixed observed training trajectories; not counterfactual navigation success"
+    },
+    "candidate": {
+      "any_false_stop": 0.6421875,
+      "verified_terminal_stop_recall": 0.8453865336658352,
+      "has_positive_weight": 0.6265625000000001,
+      "scope": "fixed observed training trajectories; not counterfactual navigation success"
+    },
+    "rule": "terminal recall >=90% of reference and observed-trajectory false STOP rate not increased; FIT only",
+    "admitted": false
+  },
+  "closed_loop_benefit": null
+}

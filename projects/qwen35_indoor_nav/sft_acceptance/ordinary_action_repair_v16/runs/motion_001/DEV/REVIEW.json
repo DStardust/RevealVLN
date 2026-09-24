@@ -1,0 +1,115 @@
+{
+  "status": "VALID_COMPLETE",
+  "phase": "DEV",
+  "complete_pairs": 100,
+  "planned_pairs": 100,
+  "missing_ranks": [],
+  "arms": {
+    "A": {
+      "successes": 16.0,
+      "complete": 100,
+      "planned": 100,
+      "sr": 0.16,
+      "partial_sr": 0.16,
+      "identification_bounds": [
+        0.16,
+        0.16
+      ],
+      "spl": 0.15319122933801124,
+      "ndtw": 0.44002952650356586,
+      "osr": 0.21,
+      "decisions": 7583,
+      "collisions": 4427,
+      "failures": {
+        "stopped_without_reaching_goal": 70,
+        "entered_goal_but_no_successful_stop": 5,
+        "budget_exhausted_without_reaching_goal": 9,
+        "success": 16
+      }
+    },
+    "B": {
+      "successes": 13.0,
+      "complete": 100,
+      "planned": 100,
+      "sr": 0.13,
+      "partial_sr": 0.13,
+      "identification_bounds": [
+        0.13,
+        0.13
+      ],
+      "spl": 0.1290341680681213,
+      "ndtw": 0.44785372612920393,
+      "osr": 0.17,
+      "decisions": 9773,
+      "collisions": 5863,
+      "failures": {
+        "stopped_without_reaching_goal": 69,
+        "entered_goal_but_no_successful_stop": 4,
+        "budget_exhausted_without_reaching_goal": 14,
+        "success": 13
+      }
+    }
+  },
+  "wins": [
+    2213,
+    7331,
+    4568,
+    4487,
+    677,
+    3377
+  ],
+  "losses": [
+    5093,
+    1838,
+    8981,
+    1763,
+    7994,
+    196,
+    4451,
+    921,
+    7781
+  ],
+  "delta_sr": -0.03,
+  "houses": [
+    {
+      "house": "82sE5b5pLXE",
+      "complete": 25,
+      "A": 4.0,
+      "B": 0.0,
+      "delta_sr": -0.16
+    },
+    {
+      "house": "B6ByNegPMKs",
+      "complete": 25,
+      "A": 3.0,
+      "B": 4.0,
+      "delta_sr": 0.04
+    },
+    {
+      "house": "PuKPg4mmafe",
+      "complete": 19,
+      "A": 1.0,
+      "B": 3.0,
+      "delta_sr": 0.10526315789473684
+    },
+    {
+      "house": "XcA2TqTSSAj",
+      "complete": 6,
+      "A": 1.0,
+      "B": 1.0,
+      "delta_sr": 0.0
+    },
+    {
+      "house": "aayBHfsNo7d",
+      "complete": 25,
+      "A": 7.0,
+      "B": 5.0,
+      "delta_sr": -0.08
+    }
+  ],
+  "max_base_logit_delta": 0.0,
+  "logits_bitwise_equal": true,
+  "reference": "V15_STOP_ONLY",
+  "candidate": "V16_STOP_AND_MOTION",
+  "adoption": "NOT_AUTOMATICALLY_ADOPTED"
+}

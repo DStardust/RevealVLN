@@ -1,0 +1,74 @@
+{
+  "adjustment": {
+    "bias_reduction": 0.6477645499801635,
+    "order_statistic_threshold": 0.6477545499801636,
+    "reference_risk_budget": 0.453125,
+    "candidate_risk_before": 0.6640625,
+    "calibration_trajectories": 128,
+    "numerical_tie_reserve": 1e-05,
+    "method": "weighted order statistic; no trajectory replay or threshold grid"
+  },
+  "before": {
+    "any_false_stop": 0.6640625,
+    "verified_terminal_stop_recall": 0.8875,
+    "has_positive_weight": 0.625,
+    "scope": "fixed observed training trajectories; not counterfactual navigation success"
+  },
+  "after": {
+    "any_false_stop": 0.453125,
+    "verified_terminal_stop_recall": 0.6875,
+    "has_positive_weight": 0.625,
+    "scope": "fixed observed training trajectories; not counterfactual navigation success"
+  },
+  "fit_houses": [
+    "JeFG25nYj2p",
+    "jh4fc5c5qoQ",
+    "JmbYfDe2QKZ",
+    "2n8kARJN3HM",
+    "sKLMLpTHeUy",
+    "ac26ZMwG7aT",
+    "gTV8FGcVJC9",
+    "ur6pFq6Qu1A",
+    "8WUmhLawc2A",
+    "D7G3Y4RVNrH",
+    "E9uDoFAP3SH",
+    "sT4fr6TAbpF",
+    "EDJbREhghzL",
+    "D7N2EKCX4Sj",
+    "p5wJjkQkbXX",
+    "uNb9QFRL6hY",
+    "Vvot9Ly1tCj",
+    "dhjEzFoUFzH",
+    "pRbA3pwrgk9",
+    "VzqfbhrpDEA",
+    "i5noydFURQK",
+    "r1Q1Z4BcV1o",
+    "b8cTxDM8gDG",
+    "JF19kD82Mey",
+    "759xd9YjKW5",
+    "vyrNrziPKCB",
+    "mJXqzFtmKg4",
+    "29hnd4uzFmX",
+    "5LpN3gDmAk7",
+    "qoiz87JEwZ2",
+    "r47D5H71a5s",
+    "5q7pvUzZiYa"
+  ],
+  "calibration_houses": [
+    "rPc6DW4iMge",
+    "VVfe2KiqLaN",
+    "s8pcmisQ38h",
+    "17DRP5sb8fy",
+    "Pm6F8kyY3z2",
+    "kEZ7cmS4wCh",
+    "VLzqgDo317F",
+    "PX4nDJXEHrG"
+  ],
+  "reference": {
+    "any_false_stop": 0.453125,
+    "verified_terminal_stop_recall": 0.5875,
+    "has_positive_weight": 0.625,
+    "scope": "fixed observed training trajectories; not counterfactual navigation success"
+  },
+  "no_refit_on_calibration_houses": true
+}

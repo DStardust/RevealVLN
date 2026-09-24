@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_survival_v17/pipeline.py", line 118, in <module>
+    if __name__=='__main__':main()
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_survival_v17/pipeline.py", line 92, in main
+    phase='DEV';evaluate(phase);dev=u.read(run/'DEV/REVIEW.json')
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_survival_v17/pipeline.py", line 80, in evaluate
+    poll(active);r=review.main(stage);assert r['complete_pairs']==cfg['eval_counts'][tag]
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_survival_v17/pipeline.py", line 67, in poll
+    status(**extra);u.append(run/'RESOURCES.jsonl',u.read(run/'STATUS.json'));time.sleep(10)
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_survival_v17/pipeline.py", line 29, in interrupt
+    def interrupt(s,f):raise InterruptedError('SIGNAL_'+str(s))
+InterruptedError: SIGNAL_15

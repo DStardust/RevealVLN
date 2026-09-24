@@ -1,0 +1,34 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Q35N · V19 STOP风险修复</title>
+<style>body{background:#101722;color:#e9eef7;font:16px system-ui;max-width:1100px;margin:30px auto;padding:0 16px}section{background:#1b2635;padding:20px;border-radius:12px;margin:18px 0}h1,h2{margin:5px 0 14px}small{color:#adc0d5}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:8px;border-bottom:1px solid #344052}progress{width:100%;height:24px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}.good{color:#83deb0}</style>
+<h1>V19 · 终点证据与误停风险修复</h1><small id="clock">正在读取…</small><section id="survival"></section><section id="live"></section><section id="overall"></section><section id="collect"></section><section id="eval"></section><section id="motion"></section><section id="long"></section><section><h2>当前工作进程</h2><pre id="sessions"></pre></section>
+<script>
+const pct=x=>x==null?'待评测':(100*x).toFixed(2)+'%';const esc=x=>String(x??'').replaceAll('&','&amp;').replaceAll('<','&lt;');
+async function refresh(){try{let r=await fetch('/api/status',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);let v=await r.json(),s=v.status,c=v.collection;
+document.getElementById('clock').textContent='每10秒自动刷新 · '+new Date(v.unix*1000).toLocaleString();
+let q=v.survival,qs=q.status,qt=q.training;
+let qh='<h2>当前：V19 · '+esc(qs.phase||'准备')+' · '+esc(qs.status||'尚未启动')+'</h2>';
+qh+='<p>冻结V13运动输出，仅修复STOP损失。GPU会话小时：'+Number(qs.gpu_hours||0).toFixed(2)+'</p><p>'+esc(qs.reason||'真实训练 → DEV100；有SR收益且SPL不降才进入完整unseen1839')+'</p>';
+qh+='<p>训练：'+esc(qt.mode||qt.status||'待开始')+'，loss计算 '+(qt.closure||0)+' 次；最近步骤心跳：'+(q.live.last_worker_update_seconds??'尚无评测步骤')+' 秒；当前阶段已封存 '+q.live.sealed_pairs+' 对。</p><table><tr><th>配对集</th><th>指标分母</th><th>V13 A</th><th>V19 B</th><th>ΔSR</th></tr>';
+for(let k of ['DEV','UNSEEN']){let x=q[k];qh+='<tr><td>'+k+'</td><td>'+(x?.complete_pairs||0)+' / '+(k==='DEV'?100:1839)+'</td><td>'+pct(x?.arms?.A?.partial_sr)+'</td><td>'+pct(x?.arms?.B?.partial_sr)+'</td><td>'+pct(x?.delta_sr)+'</td></tr>'}
+qh+='</table>';if(q.unseen_not_run)qh+='<p>DEV未通过预注册推进门槛，本轮已结束，未运行新的完整unseen。</p>';qh+='<small>下面V15/V16是保留的旧完整失败结果。训练损失改善不是SR收益。</small>';document.getElementById('survival').innerHTML=qh;
+let liveText='<h2>实时工作进度（独立于指标汇总）</h2>';
+for (let key of ['V15','V16']) {
+ let x=v.live[key],when=x.last_worker_update_seconds;
+ liveText+='<p><b>'+key+' · '+esc(x.phase)+'</b>：'+(when==null?'等待前置阶段或尚无评测进程':('最近步骤写入 '+when+' 秒前；当前阶段已封存 '+x.sealed_pairs+' 对'))+'</p>';
+ if(x.metric_snapshot_age_seconds!=null)liveText+='<small>下方SR表对应 '+x.metric_snapshot_age_seconds+' 秒前的汇总。封存计数不直接替换该表的指标分母。</small>';
+}
+liveText+='<p>V16等待V15完成时不会使用GPU。总览指标可能因磁盘统计延后；请同时看这里的步骤心跳和已封存数。</p>';document.getElementById('live').innerHTML=liveText;
+document.getElementById('overall').innerHTML='<h2>'+esc(s.phase||'准备')+' · '+esc(s.status||'尚未启动')+'</h2><p>本轮 GPU 会话小时：'+Number(s.gpu_hours||0).toFixed(2)+'</p><p>'+esc(s.reason||'采集640条 → STOP行训练 → 开发100对 → 完整unseen 1839对')+'</p><small>当前保留V13：旧开发集25%。V14仍为25%，未采用。新候选收益需看本轮独立完整比较。</small>';
+document.getElementById('collect').innerHTML='<h2>新训练数据 '+c.complete+' / '+c.planned+' 条已封存</h2><progress value="'+c.complete+'" max="640"></progress><p>40个训练房屋，320条指令 × V13策略/真实路线教师。已执行 '+c.decisions+' 次决策；合法STOP监督正例 '+c.stop_positive_observations+' 个；教师无法继续 '+c.teacher_unavailable+' 条。</p><small>教师中断计入采集尝试，仅使用已有真实观测，不算导航成功。</small>';
+let e='<h2>闭环 SR：两个分母分别报告</h2><table><tr><th>数据集</th><th>完整对数</th><th>V13 A</th><th>候选 B</th><th>ΔSR</th></tr>';
+for(let k of ['DEV','UNSEEN']){let x=v[k],n=k==='DEV'?100:1839;e+='<tr><td>'+k+'</td><td>'+(x?.complete_pairs||0)+' / '+n+'</td><td>'+pct(x?.arms?.A?.partial_sr)+'</td><td>'+pct(x?.arms?.B?.partial_sr)+'</td><td>'+pct(x?.delta_sr)+'</td></tr>'}e+='</table><p>未完成时显示的是已完成配对的部分SR，不是全分母结果。unseen是已暴露公开验证集。</p>';document.getElementById('eval').innerHTML=e;
+let m=v.motion,ms=m.status,mt=m.training,rr=m.recovery;
+let mh='<h2>V16 运动监督 · '+esc(ms.phase||'等待启动')+' · '+esc(ms.status||'未启动')+'</h2><p>GPU 会话小时：'+Number(ms.gpu_hours||0).toFixed(2)+'</p><p>'+esc(ms.reason||'等待V15训练 → 四动作输出层训练 → 等待V15评测结束 → DEV100 → unseen1839 → 独立恢复采集')+'</p>';
+mh+='<p>训练：'+esc(mt.mode||mt.status||'待开始')+'；优化器损失计算 '+(mt.closure||0)+' 次；loss '+(mt.loss??'—')+'</p><table><tr><th>配对集</th><th>完整对数</th><th>V15 STOP-only</th><th>V16 STOP+motion</th><th>ΔSR</th></tr>';
+for(let k of ['DEV','UNSEEN']){let x=m[k];mh+='<tr><td>'+k+'</td><td>'+(x?.complete_pairs||0)+' / '+(k==='DEV'?100:1839)+'</td><td>'+pct(x?.arms?.A?.partial_sr)+'</td><td>'+pct(x?.arms?.B?.partial_sr)+'</td><td>'+pct(x?.delta_sr)+'</td></tr>'}
+mh+='</table><p>另行恢复轨迹：'+rr.complete+' / '+(rr.planned??'最多64')+'。这是训练数据采集，不是策略成功率，未进入本次对照训练。</p><small>两个对照分开呈现。真实闭环结果出来前不宣称SR提升。</small>';document.getElementById('motion').innerHTML=mh;
+let l=v.long_training,p=l.progress,ht='<h2>既有扩展记忆训练 '+(p.step||l.status.training?.step||0)+' / 100000</h2><progress value="'+(p.step||l.status.training?.step||0)+'" max="100000"></progress><p>'+esc(l.status.status)+' · 每5000步独立评测</p><table><tr><th>checkpoint</th><th>条件完成</th><th>主任务</th><th>控制任务</th></tr>';
+for(let x of l.checkpoints){if(!x.saved&&!x.complete)continue;ht+='<tr><td>'+x.step+'</td><td>'+x.complete+' / '+x.planned+'</td><td>'+(x.main?x.main.passed+'/'+x.main.planned:'待完成')+'</td><td>'+(x.control?x.control.passed+'/'+x.control.planned:'待完成')+'</td></tr>'}document.getElementById('long').innerHTML=ht+'</table>';
+document.getElementById('sessions').textContent=JSON.stringify({V15:v.sessions,V16:v.motion.sessions},null,2);
+}catch(e){document.getElementById('clock').textContent='读取失败，将自动重试：'+e.message}}refresh();setInterval(refresh,10000);
+</script></html>

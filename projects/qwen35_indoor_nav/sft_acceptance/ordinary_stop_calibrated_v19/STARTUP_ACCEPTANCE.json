@@ -1,0 +1,170 @@
+{
+  "unix": 1790210842.0073478,
+  "status": {
+    "status": "RUNNING",
+    "phase": "DEV",
+    "unix": 1790210833.5125113,
+    "gpu_hours": 0.31466650277906516,
+    "workers": [
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 1,
+          "gpu_uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8"
+        },
+        "elapsed": 160.66638766694814,
+        "rss_bytes": 21256126464,
+        "device": {
+          "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 5876,
+          "free_mib": 26234,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 2,
+          "gpu_uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2"
+        },
+        "elapsed": 160.6970628206618,
+        "rss_bytes": 23305637888,
+        "device": {
+          "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 6934,
+          "free_mib": 25176,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 3,
+          "gpu_uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a"
+        },
+        "elapsed": 160.7242270130664,
+        "rss_bytes": 21722222592,
+        "device": {
+          "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 8288,
+          "free_mib": 23822,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 4,
+          "gpu_uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11"
+        },
+        "elapsed": 160.75872550718486,
+        "rss_bytes": 18918649856,
+        "device": {
+          "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 5996,
+          "free_mib": 26114,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 5,
+          "gpu_uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b"
+        },
+        "elapsed": 160.78934912802652,
+        "rss_bytes": 21208920064,
+        "device": {
+          "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 5532,
+          "free_mib": 26578,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 6,
+          "gpu_uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490"
+        },
+        "elapsed": 160.81916174199432,
+        "rss_bytes": 21618585600,
+        "device": {
+          "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 7460,
+          "free_mib": 24650,
+          "driver": "580.126.09"
+        }
+      },
+      {
+        "role": "evaluate",
+        "gpu": {
+          "gpu": 7,
+          "gpu_uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3"
+        },
+        "elapsed": 160.84713918995112,
+        "rss_bytes": 21241139200,
+        "device": {
+          "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+          "name": "NVIDIA GeForce RTX 5090",
+          "total_mib": 32607,
+          "used_mib": 5676,
+          "free_mib": 26434,
+          "driver": "580.126.09"
+        }
+      }
+    ],
+    "artifact_bytes": 54470,
+    "complete": 23,
+    "planned": 100
+  },
+  "model_sessions_loaded": 7,
+  "service": {
+    "status": "RUNNING",
+    "pid": 2873739,
+    "ppid": 1,
+    "started_unix": 1790210639.63332,
+    "cgroup": "0::/system.slice/q35n-ordinary-calibrated19-20260924-01.service\n",
+    "command": [
+      "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+      "-I",
+      "-S",
+      "-B",
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/sft_acceptance/ordinary_stop_calibrated_v19/pipeline.py",
+      "--run-id",
+      "calibrated_001"
+    ],
+    "unit": "q35n-ordinary-calibrated19-20260924-01.service",
+    "child_pid": 2873740
+  },
+  "stdin": "/dev/null",
+  "monitor_api_ok": true,
+  "calibration": {
+    "reference": {
+      "any_false_stop": 0.453125,
+      "verified_terminal_stop_recall": 0.5875,
+      "has_positive_weight": 0.625,
+      "scope": "fixed observed training trajectories; not counterfactual navigation success"
+    },
+    "candidate": {
+      "any_false_stop": 0.453125,
+      "verified_terminal_stop_recall": 0.6875,
+      "has_positive_weight": 0.625,
+      "scope": "fixed observed training trajectories; not counterfactual navigation success"
+    },
+    "rule": "terminal recall >=90% of reference and observed-trajectory false STOP rate not increased; 8 calibration houses only; no DEV/UNSEEN selection",
+    "admitted": true
+  }
+}
