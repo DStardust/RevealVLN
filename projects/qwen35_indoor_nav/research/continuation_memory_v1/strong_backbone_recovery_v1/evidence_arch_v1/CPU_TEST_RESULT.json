@@ -1,0 +1,42 @@
+{
+  "status": "PASSED",
+  "contract_tests": 6,
+  "failures": [],
+  "errors": [],
+  "real_train_cache_probe": {
+    "cache": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/preservation_runs/preserve_001/capture/evaluation/gpu0_1790267109485382385/episodes/0/CACHE.pt",
+    "cache_sha256": "e10bbec3b4a3e369a587dd38d10aedb017a0c5b8d4f58d6b4a51bb0a523a162c",
+    "episode_id": 7790,
+    "house": "82sE5b5pLXE",
+    "partition": "OFFICIAL_TRAIN/FIT",
+    "train_source": "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/ETP-R1/data/datasets/R2R_VLNCE_v1-3_preprocessed_xlmr/train/train.json.gz",
+    "train_source_sha256": "b6d356deff70d54050d45bc5ace0071e3d404b3ff8f68f528c625906f6b24662",
+    "feature_width": 3584,
+    "causal_steps": 80,
+    "queries": 20,
+    "cpu_debug_updates": 2,
+    "losses": [
+      0.06968562304973602,
+      0.06967148184776306
+    ],
+    "writer_gradient_norms": [
+      0.0,
+      0.0001726169284665957
+    ],
+    "parameters_changed": true,
+    "total_parameters": 2891655,
+    "base_model_loaded": false,
+    "gpu_hours": 0,
+    "trained_weights_saved": false,
+    "scope": "Forward/backward/update engineering smoke, not method training or efficacy"
+  },
+  "research_status": "UNTESTED",
+  "live_integration": "NOT_IMPLEMENTED",
+  "sr": null,
+  "source": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/evidence_arch_v1/model.py": "0476e55f28c19972aaf32e9218080e8c3534deb6dfbfcb13d881389d465144ec",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/evidence_arch_v1/test_model.py": "ab68ff5367767ffe7fa367618fc823b169a9fbfc3c622bd263b057d345ca7894",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/memory_v2.py": "ae8aeda18c8522bc744e2f618a1f32d3180be82da5b98b49fe9274a60ae2103c",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/common.py": "a71cedd8adba61c97fde1d379c3de82cf7bb7ade4bb25738101102f700267efc"
+  }
+}

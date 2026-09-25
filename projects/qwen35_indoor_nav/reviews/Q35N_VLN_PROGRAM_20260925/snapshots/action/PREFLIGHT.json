@@ -1,0 +1,59 @@
+{
+  "status": "READY",
+  "cpu_tests": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "passed": true
+  },
+  "probe_gpu_hours": 0.11469959742493101,
+  "attempts": [
+    {
+      "job": "strong-action-collect-probe-20260925-01",
+      "status": "FAILED",
+      "wall_seconds": 21.90444779396057
+    },
+    {
+      "job": "strong-action-collect-probe-20260925-02",
+      "status": "COMPLETE",
+      "wall_seconds": 33.13400483131409
+    },
+    {
+      "job": "strong-action-collect-probe-20260925-03",
+      "status": "COMPLETE",
+      "wall_seconds": 16.52284026145935
+    },
+    {
+      "job": "strong-action-feature-probe-20260925-01",
+      "status": "COMPLETE",
+      "wall_seconds": 128.67106819152832
+    },
+    {
+      "job": "strong-action-feature-probe-20260925-02",
+      "status": "COMPLETE",
+      "wall_seconds": 79.72818350791931
+    },
+    {
+      "job": "strong-action-eval-probe-20260925-01",
+      "status": "COMPLETE",
+      "wall_seconds": 132.95800614356995
+    }
+  ],
+  "actual_teacher_recoveries": 2,
+  "ordinary_success_replay": 1,
+  "actual_model_loaded": true,
+  "base_state_unchanged": true,
+  "actual_train_forward_backward_updates": 6,
+  "nonzero_live_residuals": {
+    "CONCAT": 0.022233979776501656,
+    "EVIDENCE": 0.0017508943565189838
+  },
+  "scope": "FIT interface and data probes only, not an unseen or method efficacy result",
+  "repairs": [
+    "Imported official OracleSuccess registry after first collection failure",
+    "Resolved CPU test module lookup",
+    "Matched training addition to actual FP32 generation scores; backbone remains BF16"
+  ],
+  "full_collection_started": false,
+  "formal_head_training_started": false
+}

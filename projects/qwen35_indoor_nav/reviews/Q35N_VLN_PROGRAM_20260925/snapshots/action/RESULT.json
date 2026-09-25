@@ -1,0 +1,272 @@
+{
+  "complete_groups": 200,
+  "planned_groups": 200,
+  "evaluation_complete": true,
+  "arms": {
+    "NATIVE": {
+      "complete": 200,
+      "planned": 200,
+      "successes": 112.0,
+      "sr": 0.56,
+      "identification_bounds": [
+        0.56,
+        0.56
+      ],
+      "spl": 0.5110596447511889,
+      "mean_steps": 80.245
+    },
+    "CONCAT": {
+      "complete": 200,
+      "planned": 200,
+      "successes": 116.0,
+      "sr": 0.58,
+      "identification_bounds": [
+        0.58,
+        0.58
+      ],
+      "spl": 0.5209661517137029,
+      "mean_steps": 75.63
+    },
+    "EVIDENCE": {
+      "complete": 200,
+      "planned": 200,
+      "successes": 111.0,
+      "sr": 0.555,
+      "identification_bounds": [
+        0.555,
+        0.555
+      ],
+      "spl": 0.512970489375403,
+      "mean_steps": 67.08
+    }
+  },
+  "paired": {
+    "CONCAT_vs_NATIVE": {
+      "wins": [
+        4,
+        168,
+        37,
+        39,
+        149,
+        95
+      ],
+      "losses": [
+        22,
+        74
+      ],
+      "delta_sr": 0.02
+    },
+    "EVIDENCE_vs_NATIVE": {
+      "wins": [
+        4,
+        30,
+        36,
+        37,
+        39,
+        89
+      ],
+      "losses": [
+        22,
+        53,
+        79,
+        195,
+        80,
+        120,
+        121
+      ],
+      "delta_sr": -0.005
+    },
+    "EVIDENCE_vs_CONCAT": {
+      "wins": [
+        30,
+        36,
+        74,
+        89
+      ],
+      "losses": [
+        168,
+        53,
+        149,
+        79,
+        195,
+        80,
+        95,
+        120,
+        121
+      ],
+      "delta_sr": -0.025
+    }
+  },
+  "by_house": {
+    "2azQ1b91cZZ": {
+      "NATIVE": {
+        "n": 29,
+        "successes": 12.0
+      },
+      "CONCAT": {
+        "n": 29,
+        "successes": 14.0
+      },
+      "EVIDENCE": {
+        "n": 29,
+        "successes": 11.0
+      }
+    },
+    "8194nk5LbLH": {
+      "NATIVE": {
+        "n": 5,
+        "successes": 1.0
+      },
+      "CONCAT": {
+        "n": 5,
+        "successes": 2.0
+      },
+      "EVIDENCE": {
+        "n": 5,
+        "successes": 3.0
+      }
+    },
+    "QUCTc6BB5sX": {
+      "NATIVE": {
+        "n": 30,
+        "successes": 14.0
+      },
+      "CONCAT": {
+        "n": 30,
+        "successes": 14.0
+      },
+      "EVIDENCE": {
+        "n": 30,
+        "successes": 12.0
+      }
+    },
+    "TbHJrupSAjP": {
+      "NATIVE": {
+        "n": 31,
+        "successes": 22.0
+      },
+      "CONCAT": {
+        "n": 31,
+        "successes": 22.0
+      },
+      "EVIDENCE": {
+        "n": 31,
+        "successes": 23.0
+      }
+    },
+    "X7HyMhZNoso": {
+      "NATIVE": {
+        "n": 16,
+        "successes": 12.0
+      },
+      "CONCAT": {
+        "n": 16,
+        "successes": 12.0
+      },
+      "EVIDENCE": {
+        "n": 16,
+        "successes": 12.0
+      }
+    },
+    "Z6MFQCViBuw": {
+      "NATIVE": {
+        "n": 19,
+        "successes": 11.0
+      },
+      "CONCAT": {
+        "n": 19,
+        "successes": 11.0
+      },
+      "EVIDENCE": {
+        "n": 19,
+        "successes": 10.0
+      }
+    },
+    "oLBMNvg9in8": {
+      "NATIVE": {
+        "n": 21,
+        "successes": 16.0
+      },
+      "CONCAT": {
+        "n": 21,
+        "successes": 16.0
+      },
+      "EVIDENCE": {
+        "n": 21,
+        "successes": 16.0
+      }
+    },
+    "pLe4wQe7qrG": {
+      "NATIVE": {
+        "n": 2,
+        "successes": 0.0
+      },
+      "CONCAT": {
+        "n": 2,
+        "successes": 0.0
+      },
+      "EVIDENCE": {
+        "n": 2,
+        "successes": 0.0
+      }
+    },
+    "x8F5xyUWy9e": {
+      "NATIVE": {
+        "n": 12,
+        "successes": 6.0
+      },
+      "CONCAT": {
+        "n": 12,
+        "successes": 6.0
+      },
+      "EVIDENCE": {
+        "n": 12,
+        "successes": 6.0
+      }
+    },
+    "zsNo4HB9uLZ": {
+      "NATIVE": {
+        "n": 35,
+        "successes": 18.0
+      },
+      "CONCAT": {
+        "n": 35,
+        "successes": 19.0
+      },
+      "EVIDENCE": {
+        "n": 35,
+        "successes": 18.0
+      }
+    }
+  },
+  "by_kind": {
+    "NATURAL": {
+      "NATIVE": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 112.0
+      },
+      "CONCAT": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 116.0
+      },
+      "EVIDENCE": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 111.0
+      }
+    }
+  },
+  "split": "OFFICIAL_VAL_UNSEEN_SUBSET",
+  "status": "COMPLETE",
+  "gpu_hours": 13.077162646585043,
+  "seed": 42,
+  "full_1839": false,
+  "exposed_unseen": true,
+  "old_heads_loaded": false,
+  "base_updates": 0,
+  "adopted": false,
+  "architecture_package": "attention + centered memory read",
+  "scope": "Shared data repair is not an EVIDENCE contribution; compare EVIDENCE vs CONCAT"
+}

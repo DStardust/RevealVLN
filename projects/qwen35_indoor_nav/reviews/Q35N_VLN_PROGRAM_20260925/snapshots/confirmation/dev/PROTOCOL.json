@@ -1,0 +1,197 @@
+{
+  "id": "RECOVERY_CONFIRMATION_V2",
+  "source_commit": "e48f6ff7e9201d93aae003e8f64b04c00cec13bc",
+  "expected_base_state_sha256": "f4c87d057e7d92293bb03a81fd2a8d0932db0c81c60c023bdf677d0d41a262d3",
+  "seed": 42,
+  "backbone": "mengwei0427/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "feature_width": 3584,
+  "memory_shape": [
+    8,
+    64
+  ],
+  "arms": [
+    "CONCAT",
+    "LOCAL"
+  ],
+  "heads": {
+    "CONCAT_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/CONCAT_s42/FINAL.pt",
+      "sha256": "e2602c18f2f50bdf88f523bbcacf434f4a61b3d1a0eeb4d84ef579d64566ccdf",
+      "architecture": "CONCAT",
+      "seed": 42
+    },
+    "LOCAL_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/LOCAL_s42/FINAL.pt",
+      "sha256": "e641b2b9f602051a0b8902ad78e9482c90c2a4fe322c1c3bdabf4e3bb082ee0a",
+      "architecture": "LOCAL",
+      "seed": 42
+    },
+    "CONCAT_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/CONCAT_s43/FINAL.pt",
+      "sha256": "7ff6aad2ae102d2993941c0437753554fec4cfbc414807880e906d7e73e3f7b3",
+      "architecture": "CONCAT",
+      "seed": 43
+    },
+    "LOCAL_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/LOCAL_s43/FINAL.pt",
+      "sha256": "7267d8726b135308611986daa149c0388b739cfb7402fa8d31529b5a12d9ba31",
+      "architecture": "LOCAL",
+      "seed": 43
+    },
+    "CONCAT_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/CONCAT_s44/FINAL.pt",
+      "sha256": "7ef8325bb79e72d981ea970b51eb27fbfefaeab9080d897c2627b5941cd1366d",
+      "architecture": "CONCAT",
+      "seed": 44
+    },
+    "LOCAL_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/LOCAL_s44/FINAL.pt",
+      "sha256": "e0f198dc1dfcac0eb5d3f93c377572d615248de627140dfb73441e180d827ff8",
+      "architecture": "LOCAL",
+      "seed": 44
+    }
+  },
+  "steps": 3000,
+  "checkpoint_every": 200,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "clip_grad_norm": 1.0
+  },
+  "objective": "recovery CE + .5*ordinary CE + 5*(ordinary KL + native margin)",
+  "recovery_class_weight": "inverse square root FIT action frequency, mean normalized",
+  "teacher": "Habitat ShortestPathFollower to registered goal, radius 1.8m, executed offline only",
+  "teacher_prefix": "Actual failed native history to last query <=64; RGB exact replay, no teleport",
+  "teacher_label_scope": "Goal-directed R2R recovery actions, not exact language-program labels",
+  "failed_teacher": "Recorded NOT_ADMITTED; no synthetic positive or negative labels",
+  "actor_boundary": "First real action after assistant header; unchanged native four-action decoding",
+  "runtime": "BF16 base, flash_attention_2; FP32 memory and generation scores/addition in training and live",
+  "gate": "NONE: improve action proposals first; existing gate is not trained or loaded",
+  "planned_collection": 334,
+  "planned_unseen": 200,
+  "planned_unseen_episodes": 1400,
+  "gpu_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "chunk_pairs": 8,
+  "gpu_session_hours_limit": 64,
+  "wall_hours_limit": 24,
+  "artifact_limit_gib": 32,
+  "automatic_score_retries": 0,
+  "phases": [
+    "TRAIN",
+    "DEV",
+    "UNSEEN",
+    "REVIEW"
+  ],
+  "independent_service": true,
+  "old_heads_loaded": false,
+  "base_updates": 0,
+  "unseen_exposed": true,
+  "full_1839": false,
+  "positive_result_required_for_continuation": false,
+  "primary_comparison": "CONCAT vs LOCAL within each seed; CONCAT vs NATIVE replication",
+  "limitations": [
+    "Exposed unseen200, not blind or full1839",
+    "Does not isolate data vs preservation loss contributions",
+    "Seed42 repeats the discovery seed; seeds43/44 test training variability on the same exposed episodes",
+    "Same stored parameters; LOCAL recurrent matrix is unused. History removal changes state dynamics/amplitude; improvement alone does not prove semantic long-range memory."
+  ],
+  "previous_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "models": {
+    "CONCAT_s42": {
+      "architecture": "CONCAT",
+      "seed": 42
+    },
+    "LOCAL_s42": {
+      "architecture": "LOCAL",
+      "seed": 42
+    },
+    "CONCAT_s43": {
+      "architecture": "CONCAT",
+      "seed": 43
+    },
+    "LOCAL_s43": {
+      "architecture": "LOCAL",
+      "seed": 43
+    },
+    "CONCAT_s44": {
+      "architecture": "CONCAT",
+      "seed": 44
+    },
+    "LOCAL_s44": {
+      "architecture": "LOCAL",
+      "seed": 44
+    }
+  },
+  "planned_dev_episodes": 448,
+  "architecture_package": "Same actor/writer; CONCAT recurrent integration versus LOCAL unit-gain tanh(writer(current))",
+  "interpretation": "LOCAL retains StreamVLN history; parameter storage matched, effective recurrence differs by design",
+  "selection": "Final step 3000, all seeds reported; no DEV/unseen checkpoint or hyperparameter selection",
+  "shared_source_files": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/data/POOLS.pt": "870eee375fb7a9bd9672e27f6566636e11b60d4621410315571ac32767a40830",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/data/ADMISSION.json": "3dd30332fdedd4d07b952a0af7189332212485c0986996920c5c0a6fbbbc8eac",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/42/ADMISSION.json": "543895a4de2855e5f057a666535392404283686c550285adda9668340bcf703e",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/42/INITIAL.pt": "37e4317bcd8459d860311898fb532fb05d3f22aaedcb63ad16a0b08650b1a20b",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/42/SCHEDULE.json": "61fb2f97ee65ee2acd93ac6781afe0828a242ef1961438f103cd9c05be1e4186",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/43/ADMISSION.json": "8d1d81f2c2f019da02a86a910403cbc335bd047ee959aa5066a7e49cad568ddd",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/43/INITIAL.pt": "fb180d70fea775b32166b3a792985efcf1c4b390a43565238fc571b8cc39aab3",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/43/SCHEDULE.json": "6a4e27040f8479d23a3b6a9ad3db981b6154cb25136b6add7854e39007844a0c",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/44/ADMISSION.json": "14e204f6cf347ee32960850476f3caec695038cacbe93c74105ab7fa4c83dd88",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/44/INITIAL.pt": "1b5fe3418f4b7890fd3c4ba01679d2c02fa1beeb5d7aa1965ebc0c275d31954a",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/data/44/SCHEDULE.json": "54eb876bcdd6ad3e8a6f8c85703545b8218761e157b59bc6b07b50fd8ec9d976",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/DATA_MANIFEST.json": "1a3bb4f67c2f1f1bf02de29460c7e529078d4799518103fc9491f1b73678b5d6",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/PROTOCOL.json": "de0d8a113446d6ef2daac815e295afb21ab23133a556266b4964d6c9291ffaa0",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/unseen/DATA_MANIFEST.json": "f6ccf348a3d70fbb7c385b39309f87af0b94dca7e0a3ecf1ee875eed550b5eeb",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/unseen/PROTOCOL.json": "06d3a659cdc41d3fe470876ce38dc5a62cb0bbb506f54c4d047d74648dccd220",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/103.json": "f33c7b8ea2f923b275713a93f3768736466265537f62c9ec7ab31e114cf76f48",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/104.json": "f33c7b8ea2f923b275713a93f3768736466265537f62c9ec7ab31e114cf76f48",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/117.json": "140782dede8a35ba9e3e7465047f9c990629730736f3b0488f666ca185c8576f",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/118.json": "66bd2507614601eb95402f725175086430f9cb8d6ee60b0a0465de8357928233",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/119.json": "66bd2507614601eb95402f725175086430f9cb8d6ee60b0a0465de8357928233",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/124.json": "c9b1bf8fb3c2225898510d5aac978b45c9f94277e8cbd686e84e7eb2fbf89a18",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/129.json": "07a440041896f43709355cece5247feb8b9271e914c5c5686a09f408409f68f8",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/130.json": "7fdd21a03e018e48a03db8a42d46e6021f89a2d97963ed1d63c046190c81c834",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/141.json": "1ba74ae384ab54c7faf8b47b260e47f1fe84ea9859a9f003cf9b13c4c8056407",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/142.json": "b197df5def1d4484a86705a7c819e2adcfc2e1338911c09601713485102e5e5f",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/143.json": "143c3033c1f9ed3f94a46769a4f50552380a32dbd258c0ba4902ed7c3d0e99c7",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/152.json": "8be5b4ba39434abfe23dceaf72c7f2e9360f7c38fb7464ad1043722736dbca60",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/158.json": "8972c7ce62e11ec512f576eb9ec1198c9b1b1719063df5c2d4de0a545846a246",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/167.json": "b4628a1d3bc2642d72472e03bb6d198c3954987d531867fb1060d70e56c92c76",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/173.json": "3db0545b24670f0e6e59e1575fcb78cb568ea64a5eb42bad5f47d15d3c0cac33",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/18.json": "f98a783ad1aec73cfdf2bfc3026add0edd24124ba646329d3b96a04a6f4b24b1",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/33.json": "37da67f58aa0e8d9c207cc50db027711ce1582db0840f2caa50bbf2c0a92ceaf",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/34.json": "d95ee73c37a8dfb60f1bbe8bc90f529325f217b57f04f82cb9f9073c59a4d129",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/35.json": "d95ee73c37a8dfb60f1bbe8bc90f529325f217b57f04f82cb9f9073c59a4d129",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/43.json": "5e19b7a3121681ebac2dbc2ae193ff0ef556bbde90100b836b720421bab5924a",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/48.json": "7acea011f32173964cd3bc72299ecab0e2b2fb1817ded0ff714a71d0d61bca87",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/53.json": "0bbc24f813cc5464d54637e2b9e809418b6745b7e66a0c508c1dc561e11dcbcf",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/54.json": "2e3f28c70681e98503bf36a696cc5120728abe3c71376a411dddd200b475d933",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/66.json": "e2c90af55dca0956f9e55ac74469058252cdded34f8987cc6526095d77b67b21",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/67.json": "8c810a709d04243d3ef9f4e65ebc105922bb41e20b2d8ca1eec6fc6add8821a4",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/68.json": "ad397006edbd5d1208221bfbce3f5d5a987df78432de0bc4bf86460fe9826868",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/79.json": "4a13462e8e75032fb53d6d29ac2be6cb83ed1a9f31c08e165e7e1e4641755a86",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/8.json": "bbd84ad9bbcc92a1a56bdc08ee6af6e7042adba1331069526421d46ca92ba933",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/87.json": "25d412519f5b1516fd8ea2fe03dae52ff0fb13ccb96e83003d4c81ecdf875578",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/95.json": "aaf5a3c2c68cda091550561ef51e367b3a67872b6554f15852bcdf074935276e",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/96.json": "2adf19eaa45d0ea91a6114d79a9b0f12a837f1fa93d4a9f92de5b56ed55e82fc",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/dev/prefixes/97.json": "61edb751a19f11819c0d02f5ea6340af04b1154e54f3a1a35033ec88cf01aa76"
+  },
+  "local_equation": "m_t = tanh(writer(norm(x_t))); old additional memory is not read. Unit gain avoids 0.01 attenuation of a reset-only control.",
+  "planned_groups": 64,
+  "split": "OFFICIAL_TRAIN_DEV_RECOVERY_AND_PRESERVATION",
+  "capture_only": false
+}

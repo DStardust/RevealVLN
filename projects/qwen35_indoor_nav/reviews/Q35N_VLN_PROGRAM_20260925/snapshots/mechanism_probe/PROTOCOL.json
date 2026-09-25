@@ -1,0 +1,38 @@
+{
+  "source_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001",
+  "source_protocol_sha256": "e711503ad61deccd51969a984490e730db4b8583bc2bbccb1df4f0b076889ff8",
+  "pool_sha256": "870eee375fb7a9bd9672e27f6566636e11b60d4621410315571ac32767a40830",
+  "models": {
+    "CONCAT_s42": {
+      "architecture": "CONCAT",
+      "seed": 42
+    },
+    "LOCAL_s42": {
+      "architecture": "LOCAL",
+      "seed": 42
+    },
+    "CONCAT_s43": {
+      "architecture": "CONCAT",
+      "seed": 43
+    },
+    "LOCAL_s43": {
+      "architecture": "LOCAL",
+      "seed": 43
+    },
+    "CONCAT_s44": {
+      "architecture": "CONCAT",
+      "seed": 44
+    },
+    "LOCAL_s44": {
+      "architecture": "LOCAL",
+      "seed": 44
+    }
+  },
+  "rows": 64,
+  "planned_model_rows": 384,
+  "gpu_use": false,
+  "supervised_scope": "Recorded DEV teacher recovery and native preservation trajectories; not autonomous unseen",
+  "intervention": "Set added readout memory to zero, keep recorded actor features/base logits/input sequence fixed",
+  "limitation": "Zeroing may be out of distribution; neither feature accuracy nor input gradients imply navigation SR gains",
+  "selection": "All six registered models and all64 DEV rows; no hyperparameter/weight updates"
+}

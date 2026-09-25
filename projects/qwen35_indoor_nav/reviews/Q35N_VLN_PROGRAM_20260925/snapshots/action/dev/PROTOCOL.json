@@ -1,0 +1,84 @@
+{
+  "id": "TRAIN_RECOVERY_ACTION_ARCH_V1",
+  "source_commit": "e48f6ff7e9201d93aae003e8f64b04c00cec13bc",
+  "expected_base_state_sha256": "f4c87d057e7d92293bb03a81fd2a8d0932db0c81c60c023bdf677d0d41a262d3",
+  "seed": 42,
+  "backbone": "mengwei0427/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "feature_width": 3584,
+  "memory_shape": [
+    8,
+    64
+  ],
+  "arms": [
+    "CONCAT",
+    "EVIDENCE"
+  ],
+  "heads": {
+    "CONCAT": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/training/CONCAT/FINAL.pt",
+      "sha256": "ac198520bc0d2e89d0278603d332c7ae494b2afcc9adc377397e850a60e88751"
+    },
+    "EVIDENCE": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/training/EVIDENCE/FINAL.pt",
+      "sha256": "1aa7e08461d0cdea4b38ef25aff71dadc542051354067d7b5d5598fbf9971540"
+    }
+  },
+  "steps": 3000,
+  "checkpoint_every": 200,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "clip_grad_norm": 1.0
+  },
+  "objective": "recovery CE + .5*ordinary CE + 5*(ordinary KL + native margin)",
+  "recovery_class_weight": "inverse square root FIT action frequency, mean normalized",
+  "teacher": "Habitat ShortestPathFollower to registered goal, radius 1.8m, executed offline only",
+  "teacher_prefix": "Actual failed native history to last query <=64; RGB exact replay, no teleport",
+  "teacher_label_scope": "Goal-directed R2R recovery actions, not exact language-program labels",
+  "failed_teacher": "Recorded NOT_ADMITTED; no synthetic positive or negative labels",
+  "actor_boundary": "First real action after assistant header; unchanged native four-action decoding",
+  "runtime": "BF16 base, flash_attention_2; FP32 memory and generation scores/addition in training and live",
+  "gate": "NONE: improve action proposals first; existing gate is not trained or loaded",
+  "planned_collection": 334,
+  "planned_unseen": 200,
+  "planned_unseen_episodes": 600,
+  "gpu_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "chunk_pairs": 16,
+  "gpu_session_hours_limit": 64,
+  "wall_hours_limit": 24,
+  "artifact_limit_gib": 32,
+  "automatic_score_retries": 0,
+  "phases": [
+    "COLLECT",
+    "FEATURES",
+    "TRAIN",
+    "DEV",
+    "UNSEEN",
+    "REVIEW"
+  ],
+  "independent_service": true,
+  "old_heads_loaded": false,
+  "base_updates": 0,
+  "unseen_exposed": true,
+  "full_1839": false,
+  "positive_result_required_for_continuation": false,
+  "primary_comparison": "EVIDENCE vs CONCAT, paired SR; also each vs same-run NATIVE",
+  "limitations": [
+    "Single seed engineering pilot, not a paper conclusion",
+    "Architecture package comparison does not isolate attention and centering",
+    "Shared recovery data effect is not the architecture contribution"
+  ],
+  "planned_groups": 64,
+  "split": "OFFICIAL_TRAIN_DEV_RECOVERY_AND_PRESERVATION",
+  "capture_only": false
+}

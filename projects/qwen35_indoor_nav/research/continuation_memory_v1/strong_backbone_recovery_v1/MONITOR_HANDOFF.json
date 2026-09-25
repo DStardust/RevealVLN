@@ -1,0 +1,50 @@
+{
+  "url": "http://127.0.0.1:18770/",
+  "service": "q35n-strong-confirm-monitor-20260925-01.service",
+  "method_service": "q35n-strong-method-20260924-01.service",
+  "checks": [
+    {
+      "path": "/",
+      "http": 200,
+      "bytes": 26606
+    },
+    {
+      "path": "/api/confirmation",
+      "http": 200,
+      "bytes": 5614
+    },
+    {
+      "path": "/api/recovery_action",
+      "http": 200,
+      "bytes": 5980
+    },
+    {
+      "path": "/api/intervention_v2",
+      "http": 200,
+      "bytes": 21589
+    }
+  ],
+  "old_training_and_evaluation_services_untouched": true,
+  "unseen_service": "q35n-strong-unseen-20260924-01.service",
+  "method_review": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/method_runs/pilot_001/review_recovery_001/ACTION_REVIEW.json",
+  "api_verified": true,
+  "transfer_service": "q35n-strong-transfer-20260924-01.service",
+  "transfer_api": "/api/transfer",
+  "transfer_diagnosis": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/postrun_interface_001/DIAGNOSIS.json",
+  "repair_service": "q35n-strong-action-repair-20260924-01.service",
+  "repair_api": "/api/repair",
+  "preservation_service": "q35n-strong-preserve-20260925-01.service",
+  "preservation_api": "/api/preservation",
+  "intervention_service": "q35n-strong-intervention-20260925-01.service",
+  "intervention_api": "/api/intervention",
+  "intervention_v2_service": "q35n-strong-intervention-async-20260925-01.service",
+  "intervention_v2_api": "/api/intervention_v2",
+  "previous_intervention_v2_service": "q35n-strong-intervention-recovery2-20260925-01.service",
+  "scheduling_amendment": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/intervention_v2/runs/recovery_001/SCHEDULER_AMENDMENT.json",
+  "recovery_action_api": "/api/recovery_action",
+  "recovery_action_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001",
+  "recovery_action_service": "q35n-strong-action-architecture-20260925-01.service",
+  "confirmation_service": "q35n-strong-confirmation-20260925-01.service",
+  "confirmation_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001",
+  "confirmation_api": "/api/confirmation"
+}
