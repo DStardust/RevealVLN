@@ -1,0 +1,109 @@
+{
+  "data_scope": "OLD_QUERY_ONLY_CPU_SMOKE",
+  "pool_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/data/POOLS.pt",
+  "pool_sha256": "870eee375fb7a9bd9672e27f6566636e11b60d4621410315571ac32767a40830",
+  "real_fit_rows": [
+    {
+      "id": 0,
+      "kind": "RECOVERY",
+      "partition": "FIT",
+      "house": "ac26ZMwG7aT",
+      "physical_observations": 117,
+      "actor_queries": 30,
+      "supervised_queries": 14,
+      "unknown_queries": 16,
+      "missing_actor_positions": 87,
+      "trajectory": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/collect/probe_002/episodes/0/TRAJECTORY.json",
+      "trajectory_sha256": "fc2b1be24888b4857febc7838230fb548744e5d92013978978a6188fa3261de3"
+    },
+    {
+      "id": 174,
+      "kind": "PRESERVATION",
+      "partition": "FIT",
+      "house": "b8cTxDM8gDG",
+      "physical_observations": 39,
+      "actor_queries": 10,
+      "supervised_queries": 10,
+      "unknown_queries": 0,
+      "missing_actor_positions": 29,
+      "trajectory": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/collect/probe_003/episodes/174/TRAJECTORY.json",
+      "trajectory_sha256": "535725754cf70f55030f3dfc5291d46fa3f54085ec2c5d8f53d0442fe25356f6"
+    }
+  ],
+  "original_initial_sha256": "37e4317bcd8459d860311898fb532fb05d3f22aaedcb63ad16a0b08650b1a20b",
+  "base_loaded": false,
+  "base_updates": 0,
+  "gpu_used": false,
+  "cpu_threads": 2,
+  "dev_or_unseen_tensor_rows_used": 0,
+  "navigation_efficacy_measured": false,
+  "input_hash_change_rejected": true,
+  "dev_and_unknown_mask_rejections": true,
+  "resume": {
+    "CURRENT": {
+      "uninterrupted_steps": 3,
+      "resumed_steps": [
+        1,
+        2
+      ],
+      "model_optimizer_rng_exact": true,
+      "final_receipt_recovered_without_update": true,
+      "final_writer_gradients": {
+        "writer.weight": 0.00021766548161394894,
+        "change_writer.weight": 0.00012537615839391947,
+        "executed_action.weight": 3.198216973032686e-06
+      },
+      "changed_parameters": [
+        "writer.weight",
+        "writer.bias",
+        "recurrent.weight",
+        "actor.0.weight",
+        "actor.0.bias",
+        "actor.2.weight",
+        "actor.2.bias",
+        "change_writer.weight",
+        "executed_action.weight"
+      ]
+    },
+    "DELTA": {
+      "uninterrupted_steps": 3,
+      "resumed_steps": [
+        1,
+        2
+      ],
+      "model_optimizer_rng_exact": true,
+      "final_receipt_recovered_without_update": true,
+      "final_writer_gradients": {
+        "writer.weight": 0.00024212434072978795,
+        "change_writer.weight": 9.03347972780466e-06,
+        "executed_action.weight": 3.5645377920445753e-06
+      },
+      "changed_parameters": [
+        "writer.weight",
+        "writer.bias",
+        "recurrent.weight",
+        "actor.0.weight",
+        "actor.0.bias",
+        "actor.2.weight",
+        "actor.2.bias",
+        "change_writer.weight",
+        "executed_action.weight"
+      ]
+    }
+  },
+  "actual_optimizer_steps": 12,
+  "shared_initialization_equal": true,
+  "parameters_per_arm": 4695688,
+  "unknown_label_loss_and_gradient_invariant": true,
+  "passed": true,
+  "tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 22.757091108243912,
+  "source_sha256": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/test_training.py": "635ca07785f104ded2b30d10c09ac677b359636e630d49e0e4eca5fd7b49f6a8",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/train.py": "9407619c9e9457400c19619d5eab566eddaaa57fa504d24f545ad94b36862124",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/model.py": "2f0f148812824b69fe326d00719b571644848c5eb5c1459b9c237eb140cc4072",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/data.py": "93ee067d66ba794080e8189a4bb89d866cbf6e4d58cdfc4c1fe9da6b01e77dac"
+  }
+}

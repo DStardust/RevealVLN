@@ -1,0 +1,20 @@
+{
+  "manifest_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/DATA_MANIFEST.json",
+  "manifest_sha256": "e9b55139ba6d678e57e9dc541566fbc40af72b293fb17c347fc963288066c032",
+  "groups": 369,
+  "split": "val_unseen",
+  "arms": [
+    "NATIVE",
+    "CURRENT_s42",
+    "DELTA_s42",
+    "CURRENT_s43",
+    "DELTA_s43",
+    "CURRENT_s44",
+    "DELTA_s44"
+  ],
+  "planned_executions": 2583,
+  "selection": "All existing V4 registered routes, no score reads or post-result filtering",
+  "exposed": true,
+  "no_dev_substitution": true,
+  "scope": "New data/head comparison; implementation readiness only, no trained heads or navigation result yet"
+}
