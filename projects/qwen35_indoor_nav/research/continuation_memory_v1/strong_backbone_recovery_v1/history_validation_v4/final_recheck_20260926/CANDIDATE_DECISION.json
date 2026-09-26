@@ -1,0 +1,27 @@
+{
+  "status": "RETAINED_ENGINEERING_CANDIDATE",
+  "user_clarification": "Keep the positive candidate; lack of automatic adoption is not a permanent rejection.",
+  "continue_development": true,
+  "retain_frozen_heads": true,
+  "retain_as_future_reference": true,
+  "deployment_or_scientific_validation_completed": false,
+  "old_result_rewritten": false,
+  "measured_scope": "369 exposed val_unseen route families, three seeds, same frozen base",
+  "evidence": {
+    "mean_delta_sr_pp": 0.27100271002710025,
+    "seeds_above_native": 2,
+    "seeds_above_matched_local": 3,
+    "rescued_per_seed": [
+      14,
+      13,
+      11
+    ],
+    "regressions_per_seed": [
+      11,
+      11,
+      13
+    ]
+  },
+  "future_decision": "Reduce regressions and test the registered data/architecture changes on unseen; keep the existing candidate if replacements do not improve the supported tradeoff.",
+  "caveat": "Do not substitute old scores for a fresh same-process paired comparator when making a new causal claim."
+}

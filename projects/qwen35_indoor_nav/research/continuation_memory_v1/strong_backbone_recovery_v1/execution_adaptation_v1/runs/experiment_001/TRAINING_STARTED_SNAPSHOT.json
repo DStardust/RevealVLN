@@ -1,0 +1,393 @@
+{
+  "status": "RUNNING",
+  "phase": "TRAIN",
+  "planned_models": 6,
+  "planned_steps": 3000,
+  "planned_groups": 369,
+  "planned_executions": 2583,
+  "unix": 1790399793.6692672,
+  "phase_gpu_hours": {
+    "TRAIN": 0.49943559931384196,
+    "EVALUATE": 0.0
+  },
+  "gpu_hours": 0.49943559931384196,
+  "complete_models": [],
+  "sealed_groups": 0,
+  "recorded_groups": 0,
+  "models": {
+    "CURRENT_s42": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.5166420936584473,
+      "ordinary_ce": 0.04945778474211693,
+      "ordinary_kl": 0.001344411983154714,
+      "ordinary_margin": 0.0002547761832829565,
+      "recovery_tokens": 92,
+      "ordinary_tokens": 92,
+      "recovery_accuracy": 0.8695652484893799,
+      "ordinary_agreement": 1.0,
+      "step": 2040,
+      "loss": 0.5493669509887695,
+      "gradient_norm": 2.0448544025421143,
+      "writer_gradients": {
+        "writer.weight": 0.005120179615914822,
+        "change_writer.weight": 0.0029133185744285583,
+        "executed_action.weight": 6.892829696880654e-05
+      },
+      "schedule": [
+        39,
+        236
+      ],
+      "wall_seconds": 287.21166372299194
+    },
+    "DELTA_s42": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.49275797605514526,
+      "ordinary_ce": 0.04137149453163147,
+      "ordinary_kl": 0.0014971860218793154,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 1,
+      "ordinary_tokens": 42,
+      "recovery_accuracy": 1.0,
+      "ordinary_agreement": 1.0,
+      "step": 2000,
+      "loss": 0.5209296345710754,
+      "gradient_norm": 11.651223182678223,
+      "writer_gradients": {
+        "writer.weight": 0.04664138704538345,
+        "change_writer.weight": 0.004446872044354677,
+        "executed_action.weight": 0.0005603372119367123
+      },
+      "schedule": [
+        115,
+        194
+      ],
+      "wall_seconds": 287.2887644767761
+    },
+    "CURRENT_s43": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.6018505096435547,
+      "ordinary_ce": 0.3471410870552063,
+      "ordinary_kl": 0.03779526799917221,
+      "ordinary_margin": 0.03208847716450691,
+      "recovery_tokens": 78,
+      "ordinary_tokens": 68,
+      "recovery_accuracy": 0.8333333730697632,
+      "ordinary_agreement": 0.9705882668495178,
+      "step": 2080,
+      "loss": 1.1248397827148438,
+      "gradient_norm": 4.560728549957275,
+      "writer_gradients": {
+        "writer.weight": 0.01311702374368906,
+        "change_writer.weight": 0.0075403968803584576,
+        "executed_action.weight": 0.000171387437148951
+      },
+      "schedule": [
+        157,
+        273
+      ],
+      "wall_seconds": 286.84016251564026
+    },
+    "DELTA_s43": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.6602464318275452,
+      "ordinary_ce": 0.2142099291086197,
+      "ordinary_kl": 0.018217861652374268,
+      "ordinary_margin": 0.014785428531467915,
+      "recovery_tokens": 90,
+      "ordinary_tokens": 79,
+      "recovery_accuracy": 0.7444444894790649,
+      "ordinary_agreement": 0.9873418211936951,
+      "step": 1970,
+      "loss": 0.9323678016662598,
+      "gradient_norm": 3.0326414108276367,
+      "writer_gradients": {
+        "writer.weight": 0.010344678536057472,
+        "change_writer.weight": 0.0009892958914861083,
+        "executed_action.weight": 0.00016786869673524052
+      },
+      "schedule": [
+        144,
+        254
+      ],
+      "wall_seconds": 287.15588569641113
+    },
+    "CURRENT_s44": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.3219136893749237,
+      "ordinary_ce": 0.103765107691288,
+      "ordinary_kl": 0.0010845245560631156,
+      "ordinary_margin": 0.001534024951979518,
+      "recovery_tokens": 19,
+      "ordinary_tokens": 48,
+      "recovery_accuracy": 0.7894737124443054,
+      "ordinary_agreement": 0.9791666865348816,
+      "step": 2130,
+      "loss": 0.3868890106678009,
+      "gradient_norm": 5.409424781799316,
+      "writer_gradients": {
+        "writer.weight": 0.003899827366694808,
+        "change_writer.weight": 0.002239119028672576,
+        "executed_action.weight": 5.3222898714011535e-05
+      },
+      "schedule": [
+        1,
+        289
+      ],
+      "wall_seconds": 287.11874866485596
+    },
+    "DELTA_s44": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.061244990676641464,
+      "ordinary_ce": 0.04826870933175087,
+      "ordinary_kl": 0.0009127251687459648,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 1,
+      "ordinary_tokens": 31,
+      "recovery_accuracy": 1.0,
+      "ordinary_agreement": 1.0,
+      "step": 2040,
+      "loss": 0.08994297683238983,
+      "gradient_norm": 0.9636588096618652,
+      "writer_gradients": {
+        "writer.weight": 0.04303634911775589,
+        "change_writer.weight": 0.001597663969732821,
+        "executed_action.weight": 0.0005491591873578727
+      },
+      "schedule": [
+        61,
+        230
+      ],
+      "wall_seconds": 287.52377676963806
+    }
+  },
+  "workers": [
+    {
+      "pid": 79565,
+      "gpu": 0,
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s42",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.5166420936584473,
+        "ordinary_ce": 0.04945778474211693,
+        "ordinary_kl": 0.001344411983154714,
+        "ordinary_margin": 0.0002547761832829565,
+        "recovery_tokens": 92,
+        "ordinary_tokens": 92,
+        "recovery_accuracy": 0.8695652484893799,
+        "ordinary_agreement": 1.0,
+        "step": 2040,
+        "loss": 0.5493669509887695,
+        "gradient_norm": 2.0448544025421143,
+        "writer_gradients": {
+          "writer.weight": 0.005120179615914822,
+          "change_writer.weight": 0.0029133185744285583,
+          "executed_action.weight": 6.892829696880654e-05
+        },
+        "schedule": [
+          39,
+          236
+        ],
+        "wall_seconds": 287.21166372299194
+      }
+    },
+    {
+      "pid": 79568,
+      "gpu": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s42",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.49275797605514526,
+        "ordinary_ce": 0.04137149453163147,
+        "ordinary_kl": 0.0014971860218793154,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 1,
+        "ordinary_tokens": 42,
+        "recovery_accuracy": 1.0,
+        "ordinary_agreement": 1.0,
+        "step": 2000,
+        "loss": 0.5209296345710754,
+        "gradient_norm": 11.651223182678223,
+        "writer_gradients": {
+          "writer.weight": 0.04664138704538345,
+          "change_writer.weight": 0.004446872044354677,
+          "executed_action.weight": 0.0005603372119367123
+        },
+        "schedule": [
+          115,
+          194
+        ],
+        "wall_seconds": 287.2887644767761
+      }
+    },
+    {
+      "pid": 79571,
+      "gpu": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s43",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.6018505096435547,
+        "ordinary_ce": 0.3471410870552063,
+        "ordinary_kl": 0.03779526799917221,
+        "ordinary_margin": 0.03208847716450691,
+        "recovery_tokens": 78,
+        "ordinary_tokens": 68,
+        "recovery_accuracy": 0.8333333730697632,
+        "ordinary_agreement": 0.9705882668495178,
+        "step": 2080,
+        "loss": 1.1248397827148438,
+        "gradient_norm": 4.560728549957275,
+        "writer_gradients": {
+          "writer.weight": 0.01311702374368906,
+          "change_writer.weight": 0.0075403968803584576,
+          "executed_action.weight": 0.000171387437148951
+        },
+        "schedule": [
+          157,
+          273
+        ],
+        "wall_seconds": 286.84016251564026
+      }
+    },
+    {
+      "pid": 79574,
+      "gpu": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s43",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.6602464318275452,
+        "ordinary_ce": 0.2142099291086197,
+        "ordinary_kl": 0.018217861652374268,
+        "ordinary_margin": 0.014785428531467915,
+        "recovery_tokens": 90,
+        "ordinary_tokens": 79,
+        "recovery_accuracy": 0.7444444894790649,
+        "ordinary_agreement": 0.9873418211936951,
+        "step": 1970,
+        "loss": 0.9323678016662598,
+        "gradient_norm": 3.0326414108276367,
+        "writer_gradients": {
+          "writer.weight": 0.010344678536057472,
+          "change_writer.weight": 0.0009892958914861083,
+          "executed_action.weight": 0.00016786869673524052
+        },
+        "schedule": [
+          144,
+          254
+        ],
+        "wall_seconds": 287.15588569641113
+      }
+    },
+    {
+      "pid": 79577,
+      "gpu": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s44",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.3219136893749237,
+        "ordinary_ce": 0.103765107691288,
+        "ordinary_kl": 0.0010845245560631156,
+        "ordinary_margin": 0.001534024951979518,
+        "recovery_tokens": 19,
+        "ordinary_tokens": 48,
+        "recovery_accuracy": 0.7894737124443054,
+        "ordinary_agreement": 0.9791666865348816,
+        "step": 2130,
+        "loss": 0.3868890106678009,
+        "gradient_norm": 5.409424781799316,
+        "writer_gradients": {
+          "writer.weight": 0.003899827366694808,
+          "change_writer.weight": 0.002239119028672576,
+          "executed_action.weight": 5.3222898714011535e-05
+        },
+        "schedule": [
+          1,
+          289
+        ],
+        "wall_seconds": 287.11874866485596
+      }
+    },
+    {
+      "pid": 79580,
+      "gpu": 5,
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s44",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.061244990676641464,
+        "ordinary_ce": 0.04826870933175087,
+        "ordinary_kl": 0.0009127251687459648,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 1,
+        "ordinary_tokens": 31,
+        "recovery_accuracy": 1.0,
+        "ordinary_agreement": 1.0,
+        "step": 2040,
+        "loss": 0.08994297683238983,
+        "gradient_norm": 0.9636588096618652,
+        "writer_gradients": {
+          "writer.weight": 0.04303634911775589,
+          "change_writer.weight": 0.001597663969732821,
+          "executed_action.weight": 0.0005491591873578727
+        },
+        "schedule": [
+          61,
+          230
+        ],
+        "wall_seconds": 287.52377676963806
+      }
+    }
+  ],
+  "worker_rss_bytes": 15437328384,
+  "gpu_inventory": {
+    "0": {
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "free_mib": 30696
+    },
+    "1": {
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "free_mib": 30696
+    },
+    "2": {
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "free_mib": 30696
+    },
+    "3": {
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "free_mib": 30696
+    },
+    "4": {
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "free_mib": 30696
+    },
+    "5": {
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "free_mib": 30696
+    },
+    "6": {
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "free_mib": 32106
+    },
+    "7": {
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "free_mib": 32106
+    }
+  },
+  "artifact_bytes": 3005740020
+}

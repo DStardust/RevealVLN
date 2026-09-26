@@ -1,0 +1,79 @@
+{
+  "status": "COMPLETE",
+  "coverage": {
+    "status": "COMPLETE",
+    "totals": {
+      "planned_queries": 7211,
+      "planned_missing_actor_positions": 21396,
+      "planned_missing_stop_positions": 133,
+      "planned_trajectories": 334,
+      "admitted_trajectories": 334,
+      "captured_queries": 7211,
+      "captured_missing_actor_positions": 21396,
+      "captured_missing_stop_positions": 133,
+      "remaining_missing_actor_positions": 0,
+      "remaining_missing_stop_positions": 0
+    },
+    "by_split_kind": {
+      "DEV:PRESERVATION": {
+        "planned_queries": 431,
+        "planned_missing_actor_positions": 1254,
+        "planned_missing_stop_positions": 31,
+        "planned_trajectories": 32,
+        "admitted_trajectories": 32,
+        "captured_queries": 431,
+        "captured_missing_actor_positions": 1254,
+        "captured_missing_stop_positions": 31,
+        "remaining_missing_actor_positions": 0,
+        "remaining_missing_stop_positions": 0
+      },
+      "DEV:RECOVERY": {
+        "planned_queries": 955,
+        "planned_missing_actor_positions": 2845,
+        "planned_missing_stop_positions": 0,
+        "planned_trajectories": 32,
+        "admitted_trajectories": 32,
+        "captured_queries": 955,
+        "captured_missing_actor_positions": 2845,
+        "captured_missing_stop_positions": 0,
+        "remaining_missing_actor_positions": 0,
+        "remaining_missing_stop_positions": 0
+      },
+      "FIT:PRESERVATION": {
+        "planned_queries": 1973,
+        "planned_missing_actor_positions": 5828,
+        "planned_missing_stop_positions": 102,
+        "planned_trajectories": 128,
+        "admitted_trajectories": 128,
+        "captured_queries": 1973,
+        "captured_missing_actor_positions": 5828,
+        "captured_missing_stop_positions": 102,
+        "remaining_missing_actor_positions": 0,
+        "remaining_missing_stop_positions": 0
+      },
+      "FIT:RECOVERY": {
+        "planned_queries": 3852,
+        "planned_missing_actor_positions": 11469,
+        "planned_missing_stop_positions": 0,
+        "planned_trajectories": 142,
+        "admitted_trajectories": 142,
+        "captured_queries": 3852,
+        "captured_missing_actor_positions": 11469,
+        "captured_missing_stop_positions": 0,
+        "remaining_missing_actor_positions": 0,
+        "remaining_missing_stop_positions": 0
+      }
+    },
+    "missing_trajectory_ids": [],
+    "no_new_training_admission": true
+  },
+  "trajectories": 334,
+  "actor_rows": 28859,
+  "gpu_hours": 3.8382485397656754,
+  "base_updates": 0,
+  "optimizer_updates": 0,
+  "navigation_sr_measured": false,
+  "new_independent_routes": 0,
+  "training_admission": false,
+  "meaning": "Actual all-token feature coverage; training/deployment all-token residual is a later common change."
+}
