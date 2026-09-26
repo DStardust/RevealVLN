@@ -1,0 +1,1478 @@
+{
+  "status": "COMPLETE",
+  "evaluation_complete": true,
+  "planned_groups": 80,
+  "complete_groups": 80,
+  "planned_executions": 1040,
+  "arms": {
+    "NATIVE": {
+      "successes": 43.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.5375,
+      "sr_identification_bounds": [
+        0.5375,
+        0.5375
+      ],
+      "spl": 0.475227928705576,
+      "mean_steps": 94.8625
+    },
+    "CURRENT_ALL_s42": {
+      "successes": 40.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.5,
+      "sr_identification_bounds": [
+        0.5,
+        0.5
+      ],
+      "spl": 0.40290966674905426,
+      "mean_steps": 133.675
+    },
+    "CURRENT_FIRST_s42": {
+      "successes": 43.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.5375,
+      "sr_identification_bounds": [
+        0.5375,
+        0.5375
+      ],
+      "spl": 0.4641795094522694,
+      "mean_steps": 93.525
+    },
+    "DELTA_ALL_s42": {
+      "successes": 38.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.475,
+      "sr_identification_bounds": [
+        0.475,
+        0.475
+      ],
+      "spl": 0.39386792970178536,
+      "mean_steps": 124.475
+    },
+    "DELTA_FIRST_s42": {
+      "successes": 46.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.575,
+      "sr_identification_bounds": [
+        0.575,
+        0.575
+      ],
+      "spl": 0.49025030449323337,
+      "mean_steps": 90.275
+    },
+    "CURRENT_ALL_s43": {
+      "successes": 33.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.4125,
+      "sr_identification_bounds": [
+        0.4125,
+        0.4125
+      ],
+      "spl": 0.36254187605555405,
+      "mean_steps": 131.6
+    },
+    "CURRENT_FIRST_s43": {
+      "successes": 42.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.525,
+      "sr_identification_bounds": [
+        0.525,
+        0.525
+      ],
+      "spl": 0.4455052050070594,
+      "mean_steps": 88.825
+    },
+    "DELTA_ALL_s43": {
+      "successes": 37.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.4625,
+      "sr_identification_bounds": [
+        0.4625,
+        0.4625
+      ],
+      "spl": 0.40755577438246765,
+      "mean_steps": 110.75
+    },
+    "DELTA_FIRST_s43": {
+      "successes": 44.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.55,
+      "sr_identification_bounds": [
+        0.55,
+        0.55
+      ],
+      "spl": 0.4688206360786974,
+      "mean_steps": 80.875
+    },
+    "CURRENT_ALL_s44": {
+      "successes": 37.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.4625,
+      "sr_identification_bounds": [
+        0.4625,
+        0.4625
+      ],
+      "spl": 0.40116964589474496,
+      "mean_steps": 130.8
+    },
+    "CURRENT_FIRST_s44": {
+      "successes": 47.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.5875,
+      "sr_identification_bounds": [
+        0.5875,
+        0.5875
+      ],
+      "spl": 0.5024203927615445,
+      "mean_steps": 85.6875
+    },
+    "DELTA_ALL_s44": {
+      "successes": 38.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.475,
+      "sr_identification_bounds": [
+        0.475,
+        0.475
+      ],
+      "spl": 0.41418118067885606,
+      "mean_steps": 145.35
+    },
+    "DELTA_FIRST_s44": {
+      "successes": 42.0,
+      "complete": 80,
+      "planned": 80,
+      "sr": 0.525,
+      "sr_identification_bounds": [
+        0.525,
+        0.525
+      ],
+      "spl": 0.458250439881609,
+      "mean_steps": 87.375
+    }
+  },
+  "paired": {
+    "CURRENT_FIRST_minus_ALL_s42": {
+      "reference": "CURRENT_ALL_s42",
+      "candidate": "CURRENT_FIRST_s42",
+      "wins": [
+        261,
+        27,
+        308,
+        50,
+        357,
+        216,
+        32,
+        243,
+        11,
+        224,
+        332
+      ],
+      "losses": [
+        171,
+        20,
+        164,
+        21,
+        63,
+        80,
+        108,
+        236
+      ],
+      "delta_sr": 0.0375,
+      "difference_identification_bounds": [
+        0.0375,
+        0.0375
+      ]
+    },
+    "DELTA_FIRST_minus_ALL_s42": {
+      "reference": "DELTA_ALL_s42",
+      "candidate": "DELTA_FIRST_s42",
+      "wins": [
+        125,
+        41,
+        261,
+        357,
+        213,
+        216,
+        32,
+        186,
+        243,
+        11,
+        224,
+        332,
+        267,
+        68
+      ],
+      "losses": [
+        20,
+        112,
+        166,
+        17,
+        63,
+        80
+      ],
+      "delta_sr": 0.1,
+      "difference_identification_bounds": [
+        0.1,
+        0.1
+      ]
+    },
+    "DELTA_minus_CURRENT_ALL_s42": {
+      "reference": "CURRENT_ALL_s42",
+      "candidate": "DELTA_ALL_s42",
+      "wins": [
+        27,
+        308,
+        50,
+        112,
+        166,
+        17
+      ],
+      "losses": [
+        125,
+        171,
+        164,
+        21,
+        213,
+        186,
+        267,
+        236
+      ],
+      "delta_sr": -0.025,
+      "difference_identification_bounds": [
+        -0.025,
+        -0.025
+      ]
+    },
+    "DELTA_minus_CURRENT_FIRST_s42": {
+      "reference": "CURRENT_FIRST_s42",
+      "candidate": "DELTA_FIRST_s42",
+      "wins": [
+        41,
+        108,
+        68
+      ],
+      "losses": [],
+      "delta_sr": 0.0375,
+      "difference_identification_bounds": [
+        0.0375,
+        0.0375
+      ]
+    },
+    "CURRENT_FIRST_minus_ALL_s43": {
+      "reference": "CURRENT_ALL_s43",
+      "candidate": "CURRENT_FIRST_s43",
+      "wins": [
+        125,
+        41,
+        105,
+        27,
+        308,
+        357,
+        186,
+        191,
+        255,
+        224,
+        267,
+        108,
+        68
+      ],
+      "losses": [
+        20,
+        156,
+        28,
+        80
+      ],
+      "delta_sr": 0.1125,
+      "difference_identification_bounds": [
+        0.1125,
+        0.1125
+      ]
+    },
+    "DELTA_FIRST_minus_ALL_s43": {
+      "reference": "DELTA_ALL_s43",
+      "candidate": "DELTA_FIRST_s43",
+      "wins": [
+        125,
+        41,
+        221,
+        105,
+        27,
+        357,
+        32,
+        191,
+        255,
+        224,
+        332,
+        267,
+        108,
+        68
+      ],
+      "losses": [
+        20,
+        166,
+        147,
+        156,
+        63,
+        80,
+        90
+      ],
+      "delta_sr": 0.0875,
+      "difference_identification_bounds": [
+        0.0875,
+        0.0875
+      ]
+    },
+    "DELTA_minus_CURRENT_ALL_s43": {
+      "reference": "CURRENT_ALL_s43",
+      "candidate": "DELTA_ALL_s43",
+      "wins": [
+        144,
+        308,
+        166,
+        147,
+        186,
+        63,
+        90
+      ],
+      "losses": [
+        221,
+        28,
+        332
+      ],
+      "delta_sr": 0.05,
+      "difference_identification_bounds": [
+        0.05,
+        0.05
+      ]
+    },
+    "DELTA_minus_CURRENT_FIRST_s43": {
+      "reference": "CURRENT_FIRST_s43",
+      "candidate": "DELTA_FIRST_s43",
+      "wins": [
+        144,
+        32
+      ],
+      "losses": [],
+      "delta_sr": 0.025,
+      "difference_identification_bounds": [
+        0.025,
+        0.025
+      ]
+    },
+    "CURRENT_FIRST_minus_ALL_s44": {
+      "reference": "CURRENT_ALL_s44",
+      "candidate": "CURRENT_FIRST_s44",
+      "wins": [
+        125,
+        261,
+        221,
+        341,
+        59,
+        308,
+        357,
+        216,
+        186,
+        243,
+        255,
+        224,
+        332,
+        267,
+        31,
+        68
+      ],
+      "losses": [
+        41,
+        283,
+        112,
+        17,
+        80,
+        90
+      ],
+      "delta_sr": 0.125,
+      "difference_identification_bounds": [
+        0.125,
+        0.125
+      ]
+    },
+    "DELTA_FIRST_minus_ALL_s44": {
+      "reference": "DELTA_ALL_s44",
+      "candidate": "DELTA_FIRST_s44",
+      "wins": [
+        125,
+        341,
+        27,
+        308,
+        357,
+        216,
+        186,
+        7,
+        255,
+        28,
+        332,
+        267
+      ],
+      "losses": [
+        261,
+        283,
+        164,
+        21,
+        112,
+        17,
+        80,
+        90
+      ],
+      "delta_sr": 0.05,
+      "difference_identification_bounds": [
+        0.05,
+        0.05
+      ]
+    },
+    "DELTA_minus_CURRENT_ALL_s44": {
+      "reference": "CURRENT_ALL_s44",
+      "candidate": "DELTA_ALL_s44",
+      "wins": [
+        261,
+        221,
+        164,
+        21,
+        243,
+        224
+      ],
+      "losses": [
+        41,
+        27,
+        32,
+        7,
+        108
+      ],
+      "delta_sr": 0.0125,
+      "difference_identification_bounds": [
+        0.0125,
+        0.0125
+      ]
+    },
+    "DELTA_minus_CURRENT_FIRST_s44": {
+      "reference": "CURRENT_FIRST_s44",
+      "candidate": "DELTA_FIRST_s44",
+      "wins": [
+        28
+      ],
+      "losses": [
+        261,
+        59,
+        32,
+        108,
+        31,
+        68
+      ],
+      "delta_sr": -0.0625,
+      "difference_identification_bounds": [
+        -0.0625,
+        -0.0625
+      ]
+    },
+    "CURRENT_ALL_s42_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "CURRENT_ALL_s42",
+      "wins": [
+        171,
+        20,
+        164,
+        21,
+        80,
+        108,
+        236
+      ],
+      "losses": [
+        41,
+        261,
+        27,
+        308,
+        357,
+        216,
+        243,
+        11,
+        224,
+        332
+      ],
+      "delta_sr": -0.0375,
+      "difference_identification_bounds": [
+        -0.0375,
+        -0.0375
+      ]
+    },
+    "CURRENT_FIRST_s42_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "CURRENT_FIRST_s42",
+      "wins": [
+        50,
+        32
+      ],
+      "losses": [
+        41,
+        63
+      ],
+      "delta_sr": 0.0,
+      "difference_identification_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "DELTA_ALL_s42_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "DELTA_ALL_s42",
+      "wins": [
+        20,
+        50,
+        112,
+        166,
+        17,
+        80,
+        108
+      ],
+      "losses": [
+        125,
+        41,
+        261,
+        357,
+        213,
+        216,
+        186,
+        243,
+        11,
+        224,
+        332,
+        267
+      ],
+      "delta_sr": -0.0625,
+      "difference_identification_bounds": [
+        -0.0625,
+        -0.0625
+      ]
+    },
+    "DELTA_FIRST_s42_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "DELTA_FIRST_s42",
+      "wins": [
+        50,
+        32,
+        108,
+        68
+      ],
+      "losses": [
+        63
+      ],
+      "delta_sr": 0.0375,
+      "difference_identification_bounds": [
+        0.0375,
+        0.0375
+      ]
+    },
+    "CURRENT_ALL_s43_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "CURRENT_ALL_s43",
+      "wins": [
+        20,
+        50,
+        156,
+        28,
+        80
+      ],
+      "losses": [
+        125,
+        41,
+        105,
+        144,
+        27,
+        308,
+        252,
+        357,
+        216,
+        186,
+        191,
+        255,
+        224,
+        63,
+        267
+      ],
+      "delta_sr": -0.125,
+      "difference_identification_bounds": [
+        -0.125,
+        -0.125
+      ]
+    },
+    "CURRENT_FIRST_s43_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "CURRENT_FIRST_s43",
+      "wins": [
+        50,
+        108,
+        68
+      ],
+      "losses": [
+        144,
+        252,
+        216,
+        63
+      ],
+      "delta_sr": -0.0125,
+      "difference_identification_bounds": [
+        -0.0125,
+        -0.0125
+      ]
+    },
+    "DELTA_ALL_s43_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "DELTA_ALL_s43",
+      "wins": [
+        20,
+        50,
+        166,
+        147,
+        156,
+        80,
+        90
+      ],
+      "losses": [
+        125,
+        41,
+        221,
+        105,
+        27,
+        252,
+        357,
+        216,
+        191,
+        255,
+        224,
+        332,
+        267
+      ],
+      "delta_sr": -0.075,
+      "difference_identification_bounds": [
+        -0.075,
+        -0.075
+      ]
+    },
+    "DELTA_FIRST_s43_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "DELTA_FIRST_s43",
+      "wins": [
+        50,
+        32,
+        108,
+        68
+      ],
+      "losses": [
+        252,
+        216,
+        63
+      ],
+      "delta_sr": 0.0125,
+      "difference_identification_bounds": [
+        0.0125,
+        0.0125
+      ]
+    },
+    "CURRENT_ALL_s44_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "CURRENT_ALL_s44",
+      "wins": [
+        283,
+        50,
+        112,
+        32,
+        17,
+        80,
+        108,
+        90
+      ],
+      "losses": [
+        125,
+        261,
+        221,
+        341,
+        308,
+        357,
+        216,
+        186,
+        243,
+        255,
+        224,
+        332,
+        63,
+        267
+      ],
+      "delta_sr": -0.075,
+      "difference_identification_bounds": [
+        -0.075,
+        -0.075
+      ]
+    },
+    "CURRENT_FIRST_s44_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "CURRENT_FIRST_s44",
+      "wins": [
+        59,
+        50,
+        32,
+        108,
+        31,
+        68
+      ],
+      "losses": [
+        41,
+        63
+      ],
+      "delta_sr": 0.05,
+      "difference_identification_bounds": [
+        0.05,
+        0.05
+      ]
+    },
+    "DELTA_ALL_s44_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "DELTA_ALL_s44",
+      "wins": [
+        283,
+        164,
+        50,
+        21,
+        112,
+        17,
+        80,
+        90
+      ],
+      "losses": [
+        125,
+        41,
+        341,
+        27,
+        308,
+        357,
+        216,
+        186,
+        7,
+        255,
+        332,
+        63,
+        267
+      ],
+      "delta_sr": -0.0625,
+      "difference_identification_bounds": [
+        -0.0625,
+        -0.0625
+      ]
+    },
+    "DELTA_FIRST_s44_vs_NATIVE": {
+      "reference": "NATIVE",
+      "candidate": "DELTA_FIRST_s44",
+      "wins": [
+        50,
+        28
+      ],
+      "losses": [
+        41,
+        261,
+        63
+      ],
+      "delta_sr": -0.0125,
+      "difference_identification_bounds": [
+        -0.0125,
+        -0.0125
+      ]
+    }
+  },
+  "by_house": {
+    "2azQ1b91cZZ": {
+      "NATIVE": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 4.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 4.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 4.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 2.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 2.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      }
+    },
+    "8194nk5LbLH": {
+      "NATIVE": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 2.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 2.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      }
+    },
+    "QUCTc6BB5sX": {
+      "NATIVE": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 7.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 4.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 7.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 7.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      }
+    },
+    "TbHJrupSAjP": {
+      "NATIVE": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      }
+    },
+    "X7HyMhZNoso": {
+      "NATIVE": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 9,
+        "complete": 9,
+        "successes": 6.0
+      }
+    },
+    "Z6MFQCViBuw": {
+      "NATIVE": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 2.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      }
+    },
+    "oLBMNvg9in8": {
+      "NATIVE": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 2.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 1.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 1.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      }
+    },
+    "pLe4wQe7qrG": {
+      "NATIVE": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 1.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 1.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 1.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 3.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 1.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      }
+    },
+    "x8F5xyUWy9e": {
+      "NATIVE": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      }
+    },
+    "zsNo4HB9uLZ": {
+      "NATIVE": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 2.0
+      },
+      "DELTA_FIRST_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CURRENT_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_FIRST_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "CURRENT_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 2.0
+      },
+      "CURRENT_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "DELTA_ALL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "DELTA_FIRST_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      }
+    }
+  },
+  "split": "val_unseen",
+  "exposed": true,
+  "full_1839": false,
+  "old_candidate_retained": true,
+  "automatic_replacement": false,
+  "optimizer_updates": 0,
+  "scope": "Same frozen head; FIRST minus ALL. Not a training or novel architecture gain.",
+  "statistical_unit": "Shared houses/routes/seeds; executions are not independent generalization samples."
+}

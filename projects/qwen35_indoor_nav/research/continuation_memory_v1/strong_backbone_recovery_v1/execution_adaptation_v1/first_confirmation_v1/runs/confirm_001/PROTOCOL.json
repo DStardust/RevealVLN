@@ -1,0 +1,87 @@
+{
+  "id": "FIRST_CONFIRMATION_OPERATION_V1",
+  "training_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001",
+  "capture_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_data_v1/recapture_v1/runs/capture_001",
+  "models": {
+    "CURRENT_s42": {
+      "mode": "CURRENT",
+      "seed": 42
+    },
+    "DELTA_s42": {
+      "mode": "DELTA",
+      "seed": 42
+    },
+    "CURRENT_s43": {
+      "mode": "CURRENT",
+      "seed": 43
+    },
+    "DELTA_s43": {
+      "mode": "DELTA",
+      "seed": 43
+    },
+    "CURRENT_s44": {
+      "mode": "CURRENT",
+      "seed": 44
+    },
+    "DELTA_s44": {
+      "mode": "DELTA",
+      "seed": 44
+    }
+  },
+  "training_steps": 3000,
+  "planned_groups": 289,
+  "planned_executions": 2023,
+  "first_complete_group_id": 0,
+  "gpu_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "minimum_free_mib": 26000,
+  "phase_gpu_hour_limits": {
+    "TRAIN": 0.0,
+    "EVALUATE": 40.0
+  },
+  "wall_hours_limit": 12,
+  "rss_limit_gib": 64,
+  "artifact_limit_gib": 20,
+  "chunk_groups": 8,
+  "base_updates": 0,
+  "automatic_score_retries": 0,
+  "resume": "Exact optimizer/RNG checkpoint for training; complete sealed groups for navigation. Preserve all attempts.",
+  "phases": [
+    "PREPARE_FROZEN_HEADS",
+    "FIRST_UNSEEN_GROUP",
+    "UNSEEN",
+    "REVIEW"
+  ],
+  "final_selection": false,
+  "old_positive_candidate_retained": true,
+  "unseen_exposed": true,
+  "common_changes": "All action-token coverage and all-token residual; not a DELTA-only contribution.",
+  "training_admission": {
+    "status": "SEALED_ALL_TOKEN_DATA_ADMITTED",
+    "original_new_training_admission_field_changed": false,
+    "fit_trajectories": 270,
+    "dev_trajectories": 64,
+    "train_tokens": 14886,
+    "known_mask_preserved": true,
+    "dev_or_unseen_in_loss": false
+  },
+  "source_training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+  "predecessor": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_001",
+  "revision": "Remove ALL arms; retain exact FIRST heads and behavior. Entire remaining289; no new optimization.",
+  "inherited_phase_gpu_hours": {
+    "TRAIN": 0.0,
+    "EVALUATE": 0.0
+  },
+  "inherited_wall_seconds": 0.0,
+  "optimizer_updates": 0,
+  "prior_training_gpu_hours": 0.7279557228088379,
+  "prior_scope_discovery_gpu_hours": 12.713471885257297
+}

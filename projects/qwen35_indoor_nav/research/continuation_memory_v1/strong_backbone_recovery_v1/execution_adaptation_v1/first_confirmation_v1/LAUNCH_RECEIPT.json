@@ -1,0 +1,251 @@
+{
+  "unix": 1790434106.1510544,
+  "job": {
+    "name": "strong-first-confirmation-20260926-01",
+    "unit": "q35n-strong-first-confirmation-20260926-01.service",
+    "command": [
+      "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+      "-I",
+      "-S",
+      "-B",
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/pipeline.py",
+      "--run",
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/runs/confirm_001"
+    ],
+    "cwd": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1",
+    "uid": 0,
+    "gid": 0,
+    "environment": {
+      "PATH": "/root/.local/bin:/root/.local/bin:/usr/local/cuda/bin:/mnt/data_nas/deeprobotics/daiyang/.codex/packages/app-server-daemon/releases/0.157.1-x86_64-unknown-linux-musl/codex-path:/mnt/data_nas/deeprobotics/daiyang/.codex/tmp/arg0/codex-arg0Zhl5Cj:/mnt/data_nas/deeprobotics/daiyang/.codex/tmp/arg0/codex-arg0pT0d2M:/usr/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-x64/vendor/x86_64-unknown-linux-musl/codex-path:/root/.local/bin:/root/.local/bin:/mnt/zrh/miniconda3/bin:/mnt/zrh/miniconda3/condabin:/usr/local/cuda/bin:/root/.local/bin:/usr/local/cuda/bin:/root/.local/bin:/mnt/zrh/miniconda3/bin:/mnt/zrh/miniconda3/condabin:/usr/local/cuda/bin:/usr/share/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/ehpc/bin:/root/bin:/usr/local/ehpc/bin:/root/bin",
+      "LD_LIBRARY_PATH": "/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:"
+    },
+    "created_unix": 1790434079.4346206,
+    "launcher_pid": 507835,
+    "launcher_cgroup": "0::/user.slice/user-0.slice/session-569.scope/init.scope\n",
+    "retries": 0,
+    "ownership": "Same UID/GID as caller, no sudo or privilege change."
+  },
+  "standalone_status": {
+    "status": "RUNNING",
+    "pid": 507894,
+    "ppid": 1,
+    "started_unix": 1790434079.527909,
+    "cgroup": "0::/system.slice/q35n-strong-first-confirmation-20260926-01.service\n",
+    "command": [
+      "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+      "-I",
+      "-S",
+      "-B",
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/pipeline.py",
+      "--run",
+      "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/runs/confirm_001"
+    ],
+    "unit": "q35n-strong-first-confirmation-20260926-01.service",
+    "child_pid": 507895
+  },
+  "pipeline_status": {
+    "status": "RUNNING",
+    "phase": "FIRST_UNSEEN_GROUP",
+    "frozen_models": 6,
+    "planned_optimizer_steps": 0,
+    "planned_groups": 289,
+    "planned_executions": 2023,
+    "unix": 1790434105.9393017,
+    "phase_gpu_hours": {
+      "TRAIN": 0.0,
+      "EVALUATE": 0.005693115658230252
+    },
+    "gpu_hours": 0.005693115658230252,
+    "complete_models": [
+      "CURRENT_s42",
+      "DELTA_s42",
+      "CURRENT_s43",
+      "DELTA_s43",
+      "CURRENT_s44",
+      "DELTA_s44"
+    ],
+    "sealed_groups": 0,
+    "recorded_groups": 0,
+    "models": {
+      "CURRENT_s42": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "4f27d30a05b25e3cd9885f0713c5c57d8627847cf984849990af4f150dedbc08",
+        "navigation_efficacy_measured": false
+      },
+      "DELTA_s42": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "4df7f6e5e64d23d01d5dfd37ae8b91fbcdd29c6e43bf4b3d1f9494fc3c1b46fb",
+        "navigation_efficacy_measured": false
+      },
+      "CURRENT_s43": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "d7411c938694aa2c6b23028736bc0bfa4ce11575c9d61103947f3f3d953b927f",
+        "navigation_efficacy_measured": false
+      },
+      "DELTA_s43": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "f41361397866c6539b32b7875566c74ab47451afc767ec400e38d7bf470f089b",
+        "navigation_efficacy_measured": false
+      },
+      "CURRENT_s44": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "277d35446bbe83c5f09bab47bc832d77f255ff80d748e118a3e6973d2da32251",
+        "navigation_efficacy_measured": false
+      },
+      "DELTA_s44": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "272dcb9bf69c290b41d44e246e56cdf9d6fb74042f2df89085e6a6139b539b35",
+        "navigation_efficacy_measured": false
+      }
+    },
+    "workers": [
+      {
+        "pid": 507978,
+        "gpu": 0,
+        "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/runs/confirm_001/unseen/evaluation/gpu0_1790434085335548632",
+        "progress": null
+      }
+    ],
+    "worker_rss_bytes": 26603520,
+    "gpu_inventory": {
+      "0": {
+        "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+        "free_mib": 32109
+      },
+      "1": {
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "free_mib": 32109
+      },
+      "2": {
+        "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+        "free_mib": 32106
+      },
+      "3": {
+        "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+        "free_mib": 32106
+      },
+      "4": {
+        "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+        "free_mib": 32105
+      },
+      "5": {
+        "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+        "free_mib": 32106
+      },
+      "6": {
+        "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+        "free_mib": 32106
+      },
+      "7": {
+        "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+        "free_mib": 32106
+      }
+    },
+    "artifact_bytes": 5299288636
+  },
+  "monitor_url": "http://127.0.0.1:18770/",
+  "gpu_training_updates": 0
+}
