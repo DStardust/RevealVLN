@@ -89,12 +89,13 @@ def main(run, resume):
         u.write(started_file, dict(unix=time.time(), pid=os.getpid()))
     for folder in ('attempts', 'capture', 'failed_attempts', 'sessions'):
         (run / folder).mkdir(exist_ok=True)
+    # Refuse a surviving worker before moving any directory it may still write.
+    account_interrupted_attempts(run, time.time())
     # A hard interruption can leave an unsealed session. Preserve it, never splice it.
     for session in (run / 'capture').iterdir():
         if not (session / 'STATE_SEAL.json').exists():
             session.rename(run / 'failed_attempts' / (session.name + '_' + str(time.time_ns())))
     plans = u.read(run / 'REQUESTS.json')
-    account_interrupted_attempts(run, time.time())
     prior_attempts = [u.read(path) for path in (run / 'attempts').glob('*.json') if not path.name.endswith('.start.json')]
     hours = sum(row['wall_seconds'] / 3600 for row in prior_attempts)
     workers = []

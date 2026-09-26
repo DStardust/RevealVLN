@@ -1,0 +1,25 @@
+{
+  "service": "q35n-strong-token-recapture-20260926-02.service",
+  "previous_service": "q35n-strong-token-recapture-20260926-01.service",
+  "reason": "Before moving failed session directories, reject a surviving previous worker.",
+  "gpu_attempts": 0,
+  "status": {
+    "status": "RUNNING",
+    "phase": "WAIT_DEPENDENCY",
+    "planned_trajectories": 334,
+    "planned_missing": 21396,
+    "planned_stop": 133,
+    "dependency": "q35n-strong-history-validation-20260926-01.service",
+    "unknown_attempt_durations": 0,
+    "unix": 1790387203.252976,
+    "recorded_trajectories": 0,
+    "sealed_trajectories": 0,
+    "captured_missing": 0,
+    "captured_stop": 0,
+    "gpu_hours": 0,
+    "workers": [],
+    "dependency_substate": "running"
+  },
+  "cpu_recovery_tests": 4,
+  "final_evaluation": "val_unseen fixed denominator, DEV diagnostics only"
+}

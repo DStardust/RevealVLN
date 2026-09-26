@@ -2,7 +2,7 @@
 
 用户2026-09-26授权开始补采。这里只采集，既有评测和模型权重保持不变。
 
-独立服务：`q35n-strong-token-recapture-20260926-01.service`。进度页：[http://127.0.0.1:18770/](http://127.0.0.1:18770/)，API为`/api/observation_recollection`。初次提交时为WAIT_DEPENDENCY、0 GPU小时、0已采轨迹；模型未加载，不能把已排队写成已前向。
+独立服务：`q35n-strong-token-recapture-20260926-02.service`。进度页：[http://127.0.0.1:18770/](http://127.0.0.1:18770/)，API为`/api/observation_recollection`。初次提交时为WAIT_DEPENDENCY、0 GPU小时、0已采轨迹；模型未加载，不能把已排队写成已前向。
 
 ## 自动执行顺序
 
@@ -30,7 +30,7 @@
 ## 进度与恢复
 
 ```bash
-systemctl status q35n-strong-token-recapture-20260926-01.service
+systemctl status q35n-strong-token-recapture-20260926-02.service
 cat runs/capture_001/STATUS.json
 ```
 
@@ -39,3 +39,5 @@ cat runs/capture_001/STATUS.json
 控制Python可通过现有`strong_backbone_recovery_v1/standalone.py`提交`pipeline.py --run PATH`；该pipeline自动调用项目GPU环境的worker。进度服务独立，不会控制训练/评测进程。
 
 CPU验收：8项采集合同测试、4项恢复/进程身份测试通过；5个监控路由HTTP200。真实GPU先导尚待资源释放，成功时会产生`runs/capture_001/SMOKE_RESULT.json`；没有该文件就不能宣称模型已验证。
+
+启动前审查补了一处恢复顺序：先拒绝仍存活的旧worker，再移动未封存目录。01服务仅在零GPU等待阶段关闭；02以同run恢复，旧任务记录保留。
