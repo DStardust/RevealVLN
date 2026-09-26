@@ -1,0 +1,11 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Traceback (most recent call last):
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/evaluate_worker.py", line 350, in <module>
+    main(args.run, args.output, [int(value) for value in args.ids.split(',')])
+  File "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/evaluate_worker.py", line 70, in main
+    import streamvln_eval as official
+  File "/mnt/data_nas/deeprobotics/daiyang/vla/third_party/B33_STREAMVLN_V1/streamvln/streamvln_eval.py", line 37, in <module>
+    from model.stream_video_vln import StreamVLNForCausalLM
+ModuleNotFoundError: No module named 'model.stream_video_vln'; 'model' is not a package
