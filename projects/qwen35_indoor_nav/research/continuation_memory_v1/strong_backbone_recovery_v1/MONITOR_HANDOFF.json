@@ -1,17 +1,22 @@
 {
   "url": "http://127.0.0.1:18770/",
-  "service": "q35n-strong-history-monitor-20260926-01.service",
+  "service": "q35n-strong-token-monitor-20260926-01.service",
   "method_service": "q35n-strong-method-20260924-01.service",
   "checks": [
     {
       "path": "/",
       "status": 200,
-      "bytes": 1871
+      "bytes": 3964
+    },
+    {
+      "path": "/api/observation_recollection",
+      "status": 200,
+      "bytes": 4972
     },
     {
       "path": "/api/history_validation",
       "status": 200,
-      "bytes": 8154
+      "bytes": 12238
     },
     {
       "path": "/api/confirmation",
@@ -49,5 +54,8 @@
   "confirmation_api": "/api/confirmation",
   "history_validation_service": "q35n-strong-history-validation-20260926-01.service",
   "history_validation_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001",
-  "history_validation_api": "/api/history_validation"
+  "history_validation_api": "/api/history_validation",
+  "recapture_service": "q35n-strong-token-recapture-20260926-01.service",
+  "recapture_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_data_v1/recapture_v1/runs/capture_001",
+  "recapture_api": "/api/observation_recollection"
 }

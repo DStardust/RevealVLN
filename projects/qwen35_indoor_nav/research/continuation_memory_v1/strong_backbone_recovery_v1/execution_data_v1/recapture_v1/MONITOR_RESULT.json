@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 3964
+    },
+    {
+      "path": "/api/observation_recollection",
+      "status": 200,
+      "bytes": 4972
+    },
+    {
+      "path": "/api/history_validation",
+      "status": 200,
+      "bytes": 12238
+    },
+    {
+      "path": "/api/confirmation",
+      "status": 200,
+      "bytes": 15674
+    },
+    {
+      "path": "/previous",
+      "status": 200,
+      "bytes": 26606
+    }
+  ],
+  "old_evaluation_unchanged": true,
+  "url": "http://127.0.0.1:18770/",
+  "initial_immediate_probe": "CONNECTION_REFUSED_BEFORE_SERVICE_LISTENED",
+  "second_probe": "ALL_HTTP_200"
+}
