@@ -1,0 +1,29 @@
+{
+  "url": "http://127.0.0.1:18770/",
+  "api": "/api/history_validation",
+  "service": "q35n-strong-history-validation-20260926-01.service",
+  "run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001",
+  "monitor_service": "q35n-strong-history-monitor-20260926-01.service",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 1871
+    },
+    {
+      "path": "/api/history_validation",
+      "status": 200,
+      "bytes": 8154
+    },
+    {
+      "path": "/api/confirmation",
+      "status": 200,
+      "bytes": 15674
+    },
+    {
+      "path": "/previous",
+      "status": 200,
+      "bytes": 26606
+    }
+  ]
+}

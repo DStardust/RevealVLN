@@ -1,0 +1,32 @@
+{
+  "status": "PASSED",
+  "checks": [
+    {
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/b33_streamvln_v1/bin/python",
+        "-I",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/test_validation.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.041s\n\nOK\n",
+      "wall_seconds": 3.38494873046875
+    },
+    {
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.envs/b33_streamvln_v1/bin/python",
+        "-I",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/test_confirmation.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 4.166s\n\nOK\n",
+      "wall_seconds": 6.368525505065918
+    }
+  ],
+  "new_tests": 6,
+  "inherited_tests": 5,
+  "model_navigation_validated": false
+}

@@ -1,0 +1,139 @@
+{
+  "source_commit": "e48f6ff7e9201d93aae003e8f64b04c00cec13bc",
+  "expected_base_state_sha256": "f4c87d057e7d92293bb03a81fd2a8d0932db0c81c60c023bdf677d0d41a262d3",
+  "backbone": "mengwei0427/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "feature_width": 3584,
+  "memory_shape": [
+    8,
+    64
+  ],
+  "heads": {
+    "CONCAT_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/CONCAT_s42/FINAL.pt",
+      "sha256": "e2602c18f2f50bdf88f523bbcacf434f4a61b3d1a0eeb4d84ef579d64566ccdf",
+      "architecture": "CONCAT",
+      "seed": 42
+    },
+    "LOCAL_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/LOCAL_s42/FINAL.pt",
+      "sha256": "e641b2b9f602051a0b8902ad78e9482c90c2a4fe322c1c3bdabf4e3bb082ee0a",
+      "architecture": "LOCAL",
+      "seed": 42
+    },
+    "CONCAT_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/CONCAT_s43/FINAL.pt",
+      "sha256": "7ff6aad2ae102d2993941c0437753554fec4cfbc414807880e906d7e73e3f7b3",
+      "architecture": "CONCAT",
+      "seed": 43
+    },
+    "LOCAL_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/LOCAL_s43/FINAL.pt",
+      "sha256": "7267d8726b135308611986daa149c0388b739cfb7402fa8d31529b5a12d9ba31",
+      "architecture": "LOCAL",
+      "seed": 43
+    },
+    "CONCAT_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/CONCAT_s44/FINAL.pt",
+      "sha256": "7ef8325bb79e72d981ea970b51eb27fbfefaeab9080d897c2627b5941cd1366d",
+      "architecture": "CONCAT",
+      "seed": 44
+    },
+    "LOCAL_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/training/LOCAL_s44/FINAL.pt",
+      "sha256": "e0f198dc1dfcac0eb5d3f93c377572d615248de627140dfb73441e180d827ff8",
+      "architecture": "LOCAL",
+      "seed": 44
+    }
+  },
+  "models": {
+    "CONCAT_s42": {
+      "architecture": "CONCAT",
+      "seed": 42
+    },
+    "LOCAL_s42": {
+      "architecture": "LOCAL",
+      "seed": 42
+    },
+    "CONCAT_s43": {
+      "architecture": "CONCAT",
+      "seed": 43
+    },
+    "LOCAL_s43": {
+      "architecture": "LOCAL",
+      "seed": 43
+    },
+    "CONCAT_s44": {
+      "architecture": "CONCAT",
+      "seed": 44
+    },
+    "LOCAL_s44": {
+      "architecture": "LOCAL",
+      "seed": 44
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "steps": 3000,
+  "runtime": "BF16 base, flash_attention_2; FP32 memory and generation scores/addition in training and live",
+  "actor_boundary": "First real action after assistant header; unchanged native four-action decoding",
+  "local_equation": "m_t = tanh(writer(norm(x_t))); old additional memory is not read. Unit gain avoids 0.01 attenuation of a reset-only control.",
+  "id": "Q35N_HISTORY_VALIDATION_V4",
+  "scope_revision": "Explicit continuation of WHOLE_VLN_PROGRAM_V1; old freezes unchanged",
+  "source_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001",
+  "split": "OFFICIAL_VAL_UNSEEN_REMAINING_ROUTE_FAMILIES",
+  "phases": [
+    "CPU_MECHANISM",
+    "FROZEN_UNSEEN_EXTENSION",
+    "REVIEW"
+  ],
+  "planned_groups": 369,
+  "planned_executions": 2583,
+  "capture_only": false,
+  "optimizer_updates": 0,
+  "base_updates": 0,
+  "heads_frozen": true,
+  "selection": "All remaining eligible physical routes; one hash-selected instruction per route; house-interleaved order",
+  "arm_order": "Native first, six heads rotated by registered group id; inherited worker",
+  "primary": "Mean over three seeds of paired CONCAT minus NATIVE SR on NEW routes only",
+  "secondary": "CONCAT minus LOCAL by seed; SPL, action cost, rescues/regressions and house results",
+  "interpretation": "Positive descriptive replication if mean delta >0 and at least two seeds >0; report all seeds and uncertainty, no automatic adoption",
+  "no_score_selection": true,
+  "prior_public_benchmark_exposure": true,
+  "new_houses": false,
+  "full_1839": false,
+  "exposure_scope": "Route-disjoint from all registered StreamVLN branch manifests. Other historical Qwen experiments exposed this public split; not blind testing.",
+  "gpu_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "chunk_pairs": 8,
+  "gpu_session_hours_limit": 64,
+  "wall_hours_limit": 24,
+  "artifact_limit_gib": 32,
+  "automatic_score_retries": 0,
+  "mechanism": {
+    "dataset": "All64 cached DEV teacher/preservation traces",
+    "models": "All six final heads",
+    "controls": [
+      "FULL",
+      "SHAM",
+      "RECENT8_RAW",
+      "RECENT8_NORM",
+      "REVERSED_OLD_NORM",
+      "CURRENT_NORM"
+    ],
+    "match": "Per-query full-state L2 norm; same actor features, native logits and weights",
+    "scope": "Readout diagnostics on recorded trajectories, not autonomous SR or proof of semantic state",
+    "hyperparameter_selection": false,
+    "known_queries_only": true
+  }
+}

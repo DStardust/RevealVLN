@@ -1,0 +1,745 @@
+{
+  "complete_groups": 200,
+  "planned_groups": 200,
+  "evaluation_complete": true,
+  "arms": {
+    "NATIVE": {
+      "successes": 112.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.56,
+      "identification_bounds": [
+        0.56,
+        0.56
+      ],
+      "spl": 0.5110596447511889,
+      "mean_steps": 80.245
+    },
+    "CONCAT_s42": {
+      "successes": 116.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.58,
+      "identification_bounds": [
+        0.58,
+        0.58
+      ],
+      "spl": 0.5209661517137029,
+      "mean_steps": 75.63
+    },
+    "LOCAL_s42": {
+      "successes": 114.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.57,
+      "identification_bounds": [
+        0.57,
+        0.57
+      ],
+      "spl": 0.516101320707614,
+      "mean_steps": 76.85
+    },
+    "CONCAT_s43": {
+      "successes": 114.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.57,
+      "identification_bounds": [
+        0.57,
+        0.57
+      ],
+      "spl": 0.5141709472119299,
+      "mean_steps": 77.11
+    },
+    "LOCAL_s43": {
+      "successes": 112.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.56,
+      "identification_bounds": [
+        0.56,
+        0.56
+      ],
+      "spl": 0.5095125493327742,
+      "mean_steps": 77.755
+    },
+    "CONCAT_s44": {
+      "successes": 115.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.575,
+      "identification_bounds": [
+        0.575,
+        0.575
+      ],
+      "spl": 0.5210133092099933,
+      "mean_steps": 74.645
+    },
+    "LOCAL_s44": {
+      "successes": 110.0,
+      "complete": 200,
+      "planned": 200,
+      "sr": 0.55,
+      "identification_bounds": [
+        0.55,
+        0.55
+      ],
+      "spl": 0.5067455758803598,
+      "mean_steps": 77.115
+    }
+  },
+  "paired": {
+    "CONCAT_s42_vs_NATIVE": {
+      "wins": [
+        4,
+        168,
+        149,
+        95,
+        37,
+        39
+      ],
+      "losses": [
+        22,
+        74
+      ],
+      "retained_successes": 110.0,
+      "delta_sr": 0.02,
+      "difference_identification_bounds": [
+        0.02,
+        0.02
+      ]
+    },
+    "LOCAL_s42_vs_NATIVE": {
+      "wins": [
+        4,
+        110,
+        168,
+        89,
+        37,
+        39
+      ],
+      "losses": [
+        22,
+        164,
+        52,
+        74
+      ],
+      "retained_successes": 108.0,
+      "delta_sr": 0.01,
+      "difference_identification_bounds": [
+        0.01,
+        0.01
+      ]
+    },
+    "CONCAT_s43_vs_NATIVE": {
+      "wins": [
+        110,
+        89,
+        39
+      ],
+      "losses": [
+        74
+      ],
+      "retained_successes": 111.0,
+      "delta_sr": 0.01,
+      "difference_identification_bounds": [
+        0.01,
+        0.01
+      ]
+    },
+    "LOCAL_s43_vs_NATIVE": {
+      "wins": [
+        110,
+        172,
+        16,
+        89,
+        94,
+        95,
+        39,
+        46,
+        160,
+        103
+      ],
+      "losses": [
+        5,
+        184,
+        88,
+        24,
+        80,
+        164,
+        195,
+        52,
+        74,
+        120
+      ],
+      "retained_successes": 102.0,
+      "delta_sr": 0.0,
+      "difference_identification_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "CONCAT_s44_vs_NATIVE": {
+      "wins": [
+        4,
+        110,
+        89,
+        95,
+        31,
+        39
+      ],
+      "losses": [
+        52,
+        74,
+        120
+      ],
+      "retained_successes": 109.0,
+      "delta_sr": 0.015,
+      "difference_identification_bounds": [
+        0.015,
+        0.015
+      ]
+    },
+    "LOCAL_s44_vs_NATIVE": {
+      "wins": [
+        172,
+        89,
+        95,
+        39,
+        103
+      ],
+      "losses": [
+        24,
+        80,
+        164,
+        52,
+        63,
+        74,
+        120
+      ],
+      "retained_successes": 105.0,
+      "delta_sr": -0.01,
+      "difference_identification_bounds": [
+        -0.01,
+        -0.01
+      ]
+    },
+    "CONCAT_s42_vs_LOCAL_s42": {
+      "wins": [
+        149,
+        95,
+        164,
+        52
+      ],
+      "losses": [
+        110,
+        89
+      ],
+      "retained_successes": 112.0,
+      "delta_sr": 0.01,
+      "difference_identification_bounds": [
+        0.01,
+        0.01
+      ]
+    },
+    "CONCAT_s43_vs_LOCAL_s43": {
+      "wins": [
+        5,
+        184,
+        88,
+        24,
+        80,
+        164,
+        195,
+        52,
+        120
+      ],
+      "losses": [
+        172,
+        16,
+        94,
+        95,
+        46,
+        160,
+        103
+      ],
+      "retained_successes": 105.0,
+      "delta_sr": 0.01,
+      "difference_identification_bounds": [
+        0.01,
+        0.01
+      ]
+    },
+    "CONCAT_s44_vs_LOCAL_s44": {
+      "wins": [
+        4,
+        110,
+        24,
+        31,
+        80,
+        164,
+        63
+      ],
+      "losses": [
+        172,
+        103
+      ],
+      "retained_successes": 108.0,
+      "delta_sr": 0.025,
+      "difference_identification_bounds": [
+        0.025,
+        0.025
+      ]
+    }
+  },
+  "by_kind": {
+    "NATURAL": {
+      "NATIVE": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 112.0
+      },
+      "CONCAT_s42": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 116.0
+      },
+      "LOCAL_s42": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 114.0
+      },
+      "CONCAT_s43": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 114.0
+      },
+      "LOCAL_s43": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 112.0
+      },
+      "CONCAT_s44": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 115.0
+      },
+      "LOCAL_s44": {
+        "planned": 200,
+        "complete": 200,
+        "successes": 110.0
+      }
+    }
+  },
+  "by_house": {
+    "2azQ1b91cZZ": {
+      "NATIVE": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 12.0
+      },
+      "CONCAT_s42": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 14.0
+      },
+      "LOCAL_s42": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 13.0
+      },
+      "CONCAT_s43": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 13.0
+      },
+      "LOCAL_s43": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 15.0
+      },
+      "CONCAT_s44": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 14.0
+      },
+      "LOCAL_s44": {
+        "planned": 29,
+        "complete": 29,
+        "successes": 13.0
+      }
+    },
+    "8194nk5LbLH": {
+      "NATIVE": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 1.0
+      },
+      "CONCAT_s42": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 2.0
+      },
+      "LOCAL_s42": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 2.0
+      },
+      "CONCAT_s43": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 2.0
+      },
+      "LOCAL_s43": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 2.0
+      },
+      "CONCAT_s44": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 2.0
+      },
+      "LOCAL_s44": {
+        "planned": 5,
+        "complete": 5,
+        "successes": 2.0
+      }
+    },
+    "QUCTc6BB5sX": {
+      "NATIVE": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 14.0
+      },
+      "CONCAT_s42": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 14.0
+      },
+      "LOCAL_s42": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 13.0
+      },
+      "CONCAT_s43": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 14.0
+      },
+      "LOCAL_s43": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 12.0
+      },
+      "CONCAT_s44": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 15.0
+      },
+      "LOCAL_s44": {
+        "planned": 30,
+        "complete": 30,
+        "successes": 13.0
+      }
+    },
+    "TbHJrupSAjP": {
+      "NATIVE": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 22.0
+      },
+      "CONCAT_s42": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 22.0
+      },
+      "LOCAL_s42": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 23.0
+      },
+      "CONCAT_s43": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 23.0
+      },
+      "LOCAL_s43": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 23.0
+      },
+      "CONCAT_s44": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 23.0
+      },
+      "LOCAL_s44": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 23.0
+      }
+    },
+    "X7HyMhZNoso": {
+      "NATIVE": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 12.0
+      },
+      "CONCAT_s42": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 12.0
+      },
+      "LOCAL_s42": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 12.0
+      },
+      "CONCAT_s43": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 11.0
+      },
+      "LOCAL_s43": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 9.0
+      },
+      "CONCAT_s44": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 11.0
+      },
+      "LOCAL_s44": {
+        "planned": 16,
+        "complete": 16,
+        "successes": 9.0
+      }
+    },
+    "Z6MFQCViBuw": {
+      "NATIVE": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 11.0
+      },
+      "CONCAT_s42": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 11.0
+      },
+      "LOCAL_s42": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 11.0
+      },
+      "CONCAT_s43": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 11.0
+      },
+      "LOCAL_s43": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 10.0
+      },
+      "CONCAT_s44": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 11.0
+      },
+      "LOCAL_s44": {
+        "planned": 19,
+        "complete": 19,
+        "successes": 11.0
+      }
+    },
+    "oLBMNvg9in8": {
+      "NATIVE": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 16.0
+      },
+      "CONCAT_s42": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 16.0
+      },
+      "LOCAL_s42": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 15.0
+      },
+      "CONCAT_s43": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 16.0
+      },
+      "LOCAL_s43": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 16.0
+      },
+      "CONCAT_s44": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 15.0
+      },
+      "LOCAL_s44": {
+        "planned": 21,
+        "complete": 21,
+        "successes": 15.0
+      }
+    },
+    "pLe4wQe7qrG": {
+      "NATIVE": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      },
+      "CONCAT_s42": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      },
+      "LOCAL_s42": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      },
+      "CONCAT_s43": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      },
+      "LOCAL_s43": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      },
+      "CONCAT_s44": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      },
+      "LOCAL_s44": {
+        "planned": 2,
+        "complete": 2,
+        "successes": 0.0
+      }
+    },
+    "x8F5xyUWy9e": {
+      "NATIVE": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      },
+      "CONCAT_s42": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      },
+      "LOCAL_s42": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      },
+      "CONCAT_s43": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      },
+      "LOCAL_s43": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      },
+      "CONCAT_s44": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      },
+      "LOCAL_s44": {
+        "planned": 12,
+        "complete": 12,
+        "successes": 6.0
+      }
+    },
+    "zsNo4HB9uLZ": {
+      "NATIVE": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 18.0
+      },
+      "CONCAT_s42": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 19.0
+      },
+      "LOCAL_s42": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 19.0
+      },
+      "CONCAT_s43": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 18.0
+      },
+      "LOCAL_s43": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 19.0
+      },
+      "CONCAT_s44": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 18.0
+      },
+      "LOCAL_s44": {
+        "planned": 35,
+        "complete": 35,
+        "successes": 18.0
+      }
+    }
+  },
+  "seed_summary": {
+    "CONCAT": {
+      "mean_sr": 0.575,
+      "seed_range": [
+        0.57,
+        0.58
+      ],
+      "deltas_vs_native": [
+        0.019999999999999907,
+        0.009999999999999898,
+        0.014999999999999902
+      ]
+    },
+    "LOCAL": {
+      "mean_sr": 0.56,
+      "seed_range": [
+        0.55,
+        0.57
+      ],
+      "deltas_vs_native": [
+        0.009999999999999898,
+        0.0,
+        -0.010000000000000009
+      ]
+    },
+    "history_deltas": [
+      0.01,
+      0.01,
+      0.025
+    ]
+  },
+  "split": "OFFICIAL_VAL_UNSEEN_SUBSET",
+  "uncertainty_scope": "Seed range is descriptive; seeds share episodes and houses. Identification bounds are not confidence intervals.",
+  "status": "COMPLETE",
+  "gpu_hours": 19.81859565125571,
+  "base_updates": 0,
+  "adopted": false,
+  "full_1839": false,
+  "exposed_unseen": true
+}
