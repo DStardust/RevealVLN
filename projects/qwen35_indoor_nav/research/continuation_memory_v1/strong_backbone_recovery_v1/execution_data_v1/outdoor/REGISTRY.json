@@ -1,0 +1,57 @@
+{
+  "status": "REGISTRY_ONLY_DEFERRED_BY_USER",
+  "access_date": "2026-09-26",
+  "scope": "Official outdoor dataset entries only. User redirected the current task to model capability before acquisition or adapter implementation.",
+  "downloads_written": [],
+  "downloaded_asset_bytes": 0,
+  "adapter_implemented": false,
+  "adapter_tests_run": false,
+  "gpu_used": false,
+  "sources": [
+    {
+      "name": "UrbanNav official repository",
+      "url": "https://github.com/CASIA-IVA-Lab/UrbanNav",
+      "web_access": "READ_README_AND_ENTRY_LISTING",
+      "source_commit": null,
+      "asset_sha256": null,
+      "observed_format": ["per-trajectory JPG frames", "traj_data.pkl", "label.json"],
+      "evidence_boundary": "README describes offline trajectories and instructions derived from web videos. This is not a simulator or evidence of executable counterfactual branches.",
+      "local_api_listing": "FAILED_SSL_UNEXPECTED_EOF",
+      "future_gaps": ["pin source commit", "inspect actual annotation fields", "verify license and media access", "establish causal alignment and STOP semantics"]
+    },
+    {
+      "name": "UrbanNav official linked dataset",
+      "url": "https://huggingface.co/datasets/Vigar001/UrbanNav",
+      "web_access": "READ_DATASET_CARD",
+      "source_commit": null,
+      "asset_sha256": null,
+      "public_archive_names": ["annos.tar.gz", "data_samples.tar.gz"],
+      "archive_sizes_verified": false,
+      "local_api_listing": "FAILED_SSL_UNEXPECTED_EOF",
+      "future_gaps": ["list immutable dataset revision", "HEAD individual archives before bounded download", "inspect sample without treating offline video as intervention data"]
+    },
+    {
+      "name": "Touchdown official repository",
+      "url": "https://github.com/lil-lab/touchdown",
+      "readme_url": "https://raw.githubusercontent.com/lil-lab/touchdown/master/README.md",
+      "web_access": "READ_OFFICIAL_README",
+      "source_commit": null,
+      "asset_sha256": null,
+      "documented_fields": ["navigation_text", "route_panoids", "start_heading", "end_heading"],
+      "documented_graph_files": ["graph/nodes.txt", "graph/links.txt"],
+      "documented_image_access": "README refers to StreetLearn and an image access request form.",
+      "evidence_boundary": "Only documented format was read; actual train JSON, graph, panoramas, transitions and STOP implementation were not downloaded or executed.",
+      "local_api_listing": "FAILED_SSL_UNEXPECTED_EOF",
+      "future_gaps": ["pin source commit", "download and parse bounded metadata", "obtain authorized panoramas", "verify graph action and terminal contracts"]
+    }
+  ],
+  "bounded_local_inventory": {
+    "method": "Top-level directory names only; no recursive scan or access to other users' assets.",
+    "paths": {
+      "/mnt/data_nas/deeprobotics/daiyang/vla/assets": ["fonts"],
+      "/mnt/data_nas/deeprobotics/daiyang/vla/data": ["b_goal_search_v1", "phase0"]
+    },
+    "interpretation": "No matching outdoor asset was identified at these top levels. Contents were not exhaustively searched; absence elsewhere is not established."
+  },
+  "stop_reason": "User explicitly deferred outdoor data work to a registry entry; no further acquisition, adapter code, tests or runtime work is authorized by this entry."
+}

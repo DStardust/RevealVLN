@@ -1,0 +1,115 @@
+{
+  "status": "CPU_IMPLEMENTATION_AND_REAL_FIT_UPDATE_COMPLETE",
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "gpu_hours": 0,
+  "torch_threads": 2,
+  "method_benefit": "NOT_MEASURED",
+  "future_causality_contract": {
+    "actor_ce_warmup_updates": 1,
+    "actor_residual_max_abs": 0.012919068336486816,
+    "future_changes_from_step": 9,
+    "checked_query_steps": [
+      0,
+      8
+    ],
+    "early_memory_bitwise_equal": true,
+    "early_query_logits_bitwise_equal": true,
+    "future_features_and_executed_actions_changed": true
+  },
+  "cross_step_gradient_contract": {
+    "sequence_observations": 96,
+    "supervised_query_step": 95,
+    "early_feature_step": 0,
+    "early_feature_gradient_l2": 1.9053408095714985e-06,
+    "early_change_step": 1,
+    "early_change_output_gradient_l2": 2.6150603389396565e-06,
+    "writer_gradient_l2": 0.00021861652203369886,
+    "change_writer_gradient_l2": 0.00022857185103930533,
+    "previous_action_embedding_gradient_l2": 0.0003406515170354396,
+    "actor_warmup_updates": 1,
+    "detach_used": false,
+    "scope": "Synthetic CPU gradient contract, separate from real FIT evidence."
+  },
+  "fit_probe": {
+    "status": "REAL_FIT_CACHED_FEATURE_FORWARD_BACKWARD_UPDATE_COMPLETE",
+    "row_id": 0,
+    "partition": "FIT",
+    "kind": "RECOVERY",
+    "house": "ac26ZMwG7aT",
+    "real_observations": 117,
+    "actual_motion_transitions": 116,
+    "query_count": 30,
+    "supervised_queries": 14,
+    "actions_from_actual_trace": true,
+    "trace_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/collect/probe_002/episodes/0/TRAJECTORY.json",
+    "trace_sha256": "fc2b1be24888b4857febc7838230fb548744e5d92013978978a6188fa3261de3",
+    "pool_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_action_v1/runs/action_001/data/POOLS.pt",
+    "pool_sha256_recorded": "870eee375fb7a9bd9672e27f6566636e11b60d4621410315571ac32767a40830",
+    "pool_hash_recomputed": false,
+    "loaded_feature_width": 3584,
+    "feature_semantics": "Mixed causal visual/instruction/previous-action feature; difference is not pure visual change.",
+    "action_information_overlap": "Feature differences include changes in the already encoded previous action. The explicit action embedding can duplicate existing information; this is a trainable architecture adaptation, not novelty or pure visual-consequence evidence.",
+    "parameters_total": 4695688,
+    "parameters_added": 1837568,
+    "baseline_stored_parameters": 2858120,
+    "inherited_unused_parameters": [
+      "state_reader",
+      "query",
+      "key"
+    ],
+    "new_action_embedding_rows": 5,
+    "start_index": 4,
+    "stop_index": 0,
+    "stop_embedding_used": false,
+    "zero_actor_preserves_native_logits": true,
+    "first_update_interpretation": "Zero actor gives zero writer/change/action gradients on update 1; their small first-step changes are AdamW weight decay, not outcome learning. Update 2 has nonzero gradients and updates on all three paths.",
+    "updates": [
+      {
+        "step": 1,
+        "loss": 0.7991247773170471,
+        "gradient_norms": {
+          "writer.weight": 0.0,
+          "actor.2.weight": 0.5686401724815369,
+          "change_writer.weight": 0.0,
+          "executed_action.weight": 0.0
+        },
+        "parameter_change_l2": {
+          "writer.weight": 1.3306382243172266e-05,
+          "actor.2.weight": 0.0022627359721809626,
+          "change_writer.weight": 1.3298428712005261e-05,
+          "executed_action.weight": 5.134498132974841e-05
+        }
+      },
+      {
+        "step": 2,
+        "loss": 0.7980460524559021,
+        "gradient_norms": {
+          "writer.weight": 0.00011062470730394125,
+          "actor.2.weight": 0.5654614567756653,
+          "change_writer.weight": 3.824498890026007e-06,
+          "executed_action.weight": 1.6079762872323045e-06
+        },
+        "parameter_change_l2": {
+          "writer.weight": 0.06275872141122818,
+          "actor.2.weight": 0.002260054461658001,
+          "change_writer.weight": 0.013287920504808426,
+          "executed_action.weight": 0.0014152564108371735
+        }
+      }
+    ],
+    "optimizer_updates": 2,
+    "weights_saved": false,
+    "frozen_backbone_loaded": false,
+    "backbone_updates": 0,
+    "dev_tensors_accessed": false,
+    "unseen_accessed": false,
+    "fairness": "Added writer projection and action embedding increase capacity; require same-capacity ordinary-writer control before attributing benefit."
+  },
+  "wall_seconds": 4.099520206451416,
+  "source_sha256": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/parallel_improvements_v1/test_execution_memory.py": "5edf18cd708e6ed64a7b8eb3d7bcca8284e1d3ed3cce53ceafcb0f4dcb847123",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/parallel_improvements_v1/execution_memory.py": "bcbe937fb6f6e03a8cc8efed6378c51cd053659bb90c24c80a4fa270cc12fd75"
+  }
+}

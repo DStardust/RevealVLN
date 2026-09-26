@@ -1,0 +1,88 @@
+{
+  "status": "CPU_DATA_AND_MODEL_PREPARATION_COMPLETE",
+  "date": "2026-09-26",
+  "user_scope": "Prioritize indoor model capability, data work and architectural adaptation; outdoor registry only.",
+  "source_checkout": "3656669c9eb5e24b1874b4cce28f1703d45bc79f",
+  "data": {
+    "indexed_actual_trajectories": 334,
+    "indexed_actual_actions": 28859,
+    "observed_non_stop_transitions": 28525,
+    "existing_actor_positions": 7463,
+    "known_actor_targets": 4842,
+    "missing_actor_positions": 21396,
+    "missing_positions_in_registered_supervised_regions": 13533,
+    "missing_terminal_stop_positions": 133,
+    "planned_recapture_queries": 7211,
+    "generated_new_actor_features": 0,
+    "registered_real_prefixes": 40,
+    "registered_alternative_branches": 160,
+    "executed_alternative_branches": 0,
+    "new_outcome_labels": 0
+  },
+  "architecture": {
+    "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/parallel_improvements_v1/execution_memory.py",
+    "state_shape": [
+      8,
+      64
+    ],
+    "inputs": "Current and previous causal mixed observation feature, previous actually executed action, prior memory.",
+    "real_fit_observations": 117,
+    "real_fit_optimizer_updates_in_latest_probe": 2,
+    "added_parameters": 1837568,
+    "same_capacity_control_still_needed": true,
+    "real_gradient_verified": true,
+    "training_weights_retained": false,
+    "closed_loop_benefit": "NOT_MEASURED"
+  },
+  "trainer": {
+    "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/parallel_improvements_v1/train_controls.py",
+    "modes": [
+      "LOCAL",
+      "EMA",
+      "RECURRENT"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "default_steps_per_model": 3000,
+    "full_fit_rows_prechecked": 270,
+    "continuous_vs_resume_model_optimizer_rng_equal": true,
+    "final_receipt_recovery_tested": true,
+    "formal_gpu_training_started": false,
+    "live_evaluator_adaptation_complete": false
+  },
+  "validation": {
+    "data_cpu_tests": 19,
+    "architecture_cpu_tests": 8,
+    "trainer_cpu_tests": 3,
+    "total_cpu_tests": 30,
+    "gpu_hours": 0,
+    "base_updates": 0,
+    "new_navigation_executions": 0,
+    "formal_training_updates": 0,
+    "trainer_debug_cost_receipt": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/parallel_improvements_v1/CPU_TRAINER_TEST_RESULT.json",
+    "prototype_debug_cost_receipt": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/parallel_improvements_v1/CPU_EXECUTION_MEMORY_RESULT.json"
+  },
+  "current_evaluation": {
+    "service": "q35n-strong-history-validation-20260926-01.service",
+    "status_at_read": "RUNNING",
+    "recorded_groups": 66,
+    "sealed_groups": 40,
+    "planned_groups": 369,
+    "changed_by_this_work": false,
+    "scores_not_used_for_design": true
+  },
+  "next_implementation": [
+    "Capture missing action-token features with memory frozen at original query_start; begin with the 133 terminal STOP positions.",
+    "Adapt a new live runtime to UnitReadoutMemory before evaluating its weights; never load them as old ConfirmationMemory.",
+    "For action-outcome memory, add a same-capacity ordinary writer control and a matching live executed-action interface.",
+    "Implement/execute registered four-branch collection; do not turn planned branches into labels."
+  ],
+  "outdoor": {
+    "status": "REGISTRY_ONLY_DEFERRED",
+    "downloaded_bytes": 0
+  },
+  "scientific_status": "Implementation and data preparation only; no new SR or architecture benefit claim."
+}
