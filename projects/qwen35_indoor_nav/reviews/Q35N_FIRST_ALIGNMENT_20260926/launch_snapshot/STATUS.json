@@ -1,0 +1,429 @@
+{
+  "status": "RUNNING",
+  "phase": "TRAIN_SHARED",
+  "planned_models": 6,
+  "planned_optimizer_steps": 18000,
+  "planned_groups": 80,
+  "planned_executions": 1040,
+  "unix": 1790436145.8187401,
+  "phase_gpu_hours": {
+    "TRAIN": 0.18651735762755076,
+    "EVALUATE": 0.0
+  },
+  "gpu_hours": 0.18651735762755076,
+  "complete_models": [],
+  "sealed_groups": 0,
+  "recorded_groups": 0,
+  "models": {
+    "CURRENT_s42": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 1.072346806526184,
+      "ordinary_ce": 0.1033930778503418,
+      "ordinary_kl": 0.0031849867664277554,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 16,
+      "ordinary_tokens": 19,
+      "recovery_accuracy": 0.75,
+      "ordinary_agreement": 1.0,
+      "supervision_scope": "FIRST_ONLY",
+      "memory_observations": 197,
+      "excluded_actor_positions": 146,
+      "step": 870,
+      "loss": 1.1399682760238647,
+      "gradient_norm": 1.5403743982315063,
+      "writer_gradients": {
+        "writer.weight": 0.0014179222052916884,
+        "change_writer.weight": 0.0008163258316926658,
+        "executed_action.weight": 2.0368754121591337e-05
+      },
+      "schedule": [
+        31,
+        288
+      ],
+      "wall_seconds": 100.77374696731567
+    },
+    "DELTA_s42": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.765620768070221,
+      "ordinary_ce": 0.022321144118905067,
+      "ordinary_kl": 0.0019956917967647314,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 14,
+      "ordinary_tokens": 9,
+      "recovery_accuracy": 0.5714285969734192,
+      "ordinary_agreement": 1.0,
+      "supervision_scope": "FIRST_ONLY",
+      "memory_observations": 138,
+      "excluded_actor_positions": 102,
+      "step": 820,
+      "loss": 0.7867597937583923,
+      "gradient_norm": 1.7246761322021484,
+      "writer_gradients": {
+        "writer.weight": 0.014602301642298698,
+        "change_writer.weight": 0.001286243204958737,
+        "executed_action.weight": 0.00019671194604597986
+      },
+      "schedule": [
+        165,
+        241
+      ],
+      "wall_seconds": 99.90818333625793
+    },
+    "CURRENT_s43": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 1.3848559856414795,
+      "ordinary_ce": 0.06917287409305573,
+      "ordinary_kl": 0.0028022872284054756,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 7,
+      "ordinary_tokens": 17,
+      "recovery_accuracy": 0.5714285969734192,
+      "ordinary_agreement": 1.0,
+      "supervision_scope": "FIRST_ONLY",
+      "memory_observations": 155,
+      "excluded_actor_positions": 115,
+      "step": 900,
+      "loss": 1.4334537982940674,
+      "gradient_norm": 4.35330867767334,
+      "writer_gradients": {
+        "writer.weight": 0.004674563650041819,
+        "change_writer.weight": 0.0026597040705382824,
+        "executed_action.weight": 5.989661440253258e-05
+      },
+      "schedule": [
+        27,
+        300
+      ],
+      "wall_seconds": 100.79209923744202
+    },
+    "DELTA_s43": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 1.7952204942703247,
+      "ordinary_ce": 0.03447704017162323,
+      "ordinary_kl": 0.0009199294145219028,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 13,
+      "ordinary_tokens": 18,
+      "recovery_accuracy": 0.692307710647583,
+      "ordinary_agreement": 1.0,
+      "supervision_scope": "FIRST_ONLY",
+      "memory_observations": 152,
+      "excluded_actor_positions": 112,
+      "step": 940,
+      "loss": 1.8170586824417114,
+      "gradient_norm": 3.2291839122772217,
+      "writer_gradients": {
+        "writer.weight": 0.004607402253895998,
+        "change_writer.weight": 0.00011521221313159913,
+        "executed_action.weight": 6.728059088345617e-05
+      },
+      "schedule": [
+        7,
+        210
+      ],
+      "wall_seconds": 100.41576528549194
+    },
+    "CURRENT_s44": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 0.9808080196380615,
+      "ordinary_ce": 0.1781926453113556,
+      "ordinary_kl": 0.017703155055642128,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 7,
+      "ordinary_tokens": 18,
+      "recovery_accuracy": 0.8571429252624512,
+      "ordinary_agreement": 1.0,
+      "supervision_scope": "FIRST_ONLY",
+      "memory_observations": 159,
+      "excluded_actor_positions": 118,
+      "step": 890,
+      "loss": 1.1584200859069824,
+      "gradient_norm": 7.712693691253662,
+      "writer_gradients": {
+        "writer.weight": 0.007926411926746368,
+        "change_writer.weight": 0.004556203261017799,
+        "executed_action.weight": 9.639276686357334e-05
+      },
+      "schedule": [
+        161,
+        294
+      ],
+      "wall_seconds": 100.95377826690674
+    },
+    "DELTA_s44": {
+      "status": "TRAINING",
+      "planned": 3000,
+      "recovery_ce": 1.1201874017715454,
+      "ordinary_ce": 0.017080049961805344,
+      "ordinary_kl": 0.0019201601389795542,
+      "ordinary_margin": 0.0,
+      "recovery_tokens": 24,
+      "ordinary_tokens": 20,
+      "recovery_accuracy": 0.5833333730697632,
+      "ordinary_agreement": 1.0,
+      "supervision_scope": "FIRST_ONLY",
+      "memory_observations": 236,
+      "excluded_actor_positions": 176,
+      "step": 950,
+      "loss": 1.138328194618225,
+      "gradient_norm": 1.3043745756149292,
+      "writer_gradients": {
+        "writer.weight": 0.04573172703385353,
+        "change_writer.weight": 0.0012401348212733865,
+        "executed_action.weight": 0.0005821444210596383
+      },
+      "schedule": [
+        162,
+        261
+      ],
+      "wall_seconds": 100.16088342666626
+    }
+  },
+  "workers": [
+    {
+      "pid": 529131,
+      "gpu": 1,
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training/CURRENT_s42",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 1.072346806526184,
+        "ordinary_ce": 0.1033930778503418,
+        "ordinary_kl": 0.0031849867664277554,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 16,
+        "ordinary_tokens": 19,
+        "recovery_accuracy": 0.75,
+        "ordinary_agreement": 1.0,
+        "supervision_scope": "FIRST_ONLY",
+        "memory_observations": 197,
+        "excluded_actor_positions": 146,
+        "step": 870,
+        "loss": 1.1399682760238647,
+        "gradient_norm": 1.5403743982315063,
+        "writer_gradients": {
+          "writer.weight": 0.0014179222052916884,
+          "change_writer.weight": 0.0008163258316926658,
+          "executed_action.weight": 2.0368754121591337e-05
+        },
+        "schedule": [
+          31,
+          288
+        ],
+        "wall_seconds": 100.77374696731567
+      }
+    },
+    {
+      "pid": 529134,
+      "gpu": 2,
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training/DELTA_s42",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.765620768070221,
+        "ordinary_ce": 0.022321144118905067,
+        "ordinary_kl": 0.0019956917967647314,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 14,
+        "ordinary_tokens": 9,
+        "recovery_accuracy": 0.5714285969734192,
+        "ordinary_agreement": 1.0,
+        "supervision_scope": "FIRST_ONLY",
+        "memory_observations": 138,
+        "excluded_actor_positions": 102,
+        "step": 820,
+        "loss": 0.7867597937583923,
+        "gradient_norm": 1.7246761322021484,
+        "writer_gradients": {
+          "writer.weight": 0.014602301642298698,
+          "change_writer.weight": 0.001286243204958737,
+          "executed_action.weight": 0.00019671194604597986
+        },
+        "schedule": [
+          165,
+          241
+        ],
+        "wall_seconds": 99.90818333625793
+      }
+    },
+    {
+      "pid": 529140,
+      "gpu": 3,
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training/CURRENT_s43",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 1.3848559856414795,
+        "ordinary_ce": 0.06917287409305573,
+        "ordinary_kl": 0.0028022872284054756,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 7,
+        "ordinary_tokens": 17,
+        "recovery_accuracy": 0.5714285969734192,
+        "ordinary_agreement": 1.0,
+        "supervision_scope": "FIRST_ONLY",
+        "memory_observations": 155,
+        "excluded_actor_positions": 115,
+        "step": 900,
+        "loss": 1.4334537982940674,
+        "gradient_norm": 4.35330867767334,
+        "writer_gradients": {
+          "writer.weight": 0.004674563650041819,
+          "change_writer.weight": 0.0026597040705382824,
+          "executed_action.weight": 5.989661440253258e-05
+        },
+        "schedule": [
+          27,
+          300
+        ],
+        "wall_seconds": 100.79209923744202
+      }
+    },
+    {
+      "pid": 529146,
+      "gpu": 4,
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training/DELTA_s43",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 1.7952204942703247,
+        "ordinary_ce": 0.03447704017162323,
+        "ordinary_kl": 0.0009199294145219028,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 13,
+        "ordinary_tokens": 18,
+        "recovery_accuracy": 0.692307710647583,
+        "ordinary_agreement": 1.0,
+        "supervision_scope": "FIRST_ONLY",
+        "memory_observations": 152,
+        "excluded_actor_positions": 112,
+        "step": 940,
+        "loss": 1.8170586824417114,
+        "gradient_norm": 3.2291839122772217,
+        "writer_gradients": {
+          "writer.weight": 0.004607402253895998,
+          "change_writer.weight": 0.00011521221313159913,
+          "executed_action.weight": 6.728059088345617e-05
+        },
+        "schedule": [
+          7,
+          210
+        ],
+        "wall_seconds": 100.41576528549194
+      }
+    },
+    {
+      "pid": 529152,
+      "gpu": 6,
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training/CURRENT_s44",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 0.9808080196380615,
+        "ordinary_ce": 0.1781926453113556,
+        "ordinary_kl": 0.017703155055642128,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 7,
+        "ordinary_tokens": 18,
+        "recovery_accuracy": 0.8571429252624512,
+        "ordinary_agreement": 1.0,
+        "supervision_scope": "FIRST_ONLY",
+        "memory_observations": 159,
+        "excluded_actor_positions": 118,
+        "step": 890,
+        "loss": 1.1584200859069824,
+        "gradient_norm": 7.712693691253662,
+        "writer_gradients": {
+          "writer.weight": 0.007926411926746368,
+          "change_writer.weight": 0.004556203261017799,
+          "executed_action.weight": 9.639276686357334e-05
+        },
+        "schedule": [
+          161,
+          294
+        ],
+        "wall_seconds": 100.95377826690674
+      }
+    },
+    {
+      "pid": 529158,
+      "gpu": 7,
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training/DELTA_s44",
+      "progress": {
+        "status": "TRAINING",
+        "planned": 3000,
+        "recovery_ce": 1.1201874017715454,
+        "ordinary_ce": 0.017080049961805344,
+        "ordinary_kl": 0.0019201601389795542,
+        "ordinary_margin": 0.0,
+        "recovery_tokens": 24,
+        "ordinary_tokens": 20,
+        "recovery_accuracy": 0.5833333730697632,
+        "ordinary_agreement": 1.0,
+        "supervision_scope": "FIRST_ONLY",
+        "memory_observations": 236,
+        "excluded_actor_positions": 176,
+        "step": 950,
+        "loss": 1.138328194618225,
+        "gradient_norm": 1.3043745756149292,
+        "writer_gradients": {
+          "writer.weight": 0.04573172703385353,
+          "change_writer.weight": 0.0012401348212733865,
+          "executed_action.weight": 0.0005821444210596383
+        },
+        "schedule": [
+          162,
+          261
+        ],
+        "wall_seconds": 100.16088342666626
+      }
+    }
+  ],
+  "worker_rss_bytes": 15429644288,
+  "gpu_inventory": {
+    "0": {
+      "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+      "free_mib": 6584
+    },
+    "1": {
+      "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+      "free_mib": 9293
+    },
+    "2": {
+      "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+      "free_mib": 7668
+    },
+    "3": {
+      "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+      "free_mib": 8193
+    },
+    "4": {
+      "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+      "free_mib": 14134
+    },
+    "5": {
+      "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+      "free_mib": 4403
+    },
+    "6": {
+      "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+      "free_mib": 9247
+    },
+    "7": {
+      "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+      "free_mib": 10200
+    }
+  },
+  "artifact_bytes": 1968810285
+}

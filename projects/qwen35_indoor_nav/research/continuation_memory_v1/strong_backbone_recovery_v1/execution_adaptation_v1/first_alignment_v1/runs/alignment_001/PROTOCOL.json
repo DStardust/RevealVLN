@@ -1,0 +1,85 @@
+{
+  "id": "FIRST_ALIGNED_TRAINING_AND_UNSEEN_V1",
+  "training_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001/training",
+  "capture_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_data_v1/recapture_v1/runs/capture_001",
+  "models": {
+    "CURRENT_s42": {
+      "mode": "CURRENT",
+      "seed": 42
+    },
+    "DELTA_s42": {
+      "mode": "DELTA",
+      "seed": 42
+    },
+    "CURRENT_s43": {
+      "mode": "CURRENT",
+      "seed": 43
+    },
+    "DELTA_s43": {
+      "mode": "DELTA",
+      "seed": 43
+    },
+    "CURRENT_s44": {
+      "mode": "CURRENT",
+      "seed": 44
+    },
+    "DELTA_s44": {
+      "mode": "DELTA",
+      "seed": 44
+    }
+  },
+  "training_steps": 3000,
+  "planned_groups": 80,
+  "planned_executions": 1040,
+  "first_complete_group_id": 202,
+  "gpu_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "minimum_free_mib": 26000,
+  "phase_gpu_hour_limits": {
+    "TRAIN": 4.0,
+    "EVALUATE": 24.0
+  },
+  "wall_hours_limit": 12,
+  "rss_limit_gib": 64,
+  "artifact_limit_gib": 20,
+  "chunk_groups": 4,
+  "base_updates": 0,
+  "automatic_score_retries": 0,
+  "resume": "Exact optimizer/RNG checkpoint for training; complete sealed groups for navigation. Preserve all attempts.",
+  "phases": [
+    "TRAIN_SHARED",
+    "WAIT_EVALUATION_DEVICE",
+    "FIRST_UNSEEN_GROUP",
+    "UNSEEN",
+    "REVIEW"
+  ],
+  "final_selection": false,
+  "old_positive_candidate_retained": true,
+  "unseen_exposed": true,
+  "common_changes": "FIRST-only supervision in both CURRENT and DELTA; no architecture or runtime change.",
+  "training_admission": "FIT_ONLY_FIRST_POSITION_VIEW_OF_SEALED_REAL_DATA",
+  "source_training_config_sha256": "d23a3165b8fac8fd09fd59df721b98c74c8caf31da42d9fc9e477cf13d25ea03",
+  "predecessor": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_001",
+  "revision": "Optimization branch requested by user; do not wait for old efficacy scores to train.",
+  "inherited_phase_gpu_hours": {
+    "TRAIN": 0.0,
+    "EVALUATE": 0.0
+  },
+  "inherited_wall_seconds": 0.0,
+  "optimizer_updates": 18000,
+  "prior_training_gpu_hours": 0.7279557228088379,
+  "prior_scope_discovery_gpu_hours": 12.713471885257297,
+  "training_minimum_free_mib": 6144,
+  "training_gpu_memory_limit_gib": 2.0,
+  "allowed_shared_service": "q35n-strong-first-confirmation-20260926-01.service",
+  "discovery_protocol": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/scope_validation_v1/runs/scope_001/unseen/PROTOCOL.json",
+  "effect": "Aligned versus old all-position training, same FIRST inference and matched seed/mode."
+}

@@ -1,22 +1,17 @@
 {
   "url": "http://127.0.0.1:18770/",
-  "service": "q35n-strong-alignment-monitor-20260926-01.service",
+  "service": "q35n-strong-first-monitor-20260926-01.service",
   "method_service": "q35n-strong-method-20260924-01.service",
   "checks": [
     {
       "path": "/",
       "status": 200,
-      "bytes": 9264
-    },
-    {
-      "path": "/api/first_alignment",
-      "status": 200,
-      "bytes": 11412
+      "bytes": 7990
     },
     {
       "path": "/api/first_confirmation",
       "status": 200,
-      "bytes": 16522
+      "bytes": 11811
     },
     {
       "path": "/api/scope_validation",
@@ -88,8 +83,5 @@
   "previous_evaluation_user_interrupted": true,
   "first_confirmation_service": "q35n-strong-first-confirmation-20260926-01.service",
   "first_confirmation_api": "/api/first_confirmation",
-  "first_confirmation_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/runs/confirm_001",
-  "first_alignment_service": "q35n-strong-first-alignment-20260926-01.service",
-  "first_alignment_api": "/api/first_alignment",
-  "first_alignment_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_alignment_v1/runs/alignment_001"
+  "first_confirmation_run": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/first_confirmation_v1/runs/confirm_001"
 }
