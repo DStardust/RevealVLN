@@ -1,0 +1,478 @@
+{
+  "user_instruction": "不用等旧评测，直接开始",
+  "unix": 1790414940.8057377,
+  "ownership": [
+    {
+      "name": "strong-scope-validation-20260926-01",
+      "unit": "q35n-strong-scope-validation-20260926-01.service",
+      "pid": 292710,
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/scope_validation_v1/pipeline.py",
+        "--run",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/scope_validation_v1/runs/scope_001"
+      ],
+      "cgroup": "0::/system.slice/q35n-strong-scope-validation-20260926-01.service\n"
+    },
+    {
+      "name": "strong-execution-adaptation-20260926-03",
+      "unit": "q35n-strong-execution-adaptation-20260926-03.service",
+      "pid": 92151,
+      "command": [
+        "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+        "-I",
+        "-S",
+        "-B",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/operation_v2/pipeline.py",
+        "--run",
+        "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002"
+      ],
+      "cgroup": "0::/system.slice/q35n-strong-execution-adaptation-20260926-03.service\n"
+    }
+  ],
+  "old_status": {
+    "status": "RUNNING",
+    "phase": "UNSEEN",
+    "planned_models": 6,
+    "planned_steps": 3000,
+    "planned_groups": 369,
+    "planned_executions": 2583,
+    "unix": 1790414939.6594715,
+    "phase_gpu_hours": {
+      "TRAIN": 0.7279557228088379,
+      "EVALUATE": 31.6186422126823
+    },
+    "gpu_hours": 32.34659793549114,
+    "complete_models": [
+      "CURRENT_s42",
+      "DELTA_s42",
+      "CURRENT_s43",
+      "DELTA_s43",
+      "CURRENT_s44",
+      "DELTA_s44"
+    ],
+    "sealed_groups": 289,
+    "recorded_groups": 322,
+    "models": {
+      "CURRENT_s42": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "4f27d30a05b25e3cd9885f0713c5c57d8627847cf984849990af4f150dedbc08",
+        "navigation_efficacy_measured": false
+      },
+      "DELTA_s42": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "4df7f6e5e64d23d01d5dfd37ae8b91fbcdd29c6e43bf4b3d1f9494fc3c1b46fb",
+        "navigation_efficacy_measured": false
+      },
+      "CURRENT_s43": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "d7411c938694aa2c6b23028736bc0bfa4ce11575c9d61103947f3f3d953b927f",
+        "navigation_efficacy_measured": false
+      },
+      "DELTA_s43": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "f41361397866c6539b32b7875566c74ab47451afc767ec400e38d7bf470f089b",
+        "navigation_efficacy_measured": false
+      },
+      "CURRENT_s44": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "277d35446bbe83c5f09bab47bc832d77f255ff80d748e118a3e6973d2da32251",
+        "navigation_efficacy_measured": false
+      },
+      "DELTA_s44": {
+        "status": "COMPLETE",
+        "completed_steps": 3000,
+        "planned_steps": 3000,
+        "base_updates": 0,
+        "base_loaded": false,
+        "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY",
+        "debug_only": false,
+        "changed_parameters": [
+          "writer.weight",
+          "writer.bias",
+          "recurrent.weight",
+          "actor.0.weight",
+          "actor.0.bias",
+          "actor.2.weight",
+          "actor.2.bias",
+          "change_writer.weight",
+          "executed_action.weight"
+        ],
+        "final_sha256": "272dcb9bf69c290b41d44e246e56cdf9d6fb74042f2df89085e6a6139b539b35",
+        "navigation_efficacy_measured": false
+      }
+    },
+    "workers": [
+      {
+        "pid": 259099,
+        "gpu": 3,
+        "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu3_1790411757330723093",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295
+          ],
+          "planned": [
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296
+          ],
+          "current_id": 296,
+          "current_arm": "CURRENT_s44",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 271833,
+        "gpu": 4,
+        "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu4_1790412715661554307",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303
+          ],
+          "planned": [
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304
+          ],
+          "current_id": 304,
+          "current_arm": "DELTA_s42",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 277789,
+        "gpu": 7,
+        "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu7_1790413150113059402",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            305,
+            306,
+            307,
+            308,
+            309
+          ],
+          "planned": [
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312
+          ],
+          "current_id": 310,
+          "current_arm": "CURRENT_s44",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 282947,
+        "gpu": 2,
+        "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu2_1790413474641216492",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            313,
+            314,
+            315,
+            316,
+            317
+          ],
+          "planned": [
+            313,
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320
+          ],
+          "current_id": 318,
+          "current_arm": "CURRENT_s42",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 285648,
+        "gpu": 6,
+        "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu6_1790413566502119727",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            321,
+            322
+          ],
+          "planned": [
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328
+          ],
+          "current_id": 323,
+          "current_arm": "DELTA_s43",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 287774,
+        "gpu": 0,
+        "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu0_1790413776000396929",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            329,
+            330
+          ],
+          "planned": [
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336
+          ],
+          "current_id": 331,
+          "current_arm": "CURRENT_s44",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 288087,
+        "gpu": 5,
+        "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu5_1790413809067495289",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            337
+          ],
+          "planned": [
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344
+          ],
+          "current_id": 338,
+          "current_arm": "DELTA_s43",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      },
+      {
+        "pid": 288332,
+        "gpu": 1,
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "output": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002/unseen/evaluation/gpu1_1790413830899003503",
+        "progress": {
+          "status": "RUNNING",
+          "complete": [
+            345,
+            346,
+            347,
+            348
+          ],
+          "planned": [
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352
+          ],
+          "current_id": 349,
+          "current_arm": "NATIVE",
+          "model_loaded": true,
+          "action_scope": "ALL_ACTION_TOKENS_QUERY_START_MEMORY"
+        }
+      }
+    ],
+    "worker_rss_bytes": 45539758080,
+    "gpu_inventory": {
+      "0": {
+        "uuid": "GPU-7c996ebd-c21c-58ab-843d-1f7ca5aca9c6",
+        "free_mib": 10364
+      },
+      "1": {
+        "uuid": "GPU-734a5268-31fe-6452-105b-36cd08c3d9c8",
+        "free_mib": 10443
+      },
+      "2": {
+        "uuid": "GPU-be1b30d0-517b-b079-871b-de195d35a1a2",
+        "free_mib": 6005
+      },
+      "3": {
+        "uuid": "GPU-a62dba8b-285b-57e6-b6d2-cf6e5788864a",
+        "free_mib": 1984
+      },
+      "4": {
+        "uuid": "GPU-e458147b-4739-d22a-e764-50743cff4a11",
+        "free_mib": 8544
+      },
+      "5": {
+        "uuid": "GPU-2b3b2c3a-7398-a845-293a-d2844dd7524b",
+        "free_mib": 7867
+      },
+      "6": {
+        "uuid": "GPU-a7120b0e-d348-23d4-ffe4-3072745b8490",
+        "free_mib": 8178
+      },
+      "7": {
+        "uuid": "GPU-3f8830f6-45f2-6c4d-776b-2b348159ccb3",
+        "free_mib": 5653
+      }
+    },
+    "artifact_bytes": 5907798373
+  },
+  "scope_status": {
+    "status": "QUEUED",
+    "phase": "WAITING_FOR_CURRENT_UNSEEN",
+    "predecessor": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/experiment_002",
+    "predecessor_sealed_groups": 289,
+    "planned_groups": 80,
+    "planned_executions": 1040,
+    "gpu_hours": 0,
+    "optimizer_updates": 0,
+    "unix": 1790414912.3760192
+  },
+  "preserve_all_attempts": true,
+  "method_or_weight_change": false
+}
