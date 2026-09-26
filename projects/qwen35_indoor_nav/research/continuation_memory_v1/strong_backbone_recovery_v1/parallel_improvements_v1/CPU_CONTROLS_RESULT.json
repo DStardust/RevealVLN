@@ -1,0 +1,127 @@
+{
+  "status": "CPU_IMPLEMENTATION_CHECK_COMPLETE",
+  "gpu_hours": 0,
+  "base_loaded": false,
+  "base_updates": 0,
+  "actual_lightweight_updates": 9,
+  "rows": {
+    "RECOVERY": {
+      "id": 0,
+      "house": "ac26ZMwG7aT",
+      "partition": "FIT",
+      "sequence_length": 117,
+      "known_queries": 14
+    },
+    "PRESERVATION": {
+      "id": 174,
+      "house": "b8cTxDM8gDG",
+      "partition": "FIT",
+      "sequence_length": 39,
+      "known_queries": 10
+    }
+  },
+  "pool_sha256": "870eee375fb7a9bd9672e27f6566636e11b60d4621410315571ac32767a40830",
+  "models": {
+    "LOCAL": {
+      "parameter_count": 2858120,
+      "updates": [
+        {
+          "step": 1,
+          "loss": 1.7323552370071411,
+          "writer_gradient": 0.0,
+          "recurrent_gradient": 0.0
+        },
+        {
+          "step": 2,
+          "loss": 1.7307353019714355,
+          "writer_gradient": 0.00027787842554971576,
+          "recurrent_gradient": 0.0
+        },
+        {
+          "step": 3,
+          "loss": 1.7281286716461182,
+          "writer_gradient": 0.0004460314812604338,
+          "recurrent_gradient": 0.0
+        }
+      ],
+      "changed_parameters": [
+        "writer.weight",
+        "writer.bias",
+        "actor.0.weight",
+        "actor.0.bias",
+        "actor.2.weight",
+        "actor.2.bias"
+      ]
+    },
+    "EMA": {
+      "parameter_count": 2858120,
+      "updates": [
+        {
+          "step": 1,
+          "loss": 1.7323552370071411,
+          "writer_gradient": 0.0,
+          "recurrent_gradient": 0.0
+        },
+        {
+          "step": 2,
+          "loss": 1.7307343482971191,
+          "writer_gradient": 0.00027592573314905167,
+          "recurrent_gradient": 0.0
+        },
+        {
+          "step": 3,
+          "loss": 1.7281264066696167,
+          "writer_gradient": 0.0004455692251212895,
+          "recurrent_gradient": 0.0
+        }
+      ],
+      "changed_parameters": [
+        "writer.weight",
+        "writer.bias",
+        "actor.0.weight",
+        "actor.0.bias",
+        "actor.2.weight",
+        "actor.2.bias"
+      ]
+    },
+    "RECURRENT": {
+      "parameter_count": 2858120,
+      "updates": [
+        {
+          "step": 1,
+          "loss": 1.7323552370071411,
+          "writer_gradient": 0.0,
+          "recurrent_gradient": 0.0
+        },
+        {
+          "step": 2,
+          "loss": 1.7307350635528564,
+          "writer_gradient": 0.0002801646769512445,
+          "recurrent_gradient": 2.2016070943209343e-05
+        },
+        {
+          "step": 3,
+          "loss": 1.728124976158142,
+          "writer_gradient": 0.0004475372261367738,
+          "recurrent_gradient": 3.661973460111767e-05
+        }
+      ],
+      "changed_parameters": [
+        "writer.weight",
+        "writer.bias",
+        "recurrent.weight",
+        "actor.0.weight",
+        "actor.0.bias",
+        "actor.2.weight",
+        "actor.2.bias"
+      ]
+    }
+  },
+  "cpu_seconds": 5.774473428726196,
+  "same_initial_state": true,
+  "full_causal_unroll": true,
+  "dev_or_unseen_used": false,
+  "efficacy_measured": false,
+  "claim": "Working strong-simple-control interfaces only. No navigation benefit or new algorithmic result.",
+  "final_weights_retained": false
+}
