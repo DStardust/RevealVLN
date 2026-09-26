@@ -1,0 +1,970 @@
+{
+  "complete_groups": 369,
+  "planned_groups": 369,
+  "evaluation_complete": true,
+  "arms": {
+    "NATIVE": {
+      "successes": 204.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5528455284552846,
+      "identification_bounds": [
+        0.5528455284552846,
+        0.5528455284552846
+      ],
+      "spl": 0.49062576363973004,
+      "mean_steps": 92.10840108401084
+    },
+    "CONCAT_s42": {
+      "successes": 207.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5609756097560976,
+      "identification_bounds": [
+        0.5609756097560976,
+        0.5609756097560976
+      ],
+      "spl": 0.49323961442309466,
+      "mean_steps": 83.23577235772358
+    },
+    "LOCAL_s42": {
+      "successes": 204.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5528455284552846,
+      "identification_bounds": [
+        0.5528455284552846,
+        0.5528455284552846
+      ],
+      "spl": 0.4844571127847708,
+      "mean_steps": 91.77506775067751
+    },
+    "CONCAT_s43": {
+      "successes": 206.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5582655826558266,
+      "identification_bounds": [
+        0.5582655826558266,
+        0.5582655826558266
+      ],
+      "spl": 0.49487025067466706,
+      "mean_steps": 82.38482384823848
+    },
+    "LOCAL_s43": {
+      "successes": 203.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5501355013550135,
+      "identification_bounds": [
+        0.5501355013550135,
+        0.5501355013550135
+      ],
+      "spl": 0.4888173501937426,
+      "mean_steps": 84.72357723577235
+    },
+    "CONCAT_s44": {
+      "successes": 202.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5474254742547425,
+      "identification_bounds": [
+        0.5474254742547425,
+        0.5474254742547425
+      ],
+      "spl": 0.4883636360321094,
+      "mean_steps": 80.40108401084011
+    },
+    "LOCAL_s44": {
+      "successes": 201.0,
+      "complete": 369,
+      "planned": 369,
+      "sr": 0.5447154471544715,
+      "identification_bounds": [
+        0.5447154471544715,
+        0.5447154471544715
+      ],
+      "spl": 0.4866897910783538,
+      "mean_steps": 82.19783197831978
+    }
+  },
+  "paired": {
+    "CONCAT_s42_vs_NATIVE": {
+      "wins": [
+        232,
+        10,
+        67,
+        170,
+        28,
+        292,
+        188,
+        189,
+        314,
+        315,
+        205,
+        323,
+        106,
+        108
+      ],
+      "losses": [
+        359,
+        169,
+        252,
+        83,
+        230,
+        38,
+        242,
+        267,
+        220,
+        222,
+        330
+      ],
+      "retained_successes": 193.0,
+      "delta_sr": 0.008130081300813009,
+      "difference_identification_bounds": [
+        0.008130081300813009,
+        0.008130081300813009
+      ]
+    },
+    "LOCAL_s42_vs_NATIVE": {
+      "wins": [
+        10,
+        12,
+        67,
+        32,
+        121,
+        188,
+        300,
+        315,
+        51,
+        140,
+        205,
+        269,
+        323,
+        106,
+        163
+      ],
+      "losses": [
+        3,
+        209,
+        359,
+        169,
+        304,
+        308,
+        26,
+        83,
+        228,
+        191,
+        242,
+        203,
+        58,
+        63,
+        220
+      ],
+      "retained_successes": 189.0,
+      "delta_sr": 0.0,
+      "difference_identification_bounds": [
+        0.0,
+        0.0
+      ]
+    },
+    "CONCAT_s43_vs_NATIVE": {
+      "wins": [
+        10,
+        12,
+        99,
+        28,
+        133,
+        314,
+        315,
+        269,
+        323,
+        59,
+        106,
+        108,
+        163
+      ],
+      "losses": [
+        181,
+        359,
+        169,
+        129,
+        228,
+        366,
+        242,
+        63,
+        107,
+        220,
+        328
+      ],
+      "retained_successes": 193.0,
+      "delta_sr": 0.005420054200542005,
+      "difference_identification_bounds": [
+        0.005420054200542005,
+        0.005420054200542005
+      ]
+    },
+    "LOCAL_s43_vs_NATIVE": {
+      "wins": [
+        6,
+        337,
+        12,
+        67,
+        68,
+        154,
+        121,
+        244,
+        46,
+        315,
+        50,
+        51,
+        268,
+        269,
+        323,
+        106,
+        108,
+        163,
+        164,
+        287
+      ],
+      "losses": [
+        177,
+        213,
+        261,
+        359,
+        252,
+        26,
+        29,
+        129,
+        228,
+        295,
+        33,
+        190,
+        242,
+        93,
+        275,
+        203,
+        204,
+        63,
+        111,
+        220,
+        335
+      ],
+      "retained_successes": 183.0,
+      "delta_sr": -0.0027100271002710027,
+      "difference_identification_bounds": [
+        -0.0027100271002710027,
+        -0.0027100271002710027
+      ]
+    },
+    "CONCAT_s44_vs_NATIVE": {
+      "wins": [
+        6,
+        232,
+        12,
+        80,
+        315,
+        50,
+        51,
+        269,
+        323,
+        108,
+        163
+      ],
+      "losses": [
+        181,
+        213,
+        359,
+        174,
+        252,
+        311,
+        228,
+        38,
+        275,
+        141,
+        267,
+        107,
+        220
+      ],
+      "retained_successes": 191.0,
+      "delta_sr": -0.005420054200542005,
+      "difference_identification_bounds": [
+        -0.005420054200542005,
+        -0.005420054200542005
+      ]
+    },
+    "LOCAL_s44_vs_NATIVE": {
+      "wins": [
+        337,
+        67,
+        154,
+        211,
+        20,
+        28,
+        80,
+        121,
+        299,
+        300,
+        46,
+        315,
+        50,
+        51,
+        269,
+        106,
+        108,
+        163,
+        164
+      ],
+      "losses": [
+        3,
+        177,
+        213,
+        214,
+        261,
+        252,
+        26,
+        129,
+        228,
+        288,
+        33,
+        38,
+        126,
+        190,
+        242,
+        275,
+        141,
+        204,
+        327,
+        63,
+        220,
+        335
+      ],
+      "retained_successes": 182.0,
+      "delta_sr": -0.008130081300813009,
+      "difference_identification_bounds": [
+        -0.008130081300813009,
+        -0.008130081300813009
+      ]
+    },
+    "CONCAT_s42_vs_LOCAL_s42": {
+      "wins": [
+        3,
+        232,
+        209,
+        170,
+        304,
+        308,
+        26,
+        28,
+        228,
+        292,
+        189,
+        191,
+        314,
+        203,
+        58,
+        63,
+        108
+      ],
+      "losses": [
+        12,
+        252,
+        230,
+        32,
+        38,
+        121,
+        300,
+        51,
+        140,
+        267,
+        269,
+        163,
+        222,
+        330
+      ],
+      "retained_successes": 190.0,
+      "delta_sr": 0.008130081300813009,
+      "difference_identification_bounds": [
+        0.008130081300813009,
+        0.008130081300813009
+      ]
+    },
+    "CONCAT_s43_vs_LOCAL_s43": {
+      "wins": [
+        177,
+        10,
+        213,
+        261,
+        99,
+        252,
+        26,
+        28,
+        29,
+        133,
+        295,
+        33,
+        190,
+        93,
+        275,
+        314,
+        203,
+        204,
+        59,
+        111,
+        335
+      ],
+      "losses": [
+        6,
+        181,
+        337,
+        67,
+        68,
+        154,
+        169,
+        366,
+        121,
+        244,
+        46,
+        50,
+        51,
+        268,
+        107,
+        164,
+        287,
+        328
+      ],
+      "retained_successes": 185.0,
+      "delta_sr": 0.008130081300813009,
+      "difference_identification_bounds": [
+        0.008130081300813009,
+        0.008130081300813009
+      ]
+    },
+    "CONCAT_s44_vs_LOCAL_s44": {
+      "wins": [
+        3,
+        6,
+        177,
+        232,
+        12,
+        214,
+        261,
+        26,
+        129,
+        288,
+        33,
+        126,
+        190,
+        242,
+        204,
+        323,
+        327,
+        63,
+        335
+      ],
+      "losses": [
+        181,
+        337,
+        67,
+        154,
+        211,
+        359,
+        20,
+        174,
+        311,
+        28,
+        121,
+        299,
+        300,
+        46,
+        267,
+        106,
+        107,
+        164
+      ],
+      "retained_successes": 183.0,
+      "delta_sr": 0.0027100271002710027,
+      "difference_identification_bounds": [
+        0.0027100271002710027,
+        0.0027100271002710027
+      ]
+    }
+  },
+  "by_kind": {
+    "NATURAL": {
+      "NATIVE": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 204.0
+      },
+      "CONCAT_s42": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 207.0
+      },
+      "LOCAL_s42": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 204.0
+      },
+      "CONCAT_s43": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 206.0
+      },
+      "LOCAL_s43": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 203.0
+      },
+      "CONCAT_s44": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 202.0
+      },
+      "LOCAL_s44": {
+        "planned": 369,
+        "complete": 369,
+        "successes": 201.0
+      }
+    }
+  },
+  "by_house": {
+    "2azQ1b91cZZ": {
+      "NATIVE": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 23.0
+      },
+      "CONCAT_s42": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 26.0
+      },
+      "LOCAL_s42": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 26.0
+      },
+      "CONCAT_s43": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 26.0
+      },
+      "LOCAL_s43": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 29.0
+      },
+      "CONCAT_s44": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 25.0
+      },
+      "LOCAL_s44": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 29.0
+      }
+    },
+    "8194nk5LbLH": {
+      "NATIVE": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CONCAT_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "LOCAL_s42": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 3.0
+      },
+      "CONCAT_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "LOCAL_s43": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 5.0
+      },
+      "CONCAT_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      },
+      "LOCAL_s44": {
+        "planned": 8,
+        "complete": 8,
+        "successes": 4.0
+      }
+    },
+    "QUCTc6BB5sX": {
+      "NATIVE": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 27.0
+      },
+      "CONCAT_s42": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 27.0
+      },
+      "LOCAL_s42": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 29.0
+      },
+      "CONCAT_s43": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 29.0
+      },
+      "LOCAL_s43": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 25.0
+      },
+      "CONCAT_s44": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 25.0
+      },
+      "LOCAL_s44": {
+        "planned": 55,
+        "complete": 55,
+        "successes": 25.0
+      }
+    },
+    "TbHJrupSAjP": {
+      "NATIVE": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 41.0
+      },
+      "CONCAT_s42": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 43.0
+      },
+      "LOCAL_s42": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 41.0
+      },
+      "CONCAT_s43": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 42.0
+      },
+      "LOCAL_s43": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 37.0
+      },
+      "CONCAT_s44": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 41.0
+      },
+      "LOCAL_s44": {
+        "planned": 57,
+        "complete": 57,
+        "successes": 37.0
+      }
+    },
+    "X7HyMhZNoso": {
+      "NATIVE": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 20.0
+      },
+      "CONCAT_s42": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 21.0
+      },
+      "LOCAL_s42": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 20.0
+      },
+      "CONCAT_s43": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 20.0
+      },
+      "LOCAL_s43": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 19.0
+      },
+      "CONCAT_s44": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 20.0
+      },
+      "LOCAL_s44": {
+        "planned": 31,
+        "complete": 31,
+        "successes": 20.0
+      }
+    },
+    "Z6MFQCViBuw": {
+      "NATIVE": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 15.0
+      },
+      "CONCAT_s42": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 14.0
+      },
+      "LOCAL_s42": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 13.0
+      },
+      "CONCAT_s43": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 13.0
+      },
+      "LOCAL_s43": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 12.0
+      },
+      "CONCAT_s44": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 14.0
+      },
+      "LOCAL_s44": {
+        "planned": 34,
+        "complete": 34,
+        "successes": 13.0
+      }
+    },
+    "oLBMNvg9in8": {
+      "NATIVE": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 21.0
+      },
+      "CONCAT_s42": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 18.0
+      },
+      "LOCAL_s42": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 18.0
+      },
+      "CONCAT_s43": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 17.0
+      },
+      "LOCAL_s43": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 19.0
+      },
+      "CONCAT_s44": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 20.0
+      },
+      "LOCAL_s44": {
+        "planned": 38,
+        "complete": 38,
+        "successes": 16.0
+      }
+    },
+    "pLe4wQe7qrG": {
+      "NATIVE": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "CONCAT_s42": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "LOCAL_s42": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "CONCAT_s43": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "LOCAL_s43": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "CONCAT_s44": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      },
+      "LOCAL_s44": {
+        "planned": 4,
+        "complete": 4,
+        "successes": 2.0
+      }
+    },
+    "x8F5xyUWy9e": {
+      "NATIVE": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 11.0
+      },
+      "CONCAT_s42": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 13.0
+      },
+      "LOCAL_s42": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 12.0
+      },
+      "CONCAT_s43": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 13.0
+      },
+      "LOCAL_s43": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 13.0
+      },
+      "CONCAT_s44": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 10.0
+      },
+      "LOCAL_s44": {
+        "planned": 22,
+        "complete": 22,
+        "successes": 13.0
+      }
+    },
+    "zsNo4HB9uLZ": {
+      "NATIVE": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 41.0
+      },
+      "CONCAT_s42": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 40.0
+      },
+      "LOCAL_s42": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 40.0
+      },
+      "CONCAT_s43": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 40.0
+      },
+      "LOCAL_s43": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 42.0
+      },
+      "CONCAT_s44": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 41.0
+      },
+      "LOCAL_s44": {
+        "planned": 65,
+        "complete": 65,
+        "successes": 42.0
+      }
+    }
+  },
+  "seed_summary": {
+    "CONCAT": {
+      "mean_sr": 0.5555555555555556,
+      "seed_range": [
+        0.5474254742547425,
+        0.5609756097560976
+      ],
+      "deltas_vs_native": [
+        0.008130081300813052,
+        0.005420054200542035,
+        -0.005420054200542035
+      ]
+    },
+    "LOCAL": {
+      "mean_sr": 0.5492321589882565,
+      "seed_range": [
+        0.5447154471544715,
+        0.5528455284552846
+      ],
+      "deltas_vs_native": [
+        0.0,
+        -0.0027100271002710175,
+        -0.008130081300813052
+      ]
+    },
+    "history_deltas": [
+      0.008130081300813009,
+      0.008130081300813009,
+      0.0027100271002710027
+    ]
+  },
+  "split": "OFFICIAL_VAL_UNSEEN_REMAINING_ROUTE_FAMILIES",
+  "uncertainty_scope": "Seed range is descriptive; seeds share episodes and houses. Identification bounds are not confidence intervals.",
+  "status": "COMPLETE",
+  "gpu_hours": 26.747067990899087,
+  "base_updates": 0,
+  "optimizer_updates": 0,
+  "heads_updated": false,
+  "full_1839": false,
+  "adopted": false,
+  "paired_uncertainty": {
+    "NATIVE": {
+      "mean_paired_delta": 0.0027100271002710027,
+      "house_equal_delta": 0.008592173996648179,
+      "descriptive_house_bootstrap_95": [
+        -0.021588946459412783,
+        0.026291079812206568
+      ],
+      "houses": 10,
+      "limitation": "House-cluster resampling retains all seeds and routes within a house. Same known houses, few clusters; descriptive uncertainty, not blind broad generalization."
+    },
+    "LOCAL": {
+      "mean_paired_delta": 0.006323396567299006,
+      "house_equal_delta": 0.0015131143421865487,
+      "descriptive_house_bootstrap_95": [
+        -0.018202502844141065,
+        0.03134556574923548
+      ],
+      "houses": 10,
+      "limitation": "House-cluster resampling retains all seeds and routes within a house. Same known houses, few clusters; descriptive uncertainty, not blind broad generalization."
+    }
+  },
+  "old_discovery_report": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/recovery_confirmation_v2/runs/confirmation_001/RESULT.json",
+  "pooled_old_new_score_used_for_decision": false,
+  "exposure_scope": "Route-disjoint from all registered StreamVLN branch manifests. Other historical Qwen experiments exposed this public split; not blind testing.",
+  "descriptive_positive_replication": true
+}

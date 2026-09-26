@@ -1,0 +1,293 @@
+{
+  "status": "RECORDED_RESULT_RECHECKED",
+  "read_only_recalculation": true,
+  "model_loaded": false,
+  "gpu_hours_used": 0,
+  "route_groups": 369,
+  "executions": 2583,
+  "sealed_sessions": 47,
+  "prefix_comparisons": 3321,
+  "all_input_action_prefix_audits_pass": true,
+  "bitwise_equal_audits": 3321,
+  "arms": {
+    "NATIVE": {
+      "n": 369,
+      "successes": 204.0,
+      "sr": 0.5528455284552846,
+      "spl": 0.49062576363973004,
+      "mean_steps": 92.10840108401084
+    },
+    "CONCAT_s42": {
+      "n": 369,
+      "successes": 207.0,
+      "sr": 0.5609756097560976,
+      "spl": 0.49323961442309466,
+      "mean_steps": 83.23577235772358
+    },
+    "LOCAL_s42": {
+      "n": 369,
+      "successes": 204.0,
+      "sr": 0.5528455284552846,
+      "spl": 0.4844571127847708,
+      "mean_steps": 91.77506775067751
+    },
+    "CONCAT_s43": {
+      "n": 369,
+      "successes": 206.0,
+      "sr": 0.5582655826558266,
+      "spl": 0.49487025067466706,
+      "mean_steps": 82.38482384823848
+    },
+    "LOCAL_s43": {
+      "n": 369,
+      "successes": 203.0,
+      "sr": 0.5501355013550135,
+      "spl": 0.4888173501937426,
+      "mean_steps": 84.72357723577235
+    },
+    "CONCAT_s44": {
+      "n": 369,
+      "successes": 202.0,
+      "sr": 0.5474254742547425,
+      "spl": 0.4883636360321094,
+      "mean_steps": 80.40108401084011
+    },
+    "LOCAL_s44": {
+      "n": 369,
+      "successes": 201.0,
+      "sr": 0.5447154471544715,
+      "spl": 0.4866897910783538,
+      "mean_steps": 82.19783197831978
+    }
+  },
+  "concat_seed_mean": {
+    "sr": 0.5555555555555556,
+    "spl": 0.492157833709957,
+    "mean_steps": 82.00722673893405
+  },
+  "paired": {
+    "42": {
+      "wins": 14,
+      "losses": 11,
+      "net": 3
+    },
+    "43": {
+      "wins": 13,
+      "losses": 11,
+      "net": 2
+    },
+    "44": {
+      "wins": 11,
+      "losses": 13,
+      "net": -2
+    }
+  },
+  "delta_sr_pp": 0.27100271002710175,
+  "delta_spl_pp": 0.15320700702269874,
+  "delta_vs_local_sr_pp": 0.6323396567299078,
+  "mean_action_reduction_pct": 10.966615668275082,
+  "house_cluster_interval_original": [
+    -0.021588946459412783,
+    0.026291079812206568
+  ],
+  "interpretation": "Small descriptive positive replication; 2/3 positive versus native, 3/3 versus LOCAL. Not a robust improvement or causal proof of long-history content. No adoption.",
+  "exposure": "369 registered public val_unseen routes, 10 previously exposed houses; not full1839 or blind test.",
+  "trace_hash_scope": "CSV digest references checked against sealed group receipts; original final review verified trace bytes. This recheck did not reload every trace or model.",
+  "source_files": {
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/RESULT.json": "cf528baf55372d4c79a90cb4d16e31666b3b50e1f3f610fc7a867a64e11b6c54",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/ROLLOUTS.csv": "fdf458c6ba1924994e593bb81defb2999fb39b0f275e1b1f6cd583e77706323d",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/SOURCE_LOCK.json": "0ae4eac9dd1241d3e1301189f3a85e392ed17fc53e8297e97348b9ab4d438ee0",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/PROTOCOL.json": "61bf3d5ce679ef79b99ff398129d088c3cb57da72c16367cbb3c1cc4f79382e1",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/DATA_MANIFEST.json": "e9b55139ba6d678e57e9dc541566fbc40af72b293fb17c347fc963288066c032"
+  },
+  "sessions": [
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu0_1790383683223230475",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu0_1790386139280359464",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu0_1790388421688319670",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu0_1790390195904736216",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu0_1790393687712822590",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu1_1790383683329071799",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu1_1790385339063307777",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu1_1790387770009818951",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu1_1790389558005735193",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu1_1790391377736986890",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu1_1790393959738353128",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu2_1790383683414874808",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu2_1790385862258289420",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu2_1790388187778446446",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu2_1790391025316786660",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu2_1790392806827150148",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu3_1790383683498959819",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu3_1790385528384146380",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu3_1790387003014017932",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu3_1790389937022950743",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu3_1790391823868361987",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu3_1790394010048929283",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu4_1790383683582834237",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu4_1790386321445674833",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu4_1790388442977107656",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu4_1790390563894002083",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu4_1790392316010134345",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu4_1790393942889361931",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790383683667544309",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790385758229368044",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790387307582505042",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790388962695486332",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790391514368367872",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790393169795132738",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu5_1790394923945138662",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu6_1790383683751301563",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu6_1790385501048901182",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu6_1790387093389581808",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu6_1790389080047805372",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu6_1790391388841622901",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu6_1790393234156677334",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu7_1790383683835139011",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu7_1790386051327586000",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu7_1790388150899541793",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu7_1790389688412180470",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu7_1790391580144928912",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    },
+    {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/history_validation_v4/runs/validation_001/evaluation/gpu7_1790393274629003525",
+      "seal_sha256": "0592c8fd523e792bd85434a7926a38d1ec319289720c1db4886bf9eb2fca55a9"
+    }
+  ]
+}
