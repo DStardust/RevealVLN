@@ -1,0 +1,194 @@
+{
+  "source_commit": "e48f6ff7e9201d93aae003e8f64b04c00cec13bc",
+  "expected_base_state_sha256": "f4c87d057e7d92293bb03a81fd2a8d0932db0c81c60c023bdf677d0d41a262d3",
+  "backbone": "mengwei0427/StreamVLN_Video_qwen_1_5_r2r_rxr_envdrop_scalevln_v1_3",
+  "feature_width": 3584,
+  "memory_shape": [
+    8,
+    64
+  ],
+  "runtime": "BF16 base, flash_attention_2; FP32 memory and generation scores/addition in training and live",
+  "id": "EXECUTION_SCOPE_FIXED_HEAD_DIAGNOSIS_V1",
+  "heads": {
+    "CURRENT_ALL_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s42/FINAL.pt",
+      "sha256": "4f27d30a05b25e3cd9885f0713c5c57d8627847cf984849990af4f150dedbc08",
+      "seed": 42,
+      "mode": "CURRENT",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "ALL"
+    },
+    "CURRENT_FIRST_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s42/FINAL.pt",
+      "sha256": "4f27d30a05b25e3cd9885f0713c5c57d8627847cf984849990af4f150dedbc08",
+      "seed": 42,
+      "mode": "CURRENT",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "FIRST"
+    },
+    "DELTA_ALL_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s42/FINAL.pt",
+      "sha256": "4df7f6e5e64d23d01d5dfd37ae8b91fbcdd29c6e43bf4b3d1f9494fc3c1b46fb",
+      "seed": 42,
+      "mode": "DELTA",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "ALL"
+    },
+    "DELTA_FIRST_s42": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s42/FINAL.pt",
+      "sha256": "4df7f6e5e64d23d01d5dfd37ae8b91fbcdd29c6e43bf4b3d1f9494fc3c1b46fb",
+      "seed": 42,
+      "mode": "DELTA",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "FIRST"
+    },
+    "CURRENT_ALL_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s43/FINAL.pt",
+      "sha256": "d7411c938694aa2c6b23028736bc0bfa4ce11575c9d61103947f3f3d953b927f",
+      "seed": 43,
+      "mode": "CURRENT",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "ALL"
+    },
+    "CURRENT_FIRST_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s43/FINAL.pt",
+      "sha256": "d7411c938694aa2c6b23028736bc0bfa4ce11575c9d61103947f3f3d953b927f",
+      "seed": 43,
+      "mode": "CURRENT",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "FIRST"
+    },
+    "DELTA_ALL_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s43/FINAL.pt",
+      "sha256": "f41361397866c6539b32b7875566c74ab47451afc767ec400e38d7bf470f089b",
+      "seed": 43,
+      "mode": "DELTA",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "ALL"
+    },
+    "DELTA_FIRST_s43": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s43/FINAL.pt",
+      "sha256": "f41361397866c6539b32b7875566c74ab47451afc767ec400e38d7bf470f089b",
+      "seed": 43,
+      "mode": "DELTA",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "FIRST"
+    },
+    "CURRENT_ALL_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s44/FINAL.pt",
+      "sha256": "277d35446bbe83c5f09bab47bc832d77f255ff80d748e118a3e6973d2da32251",
+      "seed": 44,
+      "mode": "CURRENT",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "ALL"
+    },
+    "CURRENT_FIRST_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/CURRENT_s44/FINAL.pt",
+      "sha256": "277d35446bbe83c5f09bab47bc832d77f255ff80d748e118a3e6973d2da32251",
+      "seed": 44,
+      "mode": "CURRENT",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "FIRST"
+    },
+    "DELTA_ALL_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s44/FINAL.pt",
+      "sha256": "272dcb9bf69c290b41d44e246e56cdf9d6fb74042f2df89085e6a6139b539b35",
+      "seed": 44,
+      "mode": "DELTA",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "ALL"
+    },
+    "DELTA_FIRST_s44": {
+      "path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/DELTA_s44/FINAL.pt",
+      "sha256": "272dcb9bf69c290b41d44e246e56cdf9d6fb74042f2df89085e6a6139b539b35",
+      "seed": 44,
+      "mode": "DELTA",
+      "training_config_path": "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/runs/train_001/TRAINING_CONFIG.json",
+      "training_config_sha256": "a908e94b016ee7ee9e06f2c2cfa6e44be7d3f7ea09d62032e63b628a2fef257d",
+      "scope": "FIRST"
+    }
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "steps": 3000,
+  "split": "val_unseen",
+  "planned_groups": 80,
+  "planned_executions": 1040,
+  "action_scope": "REGISTERED_FIRST_OR_ALL_WITH_SAME_FROZEN_HEAD",
+  "native_full_vocabulary_decoding_unchanged": true,
+  "maximum_decisions": 500,
+  "active_stop_distance_lt_m": 3.0,
+  "base_updates": 0,
+  "primary": "FIRST minus ALL using identical trained weights, per mode/seed; SR and rescue/regression costs",
+  "secondary": "Each new head minus same-session NATIVE; SPL, steps, regressions, STOP, resource cost",
+  "final_head_selection": false,
+  "prior_public_benchmark_exposure": true,
+  "relation_to_v4": "Exposure-scope engineering diagnosis; no new training or architecture contribution",
+  "arm_order": "NATIVE then 12 scope/head combinations rotated by immutable original episode id",
+  "comparisons": {
+    "CURRENT_FIRST_minus_ALL_s42": {
+      "CURRENT": "CURRENT_ALL_s42",
+      "DELTA": "CURRENT_FIRST_s42"
+    },
+    "DELTA_FIRST_minus_ALL_s42": {
+      "CURRENT": "DELTA_ALL_s42",
+      "DELTA": "DELTA_FIRST_s42"
+    },
+    "DELTA_minus_CURRENT_ALL_s42": {
+      "CURRENT": "CURRENT_ALL_s42",
+      "DELTA": "DELTA_ALL_s42"
+    },
+    "DELTA_minus_CURRENT_FIRST_s42": {
+      "CURRENT": "CURRENT_FIRST_s42",
+      "DELTA": "DELTA_FIRST_s42"
+    },
+    "CURRENT_FIRST_minus_ALL_s43": {
+      "CURRENT": "CURRENT_ALL_s43",
+      "DELTA": "CURRENT_FIRST_s43"
+    },
+    "DELTA_FIRST_minus_ALL_s43": {
+      "CURRENT": "DELTA_ALL_s43",
+      "DELTA": "DELTA_FIRST_s43"
+    },
+    "DELTA_minus_CURRENT_ALL_s43": {
+      "CURRENT": "CURRENT_ALL_s43",
+      "DELTA": "DELTA_ALL_s43"
+    },
+    "DELTA_minus_CURRENT_FIRST_s43": {
+      "CURRENT": "CURRENT_FIRST_s43",
+      "DELTA": "DELTA_FIRST_s43"
+    },
+    "CURRENT_FIRST_minus_ALL_s44": {
+      "CURRENT": "CURRENT_ALL_s44",
+      "DELTA": "CURRENT_FIRST_s44"
+    },
+    "DELTA_FIRST_minus_ALL_s44": {
+      "CURRENT": "DELTA_ALL_s44",
+      "DELTA": "DELTA_FIRST_s44"
+    },
+    "DELTA_minus_CURRENT_ALL_s44": {
+      "CURRENT": "CURRENT_ALL_s44",
+      "DELTA": "DELTA_ALL_s44"
+    },
+    "DELTA_minus_CURRENT_FIRST_s44": {
+      "CURRENT": "CURRENT_FIRST_s44",
+      "DELTA": "DELTA_FIRST_s44"
+    }
+  },
+  "optimizer_updates": 0,
+  "selection": "House round-robin, SHA256(scope_v1:id) order; no reading outcomes"
+}

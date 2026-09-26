@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-S",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/standalone.py",
+    "start",
+    "strong-scope-validation-20260926-01",
+    "--",
+    "/mnt/data_nas/deeprobotics/daiyang/vla/.tools/python/cpython-3.10.20-linux-x86_64-gnu/bin/python3",
+    "-I",
+    "-S",
+    "-B",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/scope_validation_v1/pipeline.py",
+    "--run",
+    "/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/execution_adaptation_v1/scope_validation_v1/runs/scope_001"
+  ],
+  "returncode": 0,
+  "stdout": "{\"unit\": \"q35n-strong-scope-validation-20260926-01.service\", \"job\": \"/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/standalone_jobs/strong-scope-validation-20260926-01\", \"status_command\": \"systemctl status q35n-strong-scope-validation-20260926-01.service\", \"logs\": \"/mnt/data_nas/deeprobotics/daiyang/RevealVLN_q35n_v16_fitdev_training_unblock_v1/projects/qwen35_indoor_nav/research/continuation_memory_v1/strong_backbone_recovery_v1/standalone_jobs/strong-scope-validation-20260926-01/job.log\"}\n",
+  "stderr": "",
+  "unix": 1790414191.1288738
+}
